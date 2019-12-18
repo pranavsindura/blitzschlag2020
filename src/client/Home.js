@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import './Home.css';
 
 export default class Home extends Component {
-	state = {};
+    state = {};
 
-	render() {
-		return (
-			<div>
-				
-			</div>
-		);
-	}
+    render() {
+        return ( <
+            div >
+            <
+            h1 > hello world < /h1> <
+            /div>
+        );
+    }
 }
