@@ -17,7 +17,7 @@ export default class Home extends Component {
 			this.setState({ moveto: this.props.moveto});
 		}
 	}
-	render() { 
+	render() {
 		return (
 			<div>
 				<ReactFullpage
