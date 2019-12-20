@@ -3,7 +3,7 @@ import "./Event.css"
 import TrackSlider from "./Trackslider"
 export default class Event extends Component {
     state = {};
-    render() {
+    render() { 
         return(
             <div>
                 <h1>Events</h1>
