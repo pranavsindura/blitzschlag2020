@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './main.css'
 import TrackSlider from "./Trackslider"
 export default class Event extends Component {
     state = {};
@@ -7,6 +8,7 @@ export default class Event extends Component {
             <div>
                 <h1>Events</h1>
                 <TrackSlider></TrackSlider>
+
             </div>
         );
     }

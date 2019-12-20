@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Coverflow from "react-coverflow";
-import { StyleRoot } from "radium";
+// import { StyleRoot } from "radium";
 export default class TrackSlider extends Component {
   state = {};
   render() {
@@ -25,6 +25,7 @@ export default class TrackSlider extends Component {
           onKeyDown={() => fn()}
           role="menuitem"
           tabIndex="0"
+          style={{ touchaction: 'none'}}
         ></div>
         
             <div style={{ display: "block", width: "100%", height: "50%"}} >

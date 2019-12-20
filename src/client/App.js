@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Home from './Home.js';
-import Event from './event';
+// import Event from './event';
 import './main.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 export default class App extends Component {
@@ -128,6 +128,7 @@ export default class App extends Component {
 						<Home moveto={moveto} />
 					</Route>
 				</Switch>
+
 			</Router>
 		);
 	}
