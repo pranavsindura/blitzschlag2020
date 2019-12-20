@@ -1,19 +1,33 @@
 import React, { Component } from "react";
 import Coverflow from "react-coverflow";
 import { StyleRoot } from "radium";
+import disableScroll from 'disable-scroll';
 export default class TrackSlider extends Component {
   state = {};
   render() {
+    disableScroll.on();
     return (
-      <Coverflow
+      <Coverflow className="eventcover"
         media={{
-          "@media (max-width: 900px)": {
+          "@media (min-width: 10px)": {
             width: "100%",
-            height: "200px"
+            height: "150vw",
+          },
+          "@media (min-width: 300px)": {
+            width: "100%",
+            height: "125vw",
+          },
+          "@media (min-width: 600px)": {
+            width: "100%",
+            height: "60vw",
           },
           "@media (min-width: 900px)": {
             width: "100%",
-            height: "600px"
+            height: "50vw"
+          },
+          "@media (min-width: 1200px)": {
+            width: "100%",
+            height: "40vw",
           }
         }}
         displayQuantityOfSide={1}
