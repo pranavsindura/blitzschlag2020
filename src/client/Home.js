@@ -2,26 +2,22 @@ import React, { Component } from 'react';
 import './main.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default class Home extends Component {
-	state = { moveto: null};
-	componentDidMount()
-	{
-		this.setState({ moveto: this.props.moveto});
+	state = { moveto: null };
+	componentDidMount() {
+		this.setState({ moveto: this.props.moveto });
 	}
-	componentDidUpdate(prevProps)
-	{
-		if(prevProps.moveto != this.props.moveto)
-		{
-			this.setState({ moveto: this.props.moveto});
+	componentDidUpdate(prevProps) {
+		if (prevProps.moveto != this.props.moveto) {
+			this.setState({ moveto: this.props.moveto });
 		}
 	}
 	render() {
 		return (
-			<div>
+			<div id="home">
 				<ReactFullpage
-					//fullpage options
 					scrollingSpeed={1000}
 					controlArrows={true}
 					verticalCentered={true}

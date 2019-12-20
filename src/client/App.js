@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Home from './Home.js';
 import Event from './event';
+import CategoryEvent from './CategoryEvent';
 import './main.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 export default class App extends Component {
@@ -9,13 +10,13 @@ export default class App extends Component {
 		this.setState({ moveto: to, checked: false });
 	};
 	handleCheck = () => {
-		this.setState({ moveto: null, checked: !this.state.checked });
+		this.setState({ checked: !this.state.checked });
 	};
 	render() {
 		const { moveto, checked } = this.state;
 		return (
 			<Router>
-				<div className="outer-menu">
+				<div className="outer-menu" id="home">
 					<input
 						checked={checked}
 						onChange={() => {}}
@@ -118,6 +119,10 @@ export default class App extends Component {
 					</div>
 				</div>
 				<Switch>
+
+					<Route path="/events/category">
+						<CategoryEvent/>
+					</Route>
 					<Route path="/events">
 						<Event/>
 					</Route>
