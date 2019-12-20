@@ -119,7 +119,6 @@ export default class App extends Component {
 					</div>
 				</div>
 				<Switch>
-
 					<Route path="/events/category">
 						<CategoryEvent/>
 					</Route>
