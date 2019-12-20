@@ -1,0 +1,31 @@
+.cover {
+	background-image: url('https://wallpaperaccess.com/full/124383.jpg');
+	animation: coverfade 1s ease-out;
+}
+.coverbg {
+	background-color: black;
+}
+.contentoverlay{
+	width: 90%;
+	height: 90%;
+	margin: auto;
+	background-color: rgba(0,0,0,0.8);
+    border-radius: 10px;
+    
+}
+.contentoverlay > p, .contentoverlay, .content > p, #just{
+    /* width: 90%; */
+    /* margin: 5px; */
+    text-align: justify;
+    text-justify: inter-word;
+    color:white;
+    font-family: "Quarto A", "Quarto B", Georgia, Times, "Times New Roman", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", serif;
+}
+@keyframes coverfade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
