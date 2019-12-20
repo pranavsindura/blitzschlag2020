@@ -1,0 +1,18 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.img-responsive {
+    z-index: 10;
+}
+
+.carousel-caption {
+    text-shadow: 1px aliceblue;
+    text-align: center;
+    vertical-align: text-top;
+    font-weight: bolder;
+    font-size: large;
+    z-index: 150;
+    background-color: rgb(11, 11, 11, 0.5);
+}
