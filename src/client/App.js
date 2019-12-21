@@ -4,6 +4,9 @@ import Event from './event';
 import CategoryEvent from './CategoryEvent';
 import './main.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { createHashHistory as createHistory } from 'history'
+
+let history = createHistory();
 export default class App extends Component {
 	state = { moveto: null, checked: false };
 	handleClick = (to) => {
@@ -15,8 +18,28 @@ export default class App extends Component {
 	render() {
 		const { moveto, checked } = this.state;
 		return (
-			<Router>
-				<div className="outer-menu" id="home">
+			<Router history={history}>
+				<div className="backbutton" onClick={() => {history.goBack()}}>
+					<svg
+						version="1.1"
+						id="Capa_1"
+						xmlns="http://www.w3.org/2000/svg"
+						x="0px"
+						y="0px"
+						width="30px"
+						height="30px"
+						viewBox="0 0 306 306"
+						style={{ enableBackground: 'new 0 0 306 306' }}
+					> 
+						<g id="chevron-left">
+							<polygon
+								style={{ stroke: '#D80035', strokeWidth:'10px', fill:'white'}}
+								points="247.35,35.7 211.65,0 58.65,153 211.65,306 247.35,270.3 130.05,153 		"
+							/>
+						</g>
+					</svg>
+				</div>
+				<div className="outer-menu">
 					<input
 						checked={checked}
 						onChange={() => {}}
@@ -120,13 +143,13 @@ export default class App extends Component {
 				</div>
 				<Switch>
 					<Route path="/events/category">
-						<CategoryEvent/>
+						<CategoryEvent />
 					</Route>
 					<Route path="/events">
-						<Event/>
+						<Event />
 					</Route>
 					<Route path="/flagship">
-						<Event/>
+						<Event />
 					</Route>
 					<Route path="/">
 						<Home moveto={moveto} />

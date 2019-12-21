@@ -12,8 +12,8 @@ export default class Event extends Component {
   }
   render() {
     return (
-      <div>
-        <h1>Events</h1>
+      <div style={{backgroundImage:'url("src/shared/img/bg1.png")', backgroundSize:'cover'}}>
+        <h1 style={{color:'#451521'}}>Events</h1>
         <br></br>
         <br></br>
         {this.rendercar()}
