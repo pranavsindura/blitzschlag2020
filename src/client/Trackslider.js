@@ -36,8 +36,6 @@ export default  class TrackSlider extends Component {
         enableHeading={false}
       >
         <div
-        // onClick={() => fn()}
-        // onKeyDown={() => fn()}
         >
           <img
             className="img-responsive"
