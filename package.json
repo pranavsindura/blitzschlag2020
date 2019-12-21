@@ -1,7 +1,7 @@
 {
-  "name": "simple-react-full-stack",
+  "name": "blitzschlag2020",
   "version": "1.0.0",
-  "description": "Boilerplate to build a full stack web application using React, Node.js, Express and Webpack.",
+  "description": "Website for Annual Cultural Fest - Blitzschlag",
   "main": "src/server/index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -10,7 +10,10 @@
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "Sandeep Raveesh",
+  "engines": {
+    "node": "11.9.0"
+  },
+  "author": "Pranav Sindura",
   "license": "ISC",
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.17",
@@ -28,7 +31,7 @@
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.1.2",
     "react-sizeme": "^2.6.10",
-    "react-window-size": "^1.2.2"
+    "react-window-size": "^1.2.2",
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
