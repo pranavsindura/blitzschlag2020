@@ -1,18 +1,63 @@
 body {
-    background-color: #000;
+    background: black;
     color: #fff;
 }
 
-.img-responsive {
-    z-index: 10;
+.img {
+    overflow: hidden;
 }
 
-.carousel-caption {
-    text-shadow: 1px aliceblue;
-    text-align: center;
-    vertical-align: text-top;
-    font-weight: bolder;
-    font-size: large;
-    z-index: 150;
-    background-color: rgb(11, 11, 11, 0.5);
+.eventcar {
+    width: inherit;
+    height: 90vh;
 }
+
+.eventitem {
+    width: inherit;
+    height: 90vh;
+}
+
+img {
+    display: block;
+    height: 100%;
+    width: inherit;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
+/* @media (min-width: 760px) {
+    .eventcar {
+        width: inherit;
+        height: 90vh;
+    }
+    .eventitem {
+        width: inherit;
+        height: 90vh;
+    }
+    img {
+        display: block;
+        height: 100%;
+        width: inherit;
+        overflow: hidden;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:760px) {
+    .eventcar {
+        width: inherit;
+        height: 150vw;
+    }
+    .eventitem {
+        width: inherit;
+        height: 150vw;
+    }
+    img {
+        display: block;
+        height: 100%;
+        width: inherit;
+        overflow: visible;
+        object-fit: cover;
+    }
+} */

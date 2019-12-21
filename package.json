@@ -33,7 +33,8 @@
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.1.2",
     "react-sizeme": "^2.6.10",
-    "react-window-size": "^1.2.2"
+    "react-window-size": "^1.2.2",
+    "reactstrap": "^8.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
