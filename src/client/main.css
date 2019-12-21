@@ -44,6 +44,39 @@ h1 {
 	z-index:1;
 	position:fixed;
 }
+.downbutton {
+	height: 60px;
+	width: 60px;
+	padding: 20px;
+	z-index:1;
+	position:fixed;
+	right:0;
+	bottom:0;
+	transform: rotate(-90deg);
+}
+.b1{
+	bottom: 20px;
+	animation: fadeb1 1s linear alternate infinite;
+}
+.b2{
+	animation: fadeb2 1s linear alternate infinite;
+}
+@keyframes fadeb1{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes fadeb2{
+	0%{
+		opacity:1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
 
 a,
 a:visited,
