@@ -63,6 +63,7 @@ export default class App extends Component {
 								<ul>
 									<li>
 										<Link
+											style={{ textDecoration: 'none', color: 'white' }}
 											to="/"
 											onClick={() => {
 												this.handleClick('home');
@@ -73,6 +74,7 @@ export default class App extends Component {
 									</li>
 									<li>
 										<Link
+											style={{ textDecoration: 'none', color: 'white' }}
 											to="/flagship"
 											onClick={() => {
 												this.handleCheck();
@@ -83,6 +85,7 @@ export default class App extends Component {
 									</li>
 									<li>
 										<Link
+											style={{ textDecoration: 'none', color: 'white' }}
 											to="/events"
 											onClick={() => {
 												this.handleCheck();
@@ -93,6 +96,7 @@ export default class App extends Component {
 									</li>
 									<li>
 										<Link
+											style={{ textDecoration: 'none', color: 'white' }}
 											to="#"
 											onClick={() => {
 												this.handleCheck();
@@ -103,6 +107,7 @@ export default class App extends Component {
 									</li>
 									<li>
 										<Link
+											style={{ textDecoration: 'none', color: 'white' }}
 											to="#"
 											onClick={() => {
 												this.handleCheck();
@@ -113,6 +118,7 @@ export default class App extends Component {
 									</li>
 									<li>
 										<Link
+											style={{ textDecoration: 'none', color: 'white' }}
 											to="#"
 											onClick={() => {
 												this.handleCheck();
@@ -123,6 +129,7 @@ export default class App extends Component {
 									</li>
 									<li>
 										<Link
+											style={{ textDecoration: 'none', color: 'white' }}
 											to="/"
 											onClick={() => {
 												this.handleClick('contactus');
@@ -133,6 +140,7 @@ export default class App extends Component {
 									</li>
 									<li>
 										<Link
+											style={{ textDecoration: 'none', color: 'white' }}
 											to="#"
 											onClick={() => {
 												this.handleCheck();
