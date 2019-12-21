@@ -5,6 +5,7 @@ import CategoryEvent from './CategoryEvent';
 import './main.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { createHashHistory as createHistory } from 'history';
+import FadeIn from 'react-fade-in';
 
 let history = createHistory();
 export default class App extends Component {
@@ -196,16 +197,24 @@ export default class App extends Component {
 				</div>
 				<Switch>
 					<Route path="/events/category">
-						<CategoryEvent />
+						<FadeIn>
+							<CategoryEvent />
+						</FadeIn>
 					</Route>
 					<Route path="/events">
-						<Event />
+						<FadeIn>
+							<Event />
+						</FadeIn>
 					</Route>
 					<Route path="/flagship">
-						<Event />
+						<FadeIn>
+							<Event />
+						</FadeIn>
 					</Route>
 					<Route path="/">
-						<Home moveto={moveto} />
+						<FadeIn>
+							<Home moveto={moveto} />
+						</FadeIn>
 					</Route>
 				</Switch>
 			</Router>

@@ -1,17 +1,5 @@
 .content {
 	background-color: #000;
-	/* color: #451521; */
-}
-.fadein{
-	animation: fade 1s ease-in;
-}
-@keyframes fade {
-	0%{
-		opacity:0;
-	}
-	100%{
-		opcaity:1;
-	}
 }
 @font-face {
 	font-family: 'Open Sans';
