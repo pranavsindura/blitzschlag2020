@@ -43,7 +43,6 @@ module.exports = {
     historyApiFallback: true
   },
   plugins: [
-    new CleanWebpackPlugin([outputDirectory]),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
       favicon: "./public/favicon.ico"

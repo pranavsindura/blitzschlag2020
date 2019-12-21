@@ -4,7 +4,7 @@ import Event from './event';
 import CategoryEvent from './CategoryEvent';
 import './main.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import { createHashHistory as createHistory } from 'history'
+import { createHashHistory as createHistory } from 'history';
 
 let history = createHistory();
 export default class App extends Component {
@@ -19,7 +19,12 @@ export default class App extends Component {
 		const { moveto, checked } = this.state;
 		return (
 			<Router history={history}>
-				<div className="backbutton" onClick={() => {history.goBack()}}>
+				<div
+					className="backbutton"
+					onClick={() => {
+						history.goBack();
+					}}
+				>
 					<svg
 						version="1.1"
 						id="Capa_1"
@@ -30,10 +35,10 @@ export default class App extends Component {
 						height="30px"
 						viewBox="0 0 306 306"
 						style={{ enableBackground: 'new 0 0 306 306' }}
-					> 
+					>
 						<g id="chevron-left">
 							<polygon
-								style={{ stroke: '#D80035', strokeWidth:'10px', fill:'white'}}
+								style={{ stroke: '#D80035', strokeWidth: '10px', fill: 'white' }}
 								points="247.35,35.7 211.65,0 58.65,153 211.65,306 247.35,270.3 130.05,153 		"
 							/>
 						</g>

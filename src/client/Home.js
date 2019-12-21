@@ -29,7 +29,6 @@ export default class Home extends Component {
 						return (
 							<ReactFullpage.Wrapper>
 								<div className="section content fadein" style={{backgroundImage:'url("src/shared/img/bg2.png")', backgroundSize:'cover'}}>
-									{/* <h1>Blitzschlag 2020</h1> */}
 									<svg
 										version="1.1"
 										xmlns="http://www.w3.org/2000/svg"

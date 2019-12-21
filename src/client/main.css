@@ -45,10 +45,7 @@ h1 {
 	position:fixed;
 }
 
-link,
-link:visited,
-link:hover,
-link:active a,
+a,
 a:visited,
 a:hover,
 a:active {
