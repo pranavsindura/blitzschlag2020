@@ -3,7 +3,7 @@ import Coverflow from 'react-coverflow';
 import { StyleRoot } from 'radium';
 import disableScroll from 'disable-scroll';
 import { Link } from 'react-router-dom';
-import './TracksliderMob.css';
+import './Trackslidermob.css';
 
 export default class TrackSliderMob extends Component {
 	state = {};
