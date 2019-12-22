@@ -199,7 +199,8 @@ h1 {
 	color: #fefefe;
 	/* background: rgba(41, 98, 255, 0.97); */
 	/* background: #009688; */
-	background: rgba(2, 2, 2, 0.8);
+	background: rgba(2, 2, 2, 0.9);
+	position: relative;
 	border-radius: 50%;
 	transition: all 0.4s ease;
 	flex: none;
