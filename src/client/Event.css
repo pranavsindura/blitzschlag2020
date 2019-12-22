@@ -9,13 +9,14 @@ body {
 
 .eventcar {
     width: inherit;
-    height: 90vh;
+    height: 100vh;
     z-index: 0;
+    margin-bottom: 0;
 }
 
 .eventitem {
     width: inherit;
-    height: 90vh;
+    height: 100vh;
     z-index: 0;
 }
 
