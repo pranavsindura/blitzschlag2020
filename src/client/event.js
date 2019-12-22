@@ -7,8 +7,29 @@ export default class Event extends Component {
 	render() {
 		return (
 			<div>
-					<h1 style={{position: 'absolute', zIndex:'1', left:'0', right:'0', backgroundColor:"black", padding:'10px'}}>Events</h1>
-				<ControlledCarousel />
+				<ReactFullpage
+					render={({ state, fullpageApi }) => {
+						return (
+							<ReactFullpage.Wrapper>
+								<div className="section">
+									<h1
+										style={{
+											position: 'absolute',
+											zIndex: '2',
+											left: '0',
+											right: '0',
+											backgroundColor: 'black',
+											padding: '10px'
+										}}
+									>
+										Events
+									</h1>
+									<ControlledCarousel />
+								</div>
+							</ReactFullpage.Wrapper>
+						);
+					}}
+				/>
 			</div>
 		);
 	}
