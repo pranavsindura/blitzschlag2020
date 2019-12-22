@@ -405,7 +405,7 @@ export default class CategoryEvent extends React.Component {
 					scrollingSpeed={1000}
 					verticalCentered={true}
 					scrollOverflow={true}
-					touchSensitivity={30}
+					touchSensitivity={20}
 					render={({ state, fullpageApi }) => {
 						if (once)
 							setTimeout(() => {
