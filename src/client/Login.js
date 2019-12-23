@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
+import 'fullpage.js/vendors/scrolloverflow'
 import Splash from './Splash';
 import './Login.css';
 import { Form, Button, Card, Col, Row } from 'react-bootstrap';
@@ -20,7 +21,7 @@ const loginDetailsTemplate = {
 };
 export default class Login extends React.Component {
 	state = {
-		whichForm: true,
+		whichForm: false,
 		registerDetails: registerDetailsTemplate,
 		loginDetails: loginDetailsTemplate
 	};
@@ -252,8 +253,7 @@ export default class Login extends React.Component {
 				<Splash images={this.images} />
 				<ReactFullpage
 					verticalCentered={true}
-					scrollOverflow={true}
-					scrollbar={true}
+                    scrollOverflow={true}
 					render={({ state, fullpageApi }) => {
 						return <ReactFullpage.Wrapper>{whichForm ? loginForm : registerForm}</ReactFullpage.Wrapper>;
 					}}
