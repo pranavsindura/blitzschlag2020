@@ -3,7 +3,7 @@ import { Jumbotron, Button } from 'reactstrap';
 import { USER } from '../shared/usertest.js';
 import './Myaccount.css';
 import ReactFullpage from '@fullpage/react-fullpage';
-<link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet"></link>;
+{/* <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet"></link>; */}
 export default class Myaccount extends Component {
 	constructor(props) {
 		super(props);
