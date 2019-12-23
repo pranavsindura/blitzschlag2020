@@ -1,0 +1,33 @@
+.loader-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    z-index: 100;
+}
+.loader-text{
+    font-size: 20px;
+    position: absolute;
+    bottom:10%;
+    left:50%;
+    transform: translateX(-50%);
+}
+.loader{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation: rot 15s linear infinite;
+}
+
+@keyframes rot{
+    from{
+        filter: hue-rotate(0deg);
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(359deg);
+        transform: translateX(-50%) translateY(-50%) rotate(359deg);
+    }
+
+}
