@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 import { Image, Button, Modal, Row, Col } from 'react-bootstrap';
+import 'fullpage.js/vendors/scrolloverflow';
 import './CategoryEvent.css';
 import Splash from './Splash';
 
@@ -409,7 +410,6 @@ export default class CategoryEvent extends React.Component {
 					scrollingSpeed={1000}
 					verticalCentered={true}
 					scrollOverflow={true}
-					touchSensitivity={20}
 					render={({ state, fullpageApi }) => {
 						if (once) {
 							if(fullpageApi)

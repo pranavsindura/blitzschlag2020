@@ -28,8 +28,10 @@ export default class App extends Component {
 	checkAll = () => {
 		const { imageCount } = this.state;
 		if (imageCount == this.props.images.length) {
-			this.setState({ loaded: true });
-			console.log('Loaded All');
+			setTimeout(() => {
+				this.setState({ loaded: true });
+				console.log('Loaded All');
+			}, 1000);
 		}
 	};
 	componentDidMount() {

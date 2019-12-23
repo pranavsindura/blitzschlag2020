@@ -2,12 +2,6 @@
     background: black;
     min-height: 100vh;
 }
-.myaccountwrapper{
-    /* height:inherit;
-    margin:auto;
-    overflow-y:scroll;
-    overflow-x:hidden; */
-}
 .jumbotron {
     background: url("https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg");
     padding-left: 10vw;
