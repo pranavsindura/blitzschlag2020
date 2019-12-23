@@ -65,13 +65,13 @@ h1 {
 		opacity: 0;
 	}
 }
-a,
+/* a,
 a:visited,
 a:hover,
 a:active {
 	color: white;
 	text-decoration: none;
-}
+} */
 /* ::-webkit-scrollbar {
 	display: none;
 } */
