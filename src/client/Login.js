@@ -192,7 +192,7 @@ export default class Login extends React.Component {
 										onChange={() => {
 											this.handleRegisterChange(event);
 										}}
-										defaultChecked={false}
+										defaultChecked={registerDetails.isMNIT}
 										type="checkbox"
 										id="isMNIT"
 										label="Are you a student of MNIT/IIITK/NIT UK?"
@@ -203,7 +203,7 @@ export default class Login extends React.Component {
 										onChange={() => {
 											this.handleRegisterChange(event);
 										}}
-										defaultChecked={false}
+										defaultChecked={registerDetails.accomodation}
 										type="checkbox"
 										id="accomodation"
 										label="Do you need Accomodation?"
