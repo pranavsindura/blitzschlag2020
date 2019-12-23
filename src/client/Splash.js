@@ -37,9 +37,9 @@ export default class App extends Component {
 		this.loadImage();
 	}
 	render() {
-		// if (this.state.loaded) {
-		// 	return <div></div>;
-		// }
+		if (this.state.loaded) {
+			return <div></div>;
+		}
 		return (
 			<div className="loader-container">
 				<h1 className="loader-text">Blitzschlag 2020</h1>
