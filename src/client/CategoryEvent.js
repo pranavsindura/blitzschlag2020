@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 import { Image, Button, Modal, Row, Col } from 'react-bootstrap';
 import './CategoryEvent.css';
+import Splash from './Splash';
 
 const moreinfo = [
 	'',
@@ -19,6 +20,12 @@ const register = [
 
 export default class CategoryEvent extends React.Component {
 	state = { once: true, hide: window.innerWidth <= 760, modalcontent: '', showmoreinfo: false, showregister: false };
+	images = [
+		'https://wallpaperplay.com/walls/full/4/3/b/138751.jpg',
+		'https://www.pmec.ac.in/images/literary.jpg',
+		'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&w=1000&q=80',
+		'https://wallpaperaccess.com/full/124383.jpg'
+	];
 	componentDidMount() {
 		window.addEventListener('resize', this.resize.bind(this));
 		this.resize();
@@ -26,9 +33,6 @@ export default class CategoryEvent extends React.Component {
 	resize() {
 		const currhide = window.innerWidth <= 760;
 		this.setState({ hide: currhide });
-	}
-	componentDidUpdate() {
-		console.log(this.state);
 	}
 	handleMoreInfo = (ind) => {
 		this.setState({ modalcontent: moreinfo[ind], showmoreinfo: !this.state.showmoreinfo });
@@ -241,7 +245,7 @@ export default class CategoryEvent extends React.Component {
 					<div>
 						<div className="coverbg section">
 							<div className="section content cover">
-								<h1>Literary Events</h1>
+								<h1 style={{position:'absolute', left:'50%', transform:'translateX(-50%)'}}>Literary Events</h1>
 							</div>
 						</div>
 						<div className="section">
@@ -401,6 +405,7 @@ export default class CategoryEvent extends React.Component {
 		const { once, hide } = this.state;
 		return (
 			<div>
+				<Splash images={this.images}/>
 				<ReactFullpage
 					scrollingSpeed={1000}
 					verticalCentered={true}

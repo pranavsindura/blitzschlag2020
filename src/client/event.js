@@ -2,10 +2,21 @@ import React, { Component } from 'react';
 import './Event.css';
 import ControlledCarousel from './EventCar.js';
 import ReactFullpage from '@fullpage/react-fullpage';
-import { Row, Col } from 'react-bootstrap';
+import Splash from './Splash';
 export default class Event extends Component {
+	images = [
+		'src/shared/img/lit.png',
+		'src/shared/img/dra.png',
+		'src/shared/img/fin.png',
+		'src/shared/img/cul.png',
+		'src/shared/img/gam.png',
+		'src/shared/img/mus.png',
+		'src/shared/img/pho.png',
+	];
 	render() {
 		return (
+			<div>
+				<Splash images={this.images}/>
 				<ReactFullpage
 					render={({ state, fullpageApi }) => {
 						return (
@@ -37,6 +48,7 @@ export default class Event extends Component {
 						);
 					}}
 				/>
+				</div>
 		);
 	}
 }

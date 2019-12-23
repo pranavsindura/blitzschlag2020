@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import { Jumbotron, Button } from 'reactstrap';
 import { USER } from '../shared/usertest.js';
 import './Myaccount.css';
+import Splash from './Splash';
 import ReactFullpage from '@fullpage/react-fullpage';
-{/* <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet"></link>; */}
 export default class Myaccount extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			user: USER
-		};
+    };
+    this.images = ['src/shared/img/user.png'];
 	}
 	renderDetails(user) {
 		return (
@@ -106,6 +107,8 @@ export default class Myaccount extends Component {
 	}
 	render() {
 		return (
+      <div>
+      <Splash images={this.images}/>
 			<ReactFullpage
 				scrollOverflow={true}
 				render={({ state, fullpageApi }) => {
@@ -135,6 +138,7 @@ export default class Myaccount extends Component {
 					);
 				}}
 			/>
+      </div>
 		);
 	}
 }

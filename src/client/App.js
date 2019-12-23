@@ -10,7 +10,7 @@ import FadeIn from 'react-fade-in';
 
 let history = createHistory();
 export default class App extends Component {
-	state = { moveto: null, checked: false };
+	state = { moveto: null, checked: false};
 	handleClick = (to) => {
 		this.setState({ moveto: to, checked: false });
 	};
@@ -78,17 +78,6 @@ export default class App extends Component {
 									<li>
 										<Link
 											style={{ textDecoration: 'none', color: 'white' }}
-											to="/flagship"
-											onClick={() => {
-												this.handleCheck();
-											}}
-										>
-											Flagship Events
-										</Link>
-									</li>
-									<li>
-										<Link
-											style={{ textDecoration: 'none', color: 'white' }}
 											to="/events"
 											onClick={() => {
 												this.handleCheck();
@@ -100,12 +89,23 @@ export default class App extends Component {
 									<li>
 										<Link
 											style={{ textDecoration: 'none', color: 'white' }}
+											to="/myaccount"
+											onClick={() => {
+												this.handleCheck();
+											}}
+										>
+											Login | My Account | Register
+										</Link>
+									</li>
+									<li>
+										<Link
+											style={{ textDecoration: 'none', color: 'white' }}
 											to="#"
 											onClick={() => {
 												this.handleCheck();
 											}}
 										>
-											Schedule
+											Get Tickets
 										</Link>
 									</li>
 									<li>
@@ -164,11 +164,6 @@ export default class App extends Component {
 						</FadeIn>
 					</Route>
 					<Route path="/events">
-						<FadeIn>
-							<Event />
-						</FadeIn>
-					</Route>
-					<Route path="/flagship">
 						<FadeIn>
 							<Event />
 						</FadeIn>

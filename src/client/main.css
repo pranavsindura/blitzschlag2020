@@ -79,6 +79,9 @@ h1 {
 	font-size: 3em;
 	text-align: center;
 }
+::-webkit-scrollbar {
+	display: none;
+  }
 .outer-menu {
 	position: fixed;
 	top: 0;

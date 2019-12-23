@@ -2,14 +2,18 @@ import React, { Component } from 'react';
 import './main.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 import 'bootstrap/dist/css/bootstrap.min.css';
-let options = {
-	method: 'GET',
-	mode: 'cors',
-	cache: 'default'
-};
-const proxyurl = 'https://cors-anywhere.herokuapp.com/';
+import Splash from './Splash';
 export default class Home extends Component {
-	state = { moveto: null };
+	state = { moveto: null};
+	images = [
+		'src/shared/img/bg2.png',
+		'src/shared/img/bg1.png',
+		'http://makingnotesinthedark.files.wordpress.com/2014/02/babloo-happy-hai-2014-hd-movie-wallpapers.jpg',
+		'https://storage.googleapis.com/ehimages/2018/3/26/img_35da01d961375fb6b4cc12b956776db0_1522053167583_processed_original.jpg',
+		'https://ecisveep.nic.in/uploads/monthly_2018_11/large.1385334822_nukkad5.jpg.10a022ad8eac5284ac2e10484f9020a8.jpg',
+		'https://images.unsplash.com/photo-1549046675-dd779977de88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
+		'http://www.safetynational.com/wp-content/uploads/2018/10/IMG_1963-scaled.jpg'
+	];
 	componentDidMount() {
 		this.setState({ moveto: this.props.moveto });
 	}
@@ -21,6 +25,7 @@ export default class Home extends Component {
 	render() {
 		return (
 			<div>
+				<Splash images={this.images}/>
 				<ReactFullpage
 					scrollingSpeed={1000}
 					controlArrows={true}
@@ -1484,7 +1489,7 @@ export default class Home extends Component {
 										className="slide content"
 										style={{
 											backgroundImage:
-												'url("http://makingnotesinthedark.files.wordpress.com/2014/02/babloo-happy-hai-2014-hd-movie-wallpapers.jpg")',
+												'url("https://makingnotesinthedark.files.wordpress.com/2014/02/babloo-happy-hai-2014-hd-movie-wallpapers.jpg")',
 											backgroundSize: 'cover'
 										}}
 									></div>
@@ -1502,7 +1507,7 @@ export default class Home extends Component {
 										className="slide content"
 										style={{
 											backgroundImage:
-												'url("http://ecisveep.nic.in/uploads/monthly_2018_11/large.1385334822_nukkad5.jpg.10a022ad8eac5284ac2e10484f9020a8.jpg")',
+												'url("https://ecisveep.nic.in/uploads/monthly_2018_11/large.1385334822_nukkad5.jpg.10a022ad8eac5284ac2e10484f9020a8.jpg")',
 											backgroundSize: 'cover'
 										}}
 									></div>
