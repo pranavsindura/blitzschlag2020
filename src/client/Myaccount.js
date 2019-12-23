@@ -4,6 +4,8 @@ import { USER } from '../shared/usertest.js';
 import './Myaccount.css';
 import Splash from './Splash';
 import ReactFullpage from '@fullpage/react-fullpage';
+import 'fullpage.js/vendors/scrolloverflow'
+
 export default class Myaccount extends Component {
 	constructor(props) {
 		super(props);

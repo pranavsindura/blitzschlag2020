@@ -234,6 +234,14 @@ a:active {
 	font-size: 1.8rem;
 	display: block;
 }
+@media screen and (max-width: 900px) {
+	.outer-menu .menu > div > div > ul > li {
+		padding: 0;
+		margin: 1em;
+		font-size: 1.5rem;
+		display: block;
+	}
+}
 .outer-menu .menu > div > div > ul > li > a {
 	position: relative;
 	display: inline;
