@@ -3,7 +3,7 @@ import Home from './Home.js';
 import Event from './event';
 import CategoryEvent from './CategoryEvent';
 import Myaccount from './Myaccount.js'
-import './main.css';
+import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { createHashHistory as createHistory } from 'history';
 import FadeIn from 'react-fade-in';

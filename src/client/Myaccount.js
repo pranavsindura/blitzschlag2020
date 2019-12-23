@@ -44,7 +44,7 @@ export default class Myaccount extends Component {
 				<div>
 					Accomodation needed: {acc}
 					<br></br>
-					Transzction ID: {trans}
+					Transaction ID: {trans}
 				</div>
 			);
 		} else return <div></div>;

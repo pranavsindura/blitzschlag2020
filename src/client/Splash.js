@@ -14,7 +14,7 @@ export default class App extends Component {
 	state = { loaded: false, imageCount: 0 };
 	loadImage = () => {
 		for (let i = 0; i < this.props.images.length; i++) {
-			fetch(propxyurl+this.props.images[i], options)
+			fetch(proxyurl+this.props.images[i], options)
 				.then((res) => {
 					console.log('Loaded ' + i);
 					this.setState({ imageCount: this.state.imageCount + 1 });

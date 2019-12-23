@@ -1,5 +1,4 @@
-body {
-    background: black;
+h1 {
     color: #fff;
 }
 
@@ -11,7 +10,6 @@ body {
     width: inherit;
     height: 90vh;
     z-index: 0;
-    /* margin-bottom: 0; */
 }
 
 .eventitem {

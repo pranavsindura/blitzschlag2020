@@ -14,10 +14,7 @@
 .green {
     background: white;
     z-index: 2;
-}
-
-h1 {
-    text-align: left !important;
+    color:black;
 }
 
 .right {
@@ -58,6 +55,7 @@ img {
 .words {
     font-family: 'Open Sans';
     font-weight: lighter;
+    color:white;
 }
 
 .eve {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './main.css';
+import './Home.css';
 import ReactFullpage from '@fullpage/react-fullpage';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import Splash from './Splash';
 export default class Home extends Component {
 	state = { moveto: null};

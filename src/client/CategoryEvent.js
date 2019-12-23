@@ -245,30 +245,31 @@ export default class CategoryEvent extends React.Component {
 					<div>
 						<div className="coverbg section">
 							<div className="section content cover">
-								<h1 style={{position:'absolute', left:'50%', transform:'translateX(-50%)'}}>Literary Events</h1>
+								<h1>
+									Literary Events
+								</h1>
 							</div>
 						</div>
 						<div className="section">
 							<div className="section content" style={{ float: 'left', width: '50%' }}>
-									<h1>Read & Write</h1>
-									<p id="just">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna aliqua. Amet aliquam id diam maecenas
-										ultricies mi. Porta non pulvinar neque laoreet. Est ullamcorper eget nulla
-										facilisi etiam dignissim. Faucibus a pellentesque sit amet porttitor eget dolor
-										morbi non. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras. Netus
-										et malesuada fames ac turpis egestas. Hendrerit gravida rutrum quisque non
-										tellus orci ac. Porta nibh venenatis cras sed felis eget velit aliquet sagittis.
-										Risus viverra adipiscing at in tellus integer feugiat. Euismod lacinia at quis
-										risus sed vulputate. Magna etiam tempor orci eu. Lorem dolor sed viverra ipsum
-										nunc aliquet bibendum enim. At tempor commodo ullamcorper a lacus vestibulum sed
-										arcu non. Tincidunt nunc pulvinar sapien et. Massa tincidunt dui ut ornare
-										lectus sit amet est placerat. Arcu ac tortor dignissim convallis aenean et
-										tortor at risus. Sed elementum tempus egestas sed sed risus pretium quam. Tellus
-										integer feugiat scelerisque varius morbi enim nunc faucibus a. Suspendisse sed
-										nisi lacus sed. Pellentesque habitant morbi tristique senectus et netus et. Amet
-										facilisis magna etiam tempor orci eu lobortis.
-									</p>
+								<h1>Read & Write</h1>
+								<p id="just">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua. Amet aliquam id diam maecenas ultricies
+									mi. Porta non pulvinar neque laoreet. Est ullamcorper eget nulla facilisi etiam
+									dignissim. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Cras
+									pulvinar mattis nunc sed blandit libero volutpat sed cras. Netus et malesuada fames
+									ac turpis egestas. Hendrerit gravida rutrum quisque non tellus orci ac. Porta nibh
+									venenatis cras sed felis eget velit aliquet sagittis. Risus viverra adipiscing at in
+									tellus integer feugiat. Euismod lacinia at quis risus sed vulputate. Magna etiam
+									tempor orci eu. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim. At tempor
+									commodo ullamcorper a lacus vestibulum sed arcu non. Tincidunt nunc pulvinar sapien
+									et. Massa tincidunt dui ut ornare lectus sit amet est placerat. Arcu ac tortor
+									dignissim convallis aenean et tortor at risus. Sed elementum tempus egestas sed sed
+									risus pretium quam. Tellus integer feugiat scelerisque varius morbi enim nunc
+									faucibus a. Suspendisse sed nisi lacus sed. Pellentesque habitant morbi tristique
+									senectus et netus et. Amet facilisis magna etiam tempor orci eu lobortis.
+								</p>
 								<Row>
 									<Col style={{ textAlign: 'center' }}>
 										<Button
@@ -304,25 +305,24 @@ export default class CategoryEvent extends React.Component {
 								/>
 							</div>
 							<div className="section content" style={{ float: 'right', width: '50%' }}>
-									<h1>I/O Operations</h1>
-									<p id="just">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna aliqua. Amet aliquam id diam maecenas
-										ultricies mi. Porta non pulvinar neque laoreet. Est ullamcorper eget nulla
-										facilisi etiam dignissim. Faucibus a pellentesque sit amet porttitor eget dolor
-										morbi non. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras. Netus
-										et malesuada fames ac turpis egestas. Hendrerit gravida rutrum quisque non
-										tellus orci ac. Porta nibh venenatis cras sed felis eget velit aliquet sagittis.
-										Risus viverra adipiscing at in tellus integer feugiat. Euismod lacinia at quis
-										risus sed vulputate. Magna etiam tempor orci eu. Lorem dolor sed viverra ipsum
-										nunc aliquet bibendum enim. At tempor commodo ullamcorper a lacus vestibulum sed
-										arcu non. Tincidunt nunc pulvinar sapien et. Massa tincidunt dui ut ornare
-										lectus sit amet est placerat. Arcu ac tortor dignissim convallis aenean et
-										tortor at risus. Sed elementum tempus egestas sed sed risus pretium quam. Tellus
-										integer feugiat scelerisque varius morbi enim nunc faucibus a. Suspendisse sed
-										nisi lacus sed. Pellentesque habitant morbi tristique senectus et netus et. Amet
-										facilisis magna etiam tempor orci eu lobortis.
-									</p>
+								<h1>I/O Operations</h1>
+								<p id="just">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua. Amet aliquam id diam maecenas ultricies
+									mi. Porta non pulvinar neque laoreet. Est ullamcorper eget nulla facilisi etiam
+									dignissim. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Cras
+									pulvinar mattis nunc sed blandit libero volutpat sed cras. Netus et malesuada fames
+									ac turpis egestas. Hendrerit gravida rutrum quisque non tellus orci ac. Porta nibh
+									venenatis cras sed felis eget velit aliquet sagittis. Risus viverra adipiscing at in
+									tellus integer feugiat. Euismod lacinia at quis risus sed vulputate. Magna etiam
+									tempor orci eu. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim. At tempor
+									commodo ullamcorper a lacus vestibulum sed arcu non. Tincidunt nunc pulvinar sapien
+									et. Massa tincidunt dui ut ornare lectus sit amet est placerat. Arcu ac tortor
+									dignissim convallis aenean et tortor at risus. Sed elementum tempus egestas sed sed
+									risus pretium quam. Tellus integer feugiat scelerisque varius morbi enim nunc
+									faucibus a. Suspendisse sed nisi lacus sed. Pellentesque habitant morbi tristique
+									senectus et netus et. Amet facilisis magna etiam tempor orci eu lobortis.
+								</p>
 								<Row>
 									<Col style={{ textAlign: 'center' }}>
 										<Button
@@ -355,25 +355,24 @@ export default class CategoryEvent extends React.Component {
 								/>
 							</div>
 							<div className="section content" style={{ float: 'left', width: '50%' }}>
-									<h1>Movie Dialogues</h1>
-									<p id="just">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna aliqua. Amet aliquam id diam maecenas
-										ultricies mi. Porta non pulvinar neque laoreet. Est ullamcorper eget nulla
-										facilisi etiam dignissim. Faucibus a pellentesque sit amet porttitor eget dolor
-										morbi non. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras. Netus
-										et malesuada fames ac turpis egestas. Hendrerit gravida rutrum quisque non
-										tellus orci ac. Porta nibh venenatis cras sed felis eget velit aliquet sagittis.
-										Risus viverra adipiscing at in tellus integer feugiat. Euismod lacinia at quis
-										risus sed vulputate. Magna etiam tempor orci eu. Lorem dolor sed viverra ipsum
-										nunc aliquet bibendum enim. At tempor commodo ullamcorper a lacus vestibulum sed
-										arcu non. Tincidunt nunc pulvinar sapien et. Massa tincidunt dui ut ornare
-										lectus sit amet est placerat. Arcu ac tortor dignissim convallis aenean et
-										tortor at risus. Sed elementum tempus egestas sed sed risus pretium quam. Tellus
-										integer feugiat scelerisque varius morbi enim nunc faucibus a. Suspendisse sed
-										nisi lacus sed. Pellentesque habitant morbi tristique senectus et netus et. Amet
-										facilisis magna etiam tempor orci eu lobortis.
-									</p>
+								<h1>Movie Dialogues</h1>
+								<p id="just">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua. Amet aliquam id diam maecenas ultricies
+									mi. Porta non pulvinar neque laoreet. Est ullamcorper eget nulla facilisi etiam
+									dignissim. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Cras
+									pulvinar mattis nunc sed blandit libero volutpat sed cras. Netus et malesuada fames
+									ac turpis egestas. Hendrerit gravida rutrum quisque non tellus orci ac. Porta nibh
+									venenatis cras sed felis eget velit aliquet sagittis. Risus viverra adipiscing at in
+									tellus integer feugiat. Euismod lacinia at quis risus sed vulputate. Magna etiam
+									tempor orci eu. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim. At tempor
+									commodo ullamcorper a lacus vestibulum sed arcu non. Tincidunt nunc pulvinar sapien
+									et. Massa tincidunt dui ut ornare lectus sit amet est placerat. Arcu ac tortor
+									dignissim convallis aenean et tortor at risus. Sed elementum tempus egestas sed sed
+									risus pretium quam. Tellus integer feugiat scelerisque varius morbi enim nunc
+									faucibus a. Suspendisse sed nisi lacus sed. Pellentesque habitant morbi tristique
+									senectus et netus et. Amet facilisis magna etiam tempor orci eu lobortis.
+								</p>
 								<Row>
 									<Col style={{ textAlign: 'center' }}>
 										<Button
@@ -405,18 +404,18 @@ export default class CategoryEvent extends React.Component {
 		const { once, hide } = this.state;
 		return (
 			<div>
-				<Splash images={this.images}/>
+				<Splash images={this.images} />
 				<ReactFullpage
 					scrollingSpeed={1000}
 					verticalCentered={true}
 					scrollOverflow={true}
 					touchSensitivity={20}
 					render={({ state, fullpageApi }) => {
-						if (once)
-							setTimeout(() => {
-								fullpageApi.moveSectionDown();
-								this.setState({ once: false });
-							}, 1500);
+						if (once) {
+							if(fullpageApi)
+							fullpageApi.moveSectionDown();
+							this.setState({ once: false });
+						}
 						return <div>{hide ? contentMobile : contentPC}</div>;
 					}}
 				/>

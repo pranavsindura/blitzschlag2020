@@ -12,18 +12,21 @@ export const USER = {
     transactionID: null,
     events: [
       {
+        id: 1,
         name: "Read and Write",
         teamName: null,
         teamId: "RnW-001",
         teamSize: 1
       },
       {
+        id: 2,
         name: "I/O Operation",
         teamName: "Temp",
         teamId: "IOO-001" ,
         teamSize: 4
       },
       {
+        id:3,
         name: "Story of my Words",
         teamName: null,
         teamId: "STMY-001",
