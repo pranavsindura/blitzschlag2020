@@ -72,9 +72,9 @@ a:active {
 	color: white;
 	text-decoration: none;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	display: none;
-}
+} */
 .outer-menu {
 	position: fixed;
 	top: 0;
