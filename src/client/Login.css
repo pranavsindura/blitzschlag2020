@@ -2,6 +2,11 @@
     background-image: url('https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg');
     background-size: cover;
 }
+.formwrapper{
+    height:98%;
+    margin:auto;
+    overflow:scroll;
+}
 .card{
     width:40%;
     left:30%;

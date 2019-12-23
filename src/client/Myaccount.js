@@ -118,24 +118,30 @@ export default class Myaccount extends Component {
 						return (
 							<ReactFullpage.Wrapper>
 								<div className="section cont">
-									<Jumbotron>
-										<h1>My Account</h1>
-										<div className="boxi green">{this.renderEventsPC(this.state.user.events)}</div>
-									</Jumbotron>
-									<div className="pro row ">
-										<div className="col-md-2 profile">
-											<img src="src/shared/img/user.png"></img>
+									<div className="myaccountwrapper">
+										<Jumbotron>
+											<h1>My Account</h1>
+											<div className="boxi green">
+												{this.renderEventsPC(this.state.user.events)}
+											</div>
+										</Jumbotron>
+										<div className="pro row ">
+											<div className="col-md-2 profile">
+												<img src="src/shared/img/user.png"></img>
+											</div>
+											<div className="col-md-9 name">
+												<h2 className="words">
+													{this.state.user.firstName} {this.state.user.lastName}
+												</h2>
+												<p className="words">{this.state.user.college}</p>
+											</div>
 										</div>
-										<div className="col-md-9 name">
-											<h2 className="words">
-												{this.state.user.firstName} {this.state.user.lastName}
-											</h2>
-											<p className="words">{this.state.user.college}</p>
+										<br></br>
+										<div className="inf row">{this.renderDetails(this.state.user)}</div>
+										<div className="evemob col-12">
+											{this.renderEventsMOB(this.state.user.events)}
 										</div>
 									</div>
-									<br></br>
-									<div className="inf row">{this.renderDetails(this.state.user)}</div>
-									<div className="evemob col-12">{this.renderEventsMOB(this.state.user.events)}</div>
 								</div>
 							</ReactFullpage.Wrapper>
 						);
