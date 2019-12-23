@@ -110,7 +110,7 @@ export default class Myaccount extends Component {
     return (
       <div className="cont">
         <Jumbotron>
-          <h1>My Account</h1>
+          <h1 className="account">My Account</h1>
           <div className="boxi green">
             {this.renderEventsPC(this.state.user.events)}
           </div>
