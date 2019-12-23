@@ -7,6 +7,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { createHashHistory as createHistory } from 'history';
 import FadeIn from 'react-fade-in';
+import Login from './Login';
 
 let history = createHistory();
 export default class App extends Component {
@@ -89,12 +90,23 @@ export default class App extends Component {
 									<li>
 										<Link
 											style={{ textDecoration: 'none', color: 'white' }}
+											to="/login"
+											onClick={() => {
+												this.handleCheck();
+											}}
+										>
+											Login | Register
+										</Link>
+									</li>
+									<li>
+										<Link
+											style={{ textDecoration: 'none', color: 'white' }}
 											to="/myaccount"
 											onClick={() => {
 												this.handleCheck();
 											}}
 										>
-											Login | My Account | Register
+											My Account
 										</Link>
 									</li>
 									<li>
@@ -171,6 +183,11 @@ export default class App extends Component {
 					<Route path="/myaccount">
 						<FadeIn>
 							<Myaccount />
+						</FadeIn>
+					</Route>
+					<Route path="/login">
+						<FadeIn>
+							<Login />
 						</FadeIn>
 					</Route>
 					<Route path="/">
