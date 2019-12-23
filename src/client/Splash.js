@@ -9,12 +9,12 @@ let options = {
 	cache: 'default',
 	headers: myHeaders
 };
-const proxyurl = 'https://cors-anywhere.herokuapp.com/';
+const proxyurl = 'https://images.weserv.nl/?url=';
 export default class App extends Component {
 	state = { loaded: false, imageCount: 0 };
 	loadImage = () => {
 		for (let i = 0; i < this.props.images.length; i++) {
-			fetch(this.props.images[i], options)
+			fetch(propxyurl+this.props.images[i], options)
 				.then((res) => {
 					console.log('Loaded ' + i);
 					this.setState({ imageCount: this.state.imageCount + 1 });
