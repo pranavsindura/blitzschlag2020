@@ -22,15 +22,41 @@ const loginDetailsTemplate = {
 export default class Login extends React.Component {
 	state = {
 		whichForm: false,
-		registerDetails: registerDetailsTemplate,
-		loginDetails: loginDetailsTemplate
+		registerDetails: {
+            firstName: '',
+            lastName: '',
+            email: '',
+            mob: '',
+            college: '',
+            collegeID: '',
+            blitzPIN: '',
+            isMNIT: false,
+            accomodation: false
+        },
+		loginDetails: {
+            blitzID: '',
+            blitzPIN: ''
+        }
 	};
 	images = ['https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg'];
 	changeForm = () => {
 		this.setState({
 			whichForm: !this.state.whichForm,
-			registerDetails: registerDetailsTemplate,
-			loginDetails: loginDetailsTemplate
+			registerDetails: {
+                firstName: '',
+                lastName: '',
+                email: '',
+                mob: '',
+                college: '',
+                collegeID: '',
+                blitzPIN: '',
+                isMNIT: false,
+                accomodation: false
+            },
+			loginDetails: {
+                blitzID: '',
+                blitzPIN: ''
+            }
 		});
     };
     componentDidMount() {
@@ -46,7 +72,17 @@ export default class Login extends React.Component {
 		const { registerDetails } = this.state;
 		console.log(registerDetails);
 		this.setState({
-			registerDetails: registerDetailsTemplate
+			registerDetails: {
+                firstName: '',
+                lastName: '',
+                email: '',
+                mob: '',
+                college: '',
+                collegeID: '',
+                blitzPIN: '',
+                isMNIT: false,
+                accomodation: false
+            }
 		});
 	};
 	handleLoginChange = (e) => {
@@ -59,7 +95,10 @@ export default class Login extends React.Component {
 		const { loginDetails } = this.state;
 		console.log(loginDetails);
 		this.setState({
-			loginDetails: loginDetailsTemplate
+			loginDetails: {
+                blitzID: '',
+                blitzPIN: ''
+            }
 		});
 	};
 	render() {
