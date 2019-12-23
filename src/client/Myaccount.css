@@ -9,6 +9,16 @@
     min-height: 30vh;
     opacity: 0.9;
     z-index: 1;
+    animation: hue 10s linear infinite;
+}
+
+@keyframes hue{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(359deg);
+    }
 }
 
 .green {
