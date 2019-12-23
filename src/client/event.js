@@ -6,20 +6,27 @@ import { Row, Col } from 'react-bootstrap';
 export default class Event extends Component {
 	render() {
 		return (
-			<div>
 				<ReactFullpage
 					render={({ state, fullpageApi }) => {
 						return (
 							<ReactFullpage.Wrapper>
 								<div className="section">
+									<h1 style={{
+										position: 'absolute',
+										zIndex:'2',
+										backgroundColor:'black',
+										color:"black",
+										width: '100%',
+										margin:'0',
+										padding: '10px',
+									}}>.</h1>
 									<h1
 										style={{
 											position: 'absolute',
-											zIndex: '2',
-											left: '0',
-											right: '0',
-											backgroundColor: 'black',
-											padding: '10px'
+											zIndex: '3',
+											left: '50%',
+											transform: 'translateX(-50%)',
+											padding: '10px',
 										}}
 									>
 										Events
@@ -30,7 +37,6 @@ export default class Event extends Component {
 						);
 					}}
 				/>
-			</div>
 		);
 	}
 }
