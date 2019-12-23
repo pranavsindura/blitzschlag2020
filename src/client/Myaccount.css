@@ -1,0 +1,103 @@
+.cont {
+    background: black;
+    min-height: 100vh;
+}
+
+.jumbotron {
+    background: url("https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg");
+    padding-left: 10vw;
+    min-height: 30vh;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.green {
+    background: white;
+    z-index: 2;
+}
+
+h1 {
+    text-align: left !important;
+}
+
+.right {
+    text-align: right;
+}
+
+.boxi {
+    min-width: 25vw;
+    /* width: 100px; */
+    min-height: 80vh;
+    opacity: 0.9;
+    top: 30px;
+    left: 30px;
+    float: right;
+}
+
+.pro {
+    background-color: black;
+    padding-left: 10vw;
+}
+
+.inf {
+    padding-left: 10vw;
+}
+
+.profile {
+    background-color: white;
+}
+
+.name {
+    vertical-align: text-bottom;
+}
+
+img {
+    border: 1px solid white;
+}
+
+.words {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: lighter;
+}
+
+.eve {
+    color: black;
+    padding: 2vw;
+}
+
+.evemob {
+    background-color: white;
+    color: black;
+    opacity: 0.9;
+    margin: 2vw;
+}
+
+.evedet {
+    font-weight: lighter;
+}
+
+@media(max-width:760px) {
+    .jumbotron {
+        min-height: 20vh;
+        z-index: 3;
+    }
+    h1 {
+        text-align: center !important;
+    }
+    .boxi {
+        min-width: 0vw;
+        min-height: 0vh;
+        opacity: 0.9;
+        top: 30px;
+        left: 30px;
+        float: right;
+    }
+    .green {
+        background: white;
+        z-index: 1;
+    }
+    .pro {
+        background-color: black;
+        padding: 8vw;
+    }
+}
