@@ -32,7 +32,10 @@ export default class Login extends React.Component {
 			registerDetails: registerDetailsTemplate,
 			loginDetails: loginDetailsTemplate
 		});
-	};
+    };
+    componentDidMount() {
+        this.setState({whichForm: true});
+    }
 	handleRegisterChange = (e) => {
 		let newDetails = this.state.registerDetails;
 		const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
