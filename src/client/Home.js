@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Home.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import { Carousel } from 'react-bootstrap';
 import Splash from './Splash';
 export default class Home extends Component {
 	state = { moveto: null };
@@ -25,7 +26,7 @@ export default class Home extends Component {
 	render() {
 		return (
 			<div>
-				<Splash images={this.images}/>
+				<Splash images={this.images} />
 				<ReactFullpage
 					scrollingSpeed={1000}
 					controlArrows={true}
@@ -34,7 +35,7 @@ export default class Home extends Component {
 					render={({ state, fullpageApi }) => {
 						if (this.state.moveto) {
 							fullpage_api.moveTo(this.state.moveto);
-							this.setState({moveto: null});
+							this.setState({ moveto: null });
 						}
 						return (
 							<ReactFullpage.Wrapper>
@@ -1486,48 +1487,38 @@ export default class Home extends Component {
 									<h1 style={{ color: '#451521' }}>About Us</h1>
 								</div>
 								<div className="section content">
-									<div
-										className="slide content"
-										style={{
-											backgroundImage:
-												'url("https://makingnotesinthedark.files.wordpress.com/2014/02/babloo-happy-hai-2014-hd-movie-wallpapers.jpg")',
-											backgroundSize: 'cover'
-										}}
-									></div>
-									<div
-										className="slide content"
-										style={{
-											backgroundImage:
-												'url("https://storage.googleapis.com/ehimages/2018/3/26/img_35da01d961375fb6b4cc12b956776db0_1522053167583_processed_original.jpg")',
-											backgroundSize: 'cover'
-										}}
-									>
-										<h1></h1>
-									</div>
-									<div
-										className="slide content"
-										style={{
-											backgroundImage:
-												'url("https://ecisveep.nic.in/uploads/monthly_2018_11/large.1385334822_nukkad5.jpg.10a022ad8eac5284ac2e10484f9020a8.jpg")',
-											backgroundSize: 'cover'
-										}}
-									></div>
-									<div
-										className="slide content"
-										style={{
-											backgroundImage:
-												'url("https://images.unsplash.com/photo-1549046675-dd779977de88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80")',
-											backgroundSize: 'cover'
-										}}
-									></div>
-									<div
-										className="slide content"
-										style={{
-											backgroundImage:
-												'url("https://www.safetynational.com/wp-content/uploads/2018/10/IMG_1963-scaled.jpg")',
-											backgroundSize: 'cover'
-										}}
-									></div>
+									<Carousel className="car" indicators={false} interval="4000">
+										<Carousel.Item className="caritem">
+											<img
+												className="img"
+												src="https://makingnotesinthedark.files.wordpress.com/2014/02/babloo-happy-hai-2014-hd-movie-wallpapers.jpg"
+											/>
+										</Carousel.Item>
+										<Carousel.Item className="caritem">
+											<img
+												className="img"
+												src="https://storage.googleapis.com/ehimages/2018/3/26/img_35da01d961375fb6b4cc12b956776db0_1522053167583_processed_original.jpg"
+											/>
+										</Carousel.Item>
+										<Carousel.Item className="caritem">
+											<img
+												className="img"
+												src="https://ecisveep.nic.in/uploads/monthly_2018_11/large.1385334822_nukkad5.jpg.10a022ad8eac5284ac2e10484f9020a8.jpg"
+											/>
+										</Carousel.Item>
+										<Carousel.Item className="caritem">
+											<img
+												className="img"
+												src="https://images.unsplash.com/photo-1549046675-dd779977de88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+											/>
+										</Carousel.Item>
+										<Carousel.Item className="caritem">
+											<img
+												className="img"
+												src="https://www.safetynational.com/wp-content/uploads/2018/10/IMG_1963-scaled.jpg"
+											/>
+										</Carousel.Item>
+									</Carousel>
 								</div>
 								<div
 									className="section content"
