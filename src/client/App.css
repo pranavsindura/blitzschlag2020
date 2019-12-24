@@ -1,5 +1,20 @@
-body {
+html {
 	background-color: black;
+	overflow: hidden;
+	width: 100%;
+}
+
+body {
+	height: 100%;
+	/* position: fixed; */
+	background-color: black;
+	/* prevent overscroll bounce*/
+	/* background-color: lightgreen; */
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	/* iOS velocity scrolling */
+	/* width: 50%; */
+	/* margin-left: 25%; */
 }
 h1 {
 	font-family: 'Pacifico', cursive;
