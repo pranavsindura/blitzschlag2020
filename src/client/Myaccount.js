@@ -4,7 +4,6 @@ import { USER } from '../shared/usertest.js';
 import './Myaccount.css';
 import Splash from './Splash';
 import ReactFullpage from '@fullpage/react-fullpage';
-import 'fullpage.js/vendors/scrolloverflow'
 
 export default class Myaccount extends Component {
 	constructor(props) {
@@ -115,11 +114,11 @@ export default class Myaccount extends Component {
 			<div>
 				<Splash images={this.images} />
 				<ReactFullpage
-					scrollOverflow={true}
+					responsiveHeight="800"
 					render={({ state, fullpageApi }) => {
 						return (
 							<ReactFullpage.Wrapper>
-								<div className="section cont">
+								<div className="section cont fp-auto-height-responsive">
 									<div className="myaccountwrapper">
 										<Jumbotron>
 											<h1>My Account</h1>

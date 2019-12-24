@@ -1,6 +1,9 @@
 .cont {
     background: black;
     min-height: 100vh;
+    transform: scale(0.9);
+    position: absolute;
+    left:-1%;
 }
 .jumbotron {
     background: url("https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg");
@@ -32,7 +35,7 @@
 
 .boxi {
     min-width: 25vw;
-    /* width: 100px; */
+    width: 100px;
     min-height: 80vh;
     opacity: 0.9;
     top: 30px;
