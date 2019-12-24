@@ -24,6 +24,7 @@ const loginDetailsTemplate = {
 class Login extends React.Component {
 	state = {
 		whichForm: true,
+		registerFormPart: true,
 		registerDetails: {
 			firstName: '',
 			lastName: '',
@@ -44,6 +45,7 @@ class Login extends React.Component {
 	changeForm = () => {
 		this.setState({
 			whichForm: !this.state.whichForm,
+			registerFormPart: true,
 			registerDetails: {
 				firstName: '',
 				lastName: '',
@@ -63,14 +65,11 @@ class Login extends React.Component {
 	};
 	handleRegisterChange = (e) => {
 		let newDetails = this.state.registerDetails;
-		// const value = e.target.type === 'radio' ? e.target.checked : e.target.value;
 		let value = e.target.value;
 		if (e.target.type === 'radio') {
 			if (value === 'true') value = true;
 			else value = false;
 		}
-		// console.log(e.target.id + ': ' + value);
-		// console.log(typeof value);
 		newDetails[e.target.id] = value;
 		this.setState({ registerDetails: newDetails });
 	};
@@ -78,6 +77,7 @@ class Login extends React.Component {
 		const { registerDetails } = this.state;
 		console.log(registerDetails);
 		this.setState({
+			registerFormPart: true,
 			registerDetails: {
 				firstName: '',
 				lastName: '',
@@ -93,8 +93,7 @@ class Login extends React.Component {
 	};
 	handleLoginChange = (e) => {
 		let newDetails = this.state.loginDetails;
-		const value = e.target.type === 'checkbox' ? (e.target.checked === 'true' ? true : false) : e.target.value;
-		newDetails[e.target.id] = value;
+		newDetails[e.target.id] = e.target.value;
 		this.setState({ loginDetails: newDetails });
 	};
 	handleLoginSubmit = () => {
@@ -108,13 +107,19 @@ class Login extends React.Component {
 		});
 		this.props.LOGIN({ blitzID: loginDetails.blitzID });
 	};
+	handleRegisterFormNext = () => {
+		this.setState({ registerFormPart: false });
+	};
+	handleRegisterFormPrev = () => {
+		this.setState({ registerFormPart: true });
+	};
 	render() {
 		if (this.props.loggedIn) {
 			return <Redirect to="/myaccount" />;
 		}
 		const { registerDetails, loginDetails } = this.state;
-		const registerForm = (
-			<div className="section coverlogin fp-auto-height-responsive">
+		const registerFormPart1 = (
+			<div className="section coverlogin">
 				<div className="formwrapper">
 					<h1 className="heading">Register</h1>
 					<Card>
@@ -186,6 +191,38 @@ class Login extends React.Component {
 										placeholder="College ID"
 									/>
 								</Form.Group>
+								<Row>
+									<Col>
+										<Button
+											onClick={() => {
+												this.handleRegisterFormNext();
+											}}
+											variant="primary"
+										>
+											Next >>
+										</Button>
+									</Col>
+								</Row>
+								<Row>
+									<Col>
+										<a className="changeform" href="#" onClick={() => this.changeForm()}>
+											Already have an account?
+										</a>
+									</Col>
+								</Row>
+							</Form>
+						</Card.Body>
+					</Card>
+				</div>
+			</div>
+		);
+		const registerFormPart2 = (
+			<div className="section coverlogin">
+				<div className="formwrapper">
+					<h1 className="heading">Register</h1>
+					<Card>
+						<Card.Body>
+							<Form>
 								<Form.Group>
 									<Form.Control
 										value={registerDetails.blitzPIN}
@@ -202,7 +239,6 @@ class Login extends React.Component {
 										<Form.Label>Are you a student of MNIT/IIITK/NIT UK?</Form.Label>
 										<Form.Check
 											onChange={() => {
-												// console.log('yes');
 												this.handleRegisterChange(event);
 											}}
 											checked={registerDetails.isMNIT}
@@ -253,6 +289,16 @@ class Login extends React.Component {
 									<Col>
 										<Button
 											onClick={() => {
+												this.handleRegisterFormPrev();
+											}}
+											variant="primary"
+										>
+											{'<< Back'}
+										</Button>
+									</Col>
+									<Col>
+										<Button
+											onClick={() => {
 												this.handleRegisterSubmit();
 											}}
 											variant="success"
@@ -275,7 +321,7 @@ class Login extends React.Component {
 			</div>
 		);
 		const loginForm = (
-			<div className="section coverlogin fp-auto-height-responsive">
+			<div className="section coverlogin">
 				<div className="formwrapper">
 					<h1 className="heading">Login</h1>
 					<Card>
@@ -329,15 +375,18 @@ class Login extends React.Component {
 				</div>
 			</div>
 		);
-		const { whichForm } = this.state;
+		const { whichForm, registerFormPart } = this.state;
 		return (
 			<div className="scrollit">
 				<Splash images={this.images} />
 				<ReactFullpage
-					responsiveHeight="800"
 					verticalCentered={true}
 					render={({ state, fullpageApi }) => {
-						return <ReactFullpage.Wrapper>{whichForm ? loginForm : registerForm}</ReactFullpage.Wrapper>;
+						return (
+							<ReactFullpage.Wrapper>
+								{whichForm ? loginForm : (registerFormPart ? registerFormPart1 : registerFormPart2)}
+							</ReactFullpage.Wrapper>
+						);
 					}}
 				/>
 			</div>
