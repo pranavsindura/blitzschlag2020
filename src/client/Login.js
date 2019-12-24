@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
-import 'fullpage.js/vendors/scrolloverflow'
+import 'fullpage.js/vendors/scrolloverflow';
 import Splash from './Splash';
 import './Login.css';
 import { Form, Button, Card, Col, Row } from 'react-bootstrap';
+import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 const registerDetailsTemplate = {
 	firstName: '',
 	lastName: '',
@@ -19,49 +21,53 @@ const loginDetailsTemplate = {
 	blitzID: '',
 	blitzPIN: ''
 };
-export default class Login extends React.Component {
+class Login extends React.Component {
 	state = {
 		whichForm: false,
 		registerDetails: {
-            firstName: '',
-            lastName: '',
-            email: '',
-            mob: '',
-            college: '',
-            collegeID: '',
-            blitzPIN: '',
-            isMNIT: false,
-            accomodation: false
-        },
+			firstName: '',
+			lastName: '',
+			email: '',
+			mob: '',
+			college: '',
+			collegeID: '',
+			blitzPIN: '',
+			isMNIT: false,
+			accomodation: false
+		},
 		loginDetails: {
-            blitzID: '',
-            blitzPIN: ''
-        }
+			blitzID: '',
+			blitzPIN: ''
+		}
 	};
 	images = ['https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg'];
 	changeForm = () => {
 		this.setState({
 			whichForm: !this.state.whichForm,
 			registerDetails: {
-                firstName: '',
-                lastName: '',
-                email: '',
-                mob: '',
-                college: '',
-                collegeID: '',
-                blitzPIN: '',
-                isMNIT: false,
-                accomodation: false
-            },
+				firstName: '',
+				lastName: '',
+				email: '',
+				mob: '',
+				college: '',
+				collegeID: '',
+				blitzPIN: '',
+				isMNIT: false,
+				accomodation: false
+			},
 			loginDetails: {
-                blitzID: '',
-                blitzPIN: ''
-            }
+				blitzID: '',
+				blitzPIN: ''
+			}
 		});
-    };
-    componentDidMount() {
-        this.setState({whichForm: true});
-    }
+	};
+	componentDidMount() {
+		this.changeForm();
+	}
+	componentDidUpdate()
+	{
+		console.log(this.state.registerDetails);
+	}
 	handleRegisterChange = (e) => {
 		let newDetails = this.state.registerDetails;
 		const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
@@ -73,16 +79,16 @@ export default class Login extends React.Component {
 		console.log(registerDetails);
 		this.setState({
 			registerDetails: {
-                firstName: '',
-                lastName: '',
-                email: '',
-                mob: '',
-                college: '',
-                collegeID: '',
-                blitzPIN: '',
-                isMNIT: false,
-                accomodation: false
-            }
+				firstName: '',
+				lastName: '',
+				email: '',
+				mob: '',
+				college: '',
+				collegeID: '',
+				blitzPIN: '',
+				isMNIT: false,
+				accomodation: false
+			}
 		});
 	};
 	handleLoginChange = (e) => {
@@ -96,12 +102,16 @@ export default class Login extends React.Component {
 		console.log(loginDetails);
 		this.setState({
 			loginDetails: {
-                blitzID: '',
-                blitzPIN: ''
-            }
+				blitzID: '',
+				blitzPIN: ''
+			}
 		});
+		this.props.LOGIN({ blitzID: loginDetails.blitzID });
 	};
 	render() {
+		if (this.props.loggedIn) {
+			return <Redirect to="/myaccount" />;
+		}
 		const { registerDetails, loginDetails } = this.state;
 		const registerForm = (
 			<div className="section coverlogin">
@@ -192,7 +202,7 @@ export default class Login extends React.Component {
 										onChange={() => {
 											this.handleRegisterChange(event);
 										}}
-										defaultChecked={registerDetails.isMNIT}
+										value={registerDetails.isMNIT}
 										type="checkbox"
 										id="isMNIT"
 										label="Are you a student of MNIT/IIITK/NIT UK?"
@@ -203,7 +213,7 @@ export default class Login extends React.Component {
 										onChange={() => {
 											this.handleRegisterChange(event);
 										}}
-										defaultChecked={registerDetails.accomodation}
+										value={registerDetails.accomodation}
 										type="checkbox"
 										id="accomodation"
 										label="Do you need Accomodation?"
@@ -295,7 +305,7 @@ export default class Login extends React.Component {
 				<Splash images={this.images} />
 				<ReactFullpage
 					verticalCentered={true}
-                    scrollOverflow={true}
+					scrollOverflow={true}
 					render={({ state, fullpageApi }) => {
 						return <ReactFullpage.Wrapper>{whichForm ? loginForm : registerForm}</ReactFullpage.Wrapper>;
 					}}
@@ -304,3 +314,20 @@ export default class Login extends React.Component {
 		);
 	}
 }
+
+const mapStateToProps = (state) => {
+	return {
+		loggedIn: state.loggedIn,
+		user: state.user
+	};
+};
+
+const mapDispatchToProps = (dispatch) => {
+	return {
+		LOGIN: (user) => {
+			dispatch({ type: 'LOGIN', payload: { user: user } });
+		}
+	};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login);

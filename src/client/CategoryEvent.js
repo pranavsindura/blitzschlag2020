@@ -2,6 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 import { Image, Button, Modal, Row, Col } from 'react-bootstrap';
+import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 import 'fullpage.js/vendors/scrolloverflow';
 import './CategoryEvent.css';
 import Splash from './Splash';
@@ -19,7 +21,7 @@ const register = [
 	'6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet aliquam id diam maecenas ultricies mi. Porta non pulvinar neque laoreet. Est ullamcorper eget nulla facilisi etiam dignissim. Faucibus a pellentesque sit amet porttitor eget dolor morbi non.'
 ];
 
-export default class CategoryEvent extends React.Component {
+class CategoryEvent extends React.Component {
 	state = { once: true, hide: window.innerWidth <= 760, modalcontent: '', showmoreinfo: false, showregister: false };
 	images = [
 		'https://wallpaperplay.com/walls/full/4/3/b/138751.jpg',
@@ -39,7 +41,11 @@ export default class CategoryEvent extends React.Component {
 		this.setState({ modalcontent: moreinfo[ind], showmoreinfo: !this.state.showmoreinfo });
 	};
 	handleRegister = (ind) => {
-		this.setState({ modalcontent: register[ind], showregister: !this.state.showregister });
+		if (!this.props.loggedIn) {
+			this.setState({ modalcontent: <Redirect to="/login" />, showregister: !this.state.showregister });
+		} else {
+			this.setState({ modalcontent: register[ind], showregister: !this.state.showregister });
+		}
 	};
 	render() {
 		const contentMobile = (
@@ -246,9 +252,7 @@ export default class CategoryEvent extends React.Component {
 					<div>
 						<div className="coverbg section">
 							<div className="section content cover">
-								<h1>
-									Literary Events
-								</h1>
+								<h1>Literary Events</h1>
 							</div>
 						</div>
 						<div className="section">
@@ -412,8 +416,7 @@ export default class CategoryEvent extends React.Component {
 					scrollOverflow={true}
 					render={({ state, fullpageApi }) => {
 						if (once) {
-							if(fullpageApi)
-							fullpageApi.moveSectionDown();
+							if (fullpageApi) fullpageApi.moveSectionDown();
 							this.setState({ once: false });
 						}
 						return <div>{hide ? contentMobile : contentPC}</div>;
@@ -423,3 +426,15 @@ export default class CategoryEvent extends React.Component {
 		);
 	}
 }
+
+const mapStateToProps = (state) => {
+	return {
+		loggedIn: state.loggedIn
+	};
+};
+
+const mapDispatchToProps = (dispatch) => {
+	return {};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(CategoryEvent);
