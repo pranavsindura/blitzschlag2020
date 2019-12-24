@@ -86,7 +86,7 @@ class CategoryEvent extends React.Component {
 				</Modal>
 				<ReactFullpage.Wrapper>
 					<div className="coverbg section">
-						<div className="section content cover">
+						<div className="section contentce cover">
 							<h1>Literary Events</h1>
 						</div>
 					</div>
@@ -251,12 +251,12 @@ class CategoryEvent extends React.Component {
 				<ReactFullpage.Wrapper>
 					<div>
 						<div className="coverbg section">
-							<div className="section content cover">
+							<div className="section contentce cover">
 								<h1>Literary Events</h1>
 							</div>
 						</div>
 						<div className="section">
-							<div className="section content" style={{ float: 'left', width: '50%' }}>
+							<div className="section contentce" style={{ float: 'left', width: '50%' }}>
 								<h1>Read & Write</h1>
 								<p id="just">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -298,18 +298,18 @@ class CategoryEvent extends React.Component {
 									</Col>
 								</Row>
 							</div>
-							<div className="section content" style={{ float: 'right', width: '50%' }}>
+							<div className="section contentce" style={{ float: 'right', width: '50%' }}>
 								<Image style={{ height: '100%' }} src="https://www.pmec.ac.in/images/literary.jpg" />
 							</div>
 						</div>
 						<div className="section">
-							<div className="section content" style={{ float: 'left', width: '50%' }}>
+							<div className="section contentce" style={{ float: 'left', width: '50%' }}>
 								<Image
 									style={{ height: '100%' }}
 									src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&w=1000&q=80"
 								/>
 							</div>
-							<div className="section content" style={{ float: 'right', width: '50%' }}>
+							<div className="section contentce" style={{ float: 'right', width: '50%' }}>
 								<h1>I/O Operations</h1>
 								<p id="just">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -353,13 +353,13 @@ class CategoryEvent extends React.Component {
 							</div>
 						</div>
 						<div className="section">
-							<div className="section content" style={{ float: 'right', width: '50%' }}>
+							<div className="section contentce" style={{ float: 'right', width: '50%' }}>
 								<Image
 									style={{ height: '100%' }}
 									src="https://wallpaperplay.com/walls/full/4/3/b/138751.jpg"
 								/>
 							</div>
-							<div className="section content" style={{ float: 'left', width: '50%' }}>
+							<div className="section contentce" style={{ float: 'left', width: '50%' }}>
 								<h1>Movie Dialogues</h1>
 								<p id="just">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -416,7 +416,8 @@ class CategoryEvent extends React.Component {
 					scrollOverflow={true}
 					render={({ state, fullpageApi }) => {
 						if (once) {
-							if (fullpageApi) fullpageApi.moveSectionDown();
+							if(fullpageApi)
+								fullpageApi.moveSectionDown();
 							this.setState({ once: false });
 						}
 						return <div>{hide ? contentMobile : contentPC}</div>;
