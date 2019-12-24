@@ -61,9 +61,6 @@ class Login extends React.Component {
 			}
 		});
 	};
-	componentWillUnmount() {
-		window.scrollBy(0,-5000);
-	}
 	handleRegisterChange = (e) => {
 		let newDetails = this.state.registerDetails;
 		// const value = e.target.type === 'radio' ? e.target.checked : e.target.value;
