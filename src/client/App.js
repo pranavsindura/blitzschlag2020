@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import Home from './Home.js';
 import Event from './event';
 import CategoryEvent from './CategoryEvent';
-import Myaccount from './Myaccount.js';
+import Myaccount from './Myaccount.js'
+import Team from './Team.js';
+import Sponsors from './Sponsors.js'
+import Hospitality from './Hospitality.js'
+import GetTickets from './GetTickets.js'
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { createHashHistory as createHistory } from 'history';
@@ -117,7 +121,7 @@ class App extends Component {
 									<li>
 										<Link
 											style={{ textDecoration: 'none', color: 'white' }}
-											to="#"
+											to="/gettickets"
 											onClick={() => {
 												this.handleCheck();
 											}}
@@ -128,7 +132,7 @@ class App extends Component {
 									<li>
 										<Link
 											style={{ textDecoration: 'none', color: 'white' }}
-											to="#"
+											to="/hospitality"
 											onClick={() => {
 												this.handleCheck();
 											}}
@@ -139,7 +143,7 @@ class App extends Component {
 									<li>
 										<Link
 											style={{ textDecoration: 'none', color: 'white' }}
-											to="#"
+											to="/sponsors"
 											onClick={() => {
 												this.handleCheck();
 											}}
@@ -161,7 +165,7 @@ class App extends Component {
 									<li>
 										<Link
 											style={{ textDecoration: 'none', color: 'white' }}
-											to="#"
+											to="/team"
 											onClick={() => {
 												this.handleCheck();
 											}}
@@ -193,6 +197,26 @@ class App extends Component {
 					<Route path="/login">
 						<FadeIn>
 							<Login />
+						</FadeIn>
+					</Route>
+					<Route path="/team">
+						<FadeIn>
+							<Team />
+						</FadeIn>
+					</Route>
+					<Route path="/sponsors">
+						<FadeIn>
+							<Sponsors />
+						</FadeIn>
+					</Route>
+					<Route path="/hospitality">
+						<FadeIn>
+							<Hospitality />
+						</FadeIn>
+					</Route>
+					<Route path="/gettickets">
+						<FadeIn>
+							<GetTickets />
 						</FadeIn>
 					</Route>
 					<Route path="/">
