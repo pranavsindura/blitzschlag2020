@@ -31,7 +31,7 @@ export default class Home extends Component {
 					controlArrows={true}
 					verticalCentered={true}
 					autoScrolling={false}
-          			fitToSectionDelay={500}
+          			fitToSectionDelay={700}
 					anchors={['home', 'aboutus', 'highlight', 'contactus']}
 					render={({ state, fullpageApi }) => {
 						if (this.state.moveto) {
