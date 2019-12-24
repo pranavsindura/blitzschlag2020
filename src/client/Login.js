@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
-import 'fullpage.js/vendors/scrolloverflow';
+// import 'fullpage.js/vendors/scrolloverflow';
 import Splash from './Splash';
 import './Login.css';
 import { Form, Button, Card, Col, Row } from 'react-bootstrap';
@@ -23,7 +23,7 @@ const loginDetailsTemplate = {
 };
 class Login extends React.Component {
 	state = {
-		whichForm: false,
+		whichForm: true,
 		registerDetails: {
 			firstName: '',
 			lastName: '',
@@ -62,15 +62,21 @@ class Login extends React.Component {
 		});
 	};
 	componentDidMount() {
-		this.changeForm();
+		// this.changeForm();
 	}
-	componentDidUpdate()
-	{
-		console.log(this.state.registerDetails);
+	componentDidUpdate() {
+		// console.log(this.state.registerDetails);
 	}
 	handleRegisterChange = (e) => {
 		let newDetails = this.state.registerDetails;
-		const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
+		// const value = e.target.type === 'radio' ? e.target.checked : e.target.value;
+		let value = e.target.value;
+		if (e.target.type === 'radio') {
+			if (value === 'true') value = true;
+			else value = false;
+		}
+		// console.log(e.target.id + ': ' + value);
+		// console.log(typeof value);
 		newDetails[e.target.id] = value;
 		this.setState({ registerDetails: newDetails });
 	};
@@ -93,7 +99,7 @@ class Login extends React.Component {
 	};
 	handleLoginChange = (e) => {
 		let newDetails = this.state.loginDetails;
-		const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
+		const value = e.target.type === 'checkbox' ? (e.target.checked === 'true' ? true : false) : e.target.value;
 		newDetails[e.target.id] = value;
 		this.setState({ loginDetails: newDetails });
 	};
@@ -114,7 +120,7 @@ class Login extends React.Component {
 		}
 		const { registerDetails, loginDetails } = this.state;
 		const registerForm = (
-			<div className="section coverlogin">
+			<div className="section coverlogin fp-auto-height-responsive">
 				<div className="formwrapper">
 					<h1 className="heading">Register</h1>
 					<Card>
@@ -197,30 +203,58 @@ class Login extends React.Component {
 										placeholder="4 digit PIN"
 									/>
 								</Form.Group>
-								<Form.Group>
-									<Form.Check
-										onChange={() => {
-											this.handleRegisterChange(event);
-										}}
-										value={registerDetails.isMNIT}
-										checked={registerDetails.isMNIT}
-										type="checkbox"
-										id="isMNIT"
-										label="Are you a student of MNIT/IIITK/NIT UK?"
-									/>
-								</Form.Group>
-								<Form.Group>
-									<Form.Check
-										onChange={() => {
-											this.handleRegisterChange(event);
-										}}
-										value={registerDetails.accomodation}
-										checked={registerDetails.accomodation}
-										type="checkbox"
-										id="accomodation"
-										label="Do you need Accomodation?"
-									/>
-								</Form.Group>
+								<fieldset>
+									<Form.Group>
+										<Form.Label>Are you a student of MNIT/IIITK/NIT UK?</Form.Label>
+										<Form.Check
+											onChange={() => {
+												// console.log('yes');
+												this.handleRegisterChange(event);
+											}}
+											checked={registerDetails.isMNIT}
+											value={true}
+											type="radio"
+											id="isMNIT"
+											label="Yes"
+										/>
+										<Form.Check
+											onChange={() => {
+												console.log('no');
+												this.handleRegisterChange(event);
+											}}
+											checked={!registerDetails.isMNIT}
+											value={false}
+											type="radio"
+											id="isMNIT"
+											label="No"
+										/>
+									</Form.Group>
+								</fieldset>
+								<fieldset>
+									<Form.Group>
+										<Form.Label>Do you need Accomodation?</Form.Label>
+										<Form.Check
+											onChange={() => {
+												this.handleRegisterChange(event);
+											}}
+											checked={registerDetails.accomodation}
+											value={true}
+											type="radio"
+											id="accomodation"
+											label="Yes"
+										/>
+										<Form.Check
+											onChange={() => {
+												this.handleRegisterChange(event);
+											}}
+											checked={!registerDetails.accomodation}
+											value={false}
+											type="radio"
+											id="accomodation"
+											label="No"
+										/>
+									</Form.Group>
+								</fieldset>
 								<Row>
 									<Col>
 										<Button
@@ -247,7 +281,7 @@ class Login extends React.Component {
 			</div>
 		);
 		const loginForm = (
-			<div className="section coverlogin">
+			<div className="section coverlogin fp-auto-height-responsive">
 				<div className="formwrapper">
 					<h1 className="heading">Login</h1>
 					<Card>
@@ -303,11 +337,11 @@ class Login extends React.Component {
 		);
 		const { whichForm } = this.state;
 		return (
-			<div>
+			<div className="scrollit">
 				<Splash images={this.images} />
 				<ReactFullpage
+					responsiveHeight="800"
 					verticalCentered={true}
-					scrollOverflow={true}
 					render={({ state, fullpageApi }) => {
 						return <ReactFullpage.Wrapper>{whichForm ? loginForm : registerForm}</ReactFullpage.Wrapper>;
 					}}
