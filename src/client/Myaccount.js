@@ -127,10 +127,10 @@ class Myaccount extends Component {
 										<h1>My Account</h1>
 										<div className="boxi green">{this.renderEventsPC(this.state.user.events)}</div>
 									</Jumbotron>
-									<div className="pro row ">
-										<div className="col-md-2 profile">
+									<div className="pro row">
+										{/* <div className="col-md-2 profile">
 											<img src="src/shared/img/user.png"></img>
-										</div>
+										</div> */}
 										<div className="col-md-9 name">
 											<h2 className="words">
 												{this.state.user.firstName} {this.state.user.lastName}
