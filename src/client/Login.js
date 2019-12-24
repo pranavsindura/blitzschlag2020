@@ -64,6 +64,10 @@ class Login extends React.Component {
 	componentDidMount() {
 		this.changeForm();
 	}
+	componentDidUpdate()
+	{
+		console.log(this.state.registerDetails);
+	}
 	handleRegisterChange = (e) => {
 		let newDetails = this.state.registerDetails;
 		const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
@@ -198,7 +202,7 @@ class Login extends React.Component {
 										onChange={() => {
 											this.handleRegisterChange(event);
 										}}
-										defaultChecked={registerDetails.isMNIT}
+										value={registerDetails.isMNIT}
 										type="checkbox"
 										id="isMNIT"
 										label="Are you a student of MNIT/IIITK/NIT UK?"
@@ -209,7 +213,7 @@ class Login extends React.Component {
 										onChange={() => {
 											this.handleRegisterChange(event);
 										}}
-										defaultChecked={registerDetails.accomodation}
+										value={registerDetails.accomodation}
 										type="checkbox"
 										id="accomodation"
 										label="Do you need Accomodation?"
