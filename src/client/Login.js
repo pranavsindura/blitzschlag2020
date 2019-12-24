@@ -125,28 +125,34 @@ class Login extends React.Component {
 					<Card>
 						<Card.Body>
 							<Form>
-								<Form.Group>
-									<Form.Control
-										onChange={() => {
-											this.handleRegisterChange(event);
-										}}
-										value={registerDetails.firstName}
-										id="firstName"
-										type="text"
-										placeholder="First Name"
-									/>
-								</Form.Group>
-								<Form.Group>
-									<Form.Control
-										onChange={() => {
-											this.handleRegisterChange(event);
-										}}
-										value={registerDetails.lastName}
-										id="lastName"
-										type="text"
-										placeholder="Last Name"
-									/>
-								</Form.Group>
+								<Form.Row>
+									<Col>
+										<Form.Group>
+											<Form.Control
+												onChange={() => {
+													this.handleRegisterChange(event);
+												}}
+												value={registerDetails.firstName}
+												id="firstName"
+												type="text"
+												placeholder="First Name"
+											/>
+										</Form.Group>
+									</Col>
+									<Col>
+										<Form.Group>
+											<Form.Control
+												onChange={() => {
+													this.handleRegisterChange(event);
+												}}
+												value={registerDetails.lastName}
+												id="lastName"
+												type="text"
+												placeholder="Last Name"
+											/>
+										</Form.Group>
+									</Col>
+								</Form.Row>
 								<Form.Group>
 									<Form.Control
 										onChange={() => {
@@ -237,52 +243,64 @@ class Login extends React.Component {
 								<fieldset>
 									<Form.Group>
 										<Form.Label>Are you a student of MNIT/IIITK/NIT UK?</Form.Label>
-										<Form.Check
-											onChange={() => {
-												this.handleRegisterChange(event);
-											}}
-											checked={registerDetails.isMNIT}
-											value={true}
-											type="radio"
-											id="isMNIT"
-											label="Yes"
-										/>
-										<Form.Check
-											onChange={() => {
-												console.log('no');
-												this.handleRegisterChange(event);
-											}}
-											checked={!registerDetails.isMNIT}
-											value={false}
-											type="radio"
-											id="isMNIT"
-											label="No"
-										/>
+										<Form.Row>
+											<Col style={{ textAlign: 'left' }}>
+												<Form.Check
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													checked={registerDetails.isMNIT}
+													value={true}
+													type="radio"
+													id="isMNIT"
+													label="Yes"
+												/>
+											</Col>
+											<Col style={{ textAlign: 'left' }}>
+												<Form.Check
+													onChange={() => {
+														console.log('no');
+														this.handleRegisterChange(event);
+													}}
+													checked={!registerDetails.isMNIT}
+													value={false}
+													type="radio"
+													id="isMNIT"
+													label="No"
+												/>
+											</Col>
+										</Form.Row>
 									</Form.Group>
 								</fieldset>
 								<fieldset>
 									<Form.Group>
 										<Form.Label>Do you need Accomodation?</Form.Label>
-										<Form.Check
-											onChange={() => {
-												this.handleRegisterChange(event);
-											}}
-											checked={registerDetails.accomodation}
-											value={true}
-											type="radio"
-											id="accomodation"
-											label="Yes"
-										/>
-										<Form.Check
-											onChange={() => {
-												this.handleRegisterChange(event);
-											}}
-											checked={!registerDetails.accomodation}
-											value={false}
-											type="radio"
-											id="accomodation"
-											label="No"
-										/>
+										<Form.Row>
+											<Col style={{ textAlign: 'left' }}>
+												<Form.Check
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													checked={registerDetails.accomodation}
+													value={true}
+													type="radio"
+													id="accomodation"
+													label="Yes"
+												/>
+											</Col>
+											<Col style={{ textAlign: 'left' }}>
+												<Form.Check
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													checked={!registerDetails.accomodation}
+													value={false}
+													type="radio"
+													id="accomodation"
+													label="No"
+												/>
+											</Col>
+										</Form.Row>
 									</Form.Group>
 								</fieldset>
 								<Row>
@@ -380,11 +398,11 @@ class Login extends React.Component {
 			<div className="scrollit">
 				<Splash images={this.images} />
 				<ReactFullpage
-					verticalCentered={true}
+					verticalCentered={false}
 					render={({ state, fullpageApi }) => {
 						return (
 							<ReactFullpage.Wrapper>
-								{whichForm ? loginForm : (registerFormPart ? registerFormPart1 : registerFormPart2)}
+								{whichForm ? loginForm : registerFormPart ? registerFormPart1 : registerFormPart2}
 							</ReactFullpage.Wrapper>
 						);
 					}}
