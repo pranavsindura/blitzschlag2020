@@ -4,8 +4,9 @@ import { USER } from '../shared/usertest.js';
 import './Myaccount.css';
 import Splash from './Splash';
 import ReactFullpage from '@fullpage/react-fullpage';
-
-export default class Myaccount extends Component {
+import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
+class Myaccount extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -110,39 +111,36 @@ export default class Myaccount extends Component {
 		}
 	}
 	render() {
+		if (!this.props.loggedIn) {
+			return <Redirect to="/login" />;
+		}
 		return (
 			<div>
 				<Splash images={this.images} />
 				<ReactFullpage
-					responsiveHeight="800"
+					scrollOverflow={true}
 					render={({ state, fullpageApi }) => {
 						return (
 							<ReactFullpage.Wrapper>
-								<div className="section cont fp-auto-height-responsive">
-									<div className="myaccountwrapper">
-										<Jumbotron>
-											<h1>My Account</h1>
-											<div className="boxi green">
-												{this.renderEventsPC(this.state.user.events)}
-											</div>
-										</Jumbotron>
-										<div className="pro row ">
-											<div className="col-md-2 profile">
-												<img src="src/shared/img/user.png"></img>
-											</div>
-											<div className="col-md-9 name">
-												<h2 className="words">
-													{this.state.user.firstName} {this.state.user.lastName}
-												</h2>
-												<p className="words">{this.state.user.college}</p>
-											</div>
+								<div className="section cont">
+									<Jumbotron>
+										<h1>My Account</h1>
+										<div className="boxi green">{this.renderEventsPC(this.state.user.events)}</div>
+									</Jumbotron>
+									<div className="pro row ">
+										<div className="col-md-2 profile">
+											<img src="src/shared/img/user.png"></img>
 										</div>
-										<br></br>
-										<div className="inf row">{this.renderDetails(this.state.user)}</div>
-										<div className="evemob col-12">
-											{this.renderEventsMOB(this.state.user.events)}
+										<div className="col-md-9 name">
+											<h2 className="words">
+												{this.state.user.firstName} {this.state.user.lastName}
+											</h2>
+											<p className="words">{this.state.user.college}</p>
 										</div>
 									</div>
+									<br></br>
+									<div className="inf row">{this.renderDetails(this.state.user)}</div>
+									<div className="evemob col-12">{this.renderEventsMOB(this.state.user.events)}</div>
 								</div>
 							</ReactFullpage.Wrapper>
 						);
@@ -152,3 +150,15 @@ export default class Myaccount extends Component {
 		);
 	}
 }
+
+const mapStateToProps = (state) => {
+	return {
+		loggedIn: state.loggedIn
+	};
+};
+
+const mapDispatchToProps = (dispatch) => {
+	return {};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Myaccount);
