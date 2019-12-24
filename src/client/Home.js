@@ -28,6 +28,7 @@ export default class Home extends Component {
 				<Splash images={this.images}/>
 				<ReactFullpage
 					scrollingSpeed={1000}
+					responsiveHeight="800"
 					controlArrows={true}
 					verticalCentered={true}
 					anchors={['home', 'aboutus', 'highlight', 'contactus']}
@@ -38,7 +39,7 @@ export default class Home extends Component {
 						return (
 							<ReactFullpage.Wrapper>
 								<div
-									className="section content"
+									className="section content fp-auto-height-responsive"
 									style={{
 										backgroundImage: 'url("src/shared/img/bg2.png")',
 										backgroundSize: 'cover'
