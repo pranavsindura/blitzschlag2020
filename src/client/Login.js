@@ -203,6 +203,7 @@ class Login extends React.Component {
 											this.handleRegisterChange(event);
 										}}
 										value={registerDetails.isMNIT}
+										checked={registerDetails.isMNIT}
 										type="checkbox"
 										id="isMNIT"
 										label="Are you a student of MNIT/IIITK/NIT UK?"
@@ -214,6 +215,7 @@ class Login extends React.Component {
 											this.handleRegisterChange(event);
 										}}
 										value={registerDetails.accomodation}
+										checked={registerDetails.accomodation}
 										type="checkbox"
 										id="accomodation"
 										label="Do you need Accomodation?"
