@@ -61,11 +61,8 @@ class Login extends React.Component {
 			}
 		});
 	};
-	componentDidMount() {
-		// this.changeForm();
-	}
-	componentDidUpdate() {
-		// console.log(this.state.registerDetails);
+	componentWillUnmount() {
+		window.scrollBy(0,-5000);
 	}
 	handleRegisterChange = (e) => {
 		let newDetails = this.state.registerDetails;
