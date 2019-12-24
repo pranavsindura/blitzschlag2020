@@ -4,7 +4,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import Splash from './Splash';
 export default class Home extends Component {
-	state = { moveto: null};
+	state = { moveto: null, innerHeight: window.innerHeight};
 	images = [
 		'src/shared/img/bg2.png',
 		'src/shared/img/bg1.png',
@@ -16,11 +16,17 @@ export default class Home extends Component {
 	];
 	componentDidMount() {
 		this.setState({ moveto: this.props.moveto });
+		window.addEventListener('resize', this.resize.bind(this));
+		this.resize();
 	}
 	componentDidUpdate(prevProps) {
 		if (prevProps.moveto != this.props.moveto) {
 			this.setState({ moveto: this.props.moveto });
 		}
+	}
+	resize() {
+		const h = window.innerHeight;
+		this.setState({ innerHeight: h });
 	}
 	render() {
 		return (
@@ -28,7 +34,6 @@ export default class Home extends Component {
 				<Splash images={this.images}/>
 				<ReactFullpage
 					scrollingSpeed={1000}
-					responsiveHeight="800"
 					controlArrows={true}
 					verticalCentered={true}
 					anchors={['home', 'aboutus', 'highlight', 'contactus']}
@@ -39,12 +44,13 @@ export default class Home extends Component {
 						return (
 							<ReactFullpage.Wrapper>
 								<div
-									className="section content fp-auto-height-responsive"
+									className="section content"
 									style={{
 										backgroundImage: 'url("src/shared/img/bg2.png")',
 										backgroundSize: 'cover'
 									}}
 								>
+									<h1>{this.state.innerHeight}</h1>
 									<svg
 										version="1.1"
 										xmlns="http://www.w3.org/2000/svg"
