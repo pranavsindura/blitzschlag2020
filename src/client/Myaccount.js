@@ -58,27 +58,29 @@ class Myaccount extends Component {
 		if (window.innerWidth > 760) {
 			if (events != null) {
 				return (
-					<div className="eve">
-						<h4>Participated Events</h4>
-						<hr></hr>
-						<ul className="list-unstyled">
-							{events.map((event) => {
-								return (
-									<li key={event.id}>
-										<p className="evelist">{event.name}</p>
-										{this.renderEventDetails(event)}
-										<hr></hr>
-									</li>
-								);
-							})}
-						</ul>
+					<div className="boxi green">
+						<div className="eve">
+							<h4>Participated Events</h4>
+							<hr></hr>
+							<ul className="list-unstyled">
+								{events.map((event) => {
+									return (
+										<li key={event.id}>
+											<p className="evelist">{event.name}</p>
+											{this.renderEventDetails(event)}
+											<hr></hr>
+										</li>
+									);
+								})}
+							</ul>
+						</div>
 					</div>
 				);
 			}
 		}
 	}
 	renderEventsMOB(events) {
-		if (window.innerWidth < 760) {
+		if (window.innerWidth <= 760) {
 			if (events != null) {
 				return (
 					<div className="eve">
@@ -125,7 +127,7 @@ class Myaccount extends Component {
 								<div className="section cont">
 									<Jumbotron>
 										<h1>My Account</h1>
-										<div className="boxi green">{this.renderEventsPC(this.state.user.events)}</div>
+										{this.renderEventsPC(this.state.user.events)}
 									</Jumbotron>
 									<div className="pro row">
 										{/* <div className="col-md-2 profile">
