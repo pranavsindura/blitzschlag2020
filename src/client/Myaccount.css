@@ -86,6 +86,7 @@ img {
     font-weight: lighter;
 }
 
+/*
 @media(max-width:760px) {
     .jumbotron {
         min-height: 20vh;
@@ -111,3 +112,4 @@ img {
         padding: 8vw;
     }
 }
+*/
