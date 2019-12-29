@@ -76,29 +76,6 @@ export default class Myaccount extends Component {
 			}
 		}
 	}
-	renderEventsMOB(events) {
-		if (window.innerWidth < 760) {
-			if (events != null) {
-				return (
-					<div className="eve">
-						<h4>Participated Events</h4>
-						<hr></hr>
-						<ul className="list-unstyled">
-							{events.map((event) => {
-								return (
-									<li key={event.teamId}>
-										<p className="evelist">{event.name}</p>
-										{this.renderEventDetails(event)}
-										<hr></hr>
-									</li>
-								);
-							})}
-						</ul>
-					</div>
-				);
-			}
-		}
-	}
 	renderEventDetails(event) {
 		if (event.teamSize > 1) {
 			return (
@@ -127,7 +104,7 @@ export default class Myaccount extends Component {
 											</div>
 										</Jumbotron>
 										<div className="pro row ">
-											<div className="col-md-9 p-0">
+											<div className="col-md-9 p">
 												<h2 className="words">
 													{this.state.user.firstName} {this.state.user.lastName}
 												</h2>

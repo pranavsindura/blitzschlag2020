@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Home from './Home.js';
 import Event from './event';
 import CategoryEvent from './CategoryEvent';
-import Myaccount from './Myaccount.js'
+import Myaccount from './UserMyaccount.js'
 import Team from './Team.js';
 import Sponsors from './Sponsors.js'
 import Hospitality from './Hospitality.js'
