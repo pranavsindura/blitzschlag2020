@@ -13,7 +13,6 @@ export default class Myaccount extends Component {
 			user: USER
 		};
 		this.images = [
-			'src/shared/img/user.png',
 			'https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg'
 		];
 	}
@@ -128,10 +127,7 @@ export default class Myaccount extends Component {
 											</div>
 										</Jumbotron>
 										<div className="pro row ">
-											<div className="col-md-2 profile">
-												<img src="src/shared/img/user.png"></img>
-											</div>
-											<div className="col-md-9 name">
+											<div className="col-md-9 p-0">
 												<h2 className="words">
 													{this.state.user.firstName} {this.state.user.lastName}
 												</h2>
