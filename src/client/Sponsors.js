@@ -17,9 +17,6 @@ export default class Sponsors extends Component {
   state = {
     sponsors: SPONSOR
   };
-  images = [
-    "https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg"
-  ];
   renderData(sponsors) {
     return (
       <Row xs="1" sm="2" md="3">
