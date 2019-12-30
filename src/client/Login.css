@@ -1,25 +1,30 @@
-.coverlogin{
+.coverlogin {
     background-image: url('https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg');
     background-size: cover;
     min-height:100vh;
 }
-.card{
-    width:40%;
-    left:30%;
+
+.card {
+    width: 40%;
+    left: 30%;
 }
-.heading{
-    padding:20px;
+
+.heading {
+    padding: 20px;
 }
-.changeform{
+
+.changeform {
     color: primary;
-    padding:10px;
+    padding: 10px;
 }
-.col{
-    text-align:center;
+
+.col {
+    text-align: center;
 }
+
 @media screen and (max-width: 900px) {
-    .card{
-        width:90%;
-        left:5%;
+    .card {
+        width: 90%;
+        left: 5%;
     }
-  }
+}
