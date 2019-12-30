@@ -26,6 +26,15 @@
     background: white;
     z-index: 2;
     color: black;
+    max-width: 25vw;
+}
+
+.greenmob {
+    background: white;
+    z-index: 2;
+    color: black;
+    padding-right: 5vw;
+    padding-left: 5vw;
 }
 
 .boxi {
@@ -40,6 +49,14 @@
 .pro {
     background-color: black;
     padding-left: 10vw;
+    padding-right: 10vw;
+    border-spacing: 0px;
+}
+
+.promob {
+    background-color: black;
+    padding-left: 5vw;
+    padding-right: 5vw;
     border-spacing: 0px;
 }
 

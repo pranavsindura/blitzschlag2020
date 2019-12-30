@@ -10,12 +10,28 @@ export default class Myaccount extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: USER
+      user: USER,
+      width: 0,
+      height: 0
     };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     this.images = [
       "https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg"
     ];
   }
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener("resize", this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+
   renderDetails(user) {
     var acc = user.accomodation;
     if (user.accomodation == false) {
@@ -100,34 +116,12 @@ export default class Myaccount extends Component {
           </Table>
         </div>
       );
-    }
-    else {
-        return (
-            <div className="p-5"><h4>No Participated Events</h4></div>
-        );
-    }
-  }
-  renderEventsMOB(events) {
-    if (window.innerWidth < 760) {
-      if (events != null) {
-        return (
-          <div className="eve">
-            <h4>Participated Events</h4>
-            <hr></hr>
-            <ul className="list-unstyled">
-              {events.map(event => {
-                return (
-                  <li key={event.teamId}>
-                    <p className="evelist">{event.name}</p>
-                    {this.renderEventDetails(event)}
-                    <hr></hr>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        );
-      }
+    } else {
+      return (
+        <div className="p-5">
+          <h4>No Participated Events</h4>
+        </div>
+      );
     }
   }
   renderComponent() {
@@ -158,16 +152,14 @@ export default class Myaccount extends Component {
           <Jumbotron>
             <h1>My Account</h1>
           </Jumbotron>
-          <div >
-            <h2 className="pro words">
+          <div>
+            <h2 className="promob words">
               {this.state.user.firstName} {this.state.user.lastName}
             </h2>
-            <p className="pro words">{this.state.user.college}</p>
+            <p className="promob words">{this.state.user.college}</p>
           </div>
-          <div className="pro words">
-            {this.renderDetails(this.state.user)}
-          </div>
-          <div className="green">
+          <div className="promob words">{this.renderDetails(this.state.user)}</div>
+          <div className="greenmob">
             {this.renderEventsPC(this.state.user.events)}
           </div>
         </div>
