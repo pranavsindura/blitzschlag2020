@@ -4,9 +4,9 @@ import { USER } from '../shared/usertest.js';
 import './Myaccount.css';
 import Splash from './Splash';
 import ReactFullpage from '@fullpage/react-fullpage';
-import 'fullpage.js/vendors/scrolloverflow'
-
-export default class Myaccount extends Component {
+import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
+class Myaccount extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -57,20 +57,22 @@ export default class Myaccount extends Component {
 		if (window.innerWidth > 760) {
 			if (events != null) {
 				return (
-					<div className="eve">
-						<h4>Participated Events</h4>
-						<hr></hr>
-						<ul className="list-unstyled">
-							{events.map((event) => {
-								return (
-									<li key={event.id}>
-										<p className="evelist">{event.name}</p>
-										{this.renderEventDetails(event)}
-										<hr></hr>
-									</li>
-								);
-							})}
-						</ul>
+					<div className="boxi green">
+						<div className="eve">
+							<h4>Participated Events</h4>
+							<hr></hr>
+							<ul className="list-unstyled">
+								{events.map((event) => {
+									return (
+										<li key={event.id}>
+											<p className="evelist">{event.name}</p>
+											{this.renderEventDetails(event)}
+											<hr></hr>
+										</li>
+									);
+								})}
+							</ul>
+						</div>
 					</div>
 				);
 			}
@@ -87,6 +89,9 @@ export default class Myaccount extends Component {
 		}
 	}
 	render() {
+		if (!this.props.loggedIn) {
+			return <Redirect to="/login" />;
+		}
 		return (
 			<div>
 				<Splash images={this.images} />
@@ -117,6 +122,9 @@ export default class Myaccount extends Component {
 											{this.renderEventsMOB(this.state.user.events)}
 										</div>
 									</div>
+									<br></br>
+									<div className="inf row">{this.renderDetails(this.state.user)}</div>
+									<div className="evemob col-12">{this.renderEventsMOB(this.state.user.events)}</div>
 								</div>
 							</ReactFullpage.Wrapper>
 						);
@@ -126,3 +134,15 @@ export default class Myaccount extends Component {
 		);
 	}
 }
+
+const mapStateToProps = (state) => {
+	return {
+		loggedIn: state.loggedIn
+	};
+};
+
+const mapDispatchToProps = (dispatch) => {
+	return {};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Myaccount);

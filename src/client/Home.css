@@ -1,3 +1,16 @@
 h1 {
 	text-align: center;
 }
+
+.img {
+    display: block;
+    height: 100%;
+    width: inherit;
+    overflow: hidden;
+	object-fit: cover;
+	border:none;
+}
+
+.car, .caritem{
+	height: 100vh;
+}

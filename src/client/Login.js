@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
-import 'fullpage.js/vendors/scrolloverflow';
+// import 'fullpage.js/vendors/scrolloverflow';
 import Splash from './Splash';
 import './Login.css';
 import { Form, Button, Card, Col, Row } from 'react-bootstrap';
@@ -23,7 +23,8 @@ const loginDetailsTemplate = {
 };
 class Login extends React.Component {
 	state = {
-		whichForm: false,
+		whichForm: true,
+		registerFormPart: true,
 		registerDetails: {
 			firstName: '',
 			lastName: '',
@@ -44,6 +45,7 @@ class Login extends React.Component {
 	changeForm = () => {
 		this.setState({
 			whichForm: !this.state.whichForm,
+			registerFormPart: true,
 			registerDetails: {
 				firstName: '',
 				lastName: '',
@@ -61,16 +63,13 @@ class Login extends React.Component {
 			}
 		});
 	};
-	componentDidMount() {
-		this.changeForm();
-	}
-	componentDidUpdate()
-	{
-		console.log(this.state.registerDetails);
-	}
 	handleRegisterChange = (e) => {
 		let newDetails = this.state.registerDetails;
-		const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
+		let value = e.target.value;
+		if (e.target.type === 'radio') {
+			if (value === 'true') value = true;
+			else value = false;
+		}
 		newDetails[e.target.id] = value;
 		this.setState({ registerDetails: newDetails });
 	};
@@ -78,6 +77,7 @@ class Login extends React.Component {
 		const { registerDetails } = this.state;
 		console.log(registerDetails);
 		this.setState({
+			registerFormPart: true,
 			registerDetails: {
 				firstName: '',
 				lastName: '',
@@ -93,8 +93,7 @@ class Login extends React.Component {
 	};
 	handleLoginChange = (e) => {
 		let newDetails = this.state.loginDetails;
-		const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
-		newDetails[e.target.id] = value;
+		newDetails[e.target.id] = e.target.value;
 		this.setState({ loginDetails: newDetails });
 	};
 	handleLoginSubmit = () => {
@@ -108,40 +107,52 @@ class Login extends React.Component {
 		});
 		this.props.LOGIN({ blitzID: loginDetails.blitzID });
 	};
+	handleRegisterFormNext = () => {
+		this.setState({ registerFormPart: false });
+	};
+	handleRegisterFormPrev = () => {
+		this.setState({ registerFormPart: true });
+	};
 	render() {
 		if (this.props.loggedIn) {
 			return <Redirect to="/myaccount" />;
 		}
 		const { registerDetails, loginDetails } = this.state;
-		const registerForm = (
+		const registerFormPart1 = (
 			<div className="section coverlogin">
 				<div className="formwrapper">
 					<h1 className="heading">Register</h1>
 					<Card>
 						<Card.Body>
 							<Form>
-								<Form.Group>
-									<Form.Control
-										onChange={() => {
-											this.handleRegisterChange(event);
-										}}
-										value={registerDetails.firstName}
-										id="firstName"
-										type="text"
-										placeholder="First Name"
-									/>
-								</Form.Group>
-								<Form.Group>
-									<Form.Control
-										onChange={() => {
-											this.handleRegisterChange(event);
-										}}
-										value={registerDetails.lastName}
-										id="lastName"
-										type="text"
-										placeholder="Last Name"
-									/>
-								</Form.Group>
+								<Form.Row>
+									<Col>
+										<Form.Group>
+											<Form.Control
+												onChange={() => {
+													this.handleRegisterChange(event);
+												}}
+												value={registerDetails.firstName}
+												id="firstName"
+												type="text"
+												placeholder="First Name"
+											/>
+										</Form.Group>
+									</Col>
+									<Col>
+										<Form.Group>
+											<Form.Control
+												onChange={() => {
+													this.handleRegisterChange(event);
+												}}
+												value={registerDetails.lastName}
+												id="lastName"
+												type="text"
+												placeholder="Last Name"
+											/>
+										</Form.Group>
+									</Col>
+								</Form.Row>
 								<Form.Group>
 									<Form.Control
 										onChange={() => {
@@ -186,6 +197,38 @@ class Login extends React.Component {
 										placeholder="College ID"
 									/>
 								</Form.Group>
+								<Row>
+									<Col>
+										<Button
+											onClick={() => {
+												this.handleRegisterFormNext();
+											}}
+											variant="primary"
+										>
+											Next >>
+										</Button>
+									</Col>
+								</Row>
+								<Row>
+									<Col>
+										<a className="changeform" href="#" onClick={() => this.changeForm()}>
+											Already have an account?
+										</a>
+									</Col>
+								</Row>
+							</Form>
+						</Card.Body>
+					</Card>
+				</div>
+			</div>
+		);
+		const registerFormPart2 = (
+			<div className="section coverlogin">
+				<div className="formwrapper">
+					<h1 className="heading">Register</h1>
+					<Card>
+						<Card.Body>
+							<Form>
 								<Form.Group>
 									<Form.Control
 										value={registerDetails.blitzPIN}
@@ -197,29 +240,80 @@ class Login extends React.Component {
 										placeholder="4 digit PIN"
 									/>
 								</Form.Group>
-								<Form.Group>
-									<Form.Check
-										onChange={() => {
-											this.handleRegisterChange(event);
-										}}
-										value={registerDetails.isMNIT}
-										type="checkbox"
-										id="isMNIT"
-										label="Are you a student of MNIT/IIITK/NIT UK?"
-									/>
-								</Form.Group>
-								<Form.Group>
-									<Form.Check
-										onChange={() => {
-											this.handleRegisterChange(event);
-										}}
-										value={registerDetails.accomodation}
-										type="checkbox"
-										id="accomodation"
-										label="Do you need Accomodation?"
-									/>
-								</Form.Group>
+								<fieldset>
+									<Form.Group>
+										<Form.Label>Are you a student of MNIT/IIITK/NIT UK?</Form.Label>
+										<Form.Row>
+											<Col style={{ textAlign: 'left' }}>
+												<Form.Check
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													checked={registerDetails.isMNIT}
+													value={true}
+													type="radio"
+													id="isMNIT"
+													label="Yes"
+												/>
+											</Col>
+											<Col style={{ textAlign: 'left' }}>
+												<Form.Check
+													onChange={() => {
+														console.log('no');
+														this.handleRegisterChange(event);
+													}}
+													checked={!registerDetails.isMNIT}
+													value={false}
+													type="radio"
+													id="isMNIT"
+													label="No"
+												/>
+											</Col>
+										</Form.Row>
+									</Form.Group>
+								</fieldset>
+								<fieldset>
+									<Form.Group>
+										<Form.Label>Do you need Accomodation?</Form.Label>
+										<Form.Row>
+											<Col style={{ textAlign: 'left' }}>
+												<Form.Check
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													checked={registerDetails.accomodation}
+													value={true}
+													type="radio"
+													id="accomodation"
+													label="Yes"
+												/>
+											</Col>
+											<Col style={{ textAlign: 'left' }}>
+												<Form.Check
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													checked={!registerDetails.accomodation}
+													value={false}
+													type="radio"
+													id="accomodation"
+													label="No"
+												/>
+											</Col>
+										</Form.Row>
+									</Form.Group>
+								</fieldset>
 								<Row>
+									<Col>
+										<Button
+											onClick={() => {
+												this.handleRegisterFormPrev();
+											}}
+											variant="primary"
+										>
+											{'<< Back'}
+										</Button>
+									</Col>
 									<Col>
 										<Button
 											onClick={() => {
@@ -299,15 +393,18 @@ class Login extends React.Component {
 				</div>
 			</div>
 		);
-		const { whichForm } = this.state;
+		const { whichForm, registerFormPart } = this.state;
 		return (
-			<div>
+			<div className="scrollit">
 				<Splash images={this.images} />
 				<ReactFullpage
-					verticalCentered={true}
-					scrollOverflow={true}
+					verticalCentered={false}
 					render={({ state, fullpageApi }) => {
-						return <ReactFullpage.Wrapper>{whichForm ? loginForm : registerForm}</ReactFullpage.Wrapper>;
+						return (
+							<ReactFullpage.Wrapper>
+								{whichForm ? loginForm : registerFormPart ? registerFormPart1 : registerFormPart2}
+							</ReactFullpage.Wrapper>
+						);
 					}}
 				/>
 			</div>

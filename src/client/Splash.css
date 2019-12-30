@@ -8,14 +8,16 @@
 .loader-text{
     font-size: 20px;
     position: absolute;
-    bottom:10%;
+    bottom:15%; 
     left:50%;
     transform: translateX(-50%);
 }
 .loader{
+    width: 70vw;
+    height: 70vh;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform: translateX(-50%) translateY(-50%);
     animation: rot 15s linear infinite;
 }
@@ -31,3 +33,27 @@
     }
 
 }
+.loader-text-svg{
+    width:80vw;
+}
+
+@media screen and (min-width: 760px) {
+    .loader-text{
+        position: absolute;
+        bottom:10%; 
+        left:50%;
+        transform: translateX(-50%);
+    }
+    .loader-text-svg{
+        width: 25em;
+    }
+    .loader{
+        width: 50vw;
+        height: 50vh;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translateX(-50%);
+        animation: rot 15s linear infinite;
+    }
+  }
