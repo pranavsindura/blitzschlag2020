@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Card, CardImg, CardBody, CardTitle } from "reactstrap";
 import "./Sponsors.css";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Splash from "./Splash";
@@ -40,6 +41,90 @@ export default class Sponsors extends Component {
                   >
                     Sponsors
                   </h1>
+                  <div className="">
+                    <div className="row">
+                      <div className="col-md-4 p-0 m-0">
+                        <Card className="car">
+                          <CardImg
+                            top
+                            width="100%"
+                            src="src/shared/img/sponsors/img1.png"
+                            alt="Card image cap"
+                          />
+                          <CardBody>
+                            <CardTitle>Card title</CardTitle>
+                          </CardBody>
+                        </Card>
+                      </div>
+                      <div className="col-md-4 p-0 m-0">
+                        <Card className="car">
+                          <CardImg
+                            top
+                            width="100%"
+                            src="src/shared/img/sponsors/img1.png"
+                            alt="Card image cap"
+                          />
+                          <CardBody>
+                            <CardTitle>Card title</CardTitle>
+                          </CardBody>
+                        </Card>
+                      </div>
+                      <div className="col-md-4 p-0 m-0">
+                        <Card className="car">
+                          <CardImg
+                            top
+                            width="100%"
+                            src="src/shared/img/sponsors/img1.png"
+                            alt="Card image cap"
+                          />
+                          <CardBody>
+                            <CardTitle>Card title</CardTitle>
+                          </CardBody>
+                        </Card>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="col-md-4 p-0 m-0">
+                        <Card className="car">
+                          <CardImg
+                            top
+                            width="100%"
+                            src="src/shared/img/sponsors/img1.png"
+                            alt="Card image cap"
+                          />
+                          <CardBody>
+                            <CardTitle>Card title</CardTitle>
+                          </CardBody>
+                        </Card>
+                      </div>
+                      <div className="col-md-4 p-0 m-0">
+                        <Card className="car">
+                          <CardImg
+                            
+                            width="100%"
+                            src="src/shared/img/sponsors/img1.png"
+                            alt="Card image cap"
+                          />
+                          <CardBody>
+                            <CardTitle>Card title</CardTitle>
+                          </CardBody>
+                        </Card>
+                      </div>
+                      <div className="col-md-4 p-0 m-0">
+                        <Card className="car">
+                          <CardImg
+                            top
+                            width="100%"
+                            src="src/shared/img/sponsors/img1.png"
+                            alt="Card image cap"
+                          />
+                          <CardBody>
+                            <CardTitle>Card title</CardTitle>
+                          </CardBody>
+                        </Card>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </ReactFullpage.Wrapper>
             );

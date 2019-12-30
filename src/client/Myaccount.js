@@ -13,7 +13,6 @@ class Myaccount extends Component {
 			user: USER
 		};
 		this.images = [
-			'src/shared/img/user.png',
 			'https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg'
 		];
 	}
@@ -79,29 +78,6 @@ class Myaccount extends Component {
 			}
 		}
 	}
-	renderEventsMOB(events) {
-		if (window.innerWidth <= 760) {
-			if (events != null) {
-				return (
-					<div className="eve">
-						<h4>Participated Events</h4>
-						<hr></hr>
-						<ul className="list-unstyled">
-							{events.map((event) => {
-								return (
-									<li key={event.teamId}>
-										<p className="evelist">{event.name}</p>
-										{this.renderEventDetails(event)}
-										<hr></hr>
-									</li>
-								);
-							})}
-						</ul>
-					</div>
-				);
-			}
-		}
-	}
 	renderEventDetails(event) {
 		if (event.teamSize > 1) {
 			return (
@@ -125,19 +101,25 @@ class Myaccount extends Component {
 						return (
 							<ReactFullpage.Wrapper>
 								<div className="section cont">
-									<Jumbotron>
-										<h1>My Account</h1>
-										{this.renderEventsPC(this.state.user.events)}
-									</Jumbotron>
-									<div className="pro row">
-										{/* <div className="col-md-2 profile">
-											<img src="src/shared/img/user.png"></img>
-										</div> */}
-										<div className="col-md-9 name">
-											<h2 className="words">
-												{this.state.user.firstName} {this.state.user.lastName}
-											</h2>
-											<p className="words">{this.state.user.college}</p>
+									<div className="myaccountwrapper">
+										<Jumbotron>
+											<h1>My Account</h1>
+											<div className="boxi green">
+												{this.renderEventsPC(this.state.user.events)}
+											</div>
+										</Jumbotron>
+										<div className="pro row ">
+											<div className="col-md-9 p">
+												<h2 className="words">
+													{this.state.user.firstName} {this.state.user.lastName}
+												</h2>
+												<p className="words">{this.state.user.college}</p>
+											</div>
+										</div>
+										<br></br>
+										<div className="inf row">{this.renderDetails(this.state.user)}</div>
+										<div className="evemob col-12">
+											{this.renderEventsMOB(this.state.user.events)}
 										</div>
 									</div>
 									<br></br>
