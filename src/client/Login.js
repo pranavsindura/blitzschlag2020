@@ -340,7 +340,7 @@ class Login extends React.Component {
 		);
 		const loginForm = (
 			<div className="section coverlogin">
-				<div className="formwrapper">
+				<div className="formwrapper" style={{position: 'relative', top:'50%', transform:'translateY(-50%)'}}>
 					<h1 className="heading">Login</h1>
 					<Card>
 						<Card.Body>

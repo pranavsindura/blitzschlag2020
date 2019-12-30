@@ -1,6 +1,6 @@
 const os = require('os');
 const path = require('path');
-
+const bodyparser = require('body-parser');
 const cors = require('cors');
 const helmet = require('helmet');
 const express = require('express');
@@ -14,6 +14,8 @@ let eventRegister = require('./eventRegister');
 let signupvalid = require('./Signupvalidation').signUpValid;
 
 const app = express();
+app.use(bodyparser.urlencoded({ extended: true }));
+app.use(bodyparser.json());
 
 app.use(cors());
 
