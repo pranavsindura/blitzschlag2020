@@ -1,4 +1,8 @@
-.car {
-    padding: 0vw;
-    margin: 0vw;
+.contcol {
+    padding: 5px;
+}
+
+.contimg {
+    width: 100%;
+    height: inherit;
 }
