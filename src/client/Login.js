@@ -6,6 +6,9 @@ import './Login.css';
 import { Form, Button, Card, Col, Row } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
+import axios from 'axios';
+let proxy = 'http://localhost:8080';
+if (process.env.PROD) proxy = '';
 const registerDetailsTemplate = {
 	firstName: '',
 	lastName: '',
@@ -73,9 +76,15 @@ class Login extends React.Component {
 		newDetails[e.target.id] = value;
 		this.setState({ registerDetails: newDetails });
 	};
-	handleRegisterSubmit = () => {
+	handleRegisterSubmit = (event) => {
+		event.preventDefault();
 		const { registerDetails } = this.state;
 		console.log(registerDetails);
+		// axios.post(proxy+'/signup', registerDetails).then((res)=>{
+
+		// }).catch((err)=>{
+		// 	console.log(err);
+		// });
 		this.setState({
 			registerFormPart: true,
 			registerDetails: {
@@ -96,7 +105,8 @@ class Login extends React.Component {
 		newDetails[e.target.id] = e.target.value;
 		this.setState({ loginDetails: newDetails });
 	};
-	handleLoginSubmit = () => {
+	handleLoginSubmit = (event) => {
+		event.preventDefault();
 		const { loginDetails } = this.state;
 		console.log(loginDetails);
 		this.setState({
@@ -107,7 +117,8 @@ class Login extends React.Component {
 		});
 		this.props.LOGIN({ blitzID: loginDetails.blitzID });
 	};
-	handleRegisterFormNext = () => {
+	handleRegisterFormNext = (event) => {
+		event.preventDefault();
 		this.setState({ registerFormPart: false });
 	};
 	handleRegisterFormPrev = () => {
@@ -124,7 +135,11 @@ class Login extends React.Component {
 					<h1 className="heading">Register</h1>
 					<Card>
 						<Card.Body>
-							<Form>
+							<Form
+								onSubmit={() => {
+									this.handleRegisterFormNext(event);
+								}}
+							>
 								<Form.Row>
 									<Col>
 										<Form.Group>
@@ -135,6 +150,7 @@ class Login extends React.Component {
 												value={registerDetails.firstName}
 												id="firstName"
 												type="text"
+												required={true}
 												placeholder="First Name"
 											/>
 										</Form.Group>
@@ -148,6 +164,7 @@ class Login extends React.Component {
 												value={registerDetails.lastName}
 												id="lastName"
 												type="text"
+												required={true}
 												placeholder="Last Name"
 											/>
 										</Form.Group>
@@ -161,6 +178,7 @@ class Login extends React.Component {
 										value={registerDetails.email}
 										id="email"
 										type="email"
+										required={true}
 										placeholder="Email"
 									/>
 								</Form.Group>
@@ -172,6 +190,7 @@ class Login extends React.Component {
 										value={registerDetails.mob}
 										id="mob"
 										type="phone"
+										required={true}
 										placeholder="Mobile Number"
 									/>
 								</Form.Group>
@@ -183,6 +202,7 @@ class Login extends React.Component {
 										value={registerDetails.college}
 										id="college"
 										type="text"
+										required={true}
 										placeholder="College Name"
 									/>
 								</Form.Group>
@@ -194,23 +214,19 @@ class Login extends React.Component {
 										value={registerDetails.collegeID}
 										id="collegeID"
 										type="text"
+										required={true}
 										placeholder="College ID"
 									/>
 								</Form.Group>
 								<Row>
 									<Col>
-										<Button
-											onClick={() => {
-												this.handleRegisterFormNext();
-											}}
-											variant="primary"
-										>
+										<Button variant="primary" type="submit">
 											Next >>
 										</Button>
 									</Col>
 								</Row>
 								<Row>
-									<Col>
+									<Col >
 										<a className="changeform" href="#" onClick={() => this.changeForm()}>
 											Already have an account?
 										</a>
@@ -228,13 +244,18 @@ class Login extends React.Component {
 					<h1 className="heading">Register</h1>
 					<Card>
 						<Card.Body>
-							<Form>
+							<Form
+								onSubmit={() => {
+									this.handleRegisterSubmit(event);
+								}}
+							>
 								<Form.Group>
 									<Form.Control
 										value={registerDetails.blitzPIN}
 										onChange={() => {
 											this.handleRegisterChange(event);
 										}}
+										required={true}
 										id="blitzPIN"
 										type="password"
 										placeholder="4 digit PIN"
@@ -315,12 +336,7 @@ class Login extends React.Component {
 										</Button>
 									</Col>
 									<Col>
-										<Button
-											onClick={() => {
-												this.handleRegisterSubmit();
-											}}
-											variant="success"
-										>
+										<Button variant="success" type="submit">
 											Submit
 										</Button>
 									</Col>
@@ -340,11 +356,18 @@ class Login extends React.Component {
 		);
 		const loginForm = (
 			<div className="section coverlogin">
-				<div className="formwrapper" style={{position: 'relative', top:'50%', transform:'translateY(-50%)'}}>
+				<div
+					className="formwrapper"
+					style={{ position: 'relative', top: '50%', transform: 'translateY(-50%)' }}
+				>
 					<h1 className="heading">Login</h1>
 					<Card>
 						<Card.Body>
-							<Form>
+							<Form
+								onSubmit={() => {
+									this.handleLoginSubmit(event);
+								}}
+							>
 								<Form.Group>
 									<Form.Control
 										onChange={() => {
@@ -353,6 +376,7 @@ class Login extends React.Component {
 										value={loginDetails.blitzID}
 										id="blitzID"
 										type="text"
+										required={true}
 										placeholder="Blitz ID"
 									/>
 								</Form.Group>
@@ -364,17 +388,13 @@ class Login extends React.Component {
 										value={loginDetails.blitzPIN}
 										id="blitzPIN"
 										type="password"
+										required={true}
 										placeholder="4 digit PIN"
 									/>
 								</Form.Group>
 								<Row>
 									<Col>
-										<Button
-											onClick={() => {
-												this.handleLoginSubmit();
-											}}
-											variant="success"
-										>
+										<Button variant="success" type="submit">
 											Submit
 										</Button>
 									</Col>
