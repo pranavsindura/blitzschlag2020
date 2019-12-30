@@ -9,9 +9,10 @@ const mongoose = require('mongoose');
 const uri = 'mongodb+srv://Dhairya-Shalu:light12345@first-demo-ocw10.mongodb.net/test?retryWrites=true&w=majority';
 
 let Model = require('./model.js');
+let { idModel } = require('./idModel');
 let loginValid = require('./loginvalid');
 let eventRegister = require('./eventRegister');
-let signupvalid = require('./Signupvalidation').signUpValid;
+let signupvalid = require('./Signupvalidation');
 
 const app = express();
 app.use(bodyparser.urlencoded({ extended: true }));
@@ -38,31 +39,72 @@ db.once('open', async function() {
 
 app.post('/login', (req, res) => {
     let userLoginData = req.body;
-    let flag = loginValid.userValid(userLoginData)
-    if (flag) {
-        let fetchedUserDetails = loginValid.showUser(userLoginData);
-        if (fetchedUserDetails === undefined) {
-            console.log('Incorrect Blitz Password');
-        }
-    } else {
-        console.log('User not registered');
-    }
-});
-
-app.post('/signup', (req, res) => {
-    let user = req.body;
-    signupvalid(user).then(function(result) {
-        if (result === undefined) {
-            console.log('You are already Registered');
+    loginValid.userValid(userLoginData).then(function(result) {
+        if (result) {
+            if (result === 1) {
+                console.log('Incorrect Blitz Pin');
+                res.send({
+                    status: false
+                });
+            } else {
+                console.log(result);
+                res.send({
+                    status: true,
+                    data: result
+                });
+            }
         } else {
-            console.log('You are Registered');
+            console.log('User not registered');
+            res.send({
+                status: false
+            })
         }
     });
 });
 
+app.post('/signup', (req, res) => {
+    let user = req.body;
+
+    signupvalid.signUpValid(user).then(function(valid) {
+        if (valid === undefined) {
+            res.send({
+                status: false
+            });
+        } else {
+            signupvalid.retrieveBlitzID().then(function(result2) {
+                result2.blitzCount += 1;
+                signupvalid.updateBlitzID(result2).then(function(result3) {
+                    user.blitzID = result3.blitzCount;
+                    signupvalid.userSave(user).then(function(result4) {
+                        res.send({
+                            status: true,
+                            data: result4
+                        });
+                    });
+                });
+            });
+        }
+    });
+
+
+});
+
 app.post('/events', (req, res) => {
     let eventReg = req.body;
-    eventRegister.updateUser(eventReg);
+    eventRegister.retrieveTeamID().then(function(output) {
+        output.teamCount += 1;
+        eventRegister.updateTeamID(output).then(function(updatedTeamObj) {
+            eventReg.teamID = updatedTeamObj.teamCount;
+
+            eventRegister.updateUser(eventReg).then(function(result2) {
+                res.send({
+                    status: true,
+                    data: result2
+                });
+            });
+
+        });
+    });
 });
 
 

@@ -1,7 +1,26 @@
+let idModel = require('./idModel').idModel;
 let userModel = require('./model').userModel;
 
-function updateUser(event) {
-    let addEvent = {
+async function retrieveTeamID() {
+    let ids = await idModel.findOne({}, function(err, result) {
+        if (err) {
+
+        }
+    });
+    return ids;
+}
+
+async function updateTeamID(obj) {
+    let teamObj = await idModel.findOneAndUpdate({ _id: obj._id }, { teamCount: obj.teamCount }, { new: true }, (err, data) => {
+
+    });
+    console.log('teamObj', teamObj);
+    return teamObj;
+}
+
+async function updateUser(event) {
+    let addEvent;
+    addEvent = {
         name: event.eventName,
         teamID: event.teamID,
         teamName: event.teamName,
@@ -9,26 +28,21 @@ function updateUser(event) {
     };
     console.log(addEvent);
     (event.blitzID).forEach(id => {
-        console.log(id);
         userModel.find({ blitzID: id }, (err, user) => {
-                if (err) {
-                    console.log(err);
-                } else {
-                    console.log(user[0].events);
-                    let eventArray = user[0].events;
-                    eventArray.push(addEvent);
-                    // console.log(eventArray);
-                    userModel.findOneAndUpdate({ blitzID: id }, { events: eventArray }, () => {
-                        console.log('updated');
-                    });
-                }
-            })
-            // userModel.findOneAndUpdate({ blitzID: id }, { events: addEvent }, () => {
-            //     console.log('updated');
-            // });
+            if (err) {
+                console.log(err);
+            } else {
+                let eventArray = user[0].events;
+                eventArray.push(addEvent);
+                userModel.findOneAndUpdate({ blitzID: id }, { events: eventArray }, () => {});
+            }
+        });
     });
-};
+    return event;
+}
 
 module.exports = {
-    updateUser
+    updateUser,
+    retrieveTeamID,
+    updateTeamID
 }
