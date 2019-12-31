@@ -39,7 +39,7 @@ export default class Sponsors extends Component {
   }
   renderSponsorsPC() {
     return (
-      <div className="container-fluid cont ">
+      <div className="container-fluid cont">
         <h1>Sponsors</h1>
         <br></br>
         <br></br>
@@ -53,6 +53,26 @@ export default class Sponsors extends Component {
       </div>
     );
   }
+  renderSponsorsMOB() {
+    return (
+      <div >
+        <h1>Sponsors</h1>
+        <br></br>
+        <br></br>
+        <div className="container">{this.renderData(this.state.sponsors)}</div>
+        <br></br>
+        <br></br>
+        <br></br>
+      </div>
+    );
+  }
+  renderSponsors() {
+    if (window.innerWidth < 760) {
+      return <div className="container-fluid contmob">{this.renderSponsorsMOB()}</div>;
+    } else {
+      return <div className="container-fluid cont ">{this.renderSponsorsPC()}</div>;
+    }
+  }
   render() {
     return (
       <div>
@@ -63,9 +83,7 @@ export default class Sponsors extends Component {
           render={({ state, fullpageApi }) => {
             return (
               <ReactFullpage.Wrapper>
-                <div className="section">
-                  {this.renderSponsorsPC()}
-                </div>
+                <div className="section">{this.renderSponsorsPC()}</div>
               </ReactFullpage.Wrapper>
             );
           }}
