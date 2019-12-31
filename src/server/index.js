@@ -13,6 +13,7 @@ let { idModel } = require('./idModel');
 let loginValid = require('./loginvalid');
 let eventRegister = require('./eventRegister');
 let signupvalid = require('./Signupvalidation');
+let mobAndPinValid = require('./mobileAndPinValid');
 
 const app = express();
 app.use(bodyparser.urlencoded({ extended: true }));
@@ -63,30 +64,72 @@ app.post('/login', (req, res) => {
 });
 
 app.post('/signup', (req, res) => {
-    let user = req.body;
-
-    signupvalid.signUpValid(user).then(function(valid) {
+    let userInput = req.body;
+    let user = new Model.userModel(userInput);
+    signupvalid.signUpValid(userInput).then(function(valid) {
         if (valid === undefined) {
+            console.log('Invalid Details');
             res.send({
-                status: false
+                status: false,
+                message: "You are already Registered!"
             });
         } else {
-            signupvalid.retrieveBlitzID().then(function(result2) {
-                result2.blitzCount += 1;
-                signupvalid.updateBlitzID(result2).then(function(result3) {
-                    user.blitzID = result3.blitzCount;
-                    signupvalid.userSave(user).then(function(result4) {
-                        res.send({
-                            status: true,
-                            data: result4
-                        });
+            mobAndPinValid.phonenumber(userInput.mob).then(function(result) {
+                if (result) {
+                    mobAndPinValid.validatePIN(userInput.blitzPIN).then(function(result) {
+                        if (result) {
+                            console.log('true pin');
+                            signupvalid.retrieveBlitzID().then(function(result2) {
+                                if (result2) {
+                                    user.blitzID = result2.blitzCount + 1;
+                                    signupvalid.userSave(user).then((result3) => {
+                                        if (result3) {
+                                            result2.blitzCount += 1;
+                                            signupvalid.updateBlitzID(result2).then((result4) => {
+                                                if (result4) {
+                                                    res.send({
+                                                        status: true,
+                                                        data: result3
+                                                    });
+                                                } else {
+                                                    res.send({
+                                                        status: false,
+                                                        message: "BlitzID not updated"
+                                                    });
+                                                }
+                                            });
+                                        } else {
+                                            res.send({
+                                                status: false,
+                                                message: "User Not Saved"
+                                            });
+                                        }
+                                    });
+                                } else {
+                                    res.send({
+                                        status: false,
+                                        message: "BlitzID Not Retrieved"
+                                    });
+                                }
+                            });
+                        } else {
+                            console.log('false pin');
+                            res.send({
+                                status: false,
+                                message: "Incorrect Pin"
+                            });
+                        }
                     });
-                });
+                } else {
+                    console.log('false mobile num');
+                    res.send({
+                        status: false,
+                        message: "Incorrect Mobile Number"
+                    });
+                }
             });
         }
     });
-
-
 });
 
 app.post('/events', (req, res) => {
