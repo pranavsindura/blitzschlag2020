@@ -13,8 +13,8 @@ let userSchema = new mongoose.Schema({
         teamName: String,
         teamSize: Number
     }],
-    blitzID: Number,
-    blitzPIN: Number,
+    blitzID: String,
+    blitzPIN: String,
     isMNIT: Boolean,
     accomodation: Boolean,
     transactionID: String

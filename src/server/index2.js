@@ -9,9 +9,11 @@ const mongoose = require('mongoose');
 const uri = 'mongodb+srv://Dhairya-Shalu:light12345@first-demo-ocw10.mongodb.net/test?retryWrites=true&w=majority';
 
 let Model = require('./model.js');
+let { idModel } = require('./idModel');
 let loginValid = require('./loginvalid');
 let eventRegister = require('./eventRegister');
-let signupvalid = require('./Signupvalidation').signUpValid;
+let signupvalid = require('./Signupvalidation');
+let mobAndPinValid = require('./mobileAndPinValid');
 
 const app = express();
 app.use(bodyparser.urlencoded({ extended: true }));
@@ -22,12 +24,12 @@ app.use(cors());
 app.use(helmet());
 
 app.use(device.capture());
+
 mongoose.connect(uri, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
-    // dbName: 'Blitzschlag20'
-    dbName: 'test'
+    dbName: 'Blitzschlag20'
 });
 
 let db = mongoose.connection;
@@ -38,34 +40,117 @@ db.once('open', async function() {
 
 app.post('/login', (req, res) => {
     let userLoginData = req.body;
-    let flag = loginValid.userValid(userLoginData)
-    if (flag) {
-        let fetchedUserDetails = loginValid.showUser(userLoginData);
-        if (fetchedUserDetails === undefined) {
-            console.log('Incorrect Blitz Password');
+    loginValid.userValid(userLoginData).then(function(result) {
+        if (result) {
+            if (result === 1) {
+                console.log('Incorrect Blitz Pin');
+                res.send({
+                    status: false,
+                    message: 'Incorrect PIN!',
+                });
+            } else {
+                console.log(result);
+                res.send({
+                    status: true,
+                    data: result
+                });
+            }
+        } else {
+            console.log('User not registered');
+            res.send({
+                status: false,
+                message:'User not Registered!',
+            })
         }
-    } else {
-        console.log('User not registered');
-    }
+    });
 });
 
 app.post('/signup', (req, res) => {
-    let user = req.body;
-    console.log(req.body);
-    signupvalid(user).then(function(result) {
-        if (result === undefined) {
-            console.log('You are already Registered');
+    let userInput = req.body;
+    let user = new Model.userModel(userInput);
+    signupvalid.signUpValid(userInput).then(function(valid) {
+        if (valid === undefined) {
+            console.log('Invalid Details');
+            res.send({
+                status: false,
+                message: "You are already Registered!"
+            });
         } else {
-            console.log('You are Registered');
+            mobAndPinValid.phonenumber(userInput.mob).then(function(result) {
+                if (result) {
+                    mobAndPinValid.validatePIN(userInput.blitzPIN).then(function(result) {
+                        if (result) {
+                            console.log('true pin');
+                            signupvalid.retrieveBlitzID().then(function(result2) {
+                                if (result2) {
+                                    user.blitzID = result2.blitzCount + 1;
+                                    signupvalid.userSave(user).then((result3) => {
+                                        if (result3) {
+                                            result2.blitzCount += 1;
+                                            signupvalid.updateBlitzID(result2).then((result4) => {
+                                                if (result4) {
+                                                    res.send({
+                                                        status: true,
+                                                        data: result3
+                                                    });
+                                                } else {
+                                                    res.send({
+                                                        status: false,
+                                                        message: "BlitzID not updated"
+                                                    });
+                                                }
+                                            });
+                                        } else {
+                                            res.send({
+                                                status: false,
+                                                message: "User Not Saved"
+                                            });
+                                        }
+                                    });
+                                } else {
+                                    res.send({
+                                        status: false,
+                                        message: "BlitzID Not Retrieved"
+                                    });
+                                }
+                            });
+                        } else {
+                            console.log('false pin');
+                            res.send({
+                                status: false,
+                                message: "Incorrect Pin"
+                            });
+                        }
+                    });
+                } else {
+                    console.log('false mobile num');
+                    res.send({
+                        status: false,
+                        message: "Incorrect Mobile Number"
+                    });
+                }
+            });
         }
     });
 });
 
 app.post('/events', (req, res) => {
     let eventReg = req.body;
-    eventRegister.updateUser(eventReg);
-});
+    eventRegister.retrieveTeamID().then(function(output) {
+        output.teamCount += 1;
+        eventRegister.updateTeamID(output).then(function(updatedTeamObj) {
+            eventReg.teamID = updatedTeamObj.teamCount;
 
+            eventRegister.updateUser(eventReg).then(function(result2) {
+                res.send({
+                    status: true,
+                    data: result2
+                });
+            });
+
+        });
+    });
+});
 
 app.use(express.static('dist'));
 console.log(process.env.PORT);

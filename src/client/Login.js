@@ -3,7 +3,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 // import 'fullpage.js/vendors/scrolloverflow';
 import Splash from './Splash';
 import './Login.css';
-import { Form, Button, Card, Col, Row } from 'react-bootstrap';
+import { Form, Button, Card, Col, Row, Alert, InputGroup } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import axios from 'axios';
@@ -26,6 +26,7 @@ const loginDetailsTemplate = {
 };
 class Login extends React.Component {
 	state = {
+		submitMessage: '',
 		whichForm: true,
 		registerFormPart: true,
 		registerDetails: {
@@ -48,6 +49,7 @@ class Login extends React.Component {
 	changeForm = () => {
 		this.setState({
 			whichForm: !this.state.whichForm,
+			submitMessage: '',
 			registerFormPart: true,
 			registerDetails: {
 				firstName: '',
@@ -79,26 +81,63 @@ class Login extends React.Component {
 	handleRegisterSubmit = (event) => {
 		event.preventDefault();
 		const { registerDetails } = this.state;
-		console.log(registerDetails);
-		// axios.post(proxy+'/signup', registerDetails).then((res)=>{
+		// console.log(registerDetails);
+		axios
+			.post(proxy + '/signup', registerDetails)
+			.then((res) => {
+				res = res.data;
+				// console.log(res);
+				if (res.status) {
+					// alert('You are successfully Registered!');
 
-		// }).catch((err)=>{
-		// 	console.log(err);
-		// });
-		this.setState({
-			registerFormPart: true,
-			registerDetails: {
-				firstName: '',
-				lastName: '',
-				email: '',
-				mob: '',
-				college: '',
-				collegeID: '',
-				blitzPIN: '',
-				isMNIT: false,
-				accomodation: false
-			}
-		});
+					console.log(res.data);
+					this.setState({
+						submitMessage: (
+							<Col>
+								<Col>
+									<p className="text-success">You are successfully Registered!</p>
+								</Col>
+								<Col>
+									<p className="text-success font-weight-bold">
+										Your BlitzID: blitz@{res.data.blitzID}
+									</p>
+								</Col>
+							</Col>
+						),
+						registerDetails: {
+							firstName: '',
+							lastName: '',
+							email: '',
+							mob: '',
+							college: '',
+							collegeID: '',
+							blitzPIN: '',
+							isMNIT: false,
+							accomodation: false
+						}
+					});
+				} else {
+					// alert('Invalid Details!');
+					console.log('NOT registered!');
+					this.setState({
+						submitMessage: (
+							<Col>
+								<p className="text-danger">{res.message}</p>
+							</Col>
+						)
+					});
+				}
+			})
+			.catch((err) => {
+				this.setState({
+					submitMessage: (
+						<Col>
+							<p className="text-danger">Experiencing Network Issues!</p>
+						</Col>
+					)
+				});
+				console.log(err);
+			});
 	};
 	handleLoginChange = (e) => {
 		let newDetails = this.state.loginDetails;
@@ -108,27 +147,54 @@ class Login extends React.Component {
 	handleLoginSubmit = (event) => {
 		event.preventDefault();
 		const { loginDetails } = this.state;
-		console.log(loginDetails);
-		this.setState({
-			loginDetails: {
-				blitzID: '',
-				blitzPIN: ''
-			}
-		});
-		this.props.LOGIN({ blitzID: loginDetails.blitzID });
+		// console.log(loginDetails);
+		axios
+			.post(proxy + '/login', loginDetails)
+			.then((res) => {
+				res = res.data;
+				console.log(res);
+				if (res.status) {
+					this.props.LOGIN(res.data);
+					this.setState({
+						loginDetails: {
+							blitzID: '',
+							blitzPIN: ''
+						}
+					});
+				} else {
+					this.setState({
+						submitMessage: (
+							<Col>
+								<p className="text-danger">{res.message}</p>
+							</Col>
+						)
+					});
+				}
+			})
+			.catch((err) => {
+				this.setState({
+					submitMessage: (
+						<Col>
+							<p className="text-danger">Experiencing Network Issues!</p>
+						</Col>
+					)
+				});
+				console.log(err);
+			});
+
 	};
 	handleRegisterFormNext = (event) => {
 		event.preventDefault();
 		this.setState({ registerFormPart: false });
 	};
 	handleRegisterFormPrev = () => {
-		this.setState({ registerFormPart: true });
+		this.setState({ registerFormPart: true, submitMessage: '' });
 	};
 	render() {
 		if (this.props.loggedIn) {
 			return <Redirect to="/myaccount" />;
 		}
-		const { registerDetails, loginDetails } = this.state;
+		const { registerDetails, loginDetails, submitMessage } = this.state;
 		const registerFormPart1 = (
 			<div className="section coverlogin">
 				<div className="formwrapper">
@@ -226,7 +292,7 @@ class Login extends React.Component {
 									</Col>
 								</Row>
 								<Row>
-									<Col >
+									<Col>
 										<a className="changeform" href="#" onClick={() => this.changeForm()}>
 											Already have an account?
 										</a>
@@ -341,6 +407,7 @@ class Login extends React.Component {
 										</Button>
 									</Col>
 								</Row>
+								<Row>{submitMessage}</Row>
 								<Row>
 									<Col>
 										<a className="changeform" href="#" onClick={() => this.changeForm()}>
@@ -369,17 +436,23 @@ class Login extends React.Component {
 								}}
 							>
 								<Form.Group>
-									<Form.Control
-										onChange={() => {
-											this.handleLoginChange(event);
-										}}
-										value={loginDetails.blitzID}
-										id="blitzID"
-										type="text"
-										required={true}
-										placeholder="Blitz ID"
-									/>
+									<InputGroup>
+										<InputGroup.Prepend>
+											<InputGroup.Text id="inputGroupPrepend">blitz@</InputGroup.Text>
+										</InputGroup.Prepend>
+										<Form.Control
+											onChange={() => {
+												this.handleLoginChange(event);
+											}}
+											value={loginDetails.blitzID}
+											id="blitzID"
+											type="text"
+											required={true}
+											placeholder="Blitz ID"
+										/>
+									</InputGroup>
 								</Form.Group>
+
 								<Form.Group>
 									<Form.Control
 										onChange={() => {
@@ -399,7 +472,7 @@ class Login extends React.Component {
 										</Button>
 									</Col>
 								</Row>
-								<Row />
+								<Row>{submitMessage}</Row>
 								<Row>
 									<Col>
 										<a className="changeform" href="#" onClick={() => this.changeForm()}>

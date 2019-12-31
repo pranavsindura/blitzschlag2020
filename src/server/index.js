@@ -45,7 +45,8 @@ app.post('/login', (req, res) => {
             if (result === 1) {
                 console.log('Incorrect Blitz Pin');
                 res.send({
-                    status: false
+                    status: false,
+                    message: 'Incorrect PIN!',
                 });
             } else {
                 console.log(result);
@@ -57,7 +58,8 @@ app.post('/login', (req, res) => {
         } else {
             console.log('User not registered');
             res.send({
-                status: false
+                status: false,
+                message:'User not Registered!',
             })
         }
     });
@@ -68,7 +70,6 @@ app.post('/signup', (req, res) => {
     let user = new Model.userModel(userInput);
     signupvalid.signUpValid(userInput).then(function(valid) {
         if (valid === undefined) {
-            console.log('Invalid Details');
             res.send({
                 status: false,
                 message: "You are already Registered!"
@@ -94,21 +95,21 @@ app.post('/signup', (req, res) => {
                                                 } else {
                                                     res.send({
                                                         status: false,
-                                                        message: "BlitzID not updated"
+                                                        message: "Internal Error!"
                                                     });
                                                 }
                                             });
                                         } else {
                                             res.send({
                                                 status: false,
-                                                message: "User Not Saved"
+                                                message: "Internal Error!"
                                             });
                                         }
                                     });
                                 } else {
                                     res.send({
                                         status: false,
-                                        message: "BlitzID Not Retrieved"
+                                        message: "Internal Error!"
                                     });
                                 }
                             });
@@ -116,7 +117,7 @@ app.post('/signup', (req, res) => {
                             console.log('false pin');
                             res.send({
                                 status: false,
-                                message: "Incorrect Pin"
+                                message: "Incorrect Pin!"
                             });
                         }
                     });
@@ -124,7 +125,7 @@ app.post('/signup', (req, res) => {
                     console.log('false mobile num');
                     res.send({
                         status: false,
-                        message: "Incorrect Mobile Number"
+                        message: "Incorrect Mobile Number!"
                     });
                 }
             });
