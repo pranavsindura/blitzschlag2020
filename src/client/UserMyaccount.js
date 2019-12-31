@@ -5,7 +5,7 @@ import './UserMyaccount.css';
 import Splash from './Splash';
 import ReactFullpage from '@fullpage/react-fullpage';
 import 'fullpage.js/vendors/scrolloverflow';
-import {Redirect} from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 class Myaccount extends Component {
 	constructor(props) {
@@ -160,10 +160,10 @@ class Myaccount extends Component {
 	}
 
 	render() {
-    if(!this.props.loggedIn)
-    {
-        return(<Redirect to="/login" />)
-    }
+		if (!this.props.loggedIn) {
+			return <Redirect to="/login" />;
+		}
+		if (!this.props.user) return null;
 		return (
 			<div>
 				<Splash images={this.images} />
@@ -185,7 +185,7 @@ class Myaccount extends Component {
 const mapStateToProps = (state) => {
 	return {
 		loggedIn: state.loggedIn,
-		user: state.user,
+		user: state.user
 	};
 };
 
