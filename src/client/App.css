@@ -89,19 +89,19 @@ h1 {
     }
 }
 
-::-webkit-scrollbar {
+.inmenu::-webkit-scrollbar {
     width: 10px;
 }
 
-::-webkit-scrollbar-track {
+.inmenu::-webkit-scrollbar-track {
     background-color: black;
 }
 
-::-webkit-scrollbar-thumb {
+.inmenu::-webkit-scrollbar-thumb {
     background-color: #444;
 }
 
-::-webkit-scrollbar-thumb:hover {
+.inmenu::-webkit-scrollbar-thumb:hover {
     background-color: #333;
 }
 

@@ -20,13 +20,16 @@ export default class Sponsors extends Component {
   images = [
     "https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg"
   ];
-  renderData(sponsors) {
+  renderData(sponsors, fullpageApi) {
     return (
       <Row xs="2" sm="3" md="5">
         {sponsors.map(sponsor => {
           return (
             <Col key={sponsor.id} className="contcol">
               <img
+                onLoad={() => {
+                  fullpageApi.reBuild();
+                }}
                 src={sponsor.image}
                 alt={sponsor.name}
                 className="contimg"
@@ -37,34 +40,73 @@ export default class Sponsors extends Component {
       </Row>
     );
   }
-  renderSponsorsPC() {
-    return (
-      <div className="container-fluid cont ">
-        <h1>Sponsors</h1>
-        <br></br>
-        <br></br>
-        <div className="container">{this.renderData(this.state.sponsors)}</div>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-      </div>
-    );
-  }
+  // renderSponsorsPC(fullpageApi) {
+  //   return (
+  //     <div className="container-fluid">
+  //       <h1>Sponsors</h1>
+  //       <br></br>
+  //       <br></br>
+  //       <div className="container">
+  //         {this.renderData(this.state.sponsors, fullpageApi)}
+  //       </div>
+  //       <br></br>
+  //       <br></br>
+  //       <br></br>
+  //       <br></br>
+  //       <br></br>
+  //       <br></br>
+  //     </div>
+  //   );
+  // }
+  // renderSponsorsMOB() {
+  //   return (
+  //     <div>
+  //       <h1>Sponsors</h1>
+  //       <br></br>
+  //       <br></br>
+  //       <div className="container">{this.renderData(this.state.sponsors)}</div>
+  //       <br></br>
+  //       <br></br>
+  //       <br></br>
+  //     </div>
+  //   );
+  // }
+  // renderSponsors() {
+  //   if (window.innerWidth < 760) {
+  //     return (
+  //       <div className="container-fluid contmob">
+  //         {this.renderSponsorsMOB()}
+  //       </div>
+  //     );
+  //   } else {
+  //     return (
+  //       <div className="container-fluid cont ">{this.renderSponsorsPC()}</div>
+  //     );
+  //   }
+  // }
   render() {
     return (
       <div>
         <Splash images={this.images} />
         <ReactFullpage
-          // scrollOverflow={true}
+          scrollOverflow={true}
           // responsiveHeight={1080}
           render={({ state, fullpageApi }) => {
             return (
               <ReactFullpage.Wrapper>
                 <div className="section">
-                  {this.renderSponsorsPC()}
+                  <h1>Sponsors</h1>
+                  <br></br>
+                  <br></br>
+                  <div className="container">
+                    {this.renderData(this.state.sponsors, fullpageApi)}
+                  </div>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
                 </div>
               </ReactFullpage.Wrapper>
             );
