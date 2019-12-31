@@ -7,8 +7,11 @@ import { Form, Button, Card, Col, Row, Alert, InputGroup } from 'react-bootstrap
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import axios from 'axios';
-let proxy = 'http://localhost:8080';
-if (process.env.PROD) proxy = '';
+//DEVELOPMENT
+// let proxy = 'http://localhost:8080';
+//PRODUCTION, change before pushing
+let proxy = '';
+
 const registerDetailsTemplate = {
 	firstName: '',
 	lastName: '',
@@ -145,6 +148,7 @@ class Login extends React.Component {
 		this.setState({ loginDetails: newDetails });
 	};
 	handleLoginSubmit = (event) => {
+		alert(proxy);
 		event.preventDefault();
 		const { loginDetails } = this.state;
 		// console.log(loginDetails);

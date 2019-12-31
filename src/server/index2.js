@@ -29,7 +29,7 @@ mongoose.connect(uri, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
-    dbName: 'Blitzschlag20'
+    dbName: 'test'
 });
 
 let db = mongoose.connection;
