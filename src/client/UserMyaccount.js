@@ -11,7 +11,6 @@ class Myaccount extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			user: USER,
 			width: 0,
 			height: 0
 		};
@@ -51,25 +50,25 @@ class Myaccount extends Component {
 					<tbody>
 						<tr>
 							<td>Blitz ID:</td>
-							<td>blitz20@{this.state.user.blitzID}</td>
+							<td>blitz20@{this.props.user.blitzID}</td>
 						</tr>
 						<tr>
 							<td>College ID:</td>
-							<td>{this.state.user.collegeID}</td>
+							<td>{this.props.user.collegeID}</td>
 						</tr>
 						<tr>
 							<td>Email ID:</td>
-							<td>{this.state.user.email}</td>
+							<td>{this.props.user.email}</td>
 						</tr>
 						<tr>
 							<td>Phone Number:</td>
-							<td> {this.state.user.mob}</td>
+							<td> {this.props.user.mob}</td>
 						</tr>
 						<tr>
 							<td>Accomodation needed:</td>
 							<td>{acc}</td>
 						</tr>
-						{this.renderTransaction(this.state.user)}
+						{this.renderTransaction(this.props.user)}
 					</tbody>
 				</Table>
 			</div>
@@ -133,12 +132,12 @@ class Myaccount extends Component {
 					</Jumbotron>
 					<div className="pro ">
 						<h2 className="words">
-							{this.state.user.firstName} {this.state.user.lastName}
+							{this.props.user.firstName} {this.props.user.lastName}
 						</h2>
-						<p className="words">{this.state.user.college}</p>
+						<p className="words">{this.props.user.college}</p>
 					</div>
 					<br></br>
-					<div className="pro row words">{this.renderDetails(this.state.user)}</div>
+					<div className="pro row words">{this.renderDetails(this.props.user)}</div>
 				</div>
 			);
 		} else {
@@ -149,12 +148,12 @@ class Myaccount extends Component {
 					</Jumbotron>
 					<div>
 						<h2 className="promob words">
-							{this.state.user.firstName} {this.state.user.lastName}
+							{this.props.user.firstName} {this.props.user.lastName}
 						</h2>
-						<p className="promob words">{this.state.user.college}</p>
+						<p className="promob words">{this.props.user.college}</p>
 					</div>
-					<div className="promob words">{this.renderDetails(this.state.user)}</div>
-					<div className="greenmob">{this.renderEventsPC(this.state.user.events)}</div>
+					<div className="promob words">{this.renderDetails(this.props.user)}</div>
+					<div className="greenmob">{this.renderEventsPC(this.props.user.events)}</div>
 				</div>
 			);
 		}
@@ -185,7 +184,8 @@ class Myaccount extends Component {
 
 const mapStateToProps = (state) => {
 	return {
-		loggedIn: state.loggedIn
+		loggedIn: state.loggedIn,
+		user: state.user,
 	};
 };
 

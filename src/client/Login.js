@@ -7,10 +7,6 @@ import { Form, Button, Card, Col, Row, Alert, InputGroup } from 'react-bootstrap
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import axios from 'axios';
-//DEVELOPMENT
-// let proxy = 'http://localhost:8080';
-//PRODUCTION, change before pushing
-let proxy = '';
 
 const registerDetailsTemplate = {
 	firstName: '',
@@ -48,6 +44,11 @@ class Login extends React.Component {
 			blitzPIN: ''
 		}
 	};
+ 	proxy = 'http://localhost:8080';
+	componentDidMount() {
+		if(this.props.production)
+			this.proxy='';
+	}
 	images = ['https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg'];
 	changeForm = () => {
 		this.setState({
@@ -86,7 +87,7 @@ class Login extends React.Component {
 		const { registerDetails } = this.state;
 		// console.log(registerDetails);
 		axios
-			.post(proxy + '/signup', registerDetails)
+			.post(this.proxy + '/signup', registerDetails)
 			.then((res) => {
 				res = res.data;
 				// console.log(res);
@@ -148,12 +149,12 @@ class Login extends React.Component {
 		this.setState({ loginDetails: newDetails });
 	};
 	handleLoginSubmit = (event) => {
-		// alert(proxy);
+		console.log(this.proxy);
 		event.preventDefault();
 		const { loginDetails } = this.state;
 		// console.log(loginDetails);
 		axios
-			.post(proxy + '/login', loginDetails)
+			.post(this.proxy + '/login', loginDetails)
 			.then((res) => {
 				res = res.data;
 				console.log(res);
@@ -512,7 +513,8 @@ class Login extends React.Component {
 const mapStateToProps = (state) => {
 	return {
 		loggedIn: state.loggedIn,
-		user: state.user
+		user: state.user,
+		production: state.production,
 	};
 };
 

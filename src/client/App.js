@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import Home from './Home.js';
 import Event from './event';
 import CategoryEvent from './CategoryEvent';
-import Myaccount from './UserMyaccount.js'
+import Myaccount from './UserMyaccount.js';
 import Team from './Team.js';
-import Sponsors from './Sponsors.js'
-import Hospitality from './Hospitality.js'
-import GetTickets from './GetTickets.js'
+import Sponsors from './Sponsors.js';
+import Hospitality from './Hospitality.js';
+import GetTickets from './GetTickets.js';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { createHashHistory as createHistory } from 'history';
@@ -23,6 +23,10 @@ class App extends Component {
 	handleCheck = () => {
 		this.setState({ checked: !this.state.checked });
 	};
+	handleLogout = () => {
+		this.props.LOGOUT();
+		this.handleCheck();
+	}
 	render() {
 		const { moveto, checked } = this.state;
 		return (
@@ -68,7 +72,7 @@ class App extends Component {
 					</div>
 					<div className="menu">
 						<div>
-							<div className="inmenu" style={{width:'100%'}}>
+							<div className="inmenu" style={{ width: '100%' }}>
 								<ul>
 									<li>
 										<Link
@@ -173,6 +177,19 @@ class App extends Component {
 											Our Team
 										</Link>
 									</li>
+									{this.props.loggedIn ? (
+										<li>
+											<Link
+												style={{ textDecoration: 'none', color: 'white' }}
+												to="#"
+												onClick={() => {
+													this.handleLogout();
+												}}
+											>
+												Logout
+											</Link>
+										</li>
+									) : null}
 								</ul>
 							</div>
 						</div>
@@ -278,7 +295,11 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => {
-	return {};
+	return {
+		LOGOUT: ()=>{
+			dispatch({ type: 'LOGOUT' });
+		}
+	};
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
