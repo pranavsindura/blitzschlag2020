@@ -148,7 +148,7 @@ class Login extends React.Component {
 		this.setState({ loginDetails: newDetails });
 	};
 	handleLoginSubmit = (event) => {
-		alert(proxy);
+		// alert(proxy);
 		event.preventDefault();
 		const { loginDetails } = this.state;
 		// console.log(loginDetails);
@@ -429,7 +429,7 @@ class Login extends React.Component {
 			<div className="section coverlogin">
 				<div
 					className="formwrapper"
-					style={{ position: 'relative', top: '50%', transform: 'translateY(-50%)' }}
+					// style={{ position: 'relative', top: '50%', transform: 'translateY(-50%)' }}
 				>
 					<h1 className="heading">Login</h1>
 					<Card>
