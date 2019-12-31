@@ -42,7 +42,7 @@ export default class Sponsors extends Component {
       <div>
         <Splash images={this.images} />
         <ReactFullpage
-          // scrollOverflow={true}
+          scrollOverflow={true}
           // responsiveHeight={1080}
           render={({ state, fullpageApi }) => {
             return (
