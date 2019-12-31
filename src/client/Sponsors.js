@@ -22,7 +22,7 @@ export default class Sponsors extends Component {
   ];
   renderData(sponsors) {
     return (
-      <Row xs="1" sm="2" md="3">
+      <Row xs="2" sm="3" md="5">
         {sponsors.map(sponsor => {
           return (
             <Col key={sponsor.id} className="contcol">
