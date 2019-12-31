@@ -42,23 +42,26 @@ export default class Sponsors extends Component {
       <div>
         <Splash images={this.images} />
         <ReactFullpage
-          scrollOverflow={true}
+          // scrollOverflow={true}
+          // responsiveHeight={1080}
           render={({ state, fullpageApi }) => {
             return (
               <ReactFullpage.Wrapper>
-                <div className="section">
-                  <h1>Sponsors</h1>
-                  <br></br>
-                  <br></br>
-                  <div className="container cont">
+                <div className="section ">
+                  <div className="container-fluid cont">
+                    <h1>Sponsors</h1>
+                    <br></br>
+                    <br></br>
+                    <div className="container">
                     {this.renderData(this.state.sponsors)}
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
                   </div>
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  <br></br>
                 </div>
               </ReactFullpage.Wrapper>
             );
