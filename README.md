@@ -1,2 +1,1 @@
-#Blitzschlag 2020
-##Coming Soon
+# Blitzschlag 2020
