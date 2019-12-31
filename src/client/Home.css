@@ -1,5 +1,5 @@
 h1 {
-	text-align: center;
+    text-align: center;
 }
 
 .img {
@@ -7,10 +7,15 @@ h1 {
     height: 100%;
     width: inherit;
     overflow: hidden;
-	object-fit: cover;
-	border:none;
+    object-fit: cover;
+    border: none;
 }
 
-.car, .caritem{
-	height: 100vh;
+.car,
+.caritem {
+    height: 100vh;
+}
+
+.sundarchakra {
+    overflow: hidden;
 }

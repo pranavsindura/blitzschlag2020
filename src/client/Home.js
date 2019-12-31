@@ -1,52 +1,52 @@
-import React, { Component } from 'react';
-import './Home.css';
-import ReactFullpage from '@fullpage/react-fullpage';
+import React, { Component } from "react";
+import "./Home.css";
+import ReactFullpage from "@fullpage/react-fullpage";
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import { Carousel } from 'react-bootstrap';
-import Splash from './Splash';
+import { Carousel } from "react-bootstrap";
+import Splash from "./Splash";
 export default class Home extends Component {
-	state = { moveto: null };
-	images = [
-		'src/shared/img/bg2.png',
-		'src/shared/img/bg1.png',
-		'http://makingnotesinthedark.files.wordpress.com/2014/02/babloo-happy-hai-2014-hd-movie-wallpapers.jpg',
-		'https://storage.googleapis.com/ehimages/2018/3/26/img_35da01d961375fb6b4cc12b956776db0_1522053167583_processed_original.jpg',
-		'https://ecisveep.nic.in/uploads/monthly_2018_11/large.1385334822_nukkad5.jpg.10a022ad8eac5284ac2e10484f9020a8.jpg',
-		'https://images.unsplash.com/photo-1549046675-dd779977de88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
-		'http://www.safetynational.com/wp-content/uploads/2018/10/IMG_1963-scaled.jpg'
-	];
-	componentDidMount() {
-		this.setState({ moveto: this.props.moveto });
-	}
-	componentDidUpdate(prevProps) {
-		if (prevProps.moveto != this.props.moveto) {
-			this.setState({ moveto: this.props.moveto });
-		}
-	}
-	render() {
-		return (
-			<div>
-				<Splash images={this.images} />
-				<ReactFullpage
-					scrollingSpeed={1000}
-					controlArrows={true}
-					verticalCentered={true}
-					anchors={['home', 'aboutus', 'highlight', 'contactus']}
-					render={({ state, fullpageApi }) => {
-						if (this.state.moveto) {
-							fullpage_api.moveTo(this.state.moveto);
-							this.setState({ moveto: null });
-						}
-						return (
-							<ReactFullpage.Wrapper>
-								<div
-									className="section content"
-									style={{
-										backgroundImage: 'url("src/shared/img/bg2.png")',
-										backgroundSize: 'cover'
-									}}
-								>
-									<svg
+  state = { moveto: null };
+  images = [
+    "src/shared/img/bg2.png",
+    "src/shared/img/bg1.png",
+    "http://makingnotesinthedark.files.wordpress.com/2014/02/babloo-happy-hai-2014-hd-movie-wallpapers.jpg",
+    "https://storage.googleapis.com/ehimages/2018/3/26/img_35da01d961375fb6b4cc12b956776db0_1522053167583_processed_original.jpg",
+    "https://ecisveep.nic.in/uploads/monthly_2018_11/large.1385334822_nukkad5.jpg.10a022ad8eac5284ac2e10484f9020a8.jpg",
+    "https://images.unsplash.com/photo-1549046675-dd779977de88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+    "http://www.safetynational.com/wp-content/uploads/2018/10/IMG_1963-scaled.jpg"
+  ];
+  componentDidMount() {
+    this.setState({ moveto: this.props.moveto });
+  }
+  componentDidUpdate(prevProps) {
+    if (prevProps.moveto != this.props.moveto) {
+      this.setState({ moveto: this.props.moveto });
+    }
+  }
+  render() {
+    return (
+      <div>
+        <Splash images={this.images} />
+        <ReactFullpage
+          scrollingSpeed={1000}
+          controlArrows={true}
+          verticalCentered={true}
+          anchors={["home", "aboutus", "highlight", "contactus"]}
+          render={({ state, fullpageApi }) => {
+            if (this.state.moveto) {
+              fullpage_api.moveTo(this.state.moveto);
+              this.setState({ moveto: null });
+            }
+            return (
+              <ReactFullpage.Wrapper>
+                <div
+                  className="section content sundarchakra"
+                  style={{
+                    backgroundImage: 'url("src/shared/img/bg2.png")',
+                    backgroundSize: "cover"
+                  }}
+                >
+                  <svg
 										version="1.1"
 										xmlns="http://www.w3.org/2000/svg"
 										x="0px"
@@ -1476,64 +1476,64 @@ export default class Home extends Component {
 									c0-0.63,0-1.29,0-1.97C605.47,91.38,605.81,89.78,606.49,88.02z"
 										/>
 									</svg>
-								</div>
-								<div
-									className="section content"
-									style={{
-										backgroundImage: 'url("src/shared/img/bg1.png")',
-										backgroundSize: 'cover'
-									}}
-								>
-									<h1 style={{ color: '#451521' }}>About Us</h1>
-								</div>
-								<div className="section content">
-									<Carousel className="car" indicators={false} interval="4000">
-										<Carousel.Item className="caritem">
-											<img
-												className="img"
-												src="https://makingnotesinthedark.files.wordpress.com/2014/02/babloo-happy-hai-2014-hd-movie-wallpapers.jpg"
-											/>
-										</Carousel.Item>
-										<Carousel.Item className="caritem">
-											<img
-												className="img"
-												src="https://storage.googleapis.com/ehimages/2018/3/26/img_35da01d961375fb6b4cc12b956776db0_1522053167583_processed_original.jpg"
-											/>
-										</Carousel.Item>
-										<Carousel.Item className="caritem">
-											<img
-												className="img"
-												src="https://ecisveep.nic.in/uploads/monthly_2018_11/large.1385334822_nukkad5.jpg.10a022ad8eac5284ac2e10484f9020a8.jpg"
-											/>
-										</Carousel.Item>
-										<Carousel.Item className="caritem">
-											<img
-												className="img"
-												src="https://images.unsplash.com/photo-1549046675-dd779977de88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-											/>
-										</Carousel.Item>
-										<Carousel.Item className="caritem">
-											<img
-												className="img"
-												src="https://www.safetynational.com/wp-content/uploads/2018/10/IMG_1963-scaled.jpg"
-											/>
-										</Carousel.Item>
-									</Carousel>
-								</div>
-								<div
-									className="section content"
-									style={{
-										backgroundImage: 'url("src/shared/img/bg2.png")',
-										backgroundSize: 'cover'
-									}}
-								>
-									<h1 style={{ color: '#451521' }}>Contact Us</h1>
-								</div>
-							</ReactFullpage.Wrapper>
-						);
-					}}
-				/>
-			</div>
-		);
-	}
+                </div>
+                <div
+                  className="section content"
+                  style={{
+                    backgroundImage: 'url("src/shared/img/bg1.png")',
+                    backgroundSize: "cover"
+                  }}
+                >
+                  <h1 style={{ color: "#451521" }}>About Us</h1>
+                </div>
+                <div className="section content">
+                  <Carousel className="car" indicators={false} interval="4000">
+                    <Carousel.Item className="caritem">
+                      <img
+                        className="img"
+                        src="https://makingnotesinthedark.files.wordpress.com/2014/02/babloo-happy-hai-2014-hd-movie-wallpapers.jpg"
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item className="caritem">
+                      <img
+                        className="img"
+                        src="https://storage.googleapis.com/ehimages/2018/3/26/img_35da01d961375fb6b4cc12b956776db0_1522053167583_processed_original.jpg"
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item className="caritem">
+                      <img
+                        className="img"
+                        src="https://ecisveep.nic.in/uploads/monthly_2018_11/large.1385334822_nukkad5.jpg.10a022ad8eac5284ac2e10484f9020a8.jpg"
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item className="caritem">
+                      <img
+                        className="img"
+                        src="https://images.unsplash.com/photo-1549046675-dd779977de88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item className="caritem">
+                      <img
+                        className="img"
+                        src="https://www.safetynational.com/wp-content/uploads/2018/10/IMG_1963-scaled.jpg"
+                      />
+                    </Carousel.Item>
+                  </Carousel>
+                </div>
+                <div
+                  className="section content"
+                  style={{
+                    backgroundImage: 'url("src/shared/img/bg2.png")',
+                    backgroundSize: "cover"
+                  }}
+                >
+                  <h1 style={{ color: "#451521" }}>Contact Us</h1>
+                </div>
+              </ReactFullpage.Wrapper>
+            );
+          }}
+        />
+      </div>
+    );
+  }
 }

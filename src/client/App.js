@@ -68,7 +68,7 @@ class App extends Component {
 					</div>
 					<div className="menu">
 						<div>
-							<div classname="inmenu" style={{width:'100%'}}>
+							<div className="inmenu" style={{width:'100%'}}>
 								<ul>
 									<li>
 										<Link
