@@ -22,7 +22,7 @@ export default class Sponsors extends Component {
   ];
   renderData(sponsors, fullpageApi) {
     return (
-      <Row xs="2" sm="3" md="5">
+      <Row xs="2" sm="3" md="4">
         {sponsors.map(sponsor => {
           return (
             <Col key={sponsor.id} className="contcol">
@@ -40,50 +40,6 @@ export default class Sponsors extends Component {
       </Row>
     );
   }
-  // renderSponsorsPC(fullpageApi) {
-  //   return (
-  //     <div className="container-fluid">
-  //       <h1>Sponsors</h1>
-  //       <br></br>
-  //       <br></br>
-  //       <div className="container">
-  //         {this.renderData(this.state.sponsors, fullpageApi)}
-  //       </div>
-  //       <br></br>
-  //       <br></br>
-  //       <br></br>
-  //       <br></br>
-  //       <br></br>
-  //       <br></br>
-  //     </div>
-  //   );
-  // }
-  // renderSponsorsMOB() {
-  //   return (
-  //     <div>
-  //       <h1>Sponsors</h1>
-  //       <br></br>
-  //       <br></br>
-  //       <div className="container">{this.renderData(this.state.sponsors)}</div>
-  //       <br></br>
-  //       <br></br>
-  //       <br></br>
-  //     </div>
-  //   );
-  // }
-  // renderSponsors() {
-  //   if (window.innerWidth < 760) {
-  //     return (
-  //       <div className="container-fluid contmob">
-  //         {this.renderSponsorsMOB()}
-  //       </div>
-  //     );
-  //   } else {
-  //     return (
-  //       <div className="container-fluid cont ">{this.renderSponsorsPC()}</div>
-  //     );
-  //   }
-  // }
   render() {
     return (
       <div>
