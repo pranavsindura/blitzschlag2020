@@ -16,6 +16,14 @@ h1 {
     height: 100vh;
 }
 
-.sundarchakra {
-    overflow: hidden;
+.uscon {
+    min-height: 90vh;
+    color: black;
+}
+
+.contact {
+    display: table-cell;
+    vertical-align: middle;
+    height: 50vh;
+    width: 100vw;
 }

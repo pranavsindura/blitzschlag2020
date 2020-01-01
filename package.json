@@ -20,8 +20,14 @@
         "@fullpage/react-fullpage": "^0.1.17",
         "babel-polyfill": "^6.26.0",
         "bootstrap": "^4.4.1",
+        "bootstrap-social": "^5.1.1",
+        "cors": "^2.8.5",
         "disable-scroll": "^0.5.0",
         "express": "^4.16.3",
+        "express-device": "^0.4.2",
+        "font-awesome": "^4.7.0",
+        "helmet": "^3.21.2",
+        "mongoose": "^5.8.1",
         "multiscroll-reactjs": "^1.0.2",
         "react": "^16.5.2",
         "react-animated-slider": "^2.0.0",
@@ -36,11 +42,7 @@
         "react-sizeme": "^2.6.10",
         "react-window-size": "^1.2.2",
         "reactstrap": "^8.2.0",
-        "redux": "^4.0.5",
-        "cors": "^2.8.5",
-        "express-device": "^0.4.2",
-        "helmet": "^3.21.2",
-        "mongoose": "^5.8.1"
+        "redux": "^4.0.5"
     },
     "devDependencies": {
         "@babel/core": "^7.0.0",
