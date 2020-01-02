@@ -1,4 +1,5 @@
 import {createStore, combineReducers, applyMiddleware} from 'redux';
+import thunk from 'redux-thunk';
 import reducer from './reducer';
 
 const logAction = (store)=>{
@@ -12,6 +13,6 @@ const logAction = (store)=>{
     }
 }
 
-let store = createStore(reducer, applyMiddleware(logAction));
+let store = createStore(reducer, applyMiddleware(thunk));
 
 export default store;

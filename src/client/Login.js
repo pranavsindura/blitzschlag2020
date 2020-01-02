@@ -160,12 +160,12 @@ class Login extends React.Component {
 				console.log(res);
 				if (res.status) {
 					this.props.LOGIN(res.data);
-					this.setState({
-						loginDetails: {
-							blitzID: '',
-							blitzPIN: ''
-						}
-					});
+					// this.setState({
+					// 	loginDetails: {
+					// 		blitzID: '',
+					// 		blitzPIN: ''
+					// 	}
+					// });
 				} else {
 					this.setState({
 						submitMessage: (

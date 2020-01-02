@@ -41,7 +41,8 @@
         "react-sizeme": "^2.6.10",
         "react-window-size": "^1.2.2",
         "reactstrap": "^8.2.0",
-        "redux": "^4.0.5"
+        "redux": "^4.0.5",
+        "redux-thunk": "^2.3.0"
     },
     "devDependencies": {
         "@babel/core": "^7.0.0",
