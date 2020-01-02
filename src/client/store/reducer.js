@@ -1,10 +1,11 @@
 let initialState = {
 	loggedIn: false,
 	user: null,
-	production:false, 
+	production:true, 
 };
 
 let reducer = (state = initialState, action) => {
+	console.log(process.env.PROD);
 	switch (action.type) {
 		case 'LOGIN':
 			return {
