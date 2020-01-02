@@ -9,8 +9,8 @@ let reducer = (state = initialState, action) => {
 		case 'LOGIN':
 			return {
 				...state,
+				user: action.payload.user,
 				loggedIn: true,
-				user: action.payload.user
 			};
 		case 'LOGOUT':
 			return {

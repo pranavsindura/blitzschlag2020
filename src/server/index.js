@@ -117,7 +117,7 @@ app.post('/signup', (req, res) => {
                             console.log('false pin');
                             res.send({
                                 status: false,
-                                message: "Incorrect Pin!"
+                                message: "Invalid Pin!"
                             });
                         }
                     });

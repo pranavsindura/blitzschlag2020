@@ -14,6 +14,7 @@ let loginValid = require('./loginvalid');
 let eventRegister = require('./eventRegister');
 let signupvalid = require('./Signupvalidation');
 let mobAndPinValid = require('./mobileAndPinValid');
+
 const app = express();
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(bodyparser.json());
@@ -69,7 +70,6 @@ app.post('/signup', (req, res) => {
     let user = new Model.userModel(userInput);
     signupvalid.signUpValid(userInput).then(function(valid) {
         if (valid === undefined) {
-            console.log('Invalid Details');
             res.send({
                 status: false,
                 message: "You are already Registered!"
@@ -95,21 +95,21 @@ app.post('/signup', (req, res) => {
                                                 } else {
                                                     res.send({
                                                         status: false,
-                                                        message: "BlitzID not updated"
+                                                        message: "Internal Error!"
                                                     });
                                                 }
                                             });
                                         } else {
                                             res.send({
                                                 status: false,
-                                                message: "User Not Saved"
+                                                message: "Internal Error!"
                                             });
                                         }
                                     });
                                 } else {
                                     res.send({
                                         status: false,
-                                        message: "BlitzID Not Retrieved"
+                                        message: "Internal Error!"
                                     });
                                 }
                             });
@@ -117,7 +117,7 @@ app.post('/signup', (req, res) => {
                             console.log('false pin');
                             res.send({
                                 status: false,
-                                message: "Incorrect Pin"
+                                message: "Invalid Pin!"
                             });
                         }
                     });
@@ -125,7 +125,7 @@ app.post('/signup', (req, res) => {
                     console.log('false mobile num');
                     res.send({
                         status: false,
-                        message: "Incorrect Mobile Number"
+                        message: "Incorrect Mobile Number!"
                     });
                 }
             });
@@ -150,6 +150,7 @@ app.post('/events', (req, res) => {
         });
     });
 });
+
 
 app.use(express.static('dist'));
 console.log(process.env.PORT);

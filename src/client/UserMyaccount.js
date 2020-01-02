@@ -163,7 +163,7 @@ class Myaccount extends Component {
 		if (!this.props.loggedIn) {
 			return <Redirect to="/login" />;
 		}
-		if (!this.props.user) return null;
+		if (this.props.user === null) return null;
 		return (
 			<div>
 				<Splash images={this.images} />
