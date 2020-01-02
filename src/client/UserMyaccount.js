@@ -89,7 +89,7 @@ class Myaccount extends Component {
 		}
 	}
 
-	renderEventsPC(events) {
+	renderEventsPC(events, fullpageApi) {
 		if (events.length != 0) {
 			return (
 				<div className="eve">
@@ -104,7 +104,7 @@ class Myaccount extends Component {
 						<tbody>
 							{events.map((event) => {
 								return (
-									<tr key={event.teamId}>
+									<tr key={event.teamId} onLoad={()=>{fullpageApi.reBuild();}}>
 										<td>{event.name} </td>
 										<td> {event.teamId}</td>
 									</tr>
@@ -122,7 +122,7 @@ class Myaccount extends Component {
 			);
 		}
 	}
-	renderComponent() {
+	renderComponent(fullpageApi) {
 		if (window.innerWidth > 760) {
 			return (
 				<div>
@@ -153,7 +153,7 @@ class Myaccount extends Component {
 						<p className="promob words">{this.props.user.college}</p>
 					</div>
 					<div className="promob words">{this.renderDetails(this.props.user)}</div>
-					<div className="greenmob">{this.renderEventsPC(this.props.user.events)}</div>
+					<div className="greenmob">{this.renderEventsPC(this.props.user.events, fullpageApi)}</div>
 				</div>
 			);
 		}
@@ -172,7 +172,7 @@ class Myaccount extends Component {
 					render={({ state, fullpageApi }) => {
 						return (
 							<ReactFullpage.Wrapper>
-								<div className="section">{this.renderComponent()}</div>
+								<div className="section">{this.renderComponent(fullpageApi)}</div>
 							</ReactFullpage.Wrapper>
 						);
 					}}
