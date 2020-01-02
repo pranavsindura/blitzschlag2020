@@ -128,7 +128,7 @@ class Myaccount extends Component {
 				<div>
 					<Jumbotron>
 						<h1>My Account</h1>
-						<div className="boxi green">{this.renderEventsPC(this.state.user.events)}</div>
+						<div className="boxi green">{this.renderEventsPC(this.props.user.events)}</div>
 					</Jumbotron>
 					<div className="pro ">
 						<h2 className="words">
