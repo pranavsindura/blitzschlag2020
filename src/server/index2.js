@@ -13,7 +13,7 @@ let { idModel } = require('./idModel');
 let loginValid = require('./loginvalid');
 let eventRegister = require('./eventRegister');
 let signupvalid = require('./Signupvalidation');
-let mobAndPinValid = require('./mobileAndPinValid');
+let mobAndPinValid = require('./mobileAndPinValid'); 
 
 const app = express();
 app.use(bodyparser.urlencoded({ extended: true }));

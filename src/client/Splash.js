@@ -44,7 +44,7 @@ export default class App extends Component {
 		}
 		return (
 			<div className="loader-container">
-				<div className="loader-text">
+				{/* <div className="loader-text">
 				<svg
 										version="1.1"
 										xmlns="http://www.w3.org/2000/svg"
@@ -1475,7 +1475,7 @@ export default class App extends Component {
 									c0-0.63,0-1.29,0-1.97C605.47,91.38,605.81,89.78,606.49,88.02z"
 										/>
 									</svg>
-									</div>
+									</div> */}
 				<svg
 					version="1.0"
 					xmlns="http://www.w3.org/2000/svg"

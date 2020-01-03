@@ -8,7 +8,7 @@ import Sponsors from './Sponsors.js';
 import Hospitality from './Hospitality.js';
 import GetTickets from './GetTickets.js';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
 import { createHashHistory as createHistory } from 'history';
 import FadeIn from 'react-fade-in';
 import Login from './Login';
@@ -254,6 +254,9 @@ class App extends Component {
 							</div>
 							<Home moveto={moveto} />
 						</FadeIn>
+					</Route>
+					<Route>
+						<Redirect  to="/"/>
 					</Route>
 				</Switch>
 			</Router>

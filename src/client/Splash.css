@@ -19,7 +19,7 @@
     height: 70vh;
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 50%;
     transform: translateX(-50%) translateY(-50%);
     animation: rot 15s linear infinite;
 }
@@ -37,6 +37,10 @@
 
 .loader-text-svg {
     width: 80vw;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 @media screen and (min-width: 760px) {
@@ -48,13 +52,17 @@
     }
     .loader-text-svg {
         width: 25em;
+        position:relative;
+        top:50%;
+        left:50%;
+        transform: translateX(-50%) translateY(-50%);
     }
     .loader {
         width: 50vw;
         height: 50vh;
         position: absolute;
         left: 50%;
-        top: 40%;
+        top: 50%;
         transform: translateX(-50%);
         animation: rot 15s linear infinite;
     }
