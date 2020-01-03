@@ -7,6 +7,7 @@ import "bootstrap-social/bootstrap-social.css";
 import { Carousel } from "react-bootstrap";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from 'react-router-dom';
+import Chakra from './Sundar.js';
 import Splash from "./Splash";
 export default class Home extends Component {
   state = { moveto: null };
@@ -47,7 +48,7 @@ export default class Home extends Component {
                   className="section content sundarchakra"
                   style={{
                     backgroundImage: 'url("src/shared/img/bg2.png")',
-                    backgroundSize: "cover"
+					backgroundSize: "cover"
                   }}
                 >
                   <svg
@@ -60,7 +61,8 @@ export default class Home extends Component {
                     style={{
                       enableBackground: "new 0 0 666.7 248.32",
                       display: "block",
-                      margin: "auto"
+					  margin: "auto",
+					  opacity:'1'
                     }}
                   >
                     <defs></defs>
@@ -1480,6 +1482,7 @@ export default class Home extends Component {
 									c0-0.63,0-1.29,0-1.97C605.47,91.38,605.81,89.78,606.49,88.02z"
                     />
                   </svg>
+				  {/* <Chakra></Chakra> */}
                 </div>
                 <div
                   className="section content"
@@ -1488,6 +1491,7 @@ export default class Home extends Component {
                     backgroundSize: "cover"
                   }}
                 >
+					
                   <h1 style={{ color: "#451521" }}>About Us</h1>
                 </div>
                 <div className="section content">
@@ -1526,8 +1530,8 @@ export default class Home extends Component {
                 </div>
                 <div
                   style={{
-                    backgroundImage: 'url("src/shared/img/img3.jpeg")',
-                    backgroundSize: "cover"
+					backgroundImage: 'url("src/shared/img/img3.jpeg")',
+					backgroundSize: "cover"
                   }}
                   className="section content"
                 >

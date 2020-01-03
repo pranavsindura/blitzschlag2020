@@ -1,0 +1,46 @@
+body {
+    overflow: hidden;
+    background-color: #d9bf91;
+}
+
+#lights {
+    /* background-color: orangered; */
+    /* overflow: hidden; */
+    position: relative;
+    z-index: 1;
+    animation: rotation 60s infinite linear;
+    /* box-shadow: black 2px; */
+    transform: translateX(-50%) scale(5) rotate(0deg);
+    filter: hue-rotate(0deg);
+    left: 50%;
+    top: 50%;
+}
+
+#skyline {
+    position: relative;
+    z-index: 2;
+    height: 100px;
+    left: -3.5%;
+    transform: scale(10);
+    bottom: 14%;
+}
+
+@keyframes rotation {
+    from {
+        transform: translateX(-50%) scale(5) rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) scale(5) rotate(359deg);
+        filter: hue-rotate(359deg);
+    }
+}
+
+@keyframes huerot {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(359deg);
+    }
+}
