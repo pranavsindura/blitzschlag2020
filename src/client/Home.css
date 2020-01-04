@@ -1,21 +1,36 @@
 h1 {
-    text-align: center;
+	text-align: center;
 }
 
 .img {
-    display: block;
-    height: 100%;
-    width: inherit;
-    overflow: hidden;
-    object-fit: cover;
-    border: none;
+	display: block;
+	height: 100%;
+	width: inherit;
+	overflow: hidden;
+	object-fit: cover;
+	border: none;
 }
-
+.zoom{
+	transition: all 200ms ease-in-out;
+}
+.zoom:hover{
+	transform: scale(1.2) translateX(-5%);
+	overflow: hidden;
+}
 .car,
 .caritem {
-    height: 100vh;
+	height: 100vh;
 }
 
 .sundarchakra {
-    overflow: hidden;
+	overflow: hidden;
+}
+
+.prog {
+	position: relative;
+	z-index: 10;
+	display: block;
+	top: 0px;
+	height: 5px;
+	background-color: #eee;
 }
