@@ -38,7 +38,9 @@ class App extends Component {
           <Menu right disableAutoFocus noOverlay>
             <ul style={{ listStyleType: "none" }}>
               <li className="lis menu-item">
-                <Link to="/home">HOME</Link>
+                <Link to="/" onClick={() => {
+                          this.handleClick("home");
+                        }}>HOME</Link>
               </li>
               <li className="lis  menu-item">
                 <Link to="/events">EVENTS</Link>
@@ -63,7 +65,9 @@ class App extends Component {
                 <Link to="/sponsors">SPONSORS</Link>
               </li>
               <li className="lis menu-item">
-                <Link to="/">CONTACT US</Link>
+                <Link to="/" onClick={() => {
+                          this.handleClick("contactus");
+                        }}>CONTACT US</Link>
               </li>
               <li className="lis menu-item">
                 <Link to="/team">OUR TEAM</Link>

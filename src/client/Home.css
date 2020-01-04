@@ -10,6 +10,14 @@ h1 {
 	object-fit: cover;
 	border: none;
 }
+#lady{
+	display: block;
+	position: absolute;
+	right: -10%;
+	bottom: 0%;
+	max-height: 100vh;
+	width: auto;
+}
 .zoom{
 	transition: all 200ms ease-in-out;
 }
@@ -33,4 +41,15 @@ h1 {
 	top: 0px;
 	height: 5px;
 	background-color: #eee;
+}
+
+@media screen and (max-width: 760px){
+	#lady{
+		display: block;
+		position: absolute;
+		right: -10%;
+		bottom: 0%;
+		max-height: 50vh;
+		width: auto;
+	}
 }

@@ -88,9 +88,9 @@ export default class Home extends Component {
 									? `scale(${window.innerWidth <= 760 ? 0.6 : 0.2}) translate(${
 											window.innerWidth <= 760 ? -30 : -200
 									  }%,${window.innerWidth <= 760 ? -30 : -200}%)`
-									:`scale(${this.state.mouse?1.05:0.8}) translateX(${this.state.mouse?-41.66:-50}%) translateY(${this.state.mouse?-41.66:-50}%)`
+									:`scale(${this.state.mouse?1.05:0.8}) translateX(${this.state.mouse?-41.66:-62.5}%) translateY(${this.state.mouse?-41.66:-62.5}%)`
 							}`,
-							left: `${moveLogo ? '0%' : '25%'}`,
+							left: `${moveLogo ? '0%' : (window.innerWidth <= 760?'50%':'30%')}`,
 							top: `${moveLogo ? '2%' : '35%'}`,
 						
 						}}
@@ -1567,7 +1567,7 @@ export default class Home extends Component {
 										backgroundSize: 'cover'
 									}}
 								>
-									<img className="zoom" src="src/shared/img/orangelady.png" style={{display:'block', position:'absolute', right:'-10%', bottom:'0%', maxHeight:'100vh', width:'auto'}}/>
+									<img className="zoom" id="lady" src="src/shared/img/orangelady.png"/>
 								</div>
 								<div
 									className="section content"
