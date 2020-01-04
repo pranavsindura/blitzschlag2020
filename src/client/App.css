@@ -126,8 +126,8 @@ h1 {
     position: fixed;
     width: 25px;
     height: 20px;
-    right: 36px;
-    top: 36px;
+    right: 30px;
+    top: 30px;
     z-index: 10 !important;
 }
 
@@ -143,15 +143,17 @@ h1 {
 /* Color/shape of burger icon bars on hover*/
 
 .bm-burger-bars-hover {
-    background: #a90000;
+    background: white;
 }
 
 
 /* Position and sizing of clickable cross button */
 
 .bm-cross-button {
-    height: 24px;
-    width: 24px;
+    height: 30px !important;
+    width: 30px !important;
+    top: 30px !important;
+    right: 30px !important;
 }
 
 
@@ -220,14 +222,14 @@ h1 {
     font-family: 'Quicksand', sans-serif;
 }
 
-a {
+.lisitem {
     color: #afafaf;
     text-decoration: none;
     background-color: transparent;
     font-size: small;
 }
 
-a:hover {
+.lisitem:hover {
     text-decoration: none;
     color: #ffffff;
 }

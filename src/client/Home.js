@@ -88,7 +88,7 @@ export default class Home extends Component {
 									? `scale(${window.innerWidth <= 760 ? 0.6 : 0.2}) translate(${
 											window.innerWidth <= 760 ? -30 : -200
 									  }%,${window.innerWidth <= 760 ? -30 : -200}%)`
-									:`scale(${this.state.mouse?1.05:0.8}) translateX(${this.state.mouse?-41.66:-62.5}%) translateY(${this.state.mouse?-41.66:-62.5}%)`
+									:`scale(${window.innerWidth <= 760?1.2:0.8}) translateX(${window.innerWidth <= 760?-41.66:-62.5}%) translateY(${window.innerWidth <= 760?-41.66:-62.5}%)`
 							}`,
 							left: `${moveLogo ? '0%' : (window.innerWidth <= 760?'50%':'30%')}`,
 							top: `${moveLogo ? '2%' : '35%'}`,
