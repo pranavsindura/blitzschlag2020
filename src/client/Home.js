@@ -4,6 +4,8 @@ import ReactFullpage from "@fullpage/react-fullpage";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from "react-bootstrap";
 import Splash from "./Splash";
+import FadeIn from 'react-fade-in';
+
 export default class Home extends Component {
   state = { moveto: null };
   images = [
@@ -25,8 +27,9 @@ export default class Home extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="mybox">
         <Splash images={this.images} />
+		
         <ReactFullpage
           scrollingSpeed={1000}
           controlArrows={true}
@@ -42,10 +45,11 @@ export default class Home extends Component {
                 <div
                   className="section content sundarchakra"
                   style={{
-                    backgroundImage: 'url("src/shared/img/bg2.png")',
+                    backgroundImage: 'url("https://www.scholten4iowa.com/wp-content/themes/scholten/images/saturday-spotlight.jpg")',
                     backgroundSize: "cover"
                   }}
                 >
+					
                   <svg
 										version="1.1"
 										xmlns="http://www.w3.org/2000/svg"
@@ -56,12 +60,13 @@ export default class Home extends Component {
 										style={{
 											enableBackground: 'new 0 0 666.7 248.32',
 											display: 'block',
-											margin: 'auto'
+											margin: 'auto',
+											zIndex:'1'
 										}}
 									>
 										<defs></defs>
 										<path
-											style={{ fill: '#451521' }}
+											style={{ fill: '#fff' }}
 											d="M314.7,127.12H106.89v-1H314.7V127.12z M303.89,131.66H114.65v1h189.24V131.66z M292.12,137.19h-168.6v1h168.6V137.19z
 									M278.12,142.73H123.52v1h154.61V142.73z M263.16,148.27H114.65v1h148.51V148.27z M245.48,153.8H105.78v1h139.69V153.8z
 									M523.08,138.58c-0.69,1.17-1.45,2.45-2.27,3.84s-1.58,2.67-2.27,3.84c0.79,0,1.57,0.04,2.35,0.13c0.78,0.09,1.55,0.21,2.31,0.36
@@ -1480,7 +1485,7 @@ export default class Home extends Component {
                 <div
                   className="section content"
                   style={{
-                    backgroundImage: 'url("src/shared/img/bg1.png")',
+                    backgroundImage: 'url("https://mh-1-stockagency.panthermedia.net/media/previews/0017000000/17616000/~bright-burst-background-retro-comic-pop_17616662_high.jpg")',
                     backgroundSize: "cover"
                   }}
                 >

@@ -8,7 +8,7 @@ const device = require('express-device');
 const mongoose = require('mongoose');
 const uri = 'mongodb+srv://Dhairya-Shalu:light12345@first-demo-ocw10.mongodb.net/test?retryWrites=true&w=majority';
 
-let Model = require('./model.js');
+let Model = require('./model.js'); 
 let { idModel } = require('./idModel');
 let loginValid = require('./loginvalid');
 let eventRegister = require('./eventRegister');

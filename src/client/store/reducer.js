@@ -1,7 +1,7 @@
 let initialState = {
 	loggedIn: false,
 	user: null,
-	production:true, 
+	production:false, 
 };
 
 let reducer = (state = initialState, action) => {
