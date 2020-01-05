@@ -51,8 +51,8 @@ class Login extends React.Component {
 	}
 	images = [
 		'https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg',
-		'http://bestanimations.com/Nature/Flora/flower-animated-gif1.gif',
-		'http://cdn.lowgif.com/small/86e5c0cfc1b583c0-sparkle-cross-animated-gifs-photobucket.gif'
+		'https://i.imgur.com/R4y6Kwt.gif',
+		'https://i.imgur.com/eVjW01Z.gif'
 	];
 	changeForm = (fullpageApi) => {
 		// fullpageApi.reBuild();
@@ -245,13 +245,13 @@ class Login extends React.Component {
 			<div className="section coverlogin">
 				<Sky
 					images={{
-						0: 'http://bestanimations.com/Nature/Flora/flower-animated-gif1.gif'
+						0: 'https://i.imgur.com/R4y6Kwt.gif'
 					}}
 					how={50}
 					time={50}
 					size={'100px'}
 					background={'url("src/shared/img/purplebg.jpg")'}
-					style={{height: '100vh'}}
+					style={{height: '200%', overflow:'hidden'}}
 				/>
 				<div className="formwrapper">
 					<h1 className="heading">Register</h1>
@@ -444,13 +444,13 @@ class Login extends React.Component {
 			<div className="section coverlogin">
 				<Sky
 					images={{
-						0: 'http://cdn.lowgif.com/small/86e5c0cfc1b583c0-sparkle-cross-animated-gifs-photobucket.gif'
+						0: 'https://i.imgur.com/eVjW01Z.gif'
 					}}
 					how={50}
 					time={40}
 					size={'100px'}
 					background={'url("src/shared/img/purplebg.jpg")'}
-					style={{height: '100vh'}}
+					style={{height: '200%', overflow:'hidden'}}
 				/>
 				<div
 					className="formwrapper"
