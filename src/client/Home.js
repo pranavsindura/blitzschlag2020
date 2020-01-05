@@ -16,6 +16,16 @@ export default class Home extends Component {
 		scrollChanged: false,
 		internal: false
 	};
+	homeImages = [
+		{
+			char: 'https://i.imgur.com/9yC93U6.png',
+			bg: 'https://imgur.com/bwPJhL4.jpg'
+		},
+		{
+			char: 'https://imgur.com/JI5zb8u.png',
+			bg: 'https://imgur.com/iVUKgex.jpg'
+		}
+	];
 	images = [
 		// "src/shared/img/bg2.png",
 		// "src/shared/img/bg1.png",
@@ -23,9 +33,13 @@ export default class Home extends Component {
 		'https://storage.googleapis.com/ehimages/2018/3/26/img_35da01d961375fb6b4cc12b956776db0_1522053167583_processed_original.jpg',
 		'https://ecisveep.nic.in/uploads/monthly_2018_11/large.1385334822_nukkad5.jpg.10a022ad8eac5284ac2e10484f9020a8.jpg',
 		'https://images.unsplash.com/photo-1549046675-dd779977de88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
-		'http://www.safetynational.com/wp-content/uploads/2018/10/IMG_1963-scaled.jpg'
+		'http://www.safetynational.com/wp-content/uploads/2018/10/IMG_1963-scaled.jpg',
+		'https://imgur.com/iVUKgex.jpg',
+		'https://imgur.com/JI5zb8u.png',
+		'https://imgur.com/bwPJhL4.jpg',
+		'https://i.imgur.com/9yC93U6.png',
 	];
-	imgSelect = Math.trunc(Math.random() * 2) ? 'purple' : 'orange';
+	imgSelect = Math.trunc(Math.random() * 2);
 	componentDidMount() {
 		this.setState({ moveto: this.props.moveto, scrollChanged: false });
 		this.handleScroll(1);
@@ -1600,11 +1614,11 @@ export default class Home extends Component {
 									className="section content sundarchakra"
 									style={{
 										transition: 'all 2s',
-										backgroundImage: `url("src/shared/img/${this.imgSelect}bg.jpg")`,
+										backgroundImage: `url("${this.homeImages[this.imgSelect].bg}")`,
 										backgroundSize: 'cover'
 									}}
 								>
-									<img className="zoom" id="lady" src={`src/shared/img/${this.imgSelect}.png`} />
+									<img className="zoom" id="lady" src={`${this.homeImages[this.imgSelect].char}`} />
 								</div>
 								<div
 									className="section content"

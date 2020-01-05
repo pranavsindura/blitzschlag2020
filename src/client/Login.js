@@ -51,8 +51,9 @@ class Login extends React.Component {
 	}
 	images = [
 		'https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg',
-		'https://i.imgur.com/R4y6Kwt.gif',
-		'https://i.imgur.com/eVjW01Z.gif'
+		// 'https://i.imgur.com/R4y6Kwt.gif',
+		'https://i.imgur.com/eVjW01Z.gif',
+		'https://imgur.com/iVUKgex.jpg'
 	];
 	changeForm = (fullpageApi) => {
 		// fullpageApi.reBuild();
@@ -239,20 +240,9 @@ class Login extends React.Component {
 		if (this.props.loggedIn) {
 			return <Redirect to="/myaccount" />;
 		}
-		let fullpageApi;
 		const { registerDetails, loginDetails, submitMessage } = this.state;
 		const registerForm = (
 			<div className="section coverlogin">
-				<Sky
-					images={{
-						0: 'https://i.imgur.com/R4y6Kwt.gif'
-					}}
-					how={50}
-					time={50}
-					size={'100px'}
-					background={'url("src/shared/img/purplebg.jpg")'}
-					style={{height: '200%', overflow:'hidden'}}
-				/>
 				<div className="formwrapper">
 					<h1 className="heading">Register</h1>
 					<Card>
@@ -442,16 +432,6 @@ class Login extends React.Component {
 		);
 		const loginForm = (
 			<div className="section coverlogin">
-				<Sky
-					images={{
-						0: 'https://i.imgur.com/eVjW01Z.gif'
-					}}
-					how={50}
-					time={40}
-					size={'100px'}
-					background={'url("src/shared/img/purplebg.jpg")'}
-					style={{height: '200%', overflow:'hidden'}}
-				/>
 				<div
 					className="formwrapper"
 					// style={{ position: 'relative', top: '50%', transform: 'translateY(-50%)' }}
@@ -531,7 +511,20 @@ class Login extends React.Component {
 						preventDefaultException: { tagName: /.*/ }
 					}}
 					render={({ state, fullpageApi }) => {
-						return <ReactFullpage.Wrapper>{whichForm ? loginForm : registerForm}</ReactFullpage.Wrapper>;
+						return (
+							<ReactFullpage.Wrapper>
+								<Sky
+									images={{
+										0: 'https://i.imgur.com/eVjW01Z.gif'
+									}}
+									how={50}
+									time={40}
+									size={'100px'}
+									background={'url("https://imgur.com/iVUKgex.jpg")'}
+								/>
+								{whichForm ? loginForm : registerForm}
+							</ReactFullpage.Wrapper>
+						);
 					}}
 				/>
 			</div>

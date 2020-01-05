@@ -164,6 +164,8 @@ h1 {
 
 .bm-cross {
     background: #bdc3c7;
+    width: 2px !important;
+    height: 25px !important;
 }
 
 
