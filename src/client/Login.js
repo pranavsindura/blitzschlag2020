@@ -49,7 +49,11 @@ class Login extends React.Component {
 	componentDidMount() {
 		if (this.props.production) this.proxy = '';
 	}
-	images = ['https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg'];
+	images = [
+		'https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg',
+		'http://bestanimations.com/Nature/Flora/flower-animated-gif1.gif',
+		'http://cdn.lowgif.com/small/86e5c0cfc1b583c0-sparkle-cross-animated-gifs-photobucket.gif'
+	];
 	changeForm = (fullpageApi) => {
 		// fullpageApi.reBuild();
 		this.setState(
@@ -101,57 +105,66 @@ class Login extends React.Component {
 					// alert('You are successfully Registered!');
 
 					console.log(res.data);
-					this.setState({
-						submitMessage: (
-							<Col>
+					this.setState(
+						{
+							submitMessage: (
 								<Col>
-									<p className="text-success">You are successfully Registered!</p>
+									<Col>
+										<p className="text-success">You are successfully Registered!</p>
+									</Col>
+									<Col>
+										<p className="text-success font-weight-bold">
+											Your BlitzID: blitz@{res.data.blitzID}
+										</p>
+									</Col>
 								</Col>
-								<Col>
-									<p className="text-success font-weight-bold">
-										Your BlitzID: blitz@{res.data.blitzID}
-									</p>
-								</Col>
-							</Col>
-						),
-						registerDetails: {
-							firstName: '',
-							lastName: '',
-							email: '',
-							mob: '',
-							college: '',
-							collegeID: '',
-							blitzPIN: '',
-							isMNIT: false,
-							accomodation: false
+							),
+							registerDetails: {
+								firstName: '',
+								lastName: '',
+								email: '',
+								mob: '',
+								college: '',
+								collegeID: '',
+								blitzPIN: '',
+								isMNIT: false,
+								accomodation: false
+							}
+						},
+						() => {
+							fullpage_api.reBuild();
 						}
-					},()=>{
-						fullpage_api.reBuild();
-					});
+					);
 				} else {
 					// alert('Invalid Details!');
 					console.log('NOT registered!');
-					this.setState({
-						submitMessage: (
-							<Col>
-								<p className="text-danger">{res.message}</p>
-							</Col>
-						)
-					},()=>{
-						fullpage_api.reBuild();
-					});
+					this.setState(
+						{
+							submitMessage: (
+								<Col>
+									<p className="text-danger">{res.message}</p>
+								</Col>
+							)
+						},
+						() => {
+							fullpage_api.reBuild();
+						}
+					);
 				}
 			})
 			.catch((err) => {
-				this.setState({
-					submitMessage: (
-						<Col>
-							<p className="text-danger">Experiencing Network Issues!</p>
-						</Col>
-					)
-				},()=>{
-					fullpage_api.reBuild();
-				});
+				this.setState(
+					{
+						submitMessage: (
+							<Col>
+								<p className="text-danger">Experiencing Network Issues!</p>
+							</Col>
+						)
+					},
+					() => {
+						fullpage_api.reBuild();
+					}
+				);
 				console.log(err);
 			});
 	};
@@ -179,27 +192,33 @@ class Login extends React.Component {
 					// 	}
 					// });
 				} else {
-					this.setState({
-						submitMessage: (
-							<Col>
-								<p className="text-danger">{res.message}</p>
-							</Col>
-						)
-					},()=>{
-						fullpage_api.reBuild();
-					});
+					this.setState(
+						{
+							submitMessage: (
+								<Col>
+									<p className="text-danger">{res.message}</p>
+								</Col>
+							)
+						},
+						() => {
+							fullpage_api.reBuild();
+						}
+					);
 				}
 			})
 			.catch((err) => {
-				this.setState({
-					submitMessage: (
-						<Col>
-							<p className="text-danger">Experiencing Network Issues!</p>
-						</Col>
-					)
-				},()=>{
-					fullpage_api.reBuild();
-				});
+				this.setState(
+					{
+						submitMessage: (
+							<Col>
+								<p className="text-danger">Experiencing Network Issues!</p>
+							</Col>
+						)
+					},
+					() => {
+						fullpage_api.reBuild();
+					}
+				);
 				console.log(err);
 			});
 	};
@@ -223,15 +242,16 @@ class Login extends React.Component {
 		let fullpageApi;
 		const { registerDetails, loginDetails, submitMessage } = this.state;
 		const registerForm = (
-				<div className="section coverlogin">
-				<Sky 
-				images={{
-					0: "http://bestanimations.com/Nature/Flora/flower-animated-gif1.gif",
-				}}
-				how={50}
-				time={50}
-				size={'100px'}
-				background={'url("src/shared/img/purplebg.jpg")'}
+			<div className="section coverlogin">
+				<Sky
+					images={{
+						0: 'http://bestanimations.com/Nature/Flora/flower-animated-gif1.gif'
+					}}
+					how={50}
+					time={50}
+					size={'100px'}
+					background={'url("src/shared/img/purplebg.jpg")'}
+					style={{height: '100vh'}}
 				/>
 				<div className="formwrapper">
 					<h1 className="heading">Register</h1>
@@ -242,7 +262,7 @@ class Login extends React.Component {
 									this.handleRegisterSubmit(event);
 								}}
 							>
-							<Form.Row>
+								<Form.Row>
 									<Col>
 										<Form.Group>
 											<Form.Control
@@ -422,15 +442,16 @@ class Login extends React.Component {
 		);
 		const loginForm = (
 			<div className="section coverlogin">
-				<Sky 
-			images={{
-				0: "http://cdn.lowgif.com/small/86e5c0cfc1b583c0-sparkle-cross-animated-gifs-photobucket.gif",
-			}}
-			how={50}
-			time={40}
-			size={'100px'}
-			background={'url("src/shared/img/purplebg.jpg")'}
-			/>
+				<Sky
+					images={{
+						0: 'http://cdn.lowgif.com/small/86e5c0cfc1b583c0-sparkle-cross-animated-gifs-photobucket.gif'
+					}}
+					how={50}
+					time={40}
+					size={'100px'}
+					background={'url("src/shared/img/purplebg.jpg")'}
+					style={{height: '100vh'}}
+				/>
 				<div
 					className="formwrapper"
 					// style={{ position: 'relative', top: '50%', transform: 'translateY(-50%)' }}
@@ -510,11 +531,7 @@ class Login extends React.Component {
 						preventDefaultException: { tagName: /.*/ }
 					}}
 					render={({ state, fullpageApi }) => {
-						return (
-							<ReactFullpage.Wrapper>
-								{whichForm ? loginForm : registerForm}
-							</ReactFullpage.Wrapper>
-						);
+						return <ReactFullpage.Wrapper>{whichForm ? loginForm : registerForm}</ReactFullpage.Wrapper>;
 					}}
 				/>
 			</div>
