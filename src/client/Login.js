@@ -7,6 +7,7 @@ import { Form, Button, Card, Col, Row, Alert, InputGroup } from 'react-bootstrap
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import axios from 'axios';
+import Sky from 'react-sky';
 
 const registerDetailsTemplate = {
 	firstName: '',
@@ -222,7 +223,16 @@ class Login extends React.Component {
 		let fullpageApi;
 		const { registerDetails, loginDetails, submitMessage } = this.state;
 		const registerForm = (
-			<div className="section coverlogin">
+				<div className="section coverlogin">
+				<Sky 
+				images={{
+					0: "http://bestanimations.com/Nature/Flora/flower-animated-gif1.gif",
+				}}
+				how={50}
+				time={50}
+				size={'100px'}
+				background={'url("src/shared/img/purplebg.jpg")'}
+				/>
 				<div className="formwrapper">
 					<h1 className="heading">Register</h1>
 					<Card>
@@ -412,6 +422,15 @@ class Login extends React.Component {
 		);
 		const loginForm = (
 			<div className="section coverlogin">
+				<Sky 
+			images={{
+				0: "http://cdn.lowgif.com/small/86e5c0cfc1b583c0-sparkle-cross-animated-gifs-photobucket.gif",
+			}}
+			how={50}
+			time={40}
+			size={'100px'}
+			background={'url("src/shared/img/purplebg.jpg")'}
+			/>
 				<div
 					className="formwrapper"
 					// style={{ position: 'relative', top: '50%', transform: 'translateY(-50%)' }}

@@ -29,21 +29,27 @@ class App extends Component {
 		this.props.LOGOUT();
 		this.handleCheck();
 	};
-	handleOpen = (state)=>{
-		console.log(state.isOpen);
-		this.setState({checked: state.isOpen});
+	handleOpen = (state) => {
+		// console.log(state.isOpen);
+		this.setState({ checked: state.isOpen });
 		// return state.isOpen;
-	}
+	};
 	render() {
 		const { moveto, checked } = this.state;
 		return (
 			<Router history={history}>
 				<div className="myBox">
-					<Menu right disableAutoFocus noOverlay isOpen={checked} onStateChange={(state)=> this.handleOpen(state)}>
+					<Menu
+						right
+						disableAutoFocus
+						noOverlay
+						isOpen={checked}
+						onStateChange={(state) => this.handleOpen(state)}
+					>
 						<ul style={{ listStyleType: 'none' }}>
 							<li className="lis menu-item">
 								<Link
-								className="lisitem"
+									className="lisitem"
 									to="/"
 									onClick={() => {
 										this.handleClick('home');
@@ -53,42 +59,78 @@ class App extends Component {
 								</Link>
 							</li>
 							<li className="lis  menu-item">
-								<Link className="lisitem" to="/events" onClick={() => {
-                this.handleCheck();
-              }}>EVENTS</Link>
+								<Link
+									className="lisitem"
+									to="/events"
+									onClick={() => {
+										this.handleCheck();
+									}}
+								>
+									EVENTS
+								</Link>
 							</li>
 							{this.props.loggedIn ? (
 								<li className="lis menu-item">
-									<Link className="lisitem" to="/myaccount" onClick={() => {
-                this.handleCheck();
-              }}>MY ACCOUNTS</Link>
+									<Link
+										className="lisitem"
+										to="/myaccount"
+										onClick={() => {
+											this.handleCheck();
+										}}
+									>
+										MY ACCOUNTS
+									</Link>
 								</li>
 							) : (
 								<li className="lis menu-item">
-									<Link className="lisitem" to="/login" onClick={() => {
-                this.handleCheck();
-              }}>LOGIN | REGISTER</Link>
+									<Link
+										className="lisitem"
+										to="/login"
+										onClick={() => {
+											this.handleCheck();
+										}}
+									>
+										LOGIN | REGISTER
+									</Link>
 								</li>
 							)}
 
 							<li className="lis menu-item">
-								<Link className="lisitem" to="/gettickets" onClick={() => {
-                this.handleCheck();
-              }}>GET TICKETS</Link>
-							</li>
-							<li className="lis menu-item">
-								<Link className="lisitem" to="/hospitality" onClick={() => {
-                this.handleCheck();
-              }}>HOSPITALITY</Link>
-							</li>
-							<li className="lis menu-item">
-								<Link className="lisitem" to="/sponsors" onClick={() => {
-                this.handleCheck();
-              }}>SPONSORS</Link>
+								<Link
+									className="lisitem"
+									to="/gettickets"
+									onClick={() => {
+										this.handleCheck();
+									}}
+								>
+									GET TICKETS
+								</Link>
 							</li>
 							<li className="lis menu-item">
 								<Link
-								className="lisitem"
+									className="lisitem"
+									to="/hospitality"
+									onClick={() => {
+										this.handleCheck();
+									}}
+								>
+									HOSPITALITY
+								</Link>
+							</li>
+							<li className="lis menu-item">
+								<Link
+									className="lisitem"
+									to="/sponsors"
+									onClick={() => {
+										this.handleCheck();
+									}}
+								>
+									SPONSORS
+								</Link>
+							</li>
+							<li className="lis menu-item">
+								<Link
+									className="lisitem"
 									to="/"
 									onClick={() => {
 										this.handleClick('contactus');
@@ -98,12 +140,20 @@ class App extends Component {
 								</Link>
 							</li>
 							<li className="lis menu-item">
-								<Link className="lisitem" to="/team">OUR TEAM</Link>
+								<Link
+									className="lisitem"
+									to="/team"
+									onClick={() => {
+										this.handleClick('contactus');
+									}}
+								>
+									OUR TEAM
+								</Link>
 							</li>
 							{this.props.loggedIn ? (
 								<li className="lis menu-item">
 									<Link
-									className="lisitem"
+										className="lisitem"
 										to="/"
 										onClick={() => {
 											this.handleLogout();
@@ -345,7 +395,7 @@ class App extends Component {
 										</g>
 									</svg>
 								</div>
-								<Home moveto={moveto} />
+								<Home moveto={moveto}/>
 							</FadeIn>
 						</Route>
 					</Switch>
