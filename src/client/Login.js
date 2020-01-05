@@ -7,6 +7,7 @@ import { Form, Button, Card, Col, Row, Alert, InputGroup } from 'react-bootstrap
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import axios from 'axios';
+import Sky from 'react-sky';
 
 const registerDetailsTemplate = {
 	firstName: '',
@@ -27,7 +28,7 @@ class Login extends React.Component {
 	state = {
 		submitMessage: '',
 		whichForm: true,
-		registerFormPart: true,
+		// registerFormPart: true,
 		registerDetails: {
 			firstName: '',
 			lastName: '',
@@ -44,33 +45,43 @@ class Login extends React.Component {
 			blitzPIN: ''
 		}
 	};
- 	proxy = 'http://localhost:8080';
+	proxy = 'http://localhost:8080';
 	componentDidMount() {
-		if(this.props.production)
-			this.proxy='';
+		if (this.props.production) this.proxy = '';
 	}
-	images = ['https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg'];
-	changeForm = () => {
-		this.setState({
-			whichForm: !this.state.whichForm,
-			submitMessage: '',
-			registerFormPart: true,
-			registerDetails: {
-				firstName: '',
-				lastName: '',
-				email: '',
-				mob: '',
-				college: '',
-				collegeID: '',
-				blitzPIN: '',
-				isMNIT: false,
-				accomodation: false
+	images = [
+		'https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg',
+		// 'https://i.imgur.com/R4y6Kwt.gif',
+		'https://i.imgur.com/eVjW01Z.gif',
+		'https://imgur.com/iVUKgex.jpg'
+	];
+	changeForm = (fullpageApi) => {
+		// fullpageApi.reBuild();
+		this.setState(
+			{
+				whichForm: !this.state.whichForm,
+				submitMessage: '',
+				// registerFormPart: true,
+				registerDetails: {
+					firstName: '',
+					lastName: '',
+					email: '',
+					mob: '',
+					college: '',
+					collegeID: '',
+					blitzPIN: '',
+					isMNIT: false,
+					accomodation: false
+				},
+				loginDetails: {
+					blitzID: '',
+					blitzPIN: ''
+				}
 			},
-			loginDetails: {
-				blitzID: '',
-				blitzPIN: ''
+			() => {
+				fullpageApi.reBuild();
 			}
-		});
+		);
 	};
 	handleRegisterChange = (e) => {
 		let newDetails = this.state.registerDetails;
@@ -95,51 +106,66 @@ class Login extends React.Component {
 					// alert('You are successfully Registered!');
 
 					console.log(res.data);
-					this.setState({
-						submitMessage: (
-							<Col>
+					this.setState(
+						{
+							submitMessage: (
 								<Col>
-									<p className="text-success">You are successfully Registered!</p>
+									<Col>
+										<p className="text-success">You are successfully Registered!</p>
+									</Col>
+									<Col>
+										<p className="text-success font-weight-bold">
+											Your BlitzID: blitz@{res.data.blitzID}
+										</p>
+									</Col>
 								</Col>
-								<Col>
-									<p className="text-success font-weight-bold">
-										Your BlitzID: blitz@{res.data.blitzID}
-									</p>
-								</Col>
-							</Col>
-						),
-						registerDetails: {
-							firstName: '',
-							lastName: '',
-							email: '',
-							mob: '',
-							college: '',
-							collegeID: '',
-							blitzPIN: '',
-							isMNIT: false,
-							accomodation: false
+							),
+							registerDetails: {
+								firstName: '',
+								lastName: '',
+								email: '',
+								mob: '',
+								college: '',
+								collegeID: '',
+								blitzPIN: '',
+								isMNIT: false,
+								accomodation: false
+							}
+						},
+						() => {
+							fullpage_api.reBuild();
 						}
-					});
+					);
 				} else {
 					// alert('Invalid Details!');
 					console.log('NOT registered!');
-					this.setState({
-						submitMessage: (
-							<Col>
-								<p className="text-danger">{res.message}</p>
-							</Col>
-						)
-					});
+					this.setState(
+						{
+							submitMessage: (
+								<Col>
+									<p className="text-danger">{res.message}</p>
+								</Col>
+							)
+						},
+						() => {
+							fullpage_api.reBuild();
+						}
+					);
 				}
 			})
 			.catch((err) => {
-				this.setState({
-					submitMessage: (
-						<Col>
-							<p className="text-danger">Experiencing Network Issues!</p>
-						</Col>
-					)
-				});
+				this.setState(
+					{
+						submitMessage: (
+							<Col>
+								<p className="text-danger">Experiencing Network Issues!</p>
+							</Col>
+						)
+					},
+					() => {
+						fullpage_api.reBuild();
+					}
+				);
 				console.log(err);
 			});
 	};
@@ -167,40 +193,55 @@ class Login extends React.Component {
 					// 	}
 					// });
 				} else {
-					this.setState({
-						submitMessage: (
-							<Col>
-								<p className="text-danger">{res.message}</p>
-							</Col>
-						)
-					});
+					this.setState(
+						{
+							submitMessage: (
+								<Col>
+									<p className="text-danger">{res.message}</p>
+								</Col>
+							)
+						},
+						() => {
+							fullpage_api.reBuild();
+						}
+					);
 				}
 			})
 			.catch((err) => {
-				this.setState({
-					submitMessage: (
-						<Col>
-							<p className="text-danger">Experiencing Network Issues!</p>
-						</Col>
-					)
-				});
+				this.setState(
+					{
+						submitMessage: (
+							<Col>
+								<p className="text-danger">Experiencing Network Issues!</p>
+							</Col>
+						)
+					},
+					() => {
+						fullpage_api.reBuild();
+					}
+				);
 				console.log(err);
 			});
-
 	};
-	handleRegisterFormNext = (event) => {
-		event.preventDefault();
-		this.setState({ registerFormPart: false });
-	};
-	handleRegisterFormPrev = () => {
-		this.setState({ registerFormPart: true, submitMessage: '' });
-	};
+	// handleRegisterFormNext = (event, fullpageApi) => {
+	// 	event.preventDefault();
+	// 	this.setState({ registerFormPart: false }, () => {
+	// 		fullpageApi.reBuild();
+	// 	});
+	// 	// fullpageApi.reBuild();
+	// };
+	// handleRegisterFormPrev = (fullpageApi) => {
+	// 	this.setState({ registerFormPart: true, submitMessage: '' }, () => {
+	// 		fullpageApi.reBuild();
+	// 	});
+	// 	// fullpageApi.reBuild();
+	// };
 	render() {
 		if (this.props.loggedIn) {
 			return <Redirect to="/myaccount" />;
 		}
 		const { registerDetails, loginDetails, submitMessage } = this.state;
-		const registerFormPart1 = (
+		const registerForm = (
 			<div className="section coverlogin">
 				<div className="formwrapper">
 					<h1 className="heading">Register</h1>
@@ -208,7 +249,7 @@ class Login extends React.Component {
 						<Card.Body>
 							<Form
 								onSubmit={() => {
-									this.handleRegisterFormNext(event);
+									this.handleRegisterSubmit(event);
 								}}
 							>
 								<Form.Row>
@@ -289,37 +330,6 @@ class Login extends React.Component {
 										placeholder="College ID"
 									/>
 								</Form.Group>
-								<Row>
-									<Col>
-										<Button variant="primary" type="submit">
-											Next >>
-										</Button>
-									</Col>
-								</Row>
-								<Row>
-									<Col>
-										<a className="changeform" href="#" onClick={() => this.changeForm()}>
-											Already have an account?
-										</a>
-									</Col>
-								</Row>
-							</Form>
-						</Card.Body>
-					</Card>
-				</div>
-			</div>
-		);
-		const registerFormPart2 = (
-			<div className="section coverlogin">
-				<div className="formwrapper">
-					<h1 className="heading">Register</h1>
-					<Card>
-						<Card.Body>
-							<Form
-								onSubmit={() => {
-									this.handleRegisterSubmit(event);
-								}}
-							>
 								<Form.Group>
 									<Form.Control
 										value={registerDetails.blitzPIN}
@@ -397,16 +407,6 @@ class Login extends React.Component {
 								</fieldset>
 								<Row>
 									<Col>
-										<Button
-											onClick={() => {
-												this.handleRegisterFormPrev();
-											}}
-											variant="primary"
-										>
-											{'<< Back'}
-										</Button>
-									</Col>
-									<Col>
 										<Button variant="success" type="submit">
 											Submit
 										</Button>
@@ -415,7 +415,11 @@ class Login extends React.Component {
 								<Row>{submitMessage}</Row>
 								<Row>
 									<Col>
-										<a className="changeform" href="#" onClick={() => this.changeForm()}>
+										<a
+											className="changeform"
+											href="#"
+											onClick={() => this.changeForm(fullpage_api)}
+										>
 											Already have an account?
 										</a>
 									</Col>
@@ -480,7 +484,11 @@ class Login extends React.Component {
 								<Row>{submitMessage}</Row>
 								<Row>
 									<Col>
-										<a className="changeform" href="#" onClick={() => this.changeForm()}>
+										<a
+											className="changeform"
+											href="#"
+											onClick={() => this.changeForm(fullpage_api)}
+										>
 											Create new account
 										</a>
 									</Col>
@@ -491,16 +499,30 @@ class Login extends React.Component {
 				</div>
 			</div>
 		);
-		const { whichForm, registerFormPart } = this.state;
+		const { whichForm } = this.state;
 		return (
 			<div className="scrollit">
 				<Splash images={this.images} />
 				<ReactFullpage
 					verticalCentered={false}
+					scrollOverflow={true}
+					scrollOverflowOptions={{
+						click: false,
+						preventDefaultException: { tagName: /.*/ }
+					}}
 					render={({ state, fullpageApi }) => {
 						return (
 							<ReactFullpage.Wrapper>
-								{whichForm ? loginForm : registerFormPart ? registerFormPart1 : registerFormPart2}
+								<Sky
+									images={{
+										0: 'https://i.imgur.com/eVjW01Z.gif'
+									}}
+									how={50}
+									time={40}
+									size={'100px'}
+									background={'url("https://imgur.com/iVUKgex.jpg")'}
+								/>
+								{whichForm ? loginForm : registerForm}
 							</ReactFullpage.Wrapper>
 						);
 					}}
@@ -514,7 +536,7 @@ const mapStateToProps = (state) => {
 	return {
 		loggedIn: state.loggedIn,
 		user: state.user,
-		production: state.production,
+		production: state.production
 	};
 };
 

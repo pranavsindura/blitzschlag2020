@@ -11,7 +11,49 @@ h1 {
     border: none;
 }
 
+#lady {
+    display: block;
+    position: absolute;
+    right: -10%;
+    bottom: 0%;
+    max-height: 100vh;
+    width: auto;
+}
+
+.zoom {
+    transition: all 200ms ease-in-out;
+}
+
+.zoom:hover {
+    transform: scale(1.2) translateX(-5%);
+    overflow: hidden;
+}
+
 .car,
 .caritem {
     height: 100vh;
+}
+
+.sundarchakra {
+    overflow: hidden;
+}
+
+.prog {
+    position: relative;
+    z-index: 10;
+    display: block;
+    top: 0px;
+    height: 5px;
+    background-color: #eee;
+}
+
+@media screen and (max-width: 760px) {
+    #lady {
+        display: block;
+        position: absolute;
+        right: -10%;
+        bottom: 0%;
+        max-height: 50vh;
+        width: auto;
+    }
 }

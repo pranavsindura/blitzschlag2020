@@ -1,5 +1,7 @@
 .coverlogin {
-    background-image: url('https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg');
+    /* background-image: url('https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg'); */
+    /* background: url("src/shared/img/purplebg.jpg"); */
+    transition: all 2s;
     background-size: cover;
     min-height:100vh;
 }
