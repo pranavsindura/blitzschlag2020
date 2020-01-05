@@ -35,16 +35,45 @@ class App extends Component {
     return (
       <Router history={history}>
         <div className="myBox">
-		<Menu>
-            <a id="home" className="menu-item" href="/">
-              Home
-            </a>
-            <a id="about" className="menu-item" href="/about">
-              About
-            </a>
-            <a id="contact" className="menu-item" href="/contact">
-              Contact
-            </a>
+          <Menu right disableAutoFocus noOverlay>
+            <ul style={{ listStyleType: "none" }}>
+              <li className="lis menu-item">
+                <Link className="lisitem" to="/home">HOME</Link>
+              </li>
+              <li className="lis  menu-item">
+                <Link className="lisitem" to="/events">EVENTS</Link>
+              </li>
+              {this.props.loggedIn ? (
+                <li className="lis menu-item">
+                  <Link className="lisitem" to="/myaccount">MY ACCOUNTS</Link>
+                </li>
+              ) : (
+                <li className="lis menu-item">
+                  <Link className="lisitem" to="/login">LOGIN | REGISTER</Link>
+                </li>
+              )}
+
+              <li className="lis menu-item">
+                <Link className="lisitem" to="/gettickets">GET TICKETS</Link>
+              </li>
+              <li className="lis menu-item">
+                <Link className="lisitem" to="/hospitality">HOSPITALITY</Link>
+              </li>
+              <li className="lis menu-item">
+                <Link className="lisitem" to="/sponsors">SPONSORS</Link>
+              </li>
+              <li className="lis menu-item">
+                <Link className="lisitem" to="/">CONTACT US</Link>
+              </li>
+              <li className="lis menu-item">
+                <Link className="lisitem" to="/team">OUR TEAM</Link>
+              </li>
+              {this.props.loggedIn ? (
+                <li className="lis menu-item">
+                  <Link className="lisitem" to="#">LOGOUT</Link>
+                </li>
+              ) : null}
+            </ul>
           </Menu>
           {/* <div className="outer-menu">
             <input
@@ -184,7 +213,7 @@ class App extends Component {
               </div>
             </div>
           </div> */}
-          
+
           <Switch>
             <Route path="/events/category">
               <FadeIn>
