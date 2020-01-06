@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Home.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Col, Row } from 'react-bootstrap';
 import Splash from './Splash';
 import styled, { keyframes } from 'styled-components';
 // import ProgBar from './ProgBar';
@@ -14,7 +14,8 @@ export default class Home extends Component {
 		moveLogo: false,
 		mouse: false,
 		scrollChanged: false,
-		internal: false
+		internal: false,
+		currSlide: 0
 	};
 	homeImages = [
 		{
@@ -26,6 +27,7 @@ export default class Home extends Component {
 			bg: 'https://imgur.com/iVUKgex.jpg'
 		}
 	];
+	carImages = ['src/shared/img/car1.jpg', 'src/shared/img/car2.jpg', 'src/shared/img/car3.jpg'];
 	images = [
 		// "src/shared/img/bg2.png",
 		// "src/shared/img/bg1.png",
@@ -37,7 +39,7 @@ export default class Home extends Component {
 		'https://imgur.com/iVUKgex.jpg',
 		'https://imgur.com/JI5zb8u.png',
 		'https://imgur.com/bwPJhL4.jpg',
-		'https://i.imgur.com/9yC93U6.png',
+		'https://i.imgur.com/9yC93U6.png'
 	];
 	imgSelect = Math.trunc(Math.random() * 2);
 	componentDidMount() {
@@ -72,8 +74,12 @@ export default class Home extends Component {
 			}, 2000);
 		}
 	}
+	nextSlide = () => {
+		const { currSlide } = this.state;
+		this.setState({ currSlide: (currSlide + 1) % this.carImages.length });
+	};
 	render() {
-		const { prevScrollPerc, scrollPerc, moveLogo, scrollChanged, internal } = this.state;
+		const { prevScrollPerc, scrollPerc, moveLogo, scrollChanged, internal, currSlide } = this.state;
 		const BlitzLogo = styled.svg`
 			transition: all 2s;
 			enable-background: new 0 0 666.7 248.32;
@@ -100,21 +106,22 @@ export default class Home extends Component {
 		let ProgBar;
 		if (scrollChanged && internal) {
 			ProgBar = styled.div`
-				background-color: #d70034;
+				background-color: #fff;
 				position: relative;
 				height: 100%;
 				z-index: 11;
 				width: ${scrollPerc}%;
+				transition: all 2s ease-in-out;
 				animation: ${() => animScroll(prevScrollPerc, scrollPerc)} 2s ease-in-out;
 				animation-fill-mode: forwards;
 			`;
 		} else {
 			ProgBar = styled.div`
-				background-color: #d70034;
+				background-color: #fff;
 				position: relative;
 				height: 100%;
 				z-index: 11;
-				transition: width 2s ease-in-out;
+				transition: all 2s ease-in-out;
 				width: ${scrollPerc}%;
 			`;
 		}
@@ -1598,7 +1605,7 @@ export default class Home extends Component {
 				<ReactFullpage
 					scrollingSpeed={2000}
 					controlArrows={true}
-					verticalCentered={true}
+					verticalCentered={false}
 					anchors={['home', 'aboutus', 'highlight', 'contactus']}
 					onLeave={(origin, destination, direction) => {
 						this.handleScroll(destination.index + 1);
@@ -1629,39 +1636,157 @@ export default class Home extends Component {
 								>
 									<h1 style={{ color: '#451521' }}>About Us</h1>
 								</div>
-								<div className="section content">
-									<Carousel className="car" indicators={false} interval="4000">
-										<Carousel.Item className="caritem">
-											<img
-												className="img"
-												src="https://makingnotesinthedark.files.wordpress.com/2014/02/babloo-happy-hai-2014-hd-movie-wallpapers.jpg"
-											/>
-										</Carousel.Item>
-										<Carousel.Item className="caritem">
-											<img
-												className="img"
-												src="https://storage.googleapis.com/ehimages/2018/3/26/img_35da01d961375fb6b4cc12b956776db0_1522053167583_processed_original.jpg"
-											/>
-										</Carousel.Item>
-										<Carousel.Item className="caritem">
-											<img
-												className="img"
-												src="https://ecisveep.nic.in/uploads/monthly_2018_11/large.1385334822_nukkad5.jpg.10a022ad8eac5284ac2e10484f9020a8.jpg"
-											/>
-										</Carousel.Item>
-										<Carousel.Item className="caritem">
-											<img
-												className="img"
-												src="https://images.unsplash.com/photo-1549046675-dd779977de88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-											/>
-										</Carousel.Item>
-										<Carousel.Item className="caritem">
-											<img
-												className="img"
-												src="https://www.safetynational.com/wp-content/uploads/2018/10/IMG_1963-scaled.jpg"
-											/>
-										</Carousel.Item>
-									</Carousel>
+								<div className="section content" style={{ background: '#f7f7f7' }}>
+									{window.innerWidth <= 770 ? (
+										<div style={{width: '100%', height: '100%'}}>
+										<Carousel
+												className="carmob"
+												indicators={false}
+												interval="4000"
+												controls={false}
+												activeIndex={currSlide}
+												defaultActiveindex={1}
+											>
+												{this.carImages.map((item, index) => {
+													return (
+														<Carousel.Item 
+															className="carmob-item"
+															key={index}>
+															<img
+															 	className="img"
+															  	src={item} />
+														</Carousel.Item>
+													);
+												})}
+											</Carousel>
+											<div
+												style={{
+													width: '100%',
+													height: '60%',
+													backgroundColor: '#393e46',
+													position: 'absolute',
+													left: '0%',
+													bottom: '0%',
+												}}
+											></div>
+											<div className="boxmovemob">
+												<p
+													className="slidenummob"
+												>
+													0{currSlide + 1}
+												</p>
+											</div>
+											<div
+													className="control-nextmob"
+													onClick={()=>{this.nextSlide()}}
+												>
+													<p
+														className="next-iconmob"
+													>
+														&#8250;
+													</p>
+												</div>
+											
+										</div>
+									) : (
+										<Row>
+											<div
+												style={{
+													width: '40%',
+													height: '100%',
+													backgroundColor: '#929aab',
+													position: 'absolute'
+												}}
+											></div>
+											<div
+												style={{
+													width: '45%',
+													height: '40%',
+													backgroundColor: '#393e46',
+													position: 'absolute',
+													right: '0%',
+													bottom: '0%'
+												}}
+											></div>
+											<div
+												onClick={() => {
+													this.nextSlide();
+												}}
+												className="small-img-holder"
+												style={{
+													width: '10%',
+													height: '15%',
+													backgroundImage: `url("${
+														this.carImages[(currSlide + 1) % this.carImages.length]
+													}")`,
+													backgroundSize: 'cover',
+													position: 'absolute',
+													right: '5%',
+													bottom: '20%',
+													zIndex: '2',
+													transition: 'all .5s'
+												}}
+											>
+												<div
+													className="control-next"
+													style={{
+														transition: 'all .5s',
+														width: '20%',
+														height: '100%',
+														position: 'absolute',
+														right: '0%',
+														backgroundColor: '#929AAB',
+														color: 'white',
+														fontFamily: 'Quicksand',
+														fontSize: '40pt'
+													}}
+												>
+													<p
+														style={{
+															position: 'absolute',
+															top: '50%',
+															left: '50%',
+															transform: 'translateX(-50%) translateY(-50%)',
+															cursor: 'pointer'
+														}}
+													>
+														&#8250;
+													</p>
+												</div>
+											</div>
+											<div className="boxmove">
+												<p
+													style={{
+														fontFamily: 'Quicksand',
+														fontSize: '20pt',
+														textAlign: 'center',
+														color: '#f7f7f7',
+														lineHeight: '60px'
+													}}
+												>
+													0{currSlide + 1}
+												</p>
+											</div>
+											<Col md={{ span: 7, offset: 4 }}>
+												<Carousel
+													className="car"
+													indicators={false}
+													interval="4000"
+													controls={false}
+													activeIndex={currSlide}
+													defaultActiveindex={1}
+												>
+													{this.carImages.map((item, index) => {
+														return (
+															<Carousel.Item className="caritem" key={index}>
+																<img className="img" src={item} />
+															</Carousel.Item>
+														);
+													})}
+												</Carousel>
+											</Col>
+										</Row>
+									)}
 								</div>
 								<div
 									className="section content"
