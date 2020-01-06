@@ -1,8 +1,27 @@
 h1 {
-    color: white;
-    ;
+    color: #fff;
 }
 
-body {
-    background-color: black;
+.img {
+    overflow: hidden;
+}
+
+.eventcar {
+    width: inherit;
+    height: 90vh;
+    z-index: 0;
+}
+
+.eventitem {
+    width: inherit;
+    height: 90vh;
+    z-index: 0;
+}
+
+img {
+    display: block;
+    height: 100%;
+    width: inherit;
+    overflow: hidden;
+    object-fit: cover;
 }
