@@ -101,25 +101,10 @@ h1 {
     background-color: #fffff0;
     margin-right: 10px !important;
     margin-left: 10px !important;
+    margin: 10px;
     border-radius: 5px;
     padding: 5px;
     min-width: 10vw;
-}
-
-.about-count-foot-mob,
-.about-count-eve-mob,
-.about-count-coll-mob {
-    background-color: #fffff0;
-    margin-right: 2px !important;
-    margin-left: 2px !important;
-    margin: 5px;
-    border-radius: 5px;
-    padding: 5px;
-    min-width: 10vw;
-}
-
-.about-count-foot {
-    margin-left: 20px !important;
 }
 
 @media screen and (max-width: 760px) {
@@ -137,6 +122,10 @@ h1 {
 .fa-calendar-check,
 .fa-users {
     font-size: 35px;
+}
+
+.theme {
+    padding-top: 30px
 }
 
 .uscon {

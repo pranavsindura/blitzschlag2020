@@ -6,8 +6,8 @@ import { Carousel } from "react-bootstrap";
 import Splash from "./Splash";
 import styled, { keyframes } from "styled-components";
 import "@fortawesome/fontawesome-free/css/all.css";
-import {Container,Row,Col} from 'reactstrap';
-import {Link } from 'react-router-dom';
+import { Container, Row, Col } from "reactstrap";
+import { Link } from "react-router-dom";
 // import ProgBar from './ProgBar';
 export default class Home extends Component {
   state = {
@@ -212,6 +212,34 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
+      );
+    }
+  }
+  renderThemeContent() {
+    if (window.innerWidth > 760) {
+      return (
+        <div>
+          <h2 style={{ textAlign: "center", fontSize: "3em" }}>Bollywood</h2>
+          <p>
+            Although the term 'Bollywood' was popularized only in the 1970s,
+            Bollywood has been a major part of Indian culture for years before
+            that. Blitzschlag 2020 pays homage to an aspect of our culture that
+            has borne many icons, set pioneering trends, and become a much-loved
+            household name. From the iconic 'angry young man' characters and
+            dastardly villains, to thought-provoking movies with a social
+            message, and blockbuster 'masala' movies, Bollywood has something
+            for everyone, and that's the case for Blitzschlag 2020! Music,
+            dance, drama, and more await you in a feast for the senses, so join
+            us as we treat you to a panoply of performances and competitions set
+            in the heart of Rajasthan. Padhaaro mhaare Bollywood!
+          </p>
+        </div>
+      );
+    } else {
+      return (
+        <h2 style={{ textAlign: "center", fontSize: "3em" }}>
+          Padhaaro mhaare Bollywood!
+        </h2>
       );
     }
   }
@@ -1791,7 +1819,7 @@ export default class Home extends Component {
                   {this.renderAboutUs()}
                 </div>
                 <div
-                  className="section content"
+                  className="section content theme"
                   style={{
                     background: "grey",
                     backgroundSize: "cover"
@@ -1803,30 +1831,17 @@ export default class Home extends Component {
                         className="col-md-6 about-content"
                         style={{ color: "black" }}
                       >
-                        <h2 style={{ textAlign: "center", fontSize: "3em" }}>
-                          Bollywood
-                        </h2>
-                        Although the term 'Bollywood' was popularized only in
-                        the 1970s, Bollywood has been a major part of Indian
-                        culture for years before that. Blitzschlag 2020 pays
-                        homage to an aspect of our culture that has borne many
-                        icons, set pioneering trends, and become a much-loved
-                        household name. From the iconic 'angry young man'
-                        characters and dastardly villains, to thought-provoking
-                        movies with a social message, and blockbuster 'masala'
-                        movies, Bollywood has something for everyone, and that's
-                        the case for Blitzschlag 2020! Music, dance, drama, and
-                        more await you in a feast for the senses, so join us as
-                        we treat you to a panoply of performances and
-                        competitions set in the heart of Rajasthan. Padhaaro
-                        mhaare Bollywood!
+                        {this.renderThemeContent()}
                       </div>
-                      <div className="col-md-6">
+                      <div className="col-md-3"></div>
+                      <div className="col-md-3">
+                        <br></br>
+                        <br></br>
                         <div className="about-counts row">
-                          <div className="col-md-4">
+                          <div className="col-md-12">
                             <div className="about-count-foot row ">
                               <div className="col-5 p-0">
-                                <i class="fas fa-users"></i>
+                                <i className="fas fa-users"></i>
                               </div>
                               <div className="col-7 p-0">
                                 <div
@@ -1844,10 +1859,10 @@ export default class Home extends Component {
                               </div>
                             </div>
                           </div>
-                          <div className="col-md-4">
+                          <div className="col-md-12">
                             <div className="about-count-eve row">
                               <div className="col-5 p-0">
-                                <i class="fas fa-calendar-check"></i>
+                                <i className="fas fa-calendar-check"></i>
                               </div>
                               <div className="col-7 p-0">
                                 <div
@@ -1865,10 +1880,10 @@ export default class Home extends Component {
                               </div>
                             </div>
                           </div>
-                          <div className="col-md-4">
+                          <div className="col-md-12">
                             <div className="about-count-coll row">
                               <div className="col-5 p-0">
-                                <i class="fas fa-university"></i>
+                                <i className="fas fa-university"></i>
                               </div>
                               <div className="col-7 p-0">
                                 <div
@@ -1935,8 +1950,8 @@ export default class Home extends Component {
                   <div className="container-fluid uscon">
                     <h2
                       style={{
-						color: "black",
-						textAlign:'center'
+                        color: "black",
+                        textAlign: "center"
                       }}
                     >
                       Contact Us
