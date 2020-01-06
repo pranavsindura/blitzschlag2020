@@ -55,8 +55,7 @@ class App extends Component {
 										this.handleClick('home');
 									}}
 								>
-								{/* <i class="fas fa-home"></i>&nbsp; */}
-								🏠 HOME
+								<i class="fas fa-home"></i>&nbsp;HOME
 								</Link> 
 							</li>
 							<li className="lis  menu-item">
@@ -67,8 +66,7 @@ class App extends Component {
 										this.handleClick('flagship');
 									}}
 								>
-								{/* <i class="far fa-calendar-alt"></i> */}
-								🥳 FLAGSHIP EVENTS
+								<i class="fas fa-glass-cheers"></i>&nbsp;FLAGSHIP EVENTS
 								</Link>
 							</li>
 							<li className="lis  menu-item">
@@ -79,8 +77,7 @@ class App extends Component {
 										this.handleCheck();
 									}}
 								>
-								{/* <i class="far fa-calendar-alt"></i> */}
-								📅 EVENTS
+								<i class="far fa-calendar-alt"></i>&nbsp;EVENTS
 								</Link>
 							</li>
 							{this.props.loggedIn ? (
@@ -92,7 +89,7 @@ class App extends Component {
 											this.handleCheck();
 										}}
 									>
-										👤 MY ACCOUNTS
+										<i class="fas fa-users"></i>&nbsp;MY ACCOUNTS
 									</Link>
 								</li>
 							) : (
@@ -104,7 +101,7 @@ class App extends Component {
 											this.handleCheck();
 										}}
 									>
-										👥 LOGIN | REGISTER
+										<i class="far fa-user"></i>&nbsp;LOGIN | REGISTER
 									</Link>
 								</li>
 							)}
@@ -117,7 +114,7 @@ class App extends Component {
 										this.handleCheck();
 									}}
 								>
-									🎟️ GET TICKETS
+									<i class="fas fa-ticket-alt"></i>&nbsp;GET TICKETS
 								</Link>
 							</li>
 							<li className="lis menu-item">
@@ -128,7 +125,7 @@ class App extends Component {
 										this.handleCheck();
 									}}
 								>
-									🏨 HOSPITALITY
+									<i class="fas fa-hotel"></i>&nbsp;HOSPITALITY
 								</Link>
 							</li>
 							<li className="lis menu-item">
@@ -139,7 +136,7 @@ class App extends Component {
 										this.handleCheck();
 									}}
 								>
-									💸 SPONSORS
+									<i class="fas fa-money-bill-wave"></i>&nbsp;SPONSORS
 								</Link>
 							</li>
 							<li className="lis menu-item">
@@ -150,7 +147,7 @@ class App extends Component {
 										this.handleClick('contactus');
 									}}
 								>
-									📞 CONTACT US
+									<i class="fas fa-phone-alt"></i>&nbsp;CONTACT US
 								</Link>
 							</li>
 							<li className="lis menu-item">
@@ -161,7 +158,7 @@ class App extends Component {
 										this.handleClick('contactus');
 									}}
 								>
-									🤝 OUR TEAM
+									<i class="far fa-handshake"></i>&nbsp;OUR TEAM
 								</Link>
 							</li>
 							{this.props.loggedIn ? (
@@ -173,7 +170,7 @@ class App extends Component {
 											this.handleLogout();
 										}}
 									>
-										🔙 LOGOUT
+										<i class="fas fa-long-arrow-alt-left"></i>&nbsp;LOGOUT
 									</Link>
 								</li>
 							) : null}
