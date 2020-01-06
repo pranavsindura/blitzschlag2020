@@ -55,7 +55,20 @@ class App extends Component {
 										this.handleClick('home');
 									}}
 								>
-									HOME
+								{/* <i class="fas fa-home"></i>&nbsp; */}
+								🏠 HOME
+								</Link> 
+							</li>
+							<li className="lis  menu-item">
+								<Link
+									className="lisitem"
+									to="#"
+									onClick={() => {
+										this.handleClick('flagship');
+									}}
+								>
+								{/* <i class="far fa-calendar-alt"></i> */}
+								🥳 FLAGSHIP EVENTS
 								</Link>
 							</li>
 							<li className="lis  menu-item">
@@ -66,7 +79,8 @@ class App extends Component {
 										this.handleCheck();
 									}}
 								>
-									EVENTS
+								{/* <i class="far fa-calendar-alt"></i> */}
+								📅 EVENTS
 								</Link>
 							</li>
 							{this.props.loggedIn ? (
@@ -78,7 +92,7 @@ class App extends Component {
 											this.handleCheck();
 										}}
 									>
-										MY ACCOUNTS
+										👤 MY ACCOUNTS
 									</Link>
 								</li>
 							) : (
@@ -90,7 +104,7 @@ class App extends Component {
 											this.handleCheck();
 										}}
 									>
-										LOGIN | REGISTER
+										👥 LOGIN | REGISTER
 									</Link>
 								</li>
 							)}
@@ -103,7 +117,7 @@ class App extends Component {
 										this.handleCheck();
 									}}
 								>
-									GET TICKETS
+									🎟️ GET TICKETS
 								</Link>
 							</li>
 							<li className="lis menu-item">
@@ -114,7 +128,7 @@ class App extends Component {
 										this.handleCheck();
 									}}
 								>
-									HOSPITALITY
+									🏨 HOSPITALITY
 								</Link>
 							</li>
 							<li className="lis menu-item">
@@ -125,7 +139,7 @@ class App extends Component {
 										this.handleCheck();
 									}}
 								>
-									SPONSORS
+									💸 SPONSORS
 								</Link>
 							</li>
 							<li className="lis menu-item">
@@ -136,7 +150,7 @@ class App extends Component {
 										this.handleClick('contactus');
 									}}
 								>
-									CONTACT US
+									📞 CONTACT US
 								</Link>
 							</li>
 							<li className="lis menu-item">
@@ -147,7 +161,7 @@ class App extends Component {
 										this.handleClick('contactus');
 									}}
 								>
-									OUR TEAM
+									🤝 OUR TEAM
 								</Link>
 							</li>
 							{this.props.loggedIn ? (
@@ -159,7 +173,7 @@ class App extends Component {
 											this.handleLogout();
 										}}
 									>
-										LOGOUT
+										🔙 LOGOUT
 									</Link>
 								</li>
 							) : null}

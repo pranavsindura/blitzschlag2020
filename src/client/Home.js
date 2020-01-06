@@ -1776,7 +1776,7 @@ export default class Home extends Component {
           scrollingSpeed={2000}
           controlArrows={true}
           verticalCentered={false}
-          anchors={["home", "aboutus", "highlight", "contactus"]}
+          anchors={["home", "aboutus", "theme" ,"flagship", "contactus"]}
           onLeave={(origin, destination, direction) => {
             this.handleScroll(destination.index + 1);
           }}
@@ -2100,7 +2100,7 @@ export default class Home extends Component {
                             <ul className="list-unstyled">
                               <li>
                                 <Link to="/login" style={{ color: "black" }}>
-                                  Register
+                                  Login | Register
                                 </Link>
                               </li>
                               <li>
