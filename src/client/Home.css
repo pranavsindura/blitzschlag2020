@@ -70,10 +70,10 @@ h1 {
 	margin-top: 10vh;
 }
 .carmob{
-	height: 50vh;
+	height: 100%;
 }
 .carmob-item{
-	height: 50vh;
+	height: 40vh;
 	position: absolute;
 	top: 0%;
 }
@@ -85,7 +85,7 @@ h1 {
 	position: absolute;
 	left: 7%;
 	z-index: 2;
-	top: calc(42% + 25px);
+	top: calc(40vh - 25px);
 }
 .slidenummob{
 
@@ -102,7 +102,7 @@ h1 {
 	height: 50px;
 	position: absolute;
 	right: 7%;
-	top: calc(42% + 25px);
+	top: calc(40vh - 25px);
 	z-index: 2;
 	background-color: #929aab;
 }
