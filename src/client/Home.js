@@ -1653,7 +1653,7 @@ export default class Home extends Component {
 															className="carmob-item"
 															key={index}>
 															<img
-															 	className="img"
+															 	className="imgmob"
 															  	src={item} />
 														</Carousel.Item>
 													);
