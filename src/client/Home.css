@@ -1,5 +1,5 @@
 h1 {
-	text-align: center;
+    text-align: center;
 }
 
 /* .control-next{
@@ -71,6 +71,25 @@ h1 {
 	transform: scale(1.2) translateX(-5%);
 	overflow: hidden;
 }
+
+#lady {
+    display: block;
+    position: absolute;
+    right: -10%;
+    bottom: 0%;
+    max-height: 100vh;
+    width: auto;
+}
+
+.zoom {
+    transition: all 200ms ease-in-out;
+}
+
+.zoom:hover {
+    transform: scale(1.2) translateX(-5%);
+    overflow: hidden;
+}
+
 .car,
 .caritem {
 	height: 80vh;
@@ -132,11 +151,10 @@ h1 {
 	left: 50%;
 	transform: translateX(-50%);
 	line-height: 40px;
-
 }
 
 .sundarchakra {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .prog {
@@ -157,4 +175,86 @@ h1 {
 		max-height: 50vh;
 		width: auto;
 	}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.googleapis.com/css?family=Raleway&display=swap) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.about-us {
+    margin-top: 30px;
+}
+
+.about-counts {
+    padding-top: 10px;
+}
+
+.about-vid-cont {
+    width: 100%;
+    height: 80vh;
+    padding: 10px;
+    display: table-cell !important;
+    vertical-align: middle;
+}
+
+.about-video {
+    width: inherit;
+    height: inherit;
+}
+
+.about-content {
+    color: white;
+    font-variant-caps: small-caps;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+}
+
+.about-count-foot,
+.about-count-eve,
+.about-count-coll {
+    background-color: #fffff0;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    min-width: 10vw;
+}
+
+@media screen and (max-width: 760px) {
+    .about-vid-cont {
+        width: 100vw;
+        height: 40vh;
+    }
+    .about-video {
+        height: inherit;
+        width: inherit;
+    }
+}
+
+.fa-university,
+.fa-calendar-check,
+.fa-users {
+    font-size: 35px;
+}
+
+.theme {
+    padding-top: 30px
+}
+
+.uscon {
+    min-height: 90vh;
+    color: black;
+
+}
+
+.contact {
+    display: table-cell;
+    vertical-align: middle;
+    height: 50vh;
+    width: 100vw;
 }

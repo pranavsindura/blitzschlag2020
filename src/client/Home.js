@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
-import './Home.css';
-import ReactFullpage from '@fullpage/react-fullpage';
+import React, { Component } from "react";
+import "./Home.css";
+import ReactFullpage from "@fullpage/react-fullpage";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel, Col, Row } from 'react-bootstrap';
+import "@fortawesome/fontawesome-free/css/all.css";
 import Splash from './Splash';
+import { Container } from "reactstrap";
+import { Link } from "react-router-dom";
 import styled, { keyframes } from 'styled-components';
 // import ProgBar from './ProgBar';
 export default class Home extends Component {
@@ -48,7 +51,7 @@ export default class Home extends Component {
 	}
 	handleScroll = (num) => {
 		// console.log('scrolled');
-		const newScrollPerc = Math.ceil((num / 4) * 100);
+		const newScrollPerc = Math.ceil((num / 5 * 100);
 		const { scrollPerc } = this.state;
 		if (scrollPerc !== newScrollPerc)
 			this.setState({
@@ -78,6 +81,170 @@ export default class Home extends Component {
 		const { currSlide } = this.state;
 		this.setState({ currSlide: (currSlide + 1) % this.carImages.length });
 	};
+  renderAboutUs() {
+    if (window.innerWidth > 760) {
+      return (
+        <div className="container about-us">
+          <div className="row">
+            <div className="col-md-6 about-gra">
+              <div className="row">
+                <div className="about-vid-cont">
+                  <iframe
+                    className="about-video"
+                    src="https://www.youtube.com/embed/EzKkl64rRbM"
+                    frameBorder="0"
+                  ></iframe>
+                </div>
+                {/* <div className="about-counts row">
+                  <div className="col-md-4">
+                    <div className="about-count-foot row ">
+                      <div className="col-5 p-0">
+                        <i class="fas fa-users"></i>
+                      </div>
+                      <div className="col-7 p-0">
+                        <div className="row" style={{ textAlign: "center" }}>
+                          <div
+                            className="col-12 p-0"
+                            style={{ fontWeight: "bolder" }}
+                          >
+                            54K+
+                          </div>
+                          <div className="col-12 p-0">Footfalls</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-4">
+                    <div className="about-count-eve row">
+                      <div className="col-5 p-0">
+                        <i class="fas fa-calendar-check"></i>
+                      </div>
+                      <div className="col-7 p-0">
+                        <div className="row" style={{ textAlign: "center" }}>
+                          <div
+                            className="col-12 p-0"
+                            style={{ fontWeight: "bolder" }}
+                          >
+                            70+
+                          </div>
+                          <div className="col-12 p-0">Events</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-4">
+                    <div className="about-count-coll row">
+                      <div className="col-5 p-0">
+                        <i class="fas fa-university"></i>
+                      </div>
+                      <div className="col-7 p-0">
+                        <div className="row" style={{ textAlign: "center" }}>
+                          <div
+                            className="col-12 p-0"
+                            style={{ fontWeight: "bolder" }}
+                          >
+                            35+
+                          </div>
+                          <div className="col-12 p-0">Colleges</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> */}
+              </div>
+            </div>
+            <div className="col-md-6 about-content">
+              <div>
+                <h2 style={{ textAlign: "center", fontSize: "3em" }}>
+                  About us
+                </h2>
+                Malaviya National Institute of Technology is a Gibraltar of
+                technological learning, imparting thousands of students, world
+                class education, nurturing their skills to produce future
+                leaders. Blitzschlag, MNIT's annual cultural mega-event, with a
+                decade long glorious history, is synonymous with a wholesome
+                cultural carnival throughout Rajasthan, due to its unparalleled
+                grandeur. Every year, Blitzschlag invites innumerable students
+                from all over India, presenting an unmissable opportunity to
+                savour all the cultural enjoyment these 3 days can accommodate.
+                With a plethora of events and cultural competitions, Blitzschlag
+                escalates the euphoria of the participants to its pinnacle.
+                Topping the benchmark set by the precedent year, Blitzschlag
+                keeps revamping itself each year, perpetually raising the
+                standards of the event. With a footfall of over 54000,
+                Blitzschlag gathers everyone, right from nationwide prominent
+                speakers, to amazing artists who elevate the cultural
+                enthusiasm. Hence Blitzschlag is known as a cultural bonanza,
+                spreading its wings across life, work, passion .Moreover,
+                Blitzschlag infuses social awareness among the young citizens of
+                the country, thus fulfilling its responsibility to foster
+                society's well-being.
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="container about-us">
+          <div className="row">
+            <div className="col-12 about-content">
+              <div style={{ fontSize: "smaller" }}>
+                <br></br>
+                <h2 style={{ textAlign: "center" }}>About us</h2>
+                Malaviya National Institute of Technology is a Gibraltar of
+                technological learning, imparting thousands of students, world
+                class education, nurturing their skills to produce future
+                leaders. Blitzschlag, MNIT's annual cultural mega-event, with a
+                decade long glorious history, is synonymous with a wholesome
+                cultural carnival throughout Rajasthan, due to its unparalleled
+                grandeur.
+              </div>
+            </div>
+            <div className="col-12 about-gra">
+              <div className="row">
+                <div className="about-vid-cont col-12">
+                  <iframe
+                    className="about-video"
+                    src="https://www.youtube.com/embed/EzKkl64rRbM"
+                    frameBorder="0"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+  }
+  renderThemeContent() {
+    if (window.innerWidth > 760) {
+      return (
+        <div style={{ color: "white" }}>
+          <h2 style={{ textAlign: "center", fontSize: "3em" }}>Bollywood</h2>
+          <p>
+            Although the term 'Bollywood' was popularized only in the 1970s,
+            Bollywood has been a major part of Indian culture for years before
+            that. Blitzschlag 2020 pays homage to an aspect of our culture that
+            has borne many icons, set pioneering trends, and become a much-loved
+            household name. From the iconic 'angry young man' characters and
+            dastardly villains, to thought-provoking movies with a social
+            message, and blockbuster 'masala' movies, Bollywood has something
+            for everyone, and that's the case for Blitzschlag 2020! Music,
+            dance, drama, and more await you in a feast for the senses, so join
+            us as we treat you to a panoply of performances and competitions set
+            in the heart of Rajasthan. Padhaaro mhaare Bollywood!
+          </p>
+        </div>
+      );
+    } else {
+      return (
+        <h2 style={{ textAlign: "center", fontSize: "3em", color: "white" }}>
+          Padhaaro mhaare Bollywood!
+        </h2>
+      );
+    }
+  }
 	render() {
 		const { prevScrollPerc, scrollPerc, moveLogo, scrollChanged, internal, currSlide } = this.state;
 		const BlitzLogo = styled.svg`
@@ -169,24 +336,27 @@ export default class Home extends Component {
 						<feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
 						<feBlend in="SourceGraphic" in2="offOut" mode="normal" />
 						</filter> */}
-							<filter id="dropshadow" height="130%">
-								<feGaussianBlur in="SourceAlpha" stdDeviation="3" />
-								<feOffset dx="2" dy="2" result="offsetblur" />
-								<feComponentTransfer>
-									<feFuncA type="linear" slope="0.5" />
-								</feComponentTransfer>
-								<feMerge>
-									<feMergeNode />
-									<feMergeNode in="SourceGraphic" />
-								</feMerge>
-							</filter>
-						</defs>
-						<g>
-							<path
-								className="path"
-								style={{ transition: 'all 2s', fill: `${moveLogo ? '#fff' : '#fff'}` }}
-								filter="url(#dropshadow)"
-								d="M314.7,127.12H106.89v-1H314.7V127.12z M303.89,131.66H114.65v1h189.24V131.66z M292.12,137.19h-168.6v1h168.6V137.19z
+              <filter id="dropshadow" height="130%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+                <feOffset dx="2" dy="2" result="offsetblur" />
+                <feComponentTransfer>
+                  <feFuncA type="linear" slope="0.5" />
+                </feComponentTransfer>
+                <feMerge>
+                  <feMergeNode />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <g>
+              <path
+                className="path"
+                style={{
+                  transition: "all 2s",
+                  fill: `${moveLogo ? "#fff" : "#fff"}`
+                }}
+                filter="url(#dropshadow)"
+                d="M314.7,127.12H106.89v-1H314.7V127.12z M303.89,131.66H114.65v1h189.24V131.66z M292.12,137.19h-168.6v1h168.6V137.19z
 									M278.12,142.73H123.52v1h154.61V142.73z M263.16,148.27H114.65v1h148.51V148.27z M245.48,153.8H105.78v1h139.69V153.8z
 									M523.08,138.58c-0.69,1.17-1.45,2.45-2.27,3.84s-1.58,2.67-2.27,3.84c0.79,0,1.57,0.04,2.35,0.13c0.78,0.09,1.55,0.21,2.31,0.36
 									c1.07,0.2,2.14,0.39,3.21,0.57c1.07,0.18,2.14,0.13,3.21-0.15c0.74-0.2,1.45-0.54,2.14-1.01c0.69-0.47,1.15-1.09,1.38-1.85
@@ -1598,45 +1768,145 @@ export default class Home extends Component {
 									c-0.1,0.05-0.24,0.07-0.44,0.07c-2.24,0-5.75-0.97-10.53-2.92c1.46,2.44,2.53,4.6,3.22,6.51c0.68,1.9,1.02,3.53,1.02,4.9
 									c0,1.85-0.34,3.61-1.02,5.26c-0.49,1.37-1.27,2.66-2.34,3.87c-1.07,1.22-2.29,1.88-3.66,1.97c-0.2-0.58-0.29-1.19-0.29-1.83
 									c0-0.63,0-1.29,0-1.97C605.47,91.38,605.81,89.78,606.49,88.02z"
-							/>
-						</g>
-					</svg>
-				</div>
-				<ReactFullpage
-					scrollingSpeed={2000}
-					controlArrows={true}
-					verticalCentered={false}
-					anchors={['home', 'aboutus', 'highlight', 'contactus']}
-					onLeave={(origin, destination, direction) => {
-						this.handleScroll(destination.index + 1);
-					}}
-					render={({ state, fullpageApi }) => {
-						if (this.state.moveto) {
-							fullpage_api.moveTo(this.state.moveto);
-							this.setState({ moveto: null, scrollChanged: false });
-						}
-						return (
-							<ReactFullpage.Wrapper>
-								<div
-									className="section content sundarchakra"
-									style={{
-										transition: 'all 2s',
-										backgroundImage: `url("${this.homeImages[this.imgSelect].bg}")`,
-										backgroundSize: 'cover'
-									}}
-								>
-									<img className="zoom" id="lady" src={`${this.homeImages[this.imgSelect].char}`} />
-								</div>
-								<div
-									className="section content"
-									style={{
-										backgroundImage: 'url("src/shared/img/bg1.png")',
-										backgroundSize: 'cover'
-									}}
-								>
-									<h1 style={{ color: '#451521' }}>About Us</h1>
-								</div>
-								<div className="section content" style={{ background: '#f7f7f7' }}>
+              />
+            </g>
+          </svg>
+        </div>
+        <ReactFullpage
+          scrollingSpeed={2000}
+          controlArrows={true}
+          verticalCentered={false}
+          anchors={["home", "aboutus", "highlight", "contactus"]}
+          onLeave={(origin, destination, direction) => {
+            this.handleScroll(destination.index + 1);
+          }}
+          render={({ state, fullpageApi }) => {
+            if (this.state.moveto) {
+              fullpage_api.moveTo(this.state.moveto);
+              this.setState({ moveto: null, scrollChanged: false });
+            }
+            return (
+              <ReactFullpage.Wrapper>
+                <div
+                  className="section content sundarchakra"
+                  style={{
+                    transition: "all 2s",
+                    backgroundImage: `url("${
+                      this.homeImages[this.imgSelect].bg
+                    }")`,
+                    backgroundSize: "cover"
+                  }}
+                >
+                  <img
+                    className="zoom"
+                    id="lady"
+                    src={`${this.homeImages[this.imgSelect].char}`}
+                  />
+                </div>
+                <div
+                  className="section content aboutUS"
+                  style={{
+                    background: "black",
+                    backgroundSize: "cover"
+                  }}
+                >
+                  {this.renderAboutUs()}
+                </div>
+                <div
+                  className="section content theme"
+                  style={{
+                    background: "black",
+                    backgroundSize: "cover"
+                  }}
+                >
+                  <div className="container">
+                    <div className="row">
+                      <div className="col-md-6 about-content">
+                        <div className="row">
+                          <div className="col-12">
+                            {this.renderThemeContent()}
+                          </div>
+                          <div className="col-12" style={{ color: "black" }}>
+                            <div className="col-md-12">
+                              <br></br>
+                              <br></br>
+                              <div className="about-counts row">
+                                <div className="col-md-4">
+                                  <div className="about-count-foot row ">
+                                    <div className="col-5 p-0">
+                                      <i className="fas fa-users"></i>
+                                    </div>
+                                    <div className="col-7 p-0">
+                                      <div
+                                        className="row"
+                                        style={{ textAlign: "center" }}
+                                      >
+                                        <div
+                                          className="col-12 p-0"
+                                          style={{ fontWeight: "bolder" }}
+                                        >
+                                          54K+
+                                        </div>
+                                        <div className="col-12 p-0">
+                                          Footfalls
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="col-md-4">
+                                  <div className="about-count-eve row">
+                                    <div className="col-5 p-0">
+                                      <i className="fas fa-calendar-check"></i>
+                                    </div>
+                                    <div className="col-7 p-0">
+                                      <div
+                                        className="row"
+                                        style={{ textAlign: "center" }}
+                                      >
+                                        <div
+                                          className="col-12 p-0"
+                                          style={{ fontWeight: "bolder" }}
+                                        >
+                                          70+
+                                        </div>
+                                        <div className="col-12 p-0">Events</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="col-md-4">
+                                  <div className="about-count-coll row">
+                                    <div className="col-5 p-0">
+                                      <i className="fas fa-university"></i>
+                                    </div>
+                                    <div className="col-7 p-0">
+                                      <div
+                                        className="row"
+                                        style={{ textAlign: "center" }}
+                                      >
+                                        <div
+                                          className="col-12 p-0"
+                                          style={{ fontWeight: "bolder" }}
+                                        >
+                                          35+
+                                        </div>
+                                        <div className="col-12 p-0">
+                                          Colleges
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="section content" style={{ background: '#f7f7f7' }}>
 									{window.innerWidth <= 770 ? (
 										<div style={{width: '100%', height: '100%'}}>
 										<Carousel
@@ -1788,20 +2058,134 @@ export default class Home extends Component {
 										</Row>
 									)}
 								</div>
-								<div
-									className="section content"
-									style={{
-										backgroundImage: 'url("src/shared/img/bg2.png")',
-										backgroundSize: 'cover'
-									}}
-								>
-									<h1 style={{ color: '#451521' }}>Contact Us</h1>
-								</div>
-							</ReactFullpage.Wrapper>
-						);
-					}}
-				/>
-			</div>
-		);
-	}
+                <div
+                  className="section content"
+                  style={{
+                    backgroundImage: 'url("src/shared/img/img3.jpeg")',
+                    backgroundSize: "cover"
+                  }}
+                >
+                  <div className="container-fluid uscon">
+                    <h2
+                      style={{
+                        color: "black",
+                        textAlign: "center"
+                      }}
+                    >
+                      Contact Us
+                    </h2>
+                    <Container>
+                      <div className="contact">
+                        <Row>
+                          <Col xs="12" md="7">
+                            <h5>Our Address</h5>
+                            <address>
+                              MNIT Jaipur
+                              <br />
+                              JLN Marg
+                              <br />
+                              Jaipur
+                              <br />
+                              <i className="fa fa-phone fa-lg"></i>: +91
+                              9999999999
+                              <br />
+                              <i className="fa fa-fax fa-lg"></i>: +91
+                              9999999999
+                              <br />
+                              <i className="fa fa-envelope fa-lg"></i>:{" "}
+                              <a href="kuchbhi@mnit.com">kuchbhi@mnit.com</a>
+                            </address>
+                          </Col>
+                          <Col xs="6" md="3">
+                            <ul className="list-unstyled">
+                              <li>
+                                <Link to="/login" style={{ color: "black" }}>
+                                  Register
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  to="/hospitality"
+                                  style={{ color: "black" }}
+                                >
+                                  Hospitality
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/team" style={{ color: "black" }}>
+                                  Team
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="/Sponsors" style={{ color: "black" }}>
+                                  Sponsors
+                                </Link>
+                              </li>
+                            </ul>
+                          </Col>
+                          <Col xs="6" md="2">
+                            <ul className="list-unstyled">
+                              <li>
+                                <Link
+                                  to="/events/category"
+                                  style={{ color: "black" }}
+                                >
+                                  Literary
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  to="/events/categorys"
+                                  style={{ color: "black" }}
+                                >
+                                  Cultural
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  to="/events/category"
+                                  style={{ color: "black" }}
+                                >
+                                  Music
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  to="/events/category"
+                                  style={{ color: "black" }}
+                                >
+                                  Dramatics
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  to="/events/category"
+                                  style={{ color: "black" }}
+                                >
+                                  LAN Gaming
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  to="/events/category"
+                                  style={{ color: "black" }}
+                                >
+                                  Film & Photography
+                                </Link>
+                              </li>
+                            </ul>
+                          </Col>
+                        </Row>
+                        <Row></Row>
+                      </div>
+                    </Container>
+                  </div>
+                </div>
+              </ReactFullpage.Wrapper>
+            );
+          }}
+        />
+      </div>
+    );
+  }
 }
