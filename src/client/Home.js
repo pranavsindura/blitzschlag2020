@@ -1775,7 +1775,7 @@ export default class Home extends Component {
         <ReactFullpage
           scrollingSpeed={2000}
           controlArrows={true}
-          verticalCentered={false}
+          verticalCentered={true}
           anchors={["home", "aboutus", "theme" ,"flagship", "contactus"]}
           onLeave={(origin, destination, direction) => {
             this.handleScroll(destination.index + 1);
