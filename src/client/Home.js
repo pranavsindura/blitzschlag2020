@@ -51,7 +51,7 @@ export default class Home extends Component {
 	}
 	handleScroll = (num) => {
 		// console.log('scrolled');
-		const newScrollPerc = Math.ceil((num / 5 * 100);
+		const newScrollPerc = Math.ceil((num / 5) * 100);
 		const { scrollPerc } = this.state;
 		if (scrollPerc !== newScrollPerc)
 			this.setState({
