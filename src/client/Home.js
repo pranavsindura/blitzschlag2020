@@ -169,7 +169,7 @@ export default class Home extends Component {
                 escalates the euphoria of the participants to its pinnacle.
                 Topping the benchmark set by the precedent year, Blitzschlag
                 keeps revamping itself each year, perpetually raising the
-                standards of the event. With a footfall of over 25000,
+                standards of the event. With a footfall of over 54000,
                 Blitzschlag gathers everyone, right from nationwide prominent
                 speakers, to amazing artists who elevate the cultural
                 enthusiasm. Hence Blitzschlag is known as a cultural bonanza,
@@ -218,7 +218,7 @@ export default class Home extends Component {
   renderThemeContent() {
     if (window.innerWidth > 760) {
       return (
-        <div>
+        <div style={{ color: "white" }}>
           <h2 style={{ textAlign: "center", fontSize: "3em" }}>Bollywood</h2>
           <p>
             Although the term 'Bollywood' was popularized only in the 1970s,
@@ -237,7 +237,7 @@ export default class Home extends Component {
       );
     } else {
       return (
-        <h2 style={{ textAlign: "center", fontSize: "3em" }}>
+        <h2 style={{ textAlign: "center", fontSize: "3em", color: "white" }}>
           Padhaaro mhaare Bollywood!
         </h2>
       );
@@ -1821,82 +1821,88 @@ export default class Home extends Component {
                 <div
                   className="section content theme"
                   style={{
-                    background: "grey",
+                    background: "black",
                     backgroundSize: "cover"
                   }}
                 >
                   <div className="container">
                     <div className="row">
-                      <div
-                        className="col-md-6 about-content"
-                        style={{ color: "black" }}
-                      >
-                        {this.renderThemeContent()}
-                      </div>
-                      <div className="col-md-3"></div>
-                      <div className="col-md-3">
-                        <br></br>
-                        <br></br>
-                        <div className="about-counts row">
-                          <div className="col-md-12">
-                            <div className="about-count-foot row ">
-                              <div className="col-5 p-0">
-                                <i className="fas fa-users"></i>
-                              </div>
-                              <div className="col-7 p-0">
-                                <div
-                                  className="row"
-                                  style={{ textAlign: "center" }}
-                                >
-                                  <div
-                                    className="col-12 p-0"
-                                    style={{ fontWeight: "bolder" }}
-                                  >
-                                    54K+
-                                  </div>
-                                  <div className="col-12 p-0">Footfalls</div>
-                                </div>
-                              </div>
-                            </div>
+                      <div className="col-md-6 about-content">
+                        <div className="row">
+                          <div className="col-12">
+                            {this.renderThemeContent()}
                           </div>
-                          <div className="col-md-12">
-                            <div className="about-count-eve row">
-                              <div className="col-5 p-0">
-                                <i className="fas fa-calendar-check"></i>
-                              </div>
-                              <div className="col-7 p-0">
-                                <div
-                                  className="row"
-                                  style={{ textAlign: "center" }}
-                                >
-                                  <div
-                                    className="col-12 p-0"
-                                    style={{ fontWeight: "bolder" }}
-                                  >
-                                    70+
+                          <div className="col-12" style={{ color: "black" }}>
+                            <div className="col-md-12">
+                              <br></br>
+                              <br></br>
+                              <div className="about-counts row">
+                                <div className="col-md-4">
+                                  <div className="about-count-foot row ">
+                                    <div className="col-5 p-0">
+                                      <i className="fas fa-users"></i>
+                                    </div>
+                                    <div className="col-7 p-0">
+                                      <div
+                                        className="row"
+                                        style={{ textAlign: "center" }}
+                                      >
+                                        <div
+                                          className="col-12 p-0"
+                                          style={{ fontWeight: "bolder" }}
+                                        >
+                                          54K+
+                                        </div>
+                                        <div className="col-12 p-0">
+                                          Footfalls
+                                        </div>
+                                      </div>
+                                    </div>
                                   </div>
-                                  <div className="col-12 p-0">Events</div>
                                 </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-md-12">
-                            <div className="about-count-coll row">
-                              <div className="col-5 p-0">
-                                <i className="fas fa-university"></i>
-                              </div>
-                              <div className="col-7 p-0">
-                                <div
-                                  className="row"
-                                  style={{ textAlign: "center" }}
-                                >
-                                  <div
-                                    className="col-12 p-0"
-                                    style={{ fontWeight: "bolder" }}
-                                  >
-                                    35+
+                                <div className="col-md-4">
+                                  <div className="about-count-eve row">
+                                    <div className="col-5 p-0">
+                                      <i className="fas fa-calendar-check"></i>
+                                    </div>
+                                    <div className="col-7 p-0">
+                                      <div
+                                        className="row"
+                                        style={{ textAlign: "center" }}
+                                      >
+                                        <div
+                                          className="col-12 p-0"
+                                          style={{ fontWeight: "bolder" }}
+                                        >
+                                          70+
+                                        </div>
+                                        <div className="col-12 p-0">Events</div>
+                                      </div>
+                                    </div>
                                   </div>
-                                  <div className="col-12 p-0">Colleges</div>
+                                </div>
+                                <div className="col-md-4">
+                                  <div className="about-count-coll row">
+                                    <div className="col-5 p-0">
+                                      <i className="fas fa-university"></i>
+                                    </div>
+                                    <div className="col-7 p-0">
+                                      <div
+                                        className="row"
+                                        style={{ textAlign: "center" }}
+                                      >
+                                        <div
+                                          className="col-12 p-0"
+                                          style={{ fontWeight: "bolder" }}
+                                        >
+                                          35+
+                                        </div>
+                                        <div className="col-12 p-0">
+                                          Colleges
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
