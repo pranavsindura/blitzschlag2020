@@ -23,6 +23,16 @@ h1 {
 	object-fit: cover;
 	border: none;
 }
+.imgmob {
+	transition: all 200ms ease-in-out;
+	transform-origin: center;
+	display: block;
+	height: 100%;
+	width: inherit;
+	overflow: hidden;
+	object-fit: cover;
+	border: none;
+}
 .boxmove{
 	/* width: '60px', height: '60px', backgroundColor: '#929aab', position: 'absolute', right:'7%', zIndex: '2', top: '20%' */
 	transition: all 200ms ease-in-out;
