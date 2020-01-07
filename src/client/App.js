@@ -55,7 +55,7 @@ class App extends Component {
 										this.handleClick('home');
 									}}
 								>
-								<i class="fas fa-home"></i>&nbsp;HOME
+								<i className="fas fa-home"></i>&nbsp;HOME
 								</Link> 
 							</li>
 							<li className="lis  menu-item">
@@ -66,7 +66,7 @@ class App extends Component {
 										this.handleClick('flagship');
 									}}
 								>
-								<i class="fas fa-glass-cheers"></i>&nbsp;FLAGSHIP EVENTS
+								<i className="fas fa-glass-cheers"></i>&nbsp;FLAGSHIP EVENTS
 								</Link>
 							</li>
 							<li className="lis  menu-item">
@@ -77,7 +77,7 @@ class App extends Component {
 										this.handleCheck();
 									}}
 								>
-								<i class="far fa-calendar-alt"></i>&nbsp;EVENTS
+								<i className="far fa-calendar-alt"></i>&nbsp;EVENTS
 								</Link>
 							</li>
 							{this.props.loggedIn ? (
@@ -89,7 +89,7 @@ class App extends Component {
 											this.handleCheck();
 										}}
 									>
-										<i class="fas fa-users"></i>&nbsp;MY ACCOUNTS
+										<i className="fas fa-users"></i>&nbsp;MY ACCOUNTS
 									</Link>
 								</li>
 							) : (
@@ -101,7 +101,7 @@ class App extends Component {
 											this.handleCheck();
 										}}
 									>
-										<i class="far fa-user"></i>&nbsp;LOGIN | REGISTER
+										<i className="far fa-user"></i>&nbsp;LOGIN | REGISTER
 									</Link>
 								</li>
 							)}
@@ -114,7 +114,7 @@ class App extends Component {
 										this.handleCheck();
 									}}
 								>
-									<i class="fas fa-ticket-alt"></i>&nbsp;GET TICKETS
+									<i className="fas fa-ticket-alt"></i>&nbsp;GET TICKETS
 								</Link>
 							</li>
 							<li className="lis menu-item">
@@ -125,7 +125,7 @@ class App extends Component {
 										this.handleCheck();
 									}}
 								>
-									<i class="fas fa-hotel"></i>&nbsp;HOSPITALITY
+									<i className="fas fa-hotel"></i>&nbsp;HOSPITALITY
 								</Link>
 							</li>
 							<li className="lis menu-item">
@@ -136,7 +136,7 @@ class App extends Component {
 										this.handleCheck();
 									}}
 								>
-									<i class="fas fa-money-bill-wave"></i>&nbsp;SPONSORS
+									<i className="fas fa-money-bill-wave"></i>&nbsp;SPONSORS
 								</Link>
 							</li>
 							<li className="lis menu-item">
@@ -147,7 +147,7 @@ class App extends Component {
 										this.handleClick('contactus');
 									}}
 								>
-									<i class="fas fa-phone-alt"></i>&nbsp;CONTACT US
+									<i className="fas fa-phone-alt"></i>&nbsp;CONTACT US
 								</Link>
 							</li>
 							<li className="lis menu-item">
@@ -158,7 +158,7 @@ class App extends Component {
 										this.handleClick('contactus');
 									}}
 								>
-									<i class="far fa-handshake"></i>&nbsp;OUR TEAM
+									<i className="far fa-handshake"></i>&nbsp;OUR TEAM
 								</Link>
 							</li>
 							{this.props.loggedIn ? (
@@ -170,7 +170,7 @@ class App extends Component {
 											this.handleLogout();
 										}}
 									>
-										<i class="fas fa-long-arrow-alt-left"></i>&nbsp;LOGOUT
+										<i className="fas fa-long-arrow-alt-left"></i>&nbsp;LOGOUT
 									</Link>
 								</li>
 							) : null}
