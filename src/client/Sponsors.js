@@ -20,13 +20,16 @@ export default class Sponsors extends Component {
   images = [
     "https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg"
   ];
-  renderSponsor() {
+  renderSponsor(fullpageApi) {
     return (
       <div className="circle">
         <div className="circlein" style={{ position: "absolute" }}>
           <img
             style={{ height: "inherit", width: "inherit" }}
             src="src/shared/img/sponsors/hero.png"
+            onLoad={() => {
+              fullpageApi.reBuild();
+            }}
           />
         </div>
         <div
@@ -1096,13 +1099,13 @@ c-49 26 -151 32 -227 13 -84 -22 -146 -53 -220 -109 l-63 -47 -63 47 c-138
                   <br></br>
                   <div className="container">
                     <div className="row">
-                      <div className="col-md-6 midout">{this.renderSponsor()}<br></br><br></br></div>
-                      <div className="col-md-6 midret">{this.renderSponsor()}<br></br><br></br></div>
+                      <div className="col-md-6 midout">{this.renderSponsor(fullpageApi)}<br></br><br></br></div>
+                      <div className="col-md-6 midret">{this.renderSponsor(fullpageApi)}<br></br><br></br></div>
                     </div>
                     <div className="row">
-                      <div className="col-md-4 mid">{this.renderSponsor()}<br></br><br></br></div>
-                      <div className="col-md-4 mid">{this.renderSponsor()}<br></br><br></br></div>
-                      <div className="col-md-4 mid">{this.renderSponsor()}<br></br><br></br></div>
+                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi)}<br></br><br></br></div>
+                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi)}<br></br><br></br></div>
+                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi)}<br></br><br></br></div>
                     </div>
                   </div>
                   <br></br>
