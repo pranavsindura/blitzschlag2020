@@ -2,85 +2,93 @@ import React, { Component } from "react";
 import "./Home.css";
 import ReactFullpage from "@fullpage/react-fullpage";
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import { Carousel, Col, Row } from 'react-bootstrap';
+import { Carousel, Col, Row } from "react-bootstrap";
 import "@fortawesome/fontawesome-free/css/all.css";
-import Splash from './Splash';
+import Splash from "./Splash";
 import { Container } from "reactstrap";
 import { Link } from "react-router-dom";
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 // import ProgBar from './ProgBar';
 export default class Home extends Component {
-	state = {
-		moveto: null,
-		scrollPerc: 0,
-		prevScrollPerc: 0,
-		moveLogo: false,
-		mouse: false,
-		scrollChanged: false,
-		internal: false,
-		currSlide: 0
-	};
-	homeImages = [
-		{
-			char: 'https://i.imgur.com/9yC93U6.png',
-			bg: 'https://imgur.com/bwPJhL4.jpg'
-		},
-		{
-			char: 'https://imgur.com/JI5zb8u.png',
-			bg: 'https://imgur.com/iVUKgex.jpg'
-		}
-	];
-	carImages = ['src/shared/img/car1.jpg', 'src/shared/img/car2.jpg', 'src/shared/img/car3.jpg'];
-	images = [
-		// "src/shared/img/bg2.png",
-		// "src/shared/img/bg1.png",
-		'http://makingnotesinthedark.files.wordpress.com/2014/02/babloo-happy-hai-2014-hd-movie-wallpapers.jpg',
-		'https://storage.googleapis.com/ehimages/2018/3/26/img_35da01d961375fb6b4cc12b956776db0_1522053167583_processed_original.jpg',
-		'https://ecisveep.nic.in/uploads/monthly_2018_11/large.1385334822_nukkad5.jpg.10a022ad8eac5284ac2e10484f9020a8.jpg',
-		'https://images.unsplash.com/photo-1549046675-dd779977de88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
-		'http://www.safetynational.com/wp-content/uploads/2018/10/IMG_1963-scaled.jpg',
-		'https://imgur.com/iVUKgex.jpg',
-		'https://imgur.com/JI5zb8u.png',
-		'https://imgur.com/bwPJhL4.jpg',
-		'https://i.imgur.com/9yC93U6.png'
-	];
-	imgSelect = Math.trunc(Math.random() * 2);
-	componentDidMount() {
-		this.setState({ moveto: this.props.moveto, scrollChanged: false });
-		this.handleScroll(1);
-	}
-	handleScroll = (num) => {
-		// console.log('scrolled');
-		const newScrollPerc = Math.ceil((num / 5) * 100);
-		const { scrollPerc } = this.state;
-		if (scrollPerc !== newScrollPerc)
-			this.setState({
-				prevScrollPerc: scrollPerc,
-				scrollPerc: newScrollPerc,
-				moveLogo: num !== 1,
-				scrollChanged: true,
-				internal: true
-			});
-	};
-	componentWillReceiveProps(nextProps) {
-		// console.log('componentWillReceiveProps',this.state.scrollChanged, this.state.internal);
-		if (nextProps.moveto != this.props.moveto) {
-			// console.log('got props');
-			this.setState({ moveto: nextProps.moveto, scrollChanged: true, internal: false });
-		}
-	}
-	componentDidUpdate() {
-		// console.log('componentDidUpdate',this.state.scrollChanged, this.state.internal);
-		if (this.state.internal) {
-			setTimeout(() => {
-				this.setState({ internal: false });
-			}, 2000);
-		}
-	}
-	nextSlide = () => {
-		const { currSlide } = this.state;
-		this.setState({ currSlide: (currSlide + 1) % this.carImages.length });
-	};
+  state = {
+    moveto: null,
+    scrollPerc: 0,
+    prevScrollPerc: 0,
+    moveLogo: false,
+    mouse: false,
+    scrollChanged: false,
+    internal: false,
+    currSlide: 0
+  };
+  homeImages = [
+    {
+      char: "https://i.imgur.com/9yC93U6.png",
+      bg: "https://imgur.com/bwPJhL4.jpg"
+    },
+    {
+      char: "https://imgur.com/JI5zb8u.png",
+      bg: "https://imgur.com/iVUKgex.jpg"
+    }
+  ];
+  carImages = [
+    "src/shared/img/car1.jpg",
+    "src/shared/img/car2.jpg",
+    "src/shared/img/car3.jpg"
+  ];
+  images = [
+    // "src/shared/img/bg2.png",
+    // "src/shared/img/bg1.png",
+    "http://makingnotesinthedark.files.wordpress.com/2014/02/babloo-happy-hai-2014-hd-movie-wallpapers.jpg",
+    "https://storage.googleapis.com/ehimages/2018/3/26/img_35da01d961375fb6b4cc12b956776db0_1522053167583_processed_original.jpg",
+    "https://ecisveep.nic.in/uploads/monthly_2018_11/large.1385334822_nukkad5.jpg.10a022ad8eac5284ac2e10484f9020a8.jpg",
+    "https://images.unsplash.com/photo-1549046675-dd779977de88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+    "http://www.safetynational.com/wp-content/uploads/2018/10/IMG_1963-scaled.jpg",
+    "https://imgur.com/iVUKgex.jpg",
+    "https://imgur.com/JI5zb8u.png",
+    "https://imgur.com/bwPJhL4.jpg",
+    "https://i.imgur.com/9yC93U6.png"
+  ];
+  imgSelect = Math.trunc(Math.random() * 2);
+  componentDidMount() {
+    this.setState({ moveto: this.props.moveto, scrollChanged: false });
+    this.handleScroll(1);
+  }
+  handleScroll = num => {
+    // console.log('scrolled');
+    const newScrollPerc = Math.ceil((num / 5) * 100);
+    const { scrollPerc } = this.state;
+    if (scrollPerc !== newScrollPerc)
+      this.setState({
+        prevScrollPerc: scrollPerc,
+        scrollPerc: newScrollPerc,
+        moveLogo: num !== 1,
+        scrollChanged: true,
+        internal: true
+      });
+  };
+  componentWillReceiveProps(nextProps) {
+    // console.log('componentWillReceiveProps',this.state.scrollChanged, this.state.internal);
+    if (nextProps.moveto != this.props.moveto) {
+      // console.log('got props');
+      this.setState({
+        moveto: nextProps.moveto,
+        scrollChanged: true,
+        internal: false
+      });
+    }
+  }
+  componentDidUpdate() {
+    // console.log('componentDidUpdate',this.state.scrollChanged, this.state.internal);
+    if (this.state.internal) {
+      setTimeout(() => {
+        this.setState({ internal: false });
+      }, 2000);
+    }
+  }
+  nextSlide = () => {
+    const { currSlide } = this.state;
+    this.setState({ currSlide: (currSlide + 1) % this.carImages.length });
+  };
   renderAboutUs() {
     if (window.innerWidth > 760) {
       return (
@@ -245,24 +253,31 @@ export default class Home extends Component {
       );
     }
   }
-	render() {
-		const { prevScrollPerc, scrollPerc, moveLogo, scrollChanged, internal, currSlide } = this.state;
-		const BlitzLogo = styled.svg`
-			transition: all 2s;
-			enable-background: new 0 0 666.7 248.32;
-			display: block;
-			margin: auto;
-			position: fixed;
-			zindex: 20;
-			transform: scale(${moveLogo ? 1 : window.innerWidth <= 760 ? 0.6 : 0.2})
-				translate(
-					${moveLogo ? -50 : window.innerWidth <= 760 ? -30 : -200}%,
-					${moveLogo ? -50 : window.innerWidth <= 760 ? -30 : -200}%
-				);
-			left: ${moveLogo ? 0 : 50}%;
-			top: ${moveLogo ? 2 : 50}%;
-		`;
-		const animScroll = (a, b) => keyframes`
+  render() {
+    const {
+      prevScrollPerc,
+      scrollPerc,
+      moveLogo,
+      scrollChanged,
+      internal,
+      currSlide
+    } = this.state;
+    const BlitzLogo = styled.svg`
+      transition: all 2s;
+      enable-background: new 0 0 666.7 248.32;
+      display: block;
+      margin: auto;
+      position: fixed;
+      zindex: 20;
+      transform: scale(${moveLogo ? 1 : window.innerWidth <= 760 ? 0.6 : 0.2})
+        translate(
+          ${moveLogo ? -50 : window.innerWidth <= 760 ? -30 : -200}%,
+          ${moveLogo ? -50 : window.innerWidth <= 760 ? -30 : -200}%
+        );
+      left: ${moveLogo ? 0 : 50}%;
+      top: ${moveLogo ? 2 : 50}%;
+    `;
+    const animScroll = (a, b) => keyframes`
 		from{
 			width: ${a}%;
 		}
@@ -270,69 +285,72 @@ export default class Home extends Component {
 			width: ${b}%;
 		}
 `;
-		let ProgBar;
-		if (scrollChanged && internal) {
-			ProgBar = styled.div`
-				background-color: #fff;
-				position: relative;
-				height: 100%;
-				z-index: 11;
-				width: ${scrollPerc}%;
-				transition: all 2s ease-in-out;
-				animation: ${() => animScroll(prevScrollPerc, scrollPerc)} 2s ease-in-out;
-				animation-fill-mode: forwards;
-			`;
-		} else {
-			ProgBar = styled.div`
-				background-color: #fff;
-				position: relative;
-				height: 100%;
-				z-index: 11;
-				transition: all 2s ease-in-out;
-				width: ${scrollPerc}%;
-			`;
-		}
-		// console.log(ProgBar);
-		return (
-			<div>
-				<Splash images={this.images} />
-				<div className="prog">
-					<ProgBar a={prevScrollPerc} b={scrollPerc} />
-				</div>
-				<div
-					style={{
-						transition: 'all 2s',
-						enableBackground: 'new 0 0 666.7 248.32',
-						display: 'block',
-						margin: 'auto',
-						position: 'fixed',
-						zIndex: '20',
-						transform: `${
-							moveLogo
-								? `scale(${window.innerWidth <= 760 ? 0.6 : 0.2}) translate(${
-										window.innerWidth <= 760 ? -30 : -200
-								  }%,${window.innerWidth <= 760 ? -30 : -200}%)`
-								: `scale(${window.innerWidth <= 760 ? 1.2 : 0.8}) translateX(${
-										window.innerWidth <= 760 ? -41.66 : -62.5
-								  }%) translateY(${window.innerWidth <= 760 ? -41.66 : -62.5}%)`
-						}`,
-						left: `${moveLogo ? '0%' : window.innerWidth <= 760 ? '50%' : '30%'}`,
-						top: `${moveLogo ? '2%' : '35%'}`
-					}}
-				>
-					<svg
-						version="1.1"
-						xmlns="http://www.w3.org/2000/svg"
-						x="0px"
-						y="0vw"
-						width="70vw"
-						viewBox="0 0 666.7 248.32"
-						style={{
-							enableBackground: 'new 0 0 666.7 248.32'
-						}}
-					>
-						<defs>
-							{/* <filter id="f1" x="0" y="0" width="200%" height="200%">
+    let ProgBar;
+    if (scrollChanged && internal) {
+      ProgBar = styled.div`
+        background-color: #fff;
+        position: relative;
+        height: 100%;
+        z-index: 11;
+        width: ${scrollPerc}%;
+        transition: all 2s ease-in-out;
+        animation: ${() => animScroll(prevScrollPerc, scrollPerc)} 2s
+          ease-in-out;
+        animation-fill-mode: forwards;
+      `;
+    } else {
+      ProgBar = styled.div`
+        background-color: #fff;
+        position: relative;
+        height: 100%;
+        z-index: 11;
+        transition: all 2s ease-in-out;
+        width: ${scrollPerc}%;
+      `;
+    }
+    // console.log(ProgBar);
+    return (
+      <div>
+        <Splash images={this.images} />
+        <div className="prog">
+          <ProgBar a={prevScrollPerc} b={scrollPerc} />
+        </div>
+        <div
+          style={{
+            transition: "all 2s",
+            enableBackground: "new 0 0 666.7 248.32",
+            display: "block",
+            margin: "auto",
+            position: "fixed",
+            zIndex: "20",
+            transform: `${
+              moveLogo
+                ? `scale(${window.innerWidth <= 760 ? 0.6 : 0.2}) translate(${
+                    window.innerWidth <= 760 ? -30 : -200
+                  }%,${window.innerWidth <= 760 ? -30 : -200}%)`
+                : `scale(${window.innerWidth <= 760 ? 1.2 : 0.8}) translateX(${
+                    window.innerWidth <= 760 ? -41.66 : -62.5
+                  }%) translateY(${window.innerWidth <= 760 ? -41.66 : -62.5}%)`
+            }`,
+            left: `${
+              moveLogo ? "0%" : window.innerWidth <= 760 ? "50%" : "30%"
+            }`,
+            top: `${moveLogo ? "2%" : "35%"}`
+          }}
+        >
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0vw"
+            width="70vw"
+            viewBox="0 0 666.7 248.32"
+            style={{
+              enableBackground: "new 0 0 666.7 248.32"
+            }}
+          >
+            <defs>
+              {/* <filter id="f1" x="0" y="0" width="200%" height="200%">
 						<feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
 						<feBlend in="SourceGraphic" in2="offOut" mode="normal" />
 						</filter> */}
@@ -1775,13 +1793,8 @@ export default class Home extends Component {
         <ReactFullpage
           scrollingSpeed={2000}
           controlArrows={true}
-<<<<<<< HEAD
           verticalCentered={true}
-          anchors={["home", "aboutus", "highlight", "contactus"]}
-=======
-          verticalCentered={false}
-          anchors={["home", "aboutus", "theme" ,"flagship", "contactus"]}
->>>>>>> 6d749c72c189665ea4a6db72a97aaf12252d1310
+          anchors={["home", "aboutus", "theme", "flagship", "contactus"]}
           onLeave={(origin, destination, direction) => {
             this.handleScroll(destination.index + 1);
           }}
@@ -1911,158 +1924,152 @@ export default class Home extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="section content" style={{ background: '#f7f7f7' }}>
-									{window.innerWidth <= 770 ? (
-										<div style={{width: '100%', height: '100%'}}>
-										<Carousel
-												className="carmob"
-												indicators={false}
-												interval="4000"
-												controls={false}
-												activeIndex={currSlide}
-												defaultActiveindex={1}
-											>
-												{this.carImages.map((item, index) => {
-													return (
-														<Carousel.Item 
-															className="carmob-item"
-															key={index}>
-															<img
-															 	className="imgmob"
-															  	src={item} />
-														</Carousel.Item>
-													);
-												})}
-											</Carousel>
-											<div
-												style={{
-													width: '100%',
-													height: '60%',
-													backgroundColor: '#393e46',
-													position: 'absolute',
-													left: '0%',
-													bottom: '0%',
-												}}
-											></div>
-											<div className="boxmovemob">
-												<p
-													className="slidenummob"
-												>
-													0{currSlide + 1}
-												</p>
-											</div>
-											<div
-													className="control-nextmob"
-													onClick={()=>{this.nextSlide()}}
-												>
-													<p
-														className="next-iconmob"
-													>
-														&#8250;
-													</p>
-												</div>
-											
-										</div>
-									) : (
-										<Row>
-											<div
-												style={{
-													width: '40%',
-													height: '100%',
-													backgroundColor: '#929aab',
-													position: 'absolute'
-												}}
-											></div>
-											<div
-												style={{
-													width: '45%',
-													height: '40%',
-													backgroundColor: '#393e46',
-													position: 'absolute',
-													right: '0%',
-													bottom: '0%'
-												}}
-											></div>
-											<div
-												onClick={() => {
-													this.nextSlide();
-												}}
-												className="small-img-holder"
-												style={{
-													width: '10%',
-													height: '15%',
-													backgroundImage: `url("${
-														this.carImages[(currSlide + 1) % this.carImages.length]
-													}")`,
-													backgroundSize: 'cover',
-													position: 'absolute',
-													right: '5%',
-													bottom: '20%',
-													zIndex: '2',
-													transition: 'all .5s'
-												}}
-											>
-												<div
-													className="control-next"
-													style={{
-														transition: 'all .5s',
-														width: '20%',
-														height: '100%',
-														position: 'absolute',
-														right: '0%',
-														backgroundColor: '#929AAB',
-														color: 'white',
-														fontFamily: 'Quicksand',
-														fontSize: '40pt'
-													}}
-												>
-													<p
-														style={{
-															position: 'absolute',
-															top: '50%',
-															left: '50%',
-															transform: 'translateX(-50%) translateY(-50%)',
-															cursor: 'pointer'
-														}}
-													>
-														&#8250;
-													</p>
-												</div>
-											</div>
-											<div className="boxmove">
-												<p
-													style={{
-														fontFamily: 'Quicksand',
-														fontSize: '20pt',
-														textAlign: 'center',
-														color: '#f7f7f7',
-														lineHeight: '60px'
-													}}
-												>
-													0{currSlide + 1}
-												</p>
-											</div>
-											<Col md={{ span: 7, offset: 4 }}>
-												<Carousel
-													className="car"
-													indicators={false}
-													interval="4000"
-													controls={false}
-													activeIndex={currSlide}
-													defaultActiveindex={1}
-												>
-													{this.carImages.map((item, index) => {
-														return (
-															<Carousel.Item className="caritem" key={index}>
-																<img className="img" src={item} />
-															</Carousel.Item>
-														);
-													})}
-												</Carousel>
-											</Col>
-										</Row>
-									)}
-								</div>
+                <div
+                  className="section content"
+                  style={{ background: "#f7f7f7" }}
+                >
+                  {window.innerWidth <= 770 ? (
+                    <div style={{ width: "100%", height: "100%" }}>
+                      <Carousel
+                        className="carmob"
+                        indicators={false}
+                        interval="4000"
+                        controls={false}
+                        activeIndex={currSlide}
+                        defaultActiveindex={1}
+                      >
+                        {this.carImages.map((item, index) => {
+                          return (
+                            <Carousel.Item className="carmob-item" key={index}>
+                              <img className="imgmob" src={item} />
+                            </Carousel.Item>
+                          );
+                        })}
+                      </Carousel>
+                      <div
+                        style={{
+                          width: "100%",
+                          height: "60%",
+                          backgroundColor: "#393e46",
+                          position: "absolute",
+                          left: "0%",
+                          bottom: "0%"
+                        }}
+                      ></div>
+                      <div className="boxmovemob">
+                        <p className="slidenummob">0{currSlide + 1}</p>
+                      </div>
+                      <div
+                        className="control-nextmob"
+                        onClick={() => {
+                          this.nextSlide();
+                        }}
+                      >
+                        <p className="next-iconmob">&#8250;</p>
+                      </div>
+                    </div>
+                  ) : (
+                    <Row>
+                      <div
+                        style={{
+                          width: "40%",
+                          height: "100%",
+                          backgroundColor: "#929aab",
+                          position: "absolute"
+                        }}
+                      ></div>
+                      <div
+                        style={{
+                          width: "45%",
+                          height: "40%",
+                          backgroundColor: "#393e46",
+                          position: "absolute",
+                          right: "0%",
+                          bottom: "0%"
+                        }}
+                      ></div>
+                      <div
+                        onClick={() => {
+                          this.nextSlide();
+                        }}
+                        className="small-img-holder"
+                        style={{
+                          width: "10%",
+                          height: "15%",
+                          backgroundImage: `url("${
+                            this.carImages[
+                              (currSlide + 1) % this.carImages.length
+                            ]
+                          }")`,
+                          backgroundSize: "cover",
+                          position: "absolute",
+                          right: "5%",
+                          bottom: "20%",
+                          zIndex: "2",
+                          transition: "all .5s"
+                        }}
+                      >
+                        <div
+                          className="control-next"
+                          style={{
+                            transition: "all .5s",
+                            width: "20%",
+                            height: "100%",
+                            position: "absolute",
+                            right: "0%",
+                            backgroundColor: "#929AAB",
+                            color: "white",
+                            fontFamily: "Quicksand",
+                            fontSize: "40pt"
+                          }}
+                        >
+                          <p
+                            style={{
+                              position: "absolute",
+                              top: "50%",
+                              left: "50%",
+                              transform: "translateX(-50%) translateY(-50%)",
+                              cursor: "pointer"
+                            }}
+                          >
+                            &#8250;
+                          </p>
+                        </div>
+                      </div>
+                      <div className="boxmove">
+                        <p
+                          style={{
+                            fontFamily: "Quicksand",
+                            fontSize: "20pt",
+                            textAlign: "center",
+                            color: "#f7f7f7",
+                            lineHeight: "60px"
+                          }}
+                        >
+                          0{currSlide + 1}
+                        </p>
+                      </div>
+                      <Col md={{ span: 7, offset: 4 }}>
+                        <Carousel
+                          className="car"
+                          indicators={false}
+                          interval="4000"
+                          controls={false}
+                          activeIndex={currSlide}
+                          defaultActiveindex={1}
+                        >
+                          {this.carImages.map((item, index) => {
+                            return (
+                              <Carousel.Item className="caritem" key={index}>
+                                <img className="img" src={item} />
+                              </Carousel.Item>
+                            );
+                          })}
+                        </Carousel>
+                      </Col>
+                    </Row>
+                  )}
+                </div>
                 <div
                   className="section content"
                   style={{
