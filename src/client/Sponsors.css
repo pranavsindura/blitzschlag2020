@@ -65,3 +65,29 @@
         transform: rotate(359deg);
     }
 }
+
+.mid {
+    padding-left: 5vw;
+    ;
+}
+
+.midout {
+    padding-left: 20vw;
+}
+
+.midret {
+    padding-left: 5vw;
+}
+
+@media screen and (max-width: 760px) {
+    .mid {
+        padding-left: 18vw;
+        ;
+    }
+    .midout {
+        padding-left: 18vw;
+    }
+    .midret {
+        padding-left: 18vw;
+    }
+}

@@ -38,7 +38,6 @@ export default class Sponsors extends Component {
             height="253.39px"
             width="252.92px"
             viewBox="0 0 253.39 252.92"
-            // preserveAspectRatio="xMidYMid meet"
             fill="#ffffff"
             className="outer-ring"
           >
@@ -1096,15 +1095,14 @@ c-49 26 -151 32 -227 13 -84 -22 -146 -53 -220 -109 l-63 -47 -63 47 c-138
                   <br></br>
                   <br></br>
                   <div className="container">
-                    {/* {this.renderData(this.state.sponsors, fullpageApi)} */}
                     <div className="row">
-                      <div className="col-md-4">{this.renderSponsor()}</div>
-                      <div className="col-md-4">{this.renderSponsor()}</div>
-                      <div className="col-md-4">{this.renderSponsor()}</div>
+                      <div className="col-md-6 midout">{this.renderSponsor()}<br></br><br></br></div>
+                      <div className="col-md-6 midret">{this.renderSponsor()}<br></br><br></br></div>
                     </div>
                     <div className="row">
-                      <div className="col-md-6"></div>
-                      <div className="col-md-6">{this.renderSponsor()}</div>
+                      <div className="col-md-4 mid">{this.renderSponsor()}<br></br><br></br></div>
+                      <div className="col-md-4 mid">{this.renderSponsor()}<br></br><br></br></div>
+                      <div className="col-md-4 mid">{this.renderSponsor()}<br></br><br></br></div>
                     </div>
                   </div>
                   <br></br>
