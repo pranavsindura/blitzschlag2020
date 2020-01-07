@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-import React, { Component } from 'react';
-import './main.css';
-import ReactFullpage from '@fullpage/react-fullpage';
-import {Link} from 'react-router-dom';
-
-=======
 import React, { Component } from "react";
 import "./Home.css";
 import ReactFullpage from "@fullpage/react-fullpage";
@@ -16,7 +9,6 @@ import { Container } from "reactstrap";
 import { Link } from "react-router-dom";
 import styled, { keyframes } from 'styled-components';
 // import ProgBar from './ProgBar';
->>>>>>> 409efefad3812e237a0f2e07056373eb707c2d9d
 export default class Home extends Component {
 	state = {
 		moveto: null,
@@ -1783,7 +1775,7 @@ export default class Home extends Component {
         <ReactFullpage
           scrollingSpeed={2000}
           controlArrows={true}
-          verticalCentered={false}
+          verticalCentered={true}
           anchors={["home", "aboutus", "highlight", "contactus"]}
           onLeave={(origin, destination, direction) => {
             this.handleScroll(destination.index + 1);

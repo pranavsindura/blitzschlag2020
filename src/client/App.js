@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import Home from './Home.js';
-<<<<<<< HEAD
-// import Event from './event';
-import './main.css';
-=======
 import Event from './event';
 import CategoryEvent from './CategoryEvent';
 import Myaccount from './UserMyaccount.js';
@@ -12,7 +8,6 @@ import Sponsors from './Sponsors.js';
 import Hospitality from './Hospitality.js';
 import GetTickets from './GetTickets.js';
 import './App.css';
->>>>>>> 409efefad3812e237a0f2e07056373eb707c2d9d
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { createHashHistory as createHistory } from 'history';
 import FadeIn from 'react-fade-in';
@@ -405,21 +400,6 @@ class App extends Component {
 						</Route>
 					</Switch>
 				</div>
-<<<<<<< HEAD
-				<Switch>
-					<Route path="/events">
-						<Event/>
-					</Route>
-					<Route path="/flagship">
-						<Event/>
-					</Route>
-					<Route path="/">
-						<Home moveto={moveto} />
-					</Route>
-				</Switch>
-
-=======
->>>>>>> 409efefad3812e237a0f2e07056373eb707c2d9d
 			</Router>
 		);
 	}

@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-import React, { Component } from "react";
-import './main.css'
-import TrackSlider from "./Trackslider"
-export default class Event extends Component {
-    state = {};
-    render() {
-        return(
-            <div>
-                <h1>Events</h1>
-                <TrackSlider></TrackSlider>
-
-            </div>
-        );
-    }
-}
-=======
 import React, { Component } from 'react';
 import './Event.css';
 import ControlledCarousel from './EventCar.js';
@@ -69,4 +52,3 @@ export default class Event extends Component {
 		);
 	}
 }
->>>>>>> 409efefad3812e237a0f2e07056373eb707c2d9d
