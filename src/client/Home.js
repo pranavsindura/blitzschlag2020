@@ -1775,8 +1775,13 @@ export default class Home extends Component {
         <ReactFullpage
           scrollingSpeed={2000}
           controlArrows={true}
+<<<<<<< HEAD
           verticalCentered={true}
           anchors={["home", "aboutus", "highlight", "contactus"]}
+=======
+          verticalCentered={false}
+          anchors={["home", "aboutus", "theme" ,"flagship", "contactus"]}
+>>>>>>> 6d749c72c189665ea4a6db72a97aaf12252d1310
           onLeave={(origin, destination, direction) => {
             this.handleScroll(destination.index + 1);
           }}
@@ -2100,7 +2105,7 @@ export default class Home extends Component {
                             <ul className="list-unstyled">
                               <li>
                                 <Link to="/login" style={{ color: "black" }}>
-                                  Register
+                                  Login | Register
                                 </Link>
                               </li>
                               <li>
