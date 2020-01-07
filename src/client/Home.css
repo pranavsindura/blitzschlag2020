@@ -1,8 +1,109 @@
 h1 {
     text-align: center;
 }
+.l-holder{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    overflow: hidden;
+}
+@keyframes l1-move{
+    from{
+        top: -5%;
+    }
+    to{
+        top:0%;
+    }
+}
 
+.l1{
+    position: absolute;
+    height: 100%;
+    width: auto;
+    left: 0%;
+    top: 0%;
+    transition: all .2s ease-in-out;
+    animation: l1-move 5s ease-in-out alternate infinite;
+}
 
+.l2{
+    position: absolute;
+    height: 100%;
+    width: auto;
+    left: 0%;
+    top: 0%;
+}
+
+.l3{
+    position: absolute;
+    height: 110%;
+    width: auto;
+    left: 1%;
+    top: 0%
+}
+
+.l4{
+    position: absolute;
+    height: 100%;
+    width: auto;
+    left: 7%;
+    top: 0%
+}
+
+.l5{
+    position: absolute;
+    height: 100%;
+    width: auto;
+    left: 10%;
+    top: -10%;
+    
+}
+
+.l6{
+    position: absolute;
+    height: 50%;
+    width: auto;
+    left: -10%;
+    top: -10%;
+    animation : rot360 15s linear infinite;
+    overflow: hidden;
+}
+.l6-holder{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    overflow: hidden;
+}
+.l7{
+    position: absolute;
+    height: 80%;
+    width: auto;
+    right: -15%;
+    bottom: -20%;
+    animation : rot360 15s linear infinite;
+    overflow: hidden;
+}
+.l7-holder{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    overflow: hidden;
+}
+
+@keyframes rot360{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
 /* .control-next{
 	background-color: powderblue;
 	height: 50px;
@@ -80,14 +181,6 @@ h1 {
     overflow: hidden;
 }
 
-#lady {
-    display: block;
-    position: absolute;
-    right: -10%;
-    bottom: 0%;
-    max-height: 100vh;
-    width: auto;
-}
 
 .zoom {
     transition: all 200ms ease-in-out;
@@ -180,17 +273,6 @@ h1 {
     background-color: #000;
 }
 
-@media screen and (max-width: 760px) {
-    #lady {
-        display: block;
-        position: absolute;
-        right: -10%;
-        bottom: 0%;
-        max-height: 50vh;
-        width: auto;
-    }
-}
-
 @font-face {
     font-family: 'Raleway';
     font-style: normal;
@@ -234,6 +316,27 @@ h1 {
     font-family: 'Raleway', sans-serif;
 }
 
+.theme-content{
+    color: white;
+    font-variant-caps: small-caps;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+}
+
+.theme-heading{
+    text-align: center;
+    color: white;
+}
+
+.theme-holder{
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    padding: 30px;
+    margin-bottom: 20%;
+    vertical-align: middle;
+}
+
 .about-count-foot,
 .about-count-eve,
 .about-count-coll {
@@ -245,7 +348,22 @@ h1 {
     padding: 5px;
     min-width: 10vw;
 }
-
+.ladytheme-holder {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    /* background-color: red; */
+}
+.ladytheme{
+    display: block;
+    position: absolute;
+    right: -10%;
+    bottom: 0%;
+    max-height: 100vh;
+    width: auto;
+}
 @media screen and (max-width: 760px) {
     .about-vid-cont {
         width: 100vw;
@@ -254,6 +372,38 @@ h1 {
     .about-video {
         height: inherit;
         width: inherit;
+    }
+    .theme-holder{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        padding: 30px;
+        height: 50%;
+        margin-top: -45%;
+        vertical-align: top !important;
+    }
+    .theme-content{
+        color: white;
+        font-variant-caps: small-caps;
+        text-align: justify;
+        font-family: 'Raleway', sans-serif;
+        font-size: 80%;
+        line-height: 120%;
+    }
+    #lady {
+        display: block;
+        position: absolute;
+        right: -10%;
+        bottom: 0%;
+        max-height: 50vh;
+        width: auto;
+    }
+    .ladytheme-holder {
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        right: 0%;
+        bottom: 0%;
     }
 }
 
@@ -264,7 +414,7 @@ h1 {
 }
 
 .theme {
-    padding-top: 30px
+    /* padding-top: 30px */
 }
 
 .uscon {
