@@ -103,62 +103,6 @@ export default class Home extends Component {
                     frameBorder="0"
                   ></iframe>
                 </div>
-                {/* <div className="about-counts row">
-                  <div className="col-md-4">
-                    <div className="about-count-foot row ">
-                      <div className="col-5 p-0">
-                        <i class="fas fa-users"></i>
-                      </div>
-                      <div className="col-7 p-0">
-                        <div className="row" style={{ textAlign: "center" }}>
-                          <div
-                            className="col-12 p-0"
-                            style={{ fontWeight: "bolder" }}
-                          >
-                            54K+
-                          </div>
-                          <div className="col-12 p-0">Footfalls</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4">
-                    <div className="about-count-eve row">
-                      <div className="col-5 p-0">
-                        <i class="fas fa-calendar-check"></i>
-                      </div>
-                      <div className="col-7 p-0">
-                        <div className="row" style={{ textAlign: "center" }}>
-                          <div
-                            className="col-12 p-0"
-                            style={{ fontWeight: "bolder" }}
-                          >
-                            70+
-                          </div>
-                          <div className="col-12 p-0">Events</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4">
-                    <div className="about-count-coll row">
-                      <div className="col-5 p-0">
-                        <i class="fas fa-university"></i>
-                      </div>
-                      <div className="col-7 p-0">
-                        <div className="row" style={{ textAlign: "center" }}>
-                          <div
-                            className="col-12 p-0"
-                            style={{ fontWeight: "bolder" }}
-                          >
-                            35+
-                          </div>
-                          <div className="col-12 p-0">Colleges</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
               </div>
             </div>
             <div className="col-md-6 about-content">
