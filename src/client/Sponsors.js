@@ -20,13 +20,13 @@ export default class Sponsors extends Component {
   images = [
     "https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg"
   ];
-  renderSponsor(fullpageApi) {
+  renderSponsor(fullpageApi,imgspon) {
     return (
       <div className="circle">
         <div className="circlein" style={{ position: "absolute" }}>
           <img
             style={{ height: "inherit", width: "inherit" }}
-            src="src/shared/img/sponsors/hero.png"
+            src={imgspon}
             onLoad={() => {
               fullpageApi.reBuild();
             }}
@@ -1094,18 +1094,47 @@ c-49 26 -151 32 -227 13 -84 -22 -146 -53 -220 -109 l-63 -47 -63 47 c-138
             return (
               <ReactFullpage.Wrapper>
                 <div className="section">
-                  <h1>Sponsors</h1>
+                  <br></br>
+                  <br></br>
+                  <h2 style={{color:'white', textAlign:'center'}}>Previous Sponsors</h2>
                   <br></br>
                   <br></br>
                   <div className="container">
                     <div className="row">
-                      <div className="col-md-6 midout">{this.renderSponsor(fullpageApi)}<br></br><br></br></div>
-                      <div className="col-md-6 midret">{this.renderSponsor(fullpageApi)}<br></br><br></br></div>
+                      <div className="col-md-6 midout">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/9xm.jpg")}<br></br><br></br></div>
+                      <div className="col-md-6 midret">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/airtel.png")}<br></br><br></br></div>
                     </div>
                     <div className="row">
-                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi)}<br></br><br></br></div>
-                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi)}<br></br><br></br></div>
-                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi)}<br></br><br></br></div>
+                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/allen.png")}<br></br><br></br></div>
+                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/bajaj.png")}<br></br><br></br></div>
+                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/barbeque.jpg")}<br></br><br></br></div>
+                    </div>
+                    <div className="row">
+                      <div className="col-md-6 midout">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/bsnl.jpg")}<br></br><br></br></div>
+                      <div className="col-md-6 midret">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/burgerf.jpg")}<br></br><br></br></div>
+                    </div>
+                    <div className="row">
+                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/coca.jpg")}<br></br><br></br></div>
+                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/dainikB.png")}<br></br><br></br></div>
+                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/hero.png")}<br></br><br></br></div>
+                    </div>
+                    <div className="row">
+                      <div className="col-md-6 midout">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/honda.jpg")}<br></br><br></br></div>
+                      <div className="col-md-6 midret">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/icici.jpg")}<br></br><br></br></div>
+                    </div>
+                    <div className="row">
+                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/imagine.jpg")}<br></br><br></br></div>
+                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/lakme.jpg")}<br></br><br></br></div>
+                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/pizzahut.jpg")}<br></br><br></br></div>
+                    </div>
+                    <div className="row">
+                      <div className="col-md-6 midout">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/reliancef.jpg")}<br></br><br></br></div>
+                      <div className="col-md-6 midret">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/sprite.png")}<br></br><br></br></div>
+                    </div>
+                    <div className="row">
+                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/sunburn.jpg")}<br></br><br></br></div>
+                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/swiggy.jpg")}<br></br><br></br></div>
+                      <div className="col-md-4 mid">{this.renderSponsor(fullpageApi,"src/shared/img/sponsors/vivo.png")}<br></br><br></br></div>
                     </div>
                   </div>
                   <br></br>
