@@ -3,6 +3,7 @@ import "./Team.css";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Splash from "./Splash";
 import "@fortawesome/fontawesome-free/css/all.css";
+import { Link } from 'react-router-dom';
 export default class Team extends Component {
   state = {};
   images = [
@@ -22,16 +23,16 @@ export default class Team extends Component {
           <p className="main-content-team">
             <i style={{ color: "white" }} className="fas fa-phone-square-alt"></i>{" "}
             <span style={{ fontSize: "17px",color: "white" }}>{phone}</span> <br></br>
-            <a href={insta}>
+            <a href={insta} target="blank">
               <i style={{ color: "white" }} className="fab fa-instagram"></i>
             </a>{" "}
-            <a className="icon-team" href={faceb}>
+            <a className="icon-team" href={faceb} target="blank">
               <i
                 style={{ color: "white" }}
                 className="fab fa-facebook-square"
               ></i>
             </a>{" "}
-            <a className="icon-team" href={linkedin}>
+            <a className="icon-team" href={linkedin} target="blank">
               <i style={{ color: "white" }} className="fab fa-linkedin"></i>
             </a>
           </p>
@@ -49,13 +50,18 @@ export default class Team extends Component {
             return (
               <ReactFullpage.Wrapper>
                 <div className="section" style={{background:'#000000'}}>
+                <Link to="/home">
+                <div style={{padding:'0px',margin:'0px'}}>
+                  
+                      <img 
+                      style={{height:'auto',width:'100px'}}
+                      src="src/shared/img/blitzlogo.png"></img>
+                    </div>
+                    </Link>
                   <div className="container team-cont">
-                    <br></br>
-                    <br></br>
                     <h2 style={{ textAlign: "center"  }} className="team-head">
                       Team Blitzschlag
                     </h2>
-                    <br></br>
                     <br></br>
                     <div className="row ">
                       <div className="col-12 singlecont">
@@ -73,7 +79,7 @@ export default class Team extends Component {
                             Varun Kumar Verma
                           </h4>
                           <h5 style={{ textAlign: "center"  }} className="team-des">
-                            A{" "}D{"  "}V{"  "}I{"  "}S{"  "}O{"  "}R
+                            ADVISOR
                           </h5>
                           <br></br>
                         </div>
@@ -95,7 +101,7 @@ export default class Team extends Component {
                             Anuj Srivastava
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                            President
+                            PRESIDENT
                           </h5>
                           <br></br>
                         </div>
@@ -389,6 +395,7 @@ export default class Team extends Component {
                           Suraj Prakash
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
+                            <br></br>
                           Publicity Secretory
                           </h5>
                           <br></br>
@@ -409,6 +416,7 @@ export default class Team extends Component {
                           Pritesh Kumawat
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
+                            <br></br>
                           Décor Secretory
                           </h5>
                           <br></br>
@@ -419,8 +427,8 @@ export default class Team extends Component {
                           {this.renderMember(
                             "src/shared/img/team/varun.jpg",
                             "8219263140",
-                            "google.com",
-                            "google.com",
+                            "https://www.instagram.com/umangbhardwaj9488/",
+                            "https://www.facebook.com/profile.php?id=100009514595891",
                             "google.com"
                           )}
                         </div>
@@ -428,8 +436,8 @@ export default class Team extends Component {
                           <h4 className="team-name" style={{ textAlign: "center"}}>
                           Umang Bhardwaj
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
-                          Décor Secretory
+                          <h5 className="team-des" style={{letterSpacing: '8px', textAlign: "center",fontSize:'0.8em'}}>
+                          DECOR SECRETORY<br></br>GRAPHIC DESIGNER<br></br>DESIGNING HEAD
                           </h5>
                           <br></br>
                         </div>
