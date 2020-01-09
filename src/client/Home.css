@@ -231,16 +231,17 @@ h1,h3, p {
 		left:-2%;
 	}
 }
-@keyframes l1-move{
-    from{
+
+@keyframes l1-move {
+    from {
         top: -5%;
     }
-    to{
-        top:0%;
+    to {
+        top: 0%;
     }
 }
 
-.l1{
+.l1 {
     position: absolute;
     height: 100%;
     width: auto;
@@ -250,7 +251,7 @@ h1,h3, p {
     animation: l1-move 2s linear alternate infinite;
 }
 
-.l2{
+.l2 {
     position: absolute;
     height: 100%;
     width: auto;
@@ -261,7 +262,7 @@ h1,h3, p {
     animation: l1-move 2.5s linear alternate infinite;
 }
 
-.l3{
+.l3 {
     position: absolute;
     height: 110%;
     width: auto;
@@ -269,7 +270,7 @@ h1,h3, p {
     top: 0%
 }
 
-.l4{
+.l4 {
     position: absolute;
     height: 100%;
     width: auto;
@@ -277,42 +278,25 @@ h1,h3, p {
     top: 0%
 }
 
-.l5{
+.l5 {
     position: absolute;
     height: 100%;
     width: auto;
     left: 10%;
     top: -10%;
-    
 }
 
-.l6{
+.l6 {
     position: absolute;
     height: 50%;
     width: auto;
     left: -10%;
     top: -10%;
-    animation : rot360 15s linear infinite;
+    animation: rot360 15s linear infinite;
     overflow: hidden;
 }
-.l6-holder{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0%;
-    top: 0%;
-    overflow: hidden;
-}
-.l7{
-    position: absolute;
-    height: 80%;
-    width: auto;
-    right: -15%;
-    bottom: -20%;
-    animation : rot360 15s linear infinite;
-    overflow: hidden;
-}
-.l7-holder{
+
+.l6-holder {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -321,14 +305,35 @@ h1,h3, p {
     overflow: hidden;
 }
 
-@keyframes rot360{
-    from{
+.l7 {
+    position: absolute;
+    height: 80%;
+    width: auto;
+    right: -15%;
+    bottom: -20%;
+    animation: rot360 15s linear infinite;
+    overflow: hidden;
+}
+
+.l7-holder {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    overflow: hidden;
+}
+
+@keyframes rot360 {
+    from {
         transform: rotate(0deg);
     }
-    to{
+    to {
         transform: rotate(359deg);
     }
 }
+
+
 /* .control-next{
 	background-color: powderblue;
 	height: 50px;
@@ -493,7 +498,7 @@ h1,h3, p {
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(https://fonts.googleapis.com/css?family=Raleway&display=swap) format('woff2');
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -531,19 +536,19 @@ h1,h3, p {
     font-family: 'Raleway', sans-serif;
 }
 
-.theme-content{
+.theme-content {
     color: white;
     font-variant-caps: small-caps;
     text-align: justify;
     font-family: 'Raleway', sans-serif;
 }
 
-.theme-heading{
+.theme-heading {
     text-align: center;
     color: white;
 }
 
-.theme-holder{
+.theme-holder {
     position: relative;
     z-index: 2;
     width: 50%;
@@ -563,6 +568,7 @@ h1,h3, p {
     padding: 5px;
     min-width: 10vw;
 }
+
 .ladytheme-holder {
     width: 50%;
     height: 100%;
@@ -581,6 +587,7 @@ h1,h3, p {
     max-height: 100vh;
     width: auto;
 }
+
 @media screen and (max-width: 760px) {
     .about-vid-cont {
         width: 100vw;
@@ -590,7 +597,7 @@ h1,h3, p {
         height: inherit;
         width: inherit;
     }
-    .theme-holder{
+    .theme-holder {
         position: relative;
         z-index: 2;
         width: 100%;
@@ -599,7 +606,7 @@ h1,h3, p {
         margin-top: -45%;
         vertical-align: top !important;
     }
-    .theme-content{
+    .theme-content {
         color: white;
         font-variant-caps: small-caps;
         text-align: justify;
@@ -638,10 +645,6 @@ h1,h3, p {
 .fa-calendar-check,
 .fa-users {
     font-size: 35px;
-}
-
-.theme {
-    /* padding-top: 30px */
 }
 
 .uscon {
