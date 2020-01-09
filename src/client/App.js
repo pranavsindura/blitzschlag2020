@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Home from './Home.js';
-import Event from './event';
+import Event from './Event';
 import CategoryEvent from './CategoryEvent';
 import Myaccount from './UserMyaccount.js';
 import Team from './Team.js';

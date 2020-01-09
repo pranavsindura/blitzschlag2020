@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Event.css';
+import './Event2.css';
 // import ControlledCarousel from './EventCar.js';
 import {Row, Col, Carousel } from 'react-bootstrap';
 import ReactFullpage from '@fullpage/react-fullpage';
