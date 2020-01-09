@@ -1,0 +1,116 @@
+.car,
+.caritem {
+    height: 80vh;
+}
+
+.car {
+    position: absolute;
+    margin-top: 10vh;
+    display: flex !important;
+}
+
+.carmob {
+    height: 100%;
+    display: flex !important;
+}
+
+.carmob-item {
+    height: 40vh;
+    position: absolute;
+    top: 0%;
+}
+
+.boxmovemob {
+    transition: all 200ms ease-in-out;
+    width: 50px;
+    height: 50px;
+    background-color: hsl(221, 13%, 62%);
+    position: absolute;
+    left: 7%;
+    z-index: 2;
+    top: calc(40vh - 25px);
+}
+
+.slidenummob {
+    font-family: 'Quicksand';
+    font-size: 20pt;
+    text-align: center;
+    color: #f7f7f7;
+    line-height: 50px;
+}
+
+.control-nextmob {
+    transition: all .5s;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 7%;
+    top: calc(40vh - 25px);
+    z-index: 2;
+    background-color: #929aab;
+}
+
+.next-iconmob {
+    /* style={{
+		position: 'absolute',
+		top: '40%',
+		left: '50%',
+		transform: 'translateX(-50%) translateY(-50%)',
+		cursor: 'pointer'
+	}} */
+    position: absolute;
+    color: #f7f7f7;
+    font-family: 'Quicksand';
+    font-size: 40pt;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 40px;
+}
+
+.img {
+    transition: all 200ms ease-in-out;
+    transform-origin: center;
+    display: block;
+    height: 100%;
+    width: inherit;
+    overflow: hidden;
+    object-fit: cover;
+    border: none;
+}
+
+.imgmob {
+    transition: all 200ms ease-in-out;
+    transform-origin: center;
+    display: block;
+    height: 100%;
+    width: inherit;
+    overflow: hidden;
+    object-fit: cover;
+    border: none;
+}
+
+.boxmove {
+    /* width: '60px', height: '60px', backgroundColor: '#929aab', position: 'absolute', right:'7%', zIndex: '2', top: '20%' */
+    transition: all 200ms ease-in-out;
+    width: 60px;
+    height: 60px;
+    background-color: #929aab;
+    position: absolute;
+    right: 7%;
+    z-index: 2;
+    top: 20%;
+}
+
+.small-img-holder:hover {
+    transform: scale(1.2);
+    /* width: 50%; */
+}
+
+.img:hover~.boxmove {
+    transform: translateX(32px);
+}
+
+.img:hover {
+    transform: scale(1.2);
+    overflow: hidden;
+}

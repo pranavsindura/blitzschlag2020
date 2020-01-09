@@ -1,0 +1,132 @@
+.dummycol {
+    min-height: 250px;
+}
+
+.col-cont {
+    max-width: 250px;
+}
+
+.singlecont {
+    padding-left: 32vw;
+    padding-bottom: 10px;
+}
+
+.doublecont-1 {
+    padding-left: 20vw;
+    padding-bottom: 10px;
+}
+
+.doublecont-2 {
+    padding-left: 3vw;
+    padding-bottom: 10px;
+}
+
+.triplecont-1 {
+    padding-left: 7vw;
+    padding-bottom: 10px;
+}
+
+.triplecont-2 {
+    padding-left: 5vw;
+    padding-bottom: 10px;
+}
+
+.triplecont-3 {
+    padding-left: 3vw;
+    padding-bottom: 10px;
+}
+
+.base {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: cornsilk;
+    overflow: hidden;
+}
+
+.iconteam {
+    background-color: black;
+}
+
+.derived1 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 250px solid transparent;
+    border-left: 250px solid;
+    border-left-color: #e0d12490;
+    border-bottom: 0px solid transparent;
+    left: -150%;
+    transition: left 1000ms;
+}
+
+.derived2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-left: 250px solid;
+    border-left-color: #99333380;
+    border-bottom: 250px solid transparent;
+    left: -100%;
+    transition: left 500ms;
+}
+
+.derived-content {
+    height: 250px;
+    width: 250px;
+    padding-top: 80px;
+    position: absolute;
+    color: black;
+    left: -100%;
+    transition: left 500ms;
+}
+
+.imgteam {
+    height: 250px;
+    width: 250px;
+    transition: all 500ms;
+}
+
+.base:hover>.derived1 {
+    left: 0%;
+}
+
+.base:hover>.derived2 {
+    left: 0%;
+}
+
+.base:hover>.imgteam {
+    filter: blur(4px);
+}
+
+.base:hover>.derived-content {
+    left: 0%;
+}
+
+.main-content-team {
+    font-size: 25px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 760px) {
+    .singlecont {
+        padding-left: 15vw;
+    }
+    .doublecont-1 {
+        padding-left: 15vw;
+    }
+    .doublecont-2 {
+        padding-left: 15vw;
+    }
+    .triplecont-1 {
+        padding-left: 15vw;
+    }
+    .triplecont-2 {
+        padding-left: 15vw;
+    }
+    .triplecont-3 {
+        padding-left: 15vw;
+    }
+}
