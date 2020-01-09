@@ -50,9 +50,10 @@ class App extends Component {
 							<li className="lis menu-item">
 								<Link
 									className="lisitem"
-									to="/"
+									to="/#home"
 									onClick={() => {
 										this.handleClick('home');
+										// this.handleCheck();
 									}}
 								>
 								<i className="fas fa-home"></i>&nbsp;&nbsp;HOME
@@ -142,9 +143,11 @@ class App extends Component {
 							<li className="lis menu-item">
 								<Link
 									className="lisitem"
-									to="/"
+									to="/#contactus"
 									onClick={() => {
 										this.handleClick('contactus');
+										// this.handleCheck();
+
 									}}
 								>
 									<i className="fas fa-phone-alt"></i>&nbsp;&nbsp;CONTACT US
@@ -156,6 +159,8 @@ class App extends Component {
 									to="/team"
 									onClick={() => {
 										this.handleClick('contactus');
+										// this.handleCheck();
+
 									}}
 								>
 									<i className="far fa-handshake"></i>&nbsp;&nbsp;OUR TEAM
@@ -199,6 +204,7 @@ class App extends Component {
                         to="/"
                         onClick={() => {
                           this.handleClick("home");
+                          
                         }}
                       >
                         Home

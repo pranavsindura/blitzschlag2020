@@ -48,7 +48,7 @@ export default class Event extends Component {
                         interval="4000"
                         controls={false}
                         activeIndex={currSlide}
-                        defaultActiveindex={1}
+                        defaultActiveIndex={0}
                       >
                         {this.carImages.map((item, index) => {
                           return (

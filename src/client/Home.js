@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 // import ProgBar from './ProgBar';
 export default class Home extends Component {
-	state = {
+	state = { 
 		moveto: null,
 		scrollPerc: 0,
 		prevScrollPerc: 0,
@@ -55,7 +55,7 @@ export default class Home extends Component {
 	}
 	handleScroll = (num) => {
 		// console.log('scrolled');
-		const newScrollPerc = Math.ceil((num / 5) * 100);
+		const newScrollPerc = Math.ceil((num / 4) * 100);
 		const { scrollPerc } = this.state;
 		if (scrollPerc !== newScrollPerc)
 			this.setState({
@@ -226,8 +226,8 @@ export default class Home extends Component {
 						transform: `${
 							moveLogo
 								? `scale(${window.innerWidth <= 760 ? 0.6 : 0.2}) translate(${
-										window.innerWidth <= 760 ? -30 : -200
-								  }%,${window.innerWidth <= 760 ? -30 : -200}%)`
+										window.innerWidth <= 760 ? -35 : -210
+								  }%,${window.innerWidth <= 760 ? -55 : -230}%)`
 								: `scale(${window.innerWidth <= 760 ? 1.2 : 0.8}) translateX(${
 										window.innerWidth <= 760 ? -41.66 : -62.5
 								  }%) translateY(${window.innerWidth <= 760 ? -41.66 : -62.5}%)`
@@ -236,7 +236,9 @@ export default class Home extends Component {
 						top: `${moveLogo ? '2%' : '35%'}`
 					}}
 				>
-					<svg
+					<img src={'src/shared/img/logo.png'} style={{width: '80vw', enableBackground: 'new 0 0 666.7 248.32'}} />
+
+					{/*<svg
 						version="1.1"
 						xmlns="http://www.w3.org/2000/svg"
 						x="0px"
@@ -1682,7 +1684,7 @@ export default class Home extends Component {
 									c0-0.63,0-1.29,0-1.97C605.47,91.38,605.81,89.78,606.49,88.02z"
 							/>
 						</g>
-					</svg>
+					</svg>*/}
 				</div>
 				<ReactFullpage
 					scrollingSpeed={2000}
@@ -1710,7 +1712,7 @@ export default class Home extends Component {
 									<img className="zoom" id="lady" src={`https://i.imgur.com/9yC93U6.png`} />
 								</div>
 								<div
-									className="section content aboutUS"
+									className="section content"
 									style={{
 										backgroundImage: 'url("https://i.imgur.com/2dQuCUu.png")',
 										backgroundSize: 'cover'
@@ -1778,101 +1780,81 @@ export default class Home extends Component {
 								<div
 									className="section content"
 									style={{
-										backgroundImage: 'url("https://i.imgur.com/LFkC1gH.jpg")',
-										backgroundSize: 'cover'
+										overflow:'hidden'
 									}}
 								>
-									<div className="container-fluid uscon">
-										<h2
-											style={{
-												color: 'black',
-												textAlign: 'center'
-											}}
-										>
-											Contact Us
-										</h2>
-										<Container>
-											<div className="contact">
-												<Row>
-													<Col xs="12" md="7">
-														<h5>Our Address</h5>
-														<address>
-															MNIT Jaipur
-															<br />
-															JLN Marg
-															<br />
-															Jaipur
-															<br />
-															<i className="fa fa-phone fa-lg"></i>: +91 9999999999
-															<br />
-															<i className="fa fa-fax fa-lg"></i>: +91 9999999999
-															<br />
-															<i className="fa fa-envelope fa-lg"></i>:{' '}
-															<a href="kuchbhi@mnit.com">kuchbhi@mnit.com</a>
-														</address>
-													</Col>
-													<Col xs="6" md="3">
-														<ul className="list-unstyled">
-															<li>
-																<Link to="/login" style={{ color: 'black' }}>
-																	Login | Register
-																</Link>
-															</li>
-															<li>
-																<Link to="/hospitality" style={{ color: 'black' }}>
-																	Hospitality
-																</Link>
-															</li>
-															<li>
-																<Link to="/team" style={{ color: 'black' }}>
-																	Team
-																</Link>
-															</li>
-															<li>
-																<Link to="/Sponsors" style={{ color: 'black' }}>
-																	Sponsors
-																</Link>
-															</li>
-														</ul>
-													</Col>
-													<Col xs="6" md="2">
-														<ul className="list-unstyled">
-															<li>
-																<Link to="/events/category" style={{ color: 'black' }}>
-																	Literary
-																</Link>
-															</li>
-															<li>
-																<Link to="/events/categorys" style={{ color: 'black' }}>
-																	Cultural
-																</Link>
-															</li>
-															<li>
-																<Link to="/events/category" style={{ color: 'black' }}>
-																	Music
-																</Link>
-															</li>
-															<li>
-																<Link to="/events/category" style={{ color: 'black' }}>
-																	Dramatics
-																</Link>
-															</li>
-															<li>
-																<Link to="/events/category" style={{ color: 'black' }}>
-																	LAN Gaming
-																</Link>
-															</li>
-															<li>
-																<Link to="/events/category" style={{ color: 'black' }}>
-																	Film & Photography
-																</Link>
-															</li>
-														</ul>
-													</Col>
-												</Row>
-												<Row></Row>
+									
+									<div className="contactus-text-holder">
+										<div className="contactus-heading">
+												<h2>Contact Us</h2>
+										</div>
+										<div className="contactus-holder">
+											<div className="contactus-text">
+												<h3>Events</h3>
+												<p>Ansh Khandelwal : 8518066443</p>
 											</div>
-										</Container>
+											<div className="contactus-text">
+												<h3>Marketing</h3>
+												<p>Ayush Singh : 9149225262</p>
+											</div>
+											<div className="contactus-text">
+												<h3>Cultural</h3>
+												<p>Devanshu Khandal : 9314655304</p>
+												<p>Srividya : 8639261222</p>
+											</div>
+											<div className="contactus-text">
+												<h3>General Queries</h3>
+												<p>Anuj Srivastava : 9588072917</p>
+											</div>
+										</div>
+										<div className="findus-holder">
+
+										</div>
+									</div>
+									<div className="contactus" ><img src="src/shared/img/contactus.jpg"/></div>
+									<div className="c1-holder"><img src="src/shared/img/c1.png"/></div>
+									<div className="c2-holder"><img src="src/shared/img/c2.png"/></div>
+									<div className="c3-holder"><img src="src/shared/img/c3.png"/></div>
+									<div className="c4-holder"><img src="src/shared/img/c4.png"/></div>
+									<div className="c5-holder"><img src="src/shared/img/c5.png"/></div>
+									<div className="handles">
+										<div className="handle-holder-left" />
+										<div className="handle-holder">
+
+												<a target="_blank" href={"https://www.instagram.com/blitzmnit/"} className="handle-link">
+													<i className="fab fa-instagram">
+													</i>
+												</a>
+										</div>
+										<div className="handle-holder">
+											<a target="_blank" href={"https://www.facebook.com/blitzschlagMNIT/"} className="handle-link">
+												<i class="fab fa-facebook-f"></i>
+											</a>
+										</div>
+										<div className="handle-holder">
+											<a href={"#home"} className="handle-link">
+
+											<i class="fab fa-twitter"></i>
+											</a>
+										</div>
+										<div className="handle-holder">
+											<a target="_blank" href={"https://in.linkedin.com/school/mnitjaipur/?trk=public_profile_topcard_school"} className="handle-link">
+
+											<i class="fab fa-linkedin-in"></i>
+											</a>
+										</div>
+										<div className="handle-holder">
+											<a target="_blank" href={"https://www.youtube.com/channel/UCChl8NPUwrLUQF2cdiYaCLw?view_as=subscriber"} className="handle-link">
+
+											<i class="fab fa-youtube"></i>
+											</a>
+										</div>
+										<div className="handle-holder-right" />
+									</div>
+									<div className="footer">
+									<Link to="/team" className="handle-link">
+										Team FB&CL
+									</Link>
 									</div>
 								</div>
 							</ReactFullpage.Wrapper>
