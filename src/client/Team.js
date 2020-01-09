@@ -20,19 +20,19 @@ export default class Team extends Component {
         <div className="derived2"></div>
         <div className="derived-content">
           <p className="main-content-team">
-            <i className="fas fa-phone-square-alt"></i>{" "}
-            <span style={{ fontSize: "17px" }}>{phone}</span> <br></br>
+            <i style={{ color: "white" }} className="fas fa-phone-square-alt"></i>{" "}
+            <span style={{ fontSize: "17px",color: "white" }}>{phone}</span> <br></br>
             <a href={insta}>
-              <i style={{ color: "black" }} className="fab fa-instagram"></i>
+              <i style={{ color: "white" }} className="fab fa-instagram"></i>
             </a>{" "}
             <a className="icon-team" href={faceb}>
               <i
-                style={{ color: "black" }}
+                style={{ color: "white" }}
                 className="fab fa-facebook-square"
               ></i>
             </a>{" "}
             <a className="icon-team" href={linkedin}>
-              <i style={{ color: "black" }} className="fab fa-linkedin"></i>
+              <i style={{ color: "white" }} className="fab fa-linkedin"></i>
             </a>
           </p>
         </div>
@@ -48,12 +48,12 @@ export default class Team extends Component {
           render={({ state, fullpageApi }) => {
             return (
               <ReactFullpage.Wrapper>
-                <div className="section">
+                <div className="section" style={{background:'#000000'}}>
                   <div className="container team-cont">
                     <br></br>
                     <br></br>
-                    <h2 style={{ textAlign: "center", color: "white" }}>
-                      TEAM BLITZSCHLAG
+                    <h2 style={{ textAlign: "center"  }} className="team-head">
+                      Team Blitzschlag
                     </h2>
                     <br></br>
                     <br></br>
@@ -69,11 +69,11 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                             Varun Kumar Verma
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
-                            Advisor
+                          <h5 style={{ textAlign: "center"  }} className="team-des">
+                            A{" "}D{"  "}V{"  "}I{"  "}S{"  "}O{"  "}R
                           </h5>
                           <br></br>
                         </div>
@@ -83,7 +83,7 @@ export default class Team extends Component {
                       <div className="col-12 singlecont">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/anuj.jpg",
+                            "src/shared/img/team/varun.jpg",
                             "7525926870",
                             "google.com",
                             "google.com",
@@ -91,10 +91,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                             Anuj Srivastava
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                             President
                           </h5>
                           <br></br>
@@ -113,10 +113,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont ">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                             Divyaman
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                             Vice-President
                           </h5>
                           <br></br>
@@ -133,10 +133,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                             Nupur Malik
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                             Vice-President
                           </h5>
                           <br></br>
@@ -155,10 +155,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont ">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                             Ansh Khandelwal
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                             General Secretory
                           </h5>
                           <br></br>
@@ -177,10 +177,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont ">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                           Ayush Singh
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                           Marketing Secretory
                           </h5>
                           <br></br>
@@ -197,10 +197,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                             Nishant Sharma
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                             Technical Secretory
                           </h5>
                           <br></br>
@@ -209,7 +209,7 @@ export default class Team extends Component {
                       <div className="col-md-4 triplecont-3">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/mridul.jpg",
+                            "src/shared/img/team/varun.jpg",
                             "9634157767",
                             "google.com",
                             "google.com",
@@ -217,10 +217,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                             Mridul Singhal
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                             Technical Secretory
                           </h5>
                           <br></br>
@@ -239,10 +239,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont ">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                             Dhruv Gupta
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                             Logistics Secretory
                           </h5>
                           <br></br>
@@ -251,7 +251,7 @@ export default class Team extends Component {
                       <div className="col-md-6 doublecont-2">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/kshitij.jpg",
+                            "src/shared/img/team/varun.jpg",
                             "8441944621",
                             "google.com",
                             "google.com",
@@ -259,10 +259,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                             Kshitiz Kain
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                             Logistics Secretory
                           </h5>
                           <br></br>
@@ -273,7 +273,7 @@ export default class Team extends Component {
                       <div className="col-md-4 triplecont-1">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/ritu.jpg",
+                            "src/shared/img/team/varun.jpg",
                             " 9602412495",
                             "google.com",
                             "google.com",
@@ -281,10 +281,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont ">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                           Ritu Chaoudhary
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                           Finance Secretory
                           </h5>
                           <br></br>
@@ -301,10 +301,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                           Devanshu Khandal
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                           Cultural Secretory
                           </h5>
                           <br></br>
@@ -313,7 +313,7 @@ export default class Team extends Component {
                       <div className="col-md-4 triplecont-3">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/bhuvanagiri.jpg",
+                            "src/shared/img/team/srividya.jpg",
                             "8639261222",
                             "google.com",
                             "google.com",
@@ -321,10 +321,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                           Bhuvanagiri Venkata Srividya
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                           Cultural Secretory
                           </h5>
                           <br></br>
@@ -343,10 +343,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont ">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                           Arunanshu Deep Barnawal
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                           Media and Communication Secretory
                           </h5>
                           <br></br>
@@ -363,10 +363,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                           Prasanna Venkatesh V
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                           Media and Communication Secretory
                           </h5>
                           <br></br>
@@ -377,7 +377,7 @@ export default class Team extends Component {
                       <div className="col-md-4 triplecont-1">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/suraj.jpg",
+                            "src/shared/img/team/varun.jpg",
                             " 7763898654",
                             "google.com",
                             "google.com",
@@ -385,10 +385,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont ">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                           Suraj Prakash
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                           Publicity Secretory
                           </h5>
                           <br></br>
@@ -405,10 +405,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                           Pritesh Kumawat
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                           Décor Secretory
                           </h5>
                           <br></br>
@@ -417,7 +417,7 @@ export default class Team extends Component {
                       <div className="col-md-4 triplecont-3">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/umang.png",
+                            "src/shared/img/team/varun.jpg",
                             "8219263140",
                             "google.com",
                             "google.com",
@@ -425,10 +425,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                           Umang Bhardwaj
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                           Décor Secretory
                           </h5>
                           <br></br>
@@ -447,10 +447,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont ">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                             Satya Dhwaj
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                             Web Developer
                           </h5>
                           <br></br>
@@ -466,11 +466,11 @@ export default class Team extends Component {
                             "google.com"
                           )}
                         </div>
-                        <div className="col-cont">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                        <div  className="col-cont">
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                             Pranav Sindura
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                           Web Developer
                           </h5>
                           <br></br>
@@ -488,11 +488,11 @@ export default class Team extends Component {
                             "google.com"
                           )}
                         </div>
-                        <div className="col-cont ">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                        <div  className="col-cont ">
+                          <h4  className="team-name" style={{ textAlign: "center"}}>
                             Keshav Sharma
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center" }} className="team-des">
                             Web Developer
                           </h5>
                           <br></br>
@@ -501,7 +501,7 @@ export default class Team extends Component {
                       <div className="col-md-6 doublecont-2">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/dp.jpeg",
+                            "src/shared/img/team/dp.jpg",
                             "9601113188",
                             "google.com",
                             "google.com",
@@ -509,10 +509,10 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 style={{ textAlign: "center", color: "#9c301f" }}>
+                          <h4 className="team-name" style={{ textAlign: "center"}}>
                             Dhairya Patel
                           </h4>
-                          <h5 style={{ textAlign: "center", color: "white" }}>
+                          <h5 style={{ textAlign: "center"}} className="team-des">
                           Web Developer
                           </h5>
                           <br></br>

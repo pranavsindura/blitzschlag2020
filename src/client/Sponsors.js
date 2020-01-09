@@ -1093,10 +1093,10 @@ c-49 26 -151 32 -227 13 -84 -22 -146 -53 -220 -109 l-63 -47 -63 47 c-138
           render={({ state, fullpageApi }) => {
             return (
               <ReactFullpage.Wrapper>
-                <div className="section">
+                <div className="section" style={{background:'#abbbb8'}}>
                   <br></br>
                   <br></br>
-                  <h2 style={{color:'white', textAlign:'center'}}>Previous Sponsors</h2>
+                  <h2 style={{color:'white', textAlign:'center'}} className="spon-main-head">Previous Sponsors</h2>
                   <br></br>
                   <br></br>
                   <div className="container">

@@ -1,3 +1,30 @@
+@font-face {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(https://fonts.gstatic.com/s/amaticsc/v13/TUZyzwprpvBS1izr_vOECuSf.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.team-head {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 3em;
+    color: aliceblue;
+}
+
+.team-name {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 2em;
+    color: #f94e6f;
+}
+
+.team-des {
+    color: #959595;
+    font-size: 1em;
+    letter-spacing: 4px;
+}
+
 .dummycol {
     min-height: 250px;
 }
@@ -54,7 +81,7 @@
     height: 0;
     border-top: 250px solid transparent;
     border-left: 250px solid;
-    border-left-color: #e0d12490;
+    border-left-color: #f94e6f90;
     border-bottom: 0px solid transparent;
     left: -150%;
     transition: left 1000ms;
@@ -66,7 +93,7 @@
     height: 0;
     border-top: 0px solid transparent;
     border-left: 250px solid;
-    border-left-color: #99333380;
+    border-left-color: #95959580;
     border-bottom: 250px solid transparent;
     left: -100%;
     transition: left 500ms;
@@ -96,9 +123,10 @@
     left: 0%;
 }
 
-.base:hover>.imgteam {
+
+/* .base:hover>.imgteam {
     filter: blur(4px);
-}
+} */
 
 .base:hover>.derived-content {
     left: 0%;
