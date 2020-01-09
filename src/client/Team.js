@@ -123,7 +123,7 @@ export default class Team extends Component {
                             Divyaman
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                            Vice-President
+                            VICE-PRESIDENT
                           </h5>
                           <br></br>
                         </div>
@@ -143,7 +143,7 @@ export default class Team extends Component {
                             Nupur Malik
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                            Vice-President
+                          VICE-PRESIDENT
                           </h5>
                           <br></br>
                         </div>
@@ -165,7 +165,7 @@ export default class Team extends Component {
                             Ansh Khandelwal
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                            General Secretory
+                            GENERAL SECRETORY
                           </h5>
                           <br></br>
                         </div>
@@ -187,7 +187,7 @@ export default class Team extends Component {
                           Ayush Singh
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                          Marketing Secretory
+                          MARKETING SECRETORY
                           </h5>
                           <br></br>
                         </div>
@@ -207,7 +207,7 @@ export default class Team extends Component {
                             Nishant Sharma
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                            Technical Secretory
+                            TECHNICAL SECRETORY
                           </h5>
                           <br></br>
                         </div>
@@ -227,7 +227,7 @@ export default class Team extends Component {
                             Mridul Singhal
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                            Technical Secretory
+                            TECHNICAL SECRETORY
                           </h5>
                           <br></br>
                         </div>
@@ -249,7 +249,7 @@ export default class Team extends Component {
                             Dhruv Gupta
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                            Logistics Secretory
+                            LOGISTICS SECRETORY
                           </h5>
                           <br></br>
                         </div>
@@ -269,7 +269,7 @@ export default class Team extends Component {
                             Kshitiz Kain
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                            Logistics Secretory
+                            LOGISTICS SECRETORY
                           </h5>
                           <br></br>
                         </div>
@@ -291,7 +291,7 @@ export default class Team extends Component {
                           Ritu Chaoudhary
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                          Finance Secretory
+                          FINANCE SECRETORY
                           </h5>
                           <br></br>
                         </div>
@@ -311,7 +311,7 @@ export default class Team extends Component {
                           Devanshu Khandal
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                          Cultural Secretory
+                          CULTURAL SECRETORY
                           </h5>
                           <br></br>
                         </div>
@@ -331,7 +331,7 @@ export default class Team extends Component {
                           Bhuvanagiri Venkata Srividya
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                          Cultural Secretory
+                          CULTURAL SECRETORY
                           </h5>
                           <br></br>
                         </div>
@@ -353,7 +353,7 @@ export default class Team extends Component {
                           Arunanshu Deep Barnawal
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                          Media and Communication Secretory
+                          MEDIA AND COMMUNICATION SECRETORY
                           </h5>
                           <br></br>
                         </div>
@@ -373,7 +373,7 @@ export default class Team extends Component {
                           Prasanna Venkatesh V
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                          Media and Communication Secretory
+                          MEDIA AND COMMUNICATION SECRETORY
                           </h5>
                           <br></br>
                         </div>
@@ -396,7 +396,7 @@ export default class Team extends Component {
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
                             <br></br>
-                          Publicity Secretory
+                          PUBLICITY SECRETORY
                           </h5>
                           <br></br>
                         </div>
@@ -417,7 +417,7 @@ export default class Team extends Component {
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
                             <br></br>
-                          Décor Secretory
+                          DECOR SECRETORY
                           </h5>
                           <br></br>
                         </div>
@@ -459,7 +459,7 @@ export default class Team extends Component {
                             Satya Dhwaj
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                            Web Developer
+                            WEB DEVELOPER
                           </h5>
                           <br></br>
                         </div>
@@ -479,7 +479,7 @@ export default class Team extends Component {
                             Pranav Sindura
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                          Web Developer
+                          WEB DEVELOPER
                           </h5>
                           <br></br>
                         </div>
@@ -501,7 +501,7 @@ export default class Team extends Component {
                             Keshav Sharma
                           </h4>
                           <h5 style={{ textAlign: "center" }} className="team-des">
-                            Web Developer
+                          WEB DEVELOPER
                           </h5>
                           <br></br>
                         </div>
@@ -521,7 +521,7 @@ export default class Team extends Component {
                             Dhairya Patel
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                          Web Developer
+                          WEB DEVELOPER
                           </h5>
                           <br></br>
                         </div>
