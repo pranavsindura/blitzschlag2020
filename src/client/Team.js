@@ -509,7 +509,7 @@ export default class Team extends Component {
                       <div className="col-md-6 doublecont-2">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/dp.jpg",
+                            "src/shared/img/team/dp.JPG",
                             "9601113188",
                             "google.com",
                             "google.com",
