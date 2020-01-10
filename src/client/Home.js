@@ -3,14 +3,14 @@ import './Home.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel, Col, Row } from 'react-bootstrap';
-import '@fortawesome/fontawesome-free/css/all.css';
+// import '@fortawesome/fontawesome-free/css/regular.min.css';
 import Splash from './Splash';
 import { Container } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 // import ProgBar from './ProgBar';
 export default class Home extends Component {
-	state = { 
+	state = {
 		moveto: null,
 		scrollPerc: 0,
 		prevScrollPerc: 0,
@@ -46,7 +46,7 @@ export default class Home extends Component {
 		'https://i.imgur.com/ue7LVkv.jpg',
 		'https://i.imgur.com/aYNNCye.jpg',
 		'https://i.imgur.com/LFkC1gH.jpg',
-		"https://i.imgur.com/2dQuCUu.png"
+		'https://i.imgur.com/2dQuCUu.png'
 	];
 	imgSelect = Math.trunc(Math.random() * 2);
 	componentDidMount() {
@@ -134,14 +134,16 @@ export default class Home extends Component {
 				<div className="container about-us">
 					<div className="row">
 						<div className="col-12 about-content">
-							<div style={{ fontSize: 'smaller' }}>
+							<div>
 								<br></br>
 								<h2 style={{ textAlign: 'center' }}>About us</h2>
-								Malaviya National Institute of Technology is a Gibraltar of technological learning,
-								imparting thousands of students, world class education, nurturing their skills to
-								produce future leaders. Blitzschlag, MNIT's annual cultural mega-event, with a decade
-								long glorious history, is synonymous with a wholesome cultural carnival throughout
-								Rajasthan, due to its unparalleled grandeur.
+								<p>
+									Malaviya National Institute of Technology is a Gibraltar of technological learning,
+									imparting thousands of students, world class education, nurturing their skills to
+									produce future leaders. Blitzschlag, MNIT's annual cultural mega-event, with a
+									decade long glorious history, is synonymous with a wholesome cultural carnival
+									throughout Rajasthan, due to its unparalleled grandeur.
+								</p>
 							</div>
 						</div>
 						{/* <div className="col-12 about-gra">
@@ -163,21 +165,6 @@ export default class Home extends Component {
 
 	render() {
 		const { prevScrollPerc, scrollPerc, moveLogo, scrollChanged, internal, currSlide } = this.state;
-		const BlitzLogo = styled.svg`
-			transition: all 2s;
-			enable-background: new 0 0 666.7 248.32;
-			display: block;
-			margin: auto;
-			position: fixed;
-			zindex: 20;
-			transform: scale(${moveLogo ? 1 : window.innerWidth <= 760 ? 0.6 : 0.2})
-				translate(
-					${moveLogo ? -50 : window.innerWidth <= 760 ? -30 : -200}%,
-					${moveLogo ? -50 : window.innerWidth <= 760 ? -30 : -200}%
-				);
-			left: ${moveLogo ? 0 : 50}%;
-			top: ${moveLogo ? 2 : 50}%;
-		`;
 		const animScroll = (a, b) => keyframes`
 		from{
 			width: ${a}%;
@@ -225,9 +212,9 @@ export default class Home extends Component {
 						zIndex: '20',
 						transform: `${
 							moveLogo
-								? `scale(${window.innerWidth <= 760 ? 0.6 : 0.2}) translate(${
-										window.innerWidth <= 760 ? -35 : -210
-								  }%,${window.innerWidth <= 760 ? -55 : -230}%)`
+								? `scale(${window.innerWidth <= 760 ? 0.4 : 0.2}) translate(${
+										window.innerWidth <= 760 ? -80 : -210
+								  }%,${window.innerWidth <= 760 ? -110 : -230}%)`
 								: `scale(${window.innerWidth <= 760 ? 1.2 : 0.8}) translateX(${
 										window.innerWidth <= 760 ? -41.66 : -62.5
 								  }%) translateY(${window.innerWidth <= 760 ? -41.66 : -62.5}%)`
@@ -236,7 +223,10 @@ export default class Home extends Component {
 						top: `${moveLogo ? '2%' : '35%'}`
 					}}
 				>
-					<img src={'src/shared/img/logo.png'} style={{width: '80vw', enableBackground: 'new 0 0 666.7 248.32'}} />
+					<img
+						src={'src/shared/img/logo.png'}
+						style={{ width: '80vw', enableBackground: 'new 0 0 666.7 248.32' }}
+					/>
 				</div>
 				<ReactFullpage
 					scrollingSpeed={2000}
@@ -270,13 +260,27 @@ export default class Home extends Component {
 										backgroundSize: 'cover'
 									}}
 								>
-								<div className="l-holder"><img className="l1" src={'src/shared/img/l1.png'} /></div>
-								<div className="l-holder"><img className="l2" src={'src/shared/img/l2.png'} /></div>
-								<div className="l-holder"><img className="l3" src={'src/shared/img/l3.png'} /></div>
-								<div className="l-holder"><img className="l4" src={'src/shared/img/l4.png'} /></div>
-								<div className="l-holder"><img className="l5" src={'src/shared/img/l5.png'} /></div>
-								<div className="l6-holder"><img className="l6" src={'src/shared/img/l6.png'} /></div>
-								<div className="l7-holder"><img className="l7" src={'src/shared/img/l6.png'} /></div>
+									<div className="l-holder">
+										<img className="l1" src={'src/shared/img/l1.png'} />
+									</div>
+									<div className="l-holder">
+										<img className="l2" src={'src/shared/img/l2.png'} />
+									</div>
+									<div className="l-holder">
+										<img className="l3" src={'src/shared/img/l3.png'} />
+									</div>
+									<div className="l-holder">
+										<img className="l4" src={'src/shared/img/l4.png'} />
+									</div>
+									<div className="l-holder">
+										<img className="l5" src={'src/shared/img/l5.png'} />
+									</div>
+									<div className="l6-holder">
+										<img className="l6" src={'src/shared/img/l6.png'} />
+									</div>
+									<div className="l7-holder">
+										<img className="l7" src={'src/shared/img/l6.png'} />
+									</div>
 									{this.renderAboutUs()}
 								</div>
 								<div
@@ -286,59 +290,93 @@ export default class Home extends Component {
 										backgroundSize: 'cover'
 									}}
 								>
-								{window.innerWidth>770?(
-									<div>
-									<div className="ladytheme-holder">
-											<img className={'ladytheme zoom'} src={`https://imgur.com/JI5zb8u.png`}/>
-									</div>
-									<div className="theme-holder">
+									{window.innerWidth > 770 ? (
 										<div>
-											<h2 className="theme-heading">BOLLYWOOD</h2>
-											<p className="theme-content">
-												Although the term 'Bollywood' was popularized only in the 1970s, Bollywood has been a major part
-												of Indian culture for years before that. Blitzschlag 2020 pays homage to an aspect of our
-												culture that has borne many icons, set pioneering trends, and become a much-loved household
-												name. From the iconic 'angry young man' characters and dastardly villains, to thought-provoking
-												movies with a social message, and blockbuster 'masala' movies, Bollywood has something for
-												everyone, and that's the case for Blitzschlag 2020! Music, dance, drama, and more await you in a
-												feast for the senses, so join us as we treat you to a panoply of performances and competitions
-												set in the heart of Rajasthan. Padhaaro mhaare Bollywood!
-											</p>
+											<div className="ladytheme-holder">
+												<img
+													className={'ladytheme zoom'}
+													src={`https://imgur.com/JI5zb8u.png`}
+												/>
+											</div>
+											<div className="theme-holder">
+												<h2 className="theme-heading">BOLLYWOOD</h2>
+												<p className="theme-content">
+													Although the term 'Bollywood' was popularized only in the 1970s,
+													Bollywood has been a major part of Indian culture for years before
+													that. Blitzschlag 2020 pays homage to an aspect of our culture that
+													has borne many icons, set pioneering trends, and become a much-loved
+													household name. From the iconic 'angry young man' characters and
+													dastardly villains, to thought-provoking movies with a social
+													message, and blockbuster 'masala' movies, Bollywood has something
+													for everyone, and that's the case for Blitzschlag 2020! Music,
+													dance, drama, and more await you in a feast for the senses, so join
+													us as we treat you to a panoply of performances and competitions set
+													in the heart of Rajasthan. Padhaaro mhaare Bollywood!
+												</p>
+												<div className="theme-icon-holder">
+													<div className="theme-icon theme-icon-1">
+														<i class="fas fa-calendar-check"></i>
+														<p> 72+ Events</p>
+													</div>
+													<div className="theme-icon">
+														<i class="fas fa-walking"></i>
+														<p> 54K+ Footfall</p>
+													</div>
+													<div className="theme-icon">
+														<i class="fas fa-university"></i>
+														<p> 25+ Colleges</p>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
-									</div>
-								):(
-									<div>
-									<div className="ladytheme-holder">
-											<img className={'ladytheme zoom'} src={`https://imgur.com/JI5zb8u.png`}/>
-									</div>
-									<div className="theme-holder">
+									) : (
 										<div>
-											<h2 className="theme-heading">BOLLYWOOD</h2>
-											<p className="theme-content">
-												Although the term 'Bollywood' was popularized only in the 1970s, Bollywood has been a major part
-												of Indian culture for years before that. Blitzschlag 2020 pays homage to an aspect of our
-												culture that has borne many icons, set pioneering trends, and become a much-loved household
-												name. Bollywood has something for
-												everyone, and that's the case for Blitzschlag 2020! Music, dance, drama, and more await you in a
-												feast for the senses, so join us as we treat you to a panoply of performances and competitions
-												set in the heart of Rajasthan. Padhaaro mhaare Bollywood!
-											</p>
+											<div className="ladytheme-holder">
+												<img
+													className={'ladytheme zoom'}
+													src={`https://imgur.com/JI5zb8u.png`}
+												/>
+											</div>
+											<div className="theme-holder">
+												<h2 className="theme-heading">BOLLYWOOD</h2>
+												<p className="theme-content">
+													Although the term 'Bollywood' was popularized only in the 1970s,
+													Bollywood has been a major part of Indian culture for years before
+													that. Blitzschlag 2020 pays homage to an aspect of our culture that
+													has borne many icons, set pioneering trends, and become a much-loved
+													household name. Bollywood has something for everyone, and that's the
+													case for Blitzschlag 2020! Music, dance, drama, and more await you
+													in a feast for the senses, so join us as we treat you to a panoply
+													of performances and competitions set in the heart of Rajasthan.
+													Padhaaro mhaare Bollywood!
+												</p>
+												<div className="theme-icon-holder">
+													<div className="theme-icon theme-icon-1">
+														<i class="fas fa-calendar-check"></i>
+														<p> 72+ Events</p>
+													</div>
+													<div className="theme-icon">
+														<i class="fas fa-walking"></i>
+														<p> 54K+ Footfall</p>
+													</div>
+													<div className="theme-icon">
+														<i class="fas fa-university"></i>
+														<p> 25+ Colleges</p>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
-									</div>
-								)}
+									)}
 								</div>
 								<div
 									className="section content"
 									style={{
-										overflow:'hidden'
+										overflow: 'hidden'
 									}}
 								>
-									
 									<div className="contactus-text-holder">
 										<div className="contactus-heading">
-												<h2>Contact Us</h2>
+											<h2>Contact Us</h2>
 										</div>
 										<div className="contactus-holder">
 											<div className="contactus-text">
@@ -360,54 +398,110 @@ export default class Home extends Component {
 											</div>
 										</div>
 										<div className="findus-holder">
-
+											<div className="findus-text">
+												<h3>MNIT Jaipur</h3>
+												<p>Malaviya National Institute of Technology</p>
+												<p>Jawahar Lal Nehru Marg, Jhalana Gram, Malviya Nagar</p>
+												<p>Jaipur, Rajasthan</p>
+												<p>302017</p>
+												<p className="mnitmap">
+														<div class="mapouter">
+															<div class="gmap_canvas">
+																<iframe
+																	width="200"
+																	height="180"
+																	id="gmap_canvas"
+																	src="https://maps.google.com/maps?q=mnit%20jaipur&t=&z=13&ie=UTF8&iwloc=&output=embed"
+																	frameborder="0"
+																	scrolling="no"
+																	marginheight="0"
+																	marginwidth="0"
+																></iframe>
+															</div>
+														</div>
+												</p>
+												<p className="mnitlogo">
+													<a href="http://mnit.ac.in/" target="_blank">
+														<img src="https://files.indcareer.com/files/mnit_logo.gif" />
+														</a>
+												</p>
+											</div>
 										</div>
 									</div>
-									<div className="contactus" ><img src="src/shared/img/contactus.jpg"/></div>
-									<div className="c1-holder"><img src="src/shared/img/c1.png"/></div>
-									<div className="c2-holder"><img src="src/shared/img/c2.png"/></div>
-									<div className="c3-holder"><img src="src/shared/img/c3.png"/></div>
-									<div className="c4-holder"><img src="src/shared/img/c4.png"/></div>
-									<div className="c5-holder"><img src="src/shared/img/c5.png"/></div>
+									<div className="contactus">
+										<img src="src/shared/img/contactus.jpg" />
+									</div>
+									<div className="c1-holder">
+										<img src="src/shared/img/c1.png" />
+									</div>
+									<div className="c2-holder">
+										<img src="src/shared/img/c2.png" />
+									</div>
+									<div className="c3-holder">
+										<img src="src/shared/img/c3.png" />
+									</div>
+									<div className="c4-holder">
+										<img src="src/shared/img/c4.png" />
+									</div>
+									<div className="c5-holder">
+										<img src="src/shared/img/c5.png" />
+									</div>
 									<div className="handles">
 										<div className="handle-holder-left" />
 										<div className="handle-holder">
-
-												<a target="_blank" href={"https://www.instagram.com/blitzmnit/"} className="handle-link">
-													<i className="fab fa-instagram">
-													</i>
-												</a>
+											<a
+												target="_blank"
+												href={'https://www.instagram.com/blitzmnit/'}
+												className="handle-link"
+											>
+												<i className="fab fa-instagram"></i>
+											</a>
 										</div>
 										<div className="handle-holder">
-											<a target="_blank" href={"https://www.facebook.com/blitzschlagMNIT/"} className="handle-link">
+											<a
+												target="_blank"
+												href={'https://www.facebook.com/blitzschlagMNIT/'}
+												className="handle-link"
+											>
 												<i class="fab fa-facebook-f"></i>
 											</a>
 										</div>
 										<div className="handle-holder">
-											<a href={"#home"} className="handle-link">
-
-											<i class="fab fa-twitter"></i>
+											<a href={'#home'} className="handle-link">
+												<i class="fab fa-twitter"></i>
 											</a>
 										</div>
 										<div className="handle-holder">
-											<a target="_blank" href={"https://in.linkedin.com/school/mnitjaipur/?trk=public_profile_topcard_school"} className="handle-link">
-
-											<i class="fab fa-linkedin-in"></i>
+											<a
+												target="_blank"
+												href={
+													'https://in.linkedin.com/school/mnitjaipur/?trk=public_profile_topcard_school'
+												}
+												className="handle-link"
+											>
+												<i class="fab fa-linkedin-in"></i>
 											</a>
 										</div>
 										<div className="handle-holder">
-											<a target="_blank" href={"https://www.youtube.com/channel/UCChl8NPUwrLUQF2cdiYaCLw?view_as=subscriber"} className="handle-link">
-
-											<i class="fab fa-youtube"></i>
+											<a
+												target="_blank"
+												href={
+													'https://www.youtube.com/channel/UCChl8NPUwrLUQF2cdiYaCLw?view_as=subscriber'
+												}
+												className="handle-link"
+											>
+												<i class="fab fa-youtube"></i>
 											</a>
 										</div>
 										<div className="handle-holder-right" />
 									</div>
-									<div className="footer">
-									<Link to="/team" className="handle-link">
-										Team FB&CL
-									</Link>
-									</div>
+									{/* <div className="footer">
+										<p>
+											<Link to="/team#webd" className="handle-link">
+												Team FB&CL
+											</Link>
+										</p>
+									</div> */}
 								</div>
 							</ReactFullpage.Wrapper>
 						);

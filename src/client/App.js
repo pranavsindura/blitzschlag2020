@@ -7,6 +7,8 @@ import Team from './Team.js';
 import Sponsors from './Sponsors.js';
 import Hospitality from './Hospitality.js';
 import GetTickets from './GetTickets.js';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { createHashHistory as createHistory } from 'history';
