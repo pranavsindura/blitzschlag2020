@@ -1,11 +1,11 @@
 .car,
 .caritem {
-    height: 80vh;
+    height: 96vh;
 }
 
 .car {
     position: absolute;
-    margin-top: 10vh;
+    margin-top: 2vh;
     display: flex !important;
 }
 
@@ -24,7 +24,7 @@
     transition: all 200ms ease-in-out;
     width: 50px;
     height: 50px;
-    background-color: hsl(221, 13%, 62%);
+    /* background-color: hsl(221, 13%, 62%); */
     position: absolute;
     left: 7%;
     z-index: 2;
@@ -47,17 +47,9 @@
     right: 7%;
     top: calc(40vh - 25px);
     z-index: 2;
-    background-color: #929aab;
 }
 
 .next-iconmob {
-    /* style={{
-		position: 'absolute',
-		top: '40%',
-		left: '50%',
-		transform: 'translateX(-50%) translateY(-50%)',
-		cursor: 'pointer'
-	}} */
     position: absolute;
     color: #f7f7f7;
     font-family: 'Quicksand';
@@ -90,11 +82,9 @@
 }
 
 .boxmove {
-    /* width: '60px', height: '60px', backgroundColor: '#929aab', position: 'absolute', right:'7%', zIndex: '2', top: '20%' */
     transition: all 200ms ease-in-out;
     width: 60px;
     height: 60px;
-    background-color: #929aab;
     position: absolute;
     right: 7%;
     z-index: 2;
@@ -103,7 +93,6 @@
 
 .small-img-holder:hover {
     transform: scale(1.2);
-    /* width: 50%; */
 }
 
 .img:hover~.boxmove {
@@ -113,4 +102,56 @@
 .img:hover {
     transform: scale(1.2);
     overflow: hidden;
+}
+
+.event-heading, .event-heading > h1, .event-desc, .event-desc > p{
+    width:100%;
+    text-align: center;
+    color: white;
+	font-variant-caps: small-caps;
+    font-family: 'Raleway', sans-serif;
+}
+.event-desc > .other-info{
+    width:100%;
+    text-align: left;
+    color: white;
+	font-variant-caps: small-caps;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    bottom: 20%;
+    /* background: blue; */
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.other-info > p{
+    text-align: left;
+    font-size: larger;
+}
+.event-heading > h1{
+    padding: 5%;
+    padding-bottom: 5%;
+}
+
+.event-desc > p{
+    font-size: larger;
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.button-holder{
+    width:100%;
+    padding-right: 5%;
+    bottom: 10%;
+    position: absolute;
+}
+.button-moreinfo{
+    display: inline-block;
+    width:50%;
+    text-align: center;
+}
+.button-register{
+    display: inline-block;
+    width:50%;
+    text-align: center;
 }

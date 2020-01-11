@@ -146,17 +146,6 @@ export default class Home extends Component {
 								</p>
 							</div>
 						</div>
-						{/* <div className="col-12 about-gra">
-							<div className="row">
-								<div className="about-vid-cont col-12">
-									<iframe
-										className="about-video"
-										src="https://www.youtube.com/embed/EzKkl64rRbM"
-										frameBorder="0"
-									></iframe>
-								</div>
-							</div>
-						</div> */}
 					</div>
 				</div>
 			);

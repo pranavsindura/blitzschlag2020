@@ -17,7 +17,7 @@ p {
 }
 .theme-icon-holder {
 	width: 100%;
-	margin-top: 5%;
+	margin-top: 15%;
 }
 .theme-icon {
 	text-align: center;
@@ -424,7 +424,6 @@ p {
 	top: 0%;
 	overflow: hidden;
 }
-
 @keyframes rot360 {
 	from {
 		transform: rotate(0deg);
@@ -643,6 +642,7 @@ p {
 	font-variant-caps: small-caps;
 	text-align: justify;
 	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
 }
 
 .theme-heading {
@@ -683,8 +683,8 @@ p {
 } */
 .ladytheme {
 	display: block;
-	position: absolute;
-	right: -10%;
+	position: relative;
+	right: 0%;
 	bottom: 0%;
 	max-height: 100vh;
 	width: auto;

@@ -184,15 +184,17 @@ class App extends Component {
 						</ul>
 					</Menu>
 					<Switch>
-						<Route path="/events/category">
+						{/* <Route path="/events/category">
 							<FadeIn>
 								<CategoryEvent />
 							</FadeIn>
-						</Route>
+						</Route> */}
 						<Route path="/events">
 							<FadeIn>
 								<Event />
 							</FadeIn>
+						</Route>
+						<Route path="/events/:eventType" render={ (props) => (<FadeIn><Event {...props} /></FadeIn>) } >
 						</Route>
 						<Route path="/myaccount">
 							<FadeIn>
