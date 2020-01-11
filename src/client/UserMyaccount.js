@@ -6,6 +6,8 @@ import Splash from './Splash';
 import ReactFullpage from '@fullpage/react-fullpage';
 import 'fullpage.js/vendors/scrolloverflow';
 import { Redirect } from 'react-router-dom';
+import {Link} from 'react-router-dom';
+
 import { connect } from 'react-redux';
 class Myaccount extends Component {
 	constructor(props) {
@@ -104,7 +106,12 @@ class Myaccount extends Component {
 						<tbody>
 							{events.map((event) => {
 								return (
-									<tr key={event.teamId} onLoad={()=>{fullpageApi.reBuild();}}>
+									<tr
+										key={event.teamId}
+										onLoad={() => {
+											fullpageApi.reBuild();
+										}}
+									>
 										<td>{event.name} </td>
 										<td> {event.teamId}</td>
 									</tr>
@@ -167,6 +174,19 @@ class Myaccount extends Component {
 		return (
 			<div>
 				<Splash images={this.images} />
+				<Link to="/">
+					<img
+						style={{
+							height: 'auto',
+							width: '70px',
+							position: 'fixed',
+							left: '0%',
+							top: '0%',
+							zIndex: '1'
+						}}
+						src="https://i.ibb.co/42WZWbr/blitzlogo.png"
+					/>
+				</Link>
 				<ReactFullpage
 					scrollOverflow={true}
 					render={({ state, fullpageApi }) => {

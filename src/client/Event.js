@@ -4,6 +4,7 @@ import eventData from './EventData';
 import { Row, Col, Carousel, Button } from 'react-bootstrap';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Splash from './Splash';
+import {Link} from 'react-router-dom';
 export default class Event extends Component {
 	state = { currSlide: 0 };
 	images = [];
@@ -34,18 +35,41 @@ export default class Event extends Component {
 		return (
 			<div>
 				<Splash images={this.data.carImages} />
+				<Link to="/">
+					<img
+						style={{
+							height: 'auto',
+							width: '70px',
+							position: 'fixed',
+							left: '0%',
+							top: '0%',
+							zIndex: '1'
+						}}
+						src="https://i.ibb.co/42WZWbr/blitzlogo.png"
+					/>
+				</Link>
 				<ReactFullpage
 					render={({ state, fullpageApi }) => {
 						return (
 							<ReactFullpage.Wrapper>
 								<div
 									className="section content"
-									style={{ background: this.data.content[currSlide].accent[1], transition: 'all .5s ease-in-out' }}
+									style={{
+										background: this.data.content[currSlide].accent[1],
+										transition: 'all .5s ease-in-out'
+									}}
 								>
 									{window.innerWidth <= 770 ? (
-										<div style={{ width: '100%', height: '100%' }}>
-											<div className="carmob-holder">
-												<Carousel
+										<div style={{ width: '100%', height: '100%', display: 'block' }}>
+											<div className="carmob-holder-2">
+												<img
+													className="imgmob-2"
+													src={this.data.carImages[currSlide]}
+													onLoad={() => {
+														fullpageApi.reBuild();
+													}}
+												/>
+												{/* <Carousel
 													className="carmob"
 													indicators={false}
 													interval="4000"
@@ -60,17 +84,18 @@ export default class Event extends Component {
 															</Carousel.Item>
 														);
 													})}
-												</Carousel>
+												</Carousel> */}
 											</div>
 											<div
 												style={{
 													width: '100%',
-													height: '30vh',
+													height: '30%',
 													backgroundColor: this.data.content[currSlide].accent[0],
 													position: 'absolute',
 													left: '0%',
-													bottom: '20vh',
-													transition: 'all .5s ease-in-out'
+													bottom: '20%',
+													transition: 'all .5s ease-in-out',
+													display: 'block'
 												}}
 											>
 												<div className="event-heading">
@@ -82,7 +107,10 @@ export default class Event extends Component {
 											</div>
 											<div
 												className="other-info-holder"
-												style={{ backgroundColor: this.data.content[currSlide].accent[2], transition: 'all .5s ease-in-out' }}
+												style={{
+													backgroundColor: this.data.content[currSlide].accent[2],
+													transition: 'all .5s ease-in-out'
+												}}
 											>
 												<div className="other-infomob">
 													<p>
@@ -99,26 +127,38 @@ export default class Event extends Component {
 											<div className="button-holdermob">
 												<div
 													className="button-moreinfomob"
-													style={{ backgroundColor: this.data.content[currSlide].accent[2], transition: 'all .5s ease-in-out' }}
+													style={{
+														backgroundColor: this.data.content[currSlide].accent[2],
+														transition: 'all .5s ease-in-out'
+													}}
 												>
 													<p>Rules</p>
 												</div>
 												<div
 													className="button-registermob"
-													style={{ backgroundColor: this.data.content[currSlide].accent[2], transition: 'all .5s ease-in-out' }}
+													style={{
+														backgroundColor: this.data.content[currSlide].accent[2],
+														transition: 'all .5s ease-in-out'
+													}}
 												>
 													<p>Register</p>
 												</div>
 											</div>
 											<div
 												className="boxmovemob"
-												style={{ backgroundColor: this.data.content[currSlide].accent[2], transition: 'all .5s ease-in-out' }}
+												style={{
+													backgroundColor: this.data.content[currSlide].accent[2],
+													transition: 'all .5s ease-in-out'
+												}}
 											>
 												<p className="slidenummob">0{currSlide + 1}</p>
 											</div>
 											<div
 												className="control-nextmob"
-												style={{ backgroundColor: this.data.content[currSlide].accent[2], transition: 'all .5s ease-in-out' }}
+												style={{
+													backgroundColor: this.data.content[currSlide].accent[2],
+													transition: 'all .5s ease-in-out'
+												}}
 												onClick={() => {
 													this.nextSlide();
 												}}
@@ -163,7 +203,6 @@ export default class Event extends Component {
 															style={{
 																backgroundColor: this.data.content[currSlide].accent[2],
 																transition: 'all .5s ease-in-out'
-
 															}}
 														>
 															<p>Register</p>
@@ -180,7 +219,6 @@ export default class Event extends Component {
 													right: '0%',
 													bottom: '0%',
 													transition: 'all .5s ease-in-out'
-
 												}}
 											></div>
 											<div
@@ -217,7 +255,6 @@ export default class Event extends Component {
 														fontFamily: 'Quicksand',
 														fontSize: '40pt',
 														transition: 'all .5s ease-in-out'
-
 													}}
 												>
 													<p
@@ -235,9 +272,10 @@ export default class Event extends Component {
 											</div>
 											<div
 												className="boxmove"
-												style={{ backgroundColor: this.data.content[currSlide].accent[0], 
+												style={{
+													backgroundColor: this.data.content[currSlide].accent[0],
 													transition: 'all .5s ease-in-out'
-												 }}
+												}}
 											>
 												<p
 													style={{

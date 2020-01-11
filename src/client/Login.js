@@ -6,6 +6,8 @@ import './Login.css';
 import { Form, Button, Card, Col, Row, Alert, InputGroup } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
+import {Link} from 'react-router-dom';
+
 import axios from 'axios';
 import Sky from 'react-sky';
 
@@ -503,6 +505,19 @@ class Login extends React.Component {
 		return (
 			<div className="scrollit">
 				<Splash images={this.images} />
+				<Link to="/">
+					<img
+						style={{
+							height: 'auto',
+							width: '70px',
+							position: 'fixed',
+							left: '0%',
+							top: '0%',
+							zIndex: '1'
+						}}
+						src="https://i.ibb.co/42WZWbr/blitzlogo.png"
+					/>
+				</Link>
 				<ReactFullpage
 					verticalCentered={false}
 					scrollOverflow={true}

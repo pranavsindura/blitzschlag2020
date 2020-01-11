@@ -50,18 +50,25 @@ export default class Home extends Component {
 	];
 	imgSelect = Math.trunc(Math.random() * 2);
 	componentDidMount() {
-		this.setState({ moveto: this.props.moveto, scrollChanged: false });
-		this.handleScroll(1);
+		console.log(this.state, this.props.moveto);
+		if (this.props.moveto) {
+			this.setState({ moveto: this.props.moveto, scrollChanged: false});
+			if(this.props.moveto == 'home')
+				this.handleScroll(1);
+			else if(this.props.moveto == 'contactus')
+				this.handleScroll(4);
+		} else this.setState({ moveto: this.props.moveto, scrollChanged: false });
+		// this.handleScroll(1);
 	}
 	handleScroll = (num) => {
-		// console.log('scrolled');
+		console.log();
 		const newScrollPerc = Math.ceil((num / 4) * 100);
 		const { scrollPerc } = this.state;
 		if (scrollPerc !== newScrollPerc)
 			this.setState({
 				prevScrollPerc: scrollPerc,
 				scrollPerc: newScrollPerc,
-				moveLogo: num !== 1,
+				moveLogo: num != 1,
 				scrollChanged: true,
 				internal: true
 			});
@@ -73,7 +80,8 @@ export default class Home extends Component {
 			this.setState({
 				moveto: nextProps.moveto,
 				scrollChanged: true,
-				internal: false
+				internal: false,
+				moveLogo: true
 			});
 		}
 	}
@@ -370,20 +378,28 @@ export default class Home extends Component {
 										<div className="contactus-holder">
 											<div className="contactus-text">
 												<h3>Events</h3>
-												<p>Ansh Khandelwal :<br/> 8518066443</p>
+												<p>
+													Ansh Khandelwal :<br /> 8518066443
+												</p>
 											</div>
 											<div className="contactus-text">
 												<h3>Marketing</h3>
-												<p>Ayush Singh :<br/> 9149225262</p>
+												<p>
+													Ayush Singh :<br /> 9149225262
+												</p>
 											</div>
 											<div className="contactus-text">
 												<h3>Cultural</h3>
-												<p>Devanshu Khandal :<br/> 9314655304</p>
+												<p>
+													Devanshu Khandal :<br /> 9314655304
+												</p>
 												{/* <p>Srividya : 8639261222</p> */}
 											</div>
 											<div className="contactus-text">
 												<h3>General Queries</h3>
-												<p>Anuj Srivastava :<br/> 9588072917</p>
+												<p>
+													Anuj Srivastava :<br /> 9588072917
+												</p>
 											</div>
 										</div>
 										<div className="findus-holder">
@@ -393,20 +409,20 @@ export default class Home extends Component {
 												<p>Jaipur, Rajasthan - 302017</p>
 												{/* <p>302017</p> */}
 												<div className="mnitmap">
-														<div class="mapouter">
-															<div class="gmap_canvas">
-																<iframe
-																	width="200"
-																	height="180"
-																	id="gmap_canvas"
-																	src="https://maps.google.com/maps?q=mnit%20jaipur&t=&z=13&ie=UTF8&iwloc=&output=embed"
-																	frameborder="0"
-																	scrolling="no"
-																	marginheight="0"
-																	marginwidth="0"
-																></iframe>
-															</div>
+													<div class="mapouter">
+														<div class="gmap_canvas">
+															<iframe
+																width="200"
+																height="180"
+																id="gmap_canvas"
+																src="https://maps.google.com/maps?q=mnit%20jaipur&t=&z=13&ie=UTF8&iwloc=&output=embed"
+																frameborder="0"
+																scrolling="no"
+																marginheight="0"
+																marginwidth="0"
+															></iframe>
 														</div>
+													</div>
 												</div>
 												{/* <p className="mnitlogo">
 													<a href="http://mnit.ac.in/" target="_blank">
@@ -482,13 +498,7 @@ export default class Home extends Component {
 											</a>
 										</div>
 										<div className="handle-holder">
-											<a
-												target="_blank"
-												href={
-													'http://mnit.ac.in/'
-												}
-												className="handle-link"
-											>
+											<a target="_blank" href={'http://mnit.ac.in/'} className="handle-link">
 												<img src="src/shared/img/mnitlogo.png" className="mnitlogo" />
 											</a>
 										</div>

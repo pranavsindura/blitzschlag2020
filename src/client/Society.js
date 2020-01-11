@@ -1,9 +1,11 @@
-import React, { Component } from "react";
-import "./Society.css";
+import React, { Component } from 'react';
+import './Society.css';
 // import ControlledCarousel from './EventCar.js';
-import { Row, Col, Carousel } from "react-bootstrap";
-import ReactFullpage from "@fullpage/react-fullpage";
-import Splash from "./Splash";
+import { Row, Col, Carousel } from 'react-bootstrap';
+import ReactFullpage from '@fullpage/react-fullpage';
+import {Link} from 'react-router-dom';
+
+import Splash from './Splash';
 export default class Society extends Component {
   state = {};
   images = ["src/shared/img/car1.jpg"];

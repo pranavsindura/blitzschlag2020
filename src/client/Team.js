@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import "./Team.css";
-import ReactFullpage from "@fullpage/react-fullpage";
-import Splash from "./Splash";
+import React, { Component } from 'react';
+import './Team.css';
+import ReactFullpage from '@fullpage/react-fullpage';
+import Splash from './Splash';
 // import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Link } from 'react-router-dom';
 export default class Team extends Component {

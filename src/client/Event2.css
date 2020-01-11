@@ -19,20 +19,41 @@
 	/* z-index: 4; */
 	/* background-color: black; */
 }
-
-.carmob {
-	position: relative;
-	top: 50%;
-	transform: translateY(-40%);
+.carmob-holder-2 {
+	position: absolute;
+	top: 0%;
 	left: 0%;
+	height: 50%;
+	width: 100%;
+}
+.imgmob-2 {
+	transition: all 200ms ease-in-out;
+	transform-origin: center;
+	display: block;
 	height: 100%;
 	width: 100%;
+	overflow: hidden;
+	object-fit: contain;
+	border: none;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.carmob {
+	position: fixed;
+	top: 5%;
+	left: 0%;
+	height: 50%;
+	width: 100%;
+	/* background-color: yellow; */
 }
 
 .carmob-item {
-	/* height: 100%;
+	/* height: inherit; */
+	/* max-height: 50%; */
+	/* height: auto; */
 	width: 100%;
-	background-color: yellow; */
+	/* background-color: yellow; */
 }
 
 .imgmob {
@@ -40,7 +61,7 @@
 	transform-origin: center;
 	display: block;
 	height: 100%;
-	width: auto;
+	width: 100%;
 	overflow: hidden;
 	object-fit: contain;
 	border: none;
@@ -74,7 +95,7 @@
 	height: 50px;
 	position: absolute;
 	right: 4%;
-	top: calc(50vh - 25px);
+	top: calc(50% - 25px);
 	z-index: 2;
 }
 
