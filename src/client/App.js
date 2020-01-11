@@ -8,7 +8,7 @@ import Team from './Team.js';
 import Sponsors from './Sponsors.js';
 import Hospitality from './Hospitality.js';
 import GetTickets from './GetTickets.js';
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { createHashHistory as createHistory } from 'history';
@@ -58,8 +58,8 @@ class App extends Component {
 										// this.handleCheck();
 									}}
 								>
-								<i className="fas fa-home"></i>&nbsp;&nbsp;HOME
-								</Link> 
+									<i className="fas fa-home"></i>&nbsp;&nbsp;HOME
+								</Link>
 							</li>
 							<li className="lis  menu-item">
 								<Link
@@ -69,7 +69,7 @@ class App extends Component {
 										this.handleCheck();
 									}}
 								>
-								<i className="fas fa-glass-cheers"></i>&nbsp;&nbsp;FLAGSHIP EVENTS
+									<i className="fas fa-glass-cheers"></i>&nbsp;&nbsp;FLAGSHIP EVENTS
 								</Link>
 							</li>
 							<li className="lis  menu-item">
@@ -80,7 +80,7 @@ class App extends Component {
 										this.handleCheck();
 									}}
 								>
-								<i className="far fa-calendar-alt"></i>&nbsp;&nbsp;EVENTS
+									<i className="far fa-calendar-alt"></i>&nbsp;&nbsp;EVENTS
 								</Link>
 							</li>
 							{this.props.loggedIn ? (
@@ -149,7 +149,6 @@ class App extends Component {
 									onClick={() => {
 										this.handleClick('contactus');
 										// this.handleCheck();
-
 									}}
 								>
 									<i className="fas fa-phone-alt"></i>&nbsp;&nbsp;CONTACT US
@@ -162,7 +161,6 @@ class App extends Component {
 									onClick={() => {
 										this.handleClick('contactus');
 										// this.handleCheck();
-
 									}}
 								>
 									<i className="far fa-handshake"></i>&nbsp;&nbsp;OUR TEAM
@@ -184,8 +182,16 @@ class App extends Component {
 						</ul>
 					</Menu>
 					<Switch>
-						<Route path="/events/:eventType" render={ (props) => (<FadeIn><Event {...props} /></FadeIn>) } >
-						</Route>
+						<Route
+							path="/events/:eventType"
+							render={(props) => (
+								<FadeIn>
+									
+									<Event {...props} />
+									
+								</FadeIn>
+							)}
+						></Route>
 						<Route exact path="/society">
 							<FadeIn>
 								<Society />
@@ -223,7 +229,7 @@ class App extends Component {
 						</Route>
 						<Route path="/">
 							<FadeIn>
-								<Home moveto={moveto}/>
+								<Home moveto={moveto} />
 							</FadeIn>
 						</Route>
 					</Switch>
