@@ -17,13 +17,6 @@ body {
     /* margin-left: 25%; */
 }
 
-h1 {
-    font-family: 'Pacifico', cursive;
-    font-weight: 400;
-    font-size: 3em;
-}
-
-
 /* latin */
 
 @font-face {
@@ -238,7 +231,7 @@ h1 {
 
 .lisitem:hover {
     text-decoration: none;
-    color: #ffffff;
+    color: #f94e6f;
 }
 
 

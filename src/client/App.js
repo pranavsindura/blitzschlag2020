@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import Home from './Home.js';
-import Society from './Society.js';
-import Flagship from './Flagship.js'
-import CategoryEvent from './CategoryEvent';
+import Society from './Society';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Event from './Event';
 import Myaccount from './UserMyaccount.js';
 import Team from './Team.js';
 import Sponsors from './Sponsors.js';
 import Hospitality from './Hospitality.js';
 import GetTickets from './GetTickets.js';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { createHashHistory as createHistory } from 'history';
@@ -51,9 +52,10 @@ class App extends Component {
 							<li className="lis menu-item">
 								<Link
 									className="lisitem"
-									to="/"
+									to="/#home"
 									onClick={() => {
 										this.handleClick('home');
+										// this.handleCheck();
 									}}
 								>
 								<i className="fas fa-home"></i>&nbsp;&nbsp;HOME
@@ -62,7 +64,7 @@ class App extends Component {
 							<li className="lis  menu-item">
 								<Link
 									className="lisitem"
-									to="/flagshipevents"
+									to="/events/flagship"
 									onClick={() => {
 										this.handleCheck();
 									}}
@@ -73,7 +75,7 @@ class App extends Component {
 							<li className="lis  menu-item">
 								<Link
 									className="lisitem"
-									to="/events"
+									to="/society"
 									onClick={() => {
 										this.handleCheck();
 									}}
@@ -143,9 +145,11 @@ class App extends Component {
 							<li className="lis menu-item">
 								<Link
 									className="lisitem"
-									to="/"
+									to="/#contactus"
 									onClick={() => {
 										this.handleClick('contactus');
+										// this.handleCheck();
+
 									}}
 								>
 									<i className="fas fa-phone-alt"></i>&nbsp;&nbsp;CONTACT US
@@ -157,6 +161,8 @@ class App extends Component {
 									to="/team"
 									onClick={() => {
 										this.handleClick('contactus');
+										// this.handleCheck();
+
 									}}
 								>
 									<i className="far fa-handshake"></i>&nbsp;&nbsp;OUR TEAM
@@ -177,159 +183,12 @@ class App extends Component {
 							) : null}
 						</ul>
 					</Menu>
-					{/* <div className="outer-menu">
-            <input
-              checked={checked}
-              onChange={() => {}}
-              onClick={() => {
-                this.handleCheck();
-              }}
-              className="checkbox-toggle"
-              type="checkbox"
-            />
-            <div className="hamburger">
-              <div></div>
-            </div>
-            <div className="menu">
-              <div>
-                <div className="inmenu" style={{ width: "100%" }}>
-                  <ul>
-                    <li>
-                      <Link
-                        style={{ textDecoration: "none", color: "white" }}
-                        to="/"
-                        onClick={() => {
-                          this.handleClick("home");
-                        }}
-                      >
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        style={{ textDecoration: "none", color: "white" }}
-                        to="/events"
-                        onClick={() => {
-                          this.handleCheck();
-                        }}
-                      >
-                        Events
-                      </Link>
-                    </li>
-                    {this.props.loggedIn ? (
-                      <li>
-                        <Link
-                          style={{ textDecoration: "none", color: "white" }}
-                          to="/myaccount"
-                          onClick={() => {
-                            this.handleCheck();
-                          }}
-                        >
-                          My Account
-                        </Link>
-                      </li>
-                    ) : (
-                      <li>
-                        <Link
-                          style={{ textDecoration: "none", color: "white" }}
-                          to="/login"
-                          onClick={() => {
-                            this.handleCheck();
-                          }}
-                        >
-                          Login | Register
-                        </Link>
-                      </li>
-                    )}
-
-                    <li>
-                      <Link
-                        style={{ textDecoration: "none", color: "white" }}
-                        to="/gettickets"
-                        onClick={() => {
-                          this.handleCheck();
-                        }}
-                      >
-                        Get Tickets
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        style={{ textDecoration: "none", color: "white" }}
-                        to="/hospitality"
-                        onClick={() => {
-                          this.handleCheck();
-                        }}
-                      >
-                        Hospitality
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        style={{ textDecoration: "none", color: "white" }}
-                        to="/sponsors"
-                        onClick={() => {
-                          this.handleCheck();
-                        }}
-                      >
-                        Sponsors
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        style={{ textDecoration: "none", color: "white" }}
-                        to="/"
-                        onClick={() => {
-                          this.handleClick("contactus");
-                        }}
-                      >
-                        Contact Us
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        style={{ textDecoration: "none", color: "white" }}
-                        to="/team"
-                        onClick={() => {
-                          this.handleCheck();
-                        }}
-                      >
-                        Our Team
-                      </Link>
-                    </li>
-                    {this.props.loggedIn ? (
-                      <li>
-                        <Link
-                          style={{ textDecoration: "none", color: "white" }}
-                          to="#"
-                          onClick={() => {
-                            this.handleLogout();
-                          }}
-                        >
-                          Logout
-                        </Link>
-                      </li>
-                    ) : null}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div> */}
-
 					<Switch>
-						<Route path="/events/category">
-							<FadeIn>
-								<CategoryEvent />
-							</FadeIn>
+						<Route path="/events/:eventType" render={ (props) => (<FadeIn><Event {...props} /></FadeIn>) } >
 						</Route>
-						<Route path="/events">
+						<Route exact path="/society">
 							<FadeIn>
 								<Society />
-							</FadeIn>
-						</Route>
-						<Route path="/flagshipevents">
-							<FadeIn>
-								<Flagship />
 							</FadeIn>
 						</Route>
 						<Route path="/myaccount">
@@ -364,54 +223,6 @@ class App extends Component {
 						</Route>
 						<Route path="/">
 							<FadeIn>
-								<div className="downbutton b1">
-									<svg
-										version="1.1"
-										id="Capa_1"
-										xmlns="http://www.w3.org/2000/svg"
-										x="0px"
-										y="0px"
-										width="30px"
-										height="30px"
-										viewBox="0 0 306 306"
-										style={{ enableBackground: 'new 0 0 306 306' }}
-									>
-										<g id="chevron-left">
-											<polygon
-												style={{
-													stroke: '#D80035',
-													strokeWidth: '10px',
-													fill: 'white'
-												}}
-												points="247.35,35.7 211.65,0 58.65,153 211.65,306 247.35,270.3 130.05,153       "
-											/>
-										</g>
-									</svg>
-								</div>
-								<div className="downbutton b2">
-									<svg
-										version="1.1"
-										id="Capa_1"
-										xmlns="http://www.w3.org/2000/svg"
-										x="0px"
-										y="0px"
-										width="30px"
-										height="30px"
-										viewBox="0 0 306 306"
-										style={{ enableBackground: 'new 0 0 306 306' }}
-									>
-										<g id="chevron-left">
-											<polygon
-												style={{
-													stroke: '#D80035',
-													strokeWidth: '10px',
-													fill: 'white'
-												}}
-												points="247.35,35.7 211.65,0 58.65,153 211.65,306 247.35,270.3 130.05,153       "
-											/>
-										</g>
-									</svg>
-								</div>
 								<Home moveto={moveto}/>
 							</FadeIn>
 						</Route>

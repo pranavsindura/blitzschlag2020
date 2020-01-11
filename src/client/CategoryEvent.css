@@ -1,3 +1,4 @@
+
 .cover {
 	background-image: url('https://wallpaperaccess.com/full/124383.jpg');
 	animation: coverfade 1s ease-out;
@@ -17,13 +18,10 @@
 	padding: 20px;
 }
 .contentoverlay > p, .contentoverlay, .contentce > p, #just{
-    /* width: 90%; */
-	/* margin: 5px; */
 	padding: 20px;
     text-align: justify;
     text-justify: inter-word;
     color:white;
-    /* font-family: "Quarto A", "Quarto B", Georgia, Times, "Times New Roman", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", serif; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 @keyframes coverfade {

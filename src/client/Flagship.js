@@ -1,215 +1,290 @@
 import React, { Component } from 'react';
-import './Flagship.css';
-// import ControlledCarousel from './EventCar.js';
-import {Row, Col, Carousel } from 'react-bootstrap';
+import './Event2.css';
+import eventData from './EventData';
+import { Row, Col, Carousel, Button } from 'react-bootstrap';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Splash from './Splash';
-export default class Flagship extends Component {
-	state = {currSlide: 0}
-	images = [
-		// 'src/shared/img/lit.png',
-		// 'src/shared/img/dra.png',
-		// 'src/shared/img/fin.png',
-		// 'src/shared/img/cul.png',
-		// 'src/shared/img/gam.png',
-		// 'src/shared/img/mus.png',
-		// 'src/shared/img/pho.png',
-		"src/shared/img/car1.jpg",
-		"src/shared/img/car2.jpg",
-		"src/shared/img/car3.jpg"
-	];
-	carImages = [
-		"src/shared/img/car1.jpg",
-		"src/shared/img/car2.jpg",
-		"src/shared/img/car3.jpg"
-	  ];
+export default class Event extends Component {
+	state = { currSlide: 0 };
+	images = [];
+	data = [];
+	componentWillMount() {
+		// console.log(this.props);
+		// this.data = eventData[this.props.eventType];
+		if (this.props.match.params.eventType) {
+			if (eventData[this.props.match.params.eventType]) {
+				this.data = eventData[this.props.match.params.eventType];
+				console.log('Found: ' + this.props.match.params.eventType);
+			} else {
+				console.log('NOT FOUND');
+				this.data = eventData['flagship'];
+			}
+		} else {
+			console.log('NOT FOUND');
+			this.data = eventData['flagship'];
+		}
+		// console.table(this.data.carImages)
+	}
 	nextSlide = () => {
 		const { currSlide } = this.state;
-		this.setState({ currSlide: (currSlide + 1) % this.carImages.length });
-	  };
+		this.setState({ currSlide: (currSlide + 1) % this.data.carImages.length });
+	};
 	render() {
-		const {currSlide} = this.state;
+		const { currSlide } = this.state;
 		return (
 			<div>
-				<Splash images={this.images}/>
+				<Splash images={this.data.carImages} />
 				<ReactFullpage
 					render={({ state, fullpageApi }) => {
 						return (
 							<ReactFullpage.Wrapper>
-							<div
-                  className="section content"
-                  style={{ background: "#f7f7f7" }}
-                >
-                  {window.innerWidth <= 770 ? (
-                    <div style={{ width: "100%", height: "100%" }}>
-                      <Carousel
-                        className="carmob"
-                        indicators={false}
-                        interval="4000"
-                        controls={false}
-                        activeIndex={currSlide}
-                        defaultActiveindex={1}
-                      >
-                        {this.carImages.map((item, index) => {
-                          return (
-                            <Carousel.Item className="carmob-item" key={index}>
-                              <img className="imgmob" src={item} />
-                            </Carousel.Item>
-                          );
-                        })}
-                      </Carousel>
-                      <div
-                        style={{
-                          width: "100%",
-                          height: "60%",
-                          backgroundColor: "#393e46",
-                          position: "absolute",
-                          left: "0%",
-                          bottom: "0%"
-                        }}
-                      ></div>
-                      <div className="boxmovemob">
-                        <p className="slidenummob">0{currSlide + 1}</p>
-                      </div>
-                      <div
-                        className="control-nextmob"
-                        onClick={() => {
-                          this.nextSlide();
-                        }}
-                      >
-                        <p className="next-iconmob">&#8250;</p>
-                      </div>
-                    </div>
-                  ) : (
-                    <Row>
-                      <div
-                        style={{
-                          width: "40%",
-                          height: "100%",
-                          backgroundColor: "#929aab",
-                          position: "absolute"
-                        }}
-                      ></div>
-                      <div
-                        style={{
-                          width: "45%",
-                          height: "40%",
-                          backgroundColor: "#393e46",
-                          position: "absolute",
-                          right: "0%",
-                          bottom: "0%"
-                        }}
-                      ></div>
-                      <div
-                        onClick={() => {
-                          this.nextSlide();
-                        }}
-                        className="small-img-holder"
-                        style={{
-                          width: "10%",
-                          height: "15%",
-                          backgroundImage: `url("${
-                            this.carImages[
-                              (currSlide + 1) % this.carImages.length
-                            ]
-                          }")`,
-                          backgroundSize: "cover",
-                          position: "absolute",
-                          right: "5%",
-                          bottom: "20%",
-                          zIndex: "2",
-                          transition: "all .5s"
-                        }}
-                      >
-                        <div
-                          className="control-next"
-                          style={{
-                            transition: "all .5s",
-                            width: "20%",
-                            height: "100%",
-                            position: "absolute",
-                            right: "0%",
-                            backgroundColor: "#929AAB",
-                            color: "white",
-                            fontFamily: "Quicksand",
-                            fontSize: "40pt"
-                          }}
-                        >
-                          <p
-                            style={{
-                              position: "absolute",
-                              top: "50%",
-                              left: "50%",
-                              transform: "translateX(-50%) translateY(-50%)",
-                              cursor: "pointer"
-                            }}
-                          >
-                            &#8250;
-                          </p>
-                        </div>
-                      </div>
-                      <div className="boxmove">
-                        <p
-                          style={{
-                            fontFamily: "Quicksand",
-                            fontSize: "20pt",
-                            textAlign: "center",
-                            color: "#f7f7f7",
-                            lineHeight: "60px"
-                          }}
-                        >
-                          0{currSlide + 1}
-                        </p>
-                      </div>
-                      <Col md={{ span: 7, offset: 4 }}>
-                        <Carousel
-                          className="car"
-                          indicators={false}
-                          interval="4000"
-                          controls={false}
-                          activeIndex={currSlide}
-                          defaultActiveindex={1}
-                        >
-                          {this.carImages.map((item, index) => {
-                            return (
-                              <Carousel.Item className="caritem" key={index}>
-                                <img className="img" src={item} />
-                              </Carousel.Item>
-                            );
-                          })}
-                        </Carousel>
-                      </Col>
-                    </Row>
-                  )}
-                </div>
-								{/*<div className="section">
-									<h1 style={{
-										position: 'absolute',
-										zIndex:'2',
-										backgroundColor:'black',
-										color:"black",
-										width: '100%',
-										margin:'0',
-										padding: '10px',
-									}}>.</h1>
-									<h1
-										style={{
-											position: 'absolute',
-											zIndex: '3',
-											left: '50%',
-											transform: 'translateX(-50%)',
-											padding: '10px',
-										}}
-									>
-										Events
-									</h1>
-									<ControlledCarousel />
-								</div>*/}
+								<div
+									className="section content"
+									style={{ background: this.data.content[currSlide].accent[1], transition: 'all .5s ease-in-out' }}
+								>
+									{window.innerWidth <= 770 ? (
+										<div style={{ width: '100%', height: '100%' }}>
+											<div className="carmob-holder">
+												<Carousel
+													className="carmob"
+													indicators={false}
+													interval="4000"
+													controls={false}
+													activeIndex={currSlide}
+													// defaultActiveIndex={0}
+												>
+													{this.data.carImages.map((item, index) => {
+														return (
+															<Carousel.Item className="carmob-item" key={index}>
+																<img className="imgmob" src={item} onLoad={()=>{fullpageApi.reBuild();}} />
+															</Carousel.Item>
+														);
+													})}
+												</Carousel>
+											</div>
+											<div
+												style={{
+													width: '100%',
+													height: '30vh',
+													backgroundColor: this.data.content[currSlide].accent[0],
+													position: 'absolute',
+													left: '0%',
+													bottom: '20vh',
+													transition: 'all .5s ease-in-out'
+												}}
+											>
+												<div className="event-heading">
+													<h1>{this.data.content[currSlide].heading}</h1>
+												</div>
+												<div className="event-desc">
+													<p>{this.data.content[currSlide].desc}</p>
+												</div>
+											</div>
+											<div
+												className="other-info-holder"
+												style={{ backgroundColor: this.data.content[currSlide].accent[2], transition: 'all .5s ease-in-out' }}
+											>
+												<div className="other-infomob">
+													<p>
+														{this.data.content[currSlide].details.map((item, index) => {
+															return (
+																<span>
+																	{item} <br />
+																</span>
+															);
+														})}
+													</p>
+												</div>
+											</div>
+											<div className="button-holdermob">
+												<div
+													className="button-moreinfomob"
+													style={{ backgroundColor: this.data.content[currSlide].accent[2], transition: 'all .5s ease-in-out' }}
+												>
+													<p>Rules</p>
+												</div>
+												<div
+													className="button-registermob"
+													style={{ backgroundColor: this.data.content[currSlide].accent[2], transition: 'all .5s ease-in-out' }}
+												>
+													<p>Register</p>
+												</div>
+											</div>
+											<div
+												className="boxmovemob"
+												style={{ backgroundColor: this.data.content[currSlide].accent[2], transition: 'all .5s ease-in-out' }}
+											>
+												<p className="slidenummob">0{currSlide + 1}</p>
+											</div>
+											<div
+												className="control-nextmob"
+												style={{ backgroundColor: this.data.content[currSlide].accent[2], transition: 'all .5s ease-in-out' }}
+												onClick={() => {
+													this.nextSlide();
+												}}
+											>
+												<p className="next-iconmob">&#8250;</p>
+											</div>
+										</div>
+									) : (
+										<Row>
+											<div
+												style={{
+													width: '40%',
+													height: '100%',
+													backgroundColor: this.data.content[currSlide].accent[0],
+													position: 'absolute',
+													transition: 'all .2s ease-in-out',
+													left: '8%'
+												}}
+											>
+												<div className="event-heading">
+													<h1>{this.data.content[currSlide].heading}</h1>
+												</div>
+												<div className="event-desc">
+													<p>{this.data.content[currSlide].desc}</p>
+													<div className="other-info">
+														{this.data.content[currSlide].details.map((item, index) => {
+															return <p key={index * 13}>{item}</p>;
+														})}
+													</div>
+													<div className="button-holder">
+														<div
+															className="button-moreinfo"
+															style={{
+																backgroundColor: this.data.content[currSlide].accent[2],
+																transition: 'all .5s ease-in-out'
+															}}
+														>
+															<p>Rules</p>
+														</div>
+														<div
+															className="button-register"
+															style={{
+																backgroundColor: this.data.content[currSlide].accent[2],
+																transition: 'all .5s ease-in-out'
+
+															}}
+														>
+															<p>Register</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div
+												style={{
+													width: '45%',
+													height: '40%',
+													backgroundColor: this.data.content[currSlide].accent[2],
+													position: 'absolute',
+													right: '0%',
+													bottom: '0%',
+													transition: 'all .5s ease-in-out'
+
+												}}
+											></div>
+											<div
+												onClick={() => {
+													this.nextSlide();
+												}}
+												className="small-img-holder"
+												style={{
+													width: '5%',
+													height: '15%',
+													backgroundImage: `url("${
+														this.data.carImages[
+															(currSlide + 1) % this.data.carImages.length
+														]
+													}")`,
+													backgroundSize: 'cover',
+													position: 'absolute',
+													right: '6%',
+													bottom: '20%',
+													zIndex: '2',
+													transition: 'all .5s'
+												}}
+											>
+												<div
+													className="control-next"
+													style={{
+														transition: 'all .5s',
+														width: '20%',
+														height: '100%',
+														position: 'absolute',
+														right: '-20%',
+														backgroundColor: this.data.content[currSlide].accent[0],
+														color: 'white',
+														fontFamily: 'Quicksand',
+														fontSize: '40pt',
+														transition: 'all .5s ease-in-out'
+
+													}}
+												>
+													<p
+														style={{
+															position: 'absolute',
+															top: '50%',
+															left: '50%',
+															transform: 'translateX(-50%) translateY(-50%)',
+															cursor: 'pointer'
+														}}
+													>
+														&#8250;
+													</p>
+												</div>
+											</div>
+											<div
+												className="boxmove"
+												style={{ backgroundColor: this.data.content[currSlide].accent[0], 
+													transition: 'all .5s ease-in-out'
+												 }}
+											>
+												<p
+													style={{
+														fontFamily: 'Quicksand',
+														fontSize: '20pt',
+														textAlign: 'center',
+														color: '#f7f7f7',
+														lineHeight: '60px'
+													}}
+												>
+													0{currSlide + 1}
+												</p>
+											</div>
+											<div
+												style={{
+													position: 'absolute',
+													width: '32%',
+													height: '98%',
+													left: '59%',
+													top: '0%'
+												}}
+											>
+												<Carousel
+													className="car"
+													indicators={false}
+													interval="4000"
+													controls={false}
+													activeIndex={currSlide}
+													// defaultActiveIndex={0}
+												>
+													{this.data.carImages.map((item, index) => {
+														return (
+															<Carousel.Item className="caritem" key={index}>
+																<img className="img" src={item} />
+															</Carousel.Item>
+														);
+													})}
+												</Carousel>
+											</div>
+										</Row>
+									)}
+								</div>
 							</ReactFullpage.Wrapper>
 						);
 					}}
 				/>
-				</div>
+			</div>
 		);
 	}
 }

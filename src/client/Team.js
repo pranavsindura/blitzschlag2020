@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Team.css";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Splash from "./Splash";
-import "@fortawesome/fontawesome-free/css/all.css";
+// import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Link } from 'react-router-dom';
 export default class Team extends Component {
   state = {};
@@ -441,7 +441,7 @@ export default class Team extends Component {
                         </div>
                       </div>
                     </div>
-                    <div className="row ">
+                    <div className="row" id="webd">
                       <div className="col-md-6 doublecont-1">
                         <div className="dummycol">
                           {this.renderMember(
@@ -507,7 +507,7 @@ export default class Team extends Component {
                       <div className="col-md-6 doublecont-2">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/dp.jpg",
+                            "src/shared/img/team/dp.JPG",
                             "9601113188",
                             "google.com",
                             "google.com",
