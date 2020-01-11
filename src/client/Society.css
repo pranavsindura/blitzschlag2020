@@ -310,7 +310,6 @@
     border-style: solid;
     color: #a43a4d;
     transform: skew(45deg) scale(1.5);
-    border-radius: 100vh;
 }
 
 .cat2-mob {
@@ -323,7 +322,6 @@
     border-style: solid;
     color: #a43a4d;
     transform: scale(1.5);
-    border-radius: 100vh;
 }
 
 .cat3-mob {
