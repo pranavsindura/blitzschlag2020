@@ -292,133 +292,14 @@
     background-color: tan
 }
 
-.event-h-mob {
-    top: 3vh;
+.event-mob {
+    z-index: 1;
+}
+
+.svg-mob {
+    margin-top: -100px;
 }
 
 .eve-cat-mob {
     background-color: cadetblue;
-}
-
-.cat1-mob {
-    background-color: tomato;
-    height: 33vh;
-    width: 90vw;
-    border: 0px;
-    border-bottom: 1px;
-    border-color: #a43a4d;
-    border-style: solid;
-    color: #a43a4d;
-    transform: skew(45deg) scale(1.5);
-}
-
-.cat2-mob {
-    background-color: tan;
-    height: 33vh;
-    width: 90vw;
-    border: 0px;
-    border-bottom: 1px;
-    border-color: #a43a4d;
-    border-style: solid;
-    color: #a43a4d;
-    transform: scale(1.5);
-}
-
-.cat3-mob {
-    background-color: tomato;
-    height: 33vh;
-    border: 0px;
-    border-bottom: 1px;
-    border-color: #a43a4d;
-    border-style: solid;
-    color: #a43a4d;
-    transform: skewY(10deg) scale(1.5);
-}
-
-.cat4-mob {
-    background-color: tan;
-    height: 33vh;
-    border: 0px;
-    border-bottom: 1px;
-    border-color: #a43a4d;
-    border-style: solid;
-    color: #a43a4d;
-    transform: skewY(350deg) scale(1.5);
-}
-
-.cat5-mob {
-    background-color: tomato;
-    height: 33vh;
-    border: 0px;
-    border-bottom: 1px;
-    border-color: #a43a4d;
-    border-style: solid;
-    color: #a43a4d;
-    transform: skewY(10deg) scale(1.5);
-}
-
-.cat6-mob {
-    background-color: tan;
-    height: 33vh;
-    border: 0px;
-    border-bottom: 1px;
-    border-color: #a43a4d;
-    border-style: solid;
-    color: #a43a4d;
-    transform: skewY(350deg) scale(1.5);
-}
-
-.cat7-mob {
-    background-color: tomato;
-    height: 33vh;
-    border: 0px;
-    border-bottom: 1px;
-    border-color: #a43a4d;
-    border-style: solid;
-    color: #a43a4d;
-    transform: skewY(10deg) scale(1.5);
-}
-
-.cat8-mob {
-    background-color: tan;
-    height: 33vh;
-    border: 0px;
-    border-bottom: 1px;
-    border-color: #a43a4d;
-    border-style: solid;
-    color: #a43a4d;
-    transform: skewY(350deg) scale(1.5);
-}
-
-.cat9-mob {
-    background-color: tomato;
-    height: 33vh;
-    border: 0px;
-    border-bottom: 1px;
-    border-color: #a43a4d;
-    border-style: solid;
-    color: #a43a4d;
-    transform: skewY(10deg) scale(1.5);
-}
-
-.cat10-mob {
-    background-color: tan;
-    height: 33vh;
-    border: 0px;
-    border-bottom: 1px;
-    border-color: #a43a4d;
-    border-style: solid;
-    color: #a43a4d;
-    transform: skewY(350deg) scale(1.5);
-}
-
-.cat11-mob {
-    background-color: tomato;
-    height: 33vh;
-    border: 0px;
-    border-bottom: 1px;
-    border-color: #a43a4d;
-    border-style: solid;
-    color: #a43a4d;
-    transform: skewY(10deg) scale(1.5);
 }
