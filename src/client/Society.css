@@ -275,18 +275,31 @@
     padding-left: 0vw;
 }
 
+.eve-mob {
+    background-color: cadetblue;
+}
+
 .head-eve-mob {
     height: 23vh;
     text-align: center;
     color: black;
     font-size: 3em;
+    border: 0px;
+    border-bottom: 1px;
+    border-color: #a43a4d;
+    border-style: solid;
+    color: black;
+    background-color: tan
 }
 
-.event-h-mob {
-    top: 3vh;
+.event-mob {
+    z-index: 1;
+}
+
+.svg-mob {
+    margin-top: -100px;
 }
 
 .eve-cat-mob {
     background-color: cadetblue;
-    overflow-y: scroll;
 }
