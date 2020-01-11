@@ -56,7 +56,7 @@ export default class Event extends Component {
 													{this.data.carImages.map((item, index) => {
 														return (
 															<Carousel.Item className="carmob-item" key={index}>
-																<img className="imgmob" src={item} />
+																<img className="imgmob" src={item} onLoad={()=>{fullpageApi.reBuild();}} />
 															</Carousel.Item>
 														);
 													})}
