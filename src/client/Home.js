@@ -370,30 +370,29 @@ export default class Home extends Component {
 										<div className="contactus-holder">
 											<div className="contactus-text">
 												<h3>Events</h3>
-												<p>Ansh Khandelwal : 8518066443</p>
+												<p>Ansh Khandelwal :<br/> 8518066443</p>
 											</div>
 											<div className="contactus-text">
 												<h3>Marketing</h3>
-												<p>Ayush Singh : 9149225262</p>
+												<p>Ayush Singh :<br/> 9149225262</p>
 											</div>
 											<div className="contactus-text">
 												<h3>Cultural</h3>
-												<p>Devanshu Khandal : 9314655304</p>
-												<p>Srividya : 8639261222</p>
+												<p>Devanshu Khandal :<br/> 9314655304</p>
+												{/* <p>Srividya : 8639261222</p> */}
 											</div>
 											<div className="contactus-text">
 												<h3>General Queries</h3>
-												<p>Anuj Srivastava : 9588072917</p>
+												<p>Anuj Srivastava :<br/> 9588072917</p>
 											</div>
 										</div>
 										<div className="findus-holder">
 											<div className="findus-text">
-												<h3>MNIT Jaipur</h3>
-												<p>Malaviya National Institute of Technology</p>
+												<h3>Malaviya National Institute of Technology</h3>
 												<p>Jawahar Lal Nehru Marg, Jhalana Gram, Malviya Nagar</p>
-												<p>Jaipur, Rajasthan</p>
-												<p>302017</p>
-												<p className="mnitmap">
+												<p>Jaipur, Rajasthan - 302017</p>
+												{/* <p>302017</p> */}
+												<div className="mnitmap">
 														<div class="mapouter">
 															<div class="gmap_canvas">
 																<iframe
@@ -408,12 +407,12 @@ export default class Home extends Component {
 																></iframe>
 															</div>
 														</div>
-												</p>
-												<p className="mnitlogo">
+												</div>
+												{/* <p className="mnitlogo">
 													<a href="http://mnit.ac.in/" target="_blank">
 														<img src="https://files.indcareer.com/files/mnit_logo.gif" />
 														</a>
-												</p>
+												</p> */}
 											</div>
 										</div>
 									</div>
@@ -480,6 +479,17 @@ export default class Home extends Component {
 												className="handle-link"
 											>
 												<i class="fab fa-youtube"></i>
+											</a>
+										</div>
+										<div className="handle-holder">
+											<a
+												target="_blank"
+												href={
+													'http://mnit.ac.in/'
+												}
+												className="handle-link"
+											>
+												<img src="src/shared/img/mnitlogo.png" className="mnitlogo" />
 											</a>
 										</div>
 										<div className="handle-holder-right" />

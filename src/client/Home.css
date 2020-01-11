@@ -47,13 +47,15 @@ p {
 .theme-icon > p {
 	display: inline;
 }
-.mnitlogo, .mnitlogo > a, .mnitlogo > a > img{
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    right:0%;
-    bottom:2%;
-    z-index:4;
+.mnitlogo{
+    /* position: absolute; */
+    height: auto;
+	width: 50px;
+	padding-bottom: 10px;
+	/* margin-bottom: 2px; */
+    /* right:0%; */
+    /* bottom:2%; */
+    /* z-index:4; */
 }
 .mnitmap,
 .mnitmap > a {
@@ -138,7 +140,7 @@ p {
 .contactus-text > p {
 	/*margin: 10px;*/
 	/*padding: 10px;*/
-	line-height: 50%;
+	line-height: 100%;
 	display: block;
 	text-align: center;
 	color: white;
@@ -176,8 +178,15 @@ p {
 	transition: all 0.2s ease-in-out;
 	transform-origin: center;
 }
+.handle-link > .mnitlogo {
+	transition: all 0.2s ease-in-out;
+	transform-origin: bottom;
+}
 .handle-link:hover > i {
 	font-size: 50px;
+}
+.handle-link:hover > .mnitlogo {
+	transform: scale(1.2);
 }
 .handle-link:hover > .fa-facebook-f {
 	color: #1774eb;
@@ -194,10 +203,13 @@ p {
 .handle-link:hover > .fa-youtube {
 	color: #f70000;
 }
+.handle-link:hover > .mnitlogo {
+	filter: invert(24%) sepia(96%) saturate(4319%) hue-rotate(350deg) brightness(109%) contrast(107%);
+}
 .handle-holder-left {
 	display: inline-block;
 	height: 100%;
-	width: 25%;
+	width: 20%;
 }
 .contactus {
 	width: 100%;
@@ -762,15 +774,7 @@ p {
         height: 100px;
         width: 100%;
     }
-    .mnitlogo, .mnitlogo > a, .mnitlogo > a > img{
-        /* position: absolute;
-        height: 20px;
-        width: 20px;
-        right:0%;
-        bottom:-10%;
-        z-index:4; */
-        display: none;
-    }
+
 	#lady {
 		display: block;
 		position: absolute;
@@ -840,6 +844,16 @@ p {
 		top: 11%;
 		width: 100%;
 		height: 70%;
+	
+	}
+	.findus-text > h3 {
+		font-size: 1.15em;
+		line-height: 90%;
+		letter-spacing: 80%;
+	}
+	.findus-text > p {
+		font-size: 0.95em;
+		/* display: none; */
 	}
 	.mnitmap,
 	.mnitmap > a,
@@ -858,28 +872,34 @@ p {
 		text-align: center;
 		color: white;
 		width: 100%;
+		font-size: 1.5em;
 	}
 	.contactus-text {
+		position: relative;
+		top:3%;
 		width: 100%;
-		height: 15%;
+		height: 12%;
+		/* padding-top:5%; */
 	}
 	.contactus-text > h3 {
-		margin-top: 10px;
-		/*padding: 3px;*/
-		/*line-height: 50%;*/
+		margin-top: 0px;
 		display: block;
 		text-align: center;
 		color: white;
 		width: 100%;
+		font-size: 1.0em;
 	}
 	.contactus-text > p {
 		/*margin: 10px;*/
 		/*padding: 10px;*/
-		line-height: 80%;
+		line-height: 90%;
+		/* line-height: 50%; */
 		display: block;
 		text-align: center;
 		color: white;
 		width: 100%;
+		font-size: 0.8em;
+
 	}
 	.handles {
 		width: 100%;
@@ -934,7 +954,7 @@ p {
 	.handle-holder-left {
 		display: inline-block;
 		height: 100%;
-		width: 12%;
+		width: 5%;
 	}
 	.contactus {
 		width: 100%;

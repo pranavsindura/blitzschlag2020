@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import Home from './Home.js';
+import Society from './Society';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Event from './Event';
-import CategoryEvent from './CategoryEvent';
 import Myaccount from './UserMyaccount.js';
 import Team from './Team.js';
 import Sponsors from './Sponsors.js';
 import Hospitality from './Hospitality.js';
 import GetTickets from './GetTickets.js';
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { createHashHistory as createHistory } from 'history';
@@ -64,7 +64,7 @@ class App extends Component {
 							<li className="lis  menu-item">
 								<Link
 									className="lisitem"
-									to="/events"
+									to="/events/flagship"
 									onClick={() => {
 										this.handleCheck();
 									}}
@@ -75,7 +75,7 @@ class App extends Component {
 							<li className="lis  menu-item">
 								<Link
 									className="lisitem"
-									to="/events"
+									to="/society"
 									onClick={() => {
 										this.handleCheck();
 									}}
@@ -184,17 +184,12 @@ class App extends Component {
 						</ul>
 					</Menu>
 					<Switch>
-						{/* <Route path="/events/category">
-							<FadeIn>
-								<CategoryEvent />
-							</FadeIn>
-						</Route> */}
-						<Route path="/events">
-							<FadeIn>
-								<Event />
-							</FadeIn>
-						</Route>
 						<Route path="/events/:eventType" render={ (props) => (<FadeIn><Event {...props} /></FadeIn>) } >
+						</Route>
+						<Route exact path="/society">
+							<FadeIn>
+								<Society />
+							</FadeIn>
 						</Route>
 						<Route path="/myaccount">
 							<FadeIn>
