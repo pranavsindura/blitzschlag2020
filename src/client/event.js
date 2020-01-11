@@ -65,11 +65,11 @@ export default class Event extends Component {
 											<div
 												style={{
 													width: '100%',
-													height: '30%',
+													height: '30vh',
 													backgroundColor: this.data.content[currSlide].accent[0],
 													position: 'absolute',
 													left: '0%',
-													bottom: '20%',
+													bottom: '20vh',
 													transition: 'all .5s ease-in-out'
 												}}
 											>
