@@ -43,9 +43,10 @@ export default class Event extends Component {
 									style={{ background: this.data.content[currSlide].accent[1], transition: 'all .5s ease-in-out' }}
 								>
 									{window.innerWidth <= 770 ? (
-										<div style={{ width: '100%', height: '100%' }}>
-											<div className="carmob-holder">
-												<Carousel
+										<div style={{ width: '100%', height: '100%', display: 'block' }}>
+											<div className="carmob-holder-2">
+												<img className="imgmob-2" src={this.data.carImages[currSlide]} onLoad={()=>{fullpageApi.reBuild();}} />
+												{/* <Carousel
 													className="carmob"
 													indicators={false}
 													interval="4000"
@@ -60,17 +61,18 @@ export default class Event extends Component {
 															</Carousel.Item>
 														);
 													})}
-												</Carousel>
+												</Carousel> */}
 											</div>
 											<div
 												style={{
 													width: '100%',
-													height: '30vh',
+													height: '30%',
 													backgroundColor: this.data.content[currSlide].accent[0],
 													position: 'absolute',
 													left: '0%',
-													bottom: '20vh',
-													transition: 'all .5s ease-in-out'
+													bottom: '20%',
+													transition: 'all .5s ease-in-out',
+													display: 'block'
 												}}
 											>
 												<div className="event-heading">
