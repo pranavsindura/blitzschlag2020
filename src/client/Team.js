@@ -50,7 +50,7 @@ export default class Team extends Component {
             return (
               <ReactFullpage.Wrapper>
                 <div className="section" style={{background:'#000000'}}>
-                <Link to="/home">
+                <Link to="/">
                 <div style={{padding:'0px',margin:'0px'}}>
                   
                       <img 

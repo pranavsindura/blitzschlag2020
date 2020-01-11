@@ -50,7 +50,10 @@ export default class Home extends Component {
 	];
 	imgSelect = Math.trunc(Math.random() * 2);
 	componentDidMount() {
-		this.setState({ moveto: this.props.moveto, scrollChanged: false });
+		if(this.props.moveto)
+			this.setState({ moveto: this.props.moveto, scrollChanged: false, moveLogo: true });
+		else
+			this.setState({ moveto: this.props.moveto, scrollChanged: false });
 		this.handleScroll(1);
 	}
 	handleScroll = (num) => {
@@ -73,7 +76,8 @@ export default class Home extends Component {
 			this.setState({
 				moveto: nextProps.moveto,
 				scrollChanged: true,
-				internal: false
+				internal: false,
+				moveLogo: true
 			});
 		}
 	}
