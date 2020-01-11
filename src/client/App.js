@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Home from './Home.js';
-import Event from './Event';
+import Society from './Society.js';
+import Flagship from './Flagship.js'
 import CategoryEvent from './CategoryEvent';
 import Myaccount from './UserMyaccount.js';
 import Team from './Team.js';
@@ -61,7 +62,7 @@ class App extends Component {
 							<li className="lis  menu-item">
 								<Link
 									className="lisitem"
-									to="/events"
+									to="/flagshipevents"
 									onClick={() => {
 										this.handleCheck();
 									}}
@@ -323,7 +324,12 @@ class App extends Component {
 						</Route>
 						<Route path="/events">
 							<FadeIn>
-								<Event />
+								<Society />
+							</FadeIn>
+						</Route>
+						<Route path="/flagshipevents">
+							<FadeIn>
+								<Flagship />
 							</FadeIn>
 						</Route>
 						<Route path="/myaccount">

@@ -1,0 +1,426 @@
+.eve-cat-cont {
+    background-color: #f1e5d6;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.head-eve {
+    background-color: #f1e5d6;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    font-size: 5em;
+    color: black;
+}
+
+.event-h {
+    padding-top: 40vh;
+    padding-left: 2vw;
+}
+
+.cat1 {
+    background-color: #f1e5d6;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 23%;
+    transition: all 500ms;
+    z-index: 2;
+    border: 0px;
+    border-left: 0.5px;
+    border-color: #e57853;
+    border-style: solid;
+    color: #e57853;
+    /* transform: skew(10deg); */
+}
+
+.cat2 {
+    background-color: #f1e5d6;
+    width: 100%;
+    height: 100vh;
+    left: 30%;
+    position: absolute;
+    transition: all 500ms;
+    z-index: 3;
+    border: 0px;
+    border-left: 0.5px;
+    border-color: #637952;
+    border-style: solid;
+    color: #637952;
+    /* transform: skew(350deg); */
+}
+
+.cat3 {
+    background-color: #f1e5d6;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 37%;
+    transition: all 500ms;
+    z-index: 4;
+    border: 0px;
+    border-left: 0.5px;
+    border-color: #207f5f;
+    border-style: solid;
+    color: #207f5f;
+    /* transform: skew(10deg); */
+}
+
+.cat4 {
+    background-color: #f1e5d6;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 44%;
+    transition: all 500ms;
+    z-index: 5;
+    border: 0px;
+    border-left: 0.5px;
+    border-color: #026286;
+    border-style: solid;
+    color: #026286;
+    /* transform: skew(350deg); */
+}
+
+.cat5 {
+    background-color: #f1e5d6;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 51%;
+    transition: all 500ms;
+    z-index: 6;
+    border: 0px;
+    border-left: 0.5px;
+    border-color: #fe6e81;
+    border-style: solid;
+    color: #fe6e81;
+    /* transform: skew(10deg); */
+}
+
+.cat6 {
+    background-color: #f1e5d6;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 58%;
+    transition: all 500ms;
+    z-index: 7;
+    border: 0px;
+    border-left: 0.5px;
+    border-color: #f68827;
+    border-style: solid;
+    color: #f68827;
+    /* transform: skew(350deg); */
+}
+
+.cat7 {
+    background-color: #f1e5d6;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 65%;
+    transition: all 500ms;
+    z-index: 8;
+    border: 0px;
+    border-left: 0.5px;
+    border-color: #3a7472;
+    border-style: solid;
+    color: #3a7472;
+    /* transform: skew(10deg); */
+}
+
+.cat8 {
+    background-color: #f1e5d6;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 72%;
+    transition: all 500ms;
+    z-index: 9;
+    border: 0px;
+    border-left: 0.5px;
+    border-color: #f74b53;
+    border-style: solid;
+    color: #f74b53;
+    /* transform: skew(350deg); */
+}
+
+.cat9 {
+    background-color: #f1e5d6;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 79%;
+    transition: all 500ms;
+    z-index: 10;
+    border: 0px;
+    border-left: 0.5px;
+    border-color: #eb5a83;
+    border-style: solid;
+    color: #eb5a83;
+    /* transform: skew(10deg); */
+}
+
+.cat10 {
+    background-color: #f1e5d6;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 86%;
+    transition: all 500ms;
+    z-index: 11;
+    border: 0px;
+    border-left: 0.5px;
+    border-color: #a3286b;
+    border-style: solid;
+    color: #a3286b;
+    /* transform: skew(350deg); */
+}
+
+.cat11 {
+    background-color: #f1e5d6;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 93%;
+    transition: all 500ms;
+    z-index: 12;
+    border: 0px;
+    border-left: 0.5px;
+    border-color: #a43a4d;
+    border-style: solid;
+    color: #a43a4d;
+    /* transform: skew(10deg); */
+}
+
+.cat1:hover {
+    left: 0%;
+    background-color: #e57853;
+    color: black;
+}
+
+.cat2:hover {
+    left: 7%;
+    background-color: #637952;
+    color: black;
+}
+
+.cat3:hover {
+    left: 14%;
+    background-color: #207f5f;
+    color: black;
+}
+
+.cat4:hover {
+    left: 21%;
+    background-color: #026286;
+    color: black;
+}
+
+.cat5:hover {
+    left: 28%;
+    background-color: #fe6e81;
+    color: black;
+}
+
+.cat6:hover {
+    left: 35%;
+    background-color: #f68827;
+    color: black;
+}
+
+.cat7:hover {
+    left: 42%;
+    background-color: #3a7472;
+    color: black;
+}
+
+.cat8:hover {
+    left: 49%;
+    background-color: #f74b53;
+    color: black;
+}
+
+.cat9:hover {
+    left: 56%;
+    background-color: #eb5a83;
+    color: black;
+}
+
+.cat10:hover {
+    left: 63%;
+    background-color: #a3286b;
+    color: black;
+}
+
+.cat11:hover {
+    left: 70%;
+    background-color: #a43a4d;
+    color: black;
+}
+
+.child-1-head {
+    padding-top: 5px;
+    margin-left: 3%;
+    font-size: 1.1em;
+    position: absolute;
+}
+
+.main-cont-event {
+    margin-left: 7vw;
+    width: 23vw;
+    padding: 4vw;
+    padding-left: 0vw;
+}
+
+.eve-mob {
+    background-color: cadetblue;
+}
+
+.head-eve-mob {
+    height: 23vh;
+    text-align: center;
+    color: black;
+    font-size: 3em;
+    border: 0px;
+    border-bottom: 1px;
+    border-color: #a43a4d;
+    border-style: solid;
+    color: black;
+    background-color: tan
+}
+
+.event-h-mob {
+    top: 3vh;
+}
+
+.eve-cat-mob {
+    background-color: cadetblue;
+}
+
+.cat1-mob {
+    background-color: tomato;
+    height: 33vh;
+    width: 90vw;
+    border: 0px;
+    border-bottom: 1px;
+    border-color: #a43a4d;
+    border-style: solid;
+    color: #a43a4d;
+    transform: skew(45deg) scale(1.5);
+    border-radius: 100vh;
+}
+
+.cat2-mob {
+    background-color: tan;
+    height: 33vh;
+    width: 90vw;
+    border: 0px;
+    border-bottom: 1px;
+    border-color: #a43a4d;
+    border-style: solid;
+    color: #a43a4d;
+    transform: scale(1.5);
+    border-radius: 100vh;
+}
+
+.cat3-mob {
+    background-color: tomato;
+    height: 33vh;
+    border: 0px;
+    border-bottom: 1px;
+    border-color: #a43a4d;
+    border-style: solid;
+    color: #a43a4d;
+    transform: skewY(10deg) scale(1.5);
+}
+
+.cat4-mob {
+    background-color: tan;
+    height: 33vh;
+    border: 0px;
+    border-bottom: 1px;
+    border-color: #a43a4d;
+    border-style: solid;
+    color: #a43a4d;
+    transform: skewY(350deg) scale(1.5);
+}
+
+.cat5-mob {
+    background-color: tomato;
+    height: 33vh;
+    border: 0px;
+    border-bottom: 1px;
+    border-color: #a43a4d;
+    border-style: solid;
+    color: #a43a4d;
+    transform: skewY(10deg) scale(1.5);
+}
+
+.cat6-mob {
+    background-color: tan;
+    height: 33vh;
+    border: 0px;
+    border-bottom: 1px;
+    border-color: #a43a4d;
+    border-style: solid;
+    color: #a43a4d;
+    transform: skewY(350deg) scale(1.5);
+}
+
+.cat7-mob {
+    background-color: tomato;
+    height: 33vh;
+    border: 0px;
+    border-bottom: 1px;
+    border-color: #a43a4d;
+    border-style: solid;
+    color: #a43a4d;
+    transform: skewY(10deg) scale(1.5);
+}
+
+.cat8-mob {
+    background-color: tan;
+    height: 33vh;
+    border: 0px;
+    border-bottom: 1px;
+    border-color: #a43a4d;
+    border-style: solid;
+    color: #a43a4d;
+    transform: skewY(350deg) scale(1.5);
+}
+
+.cat9-mob {
+    background-color: tomato;
+    height: 33vh;
+    border: 0px;
+    border-bottom: 1px;
+    border-color: #a43a4d;
+    border-style: solid;
+    color: #a43a4d;
+    transform: skewY(10deg) scale(1.5);
+}
+
+.cat10-mob {
+    background-color: tan;
+    height: 33vh;
+    border: 0px;
+    border-bottom: 1px;
+    border-color: #a43a4d;
+    border-style: solid;
+    color: #a43a4d;
+    transform: skewY(350deg) scale(1.5);
+}
+
+.cat11-mob {
+    background-color: tomato;
+    height: 33vh;
+    border: 0px;
+    border-bottom: 1px;
+    border-color: #a43a4d;
+    border-style: solid;
+    color: #a43a4d;
+    transform: skewY(10deg) scale(1.5);
+}

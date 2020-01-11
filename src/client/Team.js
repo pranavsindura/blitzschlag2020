@@ -59,7 +59,7 @@ export default class Team extends Component {
                     </div>
                     </Link>
                   <div className="container team-cont">
-                    <h2 style={{ textAlign: "center"  }} className="team-head">
+                    <h2  className="team-head singlecont">
                       Team Blitzschlag
                     </h2>
                     <br></br>
@@ -395,7 +395,6 @@ export default class Team extends Component {
                           Suraj Prakash
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                            <br></br>
                           PUBLICITY SECRETORY
                           </h5>
                           <br></br>
@@ -416,7 +415,6 @@ export default class Team extends Component {
                           Pritesh Kumawat
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                            <br></br>
                           DECOR SECRETORY
                           </h5>
                           <br></br>
@@ -437,7 +435,7 @@ export default class Team extends Component {
                           Umang Bhardwaj
                           </h4>
                           <h5 className="team-des" style={{letterSpacing: '8px', textAlign: "center",fontSize:'0.8em'}}>
-                          DECOR SECRETORY<br></br>GRAPHIC DESIGNER<br></br>DESIGNING HEAD
+                          DECOR SECRETORY<br></br>DESIGNING HEAD
                           </h5>
                           <br></br>
                         </div>
