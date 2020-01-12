@@ -557,7 +557,7 @@ class Login extends React.Component {
 		return (
 			<div className="scrollit">
 				<Splash images={this.images} />
-				<Link to="/">
+				<Link to="https://blitz20.herokuapp.com/">
 					<img
 						style={{
 							height: 'auto',

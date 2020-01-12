@@ -222,7 +222,7 @@ export default class Home extends Component {
 				>
 					<img
 						src={'src/shared/img/logo.png'}
-						style={{ width: '80vw', enableBackground: 'new 0 0 666.7 248.32' }}
+						style={{ width: '80vw', enableBackground: 'new 0 0 666.7 248.32', filter: 'drop-shadow(5px 5px 5px #00000050)' }}
 					/>
 				</div>
 				<ReactFullpage
