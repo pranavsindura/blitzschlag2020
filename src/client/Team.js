@@ -267,7 +267,7 @@ export default class Team extends Component {
                       <div className="col-md-6 doublecont-2">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/kshitiz.jpg",
+                            "src/shared/img/team/kshitiz.JPG",
                             "8441944621",
                             "https://www.instagram.com/kshitizkain/",
                             "https://www.facebook.com/kshitiz.kain",
@@ -443,7 +443,7 @@ export default class Team extends Component {
                       <div className="col-md-4 triplecont-3">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/umang.jpg",
+                            "src/shared/img/team/umang.JPG",
                             "8219263140",
                             "https://www.instagram.com/umangbhardwaj9488/",
                             "https://www.facebook.com/profile.php?id=100009514595891",
