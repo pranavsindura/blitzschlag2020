@@ -288,8 +288,8 @@ export default class Home extends Component {
 									}}
 								>
 									{window.innerWidth > 770 ? (
-										<div>
-											<div className="ladytheme-holder">
+										<div style={{position: 'absolute', width: '100%', height: '100%', left:'0%', top:'0%', overflow:'hidden'}}>
+											<div className="ladytheme-holder"> 
 												<img
 													className={'ladytheme zoom'}
 													src={`https://imgur.com/JI5zb8u.png`}

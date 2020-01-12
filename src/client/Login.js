@@ -102,7 +102,7 @@ class Login extends React.Component {
 				res = res.data;
 				// console.log(res);
 				if (res.status) {
-					// alert('You are successfully Registered!');
+					alert(`Your BlitzID: blitz20@${res.data.blitzID}`);
 
 					console.log(res.data);
 					this.setState(
@@ -114,7 +114,7 @@ class Login extends React.Component {
 									</Col>
 									<Col>
 										<p className="text-success font-weight-bold">
-											Your BlitzID: blitz@{res.data.blitzID}
+											Your BlitzID: blitz20@{res.data.blitzID}
 										</p>
 									</Col>
 								</Col>

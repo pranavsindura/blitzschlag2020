@@ -700,6 +700,7 @@ p {
 	bottom: 0%;
 	max-height: 100vh;
 	width: auto;
+	overflow: hidden;
 }
 
 /* .fa-university,
