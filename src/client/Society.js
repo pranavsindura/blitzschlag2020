@@ -166,12 +166,12 @@ export default class Society extends Component {
         <div className="eve-mob">
           <svg
             width="100%"
-            height="2465.000000pt"
-            viewBox="0 0 377.000000 2465.000000"
+            height="2400.000000pt"
+            // viewBox="0 0 380.000000 2465.000000"
             className="svg-mob"
           >
             <g
-              transform="translate(0.000000,2465.000000) scale(0.125-0.14)"
+              transform="translate(0.000000,2400.000000) scale(0.1,-0.125)"
               fill="#ffffff"
               stroke="none"
             >
@@ -202,6 +202,9 @@ export default class Society extends Component {
 -1 c-16 -1 -386 -16 -823 -35z"/>
             </g>
           </svg>
+          <div className="head-mob-eve">EVENTS</div>
+          <div className="cat1-mob"></div>
+          <div className="cat2-mob"></div>
         </div>
       );
     }
