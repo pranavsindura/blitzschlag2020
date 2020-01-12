@@ -1,6 +1,6 @@
 const nodemailer = require("nodemailer");
 
-async function main() {
+async function main(obj) {
 
     let transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -11,11 +11,11 @@ async function main() {
     });
 
     let info = await transporter.sendMail({
-        from: '"Papa" <butterKiDukan@gmail.com>',
+        from: '"Dhairya" <butterKiDukan@gmail.com>',
         to: "2018kucp1003@iiitkota.ac.in, 2018kucp1001@iiitkota.ac.in, 2018kucp1101@iiitkota.ac.in, 2018kucp1118@iiitkota.ac.in, 2018kucp1117@iiitkota.ac.in",
-        subject: "Kya aap sex krna chahoge??",
+        subject: "Mail from Blitz20 developers",
         text: "Its a text",
-        html: "<b>Go to</b><a href='www.xvideos2.com'>Click here</a>"
+        html: `<b>You Are Registered with id ${obj.blitzID} </b>`
     });
 
     console.log("Message sent: %s", info.messageId);

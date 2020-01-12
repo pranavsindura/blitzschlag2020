@@ -85,5 +85,6 @@ module.exports = {
     retrieveTeamID,
     updateTeamID,
     checkPins,
-    retrieveCategoryDetails
-}
+    retrieveCategoryDetails,
+    retrieveUsers
+};
