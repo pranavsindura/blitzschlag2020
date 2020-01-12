@@ -128,7 +128,7 @@ class Myaccount extends Component {
 				</div>
 			);
 		}
-	}
+	} 
 	renderComponent(fullpageApi) {
 		if (window.innerWidth > 760) {
 			return (

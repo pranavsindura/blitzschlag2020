@@ -4,7 +4,11 @@ let userSchema = new mongoose.Schema({
     firstName: String,
     lastName: String,
     email: String,
-    mob: Number,
+    mob: String,
+    course: String,
+    year: String,
+    branch: String,
+    city: String,
     college: String,
     collegeID: String,
     events: [{
