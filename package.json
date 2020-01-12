@@ -34,7 +34,6 @@
         "react-awesome-slider": "^2.3.0",
         "react-bootstrap": "^1.0.0-beta.16",
         "react-burger-menu": "^2.6.13",
-        "react-coverflow": "^0.2.20",
         "react-dom": "^16.5.2",
         "react-fade-in": "^0.1.7",
         "react-redux": "^7.1.3",
@@ -46,7 +45,8 @@
         "reactstrap": "^8.2.0",
         "redux": "^4.0.5",
         "redux-thunk": "^2.3.0",
-        "styled-components": "^4.4.1"
+        "styled-components": "^4.4.1",
+        "objectid":"^3.2.1"
     },
     "devDependencies": {
         "@babel/core": "^7.0.0",
