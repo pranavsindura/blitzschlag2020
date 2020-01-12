@@ -6,6 +6,7 @@ const helmet = require('helmet');
 const express = require('express');
 const device = require('express-device');
 const mongoose = require('mongoose');
+const objectID = require('objectid');
 const uri = 'mongodb+srv://Dhairya-Shalu:light12345@first-demo-ocw10.mongodb.net/test?retryWrites=true&w=majority';
 
 let Model = require('./model.js');
@@ -14,6 +15,8 @@ let loginValid = require('./loginvalid');
 let eventRegister = require('./eventRegister');
 let signupvalid = require('./Signupvalidation');
 let mobAndPinValid = require('./mobileAndPinValid');
+let modelEvent = require('./modelEventSociety');
+let mailer = require('./mailer');
 
 const app = express();
 app.use(bodyparser.urlencoded({ extended: true }));
@@ -59,7 +62,7 @@ app.post('/login', (req, res) => {
             console.log('User not registered');
             res.send({
                 status: false,
-                message:'User not Registered!',
+                message: 'User not Registered!',
             })
         }
     });
@@ -88,10 +91,16 @@ app.post('/signup', (req, res) => {
                                             result2.blitzCount += 1;
                                             signupvalid.updateBlitzID(result2).then((result4) => {
                                                 if (result4) {
-                                                    res.send({
-                                                        status: true,
-                                                        data: result3
-                                                    });
+                                                    mailer.main(result3).then(() => {
+                                                            res.send({
+                                                                status: true,
+                                                                data: result3
+                                                            });
+                                                        })
+                                                        // res.send({
+                                                        //     status: true,
+                                                        //     data: result3
+                                                        // });
                                                 } else {
                                                     res.send({
                                                         status: false,
@@ -135,19 +144,88 @@ app.post('/signup', (req, res) => {
 
 app.post('/events', (req, res) => {
     let eventReg = req.body;
-    eventRegister.retrieveTeamID().then(function(output) {
-        output.teamCount += 1;
-        eventRegister.updateTeamID(output).then(function(updatedTeamObj) {
-            eventReg.teamID = updatedTeamObj.teamCount;
 
-            eventRegister.updateUser(eventReg).then(function(result2) {
-                res.send({
-                    status: true,
-                    data: result2
-                });
+    let eventObj = new modelEvent.eventModel();
+
+    eventRegister.checkPins(eventReg).then(function(flag) {
+        if (flag !== undefined) {
+            console.log('valid ids');
+            eventRegister.retrieveTeamID().then(function(counts) {
+                if (counts) {
+                    eventObj.teamID = counts.teamCount + 1;
+                    eventReg.teamID = eventObj.teamID;
+                    eventRegister.retrieveCategoryDetails(eventReg.eventID).then(function(category) {
+                        if (category) {
+                            eventObj.socID = category.socID;
+                            eventObj.socName = category.socName;
+                            eventObj.eventID = category.eventID;
+                            eventObj.eventName = category.eventName;
+                            eventObj.teamName = eventReg.teamName;
+                            eventObj.teamSize = eventReg.teamSize;
+
+                            eventReg.eventName = category.eventName;
+
+                            let multipleDocs = [];
+
+                            eventRegister.retrieveUsers(eventReg.blitzID).then(function(users) {
+                                if (users) {
+                                    for (id in eventReg.blitzID) {
+                                        let obj = new modelEvent.eventModel(eventObj);
+                                        // console.log(id);
+                                        obj.blitzID = eventReg.blitzID[id];
+                                        obj._id = new objectID();
+                                        obj.firstName = users[id].firstName;
+                                        obj.mob = users[id].mob;
+                                        console.log(obj);
+                                        multipleDocs.push(obj);
+                                    }
+                                    console.log('multipleDocs', multipleDocs);
+                                    modelEvent.eventModel.insertMany(multipleDocs);
+                                    eventRegister.updateUser(eventReg).then(function(x) {
+                                        if (x) {
+                                            let obj = {
+                                                teamCount: counts.teamCount + 1
+                                            };
+                                            eventRegister.updateTeamID(obj).then(function(result) {
+                                                res.send({
+                                                    status: true,
+                                                    data: obj.teamCount
+                                                });
+                                                console.log('updated team id');
+                                            });
+                                        } else {
+                                            res.send({
+                                                status: false,
+                                                message: "Not registered for the event!"
+                                            });
+                                            console.log('Not updated team id');
+                                        }
+                                    });
+                                } else {
+                                    res.send({
+                                        status: false,
+                                        message: "Internal error in retrieving users"
+                                    });
+                                }
+
+                            });
+                        } else {
+                            res.send({
+                                status: false,
+                                message: "internal error in retrieveing category"
+                            });
+                        }
+                    });
+                } else {
+                    res.send({
+                        status: false,
+                        message: "internal error in retrieveing counts"
+                    });
+                }
             });
-
-        });
+        } else {
+            console.log('Incorrect ids');
+        }
     });
 });
 

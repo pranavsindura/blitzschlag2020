@@ -1,5 +1,8 @@
 let idModel = require('./idModel').idModel;
 let userModel = require('./model').userModel;
+let mongoose = require('mongoose');
+let { eventSchema } = require('./modelEventSociety');
+let { categories } = require('./modelEventSociety');
 
 async function retrieveTeamID() {
     let ids = await idModel.findOne({}, function(err, result) {
@@ -11,7 +14,7 @@ async function retrieveTeamID() {
 }
 
 async function updateTeamID(obj) {
-    let teamObj = await idModel.findOneAndUpdate({ _id: obj._id }, { teamCount: obj.teamCount }, { new: true }, (err, data) => {
+    let teamObj = await idModel.findOneAndUpdate({}, { teamCount: obj.teamCount }, { new: true }, (err, data) => {
 
     });
     console.log('teamObj', teamObj);
@@ -38,11 +41,50 @@ async function updateUser(event) {
             }
         });
     });
-    return event;
+    return true;
+}
+
+async function retrieveUsers(ids) {
+    let users = await userModel.find({ blitzID: ids }, (err, result) => {
+        if (err) {
+            console.log('ID not found');
+        }
+    });
+    return users;
+}
+
+async function checkPins(obj) {
+    let ids = obj.blitzID;
+    let pins = obj.blitzPIN;
+    let f = retrieveUsers(ids).then(function(users) {
+        let flag = true;
+        let i = 0;
+        for (user of users) {
+            if (user.blitzPIN !== pins[i]) {
+                flag = undefined;
+                break;
+            }
+            i++;
+        }
+        return flag;
+    });
+    return f;
+}
+
+async function retrieveCategoryDetails(eid) {
+    let category = await categories.findOne({ eventID: eid }, function(err, result) {
+        if (err) {
+            console.log('error retrieveing category');
+        }
+    });
+    return category;
 }
 
 module.exports = {
     updateUser,
     retrieveTeamID,
-    updateTeamID
-}
+    updateTeamID,
+    checkPins,
+    retrieveCategoryDetails,
+    retrieveUsers
+};
