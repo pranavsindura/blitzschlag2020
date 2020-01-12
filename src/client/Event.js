@@ -35,7 +35,7 @@ export default class Event extends Component {
 		return (
 			<div>
 				<Splash images={this.data.carImages} />
-				<Link to="https://blitz20.herokuapp.com/">
+				<a href="https://blitz20.herokuapp.com/"> 
 					<img
 						style={{
 							height: 'auto',
@@ -47,7 +47,7 @@ export default class Event extends Component {
 						}}
 						src="https://i.ibb.co/42WZWbr/blitzlogo.png"
 					/>
-				</Link>
+				</a>
 				<ReactFullpage
 					render={({ state, fullpageApi }) => {
 						return (

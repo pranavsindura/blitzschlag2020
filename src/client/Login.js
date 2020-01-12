@@ -22,6 +22,7 @@ const registerDetailsTemplate = {
 	year: 'I',
 	city: '',
 	course: 'B-Tech',
+	gender: 'Male',
 	branch: '',
 	blitzPIN: '',
 	isMNIT: true,
@@ -48,8 +49,11 @@ class Login extends React.Component {
 		if (this.props.production) this.proxy = '';
 	}
 	images = [
-		'https://i.ibb.co/0m0GPR5/64-PERSONALIZED-MOBILE-PHONE-WALLPAPER-IDEAS-Page-48-of-64-Lialip.png',
-	];
+		'https://i.ibb.co/hfH0yHM/loginc1.png',
+		'https://i.ibb.co/Wpt36Ft/loginc2.png',
+		'https://i.ibb.co/Gk3tWQf/login.jpg',
+
+];
 	changeForm = (fullpageApi) => {
 		// fullpageApi.reBuild();
 		this.setState(
@@ -102,18 +106,18 @@ class Login extends React.Component {
 				res = res.data;
 				// console.log(res);
 				if (res.status) {
-					alert(`Your BlitzID: blitz20@${res.data.blitzID}`);
+					alert(`You are registered! Your BlitzID: blitz20@${res.data.blitzID}`);
 
-					console.log(res.data);
+					// console.log(res.data);
 					this.setState(
 						{
 							submitMessage: (
 								<Col>
 									<Col>
-										<p className="text-success">You are successfully Registered!</p>
+										<p className="text-white">You are successfully Registered!</p>
 									</Col>
 									<Col>
-										<p className="text-success font-weight-bold">
+										<p className="text-white font-weight-bold">
 											Your BlitzID: blitz20@{res.data.blitzID}
 										</p>
 									</Col>
@@ -173,7 +177,7 @@ class Login extends React.Component {
 			.post(this.proxy + '/login', loginDetails)
 			.then((res) => {
 				res = res.data;
-				console.log(res);
+				// console.log(res);
 				if (res.status) {
 					this.props.LOGIN(res.data);
 					// this.setState({
@@ -220,6 +224,10 @@ class Login extends React.Component {
 		const { registerDetails, loginDetails, submitMessage } = this.state;
 		const registerForm = (
 			<div className="section coverlogin">
+				<div className="img-wrap">
+					<img src="https://i.ibb.co/hfH0yHM/loginc1.png" className="loginc1" />
+					<img src="https://i.ibb.co/Wpt36Ft/loginc2.png" className="loginc2" />
+				</div>
 				<div className="formwrapper">
 					<h1 className="heading">REGISTER</h1>
 					<Card>
@@ -229,227 +237,294 @@ class Login extends React.Component {
 									this.handleRegisterSubmit(event);
 								}}
 							>
-								<Form.Label>Name:&nbsp;&nbsp;</Form.Label>
 								<Form.Row>
 									<Col>
-										<Form.Group>
-											<Form.Control
-												onChange={() => {
-													this.handleRegisterChange(event);
-												}}
-												value={registerDetails.firstName}
-												id="firstName"
-												type="text"
-												required={true}
-												placeholder=""
-											/>
-										</Form.Group>
-									</Col>
-									<Col>
-										<Form.Group>
-											<Form.Control
-												onChange={() => {
-													this.handleRegisterChange(event);
-												}}
-												value={registerDetails.lastName}
-												id="lastName"
-												type="text"
-												required={true}
-												placeholder=""
-											/>
-										</Form.Group>
-									</Col>
-								</Form.Row>
-								<Form.Label>Email:&nbsp;&nbsp;</Form.Label>
-								<Form.Row>
-									<Form.Group>
-										<Form.Control
-											onChange={() => {
-												this.handleRegisterChange(event);
-											}}
-											value={registerDetails.email}
-											id="email"
-											type="email"
-											required={true}
-											placeholder=""
-										/>
-									</Form.Group>
-								</Form.Row>
-								<Form.Label>PIN(4 Digits):&nbsp;&nbsp;</Form.Label>
-								<Form.Row>
-									<Form.Group>
-										<Form.Control
-											value={registerDetails.blitzPIN}
-											onChange={() => {
-												this.handleRegisterChange(event);
-											}}
-											required={true}
-											id="blitzPIN"
-											type="password"
-											placeholder=""
-										/>
-									</Form.Group>
-								</Form.Row>
-								<Form.Label>Mobile Number:&nbsp;&nbsp;</Form.Label>
-								<Form.Row>
-									<Form.Group>
-										<Form.Control
-											onChange={() => {
-												this.handleRegisterChange(event);
-											}}
-											value={registerDetails.mob}
-											id="mob"
-											type="phone"
-											required={true}
-											placeholder=""
-										/>
-									</Form.Group>
-								</Form.Row>
-								<Form.Label>College:&nbsp;&nbsp;</Form.Label>
-								<Form.Row>
-									<select
-										id="collegeType"
-										value={registerDetails.collegeType}
-										onChange={() => {
-											this.handleRegisterChange(event);
-										}}
-									>
-										<option value="0">MNIT</option>
-										<option value="1">IIIT Kota</option>
-										<option value="2">NIT UK</option>
-										<option value="3">Others</option>
-									</select>
-								</Form.Row>
-								<Form.Label>College Name:&nbsp;&nbsp;</Form.Label>
-								<Form.Row>
-									<Form.Group>
-										<Form.Control
-											onChange={() => {
-												this.handleRegisterChange(event);
-											}}
-											disabled={registerDetails.collegeType != 3}
-											value={registerDetails.college}
-											id="college"
-											type="text"
-											required={true}
-											placeholder=""
-										/>
-									</Form.Group>
-								</Form.Row>
-								<Form.Label>College ID:&nbsp;&nbsp;</Form.Label>
-								<Form.Row>
-									<Form.Group>
-										<Form.Control
-											onChange={() => {
-												this.handleRegisterChange(event);
-											}}
-											value={registerDetails.collegeID}
-											id="collegeID"
-											type="text"
-											required={true}
-											placeholder=""
-										/>
-									</Form.Group>
-								</Form.Row>
-								<Form.Label>Course:&nbsp;&nbsp;</Form.Label>
-								<Form.Row>
-									<Form.Group>
-										<select
-											id="course"
-											value={registerDetails.course}
-											onChange={() => {
-												this.handleRegisterChange(event);
-											}}
-										>
-											<option value="B-Tech">B-Tech</option>
-											<option value="B-Arch">B-Arch</option>
-											<option value="Ph.D.">Ph.D.</option>
-											<option value="M-Tech">M-Tech</option>
-											<option value="M-Plan">M-Plan</option>
-											<option value="Others">Others</option>
-										</select>
-									</Form.Group>
-								</Form.Row>
-								<Form.Label>Year:&nbsp;&nbsp;</Form.Label>
-								<Form.Row>
-									<Form.Group>
-										<select
-											id="year"
-											value={registerDetails.year}
-											onChange={() => {
-												this.handleRegisterChange(event);
-											}}
-										>
-											<option value="I">I</option>
-											<option value="II">II</option>
-											<option value="III">III</option>
-											<option value="IV">IV</option>
-											<option value="V">V</option>
-											<option value="Others">Others</option>
-										</select>
-									</Form.Group>
-								</Form.Row>
-								<Form.Label>Branch:&nbsp;&nbsp;</Form.Label>
-								<Form.Row>
-									<Form.Group>
-										<Form.Control
-											value={registerDetails.branch}
-											onChange={() => {
-												this.handleRegisterChange(event);
-											}}
-											required={true}
-											id="branch"
-											type="text"
-											placeholder=""
-										/>
-									</Form.Group>
-								</Form.Row>
-								<Form.Label>City:&nbsp;&nbsp;</Form.Label>
-								<Form.Row>
-									<Form.Group>
-										<Form.Control
-											value={registerDetails.city}
-											onChange={() => {
-												this.handleRegisterChange(event);
-											}}
-											required={true}
-											id="city"
-											type="text"
-											placeholder=""
-										/>
-									</Form.Group>
-								</Form.Row>
-								<fieldset>
-									<Form.Group>
-										<Form.Label>Do you need Accomodation?</Form.Label>
+										<Form.Label>First Name:&nbsp;&nbsp;</Form.Label>
 										<Form.Row>
-											<Col style={{ textAlign: 'left' }}>
-												<Form.Check
+											<Form.Group>
+												<Form.Control
 													onChange={() => {
 														this.handleRegisterChange(event);
 													}}
-													checked={registerDetails.accomodation}
-													value={true}
-													type="radio"
-													id="accomodation"
-													label="Yes"
+													value={registerDetails.firstName}
+													id="firstName"
+													type="text"
+													required={true}
+													placeholder=""
 												/>
-											</Col>
-											<Col style={{ textAlign: 'left' }}>
-												<Form.Check
-													onChange={() => {
-														this.handleRegisterChange(event);
-													}}
-													checked={!registerDetails.accomodation}
-													value={false}
-													type="radio"
-													id="accomodation"
-													label="No"
-												/>
-											</Col>
+											</Form.Group>
 										</Form.Row>
-									</Form.Group>
-								</fieldset>
+									</Col>
+
+									<Col>
+										<Form.Label>Last Name:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<Form.Control
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													value={registerDetails.lastName}
+													id="lastName"
+													type="text"
+													required={true}
+													placeholder=""
+												/>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+								</Form.Row>
+
+								<Form.Row>
+									<Col>
+										<Form.Label>Email:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<Form.Control
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													value={registerDetails.email}
+													id="email"
+													type="email"
+													required={true}
+													placeholder=""
+												/>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+
+									<Col>
+										<Form.Label>Mobile Number:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<Form.Control
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													value={registerDetails.mob}
+													id="mob"
+													type="phone"
+													required={true}
+													placeholder=""
+												/>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+								</Form.Row>
+
+								<Form.Row>
+									<Col>
+										<Form.Label>Gender:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<select
+													// style={{ minWidth: '100%' }}
+													id="gender"
+													value={registerDetails.gender}
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+												>
+													<option value="Male">Male</option>
+													<option value="Female">Female</option>
+													<option value="Others">Others</option>
+												</select>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+									<Col>
+										<Form.Label>PIN(4 Digits):&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<Form.Control
+													value={registerDetails.blitzPIN}
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													required={true}
+													id="blitzPIN"
+													type="password"
+													placeholder=""
+												/>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+								</Form.Row>
+
+								<Form.Row>
+									<Col>
+										<Form.Label>College:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<select
+													id="collegeType"
+													value={registerDetails.collegeType}
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+												>
+													<option value="0">MNIT</option>
+													<option value="1">IIIT Kota</option>
+													<option value="2">NIT UK</option>
+													<option value="3">Others</option>
+												</select>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+									<Col>
+										<Form.Label>College Name:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<Form.Control
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													disabled={registerDetails.collegeType != 3}
+													value={registerDetails.college}
+													id="college"
+													type="text"
+													required={true}
+													placeholder=""
+												/>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+								</Form.Row>
+
+								<Form.Row>
+									<Col>
+										<Form.Label>Course:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<select
+													id="course"
+													value={registerDetails.course}
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+												>
+													<option value="B-Tech">B-Tech</option>
+													<option value="B-Arch">B-Arch</option>
+													<option value="Ph.D.">Ph.D.</option>
+													<option value="M-Tech">M-Tech</option>
+													<option value="M-Plan">M-Plan</option>
+													<option value="Others">Others</option>
+												</select>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+									<Col>
+										<Form.Label>College ID:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<Form.Control
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													value={registerDetails.collegeID}
+													id="collegeID"
+													type="text"
+													required={true}
+													placeholder=""
+												/>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+								</Form.Row>
+
+								<Form.Row>
+									<Col>
+										<Form.Label>Year:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<select
+													id="year"
+													value={registerDetails.year}
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+												>
+													<option value="I">I</option>
+													<option value="II">II</option>
+													<option value="III">III</option>
+													<option value="IV">IV</option>
+													<option value="V">V</option>
+													<option value="Others">Others</option>
+												</select>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+									<Col>
+										<Form.Label>Branch:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<Form.Control
+													value={registerDetails.branch}
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													required={true}
+													id="branch"
+													type="text"
+													placeholder=""
+												/>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+								</Form.Row>
+								<Form.Row>
+									<Col>
+										<fieldset>
+											<Form.Group>
+												<Form.Label>Do you need Accomodation?</Form.Label>
+												<Form.Row>
+													<Col style={{ textAlign: 'center' }}>
+														<Form.Check
+															onChange={() => {
+																this.handleRegisterChange(event);
+															}}
+															checked={registerDetails.accomodation}
+															value={true}
+															type="radio"
+															id="accomodation"
+															label="Yes"
+														/>
+													</Col>
+													<Col style={{ textAlign: 'center' }}>
+														<Form.Check
+															onChange={() => {
+																this.handleRegisterChange(event);
+															}}
+															checked={!registerDetails.accomodation}
+															value={false}
+															type="radio"
+															id="accomodation"
+															label="No"
+														/>
+													</Col>
+												</Form.Row>
+											</Form.Group>
+										</fieldset>
+									</Col>
+									<Col>
+										<Form.Label>City:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<Form.Control
+													value={registerDetails.city}
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													required={true}
+													id="city"
+													type="text"
+													placeholder=""
+												/>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+								</Form.Row>
 								<Row>
 									<Col>
 										<Button className="submit-button" type="submit">
@@ -478,10 +553,15 @@ class Login extends React.Component {
 		);
 		const loginForm = (
 			<div className="section coverlogin">
+				<div className="img-wrap">
+					<img src="https://i.ibb.co/hfH0yHM/loginc1.png" className="loginc1" />
+					<img src="https://i.ibb.co/Wpt36Ft/loginc2.png" className="loginc2" />
+				</div>
 				<div
 					className="formwrapper"
 					// style={{ position: 'relative', top: '50%', transform: 'translateY(-50%)' }}
 				>
+					{/* <img src="src/shared/img/loginc2.png" className="loginc2" /> */}
 					<h1 className="heading">LOGIN</h1>
 					<Card>
 						<Card.Body>
@@ -557,7 +637,7 @@ class Login extends React.Component {
 		return (
 			<div className="scrollit">
 				<Splash images={this.images} />
-				<Link to="https://blitz20.herokuapp.com/">
+				<a href="https://blitz20.herokuapp.com/"> 
 					<img
 						style={{
 							height: 'auto',
@@ -569,7 +649,7 @@ class Login extends React.Component {
 						}}
 						src="https://i.ibb.co/42WZWbr/blitzlogo.png"
 					/>
-				</Link>
+				</a>
 				<ReactFullpage
 					verticalCentered={false}
 					scrollOverflow={true}

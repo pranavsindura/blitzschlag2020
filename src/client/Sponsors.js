@@ -1077,19 +1077,19 @@ c-49 26 -151 32 -227 13 -84 -22 -146 -53 -220 -109 l-63 -47 -63 47 c-138
 		return (
 			<div>
 				<Splash images={this.images} />
-				<Link to="https://blitz20.herokuapp.com/">
-										<img
-											style={{
-												height: 'auto',
-												width: '70px',
-												position: 'fixed',
-												left: '0%',
-												top: '0%',
-												zIndex: '1'
-											}}
-											src="https://i.ibb.co/42WZWbr/blitzlogo.png"
-										/>
-									</Link>
+				<a href="https://blitz20.herokuapp.com/"> 
+					<img
+						style={{
+							height: 'auto',
+							width: '70px',
+							position: 'fixed',
+							left: '0%',
+							top: '0%',
+							zIndex: '1'
+						}}
+						src="https://i.ibb.co/42WZWbr/blitzlogo.png"
+					/>
+				</a>
 				<ReactFullpage
 					scrollOverflow={true}
 					render={({ state, fullpageApi }) => {

@@ -1,11 +1,53 @@
 .coverlogin {
-	/* background-image: url('https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg'); */
-	/* background: #f94e6f; */
-	background: url('https://i.ibb.co/Sw8xkkJ/9359ae8c3ec25cd.jpg');
+	background-image: url('https://i.ibb.co/Gk3tWQf/login.jpg');
+	/* background: url('https://i.ibb.co/Sw8xkkJ/9359ae8c3ec25cd.jpg'); */
 	transition: all 2s;
-	background-size: contain;
+	background-size: cover;
 	min-height: 100vh;
 }
+.formwrapper{
+	/* background-color: red; */
+	min-height: 100vh;
+}
+.loginc1{
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	height: 100%;
+	transform: translate(30%, 30%);
+	animation: rotloginc1 20s linear infinite;
+}
+.img-wrap{
+	position: absolute;
+	min-height: 100vh;
+	width: 100vw;
+}
+.loginc2{
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	height: 70%;
+	transform: translate(-40%, -40%);
+	animation: rotloginc2 20s linear infinite;
+}
+
+@keyframes rotloginc1 {
+	from {
+		transform: translate(20%, 20%) rotate(0deg);
+	}
+	to {
+		transform: translate(20%, 20%) rotate(359deg);
+	}
+}
+@keyframes rotloginc2 {
+	from {
+		transform: translate(-30%, -30%) rotate(0deg);
+	}
+	to {
+		transform: translate(-30%, -30%) rotate(359deg);
+	}
+}
+
 
 .card {
 	width: 40%;
@@ -15,10 +57,22 @@
 
 label {
 	color: white;
+	text-align: left;
+}
+.form-group{
+	width: 100%;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+select{
+	min-width: 70%;
 }
 .submit-button {
-	background-color: #f94e6f;
+	background-color: #BBD840;
 	border: #007bff;
+}
+.submit-button:hover{
+	background-color: #1ACACA;
 }
 .already-link,
 .already-link:active,
@@ -45,14 +99,26 @@ label {
 }
 
 @media screen and (max-width: 900px) {
-	.coverlogin {
-		background: url('https://i.ibb.co/0m0GPR5/64-PERSONALIZED-MOBILE-PHONE-WALLPAPER-IDEAS-Page-48-of-64-Lialip.png');
-		transition: all 2s;
-		background-size: cover;
-		min-height: 100vh;
-	}
 	.card {
 		width: 90%;
 		left: 5%;
+	}
+	.loginc1{
+		position: absolute;
+		z-index: -1;
+		right: 0%;
+		bottom: 0%;
+		height: 40%;
+		transform: translate(30%, 30%);
+		animation: rotloginc1 20s linear infinite;
+	}
+	.loginc2{
+		position: absolute;
+		z-index: -1;
+		left: 0%;
+		top: 0%;
+		height: 30%;
+		transform: translate(-40%, -40%);
+		animation: rotloginc2 20s linear infinite;
 	}
 }

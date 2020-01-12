@@ -6,7 +6,7 @@ import Splash from './Splash';
 import ReactFullpage from '@fullpage/react-fullpage';
 import 'fullpage.js/vendors/scrolloverflow';
 import { Redirect } from 'react-router-dom';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 class Myaccount extends Component {
@@ -35,9 +35,9 @@ class Myaccount extends Component {
 	renderDetails(user) {
 		var acc = user.accomodation;
 		if (user.accomodation == false) {
-			acc = 'no';
+			acc = 'No';
 		} else {
-			acc = 'yes';
+			acc = 'Yes';
 		}
 		return (
 			<div>
@@ -67,6 +67,26 @@ class Myaccount extends Component {
 							<td> {this.props.user.mob}</td>
 						</tr>
 						<tr>
+							<td>Gender:</td>
+							<td> {this.props.user.gender}</td>
+						</tr>
+						<tr>
+							<td>Course:</td>
+							<td> {this.props.user.course}</td>
+						</tr>
+						<tr>
+							<td>Year:</td>
+							<td> {this.props.user.year}</td>
+						</tr>
+						<tr>
+							<td>Branch:</td>
+							<td> {this.props.user.branch}</td>
+						</tr>
+						<tr>
+							<td>City:</td>
+							<td> {this.props.user.branch}</td>
+						</tr>
+						<tr>
 							<td>Accomodation needed:</td>
 							<td>{acc}</td>
 						</tr>
@@ -80,7 +100,7 @@ class Myaccount extends Component {
 		if (user.isMNIT == false) {
 			var trans = user.transactionID;
 			if (user.transactionID == null) {
-				trans = 'not yet payed';
+				trans = 'Not yet Paid';
 			}
 			return (
 				<tr>
@@ -128,7 +148,7 @@ class Myaccount extends Component {
 				</div>
 			);
 		}
-	} 
+	}
 	renderComponent(fullpageApi) {
 		if (window.innerWidth > 760) {
 			return (
@@ -174,7 +194,7 @@ class Myaccount extends Component {
 		return (
 			<div>
 				<Splash images={this.images} />
-				<Link to="https://blitz20.herokuapp.com/">
+				<a href="https://blitz20.herokuapp.com/">
 					<img
 						style={{
 							height: 'auto',
@@ -186,7 +206,7 @@ class Myaccount extends Component {
 						}}
 						src="https://i.ibb.co/42WZWbr/blitzlogo.png"
 					/>
-				</Link>
+				</a>
 				<ReactFullpage
 					scrollOverflow={true}
 					render={({ state, fullpageApi }) => {

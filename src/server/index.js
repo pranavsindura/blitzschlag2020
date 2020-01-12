@@ -95,7 +95,7 @@ app.post('/signup', (req, res) => {
                                                             res.send({
                                                                 status: true,
                                                                 data: result3
-                                                            });
+                                                            }); 
                                                         })
                                                         // res.send({
                                                         //     status: true,
