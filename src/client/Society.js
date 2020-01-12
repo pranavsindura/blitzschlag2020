@@ -240,7 +240,7 @@ export default class Society extends Component {
                 <div className="link-pc-to-cat">
                   <Link to="/events/fnp">
                     <Button
-                      style={{ backgroundColor: "#f1e5d6", color: "#3a7472" }}
+                      style={{ backgroundColor: "#f1e5d6", color: "#3a7472",border:'none' }}
                     >
                       EXPLORE
                     </Button>
@@ -258,7 +258,7 @@ export default class Society extends Component {
               </div>
               <div className="main-cont-event">
                 <img
-                  src="src/shared/img/fnarts.png"
+                  src="src/shared/img/informal.png"
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
@@ -359,7 +359,7 @@ export default class Society extends Component {
               </div>
               <div className="main-cont-event">
                 <img
-                  src="src/shared/img/fnarts.png"
+                  src="src/shared/img/carnival.png"
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
@@ -893,7 +893,7 @@ export default class Society extends Component {
               onLoad={() => {
                 fullpageApi.reBuild();
               }}
-              src="src/shared/img/mds.png"
+              src="src/shared/img/informal.png"
               className="eve-img-mob"
               style={{
                 position: "absolute",
@@ -1027,7 +1027,7 @@ export default class Society extends Component {
                 fullpageApi.reBuild();
               }}
               className="eve-img-mob"
-              src="src/shared/img/mds.png"
+              src="src/shared/img/carnival.png"
               style={{
                 position: "absolute",
                 heigth: "auto",

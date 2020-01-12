@@ -413,6 +413,6 @@
 }
 
 .eve-img-mob {
-    -webkit-filter: drop-shadow(5px 5px 5px #606060af);
-    filter: drop-shadow(5px 5px 5px #606060af);
+    -webkit-filter: drop-shadow(5px 5px 5px #0000003f);
+    filter: drop-shadow(5px 5px 5px #0000003f);
 }
