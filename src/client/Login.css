@@ -1,32 +1,58 @@
 .coverlogin {
-    /* background-image: url('https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg'); */
-    /* background: url("src/shared/img/purplebg.jpg"); */
-    transition: all 2s;
-    background-size: cover;
-    min-height:100vh;
+	/* background-image: url('https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg'); */
+	/* background: #f94e6f; */
+	background: url('https://i.ibb.co/Sw8xkkJ/9359ae8c3ec25cd.jpg');
+	transition: all 2s;
+	background-size: contain;
+	min-height: 100vh;
 }
 
 .card {
-    width: 40%;
-    left: 30%;
+	width: 40%;
+	left: 30%;
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
+label {
+	color: white;
+}
+.submit-button {
+	background-color: #f94e6f;
+	border: #007bff;
+}
+.already-link,
+.already-link:active,
+.already-link:visited {
+	color: white;
+}
+.already-link:hover {
+	color: whitesmoke;
+}
 .heading {
-    padding: 20px;
+	padding: 20px;
+	color: white;
+	font-variant-caps: small-caps;
+	font-family: 'Raleway', sans-serif;
 }
 
 .changeform {
-    color: primary;
-    padding: 10px;
+	color: primary;
+	padding: 10px;
 }
 
 .col {
-    text-align: center;
+	text-align: center;
 }
 
 @media screen and (max-width: 900px) {
-    .card {
-        width: 90%;
-        left: 5%;
-    }
+	.coverlogin {
+		background: url('https://i.ibb.co/0m0GPR5/64-PERSONALIZED-MOBILE-PHONE-WALLPAPER-IDEAS-Page-48-of-64-Lialip.png');
+		transition: all 2s;
+		background-size: cover;
+		min-height: 100vh;
+	}
+	.card {
+		width: 90%;
+		left: 5%;
+	}
 }
