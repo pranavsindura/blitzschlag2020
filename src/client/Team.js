@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import './Team.css';
-import ReactFullpage from '@fullpage/react-fullpage';
-import Splash from './Splash';
+import React, { Component } from "react";
+import "./Team.css";
+import ReactFullpage from "@fullpage/react-fullpage";
+import Splash from "./Splash";
 // import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Link } from 'react-router-dom';
 export default class Team extends Component {
@@ -59,7 +59,7 @@ export default class Team extends Component {
                     </div>
                     </Link>
                   <div className="container team-cont">
-                    <h2  className="team-head singlecont">
+                    <h2 className="team-head singlecont">
                       Team Blitzschlag
                     </h2>
                     <br></br>
@@ -69,8 +69,8 @@ export default class Team extends Component {
                           {this.renderMember(
                             "src/shared/img/team/varun.jpg",
                             "9452174085",
-                            "google.com",
-                            "google.com",
+                            "https://www.instagram.com/varun1878/",
+                            "https://www.facebook.com/profile.php?id=100009155759864",
                             "google.com"
                           )}
                         </div>
@@ -89,11 +89,11 @@ export default class Team extends Component {
                       <div className="col-12 singlecont">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/varun.jpg",
+                            "src/shared/img/team/anuj.jpg",
                             "7525926870",
-                            "google.com",
-                            "google.com",
-                            "google.com"
+                            "https://www.instagram.com/anujsrivastava7/",
+                            "https://www.facebook.com/Anujsrivastava.MSD7",
+                            "https://www.linkedin.com/in/anuj-srivastava-b26b92179"
                           )}
                         </div>
                         <div className="col-cont">
@@ -113,8 +113,9 @@ export default class Team extends Component {
                           {this.renderMember(
                             "src/shared/img/team/divyaman.jpg",
                             "8963052212",
-                            "google.com",
-                            "google.com",
+                            "https://www.instagram.com/divyaman_purbey/",
+                            "https://www.facebook.com/divyaman.purbey",
+                            
                             "google.com"
                           )}
                         </div>
@@ -133,8 +134,9 @@ export default class Team extends Component {
                           {this.renderMember(
                             "src/shared/img/team/nupur.jpg",
                             "8700614357",
-                            "google.com",
-                            "google.com",
+                            "https://www.instagram.com/nupur02_malik/",
+                            "https://www.facebook.com/profile.php?id=100020421310633&fref=search&__tn__=%2Cd%2CP-R&eid=ARCj2ETE5c1Fxy3Eq-NsJ9gInELeLuFm7gxJNDji0Peo9vFM74qcSFdOwlFxLE4pxe4sLUTHjPg0ieeX",
+                            
                             "google.com"
                           )}
                         </div>
@@ -155,8 +157,9 @@ export default class Team extends Component {
                           {this.renderMember(
                             "src/shared/img/team/ansh.jpg",
                             "8518066443",
-                            "google.com",
-                            "google.com",
+                            "https://www.instagram.com/anshkhandelwal7/",
+                            "https://www.facebook.com/AnshKhandelwal26",
+                            
                             "google.com"
                           )}
                         </div>
@@ -177,8 +180,9 @@ export default class Team extends Component {
                           {this.renderMember(
                             "src/shared/img/team/ayush.jpg",
                             "9149225262",
-                            "google.com",
-                            "google.com",
+                            "https://www.instagram.com/singhayush_pratap/",
+                            "https://www.facebook.com/ayush.singh.16100",
+                            
                             "google.com"
                           )}
                         </div>
@@ -197,8 +201,9 @@ export default class Team extends Component {
                           {this.renderMember(
                             "src/shared/img/team/nishant.jpg",
                             "9968992525",
-                            "google.com",
-                            "google.com",
+                            "https://www.instagram.com/nishant__sharma/",
+                            "https://www.facebook.com/1Nishant.Sharma1",
+                            
                             "google.com"
                           )}
                         </div>
@@ -215,10 +220,11 @@ export default class Team extends Component {
                       <div className="col-md-4 triplecont-3">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/varun.jpg",
+                            "src/shared/img/team/mridul.jpg",
                             "9634157767",
-                            "google.com",
-                            "google.com",
+                            "https://www.instagram.com/mridul_singhal19/",
+                            "https://www.facebook.com/mridul.singhal.121",
+                            
                             "google.com"
                           )}
                         </div>
@@ -239,8 +245,9 @@ export default class Team extends Component {
                           {this.renderMember(
                             "src/shared/img/team/dhruv.jpg",
                             "7627073047",
-                            "google.com",
-                            "google.com",
+                            "https://www.instagram.com/dhruv_gupta30/",
+                            "https://www.facebook.com/dhruv.gupta.30",
+                            
                             "google.com"
                           )}
                         </div>
@@ -257,10 +264,11 @@ export default class Team extends Component {
                       <div className="col-md-6 doublecont-2">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/varun.jpg",
+                            "src/shared/img/team/kshitiz.jpg",
                             "8441944621",
-                            "google.com",
-                            "google.com",
+                            "https://www.instagram.com/kshitizkain/",
+                            "https://www.facebook.com/kshitiz.kain",
+                            
                             "google.com"
                           )}
                         </div>
@@ -279,16 +287,17 @@ export default class Team extends Component {
                       <div className="col-md-4 triplecont-1">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/varun.jpg",
+                            "src/shared/img/team/ritu.jpg",
                             " 9602412495",
-                            "google.com",
-                            "google.com",
+                            "https://www.instagram.com/ritu4536/",
+                            "https://www.facebook.com/profile.php?id=100009506987606",
+                            
                             "google.com"
                           )}
                         </div>
                         <div className="col-cont ">
                           <h4 className="team-name" style={{ textAlign: "center"}}>
-                          Ritu Chaoudhary
+                          Ritu Choudhary
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
                           FINANCE SECRETORY
@@ -301,8 +310,9 @@ export default class Team extends Component {
                           {this.renderMember(
                             "src/shared/img/team/devanshu.jpg",
                             "9314655304",
-                            "google.com",
-                            "google.com",
+                            "https://www.instagram.com/pagal_devanshu/",
+                            "https://www.facebook.com/devanshu.khandal",
+                            
                             "google.com"
                           )}
                         </div>
@@ -321,8 +331,9 @@ export default class Team extends Component {
                           {this.renderMember(
                             "src/shared/img/team/srividya.jpg",
                             "8639261222",
-                            "google.com",
-                            "google.com",
+                            "https://www.instagram.com/vidya._.99/",
+                            "https://www.facebook.com/venkata.srividya.3",
+                            
                             "google.com"
                           )}
                         </div>
@@ -343,8 +354,9 @@ export default class Team extends Component {
                           {this.renderMember(
                             "src/shared/img/team/arunanshu.jpg",
                             "8696913951",
-                            "google.com",
-                            "google.com",
+                            "https://www.instagram.com/arudeep.25/",
+                            "https://www.facebook.com/profile.php?id=100017390686711",
+                            
                             "google.com"
                           )}
                         </div>
@@ -363,8 +375,9 @@ export default class Team extends Component {
                           {this.renderMember(
                             "src/shared/img/team/prasanna.jpg",
                             "9834017568",
-                            "google.com",
-                            "google.com",
+                            "",
+                            "https://www.facebook.com/prasuv1748",
+                            
                             "google.com"
                           )}
                         </div>
@@ -383,10 +396,11 @@ export default class Team extends Component {
                       <div className="col-md-4 triplecont-1">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/varun.jpg",
+                            "src/shared/img/team/suraj.jpg",
                             " 7763898654",
-                            "google.com",
-                            "google.com",
+                            "https://www.instagram.com/spdstunter/",
+                            "https://www.facebook.com/profile.php?id=100004962662779",
+                            
                             "google.com"
                           )}
                         </div>
@@ -395,6 +409,7 @@ export default class Team extends Component {
                           Suraj Prakash
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
+                            
                           PUBLICITY SECRETORY
                           </h5>
                           <br></br>
@@ -405,8 +420,9 @@ export default class Team extends Component {
                           {this.renderMember(
                             "src/shared/img/team/pritesh.jpg",
                             "7610091747",
-                            "google.com",
-                            "google.com",
+                            "https://www.instagram.com/pritesh.kumawat99/",
+                            "https://www.facebook.com/profile.php?id=100008316942264",
+                            
                             "google.com"
                           )}
                         </div>
@@ -415,6 +431,7 @@ export default class Team extends Component {
                           Pritesh Kumawat
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
+                            
                           DECOR SECRETORY
                           </h5>
                           <br></br>
@@ -423,7 +440,7 @@ export default class Team extends Component {
                       <div className="col-md-4 triplecont-3">
                         <div className="dummycol">
                           {this.renderMember(
-                            "src/shared/img/team/varun.jpg",
+                            "src/shared/img/team/umang.jpg",
                             "8219263140",
                             "https://www.instagram.com/umangbhardwaj9488/",
                             "https://www.facebook.com/profile.php?id=100009514595891",
@@ -447,9 +464,9 @@ export default class Team extends Component {
                           {this.renderMember(
                             "src/shared/img/team/satya.jpg",
                             "8447018360",
-                            "google.com",
-                            "google.com",
-                            "google.com"
+                            "https://www.instagram.com/dhwajsatya/",
+                            "https://www.facebook.com/satya.dhwaj",
+                            "https://www.linkedin.com/in/satya-dhwaj-92081b146/"
                           )}
                         </div>
                         <div className="col-cont ">
@@ -467,9 +484,9 @@ export default class Team extends Component {
                           {this.renderMember(
                             "src/shared/img/team/pranav.jpg",
                             "9560175360",
-                            "google.com",
-                            "google.com",
-                            "google.com"
+                            "https://www.instagram.com/pranavsindura/",
+                            "https://www.facebook.com/ps.jmaster",
+                            "https://www.linkedin.com/in/pranav-sindura-197419184/"
                           )}
                         </div>
                         <div  className="col-cont">
@@ -489,9 +506,9 @@ export default class Team extends Component {
                           {this.renderMember(
                             "src/shared/img/team/keshav.jpg",
                             "8989144914",
-                            "google.com",
-                            "google.com",
-                            "google.com"
+                            "https://www.instagram.com/keshav_sharma_ji/",
+                            "https://www.facebook.com/keshav.sharma.7165331",
+                            "https://www.linkedin.com/in/keshav-sharma-691235192/"
                           )}
                         </div>
                         <div  className="col-cont ">
@@ -509,9 +526,9 @@ export default class Team extends Component {
                           {this.renderMember(
                             "src/shared/img/team/dp.JPG",
                             "9601113188",
-                            "google.com",
-                            "google.com",
-                            "google.com"
+                            "https://www.instagram.com/pdhairya8/",
+                            "https://www.facebook.com/pdhairya1",
+                            "https://www.linkedin.com/in/dhairya-patel-571831184/"
                           )}
                         </div>
                         <div className="col-cont">

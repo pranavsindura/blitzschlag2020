@@ -4,7 +4,7 @@ import "./Society.css";
 import { Row, Col, Carousel } from "react-bootstrap";
 import ReactFullpage from "@fullpage/react-fullpage";
 import { Link } from "react-router-dom";
-
+import { Button } from "reactstrap";
 import Splash from "./Splash";
 export default class Society extends Component {
   state = {};
@@ -28,6 +28,24 @@ export default class Society extends Component {
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
+                <div className="text-pc">
+                  <br></br>
+                  Programming online is not different from programming on your
+                  system, except a few points. We’ll be learning that here.
+                  Happy coding :) Let's start with a basic program to get you
+                  onboarded on HackerEarth. Write a program to print your name
+                  as output. Instructions: We have already written the correct
+                  code for this problem in the code editor.
+                </div>
+                <div className="link-pc-to-cat">
+                  <Link to="/events/literary">
+                    <Button
+                      style={{ backgroundColor: "#f1e5d6", color: "#e57853" }}
+                    >
+                      EXPLORE
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -45,6 +63,24 @@ export default class Society extends Component {
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
+                <div className="text-pc">
+                  <br></br>
+                  Programming online is not different from programming on your
+                  system, except a few points. We’ll be learning that here.
+                  Happy coding :) Let's start with a basic program to get you
+                  onboarded on HackerEarth. Write a program to print your name
+                  as output. Instructions: We have already written the correct
+                  code for this problem in the code editor.
+                </div>
+                <div className="link-pc-to-cat">
+                  <Link to="/events/mds">
+                    <Button
+                      style={{ backgroundColor: "#f1e5d6", color: "#637952" }}
+                    >
+                      EXPLORE
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -59,6 +95,24 @@ export default class Society extends Component {
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
+                <div className="text-pc">
+                  <br></br>
+                  Programming online is not different from programming on your
+                  system, except a few points. We’ll be learning that here.
+                  Happy coding :) Let's start with a basic program to get you
+                  onboarded on HackerEarth. Write a program to print your name
+                  as output. Instructions: We have already written the correct
+                  code for this problem in the code editor.
+                </div>
+                <div className="link-pc-to-cat">
+                  <Link to="/events/flagship">
+                    <Button
+                      style={{ backgroundColor: "#f1e5d6", color: "#207f5f" }}
+                    >
+                      EXPLORE
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -74,6 +128,24 @@ export default class Society extends Component {
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
+                <div className="text-pc">
+                  <br></br>
+                  Programming online is not different from programming on your
+                  system, except a few points. We’ll be learning that here.
+                  Happy coding :) Let's start with a basic program to get you
+                  onboarded on HackerEarth. Write a program to print your name
+                  as output. Instructions: We have already written the correct
+                  code for this problem in the code editor.
+                </div>
+                <div className="link-pc-to-cat">
+                  <Link to="/events/flagship">
+                    <Button
+                      style={{ backgroundColor: "#f1e5d6", color: "#026286" }}
+                    >
+                      EXPLORE
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -89,6 +161,24 @@ export default class Society extends Component {
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
+                <div className="text-pc">
+                  <br></br>
+                  Programming online is not different from programming on your
+                  system, except a few points. We’ll be learning that here.
+                  Happy coding :) Let's start with a basic program to get you
+                  onboarded on HackerEarth. Write a program to print your name
+                  as output. Instructions: We have already written the correct
+                  code for this problem in the code editor.
+                </div>
+                <div className="link-pc-to-cat">
+                  <Link to="/events/flagship">
+                    <Button
+                      style={{ backgroundColor: "#f1e5d6", color: "#fe6e81" }}
+                    >
+                      EXPLORE
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -104,6 +194,24 @@ export default class Society extends Component {
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
+                <div className="text-pc">
+                  <br></br>
+                  Programming online is not different from programming on your
+                  system, except a few points. We’ll be learning that here.
+                  Happy coding :) Let's start with a basic program to get you
+                  onboarded on HackerEarth. Write a program to print your name
+                  as output. Instructions: We have already written the correct
+                  code for this problem in the code editor.
+                </div>
+                <div className="link-pc-to-cat">
+                  <Link to="/events/finearts">
+                    <Button
+                      style={{ backgroundColor: "#f1e5d6", color: "#f68827" }}
+                    >
+                      EXPLORE
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -120,6 +228,24 @@ export default class Society extends Component {
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
+                <div className="text-pc">
+                  <br></br>
+                  Programming online is not different from programming on your
+                  system, except a few points. We’ll be learning that here.
+                  Happy coding :) Let's start with a basic program to get you
+                  onboarded on HackerEarth. Write a program to print your name
+                  as output. Instructions: We have already written the correct
+                  code for this problem in the code editor.
+                </div>
+                <div className="link-pc-to-cat">
+                  <Link to="/events/fnp">
+                    <Button
+                      style={{ backgroundColor: "#f1e5d6", color: "#3a7472" }}
+                    >
+                      EXPLORE
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -136,6 +262,24 @@ export default class Society extends Component {
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
+                <div className="text-pc">
+                  <br></br>
+                  Programming online is not different from programming on your
+                  system, except a few points. We’ll be learning that here.
+                  Happy coding :) Let's start with a basic program to get you
+                  onboarded on HackerEarth. Write a program to print your name
+                  as output. Instructions: We have already written the correct
+                  code for this problem in the code editor.
+                </div>
+                <div className="link-pc-to-cat">
+                  <Link to="/events/flagship">
+                    <Button
+                      style={{ backgroundColor: "#f1e5d6", color: "#f74b53" }}
+                    >
+                      EXPLORE
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -152,6 +296,24 @@ export default class Society extends Component {
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
+                <div className="text-pc">
+                  <br></br>
+                  Programming online is not different from programming on your
+                  system, except a few points. We’ll be learning that here.
+                  Happy coding :) Let's start with a basic program to get you
+                  onboarded on HackerEarth. Write a program to print your name
+                  as output. Instructions: We have already written the correct
+                  code for this problem in the code editor.
+                </div>
+                <div className="link-pc-to-cat">
+                  <Link to="/events/flagship">
+                    <Button
+                      style={{ backgroundColor: "#f1e5d6", color: "#eb5a83" }}
+                    >
+                      EXPLORE
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -164,10 +326,28 @@ export default class Society extends Component {
               </div>
               <div className="main-cont-event">
                 <img
-                  src="src/shared/img/fnarts.png"
+                  src="src/shared/img/vss.png"
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
+                <div className="text-pc">
+                  <br></br>
+                  Programming online is not different from programming on your
+                  system, except a few points. We’ll be learning that here.
+                  Happy coding :) Let's start with a basic program to get you
+                  onboarded on HackerEarth. Write a program to print your name
+                  as output. Instructions: We have already written the correct
+                  code for this problem in the code editor.
+                </div>
+                <div className="link-pc-to-cat">
+                  <Link to="/events/flagship">
+                    <Button
+                      style={{ backgroundColor: "#f1e5d6", color: "#a3286b" }}
+                    >
+                      EXPLORE
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -184,6 +364,24 @@ export default class Society extends Component {
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
+                <div className="text-pc">
+                  <br></br>
+                  Programming online is not different from programming on your
+                  system, except a few points. We’ll be learning that here.
+                  Happy coding :) Let's start with a basic program to get you
+                  onboarded on HackerEarth. Write a program to print your name
+                  as output. Instructions: We have already written the correct
+                  code for this problem in the code editor.
+                </div>
+                <div className="link-pc-to-cat">
+                  <Link to="/events/flagship">
+                    <Button
+                      style={{ backgroundColor: "#f1e5d6", color: "#a43a4d" }}
+                    >
+                      EXPLORE
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -198,13 +396,12 @@ export default class Society extends Component {
             // viewBox="0 0 380.000000 2465.000000"
             className="svg-mob"
           >
-            
             <g
               transform="translate(0.000000,2400.000000) scale(0.1,-0.125)"
               fill="#ef833d"
               stroke="white"
             >
-              <path 
+              <path
                 d="M3210 19774 c-437 -18 -824 -33 -859 -33 -35 -1 -61 -4 -58 -8 4 -4
 40 -15 80 -25 39 -10 115 -39 167 -64 77 -39 109 -62 175 -128 66 -66 90 -99
 127 -176 59 -120 81 -203 80 -305 -4 -264 -170 -487 -447 -599 -33 -13 -373
@@ -236,7 +433,7 @@ export default class Society extends Component {
           <div className="head-mob-eve">EVENTS</div>
           <div className="cat1-mob">
             <img
-            className="eve-img-mob"
+              className="eve-img-mob"
               src="src/shared/img/literary.png"
               style={{
                 position: "absolute",
@@ -258,7 +455,9 @@ export default class Society extends Component {
                 marginTop: "25px"
               }}
             >
-              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Literary</p>
+              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+                Literary
+              </p>
               Some words describing the given society. aur jankaari ke liye
               neeche gaye button par click kare. neeche koi button hi nahi hai.
               oh I am so smart. Button chodo hum pooore div to hi link kar
@@ -277,7 +476,9 @@ export default class Society extends Component {
                 marginRight: "52vw"
               }}
             >
-              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Music, Dance & Spic Macay</p>
+              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+                Music, Dance & Spic Macay
+              </p>
               Some words describing the given society. aur jankaari ke liye
               neeche gaye button par click kare. neeche koi button hi nahi hai.
               oh I am so smart. Button chodo hum pooore div to hi link kar
@@ -298,7 +499,7 @@ export default class Society extends Component {
           </div>
           <div className="cat3-mob">
             <img
-            className="eve-img-mob"
+              className="eve-img-mob"
               src="src/shared/img/edcell.png"
               style={{
                 position: "absolute",
@@ -319,7 +520,10 @@ export default class Society extends Component {
                 marginRight: "5vw",
                 marginTop: "25px"
               }}
-            ><p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>ED Cell</p>
+            >
+              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+                ED Cell
+              </p>
               Some words describing the given society. aur jankaari ke liye
               neeche gaye button par click kare. neeche koi button hi nahi hai.
               oh I am so smart. Button chodo hum pooore div to hi link kar
@@ -338,7 +542,9 @@ export default class Society extends Component {
                 marginRight: "52vw"
               }}
             >
-              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Maverics</p>
+              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+                Maverics
+              </p>
               Some words describing the given society. aur jankaari ke liye
               neeche gaye button par click kare. neeche koi button hi nahi hai.
               oh I am so smart. Button chodo hum pooore div to hi link kar
@@ -381,7 +587,9 @@ export default class Society extends Component {
                 marginTop: "25px"
               }}
             >
-              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Dramatics</p>
+              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+                Dramatics
+              </p>
               Some words describing the given society. aur jankaari ke liye
               neeche gaye button par click kare. neeche koi button hi nahi hai.
               oh I am so smart. Button chodo hum pooore div to hi link kar
@@ -400,7 +608,9 @@ export default class Society extends Component {
                 marginRight: "52vw"
               }}
             >
-              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Fine Arts</p>
+              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+                Fine Arts
+              </p>
               Some words describing the given society. aur jankaari ke liye
               neeche gaye button par click kare. neeche koi button hi nahi hai.
               oh I am so smart. Button chodo hum pooore div to hi link kar
@@ -421,7 +631,7 @@ export default class Society extends Component {
           </div>
           <div className="cat7-mob">
             <img
-            className="eve-img-mob"
+              className="eve-img-mob"
               src="src/shared/img/fnp.png"
               style={{
                 position: "absolute",
@@ -443,7 +653,9 @@ export default class Society extends Component {
                 marginTop: "25px"
               }}
             >
-              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Film & Photography</p>
+              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+                Film & Photography
+              </p>
               Some words describing the given society. aur jankaari ke liye
               neeche gaye button par click kare. neeche koi button hi nahi hai.
               oh I am so smart. Button chodo hum pooore div to hi link kar
@@ -462,7 +674,9 @@ export default class Society extends Component {
                 marginRight: "52vw"
               }}
             >
-              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Society Events</p>
+              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+                Society Events
+              </p>
               Some words describing the given society. aur jankaari ke liye
               neeche gaye button par click kare. neeche koi button hi nahi hai.
               oh I am so smart. Button chodo hum pooore div to hi link kar
@@ -505,7 +719,9 @@ export default class Society extends Component {
                 marginTop: "25px"
               }}
             >
-              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Flagship Events</p>
+              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+                Flagship Events
+              </p>
               Some words describing the given society. aur jankaari ke liye
               neeche gaye button par click kare. neeche koi button hi nahi hai.
               oh I am so smart. Button chodo hum pooore div to hi link kar
@@ -524,15 +740,17 @@ export default class Society extends Component {
                 marginRight: "52vw"
               }}
             >
-              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Vyaktitva Srijan</p>
+              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+                Vyaktitva Srijan
+              </p>
               Some words describing the given society. aur jankaari ke liye
               neeche gaye button par click kare. neeche koi button hi nahi hai.
               oh I am so smart. Button chodo hum pooore div to hi link kar
               denge. yes good idea.
             </div>
             <img
-            className="eve-img-mob"
-              src="src/shared/img/mds.png"
+              className="eve-img-mob"
+              src="src/shared/img/vss.png"
               style={{
                 position: "absolute",
                 heigth: "auto",
@@ -545,7 +763,7 @@ export default class Society extends Component {
           </div>
           <div className="cat11-mob">
             <img
-            className="eve-img-mob"
+              className="eve-img-mob"
               src="src/shared/img/mds.png"
               style={{
                 position: "absolute",
@@ -567,7 +785,9 @@ export default class Society extends Component {
                 marginTop: "25px"
               }}
             >
-              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Informal Events</p>
+              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+                Informal Events
+              </p>
               Some words describing the given society. aur jankaari ke liye
               neeche gaye button par click kare. neeche koi button hi nahi hai.
               oh I am so smart. Button chodo hum pooore div to hi link kar

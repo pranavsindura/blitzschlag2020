@@ -4,6 +4,16 @@
     min-height: 100vh;
 }
 
+.text-pc {
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+.link-pc-to-cat {
+    text-align: center;
+    margin-top: 10vh;
+}
+
 .head-eve {
     background-color: #f1e5d6;
     width: 100%;
@@ -198,67 +208,67 @@
 .cat1:hover {
     left: 0%;
     background-color: #e57853;
-    color: black;
+    color: white;
 }
 
 .cat2:hover {
     left: 7%;
     background-color: #637952;
-    color: black;
+    color: white;
 }
 
 .cat3:hover {
     left: 14%;
     background-color: #207f5f;
-    color: black;
+    color: white;
 }
 
 .cat4:hover {
     left: 21%;
     background-color: #026286;
-    color: black;
+    color: white;
 }
 
 .cat5:hover {
     left: 28%;
     background-color: #fe6e81;
-    color: black;
+    color: white;
 }
 
 .cat6:hover {
     left: 35%;
     background-color: #f68827;
-    color: black;
+    color: white;
 }
 
 .cat7:hover {
     left: 42%;
     background-color: #3a7472;
-    color: black;
+    color: white;
 }
 
 .cat8:hover {
     left: 49%;
     background-color: #f74b53;
-    color: black;
+    color: white;
 }
 
 .cat9:hover {
     left: 56%;
     background-color: #eb5a83;
-    color: black;
+    color: white;
 }
 
 .cat10:hover {
     left: 63%;
     background-color: #a3286b;
-    color: black;
+    color: white;
 }
 
 .cat11:hover {
     left: 70%;
     background-color: #a43a4d;
-    color: black;
+    color: white;
 }
 
 .child-1-head {
