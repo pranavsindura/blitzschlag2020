@@ -454,18 +454,41 @@ export default class Society extends Component {
                 width: "40vw",
                 marginLeft: "52vw",
                 marginRight: "5vw",
-                marginTop: "25px"
+                marginTop: "25px",
+                zIndex: "1"
               }}
             >
-              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+              <p
+                style={{
+                  margin: "0px",
+                  fontSize: "   1.2em",
+                  fontWeight: "bold"
+                }}
+              >
                 Literary
               </p>
-              Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare. neeche koi button hi nahi hai.
-              oh I am so smart. Button chodo hum pooore div to hi link kar
-              denge. yes good idea.
-              <br></br>
+              For the breadth of knowledge literature gives, the moral values it
+              carries, and the enjoyment it provides, it is an essential element
+              for every budding student. To provide exposure to good literary
+              works, the Literary society of MNIT provides an ideal platform to
+              every aspiring writer of the institute to ameliorate their writing
+              prowess and enhance their dexterity.
             </div>
+            <Link to="/events/litetary">
+              <Button
+                style={{
+                  backgroundColor: "#e13663",
+                  marginLeft: "32vw",
+                  marginTop: "180px",
+                  color: "white",
+                  padding: "2px",
+                  fontSize: "0.6em",
+                  zIndex: "10"
+                }}
+              >
+                EXPLORE
+              </Button>
+            </Link>
           </div>
           <div className="cat2-mob">
             <div
@@ -476,17 +499,41 @@ export default class Society extends Component {
                 width: "40vw",
                 marginLeft: "5vw",
                 marginTop: "25px",
-                marginRight: "52vw"
+                marginRight: "52vw",
+                zIndex: "1"
               }}
             >
-              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+              <p
+                style={{
+                  margin: "0px",
+                  fontSize: "   1.2em",
+                  fontWeight: "bold"
+                }}
+              >
                 Music, Dance & Spic Macay
               </p>
-              Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare. neeche koi button hi nahi hai.
-              oh I am so smart. Button chodo hum pooore div to hi link kar
-              denge. yes good idea.
+              Music and dance hold the power to transport their practitioners
+              and audience to a state of bliss akin to Union with God. The MDS
+              Society serves as a common terminus for all the music and dance
+              lovers to enhance their proficiency by organizing efficient
+              workshops and a myriad of events regularly, helping them learn the
+              artforms of their choice.
             </div>
+            <Link to="/events/mds">
+              <Button
+                style={{
+                  backgroundColor: "#ef833d",
+                  marginLeft: "53vw",
+                  marginTop: "175px",
+                  color: "white",
+                  padding: "2px",
+                  fontSize: "0.6em",
+                  zIndex: "10"
+                }}
+              >
+                EXPLORE
+              </Button>
+            </Link>
             <img
               onLoad={() => {
                 fullpageApi.reBuild();
@@ -531,14 +578,37 @@ export default class Society extends Component {
                 marginTop: "25px"
               }}
             >
-              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+              <p
+                style={{
+                  margin: "0px",
+                  fontSize: "   1.2em",
+                  fontWeight: "bold"
+                }}
+              >
                 ED Cell
               </p>
-              Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare. neeche koi button hi nahi hai.
-              oh I am so smart. Button chodo hum pooore div to hi link kar
-              denge. yes good idea.
+              The Entrepreneurship Development cell or ED-cell , aims to
+              re-kindle the thoughts and learnings of the corporate world among
+              students who have devoted their minds to technical education. Its
+              objectives include creating an atmosphere to promote innovative
+              thinking and getting the college aquainted with the situations
+              faced by minds in the real business world.
             </div>
+            <Link to="/events/edcell">
+              <Button
+                style={{
+                  backgroundColor: "#e13663",
+                  marginLeft: "32vw",
+                  marginTop: "180px",
+                  color: "white",
+                  padding: "2px",
+                  fontSize: "0.6em",
+                  zIndex: "10"
+                }}
+              >
+                EXPLORE
+              </Button>
+            </Link>
           </div>
           <div className="cat4-mob">
             <div
@@ -552,7 +622,13 @@ export default class Society extends Component {
                 marginRight: "52vw"
               }}
             >
-              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+              <p
+                style={{
+                  margin: "0px",
+                  fontSize: "   1.2em",
+                  fontWeight: "bold"
+                }}
+              >
                 Maverics
               </p>
               An unorthodox or independent minded person,this isn't just another
@@ -562,6 +638,21 @@ export default class Society extends Component {
               change and provides an ideal platform for the same, using mass and
               media for communication and further publicity.
             </div>
+            <Link to="/events/maverics">
+              <Button
+                style={{
+                  backgroundColor: "#ef833d",
+                  marginLeft: "53vw",
+                  marginTop: "175px",
+                  color: "white",
+                  padding: "2px",
+                  fontSize: "0.6em",
+                  zIndex: "10"
+                }}
+              >
+                EXPLORE
+              </Button>
+            </Link>
             <img
               onLoad={() => {
                 fullpageApi.reBuild();
@@ -605,14 +696,38 @@ export default class Society extends Component {
                 marginTop: "25px"
               }}
             >
-              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+              <p
+                style={{
+                  margin: "0px",
+                  fontSize: "   1.2em",
+                  fontWeight: "bold"
+                }}
+              >
                 Dramatics
               </p>
-              Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare. neeche koi button hi nahi hai.
-              oh I am so smart. Button chodo hum pooore div to hi link kar
-              denge. yes good idea.
+              Drama Is Life is the official drama group of MNIT.Drama is
+              an important tool for preparing students to live and work in a
+              world that is increasingly team-oriented rather than
+              hierarchical.It provides a platform to interested artists and
+              helps them to work on their theatrical prowess. The students get a
+              chance to refine their acting skills to a professional level and
+              embrace leadership qualities.
             </div>
+            <Link to="/events/dramatics">
+              <Button
+                style={{
+                  backgroundColor: "#e13663",
+                  marginLeft: "32vw",
+                  marginTop: "180px",
+                  color: "white",
+                  padding: "2px",
+                  fontSize: "0.6em",
+                  zIndex: "10"
+                }}
+              >
+                EXPLORE
+              </Button>
+            </Link>
           </div>
           <div className="cat6-mob">
             <div
@@ -626,14 +741,38 @@ export default class Society extends Component {
                 marginRight: "52vw"
               }}
             >
-              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+              <p
+                style={{
+                  margin: "0px",
+                  fontSize: "   1.2em",
+                  fontWeight: "bold"
+                }}
+              >
                 Fine Arts
               </p>
-              Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare. neeche koi button hi nahi hai.
-              oh I am so smart. Button chodo hum pooore div to hi link kar
-              denge. yes good idea.
+              Art is not what you see, but what you make others see. Fine arts
+              provides learners with a number of non-academic benefits such as
+              improved emotional expression, social harmony and cultural
+              exposure. The Fine Arts Society allows students to procure
+              innovative skills through a plethora of events in creative arts
+              and designing , to put them into use during the organization of
+              various college events.
             </div>
+            <Link to="/events/finearts">
+              <Button
+                style={{
+                  backgroundColor: "#ef833d",
+                  marginLeft: "53vw",
+                  marginTop: "175px",
+                  color: "white",
+                  padding: "2px",
+                  fontSize: "0.6em",
+                  zIndex: "10"
+                }}
+              >
+                EXPLORE
+              </Button>
+            </Link>
             <img
               onLoad={() => {
                 fullpageApi.reBuild();
@@ -677,14 +816,37 @@ export default class Society extends Component {
                 marginTop: "25px"
               }}
             >
-              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+              <p
+                style={{
+                  margin: "0px",
+                  fontSize: "   1.2em",
+                  fontWeight: "bold"
+                }}
+              >
                 Film & Photography
               </p>
-              Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare. neeche koi button hi nahi hai.
-              oh I am so smart. Button chodo hum pooore div to hi link kar
-              denge. yes good idea.
+              The Film and Photography Club has been nourishing keen
+              photographers and film makers for years, cultivating technical
+              aspects of photography and film making. Organizing state of the
+              art workshops and competitions regularly are the prime reasons
+              behind the development of passionate photographers and film
+              makers.
             </div>
+            <Link to="/events/fnp">
+              <Button
+                style={{
+                  backgroundColor: "#e13663",
+                  marginLeft: "32vw",
+                  marginTop: "180px",
+                  color: "white",
+                  padding: "2px",
+                  fontSize: "0.6em",
+                  zIndex: "10"
+                }}
+              >
+                EXPLORE
+              </Button>
+            </Link>
           </div>
           <div className="cat8-mob">
             <div
@@ -698,14 +860,35 @@ export default class Society extends Component {
                 marginRight: "52vw"
               }}
             >
-              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
-                Society Events
+              <p
+                style={{
+                  margin: "0px",
+                  fontSize: "   1.2em",
+                  fontWeight: "bold"
+                }}
+              >
+                Informal Events
               </p>
               Some words describing the given society. aur jankaari ke liye
               neeche gaye button par click kare. neeche koi button hi nahi hai.
               oh I am so smart. Button chodo hum pooore div to hi link kar
               denge. yes good idea.
             </div>
+            <Link to="/events/informalevents">
+              <Button
+                style={{
+                  backgroundColor: "#ef833d",
+                  marginLeft: "53vw",
+                  marginTop: "175px",
+                  color: "white",
+                  padding: "2px",
+                  fontSize: "0.6em",
+                  zIndex: "10"
+                }}
+              >
+                EXPLORE
+              </Button>
+            </Link>
             <img
               onLoad={() => {
                 fullpageApi.reBuild();
@@ -749,7 +932,13 @@ export default class Society extends Component {
                 marginTop: "25px"
               }}
             >
-              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+              <p
+                style={{
+                  margin: "0px",
+                  fontSize: "   1.2em",
+                  fontWeight: "bold"
+                }}
+              >
                 Flagship Events
               </p>
               Some words describing the given society. aur jankaari ke liye
@@ -757,6 +946,21 @@ export default class Society extends Component {
               oh I am so smart. Button chodo hum pooore div to hi link kar
               denge. yes good idea.
             </div>
+            <Link to="/events/flagship">
+              <Button
+                style={{
+                  backgroundColor: "#e13663",
+                  marginLeft: "32vw",
+                  marginTop: "180px",
+                  color: "white",
+                  padding: "2px",
+                  fontSize: "0.6em",
+                  zIndex: "10"
+                }}
+              >
+                EXPLORE
+              </Button>
+            </Link>
           </div>
           <div className="cat10-mob">
             <div
@@ -770,14 +974,37 @@ export default class Society extends Component {
                 marginRight: "52vw"
               }}
             >
-              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
+              <p
+                style={{
+                  margin: "0px",
+                  fontSize: "   1.2em",
+                  fontWeight: "bold"
+                }}
+              >
                 Vyaktitva Srijan
               </p>
-              Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare. neeche koi button hi nahi hai.
-              oh I am so smart. Button chodo hum pooore div to hi link kar
-              denge. yes good idea.
+              Vyaktitva Srijan Society MNIT is an esteemed society established
+              mainly for the development of one's personality and helps an
+              individual to grow socially and aesthetically. Every year, this
+              society actively participates in social service events such as
+              teaching underprivileged children,donating clothes to the needy
+              etc.
             </div>
+            <Link to="/events/vss">
+              <Button
+                style={{
+                  backgroundColor: "#ef833d",
+                  marginLeft: "53vw",
+                  marginTop: "175px",
+                  color: "white",
+                  padding: "2px",
+                  fontSize: "0.6em",
+                  zIndex: "10"
+                }}
+              >
+                EXPLORE
+              </Button>
+            </Link>
             <img
               onLoad={() => {
                 fullpageApi.reBuild();
@@ -821,14 +1048,35 @@ export default class Society extends Component {
                 marginTop: "25px"
               }}
             >
-              <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
-                Informal Events
+              <p
+                style={{
+                  margin: "0px",
+                  fontSize: "   1.2em",
+                  fontWeight: "bold"
+                }}
+              >
+                Carnival
               </p>
               Some words describing the given society. aur jankaari ke liye
               neeche gaye button par click kare. neeche koi button hi nahi hai.
               oh I am so smart. Button chodo hum pooore div to hi link kar
               denge. yes good idea.
             </div>
+            <Link to="/events/carnival">
+              <Button
+                style={{
+                  backgroundColor: "#e13663",
+                  marginLeft: "32vw",
+                  marginTop: "180px",
+                  color: "white",
+                  padding: "2px",
+                  fontSize: "0.6em",
+                  zIndex: "10"
+                }}
+              >
+                EXPLORE
+              </Button>
+            </Link>
           </div>
         </div>
       );
