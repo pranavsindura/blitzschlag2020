@@ -74,6 +74,84 @@ const eventData = {
 				accent: ['#ff003c', '#4b403b', '#ff8f00']
 			}
 		]
+	},
+	edcell : {
+		carImages: [
+			'https://i.ibb.co/MMWv7nc/Whats-App-Image-2020-01-12-at-21-45-14.jpg'
+		],
+		content: [
+			{
+				heading: 'Concevoir',
+				desc: `Edith Head, a renowned fashion designer, once said, "You can have anything you want in life if you dress for it." On that note, Blitzschlag 2020 brings you Panache, a fashion fiesta full of everything from old classics to the latest fads. So, if you're influenced by exemplars, or a trend-setter, this is your chance to take it to the next level. Do you have enough glam to light the ramp on fire?`,
+				details: [`Venue: VLTC-407`, `Time: 1300 HRS`, `Date: 06/02/2020`, `Prizes worth: 500,000/-`],
+				accent: ['#ff003c', '#4b403b', '#ff8f00']
+			}
+		]
+	},
+	dramatics : {
+		carImages: [
+			'https://i.ibb.co/MMWv7nc/Whats-App-Image-2020-01-12-at-21-45-14.jpg'
+		],
+		content: [
+			{
+				heading: 'Concevoir',
+				desc: `Edith Head, a renowned fashion designer, once said, "You can have anything you want in life if you dress for it." On that note, Blitzschlag 2020 brings you Panache, a fashion fiesta full of everything from old classics to the latest fads. So, if you're influenced by exemplars, or a trend-setter, this is your chance to take it to the next level. Do you have enough glam to light the ramp on fire?`,
+				details: [`Venue: VLTC-407`, `Time: 1300 HRS`, `Date: 06/02/2020`, `Prizes worth: 500,000/-`],
+				accent: ['#ff003c', '#4b403b', '#ff8f00']
+			}
+		]
+	},
+	informalevents : {
+		carImages: [
+			'https://i.ibb.co/MMWv7nc/Whats-App-Image-2020-01-12-at-21-45-14.jpg'
+		],
+		content: [
+			{
+				heading: 'Concevoir',
+				desc: `Edith Head, a renowned fashion designer, once said, "You can have anything you want in life if you dress for it." On that note, Blitzschlag 2020 brings you Panache, a fashion fiesta full of everything from old classics to the latest fads. So, if you're influenced by exemplars, or a trend-setter, this is your chance to take it to the next level. Do you have enough glam to light the ramp on fire?`,
+				details: [`Venue: VLTC-407`, `Time: 1300 HRS`, `Date: 06/02/2020`, `Prizes worth: 500,000/-`],
+				accent: ['#ff003c', '#4b403b', '#ff8f00']
+			}
+		]
+	},
+	vss : {
+		carImages: [
+			'https://i.ibb.co/MMWv7nc/Whats-App-Image-2020-01-12-at-21-45-14.jpg'
+		],
+		content: [
+			{
+				heading: 'Concevoir',
+				desc: `Edith Head, a renowned fashion designer, once said, "You can have anything you want in life if you dress for it." On that note, Blitzschlag 2020 brings you Panache, a fashion fiesta full of everything from old classics to the latest fads. So, if you're influenced by exemplars, or a trend-setter, this is your chance to take it to the next level. Do you have enough glam to light the ramp on fire?`,
+				details: [`Venue: VLTC-407`, `Time: 1300 HRS`, `Date: 06/02/2020`, `Prizes worth: 500,000/-`],
+				accent: ['#ff003c', '#4b403b', '#ff8f00']
+			}
+		]
+	},
+	carnival : {
+		carImages: [
+			'https://i.ibb.co/MMWv7nc/Whats-App-Image-2020-01-12-at-21-45-14.jpg'
+		],
+		content: [
+			{
+				heading: 'Concevoir',
+				desc: `Edith Head, a renowned fashion designer, once said, "You can have anything you want in life if you dress for it." On that note, Blitzschlag 2020 brings you Panache, a fashion fiesta full of everything from old classics to the latest fads. So, if you're influenced by exemplars, or a trend-setter, this is your chance to take it to the next level. Do you have enough glam to light the ramp on fire?`,
+				details: [`Venue: VLTC-407`, `Time: 1300 HRS`, `Date: 06/02/2020`, `Prizes worth: 500,000/-`],
+				accent: ['#ff003c', '#4b403b', '#ff8f00']
+			}
+		]
+	},
+	mavericks : {
+		carImages: [
+			'https://i.ibb.co/MMWv7nc/Whats-App-Image-2020-01-12-at-21-45-14.jpg'
+		],
+		content: [
+			{
+				heading: 'Concevoir',
+				desc: `Edith Head, a renowned fashion designer, once said, "You can have anything you want in life if you dress for it." On that note, Blitzschlag 2020 brings you Panache, a fashion fiesta full of everything from old classics to the latest fads. So, if you're influenced by exemplars, or a trend-setter, this is your chance to take it to the next level. Do you have enough glam to light the ramp on fire?`,
+				details: [`Venue: VLTC-407`, `Time: 1300 HRS`, `Date: 06/02/2020`, `Prizes worth: 500,000/-`],
+				accent: ['#ff003c', '#4b403b', '#ff8f00']
+			}
+		]
 	}
 };
 

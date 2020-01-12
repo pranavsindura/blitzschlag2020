@@ -9,7 +9,7 @@ import Splash from "./Splash";
 export default class Society extends Component {
   state = {};
   images = ["src/shared/img/car1.jpg"];
-  renderEventSoc() {
+  renderEventSoc(fullpageApi) {
     if (window.innerWidth > 760) {
       return (
         <div className="eve-cat-cont">
@@ -105,7 +105,7 @@ export default class Society extends Component {
                   code for this problem in the code editor.
                 </div>
                 <div className="link-pc-to-cat">
-                  <Link to="/events/flagship">
+                  <Link to="/events/edcell">
                     <Button
                       style={{ backgroundColor: "#f1e5d6", color: "#207f5f" }}
                     >
@@ -138,7 +138,7 @@ export default class Society extends Component {
                   code for this problem in the code editor.
                 </div>
                 <div className="link-pc-to-cat">
-                  <Link to="/events/flagship">
+                  <Link to="/events/mavericks">
                     <Button
                       style={{ backgroundColor: "#f1e5d6", color: "#026286" }}
                     >
@@ -171,7 +171,7 @@ export default class Society extends Component {
                   code for this problem in the code editor.
                 </div>
                 <div className="link-pc-to-cat">
-                  <Link to="/events/flagship">
+                  <Link to="/events/dramatics">
                     <Button
                       style={{ backgroundColor: "#f1e5d6", color: "#fe6e81" }}
                     >
@@ -252,9 +252,9 @@ export default class Society extends Component {
           <div className="cat8">
             <div className="cat8-child">
               <div className="child-1-head">
-                S<br></br>O<br></br>C<br></br>I<br></br>E<br></br>T<br></br>Y
-                <br></br> <br></br>E<br></br>V<br></br>E<br></br>N<br></br>T
-                <br></br>S
+                I<br></br>N<br></br>F<br></br>O<br></br>R<br></br>M<br></br>A
+                <br></br>L<br></br> <br></br>E<br></br>V<br></br>E<br></br>N
+                <br></br>T<br></br>S
               </div>
               <div className="main-cont-event">
                 <img
@@ -272,7 +272,7 @@ export default class Society extends Component {
                   code for this problem in the code editor.
                 </div>
                 <div className="link-pc-to-cat">
-                  <Link to="/events/flagship">
+                  <Link to="/events/informalevents">
                     <Button
                       style={{ backgroundColor: "#f1e5d6", color: "#f74b53" }}
                     >
@@ -340,7 +340,7 @@ export default class Society extends Component {
                   code for this problem in the code editor.
                 </div>
                 <div className="link-pc-to-cat">
-                  <Link to="/events/flagship">
+                  <Link to="/events/vss">
                     <Button
                       style={{ backgroundColor: "#f1e5d6", color: "#a3286b" }}
                     >
@@ -354,9 +354,8 @@ export default class Society extends Component {
           <div className="cat11">
             <div className="cat11-child">
               <div className="child-1-head">
-                I<br></br>N<br></br>F<br></br>O<br></br>R<br></br>M<br></br>A
-                <br></br>L<br></br> <br></br>E<br></br>V<br></br>E<br></br>N
-                <br></br>T<br></br>S
+                C<br></br>A<br></br>R<br></br>N<br></br>I<br></br>V<br></br>A
+                <br></br>L<br></br>
               </div>
               <div className="main-cont-event">
                 <img
@@ -374,7 +373,7 @@ export default class Society extends Component {
                   code for this problem in the code editor.
                 </div>
                 <div className="link-pc-to-cat">
-                  <Link to="/events/flagship">
+                  <Link to="/events/carnival">
                     <Button
                       style={{ backgroundColor: "#f1e5d6", color: "#a43a4d" }}
                     >
@@ -433,6 +432,9 @@ export default class Society extends Component {
           <div className="head-mob-eve">EVENTS</div>
           <div className="cat1-mob">
             <img
+              onLoad={() => {
+                fullpageApi.reBuild();
+              }}
               className="eve-img-mob"
               src="src/shared/img/literary.png"
               style={{
@@ -462,6 +464,7 @@ export default class Society extends Component {
               neeche gaye button par click kare. neeche koi button hi nahi hai.
               oh I am so smart. Button chodo hum pooore div to hi link kar
               denge. yes good idea.
+              <br></br>
             </div>
           </div>
           <div className="cat2-mob">
@@ -485,6 +488,9 @@ export default class Society extends Component {
               denge. yes good idea.
             </div>
             <img
+              onLoad={() => {
+                fullpageApi.reBuild();
+              }}
               src="src/shared/img/mds.png"
               className="eve-img-mob"
               style={{
@@ -496,9 +502,13 @@ export default class Society extends Component {
               }}
               alt="logo"
             ></img>
+            <br></br>
           </div>
           <div className="cat3-mob">
             <img
+              onLoad={() => {
+                fullpageApi.reBuild();
+              }}
               className="eve-img-mob"
               src="src/shared/img/edcell.png"
               style={{
@@ -545,12 +555,17 @@ export default class Society extends Component {
               <p style={{ margin: "0px", fontSize: "1em", fontWeight: "bold" }}>
                 Maverics
               </p>
-              Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare. neeche koi button hi nahi hai.
-              oh I am so smart. Button chodo hum pooore div to hi link kar
-              denge. yes good idea.
+              An unorthodox or independent minded person,this isn't just another
+              line, this is the meaning of the word maverick, and that's what
+              'The Mavericks' is all about, a club that ardently supports
+              unorthodox approach, that has the the capability to bring about a
+              change and provides an ideal platform for the same, using mass and
+              media for communication and further publicity.
             </div>
             <img
+              onLoad={() => {
+                fullpageApi.reBuild();
+              }}
               src="src/shared/img/maverics.png"
               className="eve-img-mob"
               style={{
@@ -565,6 +580,9 @@ export default class Society extends Component {
           </div>
           <div className="cat5-mob">
             <img
+              onLoad={() => {
+                fullpageApi.reBuild();
+              }}
               src="src/shared/img/dil.png"
               className="eve-img-mob"
               style={{
@@ -617,6 +635,9 @@ export default class Society extends Component {
               denge. yes good idea.
             </div>
             <img
+              onLoad={() => {
+                fullpageApi.reBuild();
+              }}
               src="src/shared/img/fnarts.png"
               className="eve-img-mob"
               style={{
@@ -631,6 +652,9 @@ export default class Society extends Component {
           </div>
           <div className="cat7-mob">
             <img
+              onLoad={() => {
+                fullpageApi.reBuild();
+              }}
               className="eve-img-mob"
               src="src/shared/img/fnp.png"
               style={{
@@ -683,6 +707,9 @@ export default class Society extends Component {
               denge. yes good idea.
             </div>
             <img
+              onLoad={() => {
+                fullpageApi.reBuild();
+              }}
               src="src/shared/img/mds.png"
               className="eve-img-mob"
               style={{
@@ -697,6 +724,9 @@ export default class Society extends Component {
           </div>
           <div className="cat9-mob">
             <img
+              onLoad={() => {
+                fullpageApi.reBuild();
+              }}
               src="src/shared/img/cacs.png"
               className="eve-img-mob"
               style={{
@@ -749,6 +779,9 @@ export default class Society extends Component {
               denge. yes good idea.
             </div>
             <img
+              onLoad={() => {
+                fullpageApi.reBuild();
+              }}
               className="eve-img-mob"
               src="src/shared/img/vss.png"
               style={{
@@ -763,6 +796,9 @@ export default class Society extends Component {
           </div>
           <div className="cat11-mob">
             <img
+              onLoad={() => {
+                fullpageApi.reBuild();
+              }}
               className="eve-img-mob"
               src="src/shared/img/mds.png"
               style={{
@@ -809,7 +845,7 @@ export default class Society extends Component {
             return (
               <ReactFullpage.Wrapper>
                 <div className="section content">
-                  <div>{this.renderEventSoc()}</div>
+                  <div>{this.renderEventSoc(fullpageApi)}</div>
                 </div>
               </ReactFullpage.Wrapper>
             );

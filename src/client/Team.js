@@ -9,7 +9,7 @@ export default class Team extends Component {
   images = [
     "https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg"
   ];
-  renderMember(imgsrc, phone, insta, faceb, linkedin) {
+  renderMember(imgsrc, phone, insta, faceb, linkedin,fullpageApi) {
     return (
       <div className="base">
         <img
@@ -74,7 +74,8 @@ export default class Team extends Component {
                             "9452174085",
                             "https://www.instagram.com/varun1878/",
                             "https://www.facebook.com/profile.php?id=100009155759864",
-                            "google.com"
+                            "google.com",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
@@ -96,7 +97,8 @@ export default class Team extends Component {
                             "7525926870",
                             "https://www.instagram.com/anujsrivastava7/",
                             "https://www.facebook.com/Anujsrivastava.MSD7",
-                            "https://www.linkedin.com/in/anuj-srivastava-b26b92179"
+                            "https://www.linkedin.com/in/anuj-srivastava-b26b92179",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
@@ -119,7 +121,8 @@ export default class Team extends Component {
                             "https://www.instagram.com/divyaman_purbey/",
                             "https://www.facebook.com/divyaman.purbey",
                             
-                            "google.com"
+                            "google.com",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont ">
@@ -140,7 +143,8 @@ export default class Team extends Component {
                             "https://www.instagram.com/nupur02_malik/",
                             "https://www.facebook.com/profile.php?id=100020421310633&fref=search&__tn__=%2Cd%2CP-R&eid=ARCj2ETE5c1Fxy3Eq-NsJ9gInELeLuFm7gxJNDji0Peo9vFM74qcSFdOwlFxLE4pxe4sLUTHjPg0ieeX",
                             
-                            "google.com"
+                            "google.com",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
@@ -163,7 +167,8 @@ export default class Team extends Component {
                             "https://www.instagram.com/anshkhandelwal7/",
                             "https://www.facebook.com/AnshKhandelwal26",
                             
-                            "google.com"
+                            "google.com",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont ">
@@ -186,7 +191,8 @@ export default class Team extends Component {
                             "https://www.instagram.com/singhayush_pratap/",
                             "https://www.facebook.com/ayush.singh.16100",
                             
-                            "google.com"
+                            "google.com",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont ">
@@ -207,7 +213,8 @@ export default class Team extends Component {
                             "https://www.instagram.com/nishant__sharma/",
                             "https://www.facebook.com/1Nishant.Sharma1",
                             
-                            "google.com"
+                            "google.com",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
@@ -228,7 +235,8 @@ export default class Team extends Component {
                             "https://www.instagram.com/mridul_singhal19/",
                             "https://www.facebook.com/mridul.singhal.121",
                             
-                            "google.com"
+                            "google.com",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
@@ -251,7 +259,8 @@ export default class Team extends Component {
                             "https://www.instagram.com/dhruv_gupta30/",
                             "https://www.facebook.com/dhruv.gupta.30",
                             
-                            "google.com"
+                            "google.com",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont ">
@@ -272,7 +281,8 @@ export default class Team extends Component {
                             "https://www.instagram.com/kshitizkain/",
                             "https://www.facebook.com/kshitiz.kain",
                             
-                            "google.com"
+                            "google.com",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
@@ -295,7 +305,8 @@ export default class Team extends Component {
                             "https://www.instagram.com/ritu4536/",
                             "https://www.facebook.com/profile.php?id=100009506987606",
                             
-                            "google.com"
+                            "google.com",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont ">
@@ -316,7 +327,8 @@ export default class Team extends Component {
                             "https://www.instagram.com/pagal_devanshu/",
                             "https://www.facebook.com/devanshu.khandal",
                             
-                            "google.com"
+                            "google.com",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
@@ -337,7 +349,8 @@ export default class Team extends Component {
                             "https://www.instagram.com/vidya._.99/",
                             "https://www.facebook.com/venkata.srividya.3",
                             
-                            "google.com"
+                            "google.com",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
@@ -360,7 +373,8 @@ export default class Team extends Component {
                             "https://www.instagram.com/arudeep.25/",
                             "https://www.facebook.com/profile.php?id=100017390686711",
                             
-                            "google.com"
+                            "google.com",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont ">
@@ -381,7 +395,8 @@ export default class Team extends Component {
                             "",
                             "https://www.facebook.com/prasuv1748",
                             
-                            "google.com"
+                            "google.com",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
@@ -404,7 +419,8 @@ export default class Team extends Component {
                             "https://www.instagram.com/spdstunter/",
                             "https://www.facebook.com/profile.php?id=100004962662779",
                             
-                            "google.com"
+                            "google.com",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont ">
@@ -426,7 +442,8 @@ export default class Team extends Component {
                             "https://www.instagram.com/pritesh.kumawat99/",
                             "https://www.facebook.com/profile.php?id=100008316942264",
                             
-                            "google.com"
+                            "google.com",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
@@ -447,7 +464,8 @@ export default class Team extends Component {
                             "8219263140",
                             "https://www.instagram.com/umangbhardwaj9488/",
                             "https://www.facebook.com/profile.php?id=100009514595891",
-                            "google.com"
+                            "google.com",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
@@ -469,7 +487,8 @@ export default class Team extends Component {
                             "8447018360",
                             "https://www.instagram.com/dhwajsatya/",
                             "https://www.facebook.com/satya.dhwaj",
-                            "https://www.linkedin.com/in/satya-dhwaj-92081b146/"
+                            "https://www.linkedin.com/in/satya-dhwaj-92081b146/",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont ">
@@ -489,7 +508,8 @@ export default class Team extends Component {
                             "9560175360",
                             "https://www.instagram.com/pranavsindura/",
                             "https://www.facebook.com/ps.jmaster",
-                            "https://www.linkedin.com/in/pranav-sindura-197419184/"
+                            "https://www.linkedin.com/in/pranav-sindura-197419184/",
+                            fullpageApi
                           )}
                         </div>
                         <div  className="col-cont">
@@ -511,7 +531,8 @@ export default class Team extends Component {
                             "8989144914",
                             "https://www.instagram.com/keshav_sharma_ji/",
                             "https://www.facebook.com/keshav.sharma.7165331",
-                            "https://www.linkedin.com/in/keshav-sharma-691235192/"
+                            "https://www.linkedin.com/in/keshav-sharma-691235192/",
+                            fullpageApi
                           )}
                         </div>
                         <div  className="col-cont ">
@@ -531,7 +552,8 @@ export default class Team extends Component {
                             "9601113188",
                             "https://www.instagram.com/pdhairya8/",
                             "https://www.facebook.com/pdhairya1",
-                            "https://www.linkedin.com/in/dhairya-patel-571831184/"
+                            "https://www.linkedin.com/in/dhairya-patel-571831184/",
+                            fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
