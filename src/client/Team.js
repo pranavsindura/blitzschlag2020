@@ -13,6 +13,9 @@ export default class Team extends Component {
     return (
       <div className="base">
         <img
+        onLoad={() => {
+          fullpageApi.reBuild();
+        }}
           className="imgteam"
           src={imgsrc}
           style={{ position: "absolute" }}
