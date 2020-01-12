@@ -276,20 +276,8 @@
 }
 
 .eve-mob {
-    background-color: cadetblue;
-}
-
-.head-eve-mob {
-    height: 23vh;
-    text-align: center;
-    color: black;
-    font-size: 3em;
-    border: 0px;
-    border-bottom: 1px;
-    border-color: #a43a4d;
-    border-style: solid;
-    color: black;
-    background-color: tan
+    background-color: #e13663;
+    color: white;
 }
 
 .eve-mob {
@@ -300,10 +288,6 @@
 .svg-mob {
     z-index: 2;
     position: absolute;
-}
-
-.eve-cat-mob {
-    background-color: cadetblue;
 }
 
 .head-mob-eve {
@@ -320,7 +304,6 @@
     width: 100%;
     height: 250px;
     top: 100px;
-    /* background-color: rgba(66, 88, 99, 0.5); */
 }
 
 .cat2-mob {
@@ -415,5 +398,11 @@
 }
 
 .eve-text-mob {
-    font-size: 0.75em;
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+.eve-img-mob {
+    -webkit-filter: drop-shadow(5px 5px 5px #606060af);
+    filter: drop-shadow(5px 5px 5px #606060af);
 }

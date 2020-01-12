@@ -130,6 +130,13 @@ export default class Society extends Component {
                 <br></br> <br></br>E<br></br>V<br></br>E<br></br>N<br></br>T
                 <br></br>S
               </div>
+              <div className="main-cont-event">
+                <img
+                  src="src/shared/img/fnarts.png"
+                  style={{ width: "16vw", heigth: "auto" }}
+                  alt="logo"
+                ></img>
+              </div>
             </div>
           </div>
           <div className="cat9">
@@ -138,6 +145,13 @@ export default class Society extends Component {
                 F<br></br>L<br></br>A<br></br>G<br></br>S<br></br>H<br></br>I
                 <br></br>P<br></br> <br></br>E<br></br>V<br></br>E<br></br>N
                 <br></br>T<br></br>S
+              </div>
+              <div className="main-cont-event">
+                <img
+                  src="src/shared/img/cacs.png"
+                  style={{ width: "16vw", heigth: "auto" }}
+                  alt="logo"
+                ></img>
               </div>
             </div>
           </div>
@@ -148,6 +162,13 @@ export default class Society extends Component {
                 <br></br>A<br></br> <br></br>S<br></br>R<br></br>I<br></br>J
                 <br></br>A<br></br>N
               </div>
+              <div className="main-cont-event">
+                <img
+                  src="src/shared/img/fnarts.png"
+                  style={{ width: "16vw", heigth: "auto" }}
+                  alt="logo"
+                ></img>
+              </div>
             </div>
           </div>
           <div className="cat11">
@@ -156,6 +177,13 @@ export default class Society extends Component {
                 I<br></br>N<br></br>F<br></br>O<br></br>R<br></br>M<br></br>A
                 <br></br>L<br></br> <br></br>E<br></br>V<br></br>E<br></br>N
                 <br></br>T<br></br>S
+              </div>
+              <div className="main-cont-event">
+                <img
+                  src="src/shared/img/fnarts.png"
+                  style={{ width: "16vw", heigth: "auto" }}
+                  alt="logo"
+                ></img>
               </div>
             </div>
           </div>
@@ -170,12 +198,13 @@ export default class Society extends Component {
             // viewBox="0 0 380.000000 2465.000000"
             className="svg-mob"
           >
+            
             <g
               transform="translate(0.000000,2400.000000) scale(0.1,-0.125)"
-              fill="#ffffff"
-              stroke="none"
+              fill="#ef833d"
+              stroke="white"
             >
-              <path
+              <path 
                 d="M3210 19774 c-437 -18 -824 -33 -859 -33 -35 -1 -61 -4 -58 -8 4 -4
 40 -15 80 -25 39 -10 115 -39 167 -64 77 -39 109 -62 175 -128 66 -66 90 -99
 127 -176 59 -120 81 -203 80 -305 -4 -264 -170 -487 -447 -599 -33 -13 -373
@@ -207,283 +236,342 @@ export default class Society extends Component {
           <div className="head-mob-eve">EVENTS</div>
           <div className="cat1-mob">
             <img
-              src="src/shared/img/mds.png"
+            className="eve-img-mob"
+              src="src/shared/img/literary.png"
               style={{
                 position: "absolute",
                 heigth: "auto",
-                width: "150px",
-                right: "40vw",
-                top: "50px"
+                width: "100px",
+                right: "50vw",
+                top: "75px"
               }}
               alt="logo"
             ></img>
             <div
-            className="eve-text-mob"
+              className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
-                width: "36vw",
-                marginLeft: "64vw",
-                marginTop:"20px"
+                width: "40vw",
+                marginLeft: "52vw",
+                marginRight: "5vw",
+                marginTop: "25px"
               }}
             >
+              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Literary</p>
               Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare.
+              neeche gaye button par click kare. neeche koi button hi nahi hai.
+              oh I am so smart. Button chodo hum pooore div to hi link kar
+              denge. yes good idea.
             </div>
           </div>
           <div className="cat2-mob">
-            <img
-              src="src/shared/img/mds.png"
-              style={{
-                position: "absolute",
-                heigth: "auto",
-                width: "150px",
-                top: "50px"
-              }}
-              alt="logo"
-            ></img>
             <div
-            className="eve-text-mob"
+              className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
-                width: "35vw",
-                marginLeft: "160px",
-                marginTop: "35px"
+                width: "40vw",
+                marginLeft: "5vw",
+                marginTop: "25px",
+                marginRight: "52vw"
               }}
             >
+              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Music, Dance & Spic Macay</p>
               Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare.
+              neeche gaye button par click kare. neeche koi button hi nahi hai.
+              oh I am so smart. Button chodo hum pooore div to hi link kar
+              denge. yes good idea.
             </div>
+            <img
+              src="src/shared/img/mds.png"
+              className="eve-img-mob"
+              style={{
+                position: "absolute",
+                heigth: "auto",
+                width: "100px",
+                top: "75px",
+                left: "45vw"
+              }}
+              alt="logo"
+            ></img>
           </div>
           <div className="cat3-mob">
             <img
-              src="src/shared/img/mds.png"
+            className="eve-img-mob"
+              src="src/shared/img/edcell.png"
               style={{
                 position: "absolute",
                 heigth: "auto",
-                width: "150px",
-                right: "40vw",
-                top: "50px"
+                width: "100px",
+                right: "50vw",
+                top: "75px"
               }}
               alt="logo"
             ></img>
             <div
-            className="eve-text-mob"
+              className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
-                width: "36vw",
-                marginLeft: "64vw",
-                marginTop:"20px"
+                width: "40vw",
+                marginLeft: "52vw",
+                marginRight: "5vw",
+                marginTop: "25px"
               }}
-            >
+            ><p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>ED Cell</p>
               Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare.
+              neeche gaye button par click kare. neeche koi button hi nahi hai.
+              oh I am so smart. Button chodo hum pooore div to hi link kar
+              denge. yes good idea.
             </div>
           </div>
           <div className="cat4-mob">
-            <img
-              src="src/shared/img/mds.png"
-              style={{
-                position: "absolute",
-                heigth: "auto",
-                width: "150px",
-                top: "50px"
-              }}
-              alt="logo"
-            ></img>
             <div
-            className="eve-text-mob"
+              className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
-                width: "35vw",
-                marginLeft: "160px",
-                marginTop: "35px"
+                width: "40vw",
+                marginLeft: "5vw",
+                marginTop: "25px",
+                marginRight: "52vw"
               }}
             >
+              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Maverics</p>
               Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare.
+              neeche gaye button par click kare. neeche koi button hi nahi hai.
+              oh I am so smart. Button chodo hum pooore div to hi link kar
+              denge. yes good idea.
             </div>
+            <img
+              src="src/shared/img/maverics.png"
+              className="eve-img-mob"
+              style={{
+                position: "absolute",
+                heigth: "auto",
+                width: "100px",
+                top: "75px",
+                left: "45vw"
+              }}
+              alt="logo"
+            ></img>
           </div>
           <div className="cat5-mob">
             <img
-              src="src/shared/img/mds.png"
+              src="src/shared/img/dil.png"
+              className="eve-img-mob"
               style={{
                 position: "absolute",
                 heigth: "auto",
-                width: "150px",
-                right: "40vw",
-                top: "50px"
+                width: "100px",
+                right: "50vw",
+                top: "75px"
               }}
               alt="logo"
             ></img>
             <div
-            className="eve-text-mob"
+              className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
-                width: "36vw",
-                marginLeft: "64vw",
-                marginTop:"20px"
+                width: "40vw",
+                marginLeft: "52vw",
+                marginRight: "5vw",
+                marginTop: "25px"
               }}
             >
+              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Dramatics</p>
               Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare.
+              neeche gaye button par click kare. neeche koi button hi nahi hai.
+              oh I am so smart. Button chodo hum pooore div to hi link kar
+              denge. yes good idea.
             </div>
           </div>
           <div className="cat6-mob">
-            <img
-              src="src/shared/img/mds.png"
-              style={{
-                position: "absolute",
-                heigth: "auto",
-                width: "150px",
-                top: "50px"
-              }}
-              alt="logo"
-            ></img>
             <div
-            className="eve-text-mob"
+              className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
-                width: "35vw",
-                marginLeft: "160px",
-                marginTop: "35px"
+                width: "40vw",
+                marginLeft: "5vw",
+                marginTop: "25px",
+                marginRight: "52vw"
               }}
             >
+              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Fine Arts</p>
               Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare.
+              neeche gaye button par click kare. neeche koi button hi nahi hai.
+              oh I am so smart. Button chodo hum pooore div to hi link kar
+              denge. yes good idea.
             </div>
+            <img
+              src="src/shared/img/fnarts.png"
+              className="eve-img-mob"
+              style={{
+                position: "absolute",
+                heigth: "auto",
+                width: "100px",
+                top: "75px",
+                left: "45vw"
+              }}
+              alt="logo"
+            ></img>
           </div>
           <div className="cat7-mob">
             <img
-              src="src/shared/img/mds.png"
+            className="eve-img-mob"
+              src="src/shared/img/fnp.png"
               style={{
                 position: "absolute",
                 heigth: "auto",
-                width: "150px",
-                right: "40vw",
-                top: "50px",
-                marginTop:"20px"
+                width: "100px",
+                right: "50vw",
+                top: "75px"
               }}
               alt="logo"
             ></img>
             <div
-            className="eve-text-mob"
+              className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
-                width: "36vw",
-                marginLeft: "64vw"
+                width: "40vw",
+                marginLeft: "52vw",
+                marginRight: "5vw",
+                marginTop: "25px"
               }}
             >
+              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Film & Photography</p>
               Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare.
+              neeche gaye button par click kare. neeche koi button hi nahi hai.
+              oh I am so smart. Button chodo hum pooore div to hi link kar
+              denge. yes good idea.
             </div>
           </div>
           <div className="cat8-mob">
-            <img
-              src="src/shared/img/mds.png"
-              style={{
-                position: "absolute",
-                heigth: "auto",
-                width: "150px",
-                top: "50px"
-              }}
-              alt="logo"
-            ></img>
             <div
-            className="eve-text-mob"
+              className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
-                width: "35vw",
-                marginLeft: "160px",
-                marginTop: "35px"
+                width: "40vw",
+                marginLeft: "5vw",
+                marginTop: "25px",
+                marginRight: "52vw"
               }}
             >
+              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Society Events</p>
               Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare.
+              neeche gaye button par click kare. neeche koi button hi nahi hai.
+              oh I am so smart. Button chodo hum pooore div to hi link kar
+              denge. yes good idea.
             </div>
+            <img
+              src="src/shared/img/mds.png"
+              className="eve-img-mob"
+              style={{
+                position: "absolute",
+                heigth: "auto",
+                width: "100px",
+                top: "75px",
+                left: "45vw"
+              }}
+              alt="logo"
+            ></img>
           </div>
           <div className="cat9-mob">
             <img
-              src="src/shared/img/mds.png"
+              src="src/shared/img/cacs.png"
+              className="eve-img-mob"
               style={{
                 position: "absolute",
                 heigth: "auto",
-                width: "150px",
-                right: "40vw",
-                top: "50px",
-                marginTop:"20px"
+                width: "100px",
+                right: "50vw",
+                top: "75px"
               }}
               alt="logo"
             ></img>
             <div
-            className="eve-text-mob"
+              className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
-                width: "36vw",
-                marginLeft: "64vw"
+                width: "40vw",
+                marginLeft: "52vw",
+                marginRight: "5vw",
+                marginTop: "25px"
               }}
             >
+              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Flagship Events</p>
               Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare.
+              neeche gaye button par click kare. neeche koi button hi nahi hai.
+              oh I am so smart. Button chodo hum pooore div to hi link kar
+              denge. yes good idea.
             </div>
           </div>
           <div className="cat10-mob">
+            <div
+              className="eve-text-mob"
+              style={{
+                position: "absolute",
+                heigth: "200px",
+                width: "40vw",
+                marginLeft: "5vw",
+                marginTop: "25px",
+                marginRight: "52vw"
+              }}
+            >
+              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Vyaktitva Srijan</p>
+              Some words describing the given society. aur jankaari ke liye
+              neeche gaye button par click kare. neeche koi button hi nahi hai.
+              oh I am so smart. Button chodo hum pooore div to hi link kar
+              denge. yes good idea.
+            </div>
             <img
+            className="eve-img-mob"
               src="src/shared/img/mds.png"
               style={{
                 position: "absolute",
                 heigth: "auto",
-                width: "150px",
-                top: "50px"
+                width: "100px",
+                top: "75px",
+                left: "45vw"
               }}
               alt="logo"
             ></img>
-            <div
-            className="eve-text-mob"
-              style={{
-                position: "absolute",
-                heigth: "200px",
-                width: "35vw",
-                marginLeft: "160px",
-                marginTop: "35px"
-              }}
-            >
-              Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare.
-            </div>
           </div>
           <div className="cat11-mob">
             <img
+            className="eve-img-mob"
               src="src/shared/img/mds.png"
               style={{
                 position: "absolute",
                 heigth: "auto",
-                width: "150px",
-                right: "40vw",
-                top: "50px"
+                width: "100px",
+                right: "50vw",
+                top: "75px"
               }}
               alt="logo"
             ></img>
             <div
-            className="eve-text-mob"
+              className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
-                width: "36vw",
-                marginLeft: "64vw",
-                marginTop:"20px"
+                width: "40vw",
+                marginLeft: "52vw",
+                marginRight: "5vw",
+                marginTop: "25px"
               }}
             >
+              <p style={{margin:"0px", fontSize:"1em",fontWeight:'bold'}}>Informal Events</p>
               Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare.
+              neeche gaye button par click kare. neeche koi button hi nahi hai.
+              oh I am so smart. Button chodo hum pooore div to hi link kar
+              denge. yes good idea.
             </div>
           </div>
         </div>
