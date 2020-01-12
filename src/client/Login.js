@@ -102,7 +102,7 @@ class Login extends React.Component {
 				res = res.data;
 				// console.log(res);
 				if (res.status) {
-					// alert('You are successfully Registered!');
+					alert(`Your BlitzID: blitz20@${res.data.blitzID}`);
 
 					console.log(res.data);
 					this.setState(
@@ -114,7 +114,7 @@ class Login extends React.Component {
 									</Col>
 									<Col>
 										<p className="text-success font-weight-bold">
-											Your BlitzID: blitz@{res.data.blitzID}
+											Your BlitzID: blitz20@{res.data.blitzID}
 										</p>
 									</Col>
 								</Col>
@@ -241,7 +241,7 @@ class Login extends React.Component {
 												id="firstName"
 												type="text"
 												required={true}
-												placeholder="First Name"
+												placeholder=""
 											/>
 										</Form.Group>
 									</Col>
@@ -255,7 +255,7 @@ class Login extends React.Component {
 												id="lastName"
 												type="text"
 												required={true}
-												placeholder="Last Name"
+												placeholder=""
 											/>
 										</Form.Group>
 									</Col>
@@ -271,11 +271,11 @@ class Login extends React.Component {
 											id="email"
 											type="email"
 											required={true}
-											placeholder="abc@example.com"
+											placeholder=""
 										/>
 									</Form.Group>
 								</Form.Row>
-								<Form.Label>PIN:&nbsp;&nbsp;</Form.Label>
+								<Form.Label>PIN(4 Digits):&nbsp;&nbsp;</Form.Label>
 								<Form.Row>
 									<Form.Group>
 										<Form.Control
@@ -286,7 +286,7 @@ class Login extends React.Component {
 											required={true}
 											id="blitzPIN"
 											type="password"
-											placeholder="4 Digit PIN"
+											placeholder=""
 										/>
 									</Form.Group>
 								</Form.Row>
@@ -301,7 +301,7 @@ class Login extends React.Component {
 											id="mob"
 											type="phone"
 											required={true}
-											placeholder="9876543210"
+											placeholder=""
 										/>
 									</Form.Group>
 								</Form.Row>
@@ -400,7 +400,7 @@ class Login extends React.Component {
 											required={true}
 											id="branch"
 											type="text"
-											placeholder="CSE"
+											placeholder=""
 										/>
 									</Form.Group>
 								</Form.Row>
@@ -415,7 +415,7 @@ class Login extends React.Component {
 											required={true}
 											id="city"
 											type="text"
-											placeholder="Jaipur"
+											placeholder=""
 										/>
 									</Form.Group>
 								</Form.Row>
@@ -557,7 +557,7 @@ class Login extends React.Component {
 		return (
 			<div className="scrollit">
 				<Splash images={this.images} />
-				<Link to="/">
+				<Link to="https://blitz20.herokuapp.com/">
 					<img
 						style={{
 							height: 'auto',

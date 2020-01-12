@@ -222,7 +222,7 @@ export default class Home extends Component {
 				>
 					<img
 						src={'src/shared/img/logo.png'}
-						style={{ width: '80vw', enableBackground: 'new 0 0 666.7 248.32' }}
+						style={{ width: '80vw', enableBackground: 'new 0 0 666.7 248.32', filter: 'drop-shadow(5px 5px 5px #00000050)' }}
 					/>
 				</div>
 				<ReactFullpage
@@ -288,8 +288,8 @@ export default class Home extends Component {
 									}}
 								>
 									{window.innerWidth > 770 ? (
-										<div>
-											<div className="ladytheme-holder">
+										<div style={{position: 'absolute', width: '100%', height: '100%', left:'0%', top:'0%', overflow:'hidden'}}>
+											<div className="ladytheme-holder"> 
 												<img
 													className={'ladytheme zoom'}
 													src={`https://imgur.com/JI5zb8u.png`}

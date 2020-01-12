@@ -11,7 +11,7 @@ export default class GetTickets extends Component {
 		return (
 			<div>
 				<Splash images={this.images} />
-				<Link to="/">
+				<Link to="https://blitz20.herokuapp.com/">
 					<img
 						style={{
 							height: 'auto',
