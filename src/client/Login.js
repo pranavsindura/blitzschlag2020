@@ -637,7 +637,7 @@ class Login extends React.Component {
 		return (
 			<div className="scrollit">
 				<Splash images={this.images} />
-				<Link to="https://blitz20.herokuapp.com/">
+				<a href="https://blitz20.herokuapp.com/"> 
 					<img
 						style={{
 							height: 'auto',
@@ -649,7 +649,7 @@ class Login extends React.Component {
 						}}
 						src="https://i.ibb.co/42WZWbr/blitzlogo.png"
 					/>
-				</Link>
+				</a>
 				<ReactFullpage
 					verticalCentered={false}
 					scrollOverflow={true}

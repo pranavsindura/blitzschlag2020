@@ -6,7 +6,7 @@ import Splash from './Splash';
 import ReactFullpage from '@fullpage/react-fullpage';
 import 'fullpage.js/vendors/scrolloverflow';
 import { Redirect } from 'react-router-dom';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 class Myaccount extends Component {
@@ -148,7 +148,7 @@ class Myaccount extends Component {
 				</div>
 			);
 		}
-	} 
+	}
 	renderComponent(fullpageApi) {
 		if (window.innerWidth > 760) {
 			return (
@@ -194,7 +194,7 @@ class Myaccount extends Component {
 		return (
 			<div>
 				<Splash images={this.images} />
-				<Link to="https://blitz20.herokuapp.com/">
+				<a href="https://blitz20.herokuapp.com/">
 					<img
 						style={{
 							height: 'auto',
@@ -206,7 +206,7 @@ class Myaccount extends Component {
 						}}
 						src="https://i.ibb.co/42WZWbr/blitzlogo.png"
 					/>
-				</Link>
+				</a>
 				<ReactFullpage
 					scrollOverflow={true}
 					render={({ state, fullpageApi }) => {

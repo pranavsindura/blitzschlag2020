@@ -10,7 +10,7 @@ import Hospitality from './Hospitality.js';
 import GetTickets from './GetTickets.js';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
 import { createHashHistory as createHistory } from 'history';
 import FadeIn from 'react-fade-in';
 import { slide as Menu } from 'react-burger-menu';
@@ -50,16 +50,16 @@ class App extends Component {
 					>
 						<ul style={{ listStyleType: 'none' }}>
 							<li className="lis menu-item">
-								<Link
+								<a
 									className="lisitem"
-									to="https://blitz20.herokuapp.com/"
-									onClick={() => {
-										this.handleClick('home');
-										// this.handleCheck();
-									}}
+									href="https://blitz20.herokuapp.com/"
+									// onClick={() => {
+									// 	this.handleClick('home');
+									// 	// this.handleCheck();
+									// }}
 								>
 									<i className="fas fa-home"></i>&nbsp;&nbsp;HOME
-								</Link>
+								</a>
 							</li>
 							<li className="lis  menu-item">
 								<Link
