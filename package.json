@@ -46,7 +46,8 @@
         "redux": "^4.0.5",
         "redux-thunk": "^2.3.0",
         "styled-components": "^4.4.1",
-        "objectid":"^3.2.1"
+        "objectid":"^3.2.1",
+        "nodemailer":"^6.4.2"
     },
     "devDependencies": {
         "@babel/core": "^7.0.0",
