@@ -413,3 +413,7 @@
     /* background-color: rgba(66, 88, 99, 0.5); */
     z-index: 10;
 }
+
+.eve-text-mob {
+    font-size: 0.75em;
+}

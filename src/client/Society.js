@@ -218,6 +218,7 @@ export default class Society extends Component {
               alt="logo"
             ></img>
             <div
+            className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
@@ -242,6 +243,7 @@ export default class Society extends Component {
               alt="logo"
             ></img>
             <div
+            className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
@@ -267,6 +269,7 @@ export default class Society extends Component {
               alt="logo"
             ></img>
             <div
+            className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
@@ -291,6 +294,7 @@ export default class Society extends Component {
               alt="logo"
             ></img>
             <div
+            className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
@@ -316,6 +320,7 @@ export default class Society extends Component {
               alt="logo"
             ></img>
             <div
+            className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
@@ -340,6 +345,7 @@ export default class Society extends Component {
               alt="logo"
             ></img>
             <div
+            className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
@@ -366,6 +372,7 @@ export default class Society extends Component {
               alt="logo"
             ></img>
             <div
+            className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
@@ -389,6 +396,7 @@ export default class Society extends Component {
               alt="logo"
             ></img>
             <div
+            className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
@@ -415,6 +423,7 @@ export default class Society extends Component {
               alt="logo"
             ></img>
             <div
+            className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
@@ -438,6 +447,7 @@ export default class Society extends Component {
               alt="logo"
             ></img>
             <div
+            className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
@@ -463,6 +473,7 @@ export default class Society extends Component {
               alt="logo"
             ></img>
             <div
+            className="eve-text-mob"
               style={{
                 position: "absolute",
                 heigth: "200px",
