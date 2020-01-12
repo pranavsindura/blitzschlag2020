@@ -93,8 +93,7 @@ export default class Team extends Component {
                             "7525926870",
                             "https://www.instagram.com/anujsrivastava7/",
                             "https://www.facebook.com/Anujsrivastava.MSD7",
-                            
-                            "google.com"
+                            "https://www.linkedin.com/in/anuj-srivastava-b26b92179"
                           )}
                         </div>
                         <div className="col-cont">
@@ -467,8 +466,7 @@ export default class Team extends Component {
                             "8447018360",
                             "https://www.instagram.com/dhwajsatya/",
                             "https://www.facebook.com/satya.dhwaj",
-                            
-                            "google.com"
+                            "https://www.linkedin.com/in/satya-dhwaj-92081b146/"
                           )}
                         </div>
                         <div className="col-cont ">
@@ -488,8 +486,7 @@ export default class Team extends Component {
                             "9560175360",
                             "https://www.instagram.com/pranavsindura/",
                             "https://www.facebook.com/ps.jmaster",
-                            
-                            "google.com"
+                            "https://www.linkedin.com/in/pranav-sindura-197419184/"
                           )}
                         </div>
                         <div  className="col-cont">
@@ -511,8 +508,7 @@ export default class Team extends Component {
                             "8989144914",
                             "https://www.instagram.com/keshav_sharma_ji/",
                             "https://www.facebook.com/keshav.sharma.7165331",
-                            
-                            "google.com"
+                            "https://www.linkedin.com/in/keshav-sharma-691235192/"
                           )}
                         </div>
                         <div  className="col-cont ">
@@ -532,7 +528,7 @@ export default class Team extends Component {
                             "9601113188",
                             "https://www.instagram.com/pdhairya8/",
                             "https://www.facebook.com/pdhairya1",
-                            "google.com"
+                            "https://www.linkedin.com/in/dhairya-patel-571831184/"
                           )}
                         </div>
                         <div className="col-cont">
