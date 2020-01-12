@@ -29,6 +29,8 @@
         "helmet": "^3.21.2",
         "mongoose": "^5.8.1",
         "multiscroll-reactjs": "^1.0.2",
+        "nodemailer": "^6.4.2",
+        "objectid": "^3.2.1",
         "react": "^16.5.2",
         "react-animated-slider": "^2.0.0",
         "react-awesome-slider": "^2.3.0",
@@ -45,9 +47,7 @@
         "reactstrap": "^8.2.0",
         "redux": "^4.0.5",
         "redux-thunk": "^2.3.0",
-        "styled-components": "^4.4.1",
-        "objectid":"^3.2.1",
-        "nodemailer":"^6.4.2"
+        "styled-components": "^4.4.1"
     },
     "devDependencies": {
         "@babel/core": "^7.0.0",
