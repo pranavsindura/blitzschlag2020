@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Event from './Event';
 import Myaccount from './UserMyaccount.js';
 import Team from './Team.js';
+import Flagship from './Flagship';
 import Sponsors from './Sponsors.js';
 import Hospitality from './Hospitality.js';
 import GetTickets from './GetTickets.js';
@@ -64,7 +65,7 @@ class App extends Component {
 							<li className="lis  menu-item">
 								<Link
 									className="lisitem"
-									to="/events/flagship"
+									to="/flagship"
 									onClick={() => {
 										this.handleCheck();
 									}}
@@ -195,6 +196,11 @@ class App extends Component {
 						<Route exact path="/society">
 							<FadeIn>
 								<Society />
+							</FadeIn>
+						</Route>
+						<Route path="/flagship">
+							<FadeIn>
+								<Flagship />
 							</FadeIn>
 						</Route>
 						<Route path="/myaccount">
