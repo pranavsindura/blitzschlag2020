@@ -4,13 +4,19 @@
 }
 
 .jumbotron {
-    background: url("https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg");
+    background: url("https://i.ibb.co/Gk3tWQf/login.jpg");
     background-size: cover;
     padding-left: 10vw;
     min-height: 30vh;
     opacity: 0.9;
     z-index: 1;
-    animation: hue 5s linear infinite;
+    /* animation: hue 5s linear infinite; */
+}
+.jumbotron > h1{
+    font-size: 3em;
+    color: white;
+	font-variant-caps: small-caps;
+	font-family: 'Raleway', sans-serif;
 }
 
 @keyframes hue {

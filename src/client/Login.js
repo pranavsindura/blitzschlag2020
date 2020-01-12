@@ -48,7 +48,12 @@ class Login extends React.Component {
 	componentDidMount() {
 		if (this.props.production) this.proxy = '';
 	}
-	images = ['https://i.ibb.co/0m0GPR5/64-PERSONALIZED-MOBILE-PHONE-WALLPAPER-IDEAS-Page-48-of-64-Lialip.png'];
+	images = [
+		'https://i.ibb.co/hfH0yHM/loginc1.png',
+		'https://i.ibb.co/Wpt36Ft/loginc2.png',
+		'https://i.ibb.co/Gk3tWQf/login.jpg',
+
+];
 	changeForm = (fullpageApi) => {
 		// fullpageApi.reBuild();
 		this.setState(
