@@ -310,7 +310,8 @@
     z-index: 10;
     width: 100%;
     height: 200px;
-    background-color: hotpink;
+    font-size: 3em;
+    text-align: center;
 }
 
 .cat1-mob {
@@ -319,14 +320,96 @@
     width: 100%;
     height: 250px;
     top: 100px;
-    background-color: rgba(66, 88, 99, 0.5);
+    /* background-color: rgba(66, 88, 99, 0.5); */
 }
 
 .cat2-mob {
     position: absolute;
-    /* z-index: 10; */
+    z-index: 10;
     width: 100%;
     height: 250px;
     top: 300px;
-    background-color: rgba(255, 88, 99, 0.5);
+    /* background-color: rgba(255, 88, 99, 0.5); */
+}
+
+.cat3-mob {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 250px;
+    top: 500px;
+    /* background-color: rgba(66, 88, 99, 0.5); */
+}
+
+.cat4-mob {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 250px;
+    top: 700px;
+    /* background-color: rgba(255, 88, 99, 0.5); */
+}
+
+.cat5-mob {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 250px;
+    top: 900px;
+    /* background-color: rgba(66, 88, 99, 0.5); */
+}
+
+.cat6-mob {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 250px;
+    top: 1100px;
+    /* background-color: rgba(255, 88, 99, 0.5); */
+}
+
+.cat7-mob {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 250px;
+    top: 1300px;
+    /* background-color: rgba(66, 88, 99, 0.5); */
+}
+
+.cat8-mob {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 250px;
+    top: 1500px;
+    /* background-color: rgba(255, 88, 99, 0.5); */
+}
+
+.cat9-mob {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 250px;
+    top: 1700px;
+    /* background-color: rgba(66, 88, 99, 0.5); */
+}
+
+.cat10-mob {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 250px;
+    top: 1900px;
+    /* background-color: rgba(255, 88, 99, 0.5); */
+}
+
+.cat11-mob {
+    position: absolute;
+    /* z-index: 10; */
+    width: 100%;
+    height: 250px;
+    top: 2100px;
+    /* background-color: rgba(66, 88, 99, 0.5); */
+    z-index: 10;
 }

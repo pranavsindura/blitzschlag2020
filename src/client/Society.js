@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import './Society.css';
+import React, { Component } from "react";
+import "./Society.css";
 // import ControlledCarousel from './EventCar.js';
-import { Row, Col, Carousel } from 'react-bootstrap';
-import ReactFullpage from '@fullpage/react-fullpage';
-import {Link} from 'react-router-dom';
+import { Row, Col, Carousel } from "react-bootstrap";
+import ReactFullpage from "@fullpage/react-fullpage";
+import { Link } from "react-router-dom";
 
-import Splash from './Splash';
+import Splash from "./Splash";
 export default class Society extends Component {
   state = {};
   images = ["src/shared/img/car1.jpg"];
@@ -175,7 +175,8 @@ export default class Society extends Component {
               fill="#ffffff"
               stroke="none"
             >
-              <path d="M3210 19774 c-437 -18 -824 -33 -859 -33 -35 -1 -61 -4 -58 -8 4 -4
+              <path
+                d="M3210 19774 c-437 -18 -824 -33 -859 -33 -35 -1 -61 -4 -58 -8 4 -4
 40 -15 80 -25 39 -10 115 -39 167 -64 77 -39 109 -62 175 -128 66 -66 90 -99
 127 -176 59 -120 81 -203 80 -305 -4 -264 -170 -487 -447 -599 -33 -13 -373
 -103 -755 -201 -590 -150 -709 -183 -785 -219 -163 -78 -270 -178 -341 -318
@@ -199,12 +200,281 @@ export default class Society extends Component {
 -187 -752 -200 -103 -44 -183 -97 -260 -174 -126 -126 -177 -243 -186 -421 -6
 -127 10 -215 61 -324 77 -167 194 -276 378 -349 69 -28 104 -35 998 -193 789
 -139 1083 -183 1695 -254 143 -16 277 -32 298 -35 l37 -5 0 9785 0 9785 -27
--1 c-16 -1 -386 -16 -823 -35z"/>
+-1 c-16 -1 -386 -16 -823 -35z"
+              />
             </g>
           </svg>
           <div className="head-mob-eve">EVENTS</div>
-          <div className="cat1-mob"></div>
-          <div className="cat2-mob"></div>
+          <div className="cat1-mob">
+            <img
+              src="src/shared/img/mds.png"
+              style={{
+                position: "absolute",
+                heigth: "auto",
+                width: "150px",
+                right: "40vw",
+                top: "50px"
+              }}
+              alt="logo"
+            ></img>
+            <div
+              style={{
+                position: "absolute",
+                heigth: "200px",
+                width: "36vw",
+                marginLeft: "64vw",
+                marginTop:"20px"
+              }}
+            >
+              Some words describing the given society. aur jankaari ke liye
+              neeche gaye button par click kare.
+            </div>
+          </div>
+          <div className="cat2-mob">
+            <img
+              src="src/shared/img/mds.png"
+              style={{
+                position: "absolute",
+                heigth: "auto",
+                width: "150px",
+                top: "50px"
+              }}
+              alt="logo"
+            ></img>
+            <div
+              style={{
+                position: "absolute",
+                heigth: "200px",
+                width: "35vw",
+                marginLeft: "160px",
+                marginTop: "35px"
+              }}
+            >
+              Some words describing the given society. aur jankaari ke liye
+              neeche gaye button par click kare.
+            </div>
+          </div>
+          <div className="cat3-mob">
+            <img
+              src="src/shared/img/mds.png"
+              style={{
+                position: "absolute",
+                heigth: "auto",
+                width: "150px",
+                right: "40vw",
+                top: "50px"
+              }}
+              alt="logo"
+            ></img>
+            <div
+              style={{
+                position: "absolute",
+                heigth: "200px",
+                width: "36vw",
+                marginLeft: "64vw",
+                marginTop:"20px"
+              }}
+            >
+              Some words describing the given society. aur jankaari ke liye
+              neeche gaye button par click kare.
+            </div>
+          </div>
+          <div className="cat4-mob">
+            <img
+              src="src/shared/img/mds.png"
+              style={{
+                position: "absolute",
+                heigth: "auto",
+                width: "150px",
+                top: "50px"
+              }}
+              alt="logo"
+            ></img>
+            <div
+              style={{
+                position: "absolute",
+                heigth: "200px",
+                width: "35vw",
+                marginLeft: "160px",
+                marginTop: "35px"
+              }}
+            >
+              Some words describing the given society. aur jankaari ke liye
+              neeche gaye button par click kare.
+            </div>
+          </div>
+          <div className="cat5-mob">
+            <img
+              src="src/shared/img/mds.png"
+              style={{
+                position: "absolute",
+                heigth: "auto",
+                width: "150px",
+                right: "40vw",
+                top: "50px"
+              }}
+              alt="logo"
+            ></img>
+            <div
+              style={{
+                position: "absolute",
+                heigth: "200px",
+                width: "36vw",
+                marginLeft: "64vw",
+                marginTop:"20px"
+              }}
+            >
+              Some words describing the given society. aur jankaari ke liye
+              neeche gaye button par click kare.
+            </div>
+          </div>
+          <div className="cat6-mob">
+            <img
+              src="src/shared/img/mds.png"
+              style={{
+                position: "absolute",
+                heigth: "auto",
+                width: "150px",
+                top: "50px"
+              }}
+              alt="logo"
+            ></img>
+            <div
+              style={{
+                position: "absolute",
+                heigth: "200px",
+                width: "35vw",
+                marginLeft: "160px",
+                marginTop: "35px"
+              }}
+            >
+              Some words describing the given society. aur jankaari ke liye
+              neeche gaye button par click kare.
+            </div>
+          </div>
+          <div className="cat7-mob">
+            <img
+              src="src/shared/img/mds.png"
+              style={{
+                position: "absolute",
+                heigth: "auto",
+                width: "150px",
+                right: "40vw",
+                top: "50px",
+                marginTop:"20px"
+              }}
+              alt="logo"
+            ></img>
+            <div
+              style={{
+                position: "absolute",
+                heigth: "200px",
+                width: "36vw",
+                marginLeft: "64vw"
+              }}
+            >
+              Some words describing the given society. aur jankaari ke liye
+              neeche gaye button par click kare.
+            </div>
+          </div>
+          <div className="cat8-mob">
+            <img
+              src="src/shared/img/mds.png"
+              style={{
+                position: "absolute",
+                heigth: "auto",
+                width: "150px",
+                top: "50px"
+              }}
+              alt="logo"
+            ></img>
+            <div
+              style={{
+                position: "absolute",
+                heigth: "200px",
+                width: "35vw",
+                marginLeft: "160px",
+                marginTop: "35px"
+              }}
+            >
+              Some words describing the given society. aur jankaari ke liye
+              neeche gaye button par click kare.
+            </div>
+          </div>
+          <div className="cat9-mob">
+            <img
+              src="src/shared/img/mds.png"
+              style={{
+                position: "absolute",
+                heigth: "auto",
+                width: "150px",
+                right: "40vw",
+                top: "50px",
+                marginTop:"20px"
+              }}
+              alt="logo"
+            ></img>
+            <div
+              style={{
+                position: "absolute",
+                heigth: "200px",
+                width: "36vw",
+                marginLeft: "64vw"
+              }}
+            >
+              Some words describing the given society. aur jankaari ke liye
+              neeche gaye button par click kare.
+            </div>
+          </div>
+          <div className="cat10-mob">
+            <img
+              src="src/shared/img/mds.png"
+              style={{
+                position: "absolute",
+                heigth: "auto",
+                width: "150px",
+                top: "50px"
+              }}
+              alt="logo"
+            ></img>
+            <div
+              style={{
+                position: "absolute",
+                heigth: "200px",
+                width: "35vw",
+                marginLeft: "160px",
+                marginTop: "35px"
+              }}
+            >
+              Some words describing the given society. aur jankaari ke liye
+              neeche gaye button par click kare.
+            </div>
+          </div>
+          <div className="cat11-mob">
+            <img
+              src="src/shared/img/mds.png"
+              style={{
+                position: "absolute",
+                heigth: "auto",
+                width: "150px",
+                right: "40vw",
+                top: "50px"
+              }}
+              alt="logo"
+            ></img>
+            <div
+              style={{
+                position: "absolute",
+                heigth: "200px",
+                width: "36vw",
+                marginLeft: "64vw",
+                marginTop:"20px"
+              }}
+            >
+              Some words describing the given society. aur jankaari ke liye
+              neeche gaye button par click kare.
+            </div>
+          </div>
         </div>
       );
     }
