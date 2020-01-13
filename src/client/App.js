@@ -169,15 +169,15 @@ class App extends Component {
 							</li>
 							{this.props.loggedIn ? (
 								<li className="lis menu-item">
-									<Link
+									<a
 										className="lisitem"
-										to="https://blitz20.herokuapp.com/"
+										href="https://blitz20.herokuapp.com/"
 										onClick={() => {
 											this.handleLogout();
 										}}
 									>
 										<i className="fas fa-long-arrow-alt-left"></i>&nbsp;&nbsp;LOGOUT
-									</Link>
+									</a>
 								</li>
 							) : null}
 						</ul>
