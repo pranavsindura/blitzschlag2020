@@ -29,13 +29,9 @@ export default class Society extends Component {
                   alt="logo"
                 ></img>
                 <div className="text-pc">
-                  <br></br>
-                  Programming online is not different from programming on your
-                  system, except a few points. We’ll be learning that here.
-                  Happy coding :) Let's start with a basic program to get you
-                  onboarded on HackerEarth. Write a program to print your name
-                  as output. Instructions: We have already written the correct
-                  code for this problem in the code editor.
+                  <br></br>               
+For the breadth of knowledge literature gives, the moral values it carries, and the enjoyment it provides, it is an essential element for every budding student. Exposure to good literary works is essential at every phase of life as it enriches us in more ways than one.To promote this idea, the Literary society of MNIT provides an ideal platform to every aspiring writer of the institute to ameliorate their writing prowess and enhance their dexterity.
+Every year this society organizes Litfest, which amalgamates all the artistic minds and helps them explore the various forms of literature through numerous intriguing events.
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/literary">
