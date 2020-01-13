@@ -74,7 +74,7 @@ export default class Team extends Component {
                             "9452174085",
                             "https://www.instagram.com/varun1878/",
                             "https://www.facebook.com/profile.php?id=100009155759864",
-                            "google.com",
+                            "null",
                             fullpageApi
                           )}
                         </div>
@@ -121,7 +121,7 @@ export default class Team extends Component {
                             "https://www.instagram.com/divyaman_purbey/",
                             "https://www.facebook.com/divyaman.purbey",
                             
-                            "google.com",
+                            "null",
                             fullpageApi
                           )}
                         </div>
@@ -143,7 +143,7 @@ export default class Team extends Component {
                             "https://www.instagram.com/nupur02_malik/",
                             "https://www.facebook.com/profile.php?id=100020421310633&fref=search&__tn__=%2Cd%2CP-R&eid=ARCj2ETE5c1Fxy3Eq-NsJ9gInELeLuFm7gxJNDji0Peo9vFM74qcSFdOwlFxLE4pxe4sLUTHjPg0ieeX",
                             
-                            "google.com",
+                            "null",
                             fullpageApi
                           )}
                         </div>
@@ -167,7 +167,7 @@ export default class Team extends Component {
                             "https://www.instagram.com/anshkhandelwal7/",
                             "https://www.facebook.com/AnshKhandelwal26",
                             
-                            "google.com",
+                            "null",
                             fullpageApi
                           )}
                         </div>
@@ -176,7 +176,7 @@ export default class Team extends Component {
                             Ansh Khandelwal
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                            GENERAL SECRETORY
+                            GENERAL SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -191,7 +191,7 @@ export default class Team extends Component {
                             "https://www.instagram.com/singhayush_pratap/",
                             "https://www.facebook.com/ayush.singh.16100",
                             
-                            "google.com",
+                            "null",
                             fullpageApi
                           )}
                         </div>
@@ -200,7 +200,7 @@ export default class Team extends Component {
                           Ayush Singh
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                          MARKETING SECRETORY
+                          MARKETING SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -213,7 +213,7 @@ export default class Team extends Component {
                             "https://www.instagram.com/nishant__sharma/",
                             "https://www.facebook.com/1Nishant.Sharma1",
                             
-                            "google.com",
+                            "null",
                             fullpageApi
                           )}
                         </div>
@@ -222,7 +222,7 @@ export default class Team extends Component {
                             Nishant Sharma
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                            TECHNICAL SECRETORY
+                            TECHNICAL SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -235,7 +235,7 @@ export default class Team extends Component {
                             "https://www.instagram.com/mridul_singhal19/",
                             "https://www.facebook.com/mridul.singhal.121",
                             
-                            "google.com",
+                            "null",
                             fullpageApi
                           )}
                         </div>
@@ -244,7 +244,7 @@ export default class Team extends Component {
                             Mridul Singhal
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                            TECHNICAL SECRETORY
+                            TECHNICAL SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -259,7 +259,7 @@ export default class Team extends Component {
                             "https://www.instagram.com/dhruv_gupta30/",
                             "https://www.facebook.com/dhruv.gupta.30",
                             
-                            "google.com",
+                            "null",
                             fullpageApi
                           )}
                         </div>
@@ -268,7 +268,7 @@ export default class Team extends Component {
                             Dhruv Gupta
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                            LOGISTICS SECRETORY
+                            LOGISTICS SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -281,7 +281,7 @@ export default class Team extends Component {
                             "https://www.instagram.com/kshitizkain/",
                             "https://www.facebook.com/kshitiz.kain",
                             
-                            "google.com",
+                            "null",
                             fullpageApi
                           )}
                         </div>
@@ -290,7 +290,7 @@ export default class Team extends Component {
                             Kshitiz Kain
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                            LOGISTICS SECRETORY
+                            LOGISTICS SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -305,7 +305,7 @@ export default class Team extends Component {
                             "https://www.instagram.com/ritu4536/",
                             "https://www.facebook.com/profile.php?id=100009506987606",
                             
-                            "google.com",
+                            "null",
                             fullpageApi
                           )}
                         </div>
@@ -314,7 +314,7 @@ export default class Team extends Component {
                           Ritu Choudhary
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                          FINANCE SECRETORY
+                          FINANCE SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -327,7 +327,7 @@ export default class Team extends Component {
                             "https://www.instagram.com/pagal_devanshu/",
                             "https://www.facebook.com/devanshu.khandal",
                             
-                            "google.com",
+                            "null",
                             fullpageApi
                           )}
                         </div>
@@ -336,7 +336,7 @@ export default class Team extends Component {
                           Devanshu Khandal
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                          CULTURAL SECRETORY
+                          CULTURAL SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -349,7 +349,7 @@ export default class Team extends Component {
                             "https://www.instagram.com/vidya._.99/",
                             "https://www.facebook.com/venkata.srividya.3",
                             
-                            "google.com",
+                            "null",
                             fullpageApi
                           )}
                         </div>
@@ -358,7 +358,7 @@ export default class Team extends Component {
                           Bhuvanagiri Venkata Srividya
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                          CULTURAL SECRETORY
+                          CULTURAL SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -373,7 +373,7 @@ export default class Team extends Component {
                             "https://www.instagram.com/arudeep.25/",
                             "https://www.facebook.com/profile.php?id=100017390686711",
                             
-                            "google.com",
+                            "null",
                             fullpageApi
                           )}
                         </div>
@@ -382,7 +382,7 @@ export default class Team extends Component {
                           Arunanshu Deep Barnawal
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                          MEDIA AND COMMUNICATION SECRETORY
+                          MEDIA AND COMMUNICATION SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -395,7 +395,7 @@ export default class Team extends Component {
                             "",
                             "https://www.facebook.com/prasuv1748",
                             
-                            "google.com",
+                            "null",
                             fullpageApi
                           )}
                         </div>
@@ -404,7 +404,7 @@ export default class Team extends Component {
                           Prasanna Venkatesh V
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
-                          MEDIA AND COMMUNICATION SECRETORY
+                          MEDIA AND COMMUNICATION SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -419,7 +419,7 @@ export default class Team extends Component {
                             "https://www.instagram.com/spdstunter/",
                             "https://www.facebook.com/profile.php?id=100004962662779",
                             
-                            "google.com",
+                            "null",
                             fullpageApi
                           )}
                         </div>
@@ -429,7 +429,7 @@ export default class Team extends Component {
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
                             
-                          PUBLICITY SECRETORY
+                          PUBLICITY SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -442,7 +442,7 @@ export default class Team extends Component {
                             "https://www.instagram.com/pritesh.kumawat99/",
                             "https://www.facebook.com/profile.php?id=100008316942264",
                             
-                            "google.com",
+                            "null",
                             fullpageApi
                           )}
                         </div>
@@ -452,7 +452,7 @@ export default class Team extends Component {
                           </h4>
                           <h5 style={{ textAlign: "center"}} className="team-des">
                             
-                          DECOR SECRETORY
+                          DECOR SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -464,7 +464,7 @@ export default class Team extends Component {
                             "8219263140",
                             "https://www.instagram.com/umangbhardwaj9488/",
                             "https://www.facebook.com/profile.php?id=100009514595891",
-                            "google.com",
+                            "null",
                             fullpageApi
                           )}
                         </div>
@@ -473,7 +473,7 @@ export default class Team extends Component {
                           Umang Bhardwaj
                           </h4>
                           <h5 className="team-des" style={{letterSpacing: '8px', textAlign: "center",fontSize:'0.8em'}}>
-                          DECOR SECRETORY<br></br>DESIGNING HEAD
+                          DECOR SECRETARY<br></br>DESIGNING HEAD
                           </h5>
                           <br></br>
                         </div>

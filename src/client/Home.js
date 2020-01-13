@@ -398,7 +398,7 @@ export default class Home extends Component {
 											<div className="contactus-text">
 												<h3>General Queries</h3>
 												<p>
-													Anuj Srivastava :<br /> 9588072917
+													Divyaman :<br /> 8963052212
 												</p>
 											</div>
 										</div>
