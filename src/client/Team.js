@@ -3,19 +3,40 @@ import "./Team.css";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Splash from "./Splash";
 // import "@fortawesome/fontawesome-free/css/all.min.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 export default class Team extends Component {
   state = {};
   images = [
-    "https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg"
+    "https://i.ibb.co/X5qprfG/prasanna.jpg",
+    "https://i.ibb.co/tYHsJJW/pritesh.jpg",
+    "https://i.ibb.co/S0WNQ96/satya.jpg",
+    "https://i.ibb.co/Mp17CFT/ritu.jpg",
+    "https://i.ibb.co/6mdPSCx/srividya.jpg",
+    "https://i.ibb.co/X3Y4Mpj/suraj.jpg",
+    "https://i.ibb.co/YX9LQZM/umang.jpg",
+    "https://i.ibb.co/mHgMNK1/varun.jpg",
+    "https://i.ibb.co/2YdGPSk/ansh.jpg",
+    "https://i.ibb.co/3pH7J0G/anuj.jpg",
+    "https://i.ibb.co/0tCqyBX/arunanshu.jpg",
+    "https://i.ibb.co/mFq3cYv/ayush.jpg",
+    "https://i.ibb.co/L964ZWZ/devanshu.jpg",
+    "https://i.ibb.co/y4k5Nmz/dhruv.jpg",
+    "https://i.ibb.co/6NF0rk5/divyaman.jpg",
+    "https://i.ibb.co/ZXxFPRb/dp.jpg",
+    "https://i.ibb.co/CByNtgX/keshav.jpg",
+    "https://i.ibb.co/CMdmdqc/kshitiz.jpg",
+    "https://i.ibb.co/NTRHjVJ/mridul.jpg",
+    "https://i.ibb.co/gw0bhnD/nishant.jpg",
+    "https://i.ibb.co/fXgNNZb/nupur.jpg",
+    "https://i.ibb.co/Dgrp62L/pranav.jpg"
   ];
-  renderMember(imgsrc, phone, insta, faceb, linkedin,fullpageApi) {
+  renderMember(imgsrc, phone, insta, faceb, linkedin, fullpageApi) {
     return (
       <div className="base">
         <img
-        onLoad={() => {
-          fullpageApi.reBuild();
-        }}
+          onLoad={() => {
+            fullpageApi.reBuild();
+          }}
           className="imgteam"
           src={imgsrc}
           style={{ position: "absolute" }}
@@ -24,8 +45,12 @@ export default class Team extends Component {
         <div className="derived2"></div>
         <div className="derived-content">
           <p className="main-content-team">
-            <i style={{ color: "white" }} className="fas fa-phone-square-alt"></i>{" "}
-            <span style={{ fontSize: "17px",color: "white" }}>{phone}</span> <br></br>
+            <i
+              style={{ color: "white" }}
+              className="fas fa-phone-square-alt"
+            ></i>{" "}
+            <span style={{ fontSize: "17px", color: "white" }}>{phone}</span>{" "}
+            <br></br>
             <a href={insta} target="blank">
               <i style={{ color: "white" }} className="fab fa-instagram"></i>
             </a>{" "}
@@ -52,19 +77,17 @@ export default class Team extends Component {
           render={({ state, fullpageApi }) => {
             return (
               <ReactFullpage.Wrapper>
-                <div className="section" style={{background:'#000000'}}>
-                <Link to="/home">
-                <div style={{padding:'0px',margin:'0px'}}>
-                  
-                      <img 
-                      style={{height:'auto',width:'100px'}}
-                      src="src/shared/img/blitzlogo.png"></img>
+                <div className="section" style={{ background: "#000000" }}>
+                  <Link to="/home">
+                    <div style={{ padding: "0px", margin: "0px" }}>
+                      <img
+                        style={{ height: "auto", width: "100px" }}
+                        src="src/shared/img/blitzlogo.png"
+                      ></img>
                     </div>
-                    </Link>
+                  </Link>
                   <div className="container team-cont">
-                    <h2 className="team-head singlecont">
-                      Team Blitzschlag
-                    </h2>
+                    <h2 className="team-head singlecont">Team Blitzschlag</h2>
                     <br></br>
                     <div className="row ">
                       <div className="col-12 singlecont">
@@ -79,10 +102,16 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
                             Varun Kumar Verma
                           </h4>
-                          <h5 style={{ textAlign: "center"  }} className="team-des">
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
                             ADVISOR
                           </h5>
                           <br></br>
@@ -102,10 +131,16 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
                             Anuj Srivastava
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
                             PRESIDENT
                           </h5>
                           <br></br>
@@ -120,16 +155,22 @@ export default class Team extends Component {
                             "8963052212",
                             "https://www.instagram.com/divyaman_purbey/",
                             "https://www.facebook.com/divyaman.purbey",
-                            
+
                             "null",
                             fullpageApi
                           )}
                         </div>
                         <div className="col-cont ">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
                             Divyaman
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
                             VICE-PRESIDENT
                           </h5>
                           <br></br>
@@ -142,17 +183,23 @@ export default class Team extends Component {
                             "8700614357",
                             "https://www.instagram.com/nupur02_malik/",
                             "https://www.facebook.com/profile.php?id=100020421310633&fref=search&__tn__=%2Cd%2CP-R&eid=ARCj2ETE5c1Fxy3Eq-NsJ9gInELeLuFm7gxJNDji0Peo9vFM74qcSFdOwlFxLE4pxe4sLUTHjPg0ieeX",
-                            
+
                             "null",
                             fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
                             Nupur Malik
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
-                          VICE-PRESIDENT
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
+                            VICE-PRESIDENT
                           </h5>
                           <br></br>
                         </div>
@@ -160,22 +207,28 @@ export default class Team extends Component {
                     </div>
                     <div className="row ">
                       <div className="col-12 singlecont">
-                      <div className="dummycol">
+                        <div className="dummycol">
                           {this.renderMember(
                             "https://i.ibb.co/2YdGPSk/ansh.jpg",
                             "8518066443",
                             "https://www.instagram.com/anshkhandelwal7/",
                             "https://www.facebook.com/AnshKhandelwal26",
-                            
+
                             "null",
                             fullpageApi
                           )}
                         </div>
                         <div className="col-cont ">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
                             Ansh Khandelwal
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
                             GENERAL SECRETARY
                           </h5>
                           <br></br>
@@ -190,17 +243,23 @@ export default class Team extends Component {
                             "9149225262",
                             "https://www.instagram.com/singhayush_pratap/",
                             "https://www.facebook.com/ayush.singh.16100",
-                            
+
                             "null",
                             fullpageApi
                           )}
                         </div>
                         <div className="col-cont ">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
-                          Ayush Singh
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
+                            Ayush Singh
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
-                          MARKETING SECRETARY
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
+                            MARKETING SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -212,16 +271,22 @@ export default class Team extends Component {
                             "9968992525",
                             "https://www.instagram.com/nishant__sharma/",
                             "https://www.facebook.com/1Nishant.Sharma1",
-                            
+
                             "null",
                             fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
                             Nishant Sharma
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
                             TECHNICAL SECRETARY
                           </h5>
                           <br></br>
@@ -234,16 +299,22 @@ export default class Team extends Component {
                             "9634157767",
                             "https://www.instagram.com/mridul_singhal19/",
                             "https://www.facebook.com/mridul.singhal.121",
-                            
+
                             "null",
                             fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
                             Mridul Singhal
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
                             TECHNICAL SECRETARY
                           </h5>
                           <br></br>
@@ -258,16 +329,22 @@ export default class Team extends Component {
                             "7627073047",
                             "https://www.instagram.com/dhruv_gupta30/",
                             "https://www.facebook.com/dhruv.gupta.30",
-                            
+
                             "null",
                             fullpageApi
                           )}
                         </div>
                         <div className="col-cont ">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
                             Dhruv Gupta
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
                             LOGISTICS SECRETARY
                           </h5>
                           <br></br>
@@ -280,16 +357,22 @@ export default class Team extends Component {
                             "8441944621",
                             "https://www.instagram.com/kshitizkain/",
                             "https://www.facebook.com/kshitiz.kain",
-                            
+
                             "null",
                             fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
                             Kshitiz Kain
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
                             LOGISTICS SECRETARY
                           </h5>
                           <br></br>
@@ -304,17 +387,23 @@ export default class Team extends Component {
                             " 9602412495",
                             "https://www.instagram.com/ritu4536/",
                             "https://www.facebook.com/profile.php?id=100009506987606",
-                            
+
                             "null",
                             fullpageApi
                           )}
                         </div>
                         <div className="col-cont ">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
-                          Ritu Choudhary
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
+                            Ritu Choudhary
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
-                          FINANCE SECRETARY
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
+                            FINANCE SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -326,17 +415,23 @@ export default class Team extends Component {
                             "9314655304",
                             "https://www.instagram.com/pagal_devanshu/",
                             "https://www.facebook.com/devanshu.khandal",
-                            
+
                             "null",
                             fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
-                          Devanshu Khandal
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
+                            Devanshu Khandal
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
-                          CULTURAL SECRETARY
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
+                            CULTURAL SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -348,17 +443,23 @@ export default class Team extends Component {
                             "8639261222",
                             "https://www.instagram.com/vidya._.99/",
                             "https://www.facebook.com/venkata.srividya.3",
-                            
+
                             "null",
                             fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
-                          Bhuvanagiri Venkata Srividya
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
+                            Bhuvanagiri Venkata Srividya
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
-                          CULTURAL SECRETARY
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
+                            CULTURAL SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -372,17 +473,23 @@ export default class Team extends Component {
                             "8696913951",
                             "https://www.instagram.com/arudeep.25/",
                             "https://www.facebook.com/profile.php?id=100017390686711",
-                            
+
                             "null",
                             fullpageApi
                           )}
                         </div>
                         <div className="col-cont ">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
-                          Arunanshu Deep Barnawal
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
+                            Arunanshu Deep Barnawal
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
-                          MEDIA AND COMMUNICATION SECRETARY
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
+                            MEDIA AND COMMUNICATION SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -394,17 +501,23 @@ export default class Team extends Component {
                             "9834017568",
                             "",
                             "https://www.facebook.com/prasuv1748",
-                            
+
                             "null",
                             fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
-                          Prasanna Venkatesh V
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
+                            Prasanna Venkatesh V
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
-                          MEDIA AND COMMUNICATION SECRETARY
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
+                            MEDIA AND COMMUNICATION SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -418,18 +531,23 @@ export default class Team extends Component {
                             " 7763898654",
                             "https://www.instagram.com/spdstunter/",
                             "https://www.facebook.com/profile.php?id=100004962662779",
-                            
+
                             "null",
                             fullpageApi
                           )}
                         </div>
                         <div className="col-cont ">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
-                          Suraj Prakash
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
+                            Suraj Prakash
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
-                            
-                          PUBLICITY SECRETARY
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
+                            PUBLICITY SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -441,18 +559,23 @@ export default class Team extends Component {
                             "7610091747",
                             "https://www.instagram.com/pritesh.kumawat99/",
                             "https://www.facebook.com/profile.php?id=100008316942264",
-                            
+
                             "null",
                             fullpageApi
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
-                          Pritesh Kumawat
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
+                            Pritesh Kumawat
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
-                            
-                          DECOR SECRETARY
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
+                            DECOR SECRETARY
                           </h5>
                           <br></br>
                         </div>
@@ -469,11 +592,21 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
-                          Umang Bhardwaj
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
+                            Umang Bhardwaj
                           </h4>
-                          <h5 className="team-des" style={{letterSpacing: '8px', textAlign: "center",fontSize:'0.8em'}}>
-                          DECOR SECRETARY<br></br>DESIGNING HEAD
+                          <h5
+                            className="team-des"
+                            style={{
+                              letterSpacing: "8px",
+                              textAlign: "center",
+                              fontSize: "0.8em"
+                            }}
+                          >
+                            DECOR SECRETARY<br></br>DESIGNING HEAD
                           </h5>
                           <br></br>
                         </div>
@@ -492,10 +625,16 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont ">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
                             Satya Dhwaj
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
                             WEB DEVELOPER
                           </h5>
                           <br></br>
@@ -512,12 +651,18 @@ export default class Team extends Component {
                             fullpageApi
                           )}
                         </div>
-                        <div  className="col-cont">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
+                        <div className="col-cont">
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
                             Pranav Sindura
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
-                          WEB DEVELOPER
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
+                            WEB DEVELOPER
                           </h5>
                           <br></br>
                         </div>
@@ -535,12 +680,18 @@ export default class Team extends Component {
                             fullpageApi
                           )}
                         </div>
-                        <div  className="col-cont ">
-                          <h4  className="team-name" style={{ textAlign: "center"}}>
+                        <div className="col-cont ">
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
                             Keshav Sharma
                           </h4>
-                          <h5 style={{ textAlign: "center" }} className="team-des">
-                          WEB DEVELOPER
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
+                            WEB DEVELOPER
                           </h5>
                           <br></br>
                         </div>
@@ -557,11 +708,17 @@ export default class Team extends Component {
                           )}
                         </div>
                         <div className="col-cont">
-                          <h4 className="team-name" style={{ textAlign: "center"}}>
+                          <h4
+                            className="team-name"
+                            style={{ textAlign: "center" }}
+                          >
                             Dhairya Patel
                           </h4>
-                          <h5 style={{ textAlign: "center"}} className="team-des">
-                          WEB DEVELOPER
+                          <h5
+                            style={{ textAlign: "center" }}
+                            className="team-des"
+                          >
+                            WEB DEVELOPER
                           </h5>
                           <br></br>
                         </div>
