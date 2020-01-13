@@ -8,7 +8,18 @@ import { Button } from "reactstrap";
 import Splash from "./Splash";
 export default class Society extends Component {
   state = {};
-  images = ["src/shared/img/car1.jpg"];
+  images = [
+  "https://i.ibb.co/NKjnDzx/maverics.png",
+  "https://i.ibb.co/44ZRdnp/mds.png",
+  "https://i.ibb.co/bbzDWtQ/vss.png",
+  "https://i.ibb.co/S7F32xM/cacs.png",
+  "https://i.ibb.co/F3wPc2m/carnival.png",
+  "https://i.ibb.co/c8V03Cm/dil.png",
+  "https://i.ibb.co/ZTKQ15T/edcell.png",
+  "https://i.ibb.co/Z2hqV8p/fnarts.png",
+  "https://i.ibb.co/qd1mFRp/fnp.png",
+  "https://i.ibb.co/YPvFGhb/informal.png",
+  "https://i.ibb.co/7yZ7HmK/literary.png"];
   renderEventSoc(fullpageApi) {
     if (window.innerWidth > 760) {
       return (
@@ -24,7 +35,7 @@ export default class Society extends Component {
               </div>
               <div className="main-cont-event">
                 <img
-                  src="src/shared/img/literary.png"
+                  src="https://i.ibb.co/7yZ7HmK/literary.png"
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
@@ -60,7 +71,7 @@ export default class Society extends Component {
               </div>
               <div className="main-cont-event">
                 <img
-                  src="src/shared/img/mds.png"
+                  src="https://i.ibb.co/44ZRdnp/mds.png"
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
@@ -125,7 +136,7 @@ export default class Society extends Component {
               </div>
               <div className="main-cont-event">
                 <img
-                  src="src/shared/img/maverics.png"
+                  src="https://i.ibb.co/NKjnDzx/maverics.png"
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
@@ -159,7 +170,7 @@ export default class Society extends Component {
               </div>
               <div className="main-cont-event">
                 <img
-                  src="src/shared/img/dil.png"
+                  src="https://i.ibb.co/c8V03Cm/dil.png"
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
@@ -193,7 +204,7 @@ export default class Society extends Component {
               </div>
               <div className="main-cont-event">
                 <img
-                  src="src/shared/img/fnarts.png"
+                  src="https://i.ibb.co/Z2hqV8p/fnarts.png"
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
@@ -266,7 +277,7 @@ export default class Society extends Component {
               </div>
               <div className="main-cont-event">
                 <img
-                  src="src/shared/img/informal.png"
+                  src="https://i.ibb.co/YPvFGhb/informal.png"
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
@@ -300,7 +311,7 @@ export default class Society extends Component {
               </div>
               <div className="main-cont-event">
                 <img
-                  src="src/shared/img/cacs.png"
+                  src="https://i.ibb.co/S7F32xM/cacs.png"
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
@@ -334,7 +345,7 @@ export default class Society extends Component {
               </div>
               <div className="main-cont-event">
                 <img
-                  src="src/shared/img/vss.png"
+                  src="https://i.ibb.co/bbzDWtQ/vss.png"
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
@@ -444,7 +455,7 @@ export default class Society extends Component {
                 fullpageApi.reBuild();
               }}
               className="eve-img-mob"
-              src="src/shared/img/literary.png"
+              src="https://i.ibb.co/7yZ7HmK/literary.png"
               style={{
                 position: "absolute",
                 heigth: "auto",
@@ -546,7 +557,7 @@ export default class Society extends Component {
               onLoad={() => {
                 fullpageApi.reBuild();
               }}
-              src="src/shared/img/mds.png"
+              src="https://i.ibb.co/44ZRdnp/mds.png"
               className="eve-img-mob"
               style={{
                 position: "absolute",
@@ -665,7 +676,7 @@ export default class Society extends Component {
               onLoad={() => {
                 fullpageApi.reBuild();
               }}
-              src="src/shared/img/maverics.png"
+              src="https://i.ibb.co/NKjnDzx/maverics.png"
               className="eve-img-mob"
               style={{
                 position: "absolute",
@@ -682,7 +693,7 @@ export default class Society extends Component {
               onLoad={() => {
                 fullpageApi.reBuild();
               }}
-              src="src/shared/img/dil.png"
+              src="https://i.ibb.co/c8V03Cm/dil.png"
               className="eve-img-mob"
               style={{
                 position: "absolute",
@@ -785,7 +796,7 @@ export default class Society extends Component {
               onLoad={() => {
                 fullpageApi.reBuild();
               }}
-              src="src/shared/img/fnarts.png"
+              src="https://i.ibb.co/Z2hqV8p/fnarts.png"
               className="eve-img-mob"
               style={{
                 position: "absolute",
@@ -901,7 +912,7 @@ export default class Society extends Component {
               onLoad={() => {
                 fullpageApi.reBuild();
               }}
-              src="src/shared/img/informal.png"
+              src="https://i.ibb.co/YPvFGhb/informal.png"
               className="eve-img-mob"
               style={{
                 position: "absolute",
@@ -918,7 +929,7 @@ export default class Society extends Component {
               onLoad={() => {
                 fullpageApi.reBuild();
               }}
-              src="src/shared/img/cacs.png"
+              src="https://i.ibb.co/S7F32xM/cacs.png"
               className="eve-img-mob"
               style={{
                 position: "absolute",
@@ -1018,7 +1029,7 @@ export default class Society extends Component {
                 fullpageApi.reBuild();
               }}
               className="eve-img-mob"
-              src="src/shared/img/vss.png"
+              src="https://i.ibb.co/bbzDWtQ/vss.png"
               style={{
                 position: "absolute",
                 heigth: "auto",
