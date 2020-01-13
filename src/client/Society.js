@@ -9,17 +9,18 @@ import Splash from "./Splash";
 export default class Society extends Component {
   state = {};
   images = [
-  "https://i.ibb.co/NKjnDzx/maverics.png",
-  "https://i.ibb.co/44ZRdnp/mds.png",
-  "https://i.ibb.co/bbzDWtQ/vss.png",
-  "https://i.ibb.co/S7F32xM/cacs.png",
-  "https://i.ibb.co/F3wPc2m/carnival.png",
-  "https://i.ibb.co/c8V03Cm/dil.png",
-  "https://i.ibb.co/ZTKQ15T/edcell.png",
-  "https://i.ibb.co/Z2hqV8p/fnarts.png",
-  "https://i.ibb.co/qd1mFRp/fnp.png",
-  "https://i.ibb.co/YPvFGhb/informal.png",
-  "https://i.ibb.co/7yZ7HmK/literary.png"];
+    "https://i.ibb.co/NKjnDzx/maverics.png",
+    "https://i.ibb.co/44ZRdnp/mds.png",
+    "https://i.ibb.co/bbzDWtQ/vss.png",
+    "https://i.ibb.co/S7F32xM/cacs.png",
+    "https://i.ibb.co/F3wPc2m/carnival.png",
+    "https://i.ibb.co/c8V03Cm/dil.png",
+    "https://i.ibb.co/ZTKQ15T/edcell.png",
+    "https://i.ibb.co/Z2hqV8p/fnarts.png",
+    "https://i.ibb.co/qd1mFRp/fnp.png",
+    "https://i.ibb.co/YPvFGhb/informal.png",
+    "https://i.ibb.co/7yZ7HmK/literary.png"
+  ];
   renderEventSoc(fullpageApi) {
     if (window.innerWidth > 760) {
       return (
