@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Card, CardImg, CardBody, CardTitle, Container, Row, Col, CardGroup } from 'reactstrap';
 import './Sponsors.css';
 import {Link} from 'react-router-dom';
-
 import { SPONSOR } from './SponsorsData.js';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Splash from './Splash';
@@ -10,7 +9,27 @@ export default class Sponsors extends Component {
 	state = {
 		sponsors: SPONSOR
 	};
-	images = ['https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg'];
+	images = [
+		"https://i.ibb.co/SXkDCH2/pizzahut.png",
+		"https://i.ibb.co/T85Tpvy/reliancef.png",
+		"https://i.ibb.co/d5JqTPN/sprite.jpg",
+		"https://i.ibb.co/L8BBkX0/sunburn.jpg",
+		"https://i.ibb.co/vDRmryS/swiggy.png",
+		"https://i.ibb.co/zSdSP8K/vivo.png",
+		"https://i.ibb.co/MGvTRvW/9xm.jpg",
+		"https://i.ibb.co/nbn1SXn/airtel.gif",
+		"https://i.ibb.co/4KTCJT7/allen.png",
+		"https://i.ibb.co/Z6dvz34/bajaj.png",
+		"https://i.ibb.co/Jq29ZhL/barbeque.jpg",
+		"https://i.ibb.co/QN5MC1y/bsnl.jpg",
+		"https://i.ibb.co/Xb8mSdm/burgerf.jpg",
+		"https://i.ibb.co/XbhGK4V/coca.jpg",
+		"https://i.ibb.co/dD5ZBz0/dainikB.gif",
+		"https://i.ibb.co/1qFSS7M/hero.png",
+		"https://i.ibb.co/DwH8VKh/honda.jpg",
+		"https://i.ibb.co/DG04rxQ/icici.jpg",
+		"https://i.ibb.co/Z21r6ct/imagine.jpg",
+		"https://i.ibb.co/R9hHtH8/lakme.jpg"];
 	renderSponsor(fullpageApi, imgspon) {
 		return (
 			<div className="circle">
@@ -1106,31 +1125,31 @@ c-49 26 -151 32 -227 13 -84 -22 -146 -53 -220 -109 l-63 -47 -63 47 c-138
 									<div className="container">
 										<div className="row">
 											<div className="col-md-6 midout">
-												{this.renderSponsor(fullpageApi, 'src/shared/img/sponsors/9xm.jpg')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/MGvTRvW/9xm.jpg')}
 												<br></br>
 												<br></br>
 											</div>
 											<div className="col-md-6 midret">
-												{this.renderSponsor(fullpageApi, 'src/shared/img/sponsors/airtel.png')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/nbn1SXn/airtel.gif')}
 												<br></br>
 												<br></br>
 											</div>
 										</div>
 										<div className="row">
 											<div className="col-md-4 mid">
-												{this.renderSponsor(fullpageApi, 'src/shared/img/sponsors/allen.png')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/4KTCJT7/allen.png')}
 												<br></br>
 												<br></br>
 											</div>
 											<div className="col-md-4 mid">
-												{this.renderSponsor(fullpageApi, 'src/shared/img/sponsors/bajaj.png')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/Z6dvz34/bajaj.png')}
 												<br></br>
 												<br></br>
 											</div>
 											<div className="col-md-4 mid">
 												{this.renderSponsor(
 													fullpageApi,
-													'src/shared/img/sponsors/barbeque.jpg'
+													'https://i.ibb.co/Jq29ZhL/barbeque.jpg'
 												)}
 												<br></br>
 												<br></br>
@@ -1138,60 +1157,60 @@ c-49 26 -151 32 -227 13 -84 -22 -146 -53 -220 -109 l-63 -47 -63 47 c-138
 										</div>
 										<div className="row">
 											<div className="col-md-6 midout">
-												{this.renderSponsor(fullpageApi, 'src/shared/img/sponsors/bsnl.jpg')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/QN5MC1y/bsnl.jpg')}
 												<br></br>
 												<br></br>
 											</div>
 											<div className="col-md-6 midret">
-												{this.renderSponsor(fullpageApi, 'src/shared/img/sponsors/burgerf.jpg')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/Xb8mSdm/burgerf.jpg')}
 												<br></br>
 												<br></br>
 											</div>
 										</div>
 										<div className="row">
 											<div className="col-md-4 mid">
-												{this.renderSponsor(fullpageApi, 'src/shared/img/sponsors/coca.jpg')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/XbhGK4V/coca.jpg')}
 												<br></br>
 												<br></br>
 											</div>
 											<div className="col-md-4 mid">
-												{this.renderSponsor(fullpageApi, 'src/shared/img/sponsors/dainikB.png')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/dD5ZBz0/dainikB.gif')}
 												<br></br>
 												<br></br>
 											</div>
 											<div className="col-md-4 mid">
-												{this.renderSponsor(fullpageApi, 'src/shared/img/sponsors/hero.png')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/1qFSS7M/hero.png')}
 												<br></br>
 												<br></br>
 											</div>
 										</div>
 										<div className="row">
 											<div className="col-md-6 midout">
-												{this.renderSponsor(fullpageApi, 'src/shared/img/sponsors/honda.jpg')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/DwH8VKh/honda.jpg')}
 												<br></br>
 												<br></br>
 											</div>
 											<div className="col-md-6 midret">
-												{this.renderSponsor(fullpageApi, 'src/shared/img/sponsors/icici.jpg')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/DG04rxQ/icici.jpg')}
 												<br></br>
 												<br></br>
 											</div>
 										</div>
 										<div className="row">
 											<div className="col-md-4 mid">
-												{this.renderSponsor(fullpageApi, 'src/shared/img/sponsors/imagine.jpg')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/Z21r6ct/imagine.jpg')}
 												<br></br>
 												<br></br>
 											</div>
 											<div className="col-md-4 mid">
-												{this.renderSponsor(fullpageApi, 'src/shared/img/sponsors/lakme.jpg')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/R9hHtH8/lakme.jpg')}
 												<br></br>
 												<br></br>
 											</div>
 											<div className="col-md-4 mid">
 												{this.renderSponsor(
 													fullpageApi,
-													'src/shared/img/sponsors/pizzahut.jpg'
+													'https://i.ibb.co/SXkDCH2/pizzahut.png'
 												)}
 												<br></br>
 												<br></br>
@@ -1201,30 +1220,30 @@ c-49 26 -151 32 -227 13 -84 -22 -146 -53 -220 -109 l-63 -47 -63 47 c-138
 											<div className="col-md-6 midout">
 												{this.renderSponsor(
 													fullpageApi,
-													'src/shared/img/sponsors/reliancef.jpg'
+													'https://i.ibb.co/T85Tpvy/reliancef.png'
 												)}
 												<br></br>
 												<br></br>
 											</div>
 											<div className="col-md-6 midret">
-												{this.renderSponsor(fullpageApi, 'src/shared/img/sponsors/sprite.png')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/d5JqTPN/sprite.jpg')}
 												<br></br>
 												<br></br>
 											</div>
 										</div>
 										<div className="row">
 											<div className="col-md-4 mid">
-												{this.renderSponsor(fullpageApi, 'src/shared/img/sponsors/sunburn.jpg')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/L8BBkX0/sunburn.jpg')}
 												<br></br>
 												<br></br>
 											</div>
 											<div className="col-md-4 mid">
-												{this.renderSponsor(fullpageApi, 'src/shared/img/sponsors/swiggy.jpg')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/L8BBkX0/sunburn.jpg')}
 												<br></br>
 												<br></br>
 											</div>
 											<div className="col-md-4 mid">
-												{this.renderSponsor(fullpageApi, 'src/shared/img/sponsors/vivo.png')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/zSdSP8K/vivo.png')}
 												<br></br>
 												<br></br>
 											</div>
