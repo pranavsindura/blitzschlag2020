@@ -29,9 +29,14 @@ export default class Society extends Component {
                   alt="logo"
                 ></img>
                 <div className="text-pc">
-                  <br></br>               
-For the breadth of knowledge literature gives, the moral values it carries, and the enjoyment it provides, it is an essential element for every budding student. Exposure to good literary works is essential at every phase of life as it enriches us in more ways than one.To promote this idea, the Literary society of MNIT provides an ideal platform to every aspiring writer of the institute to ameliorate their writing prowess and enhance their dexterity.
-Every year this society organizes Litfest, which amalgamates all the artistic minds and helps them explore the various forms of literature through numerous intriguing events.
+                  <br></br>
+                  For the breadth of knowledge literature gives, the moral
+                  values it carries, and the enjoyment it provides, it is an
+                  essential element for every budding student. To provide
+                  exposure to good literary works, the Literary society of MNIT
+                  provides an ideal platform to every aspiring writer of the
+                  institute to ameliorate their writing prowess and enhance
+                  their dexterity.
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/literary">
@@ -61,12 +66,12 @@ Every year this society organizes Litfest, which amalgamates all the artistic mi
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  Programming online is not different from programming on your
-                  system, except a few points. We’ll be learning that here.
-                  Happy coding :) Let's start with a basic program to get you
-                  onboarded on HackerEarth. Write a program to print your name
-                  as output. Instructions: We have already written the correct
-                  code for this problem in the code editor.
+                  Music and dance hold the power to transport their
+                  practitioners and audience to a state of bliss akin to Union
+                  with God. The MDS Society serves as a common terminus for all
+                  the music and dance lovers to enhance their proficiency by
+                  organizing efficient workshops and a myriad of events
+                  regularly, helping them learn the artforms of their choice.
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/mds">
@@ -93,12 +98,12 @@ Every year this society organizes Litfest, which amalgamates all the artistic mi
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  Programming online is not different from programming on your
-                  system, except a few points. We’ll be learning that here.
-                  Happy coding :) Let's start with a basic program to get you
-                  onboarded on HackerEarth. Write a program to print your name
-                  as output. Instructions: We have already written the correct
-                  code for this problem in the code editor.
+                  The Entrepreneurship Development cell or ED-cell , aims to
+                  re-kindle the thoughts and learnings of the corporate world
+                  among students who have devoted their minds to technical
+                  education. Its objectives include creating an atmosphere to
+                  promote innovative thinking and getting the college aquainted
+                  with the situations faced by minds in the real business world.
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/edcell">
@@ -126,12 +131,13 @@ Every year this society organizes Litfest, which amalgamates all the artistic mi
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  Programming online is not different from programming on your
-                  system, except a few points. We’ll be learning that here.
-                  Happy coding :) Let's start with a basic program to get you
-                  onboarded on HackerEarth. Write a program to print your name
-                  as output. Instructions: We have already written the correct
-                  code for this problem in the code editor.
+                  An unorthodox or independent minded person,this isn't just
+                  another line, this is the meaning of the word maverick, and
+                  that's what 'The Mavericks' is all about, a club that ardently
+                  supports unorthodox approach, that has the the capability to
+                  bring about a change and provides an ideal platform for the
+                  same, using mass and media for communication and further
+                  publicity.
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/mavericks">
@@ -159,12 +165,13 @@ Every year this society organizes Litfest, which amalgamates all the artistic mi
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  Programming online is not different from programming on your
-                  system, except a few points. We’ll be learning that here.
-                  Happy coding :) Let's start with a basic program to get you
-                  onboarded on HackerEarth. Write a program to print your name
-                  as output. Instructions: We have already written the correct
-                  code for this problem in the code editor.
+                  Drama Is Life is the official drama group of MNIT.Drama is
+                  an important tool for preparing students to live and work in a
+                  world that is increasingly team-oriented rather than
+                  hierarchical.It provides a platform to interested artists and
+                  helps them to work on their theatrical prowess. The students
+                  get a chance to refine their acting skills to a professional
+                  level and embrace leadership qualities.
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/dramatics">
@@ -192,12 +199,13 @@ Every year this society organizes Litfest, which amalgamates all the artistic mi
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  Programming online is not different from programming on your
-                  system, except a few points. We’ll be learning that here.
-                  Happy coding :) Let's start with a basic program to get you
-                  onboarded on HackerEarth. Write a program to print your name
-                  as output. Instructions: We have already written the correct
-                  code for this problem in the code editor.
+                  Art is not what you see, but what you make others see. Fine
+                  arts provides learners with a number of non-academic benefits
+                  such as improved emotional expression, social harmony and
+                  cultural exposure. The Fine Arts Society allows students to
+                  procure innovative skills through a plethora of events in
+                  creative arts and designing , to put them into use during the
+                  organization of various college events.
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/finearts">
@@ -226,17 +234,21 @@ Every year this society organizes Litfest, which amalgamates all the artistic mi
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  Programming online is not different from programming on your
-                  system, except a few points. We’ll be learning that here.
-                  Happy coding :) Let's start with a basic program to get you
-                  onboarded on HackerEarth. Write a program to print your name
-                  as output. Instructions: We have already written the correct
-                  code for this problem in the code editor.
+                  The Film and Photography Club has been nourishing keen
+                  photographers and film makers for years, cultivating technical
+                  aspects of photography and film making. Organizing state of
+                  the art workshops and competitions regularly are the prime
+                  reasons behind the development of passionate photographers and
+                  film makers.
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/fnp">
                     <Button
-                      style={{ backgroundColor: "#f1e5d6", color: "#3a7472",border:'none' }}
+                      style={{
+                        backgroundColor: "#f1e5d6",
+                        color: "#3a7472",
+                        border: "none"
+                      }}
                     >
                       EXPLORE
                     </Button>
@@ -328,12 +340,12 @@ Every year this society organizes Litfest, which amalgamates all the artistic mi
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  Programming online is not different from programming on your
-                  system, except a few points. We’ll be learning that here.
-                  Happy coding :) Let's start with a basic program to get you
-                  onboarded on HackerEarth. Write a program to print your name
-                  as output. Instructions: We have already written the correct
-                  code for this problem in the code editor.
+                  Vyaktitva Srijan Society MNIT is an esteemed society
+                  established mainly for the development of one's personality
+                  and helps an individual to grow socially and aesthetically.
+                  Every year, this society actively participates in social
+                  service events such as teaching underprivileged
+                  children,donating clothes to the needy etc.
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/vss">
