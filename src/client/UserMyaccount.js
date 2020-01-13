@@ -84,7 +84,7 @@ class Myaccount extends Component {
 						</tr>
 						<tr>
 							<td>City:</td>
-							<td> {this.props.user.branch}</td>
+							<td> {this.props.user.city}</td>
 						</tr>
 						<tr>
 							<td>Accomodation needed:</td>
