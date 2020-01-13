@@ -93,7 +93,7 @@ class App extends Component {
 											this.handleCheck();
 										}}
 									>
-										<i className="far fa-user"></i>&nbsp;&nbsp;MY ACCOUNTS
+										<i className="far fa-user"></i>&nbsp;&nbsp;MY ACCOUNT
 									</Link>
 								</li>
 							) : (
