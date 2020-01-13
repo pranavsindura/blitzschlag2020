@@ -1238,7 +1238,7 @@ c-49 26 -151 32 -227 13 -84 -22 -146 -53 -220 -109 l-63 -47 -63 47 c-138
 												<br></br>
 											</div>
 											<div className="col-md-4 mid">
-												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/L8BBkX0/sunburn.jpg')}
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/vDRmryS/swiggy.png')}
 												<br></br>
 												<br></br>
 											</div>
