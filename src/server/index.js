@@ -192,6 +192,11 @@ app.post('/events', (req, res) => {
                                                     data: obj.teamCount
                                                 });
                                                 console.log('updated team id');
+                                                users.forEach(user => {
+                                                    mailer.eventMail(user, obj.teamCount, eventReg.eventName).catch(err => {
+                                                        console.log(err);
+                                                    });
+                                                });
                                             });
                                         } else {
                                             res.send({
