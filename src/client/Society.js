@@ -474,7 +474,7 @@ export default class Society extends Component {
               every aspiring writer of the institute to ameliorate their writing
               prowess and enhance their dexterity.
             </div>
-            <Link to="/events/litetary">
+            <Link to="/events/literary">
               <Button
                 style={{
                   backgroundColor: "#e13663",
