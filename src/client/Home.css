@@ -1083,7 +1083,7 @@ p {
         height: 50%;
         width: auto;
         left: -5%;
-        top: 5%;
+        top: 0%;
         transition: all 0.2s ease-in-out;
         animation: none;
         /* animation: l1-move 2s linear alternate infinite; */
@@ -1093,7 +1093,7 @@ p {
         height: 50%;
         width: auto;
         left: -5%;
-        top: 0%;
+        top: -3%;
         transition: all 0.2s ease-in-out;
         animation-delay: 600ms;
         animation: none;
@@ -1104,7 +1104,7 @@ p {
         height: 40%;
         width: auto;
         left: 5%;
-        top: 3%;
+        top: -1%;
         animation: none;
         /* animation: l2-move 5s linear alternate infinite; */
     }
@@ -1113,7 +1113,7 @@ p {
         height: 40%;
         width: auto;
         left: 10%;
-        top: 0%;
+        top: -5%;
         animation: none;
         /* animation: l3-move 2.5s linear alternate infinite; */
     }
