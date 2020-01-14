@@ -11,7 +11,7 @@ let idSchema = new mongoose.Schema({
     }
 });
 
-let idModel = new mongoose.model('idModel', idSchema);
+let idModel = new mongoose.model('Counts', idSchema);
 
 module.exports = {
     idModel
