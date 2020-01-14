@@ -36,11 +36,11 @@ export default class Home extends Component {
     "src/shared/img/car3.jpg"
   ];
   images = [
-    "http://makingnotesinthedark.files.wordpress.com/2014/02/babloo-happy-hai-2014-hd-movie-wallpapers.jpg",
-    "https://storage.googleapis.com/ehimages/2018/3/26/img_35da01d961375fb6b4cc12b956776db0_1522053167583_processed_original.jpg",
-    "https://ecisveep.nic.in/uploads/monthly_2018_11/large.1385334822_nukkad5.jpg.10a022ad8eac5284ac2e10484f9020a8.jpg",
-    "https://images.unsplash.com/photo-1549046675-dd779977de88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-    "http://www.safetynational.com/wp-content/uploads/2018/10/IMG_1963-scaled.jpg",
+    "https://i.ibb.co/R3qLWcy/orange.png",
+    "https://i.ibb.co/sCmhpJN/orangebg.jpg",
+    "https://i.ibb.co/Xb3vZNy/purple.png",
+    "https://i.ibb.co/8NM4R9y/purplebg.jpg",
+    "https://i.ibb.co/BnPr8Gf/aboutusbg.png",
     "https://imgur.com/iVUKgex.jpg",
     "https://imgur.com/JI5zb8u.png",
     "https://imgur.com/bwPJhL4.jpg",
@@ -282,20 +282,21 @@ export default class Home extends Component {
                   className="section content sundarchakra"
                   style={{
                     transition: "all 2s",
-                    backgroundImage: `url('https://imgur.com/bwPJhL4.jpg')`,
+                    backgroundImage: `url('https://i.ibb.co/sCmhpJN/orangebg.jpg')`,
                     backgroundSize: "cover"
                   }}
                 >
                   <img
                     className="zoom"
                     id="lady"
-                    src={`https://i.imgur.com/9yC93U6.png`}
+                    src={`https://i.ibb.co/R3qLWcy/orange.png`}
                   />
                 </div>
                 <div
                   className="section content"
                   style={{
-                    backgroundImage: 'url("https://i.imgur.com/2dQuCUu.png")',
+                    backgroundImage:
+                      'url("https://i.ibb.co/BnPr8Gf/aboutusbg.png")',
                     backgroundSize: "cover"
                   }}
                 >
@@ -346,7 +347,7 @@ export default class Home extends Component {
                 <div
                   className="section content"
                   style={{
-                    backgroundImage: `url("https://imgur.com/iVUKgex.jpg")`,
+                    backgroundImage: `url("https://i.ibb.co/8NM4R9y/purplebg.jpg")`,
                     backgroundSize: "cover"
                   }}
                 >
@@ -364,7 +365,7 @@ export default class Home extends Component {
                       <div className="ladytheme-holder">
                         <img
                           className={"ladytheme zoom"}
-                          src={`https://imgur.com/JI5zb8u.png`}
+                          src={`https://i.ibb.co/Xb3vZNy/purple.png`}
                         />
                       </div>
                       <div className="theme-holder">
@@ -387,15 +388,15 @@ export default class Home extends Component {
                         </p>
                         <div className="theme-icon-holder">
                           <div className="theme-icon theme-icon-1">
-                            <i class="fas fa-calendar-check"></i>
+                            <i className="fas fa-calendar-check"></i>
                             <p> 72+ Events</p>
                           </div>
                           <div className="theme-icon">
-                            <i class="fas fa-walking"></i>
+                            <i className="fas fa-walking"></i>
                             <p> 54K+ Footfall</p>
                           </div>
                           <div className="theme-icon">
-                            <i class="fas fa-university"></i>
+                            <i className="fas fa-university"></i>
                             <p> 25+ Colleges</p>
                           </div>
                         </div>
@@ -426,15 +427,15 @@ export default class Home extends Component {
                         </p>
                         <div className="theme-icon-holder">
                           <div className="theme-icon theme-icon-1">
-                            <i class="fas fa-calendar-check"></i>
+                            <i className="fas fa-calendar-check"></i>
                             <p> 72+ Events</p>
                           </div>
                           <div className="theme-icon">
-                            <i class="fas fa-walking"></i>
+                            <i className="fas fa-walking"></i>
                             <p> 54K+ Footfall</p>
                           </div>
                           <div className="theme-icon">
-                            <i class="fas fa-university"></i>
+                            <i className="fas fa-university"></i>
                             <p> 25+ Colleges</p>
                           </div>
                         </div>
@@ -488,17 +489,17 @@ export default class Home extends Component {
                         <p>Jaipur, Rajasthan - 302017</p>
                         {/* <p>302017</p> */}
                         <div className="mnitmap">
-                          <div class="mapouter">
-                            <div class="gmap_canvas">
+                          <div className="mapouter">
+                            <div className="gmap_canvas">
                               <iframe
                                 width="200"
                                 height="180"
                                 id="gmap_canvas"
                                 src="https://maps.google.com/maps?q=mnit%20jaipur&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                frameborder="0"
+                                frameBorder="0"
                                 scrolling="no"
-                                marginheight="0"
-                                marginwidth="0"
+                                marginHeight="0"
+                                marginWidth="0"
                               ></iframe>
                             </div>
                           </div>
@@ -521,10 +522,10 @@ export default class Home extends Component {
                     <img src="https://i.ibb.co/7Y4zYgf/c2.png" />
                   </div>
                   <div className="c3-holder">
-                    <img src="src/shared/img/c3.png" />
+                    <img src="https://i.ibb.co/nwySkPd/c3.png" />
                   </div>
                   <div className="c4-holder">
-                    <img src="src/shared/img/c4.png" />
+                    <img src="https://i.ibb.co/KbXVm3q/c4.png" />
                   </div>
                   <div className="c5-holder">
                     <img src="https://i.ibb.co/y8gvJj0/c5.png" />
@@ -546,12 +547,12 @@ export default class Home extends Component {
                         href={"https://www.facebook.com/blitzschlagMNIT/"}
                         className="handle-link"
                       >
-                        <i class="fab fa-facebook-f"></i>
+                        <i className="fab fa-facebook-f"></i>
                       </a>
                     </div>
                     <div className="handle-holder">
                       <a href={"#home"} className="handle-link">
-                        <i class="fab fa-twitter"></i>
+                        <i className="fab fa-twitter"></i>
                       </a>
                     </div>
                     <div className="handle-holder">
@@ -562,7 +563,7 @@ export default class Home extends Component {
                         }
                         className="handle-link"
                       >
-                        <i class="fab fa-linkedin-in"></i>
+                        <i className="fab fa-linkedin-in"></i>
                       </a>
                     </div>
                     <div className="handle-holder">
@@ -573,7 +574,7 @@ export default class Home extends Component {
                         }
                         className="handle-link"
                       >
-                        <i class="fab fa-youtube"></i>
+                        <i className="fab fa-youtube"></i>
                       </a>
                     </div>
                     <div className="handle-holder">
