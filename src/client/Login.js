@@ -575,7 +575,7 @@ class Login extends React.Component {
 										<Form.Group>
 											<InputGroup>
 												<InputGroup.Prepend>
-													<InputGroup.Text id="inputGroupPrepend">blitz@</InputGroup.Text>
+													<InputGroup.Text id="inputGroupPrepend">blitz20@</InputGroup.Text>
 												</InputGroup.Prepend>
 												<Form.Control
 													onChange={() => {

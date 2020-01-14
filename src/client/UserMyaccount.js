@@ -127,13 +127,13 @@ class Myaccount extends Component {
 							{events.map((event) => {
 								return (
 									<tr
-										key={event.teamId}
+										key={event.teamID}
 										onLoad={() => {
 											fullpageApi.reBuild();
 										}}
 									>
 										<td>{event.name} </td>
-										<td> {event.teamId}</td>
+										<td> {event.teamID}</td>
 									</tr>
 								);
 							})}
