@@ -513,7 +513,7 @@ export default class Home extends Component {
                     </div>
                   </div>
                   <div className="contactus">
-                    <img src="https://i.ibb.co/cwKtH44/contactus.jpg" />
+                    <img src="https://i.ibb.co/8YdvpQt/contactus.jpg" />
                   </div>
                   <div className="c1-holder">
                     <img src="https://i.ibb.co/M5RMfPd/c1.png" />
