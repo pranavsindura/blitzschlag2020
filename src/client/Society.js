@@ -9,6 +9,7 @@ import Splash from "./Splash";
 export default class Society extends Component {
   state = {};
   images = [
+    "https://i.ibb.co/42WZWbr/blitzlogo.png",
     "https://i.ibb.co/NKjnDzx/maverics.png",
     "https://i.ibb.co/44ZRdnp/mds.png",
     "https://i.ibb.co/bbzDWtQ/vss.png",
@@ -104,7 +105,7 @@ export default class Society extends Component {
               </div>
               <div className="main-cont-event">
                 <img
-                  src="src/shared/img/edcell.png"
+                  src="https://i.ibb.co/ZTKQ15T/edcell.png"
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
@@ -240,7 +241,7 @@ export default class Society extends Component {
               </div>
               <div className="main-cont-event">
                 <img
-                  src="src/shared/img/fnp.png"
+                  src="https://i.ibb.co/qd1mFRp/fnp.png"
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
@@ -379,7 +380,7 @@ export default class Society extends Component {
               </div>
               <div className="main-cont-event">
                 <img
-                  src="src/shared/img/carnival.png"
+                  src="https://i.ibb.co/F3wPc2m/carnival.png"
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
@@ -577,7 +578,7 @@ export default class Society extends Component {
                 fullpageApi.reBuild();
               }}
               className="eve-img-mob"
-              src="src/shared/img/edcell.png"
+              src="https://i.ibb.co/ZTKQ15T/edcell.png"
               style={{
                 position: "absolute",
                 heigth: "auto",
@@ -815,7 +816,7 @@ export default class Society extends Component {
                 fullpageApi.reBuild();
               }}
               className="eve-img-mob"
-              src="src/shared/img/fnp.png"
+              src="https://i.ibb.co/qd1mFRp/fnp.png"
               style={{
                 position: "absolute",
                 heigth: "auto",
@@ -1047,7 +1048,7 @@ export default class Society extends Component {
                 fullpageApi.reBuild();
               }}
               className="eve-img-mob"
-              src="src/shared/img/carnival.png"
+              src="https://i.ibb.co/F3wPc2m/carnival.png"
               style={{
                 position: "absolute",
                 heigth: "auto",
@@ -1106,6 +1107,20 @@ export default class Society extends Component {
     return (
       <div>
         <Splash images={this.images} />
+        <a href="https://blitz20.herokuapp.com/"> 
+					<img
+						style={{
+							height: 'auto',
+							width: '70px',
+							position: 'fixed',
+							left: '0%',
+							top: '0%',
+              zIndex: '1',
+              filter: "drop-shadow(5px 5px 5px #000000f0)"
+						}}
+						src="https://i.ibb.co/42WZWbr/blitzlogo.png"
+					/>
+				</a>
         <ReactFullpage
           verticalCentered={false}
           scrollOverflow={true}
