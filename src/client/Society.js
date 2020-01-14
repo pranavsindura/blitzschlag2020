@@ -54,7 +54,11 @@ export default class Society extends Component {
                 <div className="link-pc-to-cat">
                   <Link to="/events/literary">
                     <Button
-                      style={{ backgroundColor: "#f1e5d6", color: "#e57853" }}
+                      style={{
+                        backgroundColor: "#f1e5d6",
+                        color: "#e57853",
+                        border: "0px"
+                      }}
                     >
                       EXPLORE
                     </Button>
@@ -89,7 +93,11 @@ export default class Society extends Component {
                 <div className="link-pc-to-cat">
                   <Link to="/events/mds">
                     <Button
-                      style={{ backgroundColor: "#f1e5d6", color: "#637952" }}
+                      style={{
+                        backgroundColor: "#f1e5d6",
+                        color: "#637952",
+                        border: "0px"
+                      }}
                     >
                       EXPLORE
                     </Button>
@@ -121,7 +129,11 @@ export default class Society extends Component {
                 <div className="link-pc-to-cat">
                   <Link to="/events/edcell">
                     <Button
-                      style={{ backgroundColor: "#f1e5d6", color: "#207f5f" }}
+                      style={{
+                        backgroundColor: "#f1e5d6",
+                        color: "#207f5f",
+                        border: "0px"
+                      }}
                     >
                       EXPLORE
                     </Button>
@@ -155,7 +167,11 @@ export default class Society extends Component {
                 <div className="link-pc-to-cat">
                   <Link to="/events/mavericks">
                     <Button
-                      style={{ backgroundColor: "#f1e5d6", color: "#026286" }}
+                      style={{
+                        backgroundColor: "#f1e5d6",
+                        color: "#026286",
+                        border: "0px"
+                      }}
                     >
                       EXPLORE
                     </Button>
@@ -189,7 +205,11 @@ export default class Society extends Component {
                 <div className="link-pc-to-cat">
                   <Link to="/events/dramatics">
                     <Button
-                      style={{ backgroundColor: "#f1e5d6", color: "#fe6e81" }}
+                      style={{
+                        backgroundColor: "#f1e5d6",
+                        color: "#fe6e81",
+                        border: "0px"
+                      }}
                     >
                       EXPLORE
                     </Button>
@@ -223,7 +243,11 @@ export default class Society extends Component {
                 <div className="link-pc-to-cat">
                   <Link to="/events/finearts">
                     <Button
-                      style={{ backgroundColor: "#f1e5d6", color: "#f68827" }}
+                      style={{
+                        backgroundColor: "#f1e5d6",
+                        color: "#f68827",
+                        border: "0px"
+                      }}
                     >
                       EXPLORE
                     </Button>
@@ -260,7 +284,8 @@ export default class Society extends Component {
                       style={{
                         backgroundColor: "#f1e5d6",
                         color: "#3a7472",
-                        border: "none"
+
+                        border: "0px"
                       }}
                     >
                       EXPLORE
@@ -295,7 +320,11 @@ export default class Society extends Component {
                 <div className="link-pc-to-cat">
                   <Link to="/events/informalevents">
                     <Button
-                      style={{ backgroundColor: "#f1e5d6", color: "#f74b53" }}
+                      style={{
+                        backgroundColor: "#f1e5d6",
+                        color: "#f74b53",
+                        border: "0px"
+                      }}
                     >
                       EXPLORE
                     </Button>
@@ -329,7 +358,11 @@ export default class Society extends Component {
                 <div className="link-pc-to-cat">
                   <Link to="/events/flagship">
                     <Button
-                      style={{ backgroundColor: "#f1e5d6", color: "#eb5a83" }}
+                      style={{
+                        backgroundColor: "#f1e5d6",
+                        color: "#eb5a83",
+                        border: "0px"
+                      }}
                     >
                       EXPLORE
                     </Button>
@@ -363,7 +396,11 @@ export default class Society extends Component {
                 <div className="link-pc-to-cat">
                   <Link to="/events/vss">
                     <Button
-                      style={{ backgroundColor: "#f1e5d6", color: "#a3286b" }}
+                      style={{
+                        backgroundColor: "#f1e5d6",
+                        color: "#a3286b",
+                        border: "0px"
+                      }}
                     >
                       EXPLORE
                     </Button>
@@ -396,7 +433,11 @@ export default class Society extends Component {
                 <div className="link-pc-to-cat">
                   <Link to="/events/carnival">
                     <Button
-                      style={{ backgroundColor: "#f1e5d6", color: "#a43a4d" }}
+                      style={{
+                        backgroundColor: "#f1e5d6",
+                        color: "#a43a4d",
+                        border: "0px"
+                      }}
                     >
                       EXPLORE
                     </Button>
@@ -504,7 +545,8 @@ export default class Society extends Component {
                   color: "white",
                   padding: "2px",
                   fontSize: "0.6em",
-                  zIndex: "10"
+                  zIndex: "10",
+                  border: "0px"
                 }}
               >
                 EXPLORE
@@ -549,7 +591,8 @@ export default class Society extends Component {
                   color: "white",
                   padding: "2px",
                   fontSize: "0.6em",
-                  zIndex: "10"
+                  zIndex: "10",
+                  border: "0px"
                 }}
               >
                 EXPLORE
@@ -624,7 +667,8 @@ export default class Society extends Component {
                   color: "white",
                   padding: "2px",
                   fontSize: "0.6em",
-                  zIndex: "10"
+                  zIndex: "10",
+                  border: "0px"
                 }}
               >
                 EXPLORE
@@ -668,7 +712,8 @@ export default class Society extends Component {
                   color: "white",
                   padding: "2px",
                   fontSize: "0.6em",
-                  zIndex: "10"
+                  zIndex: "10",
+                  border: "0px"
                 }}
               >
                 EXPLORE
@@ -743,7 +788,8 @@ export default class Society extends Component {
                   color: "white",
                   padding: "2px",
                   fontSize: "0.6em",
-                  zIndex: "10"
+                  zIndex: "10",
+                  border: "0px"
                 }}
               >
                 EXPLORE
@@ -788,7 +834,8 @@ export default class Society extends Component {
                   color: "white",
                   padding: "2px",
                   fontSize: "0.6em",
-                  zIndex: "10"
+                  zIndex: "10",
+                  border: "0px"
                 }}
               >
                 EXPLORE
@@ -862,7 +909,8 @@ export default class Society extends Component {
                   color: "white",
                   padding: "2px",
                   fontSize: "0.6em",
-                  zIndex: "10"
+                  zIndex: "10",
+                  border: "0px"
                 }}
               >
                 EXPLORE
@@ -904,7 +952,8 @@ export default class Society extends Component {
                   color: "white",
                   padding: "2px",
                   fontSize: "0.6em",
-                  zIndex: "10"
+                  zIndex: "10",
+                  border: "0px"
                 }}
               >
                 EXPLORE
@@ -976,7 +1025,8 @@ export default class Society extends Component {
                   color: "white",
                   padding: "2px",
                   fontSize: "0.6em",
-                  zIndex: "10"
+                  zIndex: "10",
+                  border: "0px"
                 }}
               >
                 EXPLORE
@@ -1020,7 +1070,8 @@ export default class Society extends Component {
                   color: "white",
                   padding: "2px",
                   fontSize: "0.6em",
-                  zIndex: "10"
+                  zIndex: "10",
+                  border: "0px"
                 }}
               >
                 EXPLORE
@@ -1092,7 +1143,8 @@ export default class Society extends Component {
                   color: "white",
                   padding: "2px",
                   fontSize: "0.6em",
-                  zIndex: "10"
+                  zIndex: "10",
+                  border: "0px"
                 }}
               >
                 EXPLORE
@@ -1107,20 +1159,20 @@ export default class Society extends Component {
     return (
       <div>
         <Splash images={this.images} />
-        <a href="https://blitz20.herokuapp.com/"> 
-					<img
-						style={{
-							height: 'auto',
-							width: '70px',
-							position: 'fixed',
-							left: '0%',
-							top: '0%',
-              zIndex: '1',
+        <a href="https://blitz20.herokuapp.com/">
+          <img
+            style={{
+              height: "auto",
+              width: "70px",
+              position: "fixed",
+              left: "0%",
+              top: "0%",
+              zIndex: "1",
               filter: "drop-shadow(5px 5px 5px #000000f0)"
-						}}
-						src="https://i.ibb.co/42WZWbr/blitzlogo.png"
-					/>
-				</a>
+            }}
+            src="https://i.ibb.co/42WZWbr/blitzlogo.png"
+          />
+        </a>
         <ReactFullpage
           verticalCentered={false}
           scrollOverflow={true}
