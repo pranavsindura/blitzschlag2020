@@ -1096,7 +1096,7 @@ c-49 26 -151 32 -227 13 -84 -22 -146 -53 -220 -109 l-63 -47 -63 47 c-138
 		return (
 			<div>
 				<Splash images={this.images} />
-				<a href="https://blitz20.herokuapp.com/"> 
+				<a href="http://www.blitzschlag.co.in/"> 
 					<img
 						style={{
 							height: 'auto',

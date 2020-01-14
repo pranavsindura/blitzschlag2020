@@ -1,3 +1,11 @@
+.modalHolder{
+	/* position: absolute; */
+	/* width: 100%; */
+	/* height: auto; */
+	/* z-index: 5; */
+	overflow-y: hidden;
+}
+
 .car,
 .caritem {
 	height: 96vh;
@@ -280,6 +288,7 @@
 		position: absolute;
 		bottom: 7.5%;
 		right: 0%;
+		z-index: 3;
 	}
 	.button-moreinfomob {
 		position: absolute;

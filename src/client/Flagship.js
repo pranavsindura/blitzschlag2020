@@ -21,7 +21,7 @@ export default class Flagship extends Component {
 		return (
 			<div>
 				<Splash images={this.data.carImages} />
-				<a href="https://blitz20.herokuapp.com/">
+				<a href="http://www.blitzschlag.co.in/">
 					<img
 						style={{
 							height: 'auto',
@@ -111,15 +111,17 @@ export default class Flagship extends Component {
 												</div>
 											</div>
 											<div className="button-holdermob">
-												<div
-													className="button-moreinfomob"
-													style={{
-														backgroundColor: this.data.content[currSlide].accent[2],
-														transition: 'all .5s ease-in-out'
-													}}
-												>
-													<p>Rules</p>
-												</div>
+												<a href={this.data.content[currSlide].detailsLink}>
+													<div
+														className="button-moreinfomob"
+														style={{
+															backgroundColor: this.data.content[currSlide].accent[2],
+															transition: 'all .5s ease-in-out'
+														}}
+													>
+														<p>Details</p>
+													</div>
+												</a>
 												<div
 													className="button-registermob"
 													style={{
@@ -175,15 +177,18 @@ export default class Flagship extends Component {
 														})}
 													</div>
 													<div className="button-holder">
-														<div
-															className="button-moreinfo"
-															style={{
-																backgroundColor: this.data.content[currSlide].accent[2],
-																transition: 'all .5s ease-in-out'
-															}}
-														>
-															<p>Rules</p>
-														</div>
+														<a href={this.data.content[currSlide].detailsLink}>
+															<div
+																className="button-moreinfo"
+																style={{
+																	backgroundColor: this.data.content[currSlide]
+																		.accent[2],
+																	transition: 'all .5s ease-in-out'
+																}}
+															>
+																<p>Details</p>
+															</div>
+														</a>
 														<div
 															className="button-register"
 															style={{
