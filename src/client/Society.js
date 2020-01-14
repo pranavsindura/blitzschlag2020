@@ -310,12 +310,12 @@ export default class Society extends Component {
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  Programming online is not different from programming on your
-                  system, except a few points. We’ll be learning that here.
-                  Happy coding :) Let's start with a basic program to get you
-                  onboarded on HackerEarth. Write a program to print your name
-                  as output. Instructions: We have already written the correct
-                  code for this problem in the code editor.
+                  For all the mystery lovers, cricket geeks, Bollywood lovers or
+                  good old potter heads, we got you covered. Blitzschlag 2020
+                  presents to you the set of extremely engrossing informal
+                  events- Murder Mystery, Escape room, IPL Auction, Box Office
+                  and Quizoner of Azkaban. Put your brains to test and compete
+                  among the very best, with a blend of fun and enthusiasm.
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/informalevents">
@@ -423,12 +423,13 @@ export default class Society extends Component {
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  Programming online is not different from programming on your
-                  system, except a few points. We’ll be learning that here.
-                  Happy coding :) Let's start with a basic program to get you
-                  onboarded on HackerEarth. Write a program to print your name
-                  as output. Instructions: We have already written the correct
-                  code for this problem in the code editor.
+                  Merry faces filled with exuberance perfectly blending in the
+                  hustle and bustle marks a scene at carnival. The giant Ferris
+                  wheel giving adrenaline gush, the Columbus swing swaying to
+                  and fro, droning sound of engines, all these death-defying
+                  rides give lump in your throat and marks ultimate energy
+                  running through your veins. Brace yourself to join us on this
+                  adventurous ride!
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/carnival">
@@ -938,10 +939,12 @@ export default class Society extends Component {
               >
                 Informal Events
               </p>
-              Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare. neeche koi button hi nahi hai.
-              oh I am so smart. Button chodo hum pooore div to hi link kar
-              denge. yes good idea.
+              For all the mystery lovers, cricket geeks, Bollywood lovers or
+              good old potter heads, we got you covered. Blitzschlag 2020
+              presents to you the set of extremely engrossing informal events-
+              Murder Mystery, Escape room, IPL Auction, Box Office and Quizoner
+              of Azkaban. Put your brains to test and compete among the very
+              best, with a blend of fun and enthusiasm.
             </div>
             <Link to="/events/informalevents">
               <Button
@@ -1129,10 +1132,12 @@ export default class Society extends Component {
               >
                 Carnival
               </p>
-              Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare. neeche koi button hi nahi hai.
-              oh I am so smart. Button chodo hum pooore div to hi link kar
-              denge. yes good idea.
+              Merry faces filled with exuberance perfectly blending in the
+              hustle and bustle marks a scene at carnival. The giant Ferris
+              wheel giving adrenaline gush, the Columbus swing swaying to and
+              fro, droning sound of engines, all these death-defying rides give
+              lump in your throat and marks ultimate energy running through your
+              veins. Brace yourself to join us on this adventurous ride!
             </div>
             <Link to="/events/carnival">
               <Button
