@@ -453,6 +453,9 @@ export default class Home extends Component {
                 <div
                   className="section content"
                   style={{
+                    backgroundImage:"url('https://i.ibb.co/8YdvpQt/contactus.jpg')",
+                    backgroundPosition:'bottom',
+                    backgroundSize:'cover',
                     overflow: "hidden"
                   }}
                 >
@@ -520,7 +523,7 @@ export default class Home extends Component {
                     </div>
                   </div>
                   <div className="contactus">
-                    <img src="https://i.ibb.co/8YdvpQt/contactus.jpg" />
+                    {/* <img src="https://i.ibb.co/8YdvpQt/contactus.jpg" /> */}
                   </div>
                   <div className="c1-holder">
                     <img src="https://i.ibb.co/M5RMfPd/c1.png" />
@@ -528,9 +531,9 @@ export default class Home extends Component {
                   <div className="c2-holder">
                     <img src="https://i.ibb.co/7Y4zYgf/c2.png" />
                   </div>
-                  <div className="c3-holder">
+                  {/* <div className="c3-holder">
                     <img src="https://i.ibb.co/nwySkPd/c3.png" />
-                  </div>
+                  </div> */}
                   <div className="c4-holder">
                     <img src="https://i.ibb.co/KbXVm3q/c4.png" />
                   </div>
