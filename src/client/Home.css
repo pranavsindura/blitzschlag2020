@@ -797,7 +797,7 @@ p {
         text-align: justify;
         font-family: 'Raleway', sans-serif;
         font-weight: bold;
-        text-shadow: 1px 1px 1px black;
+        font-size: 0.7em;
     }
     .theme-holder {
         position: relative;

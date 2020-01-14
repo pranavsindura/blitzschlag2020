@@ -174,7 +174,14 @@ export default class Home extends Component {
                   leaders. Blitzschlag, MNIT's annual cultural mega-event, with
                   a decade long glorious history, is synonymous with a wholesome
                   cultural carnival throughout Rajasthan, due to its
-                  unparalleled grandeur.
+                  unparalleled grandeur. Every year, Blitzschlag invites
+                  innumerable students from all over India, presenting an
+                  unmissable opportunity to savour all the cultural enjoyment
+                  these 3 days can accommodate. With a plethora of events and
+                  cultural competitions, Blitzschlag escalates the euphoria of
+                  the participants to its pinnacle. Topping the benchmark set by
+                  the precedent year, Blitzschlag keeps revamping itself each
+                  year, perpetually raising the standards of the event.
                 </p>
               </div>
             </div>
