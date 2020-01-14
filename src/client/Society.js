@@ -348,12 +348,14 @@ export default class Society extends Component {
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  Programming online is not different from programming on your
-                  system, except a few points. We’ll be learning that here.
-                  Happy coding :) Let's start with a basic program to get you
-                  onboarded on HackerEarth. Write a program to print your name
-                  as output. Instructions: We have already written the correct
-                  code for this problem in the code editor.
+                  Do you know the recipe of a perfect BLOCKBUSTER? Have the
+                  stage set ablaze with the group dances of Ramba Samba, blend
+                  it with the tunes of Battle of Bands, squeeze in the colours
+                  of fashion and style with Panache, and finally sprinkle the
+                  spice of excitement with the most awaited Cultural night. Get
+                  ready to lose yourself in the flavours of Blitzschlag with
+                  diverse opportunities and whooping prizes all packed in a
+                  scintillating streak of events!
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/flagship">
@@ -1014,10 +1016,13 @@ export default class Society extends Component {
               >
                 Flagship Events
               </p>
-              Some words describing the given society. aur jankaari ke liye
-              neeche gaye button par click kare. neeche koi button hi nahi hai.
-              oh I am so smart. Button chodo hum pooore div to hi link kar
-              denge. yes good idea.
+              Do you know the recipe of a perfect BLOCKBUSTER? Have the stage
+              set ablaze with the group dances of Ramba Samba, blend it with the
+              tunes of Battle of Bands, squeeze in the colours of fashion and
+              style with Panache, and finally sprinkle the spice of excitement
+              with the most awaited Cultural night. Get ready to lose yourself
+              in the flavours of Blitzschlag with diverse opportunities and
+              whooping prizes all packed in a scintillating streak of events!
             </div>
             <Link to="/events/flagship">
               <Button
