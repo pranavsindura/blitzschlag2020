@@ -797,7 +797,7 @@ p {
         text-align: justify;
         font-family: 'Raleway', sans-serif;
         font-weight: bold;
-        text-shadow: 1px 1px 1px black;
+        font-size: 0.7em;
     }
     .theme-holder {
         position: relative;
@@ -1080,46 +1080,51 @@ p {
     }
     .l1 {
         position: absolute;
-        height: 100%;
+        height: 50%;
         width: auto;
-        left: -15%;
+        left: -5%;
         top: 0%;
         transition: all 0.2s ease-in-out;
-        animation: l1-move 2s linear alternate infinite;
+        animation: none;
+        /* animation: l1-move 2s linear alternate infinite; */
     }
     .l2 {
         position: absolute;
-        height: 100%;
+        height: 50%;
         width: auto;
-        left: -15%;
-        top: 0%;
+        left: -5%;
+        top: -3%;
         transition: all 0.2s ease-in-out;
         animation-delay: 600ms;
-        animation: l1-move 2.5s linear alternate infinite;
+        animation: none;
+        /* animation: l1-move 2.5s linear alternate infinite; */
     }
     .l3 {
         position: absolute;
-        height: 110%;
+        height: 40%;
         width: auto;
-        left: -12%;
-        top: 0%;
-        animation: l2-move 5s linear alternate infinite;
+        left: 5%;
+        top: -1%;
+        animation: none;
+        /* animation: l2-move 5s linear alternate infinite; */
     }
     .l4 {
         position: absolute;
-        height: 100%;
+        height: 40%;
         width: auto;
-        left: 4%;
-        top: 0%;
-        animation: l3-move 2.5s linear alternate infinite;
+        left: 10%;
+        top: -5%;
+        animation: none;
+        /* animation: l3-move 2.5s linear alternate infinite; */
     }
     .l5 {
         position: absolute;
-        height: 100%;
+        height: 50%;
         width: auto;
-        left: 15%;
+        left: 10%;
         top: -10%;
-        animation: l2-move 4s linear alternate infinite;
+        animation: none;
+        /* animation: l2-move 4s linear alternate infinite; */
     }
     .l6 {
         position: absolute;
