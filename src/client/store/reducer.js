@@ -12,7 +12,7 @@ let reducer = (state = initialState, action) => {
 				...state, 
 				user: action.payload.user,
 				loggedIn: true,
-			};
+			}; 
 		case 'LOGOUT':
 			return {
 				...state,

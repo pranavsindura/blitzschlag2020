@@ -147,8 +147,7 @@ app.post('/events', (req, res) => {
     let eventReg = req.body;
 
     let eventObj = new modelEvent.eventModel();
-
-    eventRegister.checkPins(eventReg).then(function(flag) {
+    eventRegister.validate(eventReg).then(function(flag) {
         if (flag !== undefined) {
             console.log('valid ids');
             eventRegister.retrieveTeamID().then(function(counts) {
@@ -162,7 +161,7 @@ app.post('/events', (req, res) => {
                             eventObj.eventID = category.eventID;
                             eventObj.eventName = category.eventName;
                             eventObj.teamName = eventReg.teamName;
-                            eventObj.teamSize = eventReg.teamSize;
+                            eventObj.teamSize   = eventReg.teamSize;
 
                             eventReg.eventName = category.eventName;
 
@@ -170,31 +169,35 @@ app.post('/events', (req, res) => {
 
                             eventRegister.retrieveUsers(eventReg.blitzID).then(function(users) {
                                 if (users) {
+                                    // console.log('eventReg ', eventReg);
+                                    // console.log('users',users);
                                     for (id in eventReg.blitzID) {
+                                        let numID = Number(id);
+                                        console.log(id); 
                                         let obj = new modelEvent.eventModel(eventObj);
                                         // console.log(id);
-                                        obj.blitzID = eventReg.blitzID[id];
+                                        obj.blitzID = eventReg.blitzID[numID];
                                         obj._id = new objectID();
-                                        obj.firstName = users[id].firstName;
-                                        obj.mob = users[id].mob;
-                                        console.log(obj);
+                                        obj.firstName = users[numID].firstName;
+                                        obj.mob = users[numID].mob;
+                                        // console.log(obj);
                                         multipleDocs.push(obj);
                                     }
                                     console.log('multipleDocs', multipleDocs);
                                     modelEvent.eventModel.insertMany(multipleDocs);
                                     eventRegister.updateUser(eventReg).then(function(x) {
                                         if (x) {
-                                            let obj = {
+                                            let counter = {
                                                 teamCount: counts.teamCount + 1
                                             };
-                                            eventRegister.updateTeamID(obj).then(function(result) {
+                                            eventRegister.updateTeamID(counter).then(function(result) {
                                                 res.send({
                                                     status: true,
-                                                    data: obj.teamCount
+                                                    data: counter.teamCount,
                                                 });
                                                 console.log('updated team id');
                                                 users.forEach(user => {
-                                                    mailer.eventMail(user, obj.teamCount, eventReg.eventName).catch(err => {
+                                                    mailer.eventMail(user, counter.teamCount, eventReg.eventName).catch(err => {
                                                         console.log(err);
                                                     });
                                                 });
@@ -210,7 +213,7 @@ app.post('/events', (req, res) => {
                                 } else {
                                     res.send({
                                         status: false,
-                                        message: "Internal error in retrieving users"
+                                        message: "Internal Error!"
                                     });
                                 }
 
@@ -218,18 +221,22 @@ app.post('/events', (req, res) => {
                         } else {
                             res.send({
                                 status: false,
-                                message: "internal error in retrieveing category"
+                                message: "Internal Error!"
                             });
                         }
                     });
                 } else {
                     res.send({
                         status: false,
-                        message: "internal error in retrieveing counts"
+                        message: "Internal Error!"
                     });
                 }
             });
         } else {
+            res.send({
+                status: false,
+                message: "Incorrect ID/Password!"
+            });
             console.log('Incorrect ids');
         }
     });
