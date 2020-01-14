@@ -53,7 +53,7 @@ class App extends Component {
 							<li className="lis menu-item">
 								<a
 									className="lisitem"
-									href="https://blitz20.herokuapp.com/"
+									href="http://www.blitzschlag.co.in/"
 									// onClick={() => {
 									// 	this.handleClick('home');
 									// 	// this.handleCheck();
@@ -171,7 +171,7 @@ class App extends Component {
 								<li className="lis menu-item">
 									<a
 										className="lisitem"
-										href="https://blitz20.herokuapp.com/"
+										href="http://www.blitzschlag.co.in/"
 										onClick={() => {
 											this.handleLogout();
 										}}

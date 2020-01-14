@@ -190,11 +190,11 @@ class Myaccount extends Component {
 		if (!this.props.loggedIn) {
 			return <Redirect to="/login" />;
 		}
-		if (this.props.user === null) return <Redirect to="https://blitz20.herokuapp.com/" />;
+		if (this.props.user === null) return <Redirect to="http://www.blitzschlag.co.in/" />;
 		return (
 			<div>
 				<Splash images={this.images} />
-				<a href="https://blitz20.herokuapp.com/">
+				<a href="http://www.blitzschlag.co.in/">
 					<img
 						style={{
 							height: 'auto',

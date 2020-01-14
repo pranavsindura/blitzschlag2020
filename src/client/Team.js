@@ -77,15 +77,15 @@ export default class Team extends Component {
           render={({ state, fullpageApi }) => {
             return (
               <ReactFullpage.Wrapper>
-                <div className="section" style={{ background: "#000000" }}>
-                  <Link to="/home">
-                    <div style={{ padding: "0px", margin: "0px" }}>
-                      <img
-                        style={{ height: "auto", width: "100px" }}
-                        src="src/shared/img/blitzlogo.png"
-                      ></img>
+                <div className="section" style={{background:'#000000'}}>
+                <a href="http://www.blitzschlag.co.in/">
+                <div style={{padding:'0px',margin:'0px'}}>
+                  
+                      <img 
+                      style={{height:'auto',width:'100px'}}
+                      src="src/shared/img/blitzlogo.png"></img>
                     </div>
-                  </Link>
+                    </a>
                   <div className="container team-cont">
                     <h2 className="team-head singlecont">Team Blitzschlag</h2>
                     <br></br>

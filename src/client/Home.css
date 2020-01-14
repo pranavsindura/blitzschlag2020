@@ -411,7 +411,7 @@ p {
     left: 0%;
     top: 0%;
     transition: all 0.2s ease-in-out;
-    animation: l1-move 2s linear alternate infinite;
+    /* animation: l1-move 2s linear alternate infinite; */
 }
 
 .l2 {
@@ -422,7 +422,7 @@ p {
     top: 0%;
     transition: all 0.2s ease-in-out;
     animation-delay: 600ms;
-    animation: l1-move 2.5s linear alternate infinite;
+    /* animation: l1-move 2.5s linear alternate infinite; */
 }
 
 .l3 {
@@ -431,7 +431,7 @@ p {
     width: auto;
     left: 1%;
     top: 0%;
-    animation: l2-move 5s linear alternate infinite;
+    /* animation: l2-move 5s linear alternate infinite; */
 }
 
 .l4 {
@@ -440,7 +440,7 @@ p {
     width: auto;
     left: 7%;
     top: 0%;
-    animation: l3-move 2.5s linear alternate infinite;
+    /* animation: l3-move 2.5s linear alternate infinite; */
 }
 
 .l5 {
@@ -449,7 +449,7 @@ p {
     width: auto;
     left: 10%;
     top: -10%;
-    animation: l2-move 4s linear alternate infinite;
+    /* animation: l2-move 4s linear alternate infinite; */
 }
 
 .l6 {
