@@ -1,26 +1,209 @@
 import React, { Component } from 'react';
 import './Event2.css';
 import eventData from './EventData';
-import { Row, Col, Carousel, Button } from 'react-bootstrap';
+import { Row, Col, Carousel, InputGroup, Card, Form, Button } from 'react-bootstrap';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Splash from './Splash';
-import { Link } from 'react-router-dom';
-export default class Flagship extends Component {
-	state = { currSlide: 0 };
+import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
+import axios from 'axios';
+class Event extends Component {
+	state = {
+		currSlide: 0,
+		showRegister: false,
+		registerDetails: {
+			teamID: 0,
+			eventName: '',
+			teamSize: 0,
+			teamName: '',
+			teamMembers: []
+		},
+		submitMessage: '',
+		redirect: false
+	};
+
 	images = [];
 	data = [];
+	proxy = 'http://localhost:8080';
 	componentWillMount() {
+		if (this.props.production) this.proxy = '';
 		this.data = eventData['flagship'];
+	}
+	componentDidMount() {
+		let registerDetails = {
+			teamSize: this.data.content[0].registerConstraints.minTeamSize,
+			teamID: 0,
+			eventName: '',
+			teamName: '',
+			teamMembers: []
+		};
+		for (let i = 0; i < this.data.content[0].registerConstraints.minTeamSize; i++) {
+			registerDetails.teamMembers.push({ blitzID: '', blitzPIN: '' });
+		}
+		this.setState({ registerDetails });
+	}
+	shouldRedirect = () => {
+		if (this.state.redirect) return <Redirect to="/login" />;
+		else return null;
+	};
+	handleTeamSizeChange = (fullpageApi, e) => {
+		// console.log(e.target.id, e.target.value, typeof e.target.id, typeof e.target.value);
+		const registerDetails = { ...this.state.registerDetails };
+		registerDetails[e.target.id] = Number(e.target.value);
+		registerDetails.teamName = '';
+		registerDetails.teamMembers = [];
+		for (let i = 0; i < registerDetails.teamSize; i++) {
+			registerDetails.teamMembers.push({ blitzID: '', blitzPIN: '' });
+		}
+		// console.log(registerDetails);
+		this.setState({ registerDetails }, () => {
+			fullpageApi.reBuild();
+		});
+	};
+	handleTeamNameChange = (e) => {
+		const registerDetails = { ...this.state.registerDetails };
+		registerDetails[e.target.id] = e.target.value;
+		this.setState({ registerDetails });
+	};
+	handleRegister = (e) => {
+		e.preventDefault();
+		console.log(this.state.registerDetails);
+		if (!this.props.loggedIn) {
+			this.setState({ redirect: true });
+		} else {
+			const { registerDetails, currSlide } = this.state;
+			let blitzID = [];
+			let blitzPIN = [];
+			for (let i = 0; i < registerDetails.teamMembers.length; i++) {
+				blitzID.push(Number(registerDetails.teamMembers[i].blitzID));
+				// console.log(typeof blitzID[i]);
+				blitzPIN.push(registerDetails.teamMembers[i].blitzPIN);
+			}
+			registerDetails['blitzID'] = blitzID;
+			registerDetails['blitzPIN'] = blitzPIN;
+			registerDetails['eventID'] = Number(this.data.content[currSlide].eventID);
+			console.log(registerDetails);
+			axios
+				.post(this.proxy + '/events', registerDetails)
+				.then((res) => {
+					res = res.data;
+					console.log(res);
+					if (res.status) {
+						alert(`Your TeamID: ${res.data}`);
+						this.setState({
+							submitMessage: (
+								<Col>
+									<Col>
+										<p className="text-white">You are successfully Registered!</p>
+									</Col>
+									<Col>
+										<p className="text-white font-weight-bold">Your TeamID: {res.data}</p>
+									</Col>
+								</Col>
+							)
+						});
+					} else {
+						this.setState({
+							submitMessage: (
+								<Col>
+									<p className="text-danger">{res.message}</p>
+								</Col>
+							)
+						});
+					}
+				})
+				.catch((e) => {
+					console.log('Network issues');
+				});
+		}
+		console.log(this.state.registerDetails);
+	};
+	componentDidUpdate() {
+		console.log(this.state);
 	}
 	nextSlide = () => {
 		const { currSlide } = this.state;
 		this.setState({ currSlide: (currSlide + 1) % this.data.carImages.length });
 	};
-	render() {
+	showRegister = (fullpageApi) => {
+		fullpageApi.moveSectionDown();
+	};
+	createTeamMemberSelect = () => {
 		const { currSlide } = this.state;
+		let options = [];
+		for (
+			let i = this.data.content[currSlide].registerConstraints.minTeamSize;
+			i <= this.data.content[currSlide].registerConstraints.maxTeamSize;
+			i++
+		) {
+			options.push(
+				<option value={i} key={`opt-${i}`}>
+					{i}
+				</option>
+			);
+		}
+		return options;
+	};
+	handleMemberDataChange = (e, type, ind) => {
+		console.log(type, ind);
+		const { registerDetails } = this.state;
+		registerDetails.teamMembers[ind][type] = e.target.value;
+		this.setState({ registerDetails });
+	};
+	createTeamMemberInput = () => {
+		let input = [];
+		const { registerDetails } = this.state;
+		console.log(registerDetails);
+		for (let i = 0; i < registerDetails.teamSize; i++) {
+			input.push(
+				<Form.Row key={`formrow-${i}`}>
+					<Form.Label>Member {i + 1}:</Form.Label>
+					<Form.Row>
+						<Col>
+							<Form.Group>
+								<InputGroup>
+									<InputGroup.Prepend>
+										<InputGroup.Text id="inputGroupPrepend">blitz20@</InputGroup.Text>
+									</InputGroup.Prepend>
+									<Form.Control
+										value={this.state.registerDetails.teamMembers[i].blitzID}
+										onChange={() => {
+											this.handleMemberDataChange(event, 'blitzID', i);
+										}}
+										required={true}
+										id={`memberID${i}`}
+										type="text"
+										placeholder="ID"
+									/>
+								</InputGroup>
+							</Form.Group>
+						</Col>
+						<Col>
+							<Form.Group>
+								<Form.Control
+									value={this.state.registerDetails.teamMembers[i].blitzPIN}
+									onChange={() => {
+										this.handleMemberDataChange(event, 'blitzPIN', i);
+									}}
+									required={true}
+									id={`memberPIN${i}`}
+									type="password"
+									placeholder="PIN"
+								/>
+							</Form.Group>
+						</Col>
+					</Form.Row>
+				</Form.Row>
+			);
+		}
+		return input;
+	};
+	render() {
+		const { currSlide, registerDetails, submitMessage } = this.state;
 		return (
 			<div>
 				<Splash images={this.data.carImages} />
+
 				<a href="http://www.blitzschlag.co.in/">
 					<img
 						style={{
@@ -35,6 +218,14 @@ export default class Flagship extends Component {
 					/>
 				</a>
 				<ReactFullpage
+					scrollOverflow={true}
+					onLeave={({ origin, destination, direction }) => {
+						if (!this.data.content[currSlide].canRegister) return false;
+					}}
+					scrollOverflowOptions={{
+						click: false,
+						preventDefaultException: { tagName: /.*/ }
+					}}
 					render={({ state, fullpageApi }) => {
 						return (
 							<ReactFullpage.Wrapper>
@@ -55,22 +246,6 @@ export default class Flagship extends Component {
 														fullpageApi.reBuild();
 													}}
 												/>
-												{/* <Carousel
-													className="carmob"
-													indicators={false}
-													interval="4000"
-													controls={false}
-													activeIndex={currSlide}
-													// defaultActiveIndex={0}
-												>
-													{this.data.carImages.map((item, index) => {
-														return (
-															<Carousel.Item className="carmob-item" key={index}>
-																<img className="imgmob" src={item} onLoad={()=>{fullpageApi.reBuild();}} />
-															</Carousel.Item>
-														);
-													})}
-												</Carousel> */}
 											</div>
 											<div
 												style={{
@@ -111,7 +286,7 @@ export default class Flagship extends Component {
 												</div>
 											</div>
 											<div className="button-holdermob">
-												<a href={this.data.content[currSlide].detailsLink}>
+												<a href={this.data.content[currSlide].detailsLink} target="_blank">
 													<div
 														className="button-moreinfomob"
 														style={{
@@ -122,15 +297,21 @@ export default class Flagship extends Component {
 														<p>Details</p>
 													</div>
 												</a>
-												<div
-													className="button-registermob"
-													style={{
-														backgroundColor: this.data.content[currSlide].accent[2],
-														transition: 'all .5s ease-in-out'
-													}}
-												>
-													<p>Register</p>
-												</div>
+												{this.data.content[currSlide].canRegister ? (
+													<div
+														className="button-registermob"
+														style={{
+															backgroundColor: this.data.content[currSlide].accent[2],
+															transition: 'all .5s ease-in-out'
+														}}
+														onClick={() => {
+															console.log('click');
+															this.showRegister(fullpageApi);
+														}}
+													>
+														<p>Register</p>
+													</div>
+												) : null}
 											</div>
 											<div
 												className="boxmovemob"
@@ -177,7 +358,10 @@ export default class Flagship extends Component {
 														})}
 													</div>
 													<div className="button-holder">
-														<a href={this.data.content[currSlide].detailsLink}>
+														<a
+															href={this.data.content[currSlide].detailsLink}
+															target="_blank"
+														>
 															<div
 																className="button-moreinfo"
 																style={{
@@ -189,15 +373,21 @@ export default class Flagship extends Component {
 																<p>Details</p>
 															</div>
 														</a>
-														<div
-															className="button-register"
-															style={{
-																backgroundColor: this.data.content[currSlide].accent[2],
-																transition: 'all .5s ease-in-out'
-															}}
-														>
-															<p>Register</p>
-														</div>
+														{this.data.content[currSlide].canRegister ? (
+															<div
+																className="button-register"
+																style={{
+																	backgroundColor: this.data.content[currSlide]
+																		.accent[2],
+																	transition: 'all .5s ease-in-out'
+																}}
+																onClick={() => {
+																	this.showRegister(fullpageApi);
+																}}
+															>
+																<p>Register</p>
+															</div>
+														) : null}
 													</div>
 												</div>
 											</div>
@@ -309,6 +499,76 @@ export default class Flagship extends Component {
 										</Row>
 									)}
 								</div>
+								<div
+									className="section"
+									style={{
+										background: this.data.content[currSlide].accent[1],
+										transition: 'all .5s ease-in-out'
+									}}
+								>
+									{this.shouldRedirect()}
+									<h1 className="heading">{this.data.content[currSlide].heading}</h1>
+									<h1 className="heading">Register</h1>
+									<Card>
+										<Card.Body>
+											<Form
+												onSubmit={() => {
+													this.handleRegister(event);
+												}}
+											>
+												<Form.Row>
+													<Form.Label>Team Size:</Form.Label>
+													<Form.Group>
+														<select
+															id="teamSize"
+															value={registerDetails.teamSize}
+															onChange={() => {
+																this.handleTeamSizeChange(fullpageApi, event);
+															}}
+														>
+															{this.createTeamMemberSelect()}
+														</select>
+													</Form.Group>
+												</Form.Row>
+												{registerDetails.teamSize > 1 ? (
+													<Form.Row>
+														<Form.Label>Team Name:</Form.Label>
+														<Form.Group>
+															<Form.Control
+																value={this.state.registerDetails.teamName}
+																onChange={() => {
+																	this.handleTeamNameChange(event);
+																}}
+																required={true}
+																id="teamName"
+																type="text"
+																placeholder="Team Name"
+															/>
+														</Form.Group>
+													</Form.Row>
+												) : null}
+												{this.createTeamMemberInput(fullpageApi)}
+												<Row>
+													<Col>
+														<Button
+															style={{
+																backgroundColor: this.data.content[currSlide].accent[0]
+															}}
+															className="event-submit-button"
+															type="submit"
+														>
+															Submit
+														</Button>
+													</Col>
+												</Row>
+												<Row>{submitMessage}</Row>
+												{() => {
+													fullpageApi.reBuild();
+												}}
+											</Form>
+										</Card.Body>
+									</Card>
+								</div>
 							</ReactFullpage.Wrapper>
 						);
 					}}
@@ -317,3 +577,16 @@ export default class Flagship extends Component {
 		);
 	}
 }
+
+const mapStateToProps = (state) => {
+	return {
+		loggedIn: state.loggedIn,
+		production: state.production
+	};
+};
+
+const mapDispatchToProps = (dispatch) => {
+	return {};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Event);

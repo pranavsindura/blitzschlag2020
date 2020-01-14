@@ -1,7 +1,7 @@
 let initialState = {
 	loggedIn: false,
 	user: null,
-	production:true, 
+	production:false, 
 };
 
 let reducer = (state = initialState, action) => {
@@ -12,7 +12,7 @@ let reducer = (state = initialState, action) => {
 				...state, 
 				user: action.payload.user,
 				loggedIn: true,
-			};
+			}; 
 		case 'LOGOUT':
 			return {
 				...state,

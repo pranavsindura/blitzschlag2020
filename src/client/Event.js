@@ -82,8 +82,50 @@ class Event extends Component {
 		if (!this.props.loggedIn) {
 			this.setState({ redirect: true });
 		} else {
-			// axios.post(this.proxy+'/')
-			
+			const { registerDetails, currSlide } = this.state;
+			let blitzID = [];
+			let blitzPIN = [];
+			for (let i = 0; i < registerDetails.teamMembers.length; i++) {
+				blitzID.push(Number(registerDetails.teamMembers[i].blitzID));
+				// console.log(typeof blitzID[i]);
+				blitzPIN.push(registerDetails.teamMembers[i].blitzPIN);
+			}
+			registerDetails['blitzID'] = blitzID;
+			registerDetails['blitzPIN'] = blitzPIN;
+			registerDetails['eventID'] = Number(this.data.content[currSlide].eventID);
+			console.log(registerDetails);
+			axios
+				.post(this.proxy + '/events', registerDetails)
+				.then((res) => {
+					res = res.data;
+					console.log(res);
+					if (res.status) {
+						alert(`Your TeamID: ${res.data}`);
+						this.setState({
+							submitMessage: (
+								<Col>
+									<Col>
+										<p className="text-white">You are successfully Registered!</p>
+									</Col>
+									<Col>
+										<p className="text-white font-weight-bold">Your TeamID: {res.data}</p>
+									</Col>
+								</Col>
+							)
+						});
+					} else {
+						this.setState({
+							submitMessage: (
+								<Col>
+									<p className="text-danger">{res.message}</p>
+								</Col>
+							)
+						});
+					}
+				})
+				.catch((e) => {
+					console.log('Network issues');
+				});
 		}
 		console.log(this.state.registerDetails);
 	};
@@ -98,10 +140,14 @@ class Event extends Component {
 		fullpageApi.moveSectionDown();
 	};
 	createTeamMemberSelect = () => {
-		const {currSlide} = this.state;
+		const { currSlide } = this.state;
 		let options = [];
-		for (let i = this.data.content[currSlide].registerConstraints.minTeamSize; i <= this.data.content[currSlide].registerConstraints.maxTeamSize; i++) {
-			options.push( 
+		for (
+			let i = this.data.content[currSlide].registerConstraints.minTeamSize;
+			i <= this.data.content[currSlide].registerConstraints.maxTeamSize;
+			i++
+		) {
+			options.push(
 				<option value={i} key={`opt-${i}`}>
 					{i}
 				</option>
@@ -128,7 +174,7 @@ class Event extends Component {
 							<Form.Group>
 								<InputGroup>
 									<InputGroup.Prepend>
-										<InputGroup.Text id="inputGroupPrepend">blitz@</InputGroup.Text>
+										<InputGroup.Text id="inputGroupPrepend">blitz20@</InputGroup.Text>
 									</InputGroup.Prepend>
 									<Form.Control
 										value={this.state.registerDetails.teamMembers[i].blitzID}
@@ -262,19 +308,21 @@ class Event extends Component {
 														<p>Details</p>
 													</div>
 												</a>
-												{this.data.content[currSlide].canRegister ? (<div
-													className="button-registermob"
-													style={{
-														backgroundColor: this.data.content[currSlide].accent[2],
-														transition: 'all .5s ease-in-out'
-													}}
-													onClick={() => {
-														console.log('click');
-														this.showRegister(fullpageApi);
-													}}
-												>
-													<p>Register</p>
-												</div>):null}
+												{this.data.content[currSlide].canRegister ? (
+													<div
+														className="button-registermob"
+														style={{
+															backgroundColor: this.data.content[currSlide].accent[2],
+															transition: 'all .5s ease-in-out'
+														}}
+														onClick={() => {
+															console.log('click');
+															this.showRegister(fullpageApi);
+														}}
+													>
+														<p>Register</p>
+													</div>
+												) : null}
 											</div>
 											<div
 												className="boxmovemob"
