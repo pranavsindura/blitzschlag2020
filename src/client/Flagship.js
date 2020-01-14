@@ -101,7 +101,7 @@ class Event extends Component {
 									</Col>
 								</Col>
 							)
-						});
+						},()=>{fullpage_api.reBuild();});
 					} else {
 						this.setState({
 							submitMessage: (
@@ -109,10 +109,17 @@ class Event extends Component {
 									<p className="text-danger">{res.message}</p>
 								</Col>
 							)
-						});
+						},()=>{fullpage_api.reBuild();});
 					}
 				})
 				.catch((e) => {
+					this.setState({
+						submitMessage: (
+							<Col>
+								<p className="text-danger">Experiencing Network Issues!</p>
+							</Col>
+						)
+					},()=>{fullpage_api.reBuild();});
 					console.log('Network issues');
 				});
 		}

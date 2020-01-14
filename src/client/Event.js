@@ -112,6 +112,9 @@ class Event extends Component {
 									</Col>
 								</Col>
 							)
+						},
+						() => {
+							fullpage_api.reBuild();
 						});
 					} else {
 						this.setState({
@@ -120,11 +123,24 @@ class Event extends Component {
 									<p className="text-danger">{res.message}</p>
 								</Col>
 							)
+						},
+						() => {
+							fullpage_api.reBuild();
 						});
 					}
 				})
 				.catch((e) => {
 					console.log('Network issues');
+					this.setState({
+						submitMessage: (
+							<Col>
+								<p className="text-danger">Experiencing Network Issues!</p>
+							</Col>
+						)
+					},
+					() => {
+						fullpage_api.reBuild();
+					});
 				});
 		}
 		console.log(this.state.registerDetails);
