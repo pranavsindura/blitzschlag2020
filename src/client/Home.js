@@ -246,7 +246,7 @@ export default class Home extends Component {
                   }%,${window.innerWidth <= 760 ? -110 : -230}%)`
                 : `scale(${window.innerWidth <= 760 ? 1.2 : 0.8}) translateX(${
                     window.innerWidth <= 760 ? -41.66 : -62.5
-                  }%) translateY(${window.innerWidth <= 760 ? -41.66 : -62.5}%)`
+                  }%) translateY(${window.innerWidth <= 760 ? -60.66 : -62.5}%)`
             }`,
             left: `${
               moveLogo ? "0%" : window.innerWidth <= 760 ? "50%" : "30%"
