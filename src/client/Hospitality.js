@@ -11,7 +11,7 @@ export default class Hospitality extends Component {
 		return (
 			<div>
 				<Splash images={this.images} />
-				<a href="https://blitz20.herokuapp.com/"> 
+				<a href="http://www.blitzschlag.co.in/"> 
 					<img
 						style={{
 							height: 'auto',
