@@ -389,11 +389,11 @@ export default class Home extends Component {
                         <div className="theme-icon-holder">
                           <div className="theme-icon theme-icon-1">
                             <i className="fas fa-calendar-check"></i>
-                            <p> 72+ Events</p>
+                            <p> 62+ Events</p>
                           </div>
                           <div className="theme-icon">
                             <i className="fas fa-walking"></i>
-                            <p> 54K+ Footfall</p>
+                            <p> 20K+ Footfall</p>
                           </div>
                           <div className="theme-icon">
                             <i className="fas fa-university"></i>
@@ -428,11 +428,11 @@ export default class Home extends Component {
                         <div className="theme-icon-holder">
                           <div className="theme-icon theme-icon-1">
                             <i className="fas fa-calendar-check"></i>
-                            <p> 72+ Events</p>
+                            <p> 62+ Events</p>
                           </div>
                           <div className="theme-icon">
                             <i className="fas fa-walking"></i>
-                            <p> 54K+ Footfall</p>
+                            <p> 20K+ Footfall</p>
                           </div>
                           <div className="theme-icon">
                             <i className="fas fa-university"></i>
