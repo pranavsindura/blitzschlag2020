@@ -303,7 +303,7 @@ const eventData = {
           `Date: 06/02/2020`,
           `Prizes worth: 500,000/-`
         ],
-        accent: ["#ff003c", "#4b403b", "#ff8f00"],
+        details: [`Time: 10:00 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -339,9 +339,9 @@ const eventData = {
         eventID: "8"
       },
       {
-        heading: "MNIT FILM FESTIVAL",
+        heading: "PIC SAGA",
         desc: `To Be Revealed`,
-        details: [`Time: 10:00 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Time: TBA`, `Date: TBA`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
