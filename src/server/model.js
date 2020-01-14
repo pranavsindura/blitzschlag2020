@@ -25,7 +25,7 @@ let userSchema = new mongoose.Schema({
     transactionID: String
 });
 
-let userModel = new mongoose.model('userModel', userSchema);
+let userModel = new mongoose.model('Participants', userSchema);
 
 module.exports = {
     userModel
