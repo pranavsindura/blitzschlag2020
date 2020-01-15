@@ -286,31 +286,36 @@ p {
 .c1-holder {
     left: 0%;
     top: 10%;
-    animation: c1-move 2s ease-in-out alternate infinite;
+    animation: none;
+    /* animation: c1-move 2s ease-in-out alternate infinite; */
 }
 
 .c2-holder {
     right: 0%;
     top: 0%;
-    animation: c2-move 3.5s ease-in-out alternate infinite;
+    animation: none;
+    /* animation: c2-move 3.5s ease-in-out alternate infinite; */
 }
 
 .c3-holder {
     left: 0%;
     top: -30%;
-    animation: c3-move 5s ease-in-out alternate infinite;
+    animation: none;
+    /* animation: c3-move 5s ease-in-out alternate infinite; */
 }
 
 .c4-holder {
     left: 0%;
     top: 0%;
-    animation: c4-move 3s ease-in-out alternate infinite;
+    animation: none;
+    /* animation: c4-move 3s ease-in-out alternate infinite; */
 }
 
 .c5-holder {
     left: 0%;
     top: 0%;
-    animation: c5-move 3.5s ease-in-out alternate infinite;
+    animation: none;
+    /* animation: c5-move 3.5s ease-in-out alternate infinite; */
 }
 
 .c1-holder>img,
