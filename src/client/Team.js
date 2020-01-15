@@ -82,7 +82,7 @@ export default class Team extends Component {
                     <div style={{ padding: "0px", margin: "0px" }}>
                       <img
                         style={{ height: "auto", width: "100px" }}
-                        src="src/shared/img/blitzlogo.png"
+                        src="https://i.ibb.co/42WZWbr/blitzlogo.png"
                       ></img>
                     </div>
                   </a>
