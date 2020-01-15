@@ -77,15 +77,18 @@ class Event extends Component {
 		this.setState({ registerDetails });
 	};
 	clearDetails = () => {
-		this.setState({
-		  registerDetails: {
+		const {currSlide}=this.state;
+		let registerDetails = {
+			teamSize: this.data.content[currSlide].registerConstraints.minTeamSize,
 			teamID: 0,
-			eventName: "",
-			teamSize: 0,
-			teamName: "",
+			eventName: '',
+			teamName: '',
 			teamMembers: []
-		  }
-		});
+		};
+		for (let i = 0; i < this.data.content[currSlide].registerConstraints.minTeamSize; i++) {
+			registerDetails.teamMembers.push({ blitzID: '', blitzPIN: '' });
+		}
+		this.setState({ registerDetails });
 	  };
 	handleRegister = (e) => {
 		e.preventDefault();
@@ -162,14 +165,19 @@ class Event extends Component {
 	}
 	nextSlide = () => {
 		const { currSlide } = this.state;
+		let registerDetails = {
+			teamSize: this.data.content[currSlide].registerConstraints.minTeamSize,
+			teamID: 0,
+			eventName: '',
+			teamName: '',
+			teamMembers: []
+		};
+		for (let i = 0; i < this.data.content[currSlide].registerConstraints.minTeamSize; i++) {
+			registerDetails.teamMembers.push({ blitzID: '', blitzPIN: '' });
+		}
+		// this.setState({ registerDetails });
 		this.setState({ currSlide: (currSlide + 1) % this.data.carImages.length,
-			registerDetails: {
-			  teamID: 0,
-			  eventName: "",
-			  teamSize: 0,
-			  teamName: "",
-			  teamMembers: []
-			},
+			registerDetails,
 			submitMessage: "" });
 	};
 	showRegister = (fullpageApi) => {

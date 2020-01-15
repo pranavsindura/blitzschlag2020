@@ -171,15 +171,18 @@ class App extends Component {
 							</li>
 							{this.props.loggedIn ? (
 								<li className="lis menu-item">
-									<a
+									<Link
 										className="lisitem"
-										href="http://www.blitzschlag.co.in/"
+										// href="http://www.blitzschlag.co.in/"
+										// href="#"
+										to="/login"
 										onClick={() => {
 											this.handleLogout();
 										}}
+										
 									>
 										<i className="fas fa-long-arrow-alt-left"></i>&nbsp;&nbsp;LOGOUT
-									</a>
+									</Link>
 								</li>
 							) : null}
 						</ul>
