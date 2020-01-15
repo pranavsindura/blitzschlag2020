@@ -532,6 +532,7 @@ class Event extends Component {
 													interval="4000"
 													controls={false}
 													activeIndex={currSlide}
+													onSelect={()=>{}}
 													// defaultActiveIndex={0}
 												>
 													{this.data.carImages.map((item, index) => {
@@ -611,9 +612,9 @@ class Event extends Component {
 													</Col>
 												</Row>
 												<Row>{submitMessage}</Row>
-												{() => {
+												{/* {() => {
 													fullpageApi.reBuild();
-												}}
+												}} */}
 											</Form>
 										</Card.Body>
 									</Card>
