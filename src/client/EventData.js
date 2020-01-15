@@ -303,7 +303,8 @@ const eventData = {
           `Date: 06/02/2020`,
           `Prizes worth: 500,000/-`
         ],
-        details: [`Time: 10:00 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
+		details: [`Time: 10:00 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
+		accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
