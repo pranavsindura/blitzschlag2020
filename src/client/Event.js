@@ -112,6 +112,9 @@ class Event extends Component {
 									</Col>
 								</Col>
 							)
+						},
+						() => {
+							fullpage_api.reBuild();
 						});
 					} else {
 						this.setState({
@@ -120,11 +123,24 @@ class Event extends Component {
 									<p className="text-danger">{res.message}</p>
 								</Col>
 							)
+						},
+						() => {
+							fullpage_api.reBuild();
 						});
 					}
 				})
 				.catch((e) => {
 					console.log('Network issues');
+					this.setState({
+						submitMessage: (
+							<Col>
+								<p className="text-danger">Experiencing Network Issues!</p>
+							</Col>
+						)
+					},
+					() => {
+						fullpage_api.reBuild();
+					});
 				});
 		}
 		console.log(this.state.registerDetails);
@@ -518,6 +534,7 @@ class Event extends Component {
 									}}
 								>
 									{this.shouldRedirect()}
+									<div className="formwrapper">
 									<h1 className="heading">{this.data.content[currSlide].heading}</h1>
 									<h1 className="heading">Register</h1>
 									<Card>
@@ -579,6 +596,7 @@ class Event extends Component {
 											</Form>
 										</Card.Body>
 									</Card>
+									</div>
 								</div>
 							</ReactFullpage.Wrapper>
 						);
