@@ -76,6 +76,17 @@ class Event extends Component {
 		registerDetails[e.target.id] = e.target.value;
 		this.setState({ registerDetails });
 	};
+	clearDetails = () => {
+		this.setState({
+		  registerDetails: {
+			teamID: 0,
+			eventName: "",
+			teamSize: 0,
+			teamName: "",
+			teamMembers: []
+		  }
+		});
+	  };
 	handleRegister = (e) => {
 		e.preventDefault();
 		console.log(this.state.registerDetails);
@@ -144,13 +155,22 @@ class Event extends Component {
 				});
 		}
 		console.log(this.state.registerDetails);
+		this.clearDetails();
 	};
 	componentDidUpdate() {
 		console.log(this.state);
 	}
 	nextSlide = () => {
 		const { currSlide } = this.state;
-		this.setState({ currSlide: (currSlide + 1) % this.data.carImages.length });
+		this.setState({ currSlide: (currSlide + 1) % this.data.carImages.length,
+			registerDetails: {
+			  teamID: 0,
+			  eventName: "",
+			  teamSize: 0,
+			  teamName: "",
+			  teamMembers: []
+			},
+			submitMessage: "" });
 	};
 	showRegister = (fullpageApi) => {
 		fullpageApi.moveSectionDown();
