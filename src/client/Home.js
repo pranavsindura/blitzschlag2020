@@ -245,7 +245,7 @@ export default class Home extends Component {
             display: "block",
             margin: "auto",
             position: "fixed",
-            zIndex: "20",
+            zIndex: "10",
             transform: `${
               moveLogo
                 ? `scale(${window.innerWidth <= 760 ? 0.4 : 0.2}) translate(${
@@ -266,7 +266,7 @@ export default class Home extends Component {
             style={{
               width: "80vw",
               enableBackground: "new 0 0 666.7 248.32",
-              filter: "drop-shadow(5px 5px 5px #00000050)"
+              filter: "drop-shadow(5px 5px 5px #00000050)",
             }}
           />
         </div>
