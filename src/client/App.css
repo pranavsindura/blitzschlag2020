@@ -49,6 +49,17 @@ body {
     src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OUuhs.ttf) format('truetype');
 }
 
+.hamburger-extended{
+    position: absolute;
+    z-index:15;
+    /* padding-top: 20px;
+    padding-left: 10px; */
+    top:10px;
+    right: 10px;
+    height: 60px;
+    width: 60px;
+}
+
 .flex-center {
     display: flex;
     align-items: center;

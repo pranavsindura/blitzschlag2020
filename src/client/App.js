@@ -26,6 +26,7 @@ class App extends Component {
 		this.setState({ moveto: to, checked: false });
 	};
 	handleCheck = () => {
+		// console.log('CLICK')
 		this.setState({ checked: !this.state.checked });
 	};
 	handleLogout = () => {
@@ -41,6 +42,7 @@ class App extends Component {
 		const { moveto, checked } = this.state;
 		return (
 			<Router history={history}>
+				<div className="hamburger-extended" onClick={()=>{this.handleCheck()}}></div>
 				<div className="myBox">
 					<Menu
 						right
