@@ -580,7 +580,8 @@ class Event extends Component {
 													<Col>
 														<Button
 															style={{
-																backgroundColor: this.data.content[currSlide].accent[0]
+																backgroundColor: this.data.content[currSlide].accent[0],
+																border: '0px'
 															}}
 															className="event-submit-button"
 															type="submit"

@@ -255,7 +255,8 @@ class Event extends Component {
 									className="section content"
 									style={{
 										background: this.data.content[currSlide].accent[1],
-										transition: 'all .5s ease-in-out'
+										transition: 'all .5s ease-in-out',
+										minHeight:'100vh'
 									}}
 								>
 									{window.innerWidth <= 770 ? (
@@ -576,7 +577,8 @@ class Event extends Component {
 															<Button
 																style={{
 																	backgroundColor: this.data.content[currSlide]
-																		.accent[0]
+																		.accent[0],
+																		border:'0px'
 																}}
 																className="event-submit-button"
 																type="submit"
