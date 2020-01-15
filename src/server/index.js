@@ -244,6 +244,40 @@ app.post('/events', (req, res) => {
     });
 });
 
+app.post('/user', (req, res) => {
+    let user = req.body;
+    eventRegister.retrieveUsers(user).then(function(result) {
+        if (result) {
+            result = result[0];
+            let userDetails = new userModel();
+            userDetails.firstName = result.firstName;
+            userDetails.lastName = result.lastName;
+            userDetails.email = result.email;
+            userDetails.mob = result.mob;
+            userDetails.course = result.course;
+            userDetails.year = result.year;
+            userDetails.branch = result.branch;
+            userDetails.city = result.city;
+            userDetails.college = result.college;
+            userDetails.collegeID = result.collegeID;
+            userDetails.events = result.events;
+            userDetails.blitzID = result.blitzID;
+            userDetails.isMNIT = result.isMNIT;
+            userDetails.accomodation = result.accomodation;
+            userDetails.transactionID = result.transactionID;
+            res.send({
+                status: true,
+                data: userDetails
+            });
+        } else {
+            res.send({
+                status: false,
+                message: "Unable to fetch user details"
+            });
+        }
+    });
+});
+
 
 app.use(express.static('dist'));
 app.get('*', (req, res) => {
