@@ -25,8 +25,17 @@ let userSchema = new mongoose.Schema({
     transactionID: String
 });
 
+let paySchema = new mongoose.Schema({
+    pID: Number,
+    categoryName: String,
+    amount: Number
+});
+
+let payCategoryModel = new mongoose.model('Payment Categories', paySchema);
+
 let userModel = new mongoose.model('Participants', userSchema);
 
 module.exports = {
-    userModel
+    userModel,
+    payCategoryModel
 };
