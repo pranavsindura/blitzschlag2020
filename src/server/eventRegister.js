@@ -86,27 +86,11 @@ async function retrieveCategoryDetails(eid) {
     return category;
 }
 
-async function checkExistingTeam(ids, eventName) {
-    let users = await retrieveUsers(ids);
-    let flag = false;
-    for (i = 0; i < ids.length; i++) {
-        let events = users[i].events;
-        for (j = 0; j < events.length; j++) {
-            if (events[j].name === eventName) {
-                flag = true;
-                break;
-            }
-        }
-    }
-    return flag;
-}
-
 module.exports = {
     updateUser,
     retrieveTeamID,
     updateTeamID,
     validate,
     retrieveCategoryDetails,
-    retrieveUsers,
-    checkExistingTeam
+    retrieveUsers
 };
