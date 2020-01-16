@@ -96,7 +96,7 @@ app.post('/signup', (req, res) => {
                                                             res.send({
                                                                 status: true,
                                                                 data: result3
-                                                            }); 
+                                                            });
                                                         })
                                                         // res.send({
                                                         //     status: true,
@@ -161,7 +161,7 @@ app.post('/events', (req, res) => {
                             eventObj.eventID = category.eventID;
                             eventObj.eventName = category.eventName;
                             eventObj.teamName = eventReg.teamName;
-                            eventObj.teamSize   = eventReg.teamSize;
+                            eventObj.teamSize = eventReg.teamSize;
 
                             eventReg.eventName = category.eventName;
                             eventRegister.checkExistingTeam(eventReg.blitzID, eventReg.eventName).then(function(alreadyRegistered) {
@@ -183,31 +183,40 @@ app.post('/events', (req, res) => {
                                             }
                                             console.log('multipleDocs', multipleDocs);
                                             modelEvent.eventModel.insertMany(multipleDocs);
-                                            eventRegister.updateUser(eventReg).then(function(x) {
-                                                if (x) {
-                                                    let counter = {
-                                                        teamCount: counts.teamCount + 1
-                                                    };
-                                                    eventRegister.updateTeamID(counter).then(function(result) {
-                                                        res.send({
-                                                            status: true,
-                                                            data: counter.teamCount
-                                                        });
-                                                        console.log('updated team id');
-                                                        users.forEach(user => {
-                                                            mailer.eventMail(user, counter.teamCount, eventReg.eventName).catch(err => {
-                                                                console.log(err);
+                                            let counter = {
+                                                teamCount: counts.teamCount + 1
+                                            };
+                                            eventRegister.updateTeamID(counter).then(function(result) {
+                                                if (result) {
+                                                    eventRegister.updateUser(eventReg).then(function(x) {
+                                                        if (x) {
+                                                            res.send({
+                                                                status: true,
+                                                                data: counter.teamCount
                                                             });
-                                                        });
+                                                            console.log('updated team id');
+                                                            users.forEach(user => {
+                                                                mailer.eventMail(user, counter.teamCount, eventReg.eventName).catch(err => {
+                                                                    console.log(err);
+                                                                });
+                                                            });
+
+                                                        } else {
+                                                            res.send({
+                                                                status: false,
+                                                                message: "Not registered for the event!"
+                                                            });
+
+                                                        }
                                                     });
                                                 } else {
                                                     res.send({
                                                         status: false,
-                                                        message: "Not registered for the event!"
+                                                        message: "Internal Error"
                                                     });
-
                                                 }
                                             });
+
                                         } else {
                                             res.send({
                                                 status: false,
@@ -291,7 +300,7 @@ app.use(express.static('dist'));
 app.get('/mod', (req, res) => {
     // console.log(__dirname);
     // res.redirect('https://blitzmod.herokuapp.com/');
-    res.sendFile(path.resolve('/moderator.html')) ;
+    res.sendFile(path.resolve('/moderator.html'));
 })
 app.get('*', (req, res) => {
     console.log(__dirname);
