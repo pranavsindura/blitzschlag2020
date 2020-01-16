@@ -182,6 +182,7 @@ class Event extends Component {
 	};
 	showRegister = (fullpageApi) => {
 		fullpageApi.moveSectionDown();
+		// alert('Registrations are Currently Closed!');
 	};
 	createTeamMemberSelect = () => {
 		const { currSlide } = this.state;
@@ -276,6 +277,7 @@ class Event extends Component {
 					scrollOverflow={true}
 					onLeave={({ origin, destination, direction }) => {
 						if (!this.data.content[currSlide].canRegister) return false;
+						// return false;
 					}}
 					scrollOverflowOptions={{
 						click: false,

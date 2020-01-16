@@ -10,7 +10,7 @@ const objectID = require('objectid');
 const uri = 'mongodb+srv://Dhairya-Shalu:light12345@first-demo-ocw10.mongodb.net/test?retryWrites=true&w=majority';
 // mongodb+srv://Dhairya:<password>@blitz-wrjmz.mongodb.net/test?retryWrites=true&w=majority
 // mongodb+srv://Dhairya-Shalu:light12345@first-demo-ocw10.mongodb.net/test?retryWrites=true&w=majority
-let Model = require('./model.js');
+let {userModel} = require('./model.js');
 let { idModel } = require('./idModel');
 let loginValid = require('./loginvalid');
 let eventRegister = require('./eventRegister');
@@ -253,10 +253,13 @@ app.post('/events', (req, res) => {
 });
 
 app.post('/user', (req, res) => {
-    let user = req.body;
-    eventRegister.retrieveUsers(user).then(function(result) {
+    let user = {blitzID: req.body.blitzID};
+    // console.log(req.body);
+    // user.blitzID = Number(user.blitzID);
+    eventRegister.retrieveUsers(user.blitzID).then(function(result) {
         if (result) {
             result = result[0];
+            // console.log('result', result)
             let userDetails = new userModel();
             userDetails.firstName = result.firstName;
             userDetails.lastName = result.lastName;
@@ -264,6 +267,7 @@ app.post('/user', (req, res) => {
             userDetails.mob = result.mob;
             userDetails.course = result.course;
             userDetails.year = result.year;
+            userDetails.gender = result.gender;
             userDetails.branch = result.branch;
             userDetails.city = result.city;
             userDetails.college = result.college;
@@ -273,6 +277,7 @@ app.post('/user', (req, res) => {
             userDetails.isMNIT = result.isMNIT;
             userDetails.accomodation = result.accomodation;
             userDetails.transactionID = result.transactionID;
+            console.log('userDetails', userDetails)
             res.send({
                 status: true,
                 data: userDetails
