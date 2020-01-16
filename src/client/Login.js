@@ -6,7 +6,7 @@ import './Login.css';
 import { Form, Button, Card, Col, Row, Alert, InputGroup } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+// import { getUser } from './store/actions';
 
 import axios from 'axios';
 import Sky from 'react-sky';
@@ -51,9 +51,8 @@ class Login extends React.Component {
 	images = [
 		'https://i.ibb.co/hfH0yHM/loginc1.png',
 		'https://i.ibb.co/Wpt36Ft/loginc2.png',
-		'https://i.ibb.co/Gk3tWQf/login.jpg',
-
-];
+		'https://i.ibb.co/Gk3tWQf/login.jpg'
+	];
 	changeForm = (fullpageApi) => {
 		// fullpageApi.reBuild();
 		this.setState(
@@ -637,7 +636,7 @@ class Login extends React.Component {
 		return (
 			<div className="scrollit">
 				<Splash images={this.images} />
-				<a href="http://www.blitzschlag.co.in/"> 
+				<a href="http://www.blitzschlag.co.in/">
 					<img
 						style={{
 							height: 'auto',
@@ -691,7 +690,7 @@ const mapDispatchToProps = (dispatch) => {
 	return {
 		LOGIN: (user) => {
 			dispatch({ type: 'LOGIN', payload: { user: user } });
-		}
+		},
 	};
 };
 

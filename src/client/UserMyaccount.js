@@ -8,6 +8,8 @@ import 'fullpage.js/vendors/scrolloverflow';
 import { Redirect } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
+import { getUser } from './store/actions';
+
 import { connect } from 'react-redux';
 class Myaccount extends Component {
 	constructor(props) {
@@ -19,7 +21,11 @@ class Myaccount extends Component {
 		this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 		this.images = ['https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg'];
 	}
+	proxy = 'http://localhost:8080';
 	componentDidMount() {
+		if (this.props.production) this.proxy = '';
+		if(this.props.user)
+			this.props.GET_USER(this.proxy, this.props.user);
 		this.updateWindowDimensions();
 		window.addEventListener('resize', this.updateWindowDimensions);
 	}
@@ -225,12 +231,16 @@ class Myaccount extends Component {
 const mapStateToProps = (state) => {
 	return {
 		loggedIn: state.loggedIn,
-		user: state.user
+		user: state.user,
+		production: state.production,
 	};
 };
 
 const mapDispatchToProps = (dispatch) => {
-	return {};
+	return {
+		GET_USER: (user)=>{dispatch(getUser(user))}
+		// GET_USER: (user)=>{dispatch({type: 'GET_USER', payload:{user: user}})}
+	};
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Myaccount);

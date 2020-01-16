@@ -4,6 +4,7 @@ let initialState = {
 	production:true, 
 };
 
+
 let reducer = (state = initialState, action) => {
 	console.log(process.env);
 	switch (action.type) {
