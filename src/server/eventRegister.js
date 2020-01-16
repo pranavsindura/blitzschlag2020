@@ -17,7 +17,7 @@ async function updateTeamID(obj) {
     let teamObj = await idModel.findOneAndUpdate({}, { teamCount: obj.teamCount }, { new: true }, (err, data) => {
 
     });
-    console.log('teamObj', teamObj);
+    // console.log('teamObj', teamObj);
     return teamObj;
 }
 
@@ -29,11 +29,11 @@ async function updateUser(event) {
         teamName: event.teamName,
         teamSize: event.teamSize
     };
-    console.log(addEvent);
+    // console.log(addEvent);
     (event.blitzID).forEach(id => {
         userModel.find({ blitzID: id }, (err, user) => {
             if (err) {
-                console.log(err);
+                // console.log(err);
             } else {
                 let eventArray = user[0].events;
                 eventArray.push(addEvent);
@@ -47,7 +47,7 @@ async function updateUser(event) {
 async function retrieveUsers(ids) {
     let users = await userModel.find({ blitzID: ids }, (err, result) => {
         if (err) {
-            console.log('ID not found');
+            // console.log('ID not found');
         }
     });
     return users;
@@ -60,7 +60,7 @@ async function validate(obj) {
     if(ids.length != dup.size)
         return undefined;
     let f = retrieveUsers(ids).then(function(users) {
-        console.log('users',users);
+        // console.log('users',users);
         if(users.length != ids.length)
             return undefined;
         let flag = true;
@@ -80,7 +80,7 @@ async function validate(obj) {
 async function retrieveCategoryDetails(eid) {
     let category = await categories.findOne({ eventID: eid }, function(err, result) {
         if (err) {
-            console.log('error retrieveing category');
+            // console.log('error retrieveing category');
         }
     });
     return category;

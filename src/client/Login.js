@@ -132,7 +132,7 @@ class Login extends React.Component {
 						}
 					);
 				} else {
-					console.log('NOT registered!');
+					// console.log('NOT registered!');
 					this.setState(
 						{
 							submitMessage: (
@@ -160,7 +160,7 @@ class Login extends React.Component {
 						fullpage_api.reBuild();
 					}
 				);
-				console.log(err);
+				// console.log(err);
 			});
 	};
 	handleLoginChange = (e) => {
@@ -214,7 +214,7 @@ class Login extends React.Component {
 						fullpage_api.reBuild();
 					}
 				);
-				console.log(err);
+				// console.log(err);
 			});
 	};
 	render() {

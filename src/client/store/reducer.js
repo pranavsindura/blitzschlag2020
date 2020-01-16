@@ -5,7 +5,7 @@ let initialState = {
 };
 
 let reducer = (state = initialState, action) => {
-	console.log(process.env);
+	// console.log(process.env);
 	switch (action.type) {
 		case 'LOGIN':
 			return {

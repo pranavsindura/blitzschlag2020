@@ -18,8 +18,8 @@ async function main(obj) {
         html: `<b>You Are Registered with id ${obj.blitzID} </b>`
     });
 
-    console.log("Message sent: %s", info.messageId);
-    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+    // console.log("Message sent: %s", info.messageId);
+    // console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 }
 
 async function eventMail(user, teamID, eventName) {
@@ -39,8 +39,8 @@ async function eventMail(user, teamID, eventName) {
         html: `<b>You Are Registered with team id ${teamID} </b>`
     });
 
-    console.log("Message sent: %s", info.messageId);
-    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+    // console.log("Message sent: %s", info.messageId);
+    // console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 }
 
 // main().catch(console.error);

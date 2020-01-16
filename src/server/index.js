@@ -39,7 +39,7 @@ mongoose.connect(uri, {
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', async function() {
-    console.log('Connected to the database');
+    // console.log('Connected to the database');
 });
 
 app.post('/login', (req, res) => {
@@ -47,20 +47,20 @@ app.post('/login', (req, res) => {
     loginValid.userValid(userLoginData).then(function(result) {
         if (result) {
             if (result === 1) {
-                console.log('Incorrect Blitz Pin');
+                // console.log('Incorrect Blitz Pin');
                 res.send({
                     status: false,
                     message: 'Incorrect PIN!',
                 });
             } else {
-                console.log(result);
+                // console.log(result);
                 res.send({
                     status: true,
                     data: result
                 });
             }
         } else {
-            console.log('User not registered');
+            // console.log('User not registered');
             res.send({
                 status: false,
                 message: 'User not Registered!',
@@ -83,7 +83,7 @@ app.post('/signup', (req, res) => {
                 if (result) {
                     mobAndPinValid.validatePIN(userInput.blitzPIN).then(function(result) {
                         if (result) {
-                            console.log('true pin');
+                            // console.log('true pin');
                             signupvalid.retrieveBlitzID().then(function(result2) {
                                 if (result2) {
                                     user.blitzID = result2.blitzCount + 1;
@@ -124,7 +124,7 @@ app.post('/signup', (req, res) => {
                                 }
                             });
                         } else {
-                            console.log('false pin');
+                            // console.log('false pin');
                             res.send({
                                 status: false,
                                 message: "Invalid Pin!"
@@ -132,7 +132,7 @@ app.post('/signup', (req, res) => {
                         }
                     });
                 } else {
-                    console.log('false mobile num');
+                    // console.log('false mobile num');
                     res.send({
                         status: false,
                         message: "Incorrect Mobile Number!"
@@ -149,7 +149,7 @@ app.post('/events', (req, res) => {
     let eventObj = new modelEvent.eventModel();
     eventRegister.validate(eventReg).then(function(flag) {
         if (flag !== undefined) {
-            console.log('valid ids');
+            // console.log('valid ids');
             eventRegister.retrieveTeamID().then(function(counts) {
                 if (counts) {
                     eventObj.teamID = counts.teamCount + 1;
@@ -178,10 +178,10 @@ app.post('/events', (req, res) => {
                                                 obj._id = new objectID();
                                                 obj.firstName = users[id].firstName;
                                                 obj.mob = users[id].mob;
-                                                console.log(obj);
+                                                // console.log(obj);
                                                 multipleDocs.push(obj);
                                             }
-                                            console.log('multipleDocs', multipleDocs);
+                                            // console.log('multipleDocs', multipleDocs);
                                             modelEvent.eventModel.insertMany(multipleDocs);
                                             eventRegister.updateUser(eventReg).then(function(x) {
                                                 if (x) {
@@ -193,10 +193,10 @@ app.post('/events', (req, res) => {
                                                             status: true,
                                                             data: counter.teamCount
                                                         });
-                                                        console.log('updated team id');
+                                                        // console.log('updated team id');
                                                         users.forEach(user => {
                                                             mailer.eventMail(user, counter.teamCount, eventReg.eventName).catch(err => {
-                                                                console.log(err);
+                                                                // console.log(err);
                                                             });
                                                         });
                                                     });
@@ -247,7 +247,7 @@ app.post('/events', (req, res) => {
                 status: false,
                 message: "Incorrect/Repeated Credentials!"
             });
-            console.log('Incorrect ids');
+            // console.log('Incorrect ids');
         }
     });
 });
@@ -294,9 +294,9 @@ app.get('/mod', (req, res) => {
     res.sendFile(path.resolve('/moderator.html')) ;
 })
 app.get('*', (req, res) => {
-    console.log(__dirname);
+    // console.log(__dirname);
     // res.sendFile(path.resolve('./dist/index.html')) 
     res.redirect('http://www.blitzschlag.co.in/');
 })
-console.log(process.env.PORT);
+// console.log(process.env.PORT);
 app.listen(process.env.PORT || 8080, () => console.log(`Listening on port ${process.env.PORT || 8080}!`));

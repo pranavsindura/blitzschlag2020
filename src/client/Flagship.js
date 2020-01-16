@@ -92,7 +92,7 @@ class Event extends Component {
 	  };
 	handleRegister = (e) => {
 		e.preventDefault();
-		console.log(this.state.registerDetails);
+		// console.log(this.state.registerDetails);
 		if (!this.props.loggedIn) {
 			this.setState({ redirect: true });
 		} else {
@@ -107,12 +107,12 @@ class Event extends Component {
 			registerDetails['blitzID'] = blitzID;
 			registerDetails['blitzPIN'] = blitzPIN;
 			registerDetails['eventID'] = Number(this.data.content[currSlide].eventID);
-			console.log(registerDetails);
+			// console.log(registerDetails);
 			axios
 				.post(this.proxy + '/events', registerDetails)
 				.then((res) => {
 					res = res.data;
-					console.log(res);
+					// console.log(res);
 					if (res.status) {
 						alert(`Your TeamID: ${res.data}`);
 						this.setState({
@@ -144,7 +144,7 @@ class Event extends Component {
 					}
 				})
 				.catch((e) => {
-					console.log('Network issues');
+					// console.log('Network issues');
 					this.setState({
 						submitMessage: (
 							<Col>
@@ -157,11 +157,11 @@ class Event extends Component {
 					});
 				});
 		}
-		console.log(this.state.registerDetails);
+		// console.log(this.state.registerDetails);
 		this.clearDetails();
 	};
 	componentDidUpdate() {
-		console.log(this.state);
+		// console.log(this.state);
 	}
 	nextSlide = () => {
 		const { currSlide } = this.state;
@@ -200,7 +200,7 @@ class Event extends Component {
 		return options;
 	};
 	handleMemberDataChange = (e, type, ind) => {
-		console.log(type, ind);
+		// console.log(type, ind);
 		const { registerDetails } = this.state;
 		registerDetails.teamMembers[ind][type] = e.target.value;
 		this.setState({ registerDetails });
@@ -208,7 +208,7 @@ class Event extends Component {
 	createTeamMemberInput = () => {
 		let input = [];
 		const { registerDetails } = this.state;
-		console.log(registerDetails);
+		// console.log(registerDetails);
 		for (let i = 0; i < registerDetails.teamSize; i++) {
 			input.push(
 				<Form.Row key={`formrow-${i}`}>
@@ -360,7 +360,7 @@ class Event extends Component {
 															transition: 'all .5s ease-in-out'
 														}}
 														onClick={() => {
-															console.log('click');
+															// console.log('click');
 															this.showRegister(fullpageApi);
 														}}
 													>

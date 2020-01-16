@@ -66,7 +66,7 @@ export default class Home extends Component {
   ];
   imgSelect = Math.trunc(Math.random() * 2);
   componentDidMount() {
-    console.log(this.state, this.props.moveto);
+    // console.log(this.state, this.props.moveto);
     if (this.props.moveto) {
       this.setState({ moveto: this.props.moveto, scrollChanged: false });
       if (this.props.moveto == "home") this.handleScroll(1);
@@ -75,7 +75,7 @@ export default class Home extends Component {
     // this.handleScroll(1);
   }
   handleScroll = num => {
-    console.log();
+    // console.log();
     const newScrollPerc = Math.ceil((num / 4) * 100);
     const { scrollPerc } = this.state;
     if (scrollPerc !== newScrollPerc)
