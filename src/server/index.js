@@ -96,7 +96,7 @@ app.post('/signup', (req, res) => {
                                                             res.send({
                                                                 status: true,
                                                                 data: result3
-                                                            });
+                                                            }); 
                                                         })
                                                         // res.send({
                                                         //     status: true,
@@ -127,7 +127,7 @@ app.post('/signup', (req, res) => {
                             console.log('false pin');
                             res.send({
                                 status: false,
-                                message: "Incorrect Pin!"
+                                message: "Invalid Pin!"
                             });
                         }
                     });
@@ -147,8 +147,7 @@ app.post('/events', (req, res) => {
     let eventReg = req.body;
 
     let eventObj = new modelEvent.eventModel();
-
-    eventRegister.checkPins(eventReg).then(function(flag) {
+    eventRegister.validate(eventReg).then(function(flag) {
         if (flag !== undefined) {
             console.log('valid ids');
             eventRegister.retrieveTeamID().then(function(counts) {
@@ -162,12 +161,13 @@ app.post('/events', (req, res) => {
                             eventObj.eventID = category.eventID;
                             eventObj.eventName = category.eventName;
                             eventObj.teamName = eventReg.teamName;
-                            eventObj.teamSize = eventReg.teamSize;
+                            eventObj.teamSize   = eventReg.teamSize;
 
                             eventReg.eventName = category.eventName;
                             eventRegister.checkExistingTeam(eventReg.blitzID, eventReg.eventName).then(function(alreadyRegistered) {
                                 if (alreadyRegistered === false) {
                                     let multipleDocs = [];
+
 
                                     eventRegister.retrieveUsers(eventReg.blitzID).then(function(users) {
                                         if (users) {
@@ -204,6 +204,42 @@ app.post('/events', (req, res) => {
                                                     res.send({
                                                         status: false,
                                                         message: "Not registered for the event!"
+
+                            let multipleDocs = [];
+
+                            eventRegister.retrieveUsers(eventReg.blitzID).then(function(users) {
+                                if (users) {
+                                    // console.log('eventReg ', eventReg);
+                                    // console.log('users',users);
+                                    for (id in eventReg.blitzID) {
+                                        let numID = Number(id);
+                                        console.log(id); 
+                                        let obj = new modelEvent.eventModel(eventObj);
+                                        // console.log(id);
+                                        obj.blitzID = eventReg.blitzID[numID];
+                                        obj._id = new objectID();
+                                        obj.firstName = users[numID].firstName;
+                                        obj.mob = users[numID].mob;
+                                        // console.log(obj);
+                                        multipleDocs.push(obj);
+                                    }
+                                    console.log('multipleDocs', multipleDocs);
+                                    modelEvent.eventModel.insertMany(multipleDocs);
+                                    eventRegister.updateUser(eventReg).then(function(x) {
+                                        if (x) {
+                                            let counter = {
+                                                teamCount: counts.teamCount + 1
+                                            };
+                                            eventRegister.updateTeamID(counter).then(function(result) {
+                                                res.send({
+                                                    status: true,
+                                                    data: counter.teamCount,
+                                                });
+                                                console.log('updated team id');
+                                                users.forEach(user => {
+                                                    mailer.eventMail(user, counter.teamCount, eventReg.eventName).catch(err => {
+                                                        console.log(err);
+
                                                     });
                                                     console.log('Not updated team id');
                                                 }
@@ -219,7 +255,11 @@ app.post('/events', (req, res) => {
                                 } else {
                                     res.send({
                                         status: false,
+
                                         message: "Already Registered for the event"
+
+
+
                                     });
                                 }
                             });
@@ -227,18 +267,22 @@ app.post('/events', (req, res) => {
                         } else {
                             res.send({
                                 status: false,
-                                message: "internal error in retrieveing category"
+                                message: "Internal Error!"
                             });
                         }
                     });
                 } else {
                     res.send({
                         status: false,
-                        message: "internal error in retrieveing counts"
+                        message: "Internal Error!"
                     });
                 }
             });
         } else {
+            res.send({
+                status: false,
+                message: "Incorrect ID/Password!"
+            });
             console.log('Incorrect ids');
         }
     });
@@ -283,7 +327,7 @@ app.use(express.static('dist'));
 app.get('*', (req, res) => {
     console.log(__dirname);
     // res.sendFile(path.resolve('./dist/index.html')) 
-    res.redirect('https://blitz20.herokuapp.com/');
+    res.redirect('http://www.blitzschlag.co.in/');
 })
 console.log(process.env.PORT);
 app.listen(process.env.PORT || 8080, () => console.log(`Listening on port ${process.env.PORT || 8080}!`));

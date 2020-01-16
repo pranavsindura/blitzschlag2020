@@ -6,18 +6,26 @@ import './Login.css';
 import { Form, Button, Card, Col, Row, Alert, InputGroup } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 import axios from 'axios';
-let proxy = 'http://localhost:8080';
-if (process.env.PROD) proxy = '';
+import Sky from 'react-sky';
+
 const registerDetailsTemplate = {
 	firstName: '',
 	lastName: '',
 	email: '',
 	mob: '',
-	college: '',
+	collegeType: '0',
+	college: 'MNIT',
 	collegeID: '',
+	year: 'I',
+	city: '',
+	course: 'B-Tech',
+	gender: 'Male',
+	branch: '',
 	blitzPIN: '',
-	isMNIT: false,
+	isMNIT: true,
 	accomodation: false
 };
 const loginDetailsTemplate = {
@@ -28,49 +36,58 @@ class Login extends React.Component {
 	state = {
 		submitMessage: '',
 		whichForm: true,
-		registerFormPart: true,
 		registerDetails: {
-			firstName: '',
-			lastName: '',
-			email: '',
-			mob: '',
-			college: '',
-			collegeID: '',
-			blitzPIN: '',
-			isMNIT: false,
-			accomodation: false
+			...registerDetailsTemplate
 		},
 		loginDetails: {
 			blitzID: '',
 			blitzPIN: ''
 		}
 	};
-	images = ['https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg'];
-	changeForm = () => {
-		this.setState({
-			whichForm: !this.state.whichForm,
-			submitMessage: '',
-			registerFormPart: true,
-			registerDetails: {
-				firstName: '',
-				lastName: '',
-				email: '',
-				mob: '',
-				college: '',
-				collegeID: '',
-				blitzPIN: '',
-				isMNIT: false,
-				accomodation: false
+	proxy = 'http://localhost:8080';
+	componentDidMount() {
+		if (this.props.production) this.proxy = '';
+	}
+	images = [
+		'https://i.ibb.co/hfH0yHM/loginc1.png',
+		'https://i.ibb.co/Wpt36Ft/loginc2.png',
+		'https://i.ibb.co/Gk3tWQf/login.jpg',
+
+];
+	changeForm = (fullpageApi) => {
+		// fullpageApi.reBuild();
+		this.setState(
+			{
+				whichForm: !this.state.whichForm,
+				submitMessage: '',
+				registerDetails: {
+					...registerDetailsTemplate
+				},
+				loginDetails: {
+					blitzID: '',
+					blitzPIN: ''
+				}
 			},
-			loginDetails: {
-				blitzID: '',
-				blitzPIN: ''
+			() => {
+				fullpageApi.reBuild();
 			}
-		});
+		);
 	};
 	handleRegisterChange = (e) => {
 		let newDetails = this.state.registerDetails;
 		let value = e.target.value;
+		// console.log(e.target.id, e.target.value, '<-', typeof e.target.value);
+		if (e.target.id === 'college') {
+			if (newDetails.collegeType == 0) value = 'MNIT';
+			else if (newDetails.collegeType == 1) value = 'IIIT Kota';
+			else if (newDetails.collegeType == 2) value = 'NIT UK';
+		}
+		if (e.target.id === 'collegeType') {
+			if (value === '0') (newDetails['college'] = 'MNIT'), (newDetails['isMNIT'] = true);
+			else if (value === '1') (newDetails['college'] = 'IIIT Kota'), (newDetails['isMNIT'] = true);
+			else if (value === '2') (newDetails['college'] = 'NIT UK'), (newDetails['isMNIT'] = true);
+			else (newDetails['college'] = ''), (newDetails['isMNIT'] = false);
+		}
 		if (e.target.type === 'radio') {
 			if (value === 'true') value = true;
 			else value = false;
@@ -82,60 +99,67 @@ class Login extends React.Component {
 		event.preventDefault();
 		const { registerDetails } = this.state;
 		// console.log(registerDetails);
+		// console.log(registerDetails);
 		axios
-			.post(proxy + '/signup', registerDetails)
+			.post(this.proxy + '/signup', registerDetails)
 			.then((res) => {
 				res = res.data;
 				// console.log(res);
 				if (res.status) {
-					// alert('You are successfully Registered!');
+					alert(`You are registered! Your BlitzID: blitz20@${res.data.blitzID}`);
 
-					console.log(res.data);
-					this.setState({
-						submitMessage: (
-							<Col>
+					// console.log(res.data);
+					this.setState(
+						{
+							submitMessage: (
 								<Col>
-									<p className="text-success">You are successfully Registered!</p>
+									<Col>
+										<p className="text-white">You are successfully Registered!</p>
+									</Col>
+									<Col>
+										<p className="text-white font-weight-bold">
+											Your BlitzID: blitz20@{res.data.blitzID}
+										</p>
+									</Col>
 								</Col>
-								<Col>
-									<p className="text-success font-weight-bold">
-										Your BlitzID: blitz@{res.data.blitzID}
-									</p>
-								</Col>
-							</Col>
-						),
-						registerDetails: {
-							firstName: '',
-							lastName: '',
-							email: '',
-							mob: '',
-							college: '',
-							collegeID: '',
-							blitzPIN: '',
-							isMNIT: false,
-							accomodation: false
+							),
+							registerDetails: {
+								...registerDetailsTemplate
+							}
+						},
+						() => {
+							fullpage_api.reBuild();
 						}
-					});
+					);
 				} else {
-					// alert('Invalid Details!');
 					console.log('NOT registered!');
-					this.setState({
-						submitMessage: (
-							<Col>
-								<p className="text-danger">{res.message}</p>
-							</Col>
-						)
-					});
+					this.setState(
+						{
+							submitMessage: (
+								<Col>
+									<p className="text-danger">{res.message}</p>
+								</Col>
+							)
+						},
+						() => {
+							fullpage_api.reBuild();
+						}
+					);
 				}
 			})
 			.catch((err) => {
-				this.setState({
-					submitMessage: (
-						<Col>
-							<p className="text-danger">Experiencing Network Issues!</p>
-						</Col>
-					)
-				});
+				this.setState(
+					{
+						submitMessage: (
+							<Col>
+								<p className="text-danger">Experiencing Network Issues!</p>
+							</Col>
+						)
+					},
+					() => {
+						fullpage_api.reBuild();
+					}
+				);
 				console.log(err);
 			});
 	};
@@ -145,169 +169,67 @@ class Login extends React.Component {
 		this.setState({ loginDetails: newDetails });
 	};
 	handleLoginSubmit = (event) => {
+		// console.log(this.proxy);
 		event.preventDefault();
 		const { loginDetails } = this.state;
 		// console.log(loginDetails);
 		axios
-			.post(proxy + '/login', loginDetails)
+			.post(this.proxy + '/login', loginDetails)
 			.then((res) => {
 				res = res.data;
-				console.log(res);
+				// console.log(res);
 				if (res.status) {
 					this.props.LOGIN(res.data);
-					this.setState({
-						loginDetails: {
-							blitzID: '',
-							blitzPIN: ''
-						}
-					});
+					// this.setState({
+					// 	loginDetails: {
+					// 		blitzID: '',
+					// 		blitzPIN: ''
+					// 	}
+					// });
 				} else {
-					this.setState({
-						submitMessage: (
-							<Col>
-								<p className="text-danger">{res.message}</p>
-							</Col>
-						)
-					});
+					this.setState(
+						{
+							submitMessage: (
+								<Col>
+									<p className="text-danger">{res.message}</p>
+								</Col>
+							)
+						},
+						() => {
+							fullpage_api.reBuild();
+						}
+					);
 				}
 			})
 			.catch((err) => {
-				this.setState({
-					submitMessage: (
-						<Col>
-							<p className="text-danger">Experiencing Network Issues!</p>
-						</Col>
-					)
-				});
+				this.setState(
+					{
+						submitMessage: (
+							<Col>
+								<p className="text-danger">Experiencing Network Issues!</p>
+							</Col>
+						)
+					},
+					() => {
+						fullpage_api.reBuild();
+					}
+				);
 				console.log(err);
 			});
-
-	};
-	handleRegisterFormNext = (event) => {
-		event.preventDefault();
-		this.setState({ registerFormPart: false });
-	};
-	handleRegisterFormPrev = () => {
-		this.setState({ registerFormPart: true, submitMessage: '' });
 	};
 	render() {
 		if (this.props.loggedIn) {
 			return <Redirect to="/myaccount" />;
 		}
 		const { registerDetails, loginDetails, submitMessage } = this.state;
-		const registerFormPart1 = (
+		const registerForm = (
 			<div className="section coverlogin">
-				<div className="formwrapper">
-					<h1 className="heading">Register</h1>
-					<Card>
-						<Card.Body>
-							<Form
-								onSubmit={() => {
-									this.handleRegisterFormNext(event);
-								}}
-							>
-								<Form.Row>
-									<Col>
-										<Form.Group>
-											<Form.Control
-												onChange={() => {
-													this.handleRegisterChange(event);
-												}}
-												value={registerDetails.firstName}
-												id="firstName"
-												type="text"
-												required={true}
-												placeholder="First Name"
-											/>
-										</Form.Group>
-									</Col>
-									<Col>
-										<Form.Group>
-											<Form.Control
-												onChange={() => {
-													this.handleRegisterChange(event);
-												}}
-												value={registerDetails.lastName}
-												id="lastName"
-												type="text"
-												required={true}
-												placeholder="Last Name"
-											/>
-										</Form.Group>
-									</Col>
-								</Form.Row>
-								<Form.Group>
-									<Form.Control
-										onChange={() => {
-											this.handleRegisterChange(event);
-										}}
-										value={registerDetails.email}
-										id="email"
-										type="email"
-										required={true}
-										placeholder="Email"
-									/>
-								</Form.Group>
-								<Form.Group>
-									<Form.Control
-										onChange={() => {
-											this.handleRegisterChange(event);
-										}}
-										value={registerDetails.mob}
-										id="mob"
-										type="phone"
-										required={true}
-										placeholder="Mobile Number"
-									/>
-								</Form.Group>
-								<Form.Group>
-									<Form.Control
-										onChange={() => {
-											this.handleRegisterChange(event);
-										}}
-										value={registerDetails.college}
-										id="college"
-										type="text"
-										required={true}
-										placeholder="College Name"
-									/>
-								</Form.Group>
-								<Form.Group>
-									<Form.Control
-										onChange={() => {
-											this.handleRegisterChange(event);
-										}}
-										value={registerDetails.collegeID}
-										id="collegeID"
-										type="text"
-										required={true}
-										placeholder="College ID"
-									/>
-								</Form.Group>
-								<Row>
-									<Col>
-										<Button variant="primary" type="submit">
-											Next >>
-										</Button>
-									</Col>
-								</Row>
-								<Row>
-									<Col>
-										<a className="changeform" href="#" onClick={() => this.changeForm()}>
-											Already have an account?
-										</a>
-									</Col>
-								</Row>
-							</Form>
-						</Card.Body>
-					</Card>
+				<div className="img-wrap">
+					<img src="https://i.ibb.co/hfH0yHM/loginc1.png" className="loginc1" />
+					<img src="https://i.ibb.co/Wpt36Ft/loginc2.png" className="loginc2" />
 				</div>
-			</div>
-		);
-		const registerFormPart2 = (
-			<div className="section coverlogin">
 				<div className="formwrapper">
-					<h1 className="heading">Register</h1>
+					<h1 className="heading">REGISTER</h1>
 					<Card>
 						<Card.Body>
 							<Form
@@ -315,94 +237,297 @@ class Login extends React.Component {
 									this.handleRegisterSubmit(event);
 								}}
 							>
-								<Form.Group>
-									<Form.Control
-										value={registerDetails.blitzPIN}
-										onChange={() => {
-											this.handleRegisterChange(event);
-										}}
-										required={true}
-										id="blitzPIN"
-										type="password"
-										placeholder="4 digit PIN"
-									/>
-								</Form.Group>
-								<fieldset>
-									<Form.Group>
-										<Form.Label>Are you a student of MNIT/IIITK/NIT UK?</Form.Label>
-										<Form.Row>
-											<Col style={{ textAlign: 'left' }}>
-												<Form.Check
-													onChange={() => {
-														this.handleRegisterChange(event);
-													}}
-													checked={registerDetails.isMNIT}
-													value={true}
-													type="radio"
-													id="isMNIT"
-													label="Yes"
-												/>
-											</Col>
-											<Col style={{ textAlign: 'left' }}>
-												<Form.Check
-													onChange={() => {
-														console.log('no');
-														this.handleRegisterChange(event);
-													}}
-													checked={!registerDetails.isMNIT}
-													value={false}
-													type="radio"
-													id="isMNIT"
-													label="No"
-												/>
-											</Col>
-										</Form.Row>
-									</Form.Group>
-								</fieldset>
-								<fieldset>
-									<Form.Group>
-										<Form.Label>Do you need Accomodation?</Form.Label>
-										<Form.Row>
-											<Col style={{ textAlign: 'left' }}>
-												<Form.Check
-													onChange={() => {
-														this.handleRegisterChange(event);
-													}}
-													checked={registerDetails.accomodation}
-													value={true}
-													type="radio"
-													id="accomodation"
-													label="Yes"
-												/>
-											</Col>
-											<Col style={{ textAlign: 'left' }}>
-												<Form.Check
-													onChange={() => {
-														this.handleRegisterChange(event);
-													}}
-													checked={!registerDetails.accomodation}
-													value={false}
-													type="radio"
-													id="accomodation"
-													label="No"
-												/>
-											</Col>
-										</Form.Row>
-									</Form.Group>
-								</fieldset>
-								<Row>
+								<Form.Row>
 									<Col>
-										<Button
-											onClick={() => {
-												this.handleRegisterFormPrev();
-											}}
-											variant="primary"
-										>
-											{'<< Back'}
-										</Button>
+										<Form.Label>First Name:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<Form.Control
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													value={registerDetails.firstName}
+													id="firstName"
+													type="text"
+													required={true}
+													placeholder=""
+												/>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+
+									<Col>
+										<Form.Label>Last Name:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<Form.Control
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													value={registerDetails.lastName}
+													id="lastName"
+													type="text"
+													required={true}
+													placeholder=""
+												/>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+								</Form.Row>
+
+								<Form.Row>
+									<Col>
+										<Form.Label>Email:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<Form.Control
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													value={registerDetails.email}
+													id="email"
+													type="email"
+													required={true}
+													placeholder=""
+												/>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+
+									<Col>
+										<Form.Label>Mobile Number:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<Form.Control
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													value={registerDetails.mob}
+													id="mob"
+													type="phone"
+													required={true}
+													placeholder=""
+												/>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+								</Form.Row>
+
+								<Form.Row>
+									<Col>
+										<Form.Label>Gender:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<select
+													// style={{ minWidth: '100%' }}
+													id="gender"
+													value={registerDetails.gender}
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+												>
+													<option value="Male">Male</option>
+													<option value="Female">Female</option>
+													<option value="Others">Others</option>
+												</select>
+											</Form.Group>
+										</Form.Row>
 									</Col>
 									<Col>
-										<Button variant="success" type="submit">
+										<Form.Label>PIN(4 Digits):&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<Form.Control
+													value={registerDetails.blitzPIN}
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													required={true}
+													id="blitzPIN"
+													type="password"
+													placeholder=""
+												/>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+								</Form.Row>
+
+								<Form.Row>
+									<Col>
+										<Form.Label>College:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<select
+													id="collegeType"
+													value={registerDetails.collegeType}
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+												>
+													<option value="0">MNIT</option>
+													<option value="1">IIIT Kota</option>
+													<option value="2">NIT UK</option>
+													<option value="3">Others</option>
+												</select>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+									<Col>
+										<Form.Label>College Name:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<Form.Control
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													disabled={registerDetails.collegeType != 3}
+													value={registerDetails.college}
+													id="college"
+													type="text"
+													required={true}
+													placeholder=""
+												/>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+								</Form.Row>
+
+								<Form.Row>
+									<Col>
+										<Form.Label>Course:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<select
+													id="course"
+													value={registerDetails.course}
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+												>
+													<option value="B-Tech">B-Tech</option>
+													<option value="B-Arch">B-Arch</option>
+													<option value="Ph.D.">Ph.D.</option>
+													<option value="M-Tech">M-Tech</option>
+													<option value="M-Plan">M-Plan</option>
+													<option value="Others">Others</option>
+												</select>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+									<Col>
+										<Form.Label>College ID:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<Form.Control
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													value={registerDetails.collegeID}
+													id="collegeID"
+													type="text"
+													required={true}
+													placeholder=""
+												/>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+								</Form.Row>
+
+								<Form.Row>
+									<Col>
+										<Form.Label>Year:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<select
+													id="year"
+													value={registerDetails.year}
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+												>
+													<option value="I">I</option>
+													<option value="II">II</option>
+													<option value="III">III</option>
+													<option value="IV">IV</option>
+													<option value="V">V</option>
+													<option value="Others">Others</option>
+												</select>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+									<Col>
+										<Form.Label>Branch:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<Form.Control
+													value={registerDetails.branch}
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													required={true}
+													id="branch"
+													type="text"
+													placeholder=""
+												/>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+								</Form.Row>
+								<Form.Row>
+									<Col>
+										<fieldset>
+											<Form.Group>
+												<Form.Label>Do you need Accomodation?</Form.Label>
+												<Form.Row>
+													<Col style={{ textAlign: 'center' }}>
+														<Form.Check
+															onChange={() => {
+																this.handleRegisterChange(event);
+															}}
+															checked={registerDetails.accomodation}
+															value={true}
+															type="radio"
+															id="accomodation"
+															label="Yes"
+														/>
+													</Col>
+													<Col style={{ textAlign: 'center' }}>
+														<Form.Check
+															onChange={() => {
+																this.handleRegisterChange(event);
+															}}
+															checked={!registerDetails.accomodation}
+															value={false}
+															type="radio"
+															id="accomodation"
+															label="No"
+														/>
+													</Col>
+												</Form.Row>
+											</Form.Group>
+										</fieldset>
+									</Col>
+									<Col>
+										<Form.Label>City:&nbsp;&nbsp;</Form.Label>
+										<Form.Row>
+											<Form.Group>
+												<Form.Control
+													value={registerDetails.city}
+													onChange={() => {
+														this.handleRegisterChange(event);
+													}}
+													required={true}
+													id="city"
+													type="text"
+													placeholder=""
+												/>
+											</Form.Group>
+										</Form.Row>
+									</Col>
+								</Form.Row>
+								<Row>
+									<Col>
+										<Button className="submit-button" type="submit">
 											Submit
 										</Button>
 									</Col>
@@ -410,7 +535,12 @@ class Login extends React.Component {
 								<Row>{submitMessage}</Row>
 								<Row>
 									<Col>
-										<a className="changeform" href="#" onClick={() => this.changeForm()}>
+										<a
+											className="changeform"
+											href="#"
+											onClick={() => this.changeForm(fullpage_api)}
+											className="already-link"
+										>
 											Already have an account?
 										</a>
 									</Col>
@@ -423,11 +553,16 @@ class Login extends React.Component {
 		);
 		const loginForm = (
 			<div className="section coverlogin">
+				<div className="img-wrap">
+					<img src="https://i.ibb.co/hfH0yHM/loginc1.png" className="loginc1" />
+					<img src="https://i.ibb.co/Wpt36Ft/loginc2.png" className="loginc2" />
+				</div>
 				<div
 					className="formwrapper"
-					style={{ position: 'relative', top: '50%', transform: 'translateY(-50%)' }}
+					// style={{ position: 'relative', top: '50%', transform: 'translateY(-50%)' }}
 				>
-					<h1 className="heading">Login</h1>
+					{/* <img src="src/shared/img/loginc2.png" className="loginc2" /> */}
+					<h1 className="heading">LOGIN</h1>
 					<Card>
 						<Card.Body>
 							<Form
@@ -435,39 +570,46 @@ class Login extends React.Component {
 									this.handleLoginSubmit(event);
 								}}
 							>
-								<Form.Group>
-									<InputGroup>
-										<InputGroup.Prepend>
-											<InputGroup.Text id="inputGroupPrepend">blitz@</InputGroup.Text>
-										</InputGroup.Prepend>
-										<Form.Control
-											onChange={() => {
-												this.handleLoginChange(event);
-											}}
-											value={loginDetails.blitzID}
-											id="blitzID"
-											type="text"
-											required={true}
-											placeholder="Blitz ID"
-										/>
-									</InputGroup>
-								</Form.Group>
-
-								<Form.Group>
-									<Form.Control
-										onChange={() => {
-											this.handleLoginChange(event);
-										}}
-										value={loginDetails.blitzPIN}
-										id="blitzPIN"
-										type="password"
-										required={true}
-										placeholder="4 digit PIN"
-									/>
-								</Form.Group>
+								<Form.Row>
+									<Col md={{ span: 6, offset: 3 }}>
+										<Form.Group>
+											<InputGroup>
+												<InputGroup.Prepend>
+													<InputGroup.Text id="inputGroupPrepend">blitz20@</InputGroup.Text>
+												</InputGroup.Prepend>
+												<Form.Control
+													onChange={() => {
+														this.handleLoginChange(event);
+													}}
+													value={loginDetails.blitzID}
+													id="blitzID"
+													type="text"
+													required={true}
+													placeholder="ID"
+												/>
+											</InputGroup>
+										</Form.Group>
+									</Col>
+								</Form.Row>
+								<Form.Row>
+									<Col md={{ span: 6, offset: 3 }}>
+										<Form.Group>
+											<Form.Control
+												onChange={() => {
+													this.handleLoginChange(event);
+												}}
+												value={loginDetails.blitzPIN}
+												id="blitzPIN"
+												type="password"
+												required={true}
+												placeholder="PIN"
+											/>
+										</Form.Group>
+									</Col>
+								</Form.Row>
 								<Row>
 									<Col>
-										<Button variant="success" type="submit">
+										<Button className="submit-button" type="submit">
 											Submit
 										</Button>
 									</Col>
@@ -475,7 +617,12 @@ class Login extends React.Component {
 								<Row>{submitMessage}</Row>
 								<Row>
 									<Col>
-										<a className="changeform" href="#" onClick={() => this.changeForm()}>
+										<a
+											className="changeform"
+											href="#"
+											onClick={() => this.changeForm(fullpage_api)}
+											className="already-link"
+										>
 											Create new account
 										</a>
 									</Col>
@@ -486,16 +633,43 @@ class Login extends React.Component {
 				</div>
 			</div>
 		);
-		const { whichForm, registerFormPart } = this.state;
+		const { whichForm } = this.state;
 		return (
 			<div className="scrollit">
 				<Splash images={this.images} />
+				<a href="http://www.blitzschlag.co.in/"> 
+					<img
+						style={{
+							height: 'auto',
+							width: '70px',
+							position: 'fixed',
+							left: '0%',
+							top: '0%',
+							zIndex: '1'
+						}}
+						src="https://i.ibb.co/42WZWbr/blitzlogo.png"
+					/>
+				</a>
 				<ReactFullpage
 					verticalCentered={false}
+					scrollOverflow={true}
+					scrollOverflowOptions={{
+						click: false,
+						preventDefaultException: { tagName: /.*/ }
+					}}
 					render={({ state, fullpageApi }) => {
 						return (
 							<ReactFullpage.Wrapper>
-								{whichForm ? loginForm : registerFormPart ? registerFormPart1 : registerFormPart2}
+								{/* <Sky
+									images={{
+										0: 'https://i.imgur.com/eVjW01Z.gif'
+									}}
+									how={50}
+									time={40}
+									size={'100px'}
+									background={'url("https://imgur.com/iVUKgex.jpg")'}
+								/> */}
+								{whichForm ? loginForm : registerForm}
 							</ReactFullpage.Wrapper>
 						);
 					}}
@@ -508,7 +682,8 @@ class Login extends React.Component {
 const mapStateToProps = (state) => {
 	return {
 		loggedIn: state.loggedIn,
-		user: state.user
+		user: state.user,
+		production: state.production
 	};
 };
 

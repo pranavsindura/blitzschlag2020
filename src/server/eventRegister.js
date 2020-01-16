@@ -53,10 +53,16 @@ async function retrieveUsers(ids) {
     return users;
 }
 
-async function checkPins(obj) {
+async function validate(obj) {
     let ids = obj.blitzID;
     let pins = obj.blitzPIN;
+    let dup = new Set(ids);
+    if(ids.length != dup.size)
+        return undefined;
     let f = retrieveUsers(ids).then(function(users) {
+        console.log('users',users);
+        if(users.length != ids.length)
+            return undefined;
         let flag = true;
         let i = 0;
         for (user of users) {
@@ -99,7 +105,7 @@ module.exports = {
     updateUser,
     retrieveTeamID,
     updateTeamID,
-    checkPins,
+    validate,
     retrieveCategoryDetails,
     retrieveUsers,
     checkExistingTeam
