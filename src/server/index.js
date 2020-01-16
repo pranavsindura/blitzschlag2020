@@ -290,8 +290,8 @@ app.post('/user', (req, res) => {
 app.use(express.static('dist'));
 app.get('/mod', (req, res) => {
     // console.log(__dirname);
-    // res.sendFile(path.resolve('./dist/index.html')) 
-    res.redirect('https://www.google.com/');
+    res.sendFile(path.resolve('./dist/moderator.html')) 
+    // res.redirect('https://www.google.com/');
 })
 app.get('*', (req, res) => {
     console.log(__dirname);
