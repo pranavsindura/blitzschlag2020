@@ -238,7 +238,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		GET_USER: (user)=>{dispatch(getUser(user))}
+		GET_USER: (proxy, user)=>{dispatch(getUser(proxy, user))}
 		// GET_USER: (user)=>{dispatch({type: 'GET_USER', payload:{user: user}})}
 	};
 };
