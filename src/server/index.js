@@ -164,6 +164,46 @@ app.post('/events', (req, res) => {
                             eventObj.teamSize   = eventReg.teamSize;
 
                             eventReg.eventName = category.eventName;
+                            eventRegister.checkExistingTeam(eventReg.blitzID, eventReg.eventName).then(function(alreadyRegistered) {
+                                if (alreadyRegistered === false) {
+                                    let multipleDocs = [];
+
+
+                                    eventRegister.retrieveUsers(eventReg.blitzID).then(function(users) {
+                                        if (users) {
+                                            for (id in eventReg.blitzID) {
+                                                let obj = new modelEvent.eventModel(eventObj);
+                                                // console.log(id);
+                                                obj.blitzID = eventReg.blitzID[id];
+                                                obj._id = new objectID();
+                                                obj.firstName = users[id].firstName;
+                                                obj.mob = users[id].mob;
+                                                console.log(obj);
+                                                multipleDocs.push(obj);
+                                            }
+                                            console.log('multipleDocs', multipleDocs);
+                                            modelEvent.eventModel.insertMany(multipleDocs);
+                                            eventRegister.updateUser(eventReg).then(function(x) {
+                                                if (x) {
+                                                    let obj = {
+                                                        teamCount: counts.teamCount + 1
+                                                    };
+                                                    eventRegister.updateTeamID(obj).then(function(result) {
+                                                        res.send({
+                                                            status: true,
+                                                            data: obj.teamCount
+                                                        });
+                                                        console.log('updated team id');
+                                                        users.forEach(user => {
+                                                            mailer.eventMail(user, obj.teamCount, eventReg.eventName).catch(err => {
+                                                                console.log(err);
+                                                            });
+                                                        });
+                                                    });
+                                                } else {
+                                                    res.send({
+                                                        status: false,
+                                                        message: "Not registered for the event!"
 
                             let multipleDocs = [];
 
@@ -199,25 +239,31 @@ app.post('/events', (req, res) => {
                                                 users.forEach(user => {
                                                     mailer.eventMail(user, counter.teamCount, eventReg.eventName).catch(err => {
                                                         console.log(err);
+
                                                     });
-                                                });
+                                                    console.log('Not updated team id');
+                                                }
                                             });
                                         } else {
                                             res.send({
                                                 status: false,
-                                                message: "Not registered for the event!"
+                                                message: "Internal error in retrieving users"
                                             });
-                                            console.log('Not updated team id');
                                         }
+
                                     });
                                 } else {
                                     res.send({
                                         status: false,
-                                        message: "Internal Error!"
+
+                                        message: "Already Registered for the event"
+
+
+
                                     });
                                 }
-
                             });
+
                         } else {
                             res.send({
                                 status: false,
@@ -238,6 +284,40 @@ app.post('/events', (req, res) => {
                 message: "Incorrect ID/Password!"
             });
             console.log('Incorrect ids');
+        }
+    });
+});
+
+app.post('/user', (req, res) => {
+    let user = req.body;
+    eventRegister.retrieveUsers(user).then(function(result) {
+        if (result) {
+            result = result[0];
+            let userDetails = new userModel();
+            userDetails.firstName = result.firstName;
+            userDetails.lastName = result.lastName;
+            userDetails.email = result.email;
+            userDetails.mob = result.mob;
+            userDetails.course = result.course;
+            userDetails.year = result.year;
+            userDetails.branch = result.branch;
+            userDetails.city = result.city;
+            userDetails.college = result.college;
+            userDetails.collegeID = result.collegeID;
+            userDetails.events = result.events;
+            userDetails.blitzID = result.blitzID;
+            userDetails.isMNIT = result.isMNIT;
+            userDetails.accomodation = result.accomodation;
+            userDetails.transactionID = result.transactionID;
+            res.send({
+                status: true,
+                data: userDetails
+            });
+        } else {
+            res.send({
+                status: false,
+                message: "Unable to fetch user details"
+            });
         }
     });
 });
