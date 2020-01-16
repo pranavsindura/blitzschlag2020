@@ -5,15 +5,15 @@ async function main(obj) {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'butterkidukan@gmail.com',
+            user: 'butterKiDukan@gmail.com',
             pass: 'shalu0907'
         }
     });
 
     let info = await transporter.sendMail({
-        from: '"Dhairya" <butterkidukan@gmail.com>',
+        from: '"Dhairya" <butterKiDukan@gmail.com>',
         to: obj.email,
-        subject: `Registration Confirmed of ${obj.firstName}`,
+        subject: "Mail from Blitz20 developers",
         text: "Its a text",
         html: `<b>You Are Registered with id ${obj.blitzID} </b>`
     });
@@ -26,13 +26,13 @@ async function eventMail(user, teamID, eventName) {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'butterkidukan@gmail.com',
+            user: 'butterKiDukan@gmail.com',
             pass: 'shalu0907'
         }
     });
 
     let info = await transporter.sendMail({
-        from: '"Dhairya" <butterkidukan@gmail.com>',
+        from: '"Dhairya" <butterKiDukan@gmail.com>',
         to: user.email,
         subject: `Event Registration Confirmed for ${eventName}`,
         text: "Its a text",
