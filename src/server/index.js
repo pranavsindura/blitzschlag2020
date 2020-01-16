@@ -245,7 +245,7 @@ app.post('/events', (req, res) => {
         } else {
             res.send({
                 status: false,
-                message: "Incorrect ID/Password!"
+                message: "Incorrect/Repeated Credentials!"
             });
             console.log('Incorrect ids');
         }
@@ -288,6 +288,11 @@ app.post('/user', (req, res) => {
 
 
 app.use(express.static('dist'));
+app.get('/mod', (req, res) => {
+    // console.log(__dirname);
+    // res.sendFile(path.resolve('./dist/index.html')) 
+    res.redirect('https://www.google.com/');
+})
 app.get('*', (req, res) => {
     console.log(__dirname);
     // res.sendFile(path.resolve('./dist/index.html')) 
