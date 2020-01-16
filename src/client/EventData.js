@@ -46,7 +46,8 @@ const eventData = {
       },
       {
         heading: "RAMBA SAMBA",
-        desc: `To Be Revealed`,
+        desc: `Get ready to witness the stage set ablaze as teams come head-to-head, toss around their toes and swing their arms in the leap of glory. That's the magic of Rambha Sambha!
+        Rambha Sambha is a beautiful blend of foot-tapping beats, a pumping rush of adrenaline and  the high of getting  your team to wave the trophy of champions at Blitzschlag 2020.`,
         details: [
           `Time: 9:00 AM`,
           `Date: 07/02/2020`,
@@ -93,7 +94,7 @@ const eventData = {
   },
   mds: {
     carImages: [
-      "https://i.ibb.co/vJy682r/Whats-App-Image-2020-01-10-at-16-08-02.jpg",
+      "https://i.ibb.co/18YMCYc/Whats-App-Image-2020-01-10-at-16-08-02.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
@@ -129,7 +130,8 @@ const eventData = {
       },
       {
         heading: "BREAKFREE",
-        desc: `To Be Revealed`,
+        desc: `Breakfree is a solo and duet dance competition, an opportunity to highlight your dancing prowess and to reveal a character's story which people only dared to imagine. Come BREAKFREE and showcase your talent as the audience watches in awe how you turn
+        imagination into reality!`,
         details: [`Time: 10 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -142,7 +144,7 @@ const eventData = {
       },
       {
         heading: "NRITYANJALI",
-        desc: `To Be Revealed`,
+        desc: `Nritya is a slow and expressive aspect of the dance that attempts to communicate feelings, storyline particularly with spiritual themes in Hindu dance traditions. Dance is a form of meditation and prayer that keeps our body and  mind peaceful. In Nrityanjali, get ready to showcase your skills and expertise in classical dancing at Blitzschlag 2020.`,
         details: [`Time: 1:00 PM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -155,7 +157,8 @@ const eventData = {
       },
       {
         heading: "HIT THE STREET",
-        desc: `To Be Revealed`,
+        desc: `Martha Graham once said, "Dance is the hidden language of the soul.” 
+        This February, Blitzschlag 2020 provides you an opportunity to reveal your hidden language with 'Hit the street', a hip-hop dance competition to showcase your talent and prowess.So, get ready to put your dancing shoes on in this intense battle of dancing stars.`,
         details: [`Time: 2:00 PM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -168,7 +171,7 @@ const eventData = {
       },
       {
         heading: "VOICE CHOICE",
-        desc: `To Be Revealed`,
+        desc: `“Singing is a way of escaping to another world”. This Blitzchlag 2020, get ready to belt out some melodies in 'Voice Choice'. So grab this opportunity to exude your love for music in this competition of singing sensations and win attractive rewards along with some priceless experiences.`,
         details: [`Time: 9:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -183,7 +186,7 @@ const eventData = {
   },
   literary: {
     carImages: [
-      "https://i.ibb.co/s6h610x/Jenga-Se-Jawaab-3-page-001.jpg",
+      "https://i.ibb.co/Y7vJ3xQ/Jenga-Se-Jawaab-3-page-001.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
@@ -286,7 +289,7 @@ const eventData = {
   },
   fnp: {
     carImages: [
-      "https://i.ibb.co/wNwkc1Z/Whats-App-Image-2020-01-08-at-14-19-55.jpg",
+      "https://i.ibb.co/fHrpjG9/Whats-App-Image-2020-01-08-at-14-19-55.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
@@ -622,7 +625,7 @@ const eventData = {
       },
       {
         heading: "BOX OFFICE",
-        desc: `TO BE REVEALED`,
+        desc: `It is seen so often that we get addicted to a rhythm intensely and the beats tickle us 24×7 . Some believe that binge watching Bollywood sagas is the most savoured job.It's time to prove that this addiction is worth recognizing."Box Office- with a twist" gives the perfect opportunity to showcase being the best in knowing gimmicks of the glamorous world.`,
         details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -635,7 +638,8 @@ const eventData = {
       },
       {
         heading: "ESCAPE ROOM",
-        desc: `TO BE REVEALED`,
+        desc: `One room. One escape. And a road full of puzzles in between.
+        Does that idea excite you? Well, then brace up to challenge  with mind-wracking puzzles and riddles which come with the thrill of walking out of the room with exciting prizes in 'Escape Room'.`,
         details: [`Time: 1:00 PM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
