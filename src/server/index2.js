@@ -22,7 +22,7 @@ let mailer = require('./mailer');
 const app = express();
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(bodyparser.json());
- 
+
 app.use(cors());
 
 app.use(helmet());
@@ -164,60 +164,70 @@ app.post('/events', (req, res) => {
                             eventObj.teamSize   = eventReg.teamSize;
 
                             eventReg.eventName = category.eventName;
+                            eventRegister.checkExistingTeam(eventReg.blitzID, eventReg.eventName).then(function(alreadyRegistered) {
+                                if (alreadyRegistered === false) {
+                                    let multipleDocs = [];
 
-                            let multipleDocs = [];
 
-                            eventRegister.retrieveUsers(eventReg.blitzID).then(function(users) {
-                                if (users) {
-                                    // console.log('eventReg ', eventReg);
-                                    // console.log('users',users);
-                                    for (id in eventReg.blitzID) {
-                                        let numID = Number(id);
-                                        console.log(id); 
-                                        let obj = new modelEvent.eventModel(eventObj);
-                                        // console.log(id);
-                                        obj.blitzID = eventReg.blitzID[numID];
-                                        obj._id = new objectID();
-                                        obj.firstName = users[numID].firstName;
-                                        obj.mob = users[numID].mob;
-                                        // console.log(obj);
-                                        multipleDocs.push(obj);
-                                    }
-                                    console.log('multipleDocs', multipleDocs);
-                                    modelEvent.eventModel.insertMany(multipleDocs);
-                                    eventRegister.updateUser(eventReg).then(function(x) {
-                                        if (x) {
-                                            let counter = {
-                                                teamCount: counts.teamCount + 1
-                                            };
-                                            eventRegister.updateTeamID(counter).then(function(result) {
-                                                res.send({
-                                                    status: true,
-                                                    data: counter.teamCount,
-                                                });
-                                                console.log('updated team id');
-                                                users.forEach(user => {
-                                                    mailer.eventMail(user, counter.teamCount, eventReg.eventName).catch(err => {
-                                                        console.log(err);
+                                    eventRegister.retrieveUsers(eventReg.blitzID).then(function(users) {
+                                        if (users) {
+                                            for (id in eventReg.blitzID) {
+                                                let obj = new modelEvent.eventModel(eventObj);
+                                                // console.log(id);
+                                                obj.blitzID = eventReg.blitzID[id];
+                                                obj._id = new objectID();
+                                                obj.firstName = users[id].firstName;
+                                                obj.mob = users[id].mob;
+                                                console.log(obj);
+                                                multipleDocs.push(obj);
+                                            }
+                                            console.log('multipleDocs', multipleDocs);
+                                            modelEvent.eventModel.insertMany(multipleDocs);
+                                            eventRegister.updateUser(eventReg).then(function(x) {
+                                                if (x) {
+                                                    let counter = {
+                                                        teamCount: counts.teamCount + 1
+                                                    };
+                                                    eventRegister.updateTeamID(counter).then(function(result) {
+                                                        res.send({
+                                                            status: true,
+                                                            data: counter.teamCount
+                                                        });
+                                                        console.log('updated team id');
+                                                        users.forEach(user => {
+                                                            mailer.eventMail(user, counter.teamCount, eventReg.eventName).catch(err => {
+                                                                console.log(err);
+                                                            });
+                                                        });
                                                     });
-                                                });
+                                                } else {
+                                                    res.send({
+                                                        status: false,
+                                                        message: "Not registered for the event!"
+                                                    });
+
+                                                }
                                             });
                                         } else {
                                             res.send({
                                                 status: false,
-                                                message: "Not registered for the event!"
+                                                message: "Internal error in retrieving users"
                                             });
-                                            console.log('Not updated team id');
                                         }
+
                                     });
                                 } else {
                                     res.send({
                                         status: false,
-                                        message: "Internal Error!"
+
+                                        message: "Already Registered for the event"
+
+
+
                                     });
                                 }
-
                             });
+
                         } else {
                             res.send({
                                 status: false,
@@ -235,19 +245,58 @@ app.post('/events', (req, res) => {
         } else {
             res.send({
                 status: false,
-                message: "Incorrect ID/Password!"
+                message: "Incorrect/Repeated Credentials!"
             });
             console.log('Incorrect ids');
         }
     });
 });
 
+app.post('/user', (req, res) => {
+    let user = req.body;
+    eventRegister.retrieveUsers(user).then(function(result) {
+        if (result) {
+            result = result[0];
+            let userDetails = new userModel();
+            userDetails.firstName = result.firstName;
+            userDetails.lastName = result.lastName;
+            userDetails.email = result.email;
+            userDetails.mob = result.mob;
+            userDetails.course = result.course;
+            userDetails.year = result.year;
+            userDetails.branch = result.branch;
+            userDetails.city = result.city;
+            userDetails.college = result.college;
+            userDetails.collegeID = result.collegeID;
+            userDetails.events = result.events;
+            userDetails.blitzID = result.blitzID;
+            userDetails.isMNIT = result.isMNIT;
+            userDetails.accomodation = result.accomodation;
+            userDetails.transactionID = result.transactionID;
+            res.send({
+                status: true,
+                data: userDetails
+            });
+        } else {
+            res.send({
+                status: false,
+                message: "Unable to fetch user details"
+            });
+        }
+    });
+});
+
 
 app.use(express.static('dist'));
-// app.get('*', (req, res) => {
-//     console.log(__dirname);
-//     // res.sendFile(path.resolve('./dist/index.html')) 
-//     res.redirect('http://www.blitzschlag.co.in/');
-// })
+app.get('/mod', (req, res) => {
+    // console.log(__dirname);
+    // res.sendFile(path.resolve('./moderator.html'))
+    res.redirect('https://blitzmod.herokuapp.com/');
+})
+app.get('*', (req, res) => {
+    console.log(__dirname);
+    // res.sendFile(path.resolve('./dist/index.html')) 
+    res.redirect('http://www.blitzschlag.co.in/');
+})
 console.log(process.env.PORT);
 app.listen(process.env.PORT || 8080, () => console.log(`Listening on port ${process.env.PORT || 8080}!`));
