@@ -71,7 +71,7 @@ app.post('/login', (req, res) => {
 
 app.post('/signup', (req, res) => {
     let userInput = req.body;
-    let user = new Model.userModel(userInput);
+    let user = new userModel(userInput);
     signupvalid.signUpValid(userInput).then(function(valid) {
         if (valid === undefined) {
             res.send({
