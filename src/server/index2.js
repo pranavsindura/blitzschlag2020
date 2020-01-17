@@ -8,6 +8,7 @@ const device = require('express-device');
 const mongoose = require('mongoose');
 const objectID = require('objectid');
 
+// const uri = String(process.env.MONGODB_URI);
 const uri = String(process.env.MONGODB_URI);
 let {userModel} = require('./model.js');
 let { idModel } = require('./idModel');
