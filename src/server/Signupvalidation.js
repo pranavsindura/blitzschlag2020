@@ -4,7 +4,7 @@ const idModel = require('./idModel').idModel;
 async function retrieveBlitzID() {
     let ids = await idModel.findOne({}, function(err, result) {
         if (err) {
-            console.log('Error retrieving IDs');
+            // console.log('Error retrieving IDs');
             return undefined;
         }
         return result;
@@ -18,7 +18,7 @@ async function updateBlitzID(obj) {
             return undefined;
         return data;
     });
-    console.log('blitzObj', blitzObj);
+    // console.log('blitzObj', blitzObj);
     return blitzObj;
 }
 
@@ -27,10 +27,10 @@ async function signUpValid(user) {
     // let obj = new userModel(user);
     let details = await userModel.findOne({ email: emailID }, function(err, result) {
         if (err) {
-            console.log('New user');
+            // console.log('New user');
         }
     });
-    console.log(details);
+    // console.log(details);
     if (details === null) {
         return details;
     } else {
@@ -41,7 +41,7 @@ async function signUpValid(user) {
 async function userSave(user) {
     let obj = new userModel(user);
     let x = await obj.save().catch(err => {
-        console.log('Error saving data');
+        // console.log('Error saving data');
         return undefined;
     });
     return x;

@@ -3,10 +3,10 @@ const Model = require('./model.js');
 async function userValid(user) {
     let id = user.blitzID;
     let pin = user.blitzPIN;
-    console.log(id, pin);
+    // console.log(id, pin);
     let valid = await Model.userModel.findOne({ blitzID: id }, function(err, userDetails) {
         if (err) {
-            console.log('User not found');
+            // console.log('User not found');
             return undefined;
         }
         // console.log('userDetails',userDetails);

@@ -17,12 +17,12 @@ export default class App extends Component {
 		for (let i = 0; i < this.props.images.length; i++) {
 			fetch(proxyurl + this.props.images[i], options)
 				.then((res) => {
-					console.log('Loaded ' + i);
+					// console.log('Loaded ' + i);
 					this.setState({ imageCount: this.state.imageCount + 1 });
 					this.checkAll();
 				})
 				.catch((err) => {
-					console.log(err);
+					// console.log(err);
 				});
 		}
 	};
@@ -31,12 +31,12 @@ export default class App extends Component {
 		if (imageCount == this.props.images.length) {
 			setTimeout(() => {
 				this.setState({ loaded: true });
-				console.log('Loaded All');
+				// console.log('Loaded All');
 			}, 1000);
 		}
 	};
 	componentDidMount() {
-		console.log(this.props);
+		// console.log(this.props);
 		this.loadImage();
 	}
 	render() {
