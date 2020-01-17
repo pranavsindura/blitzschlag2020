@@ -36,33 +36,24 @@ export default class Home extends Component {
     "src/shared/img/car3.jpg"
   ];
   images = [
-    "https://i.ibb.co/R3qLWcy/orange.png",
-    "https://i.ibb.co/sCmhpJN/orangebg.jpg",
-    "https://i.ibb.co/Xb3vZNy/purple.png",
-    "https://i.ibb.co/8NM4R9y/purplebg.jpg",
-    "https://i.ibb.co/BnPr8Gf/aboutusbg.png",
-    "https://imgur.com/iVUKgex.jpg",
-    "https://imgur.com/JI5zb8u.png",
-    "https://imgur.com/bwPJhL4.jpg",
-    "https://i.imgur.com/9yC93U6.png",
-    "https://i.imgur.com/ue7LVkv.jpg",
-    "https://i.imgur.com/aYNNCye.jpg",
-    "https://i.imgur.com/LFkC1gH.jpg",
-    "https://i.imgur.com/2dQuCUu.png",
-    "https://i.ibb.co/KLQtyKB/l6.png",
-    "https://i.ibb.co/9VmvM6m/logo.png",
+    "https://i.ibb.co/LknP5q2/homescreenbandi-min.png",
+    "https://i.ibb.co/K0Rdjb9/orangebg-min.jpg",
+    "https://i.ibb.co/ZByk7PG/purple-min.png",
+    "https://i.ibb.co/rmc2WH3/purplebg-min.jpg",
+    "https://i.ibb.co/hYVKYcG/aboutusbg-min.png",
+    "https://i.ibb.co/VNG1HhN/l6-min.png",
+    "https://i.ibb.co/qp8z7FG/blitz-with-date-01-min.png",
     "https://i.ibb.co/cxVPBFt/mnitlogo.png",
-    "https://i.ibb.co/M5RMfPd/c1.png",
-    "https://i.ibb.co/7Y4zYgf/c2.png",
-    "https://i.ibb.co/nwySkPd/c3.png",
-    "https://i.ibb.co/KbXVm3q/c4.png",
-    "https://i.ibb.co/y8gvJj0/c5.png",
-    "https://i.ibb.co/cwKtH44/contactus.jpg",
-    "https://i.ibb.co/vm1XLWZ/l1.png",
-    "https://i.ibb.co/cxJkyc1/l2.png",
-    "https://i.ibb.co/g9qGhkf/l3.png",
-    "https://i.ibb.co/n3JCxgW/l4.png",
-    "https://i.ibb.co/9c8GKgg/l5.png"
+    "https://i.ibb.co/NNdCCq2/c1-min.png",
+    "https://i.ibb.co/hxGjN3k/c2-min.png",
+    "https://i.ibb.co/mhsbFjY/c4-min.png",
+    "https://i.ibb.co/yXdm2K9/c5-min.png",
+    "https://i.ibb.co/x2b5Rsw/contactus-min.jpg",
+    "https://i.ibb.co/Xbpcc82/l1-min.png",
+    "https://i.ibb.co/njRRXZz/l2-min.png",
+    "https://i.ibb.co/jyqp99x/l3-min.png",
+    "https://i.ibb.co/Hrm9Dkj/l4-min.png",
+    "https://i.ibb.co/Zgx33Mq/l5-min.png"
   ];
   imgSelect = Math.trunc(Math.random() * 2);
   componentDidMount() {
@@ -116,19 +107,9 @@ export default class Home extends Component {
       return (
         <div className="container about-us">
           <div className="row">
-            <div className="col-md-6 about-gra">
-              {/* <div className="row">
-								<div className="about-vid-cont">
-									<iframe
-										className="about-video"
-										src="https://www.youtube.com/embed/EzKkl64rRbM"
-										frameBorder="0"
-									></iframe>
-								</div>
-							
-							</div> */}
+            <div className="col-md-5 about-gra">
             </div>
-            <div className="col-md-6 about-content">
+            <div className="col-md-7 about-content">
               <div>
                 <h2 style={{ textAlign: "center", fontSize: "3em" }}>
                   About us
@@ -262,7 +243,7 @@ export default class Home extends Component {
           }}
         >
           <img
-            src={"https://i.ibb.co/9VmvM6m/logo.png"}
+            src={"https://i.ibb.co/qp8z7FG/blitz-with-date-01-min.png"}
             style={{
               width: "80vw",
               enableBackground: "new 0 0 666.7 248.32",
@@ -289,64 +270,64 @@ export default class Home extends Component {
                   className="section content sundarchakra"
                   style={{
                     transition: "all 2s",
-                    backgroundImage: `url('https://i.ibb.co/sCmhpJN/orangebg.jpg')`,
+                    backgroundImage: `url('https://i.ibb.co/K0Rdjb9/orangebg-min.jpg')`,
                     backgroundSize: "cover"
                   }}
                 >
                   <img
                     className="zoom"
                     id="lady"
-                    src={`https://i.ibb.co/R3qLWcy/orange.png`}
+                    src={`https://i.ibb.co/LknP5q2/homescreenbandi-min.png`}
                   />
                 </div>
                 <div
                   className="section content"
                   style={{
                     backgroundImage:
-                      'url("https://i.ibb.co/BnPr8Gf/aboutusbg.png")',
+                      'url("https://i.ibb.co/hYVKYcG/aboutusbg-min.png")',
                     backgroundSize: "cover"
                   }}
                 >
                   <div className="l-holder">
                     <img
                       className="l1"
-                      src={"https://i.ibb.co/vm1XLWZ/l1.png"}
+                      src={"https://i.ibb.co/Xbpcc82/l1-min.png"}
                     />
                   </div>
                   <div className="l-holder">
                     <img
                       className="l2"
-                      src={"https://i.ibb.co/cxJkyc1/l2.png"}
+                      src={"https://i.ibb.co/njRRXZz/l2-min.png"}
                     />
                   </div>
                   <div className="l-holder">
                     <img
                       className="l3"
-                      src={"https://i.ibb.co/g9qGhkf/l3.png"}
+                      src={"https://i.ibb.co/jyqp99x/l3-min.png"}
                     />
                   </div>
                   <div className="l-holder">
                     <img
                       className="l4"
-                      src={"https://i.ibb.co/n3JCxgW/l4.png"}
+                      src={"https://i.ibb.co/Hrm9Dkj/l4-min.png"}
                     />
                   </div>
                   <div className="l-holder">
                     <img
                       className="l5"
-                      src={"https://i.ibb.co/9c8GKgg/l5.png"}
+                      src={"https://i.ibb.co/Zgx33Mq/l5-min.png"}
                     />
                   </div>
                   <div className="l6-holder">
                     <img
                       className="l6"
-                      src={"https://i.ibb.co/KLQtyKB/l6.png"}
+                      src={"https://i.ibb.co/VNG1HhN/l6-min.png"}
                     />
                   </div>
                   <div className="l7-holder">
                     <img
                       className="l7"
-                      src={"https://i.ibb.co/KLQtyKB/l6.png"}
+                      src={"https://i.ibb.co/VNG1HhN/l6-min.png"}
                     />
                   </div>
                   {this.renderAboutUs()}
@@ -354,7 +335,7 @@ export default class Home extends Component {
                 <div
                   className="section content"
                   style={{
-                    backgroundImage: `url("https://i.ibb.co/8NM4R9y/purplebg.jpg")`,
+                    backgroundImage: `url("https://i.ibb.co/rmc2WH3/purplebg-min.jpg")`,
                     backgroundSize: "cover"
                   }}
                 >
@@ -372,7 +353,7 @@ export default class Home extends Component {
                       <div className="ladytheme-holder">
                         <img
                           className={"ladytheme zoom"}
-                          src={`https://i.ibb.co/Xb3vZNy/purple.png`}
+                          src={`https://i.ibb.co/ZByk7PG/purple-min.png`}
                         />
                       </div>
                       <div className="theme-holder">
@@ -453,7 +434,7 @@ export default class Home extends Component {
                 <div
                   className="section content"
                   style={{
-                    backgroundImage:"url('https://i.ibb.co/8YdvpQt/contactus.jpg')",
+                    backgroundImage:"url('https://i.ibb.co/x2b5Rsw/contactus-min.jpg')",
                     backgroundPosition:'bottom',
                     backgroundSize:'cover',
                     overflow: "hidden"
@@ -526,19 +507,16 @@ export default class Home extends Component {
                     {/* <img src="https://i.ibb.co/8YdvpQt/contactus.jpg" /> */}
                   </div>
                   <div className="c1-holder">
-                    <img src="https://i.ibb.co/M5RMfPd/c1.png" />
+                    <img src="https://i.ibb.co/NNdCCq2/c1-min.png" />
                   </div>
                   <div className="c2-holder">
-                    <img src="https://i.ibb.co/7Y4zYgf/c2.png" />
+                    <img src="https://i.ibb.co/hxGjN3k/c2-min.png" />
                   </div>
-                  {/* <div className="c3-holder">
-                    <img src="https://i.ibb.co/nwySkPd/c3.png" />
-                  </div> */}
                   <div className="c4-holder">
-                    <img src="https://i.ibb.co/KbXVm3q/c4.png" />
+                    <img src="https://i.ibb.co/mhsbFjY/c4-min.png" />
                   </div>
                   <div className="c5-holder">
-                    <img src="https://i.ibb.co/y8gvJj0/c5.png" />
+                    <img src="https://i.ibb.co/yXdm2K9/c5-min.png" />
                   </div>
                   <div className="handles">
                     <div className="handle-holder-left" />
