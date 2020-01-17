@@ -5,7 +5,7 @@ const eventData = {
       "https://i.ibb.co/nCVv2ns/bob-for-site.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
+      "https://i.ibb.co/cwdBG05/mr-miss-blitz.jpg"
     ],
     content: [
       {
@@ -385,15 +385,15 @@ const eventData = {
   },
   finearts: {
     carImages: [
+      "https://i.ibb.co/SQQPXQ3/motif-filion-min.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/PCw2m8R/tint-a-top-min.jpg",
+      "https://i.ibb.co/X89hBwG/explora-min.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/nP6Z9x9/farapart-min.jpg",
+      "https://i.ibb.co/6nKVXKP/custom-kicks-min.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
+      "https://i.ibb.co/N6kfhps/rang-de-mukhda-min.jpg"
     ],
     content: [
       {
@@ -411,7 +411,7 @@ const eventData = {
       },
       {
         heading: "TRASHION",
-        desc: `To Be Revealed`,
+        desc: `Fashion has never been the same. It is always about the contemporary which never ceases to amaze us, does it? The Trashion Show exhibits clothing made entirely from recycled materials. It is a way to introduce people to the little things we can do for environment. Trashion Show is to see how a participant can design a dress out of complete trash.This  small step will indeed make a great difference.`,
         details: [`Time: 2:00 PM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -424,7 +424,7 @@ const eventData = {
       },
       {
         heading: "TINT A TOP",
-        desc: `To Be Revealed`,
+        desc: `We’ve always painted shirts- at times unknowingly while dropping , or it could be football impressions on  jersey while playing. So here in TINT A TOP, showcase your fashion mantra through T-shirt painting. Turn on your creative imaginations and show what your style secret is all about! `,
         details: [`Time: 3:00 PM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -437,7 +437,7 @@ const eventData = {
       },
       {
         heading: "ART EXHIBITION",
-        desc: `To Be Revealed`,
+        desc: `EXPLORA brings you a platform to showcase your artistic talent. Participants are required to submit there artwork in jpg format. If participants are found using someone else's artwork then they'll be disqualified ! So make sure you send us your own artwork. The selected entries will be a part of ART EXHIBITION.`,
         details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -450,7 +450,9 @@ const eventData = {
       },
       {
         heading: "VISUALITY",
-        desc: `To Be Revealed`,
+        desc: `Want to capture MNIT artistically? Well, here’s the opportunity to paint it down. 
+        Live painting is a form of visual performance art, in which artists complete a visual art piece in a public performance Participants would be given 2x2 canvas to paint any part of MNIT they like and submit it in the given time. Prize would be given to the most realistic one. 
+        `,
         details: [`Time: 1:30 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -463,7 +465,9 @@ const eventData = {
       },
       {
         heading: "FAR APART ART",
-        desc: `To Be Revealed`,
+        desc: `How often have we tried painting differently? Art carries the capacity of such creativity which has no boundaries. So here comes Far Apart art competition which promises fun and thrill together.
+        The participant will have to tie the brush and bamboo sticks given to obtain a required length. Then he/she has to sit on a chair and draw with the long brush he/she has made. The best drawing would be declared as winner.
+        `,
         details: [`Time: 9:30 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -476,7 +480,10 @@ const eventData = {
       },
       {
         heading: "CUSTOM KICKS",
-        desc: `To Be Revealed`,
+        desc: `Pick your brush and be a part of the custom shoe culture.
+        All you have to do is to paint the shoes according to the given theme.
+        Participants are required to bring their own acrylic colors or any other medium of paint that they want to use on canvas shoes. Designs will be judged based on creativity, originality and overall execution.
+        `,
         details: [`Time: 11:30 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -489,7 +496,9 @@ const eventData = {
       },
       {
         heading: "LEGGO TRANCE",
-        desc: `To Be Revealed`,
+        desc: `Do you take pride of your photographic memory? Or think of yourself as an apt communicator? Here comes a real test for you. In the teams of two, one person is shown a picture of a structural form for 10 seconds which will have to be compiled in the exact same form with lego blocks solely on the basis of their teammate’s memory.  
+        Fun, laughter,thrill all come together on this platform. Join us with your partner in crime and claim the ultimate prize!
+        `,
         details: [`Time: 10:00 AM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -502,7 +511,10 @@ const eventData = {
       },
       {
         heading: "RANG DE MUKHRA",
-        desc: `To Be Revealed`,
+        desc: `Face Art is one of the earliest forms of artistic expressions known to humankind. It has been an integral practice of  many cultures worldwide.
+        Participants will be provided with colors and will have to paint their respective partner's face with creative and artistical manuals of their thoughts.
+        So get ready to make your face a canvas!
+        `,
         details: [`Time: 11:00 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -612,7 +624,7 @@ const eventData = {
     content: [
       {
         heading: "THE QUIZNER OF AZKABAN",
-        desc: `TO BE REVEALED`,
+        desc: `In 1997 when J K Rowling introduced  Harry Potter with the famous 'The Philosopher's Stone', nobody could have thought of a huge success approaching and since then, the number of Harry Potter followers is only increasing. Are you the one who posses the excitement of reading and going deep into the life of Harry Potter, then Blitzschlag'20 throws you a challenge, 'The Quizoner of Azkaban'. If you are confident enough, accept the challenge and show up your zeal and deep rooted love for the Harry Potter book series.`,
         details: [`Time: 11:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -782,7 +794,14 @@ const eventData = {
       },
       {
         heading: "अधूरे जज़्बात ",
-        desc: `TBA`,
+        desc: `अधूरे ज़ज्बात
+        कुछ तुम कहो कुछ हम कहें
+        पूरी करें इस बात को
+        हम इशारा दे रहे हैं
+        तुम लिखो अपने ज़ज्बात को।
+        कहानियां तो बहुत सुनी होंगी बचपन में, पढ़ी भी होंगी, और स्कूल में पूरी भी कि होंगी तो चलो अब कहानियाँ बनाते हैं।
+        हम तुम्हें तस्वीर देंगे
+        तुम हमें कहानियाँ देना!`,
         details: [`Time: 11:30 AM`, `Date: 08/02/20`, `Prizes worth: TBA/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
@@ -795,7 +814,10 @@ const eventData = {
       },
       {
         heading: "ACTA DIURNA",
-        desc: `TBA`,
+        desc: `Observation. Interpretation. Assertion.
+        Does this interest you? Have you got what it takes to give your everything in the pursuit of truth? 
+        Well, Acta Diurna is here for you to shine under the light of investigative journalism. The path is a swamp full of lies and it's your job to make your way to the ultimate truth. 
+        Are you ready for the challenge? Well, then register now!`,
         details: [`Time: 10:30 AM`, `Date: 07/02/20`, `Prizes worth: TBA/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
