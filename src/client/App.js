@@ -26,7 +26,6 @@ class App extends Component {
 		this.setState({ moveto: to, checked: false });
 	};
 	handleCheck = () => {
-		// console.log('CLICK')
 		this.setState({ checked: !this.state.checked });
 	};
 	handleLogout = () => {

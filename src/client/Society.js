@@ -706,7 +706,7 @@ export default class Society extends Component {
               change and provides an ideal platform for the same, using mass and
               media for communication and further publicity.
             </div>
-            <Link to="/events/maverics">
+            <Link to="/events/mavericks">
               <Button
                 style={{
                   backgroundColor: "#ef833d",
