@@ -5,7 +5,7 @@ const eventData = {
       "https://i.ibb.co/nCVv2ns/bob-for-site.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
+      "https://i.ibb.co/cwdBG05/mr-miss-blitz.jpg"
     ],
     content: [
       {
@@ -46,7 +46,8 @@ const eventData = {
       },
       {
         heading: "RAMBA SAMBA",
-        desc: `To Be Revealed`,
+        desc: `Get ready to witness the stage set ablaze as teams come head-to-head, toss around their toes and swing their arms in the leap of glory. That's the magic of Rambha Sambha!
+        Rambha Sambha is a beautiful blend of foot-tapping beats, a pumping rush of adrenaline and  the high of getting  your team to wave the trophy of champions at Blitzschlag 2020.`,
         details: [
           `Time: 9:00 AM`,
           `Date: 07/02/2020`,
@@ -76,10 +77,10 @@ const eventData = {
         eventID: "47"
       },
       {
-        heading: "MR. & MS. BLITZ",
+        heading: "MR. & MISS BLITZ",
         desc: `To Be Revealed`,
         details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#73211c", "#2f2e2e", "#520c05"],
+        accent: ["#f9b26c", "#446e78", "#fe593d"],
         detailsLink: "",
         canRegister: true,
         //required even if canRegister is false
@@ -93,9 +94,9 @@ const eventData = {
   },
   mds: {
     carImages: [
-      "https://i.ibb.co/vJy682r/Whats-App-Image-2020-01-10-at-16-08-02.jpg",
+      "https://i.ibb.co/18YMCYc/Whats-App-Image-2020-01-10-at-16-08-02.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/Cnh3pdF/break-free.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
@@ -129,9 +130,10 @@ const eventData = {
       },
       {
         heading: "BREAKFREE",
-        desc: `To Be Revealed`,
+        desc: `Breakfree is a solo and duet dance competition, an opportunity to highlight your dancing prowess and to reveal a character's story which people only dared to imagine. Come BREAKFREE and showcase your talent as the audience watches in awe how you turn
+        imagination into reality!`,
         details: [`Time: 10 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#c2413e", "#503f3b", "#989490"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -142,7 +144,7 @@ const eventData = {
       },
       {
         heading: "NRITYANJALI",
-        desc: `To Be Revealed`,
+        desc: `Nritya is a slow and expressive aspect of the dance that attempts to communicate feelings, storyline particularly with spiritual themes in Hindu dance traditions. Dance is a form of meditation and prayer that keeps our body and  mind peaceful. In Nrityanjali, get ready to showcase your skills and expertise in classical dancing at Blitzschlag 2020.`,
         details: [`Time: 1:00 PM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -155,7 +157,8 @@ const eventData = {
       },
       {
         heading: "HIT THE STREET",
-        desc: `To Be Revealed`,
+        desc: `Martha Graham once said, "Dance is the hidden language of the soul.” 
+        This February, Blitzschlag 2020 provides you an opportunity to reveal your hidden language with 'Hit the street', a hip-hop dance competition to showcase your talent and prowess.So, get ready to put your dancing shoes on in this intense battle of dancing stars.`,
         details: [`Time: 2:00 PM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -168,7 +171,7 @@ const eventData = {
       },
       {
         heading: "VOICE CHOICE",
-        desc: `To Be Revealed`,
+        desc: `“Singing is a way of escaping to another world”. This Blitzchlag 2020, get ready to belt out some melodies in 'Voice Choice'. So grab this opportunity to exude your love for music in this competition of singing sensations and win attractive rewards along with some priceless experiences.`,
         details: [`Time: 9:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -183,9 +186,9 @@ const eventData = {
   },
   literary: {
     carImages: [
-      "https://i.ibb.co/s6h610x/Jenga-Se-Jawaab-3-page-001.jpg",
+      "https://i.ibb.co/Y7vJ3xQ/Jenga-Se-Jawaab-3-page-001.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/fSn0wSs/questival-min.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
@@ -227,7 +230,7 @@ const eventData = {
 		The stakes have been upped but so has the reward. 
 		Are you up for it?`,
         details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#bc538d", "#000000", "#9fddea"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -286,11 +289,11 @@ const eventData = {
   },
   fnp: {
     carImages: [
-      "https://i.ibb.co/wNwkc1Z/Whats-App-Image-2020-01-08-at-14-19-55.jpg",
+      "https://i.ibb.co/fHrpjG9/Whats-App-Image-2020-01-08-at-14-19-55.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
+      "https://i.ibb.co/B27TsSK/picsaga.jpg",
+      "https://i.ibb.co/h8cdKc8/snip-n-stich.jpg"
     ],
     content: [
       {
@@ -343,7 +346,7 @@ const eventData = {
         heading: "PIC SAGA",
         desc: `To Be Revealed`,
         details: [`Time: TBA`, `Date: TBA`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#00c176", "#fcfce8", "#f03c5f"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -356,7 +359,7 @@ const eventData = {
         heading: "SNAP N SNITCH",
         desc: `To Be Revealed`,
         details: [`Time: TBA`, `Date: TBA`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#0192cd", "#2b4508", "#7b7b77"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -369,7 +372,7 @@ const eventData = {
         heading: "PIC SAGA",
         desc: `To Be Revealed`,
         details: [`Time: TBA`, `Date: TBA`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#ffc75a", "#565455", "#f03c5f"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -382,15 +385,15 @@ const eventData = {
   },
   finearts: {
     carImages: [
+      "https://i.ibb.co/SQQPXQ3/motif-filion-min.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/PCw2m8R/tint-a-top-min.jpg",
+      "https://i.ibb.co/X89hBwG/explora-min.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/nP6Z9x9/farapart-min.jpg",
+      "https://i.ibb.co/6nKVXKP/custom-kicks-min.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
+      "https://i.ibb.co/N6kfhps/rang-de-mukhda-min.jpg"
     ],
     content: [
       {
@@ -408,7 +411,7 @@ const eventData = {
       },
       {
         heading: "TRASHION",
-        desc: `To Be Revealed`,
+        desc: `Fashion has never been the same. It is always about the contemporary which never ceases to amaze us, does it? The Trashion Show exhibits clothing made entirely from recycled materials. It is a way to introduce people to the little things we can do for environment. Trashion Show is to see how a participant can design a dress out of complete trash.This  small step will indeed make a great difference.`,
         details: [`Time: 2:00 PM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -421,9 +424,9 @@ const eventData = {
       },
       {
         heading: "TINT A TOP",
-        desc: `To Be Revealed`,
+        desc: `We’ve always painted shirts- at times unknowingly while dropping , or it could be football impressions on  jersey while playing. So here in TINT A TOP, showcase your fashion mantra through T-shirt painting. Turn on your creative imaginations and show what your style secret is all about! `,
         details: [`Time: 3:00 PM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#15b7b6", "#68234c", "#dc5894"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -434,9 +437,9 @@ const eventData = {
       },
       {
         heading: "ART EXHIBITION",
-        desc: `To Be Revealed`,
+        desc: `EXPLORA brings you a platform to showcase your artistic talent. Participants are required to submit there artwork in jpg format. If participants are found using someone else's artwork then they'll be disqualified ! So make sure you send us your own artwork. The selected entries will be a part of ART EXHIBITION.`,
         details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#0f4792", "#334349", "#45838c"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -447,7 +450,9 @@ const eventData = {
       },
       {
         heading: "VISUALITY",
-        desc: `To Be Revealed`,
+        desc: `Want to capture MNIT artistically? Well, here’s the opportunity to paint it down. 
+        Live painting is a form of visual performance art, in which artists complete a visual art piece in a public performance Participants would be given 2x2 canvas to paint any part of MNIT they like and submit it in the given time. Prize would be given to the most realistic one. 
+        `,
         details: [`Time: 1:30 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -460,7 +465,9 @@ const eventData = {
       },
       {
         heading: "FAR APART ART",
-        desc: `To Be Revealed`,
+        desc: `How often have we tried painting differently? Art carries the capacity of such creativity which has no boundaries. So here comes Far Apart art competition which promises fun and thrill together.
+        The participant will have to tie the brush and bamboo sticks given to obtain a required length. Then he/she has to sit on a chair and draw with the long brush he/she has made. The best drawing would be declared as winner.
+        `,
         details: [`Time: 9:30 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -473,9 +480,12 @@ const eventData = {
       },
       {
         heading: "CUSTOM KICKS",
-        desc: `To Be Revealed`,
+        desc: `Pick your brush and be a part of the custom shoe culture.
+        All you have to do is to paint the shoes according to the given theme.
+        Participants are required to bring their own acrylic colors or any other medium of paint that they want to use on canvas shoes. Designs will be judged based on creativity, originality and overall execution.
+        `,
         details: [`Time: 11:30 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#7e0249", "#601b11", "#293566"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -486,7 +496,9 @@ const eventData = {
       },
       {
         heading: "LEGGO TRANCE",
-        desc: `To Be Revealed`,
+        desc: `Do you take pride of your photographic memory? Or think of yourself as an apt communicator? Here comes a real test for you. In the teams of two, one person is shown a picture of a structural form for 10 seconds which will have to be compiled in the exact same form with lego blocks solely on the basis of their teammate’s memory.  
+        Fun, laughter,thrill all come together on this platform. Join us with your partner in crime and claim the ultimate prize!
+        `,
         details: [`Time: 10:00 AM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -499,9 +511,12 @@ const eventData = {
       },
       {
         heading: "RANG DE MUKHRA",
-        desc: `To Be Revealed`,
+        desc: `Face Art is one of the earliest forms of artistic expressions known to humankind. It has been an integral practice of  many cultures worldwide.
+        Participants will be provided with colors and will have to paint their respective partner's face with creative and artistical manuals of their thoughts.
+        So get ready to make your face a canvas!
+        `,
         details: [`Time: 11:00 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#2b27a6", "#1c1e45", "#c73564"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -549,7 +564,7 @@ const eventData = {
   dramatics: {
     carImages: [
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/2v6J2b1/rangbhomi-min-1.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
     ],
     content: [
@@ -573,7 +588,7 @@ const eventData = {
 		We all have been dramatic in our life, acting in each emotion-love, hate, anger or joy. Now it's time for you to put some life on stage - Life that is created by a writer, managed by a director and lived by an actor. It's not only about acting, script, dialogues and lights, rather it's about you living that character on stage, bringing life to audience. So, put on your costumes and let your character ravish the stage as soon as those three words are spoken:
 		 LIGHTS….CAMERA….ACTION !`,
         details: [`Time: 11:00 AM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#de6145", "#6d361b", "#985834"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -609,7 +624,7 @@ const eventData = {
     content: [
       {
         heading: "THE QUIZNER OF AZKABAN",
-        desc: `TO BE REVEALED`,
+        desc: `In 1997 when J K Rowling introduced  Harry Potter with the famous 'The Philosopher's Stone', nobody could have thought of a huge success approaching and since then, the number of Harry Potter followers is only increasing. Are you the one who posses the excitement of reading and going deep into the life of Harry Potter, then Blitzschlag'20 throws you a challenge, 'The Quizoner of Azkaban'. If you are confident enough, accept the challenge and show up your zeal and deep rooted love for the Harry Potter book series.`,
         details: [`Time: 11:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -622,7 +637,7 @@ const eventData = {
       },
       {
         heading: "BOX OFFICE",
-        desc: `TO BE REVEALED`,
+        desc: `It is seen so often that we get addicted to a rhythm intensely and the beats tickle us 24×7 . Some believe that binge watching Bollywood sagas is the most savoured job.It's time to prove that this addiction is worth recognizing."Box Office- with a twist" gives the perfect opportunity to showcase being the best in knowing gimmicks of the glamorous world.`,
         details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -635,7 +650,8 @@ const eventData = {
       },
       {
         heading: "ESCAPE ROOM",
-        desc: `TO BE REVEALED`,
+        desc: `One room. One escape. And a road full of puzzles in between.
+        Does that idea excite you? Well, then brace up to challenge  with mind-wracking puzzles and riddles which come with the thrill of walking out of the room with exciting prizes in 'Escape Room'.`,
         details: [`Time: 1:00 PM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -648,7 +664,7 @@ const eventData = {
       },
       {
         heading: "IPL AUCTION",
-        desc: `TO BE REVEALED`,
+        desc: `IPL Auctions are done, but the discussions about the teams and tactics have not stopped yet. We all enjoyed the auction, sitting in front of screen with utmost interest. But how about taking part in one ?Yes, Blitzschlag 2020 brings you 'IPL Auctions', which provides the perfect platform to showcase your shrewd cricketing and logical skills.Get ready for the ultimate showdown and pen down the strongest team on paper!`,
         details: [`Time: 03:30 PM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -762,7 +778,10 @@ const eventData = {
     content: [
       {
         heading: "बोलती तसवीरें ",
-        desc: `TBA`,
+        desc: `मौन रह कर सब कुछ बोलती तस्वीर
+        बिना शब्दों के अर्थ खोलती तस्वीर।।
+        और वैसे भी कहा गया है कि एक तस्वीर हज़ार शब्दों से बढ़कर है।
+        तो Blitzschlag देता है आपको मौका तस्वीरों से बात करने का, उस तस्वीर से उन हज़ार शब्दों को`,
         details: [`Time: 01:00PM`, `Date: 06/02/20`, `Prizes worth: TBA/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
@@ -775,7 +794,14 @@ const eventData = {
       },
       {
         heading: "अधूरे जज़्बात ",
-        desc: `TBA`,
+        desc: `अधूरे ज़ज्बात
+        कुछ तुम कहो कुछ हम कहें
+        पूरी करें इस बात को
+        हम इशारा दे रहे हैं
+        तुम लिखो अपने ज़ज्बात को।
+        कहानियां तो बहुत सुनी होंगी बचपन में, पढ़ी भी होंगी, और स्कूल में पूरी भी कि होंगी तो चलो अब कहानियाँ बनाते हैं।
+        हम तुम्हें तस्वीर देंगे
+        तुम हमें कहानियाँ देना!`,
         details: [`Time: 11:30 AM`, `Date: 08/02/20`, `Prizes worth: TBA/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
@@ -788,7 +814,10 @@ const eventData = {
       },
       {
         heading: "ACTA DIURNA",
-        desc: `TBA`,
+        desc: `Observation. Interpretation. Assertion.
+        Does this interest you? Have you got what it takes to give your everything in the pursuit of truth? 
+        Well, Acta Diurna is here for you to shine under the light of investigative journalism. The path is a swamp full of lies and it's your job to make your way to the ultimate truth. 
+        Are you ready for the challenge? Well, then register now!`,
         details: [`Time: 10:30 AM`, `Date: 07/02/20`, `Prizes worth: TBA/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
