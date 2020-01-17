@@ -294,7 +294,7 @@ class Flagship extends Component {
 										transition: 'all .5s ease-in-out'
 									}}
 								>
-								<div className="formwrapper">
+								{/* <div className="formwrapper"> */}
 									{window.innerWidth <= 770 ? (
 										<div style={{ width: '100%', height: '100%', display: 'block' }}>
 											<div className="carmob-holder-2">
@@ -559,7 +559,7 @@ class Flagship extends Component {
 										</Row>
 									)} 
 									</div>
-								</div>
+								{/* </div> */}
 								<div
 									className="section"
 									style={{
