@@ -267,6 +267,8 @@ app.post('/user', (req, res) => {
         if (result) {
             result = result[0];
             let userDetails = new userModel();
+            userDetails.paymentHistory = result.paymentHistory;
+            userDetails.hospitality = result.hospitality;
             userDetails.firstName = result.firstName;
             userDetails.lastName = result.lastName;
             userDetails.email = result.email;
