@@ -262,7 +262,7 @@ app.post('/events', (req, res) => {
 });
 
 app.post('/user', (req, res) => {
-    let user = {blitzID: req.body.blitzID};
+    let user = { blitzID: req.body.blitzID };
     // console.log(req.body);
     // user.blitzID = Number(user.blitzID);
     eventRegister.retrieveUsers(user.blitzID).then(function(result) {
@@ -270,6 +270,8 @@ app.post('/user', (req, res) => {
             result = result[0];
             // console.log('result', result)
             let userDetails = new userModel();
+            userDetails.paymentHistory = result.paymentHistory;
+            userDetails.hospitality = result.hospitality;
             userDetails.firstName = result.firstName;
             userDetails.lastName = result.lastName;
             userDetails.email = result.email;
@@ -317,4 +319,3 @@ app.get('*', (req, res) => {
 
 // console.log(process.env.PORT);
 app.listen(process.env.PORT || 8080, () => console.log(`Listening on port ${process.env.PORT || 8080}!`));
-

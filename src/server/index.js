@@ -271,6 +271,8 @@ app.post('/user', (req, res) => {
             result = result[0];
             // console.log('result', result)
             let userDetails = new userModel();
+            userDetails.paymentHistory = result.paymentHistory;
+            userDetails.hospitality = result.hospitality;
             userDetails.firstName = result.firstName;
             userDetails.lastName = result.lastName;
             userDetails.email = result.email;
