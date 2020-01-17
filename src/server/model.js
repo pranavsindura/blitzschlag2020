@@ -23,7 +23,7 @@ let userSchema = new mongoose.Schema({
     isMNIT: Boolean,
     accomodation: Boolean,
     transactionID: String,
-    hospitality: Set,
+    hospitality: Array,
     paymentHistory: Array
 });
 
