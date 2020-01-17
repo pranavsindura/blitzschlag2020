@@ -276,7 +276,7 @@ class Event extends Component {
 				<ReactFullpage
 					scrollOverflow={true}
 					onLeave={({ origin, destination, direction }) => {
-						fullpage_api.reBuild();
+						// fullpage_api.reBuild();
 						if (!this.data.content[currSlide].canRegister) return false;
 						// return false;
 					}}
