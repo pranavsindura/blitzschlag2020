@@ -22,7 +22,9 @@ let userSchema = new mongoose.Schema({
     blitzPIN: String,
     isMNIT: Boolean,
     accomodation: Boolean,
-    transactionID: String
+    transactionID: String,
+    hospitality: Set,
+    paymentHistory: Array
 });
 
 let paySchema = new mongoose.Schema({
