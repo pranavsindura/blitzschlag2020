@@ -26,18 +26,18 @@ class Flagship extends Component {
 	data = [];
 	proxy = 'http://localhost:8080';
 	componentWillMount() {
-		// if (this.props.production) this.proxy = '';
+		if (this.props.production) this.proxy = '';
 		// if (this.props.match.params.eventType) {
 		// 	if (eventData[this.props.match.params.eventType]) {
 		// 		this.data = eventData[this.props.match.params.eventType];
 		// 		// console.log('Found: ' + this.props.match.params.eventType);
 		// 	} else {
-				// console.log('NOT FOUND');
-				this.data = eventData['flagship'];
+		// 		// console.log('NOT FOUND');
+		// 		this.data = eventData['flagship'];
 		// 	}
 		// } else {
-		// 	// console.log('NOT FOUND');
-		// 	this.data = eventData['flagship'];
+			// console.log('NOT FOUND');
+			this.data = eventData['flagship'];
 		// }
 	}
 	componentDidMount() {

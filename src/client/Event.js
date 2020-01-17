@@ -77,7 +77,7 @@ class Event extends Component {
 		this.setState({ registerDetails });
 	};
 	clearDetails = () => {
-		const {currSlide}=this.state;
+		const { currSlide } = this.state;
 		let registerDetails = {
 			teamSize: this.data.content[currSlide].registerConstraints.minTeamSize,
 			teamID: 0,
@@ -89,7 +89,7 @@ class Event extends Component {
 			registerDetails.teamMembers.push({ blitzID: '', blitzPIN: '' });
 		}
 		this.setState({ registerDetails });
-	  };
+	};
 	handleRegister = (e) => {
 		e.preventDefault();
 		// console.log(this.state.registerDetails);
@@ -115,46 +115,52 @@ class Event extends Component {
 					// console.log(res);
 					if (res.status) {
 						alert(`Your TeamID: ${res.data}`);
-						this.setState({
-							submitMessage: (
-								<Col>
+						this.setState(
+							{
+								submitMessage: (
 									<Col>
-										<p className="text-white">You are successfully Registered!</p>
+										<Col>
+											<p className="text-white">You are successfully Registered!</p>
+										</Col>
+										<Col>
+											<p className="text-white font-weight-bold">Your TeamID: {res.data}</p>
+										</Col>
 									</Col>
-									<Col>
-										<p className="text-white font-weight-bold">Your TeamID: {res.data}</p>
-									</Col>
-								</Col>
-							)
-						},
-						() => {
-							fullpage_api.reBuild();
-						});
+								)
+							},
+							() => {
+								fullpage_api.reBuild();
+							}
+						);
 					} else {
-						this.setState({
-							submitMessage: (
-								<Col>
-									<p className="text-danger">{res.message}</p>
-								</Col>
-							)
-						},
-						() => {
-							fullpage_api.reBuild();
-						});
+						this.setState(
+							{
+								submitMessage: (
+									<Col>
+										<p className="text-danger">{res.message}</p>
+									</Col>
+								)
+							},
+							() => {
+								fullpage_api.reBuild();
+							}
+						);
 					}
 				})
 				.catch((e) => {
 					// console.log('Network issues');
-					this.setState({
-						submitMessage: (
-							<Col>
-								<p className="text-danger">Experiencing Network Issues!</p>
-							</Col>
-						)
-					},
-					() => {
-						fullpage_api.reBuild();
-					});
+					this.setState(
+						{
+							submitMessage: (
+								<Col>
+									<p className="text-danger">Experiencing Network Issues!</p>
+								</Col>
+							)
+						},
+						() => {
+							fullpage_api.reBuild();
+						}
+					);
 				});
 		}
 		// console.log(this.state.registerDetails);
@@ -176,9 +182,7 @@ class Event extends Component {
 			registerDetails.teamMembers.push({ blitzID: '', blitzPIN: '' });
 		}
 		// this.setState({ registerDetails });
-		this.setState({ currSlide: (currSlide + 1) % this.data.carImages.length,
-			registerDetails,
-			submitMessage: "" });
+		this.setState({ currSlide: (currSlide + 1) % this.data.carImages.length, registerDetails, submitMessage: '' });
 	};
 	showRegister = (fullpageApi) => {
 		fullpageApi.moveSectionDown();
@@ -219,7 +223,7 @@ class Event extends Component {
 							<Form.Group>
 								<InputGroup>
 									<InputGroup.Prepend>
-										<InputGroup.Text id="inputGroupPrepend" >blitz20@</InputGroup.Text>
+										<InputGroup.Text id="inputGroupPrepend">blitz20@</InputGroup.Text>
 									</InputGroup.Prepend>
 									<Form.Control
 										value={this.state.registerDetails.teamMembers[i].blitzID}
@@ -288,13 +292,13 @@ class Event extends Component {
 						return (
 							<ReactFullpage.Wrapper>
 								<div
-									className="section content"
+									className="section content eventsection"
 									style={{
 										background: this.data.content[currSlide].accent[1],
 										transition: 'all .5s ease-in-out'
 									}}
 								>
-								{/* <div className="formwrapper"> */}
+									{/* <div className="formwrapper"> */}
 									{window.innerWidth <= 770 ? (
 										<div style={{ width: '100%', height: '100%', display: 'block' }}>
 											<div className="carmob-holder-2">
@@ -544,7 +548,7 @@ class Event extends Component {
 													interval="4000"
 													controls={false}
 													activeIndex={currSlide}
-													onSelect={()=>{}}
+													onSelect={() => {}}
 													// defaultActiveIndex={0}
 												>
 													{this.data.carImages.map((item, index) => {
@@ -557,11 +561,11 @@ class Event extends Component {
 												</Carousel>
 											</div>
 										</Row>
-									)} 
-									</div>
+									)}
+								</div>
 								{/* </div> */}
 								<div
-									className="section"
+									className="section eventsection"
 									style={{
 										background: this.data.content[currSlide].accent[1],
 										transition: 'all .5s ease-in-out'
@@ -569,68 +573,69 @@ class Event extends Component {
 								>
 									{this.shouldRedirect()}
 									<div className="formwrapper">
-									<h1 className="heading">{this.data.content[currSlide].heading}</h1>
-									<h1 className="heading">Register</h1>
-									<Card>
-										<Card.Body>
-											<Form
-												onSubmit={() => {
-													this.handleRegister(event);
-												}}
-											>
-												<Form.Row>
-													<Form.Label>Team Size:</Form.Label>
-													<Form.Group>
-														<select
-															id="teamSize"
-															value={registerDetails.teamSize}
-															onChange={() => {
-																this.handleTeamSizeChange(fullpageApi, event);
-															}}
-														>
-															{this.createTeamMemberSelect()}
-														</select>
-													</Form.Group>
-												</Form.Row>
-												{registerDetails.teamSize > 1 ? (
+										<h1 className="heading">{this.data.content[currSlide].heading}</h1>
+										<h1 className="heading">Register</h1>
+										<Card>
+											<Card.Body>
+												<Form
+													onSubmit={() => {
+														this.handleRegister(event);
+													}}
+												>
 													<Form.Row>
-														<Form.Label>Team Name:</Form.Label>
+														<Form.Label>Team Size:</Form.Label>
 														<Form.Group>
-															<Form.Control
-																value={this.state.registerDetails.teamName}
+															<select
+																id="teamSize"
+																value={registerDetails.teamSize}
 																onChange={() => {
-																	this.handleTeamNameChange(event);
+																	this.handleTeamSizeChange(fullpageApi, event);
 																}}
-																required={true}
-																id="teamName"
-																type="text"
-																placeholder="Team Name"
-															/>
+															>
+																{this.createTeamMemberSelect()}
+															</select>
 														</Form.Group>
 													</Form.Row>
-												) : null}
-												{this.createTeamMemberInput(fullpageApi)}
-												<Row>
-													<Col>
-														<Button
-															style={{
-																backgroundColor: this.data.content[currSlide].accent[0],
-																border: '0px'
-															}}
-															className="event-submit-button"
-															type="submit"
-														>
-															Submit
-														</Button>
-													</Col>
-												</Row>
-												<Row>{submitMessage}</Row>
-												{/* {() => {
+													{registerDetails.teamSize > 1 ? (
+														<Form.Row>
+															<Form.Label>Team Name:</Form.Label>
+															<Form.Group>
+																<Form.Control
+																	value={this.state.registerDetails.teamName}
+																	onChange={() => {
+																		this.handleTeamNameChange(event);
+																	}}
+																	required={true}
+																	id="teamName"
+																	type="text"
+																	placeholder="Team Name"
+																/>
+															</Form.Group>
+														</Form.Row>
+													) : null}
+													{this.createTeamMemberInput(fullpageApi)}
+													<Row>
+														<Col>
+															<Button
+																style={{
+																	backgroundColor: this.data.content[currSlide]
+																		.accent[0],
+																	border: '0px'
+																}}
+																className="event-submit-button"
+																type="submit"
+															>
+																Submit
+															</Button>
+														</Col>
+													</Row>
+													<Row>{submitMessage}</Row>
+													{/* {() => {
 													fullpageApi.reBuild();
 												}} */}
-											</Form>
-										</Card.Body>
-									</Card>
+												</Form>
+											</Card.Body>
+										</Card>
 									</div>
 								</div>
 							</ReactFullpage.Wrapper>
