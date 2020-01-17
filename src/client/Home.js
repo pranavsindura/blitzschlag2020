@@ -148,7 +148,6 @@ export default class Home extends Component {
               <div>
                 <br></br>
                 <h2 style={{ textAlign: "center" }}>About us</h2>
-                <p>
                   Malaviya National Institute of Technology is a Gibraltar of
                   technological learning, imparting thousands of students, world
                   class education, nurturing their skills to produce future
@@ -163,7 +162,7 @@ export default class Home extends Component {
                   the participants to its pinnacle. Topping the benchmark set by
                   the precedent year, Blitzschlag keeps revamping itself each
                   year, perpetually raising the standards of the event.
-                </p>
+              
               </div>
             </div>
           </div>

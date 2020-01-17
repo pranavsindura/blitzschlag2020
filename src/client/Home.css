@@ -812,6 +812,7 @@ p {
         font-size: 0.7em;
     }
     .theme-holder {
+        margin-left: 0vw;
         position: relative;
         z-index: 2;
         width: 100%;
@@ -821,11 +822,10 @@ p {
         vertical-align: top !important;
     }
     .theme-heading {
-        color: white;
-        font-variant-caps: small-caps;
-        /* text-align: justify; */
         font-family: 'Raleway', sans-serif;
-        font-weight: bold;
+        font-variant-caps: small-caps;
+        text-align: center;
+        color: white;
         font-size: 2em;
     }
     .theme-content {
