@@ -219,7 +219,7 @@ class Event extends Component {
 							<Form.Group>
 								<InputGroup>
 									<InputGroup.Prepend>
-										<InputGroup.Text id="inputGroupPrepend">blitz20@</InputGroup.Text>
+										<InputGroup.Text id="inputGroupPrepend" >blitz20@</InputGroup.Text>
 									</InputGroup.Prepend>
 									<Form.Control
 										value={this.state.registerDetails.teamMembers[i].blitzID}
@@ -276,6 +276,7 @@ class Event extends Component {
 				<ReactFullpage
 					scrollOverflow={true}
 					onLeave={({ origin, destination, direction }) => {
+						fullpage_api.reBuild();
 						if (!this.data.content[currSlide].canRegister) return false;
 						// return false;
 					}}
@@ -293,6 +294,7 @@ class Event extends Component {
 										transition: 'all .5s ease-in-out'
 									}}
 								>
+								<div className="formwrapper">
 									{window.innerWidth <= 770 ? (
 										<div style={{ width: '100%', height: '100%', display: 'block' }}>
 											<div className="carmob-holder-2">
@@ -555,7 +557,8 @@ class Event extends Component {
 												</Carousel>
 											</div>
 										</Row>
-									)}
+									)} 
+									</div>
 								</div>
 								<div
 									className="section"

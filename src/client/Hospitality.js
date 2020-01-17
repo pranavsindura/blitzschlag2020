@@ -35,7 +35,7 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 		optionsSelected = [...optionsSelectedSet].sort().join(' ');
 		total += sig * this.amount[Number(id)];
 		options[id] = val;
-		this.setState({ options, total, optionsSelectedSet, optionsSelected });
+		this.setState({ options, total, optionsSelectedSet, optionsSelected },()=>{fullpage_api.reBuild();});
 	};
 	handleSubmit = (e) => {
 		e.preventDefault();
@@ -101,7 +101,7 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 										<Card className="hosp-card">
 											<Card.Body>
 												<Table striped bordered hover responsive size="sm">
-													<thead>
+													<thead className="hosp">
 														<tr>
 															<th>#</th>
 
@@ -110,7 +110,7 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 															<th>Select</th>
 														</tr>
 													</thead>
-													<tbody>
+													<tbody className="hosp">
 														<br />
 														<tr>
 															<td colSpan="1"></td>
@@ -381,7 +381,7 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 															</td>
 														</tr>
 													</tbody>
-													<tfoot>
+													<tfoot className="hosp">
 														<tr>
 															<td colSpan="4">
 																<strong>
