@@ -77,10 +77,10 @@ const eventData = {
         eventID: "47"
       },
       {
-        heading: "MR. & MS. BLITZ",
+        heading: "MR. & MISS BLITZ",
         desc: `To Be Revealed`,
         details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#73211c", "#2f2e2e", "#520c05"],
+        accent: ["#f9b26c", "#446e78", "#fe593d"],
         detailsLink: "",
         canRegister: true,
         //required even if canRegister is false
@@ -133,7 +133,7 @@ const eventData = {
         desc: `Breakfree is a solo and duet dance competition, an opportunity to highlight your dancing prowess and to reveal a character's story which people only dared to imagine. Come BREAKFREE and showcase your talent as the audience watches in awe how you turn
         imagination into reality!`,
         details: [`Time: 10 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#c2413e", "#503f3b", "#989490"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -188,7 +188,7 @@ const eventData = {
     carImages: [
       "https://i.ibb.co/Y7vJ3xQ/Jenga-Se-Jawaab-3-page-001.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/fSn0wSs/questival-min.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
@@ -230,7 +230,7 @@ const eventData = {
 		The stakes have been upped but so has the reward. 
 		Are you up for it?`,
         details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#bc538d", "#000000", "#9fddea"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -346,7 +346,7 @@ const eventData = {
         heading: "PIC SAGA",
         desc: `To Be Revealed`,
         details: [`Time: TBA`, `Date: TBA`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#00c176", "#fcfce8", "#f03c5f"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -359,7 +359,7 @@ const eventData = {
         heading: "SNAP N SNITCH",
         desc: `To Be Revealed`,
         details: [`Time: TBA`, `Date: TBA`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#0192cd", "#2b4508", "#7b7b77"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -372,7 +372,7 @@ const eventData = {
         heading: "PIC SAGA",
         desc: `To Be Revealed`,
         details: [`Time: TBA`, `Date: TBA`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#ffc75a", "#565455", "#f03c5f"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -426,7 +426,7 @@ const eventData = {
         heading: "TINT A TOP",
         desc: `We’ve always painted shirts- at times unknowingly while dropping , or it could be football impressions on  jersey while playing. So here in TINT A TOP, showcase your fashion mantra through T-shirt painting. Turn on your creative imaginations and show what your style secret is all about! `,
         details: [`Time: 3:00 PM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#15b7b6", "#68234c", "#dc5894"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -439,7 +439,7 @@ const eventData = {
         heading: "ART EXHIBITION",
         desc: `EXPLORA brings you a platform to showcase your artistic talent. Participants are required to submit there artwork in jpg format. If participants are found using someone else's artwork then they'll be disqualified ! So make sure you send us your own artwork. The selected entries will be a part of ART EXHIBITION.`,
         details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#0f4792", "#334349", "#45838c"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -485,7 +485,7 @@ const eventData = {
         Participants are required to bring their own acrylic colors or any other medium of paint that they want to use on canvas shoes. Designs will be judged based on creativity, originality and overall execution.
         `,
         details: [`Time: 11:30 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#7e0249", "#601b11", "#293566"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -516,7 +516,7 @@ const eventData = {
         So get ready to make your face a canvas!
         `,
         details: [`Time: 11:00 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#2b27a6", "#1c1e45", "#c73564"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -564,7 +564,7 @@ const eventData = {
   dramatics: {
     carImages: [
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/2v6J2b1/rangbhomi-min-1.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
     ],
     content: [
@@ -588,7 +588,7 @@ const eventData = {
 		We all have been dramatic in our life, acting in each emotion-love, hate, anger or joy. Now it's time for you to put some life on stage - Life that is created by a writer, managed by a director and lived by an actor. It's not only about acting, script, dialogues and lights, rather it's about you living that character on stage, bringing life to audience. So, put on your costumes and let your character ravish the stage as soon as those three words are spoken:
 		 LIGHTS….CAMERA….ACTION !`,
         details: [`Time: 11:00 AM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#de6145", "#6d361b", "#985834"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
