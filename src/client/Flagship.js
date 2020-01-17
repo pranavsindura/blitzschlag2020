@@ -288,7 +288,7 @@ class Flagship extends Component {
 						return (
 							<ReactFullpage.Wrapper>
 								<div
-									className="section content"
+									className="section content eventsection"
 									style={{
 										background: this.data.content[currSlide].accent[1],
 										transition: 'all .5s ease-in-out'
@@ -561,7 +561,7 @@ class Flagship extends Component {
 									</div>
 								{/* </div> */}
 								<div
-									className="section"
+									className="section eventsection"
 									style={{
 										background: this.data.content[currSlide].accent[1],
 										transition: 'all .5s ease-in-out'
