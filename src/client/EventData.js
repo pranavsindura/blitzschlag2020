@@ -96,7 +96,7 @@ const eventData = {
     carImages: [
       "https://i.ibb.co/18YMCYc/Whats-App-Image-2020-01-10-at-16-08-02.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/Cnh3pdF/break-free.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
@@ -292,8 +292,8 @@ const eventData = {
       "https://i.ibb.co/fHrpjG9/Whats-App-Image-2020-01-08-at-14-19-55.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
+      "https://i.ibb.co/B27TsSK/picsaga.jpg",
+      "https://i.ibb.co/h8cdKc8/snip-n-stich.jpg"
     ],
     content: [
       {
@@ -652,7 +652,7 @@ const eventData = {
       },
       {
         heading: "IPL AUCTION",
-        desc: `TO BE REVEALED`,
+        desc: `IPL Auctions are done, but the discussions about the teams and tactics have not stopped yet. We all enjoyed the auction, sitting in front of screen with utmost interest. But how about taking part in one ?Yes, Blitzschlag 2020 brings you 'IPL Auctions', which provides the perfect platform to showcase your shrewd cricketing and logical skills.Get ready for the ultimate showdown and pen down the strongest team on paper!`,
         details: [`Time: 03:30 PM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -766,7 +766,10 @@ const eventData = {
     content: [
       {
         heading: "बोलती तसवीरें ",
-        desc: `TBA`,
+        desc: `मौन रह कर सब कुछ बोलती तस्वीर
+        बिना शब्दों के अर्थ खोलती तस्वीर।।
+        और वैसे भी कहा गया है कि एक तस्वीर हज़ार शब्दों से बढ़कर है।
+        तो Blitzschlag देता है आपको मौका तस्वीरों से बात करने का, उस तस्वीर से उन हज़ार शब्दों को`,
         details: [`Time: 01:00PM`, `Date: 06/02/20`, `Prizes worth: TBA/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
