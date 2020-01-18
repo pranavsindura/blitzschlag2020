@@ -431,7 +431,7 @@ const eventData = {
         heading: "MOTIF-FITLION",
         desc: `To Be Revealed`,
         details: [`Time: 12:00 PM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#8b1d64", "#854593", "#2a3d78"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -500,7 +500,7 @@ const eventData = {
         The participant will have to tie the brush and bamboo sticks given to obtain a required length. Then he/she has to sit on a chair and draw with the long brush he/she has made. The best drawing would be declared as winner.
         `,
         details: [`Time: 9:30 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#272b46", "#2d1c15", "#ea634f"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
