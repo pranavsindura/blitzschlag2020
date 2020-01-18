@@ -1167,7 +1167,7 @@ export default class Society extends Component {
   }
   render() {
     return (
-      <div>
+      <div style={{background:'#e13663'}}>
         <Splash images={this.images} />
         <a href="https://blitz20.herokuapp.com/">
           <img

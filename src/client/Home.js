@@ -251,7 +251,7 @@ export default class Home extends Component {
           />
         </div>
         <ReactFullpage
-          scrollingSpeed={1850}
+          scrollingSpeed={1600}
           controlArrows={true}
           verticalCentered={true}
           anchors={["home", "aboutus", "theme", "contactus"]}

@@ -22,7 +22,7 @@ const eventData = {
         //required even if canRegister is false
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 25
         },
         eventID: "45"
       },
@@ -40,7 +40,7 @@ const eventData = {
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 6
         },
         eventID: "44"
       },
@@ -54,11 +54,11 @@ const eventData = {
           `Prizes worth: ₹ 1,20,000/-`
         ],
         accent: ["#251e3e", "#9e1e25", "#d22940"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1Bin8SBJXbt7ahqJpCoUuVL-3PSamDJFb/view?usp=drivesdk",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 30
         },
         eventID: "27"
       },
@@ -89,6 +89,36 @@ const eventData = {
           maxTeamSize: 5
         },
         eventID: "48"
+      },
+      {
+        heading: "Celebrity Night",
+        desc: `To Be Revealed`,
+        // details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        details: [`TBA`],
+        accent: ["#f9b26c", "#446e78", "#fe593d"],
+        detailsLink: "",
+        canRegister: false,
+        //required even if canRegister is false
+        registerConstraints: {
+          minTeamSize: 1,
+          maxTeamSize: 5
+        },
+        eventID: "49"
+      },
+      {
+        heading: "Band Night",
+        desc: `To Be Revealed`,
+        // details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        details: [`TBA`],
+        accent: ["#f9b26c", "#446e78", "#fe593d"],
+        detailsLink: "",
+        canRegister: false,
+        //required even if canRegister is false
+        registerConstraints: {
+          minTeamSize: 1,
+          maxTeamSize: 5
+        },
+        eventID: "46"
       }
     ]
   },
@@ -97,7 +127,7 @@ const eventData = {
       "https://i.ibb.co/18YMCYc/Whats-App-Image-2020-01-10-at-16-08-02.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/Cnh3pdF/break-free.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/yBqDsPW/Whats-App-Image-2020-01-18-at-17-19-27-min.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
     ],
@@ -117,10 +147,11 @@ const eventData = {
       },
       {
         heading: "RAMBA SAMBA",
-        desc: `To Be Revealed`,
+        desc: `Get ready to witness the stage set ablaze as teams come head-to-head, toss around their toes and swing their arms in the leap of glory. That's the magic of Rambha Sambha!
+        Rambha Sambha is a beautiful blend of foot-tapping beats, a pumping rush of adrenaline and  the high of getting  your team to wave the trophy of champions at Blitzschlag 2020.`,
         details: [`Time: 9:00 AM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1Bin8SBJXbt7ahqJpCoUuVL-3PSamDJFb/view?usp=drivesdk",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -134,11 +165,11 @@ const eventData = {
         imagination into reality!`,
         details: [`Time: 10 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#c2413e", "#503f3b", "#989490"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1BoGPi7wTPCViOA9TTeNs26chctSsF0kW/view?usp=drivesdk",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 2
         },
         eventID: "29"
       },
@@ -146,7 +177,7 @@ const eventData = {
         heading: "NRITYANJALI",
         desc: `Nritya is a slow and expressive aspect of the dance that attempts to communicate feelings, storyline particularly with spiritual themes in Hindu dance traditions. Dance is a form of meditation and prayer that keeps our body and  mind peaceful. In Nrityanjali, get ready to showcase your skills and expertise in classical dancing at Blitzschlag 2020.`,
         details: [`Time: 1:00 PM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#532f2f", "#010000", "#be5f43"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -161,11 +192,11 @@ const eventData = {
         This February, Blitzschlag 2020 provides you an opportunity to reveal your hidden language with 'Hit the street', a hip-hop dance competition to showcase your talent and prowess.So, get ready to put your dancing shoes on in this intense battle of dancing stars.`,
         details: [`Time: 2:00 PM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1BsezMIC0MUslhtoF8kuSY1IDYXEDL4kH/view?usp=drivesdk",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 12
         },
         eventID: "31"
       },
@@ -174,7 +205,7 @@ const eventData = {
         desc: `“Singing is a way of escaping to another world”. This Blitzchlag 2020, get ready to belt out some melodies in 'Voice Choice'. So grab this opportunity to exude your love for music in this competition of singing sensations and win attractive rewards along with some priceless experiences.`,
         details: [`Time: 9:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1BpnQ07WP3MMzl2qxGGBUEm3eXFuqLWWD/view?usp=drivesdk",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -205,7 +236,7 @@ const eventData = {
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 2
         },
         eventID: "3"
       },
@@ -219,7 +250,7 @@ const eventData = {
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 3
         },
         eventID: "1"
       },
@@ -235,7 +266,7 @@ const eventData = {
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 4
         },
         eventID: "2"
       },
@@ -331,7 +362,7 @@ const eventData = {
       },
       {
         heading: "PHOTOGRAPHY WORKSHOP",
-        desc: `To Be Revealed`,
+        desc: `Photography, the epitome of art,  is a life long journey that enchants millions upon millions of onlookers. The skill of capturing a luscious landscape or a chaotic city, can always be improved upon. Be a part of our photography workshop to know your camera intimately. Come and learn the terminology and how it impacts your photograph. Seize this opportunity to armour your skills to portray your stories without words.`,
         details: [`Time: 10:00 AM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -578,7 +609,7 @@ const eventData = {
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 30
         },
         eventID: "14"
       },
@@ -593,7 +624,7 @@ const eventData = {
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 30
         },
         eventID: "13"
       },
@@ -603,7 +634,7 @@ const eventData = {
         details: [`Time: 12:30 PM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
-        canRegister: true,
+        canRegister: false,
         registerConstraints: {
           minTeamSize: 1,
           maxTeamSize: 5
@@ -677,7 +708,7 @@ const eventData = {
       },
       {
         heading: "MURDER MYSTERY",
-        desc: `TO BE REVEALED`,
+        desc: `Unleash your inner Sherlock by solving a murder mystery at MNIT! The case of murder has cast a spell of fear and paranoia in MNIT and now it's your job to unravel the dark, deep secrets behind the incident and bring justice to the victim. Team up with your fellow detectives and embark upon this thrilling journey of joining the pieces of the puzzle together. Register NOW!`,
         details: [`Time: TBA`, `Date: TBA`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -689,8 +720,8 @@ const eventData = {
         eventID: "42"
       },
       {
-        heading: "NSS QUIZ",
-        desc: `TO BE REVEALED`,
+        heading: "Kaun Banega Gyanvan -NSS QUIZ",
+        desc: `Ever thought of making into KBC and displaying your wisdom in front of a huge crowd? Your knowledge and expertise will be put to test in an exciting competition of erudite scholars. So, get ready to grab the hot seat ,as BLITZSCHLAG, in association with NSS society, brings you KBG - Kaun Banega Gyanvan. Take home the crown of ultimate genius!`,
         details: [`Time: 11:00 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -742,7 +773,7 @@ const eventData = {
         details: [`Time: TBA`, `Date: TBA`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
-        canRegister: true,
+        canRegister: false,
         registerConstraints: {
           minTeamSize: 1,
           maxTeamSize: 5
