@@ -398,7 +398,7 @@ export default class Home extends Component {
                         />
                       </div>
                       <div className="theme-holder">
-                        <h2 className="theme-heading">BOLLYWOOD</h2>
+                        <h2 className="theme-heading">Bollywood</h2>
                         <p className="theme-content">
                           Although the term 'Bollywood' was popularized only in
                           the 1970s, Bollywood has been a major part of Indian
