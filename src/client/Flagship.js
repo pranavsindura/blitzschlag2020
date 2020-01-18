@@ -7,7 +7,7 @@ import Splash from './Splash';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import axios from 'axios';
-class Event extends Component {
+class Flagship extends Component {
 	state = {
 		currSlide: 0,
 		showRegister: false,
@@ -30,14 +30,14 @@ class Event extends Component {
 		// if (this.props.match.params.eventType) {
 		// 	if (eventData[this.props.match.params.eventType]) {
 		// 		this.data = eventData[this.props.match.params.eventType];
-		// 		console.log('Found: ' + this.props.match.params.eventType);
+		// 		// console.log('Found: ' + this.props.match.params.eventType);
 		// 	} else {
-		// 		console.log('NOT FOUND');
-				this.data = eventData['flagship'];
+		// 		// console.log('NOT FOUND');
+		// 		this.data = eventData['flagship'];
 		// 	}
 		// } else {
-		// 	console.log('NOT FOUND');
-		// 	this.data = eventData['flagship'];
+			// console.log('NOT FOUND');
+			this.data = eventData['flagship'];
 		// }
 	}
 	componentDidMount() {
@@ -219,7 +219,7 @@ class Event extends Component {
 							<Form.Group>
 								<InputGroup>
 									<InputGroup.Prepend>
-										<InputGroup.Text id="inputGroupPrepend">blitz20@</InputGroup.Text>
+										<InputGroup.Text id="inputGroupPrepend" >blitz20@</InputGroup.Text>
 									</InputGroup.Prepend>
 									<Form.Control
 										value={this.state.registerDetails.teamMembers[i].blitzID}
@@ -276,6 +276,7 @@ class Event extends Component {
 				<ReactFullpage
 					scrollOverflow={true}
 					onLeave={({ origin, destination, direction }) => {
+						// fullpage_api.reBuild();
 						if (!this.data.content[currSlide].canRegister) return false;
 						// return false;
 					}}
@@ -293,6 +294,7 @@ class Event extends Component {
 										transition: 'all .5s ease-in-out'
 									}}
 								>
+								{/* <div className="formwrapper"> */}
 									{window.innerWidth <= 770 ? (
 										<div style={{ width: '100%', height: '100%', display: 'block' }}>
 											<div className="carmob-holder-2">
@@ -555,8 +557,9 @@ class Event extends Component {
 												</Carousel>
 											</div>
 										</Row>
-									)}
-								</div>
+									)} 
+									</div>
+								{/* </div> */}
 								<div
 									className="section"
 									style={{
@@ -650,4 +653,4 @@ const mapDispatchToProps = (dispatch) => {
 	return {};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Event);
+export default connect(mapStateToProps, mapDispatchToProps)(Flagship);

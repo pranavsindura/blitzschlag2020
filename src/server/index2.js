@@ -8,10 +8,9 @@ const device = require('express-device');
 const mongoose = require('mongoose');
 const objectID = require('objectid');
 
+// const uri = String(process.env.MONGODB_URI);
 const uri = String(process.env.MONGODB_URI);
-// mongodb+srv://Dhairya:<password>@blitz-wrjmz.mongodb.net/test?retryWrites=true&w=majority
-// mongodb+srv://Dhairya-Shalu:light12345@first-demo-ocw10.mongodb.net/test?retryWrites=true&w=majority
-let { userModel } = require('./model.js');
+let {userModel} = require('./model.js');
 let { idModel } = require('./idModel');
 let loginValid = require('./loginvalid');
 let eventRegister = require('./eventRegister');

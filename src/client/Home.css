@@ -134,7 +134,7 @@ p {
 .contactus-heading {
     height: 20%;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .contactus-heading>h2 {
@@ -142,6 +142,7 @@ p {
     text-align: center;
     color: white;
     width: 100%;
+    font-size: 3em;
 }
 
 .contactus-text {
@@ -682,7 +683,7 @@ p {
 } */
 
 .about-us {
-    margin-top: 30px;
+    margin-top: -5vh;
 }
 
 .about-counts {
@@ -708,6 +709,7 @@ p {
     text-align: justify;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 .theme-content {
@@ -727,6 +729,9 @@ p {
 }
 
 .theme-holder {
+    margin-top: 10vh;
+    font-size: 1.1em;
+    margin-left: 7vw;
     position: relative;
     z-index: 2;
     width: 50%;
@@ -807,6 +812,7 @@ p {
         font-size: 0.7em;
     }
     .theme-holder {
+        margin-left: 0vw;
         position: relative;
         z-index: 2;
         width: 100%;
@@ -816,11 +822,10 @@ p {
         vertical-align: top !important;
     }
     .theme-heading {
-        color: white;
-        font-variant-caps: small-caps;
-        /* text-align: justify; */
         font-family: 'Raleway', sans-serif;
-        font-weight: bold;
+        font-variant-caps: small-caps;
+        text-align: center;
+        color: white;
         font-size: 2em;
     }
     .theme-content {
