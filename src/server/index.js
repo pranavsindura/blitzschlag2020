@@ -7,9 +7,9 @@ const express = require('express');
 const device = require('express-device');
 const mongoose = require('mongoose');
 const objectID = require('objectid');
-const uri = 'mongodb+srv://Dhairya-Shalu:light12345@first-demo-ocw10.mongodb.net/test?retryWrites=true&w=majority';
-// mongodb+srv://Dhairya:<password>@blitz-wrjmz.mongodb.net/test?retryWrites=true&w=majority
-// mongodb+srv://Dhairya-Shalu:light12345@first-demo-ocw10.mongodb.net/test?retryWrites=true&w=majority
+
+// const uri = String(process.env.MONGODB_URI);
+const uri = String(process.env.MONGODB_URI);
 let {userModel} = require('./model.js');
 let { idModel } = require('./idModel');
 let loginValid = require('./loginvalid');
@@ -39,7 +39,7 @@ mongoose.connect(uri, {
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', async function() {
-    // console.log('Connected to the database');
+    console.log('Connected to the database');
 });
 
 app.post('/login', (req, res) => {
@@ -263,7 +263,7 @@ app.post('/events', (req, res) => {
 });
 
 app.post('/user', (req, res) => {
-    let user = {blitzID: req.body.blitzID};
+    let user = { blitzID: req.body.blitzID };
     // console.log(req.body);
     // user.blitzID = Number(user.blitzID);
     eventRegister.retrieveUsers(user.blitzID).then(function(result) {
@@ -271,6 +271,8 @@ app.post('/user', (req, res) => {
             result = result[0];
             // console.log('result', result)
             let userDetails = new userModel();
+            userDetails.paymentHistory = result.paymentHistory;
+            userDetails.hospitality = result.hospitality;
             userDetails.firstName = result.firstName;
             userDetails.lastName = result.lastName;
             userDetails.email = result.email;
@@ -318,4 +320,3 @@ app.get('*', (req, res) => {
 
 // console.log(process.env.PORT);
 app.listen(process.env.PORT || 8080, () => console.log(`Listening on port ${process.env.PORT || 8080}!`));
-

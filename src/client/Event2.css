@@ -6,6 +6,10 @@
 	overflow-y: hidden;
 }
 
+.eventsection{
+	min-height: 100vh;
+}
+
 .car,
 .caritem {
 	height: 96vh;
