@@ -10,12 +10,12 @@ const eventData = {
     content: [
       {
         heading: "PANACHE",
-        desc: `Edith Head, a renowned fashion designer, once said, "You can have anything you want in life if you dress for it." On that note, Blitzschlag 2020 brings you Panache, a fashion fiesta full of everything from old classics to the latest fads. So, if you're influenced by exemplars, or a trend-setter, this is your chance to take it to the next level. Do you have enough glam to light the ramp on fire?`,
-        details: [
-          `Time: 8:00 PM`,
-          `Date: 07/02/2020`,
-          `Prizes worth: ₹ 1,00,000/-`
-        ],
+        desc: `Edith Head, a renowned fashion designer, once said, "You can have anything you want
+        in life if you dress for it." On that note, Blitzschlag 2020 brings you Panache,
+        a fashion fiesta full of everything from old classics to the latest fads. Whether you're
+        influenced by exemplars, or a trend-setter, this is your chance to take it to the next level.
+        Do you have enough glam to light the ramp on fire?`,
+        details: [`Date: 07/02/2020`, `Prizes worth: ₹ 1,00,000/-`],
         accent: ["#73211c", "#2f2e2e", "#520c05"],
         detailsLink: "",
         canRegister: true,
@@ -27,12 +27,11 @@ const eventData = {
       },
       {
         heading: "BATTLE OF BANDS",
-        desc: `Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything”, said Plato. Music possesses the ability to communicate emotions where words fail, and for Blitzschlag 2020, we have pronounced to make your evening memorable with many jim-dandy band performances. So, are you all set to manifest the thump and rush of your adrenaline faster than ever?  Then get ready to ROCK along to the breathtaking performances in this year's musical gala of the "Battle of Bands`,
-        details: [
-          `Time: 9:00 AM`,
-          `Date: 06/02/2020`,
-          `Prizes worth: ₹ 75,000/-`
-        ],
+        desc: `"Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything”,
+        said Plato. Music possesses the ability to communicate emotions where words fail, and we have pronounced to make your evening memorable with many jim-dandy performances. So, are you all
+        set to heighten your adrenaline levels? Then ROCK along
+        to the breathtaking performances in this year's musical gala, the 'Battle of Bands'. `,
+        details: [`Date: 06/02/2020`, `Prizes worth: ₹ 75,000/-`],
         accent: ["#251e3e", "#9e1e25", "#d22940"],
         detailsLink:
           "https://drive.google.com/open?id=1vlDXNLN8aPGpYTLF_6zHuxhPBFmBr0wU",
@@ -47,11 +46,7 @@ const eventData = {
         heading: "RAMBA SAMBA",
         desc: `Get ready to witness the stage set ablaze as teams come head-to-head, toss around their toes and swing their arms in the leap of glory. That's the magic of Rambha Sambha!
         Rambha Sambha is a beautiful blend of foot-tapping beats, a pumping rush of adrenaline and  the high of getting  your team to wave the trophy of champions at Blitzschlag 2020.`,
-        details: [
-          `Time: 9:00 AM`,
-          `Date: 07/02/2020`,
-          `Prizes worth: ₹ 1,20,000/-`
-        ],
+        details: [`Date: 07/02/2020`, `Prizes worth: ₹ 1,20,000/-`],
         accent: ["#251e3e", "#9e1e25", "#d22940"],
         detailsLink:
           "https://drive.google.com/file/d/1Bin8SBJXbt7ahqJpCoUuVL-3PSamDJFb/view?usp=drivesdk",
@@ -64,8 +59,10 @@ const eventData = {
       },
       {
         heading: "BLITZ GOT TALENT",
-        desc: `To Be Revealed`,
-        details: [`Time: 2:00 PM`, `Date: 07/02/2020`, `Prizes worth: TBA`],
+        desc: `"Every artist was first an amateur", said R.W.Emerson; and if we're sure that you have a story to tell.
+        Showcase your talents, show us how far you've come, and see if Blitzschlag 2020 is the stage that will
+        grant you victory. Let yourself shine your brightest yet, let's see if 'Blitz Got Talent'!`,
+        details: [`Date: 07/02/2020`, `Prizes worth: TBA`],
         accent: ["#73211c", "#2f2e2e", "#520c05"],
         detailsLink: "",
         canRegister: true,
@@ -79,11 +76,10 @@ const eventData = {
       {
         heading: "MR. & MISS BLITZ",
         desc: `Fantasies like Student of the Year is what is yearned by all the young exuberants.Moreover, being the face of college is what all the students crave for. Mr. and Miss Blitz provides an excellent opportunity to showcase that you are the creme de la creme of this institute with a perfect blend of attitude, fitness and overall personality.`,
-        details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#f9b26c", "#446e78", "#fe593d"],
         detailsLink: "",
         canRegister: true,
-        //required even if canRegister is false
         registerConstraints: {
           minTeamSize: 1,
           maxTeamSize: 5
@@ -105,11 +101,7 @@ const eventData = {
       {
         heading: "Dhun",
         desc: `The most amazing thing about instrumental music is that everyone can have their own interpretations; no lyrics direct what you should feel. It allows emotions to shine in their own character, without presuming to display them as real or imaginary expressions. On that note, Blitzschlag 2020 presents 'Dhun', an instrumental music showdown, the ultimate test of your musical prowess. Register yourselves now to become a part of the euphonious extravaganza!`,
-        details: [
-          `Time: 2:00 PM`,
-          `Date: 07/02/2020`,
-          `Prizes worth: 14,000/-`
-        ],
+        details: [`Date: 07/02/2020`, `Prizes worth: 14,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/1dN88g-Hpr6Fs86PSoXLHf1TKXWhyvAOO/view?usp=sharing",
@@ -124,7 +116,7 @@ const eventData = {
         heading: "RAMBA SAMBA",
         desc: `Get ready to witness the stage set ablaze as teams come head-to-head, toss around their toes and swing their arms in the leap of glory. That's the magic of Rambha Sambha!
         Rambha Sambha is a beautiful blend of foot-tapping beats, a pumping rush of adrenaline and  the high of getting  your team to wave the trophy of champions at Blitzschlag 2020.`,
-        details: [`Time: 9:00 AM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/1Bin8SBJXbt7ahqJpCoUuVL-3PSamDJFb/view?usp=drivesdk",
@@ -139,7 +131,7 @@ const eventData = {
         heading: "BREAKFREE",
         desc: `Breakfree is a solo and duet dance competition, an opportunity to highlight your dancing prowess and to reveal a character's story which people only dared to imagine. Come BREAKFREE and showcase your talent as the audience watches in awe how you turn
         imagination into reality!`,
-        details: [`Time: 10 AM`, `Date: 08/02/2020`, `Prizes worth: 14,000/-`],
+        details: [`Date: 08/02/2020`, `Prizes worth: 14,000/-`],
         accent: ["#c2413e", "#503f3b", "#989490"],
         detailsLink:
           "https://drive.google.com/file/d/1BoGPi7wTPCViOA9TTeNs26chctSsF0kW/view?usp=drivesdk",
@@ -153,11 +145,7 @@ const eventData = {
       {
         heading: "NRITYANJALI",
         desc: `Nritya is a slow and expressive aspect of the dance that attempts to communicate feelings, storyline particularly with spiritual themes in Hindu dance traditions. Dance is a form of meditation and prayer that keeps our body and  mind peaceful. In Nrityanjali, get ready to showcase your skills and expertise in classical dancing at Blitzschlag 2020.`,
-        details: [
-          `Time: 1:00 PM`,
-          `Date: 06/02/2020`,
-          `Prizes worth: 10,000/-`
-        ],
+        details: [`Date: 06/02/2020`, `Prizes worth: 10,000/-`],
         accent: ["#532f2f", "#010000", "#be5f43"],
         detailsLink:
           "https://drive.google.com/open?id=1OEd3tSh-_RzLygo4aXOaS63JKLQbp3T6",
@@ -172,11 +160,7 @@ const eventData = {
         heading: "HIT THE STREET",
         desc: `Martha Graham once said, "Dance is the hidden language of the soul.” 
         This February, Blitzschlag 2020 provides you an opportunity to reveal your hidden language with 'Hit the street', a hip-hop dance competition to showcase your talent and prowess.So, get ready to put your dancing shoes on in this intense battle of dancing stars.`,
-        details: [
-          `Time: 2:00 PM`,
-          `Date: 08/02/2020`,
-          `Prizes worth: 14,000/-`
-        ],
+        details: [`Date: 08/02/2020`, `Prizes worth: 14,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/1BsezMIC0MUslhtoF8kuSY1IDYXEDL4kH/view?usp=drivesdk",
@@ -190,11 +174,7 @@ const eventData = {
       {
         heading: "VOICE CHOICE",
         desc: `“Singing is a way of escaping to another world”. This Blitzchlag 2020, get ready to belt out some melodies in 'Voice Choice'. So grab this opportunity to exude your love for music in this competition of singing sensations and win attractive rewards along with some priceless experiences.`,
-        details: [
-          `Time: 9:00 AM`,
-          `Date: 06/02/2020`,
-          `Prizes worth: 15,000/-`
-        ],
+        details: [`Date: 06/02/2020`, `Prizes worth: 15,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/1BpnQ07WP3MMzl2qxGGBUEm3eXFuqLWWD/view?usp=drivesdk",
@@ -219,10 +199,11 @@ const eventData = {
     content: [
       {
         heading: "Jenga Se Jawab",
-        desc: `Well, we muggles decided to add some spice to the traditional game of Jenga. You ask why after all this time, we say... Always! Here’s the catch, the game will not only test your Jenga skills but also your Harry Potter fandom. One can pull out certain pieces that have some Harry Potter questions to earn bonus points.  
-		Are you the Chosen One? Here's your chance to catch the golden snitch. We solemnly swear that it will be fun.
-		Play the game right and win exciting prizes. Mischief managed!!`,
-        details: [`Time: 2:00 PM`, `Date: 06/02/2020`, `Prizes worth: 3500/-`],
+        desc: `We muggles decided to spice up Jenga. You ask why after all this time, we say... "Always".
+        The game will test your Jenga skills and your knowledge of the Harry Potter universe. Pull out a certain piece,
+        answer a question, and earn bonus points! Are you the Chosen One? Here's your chance to catch the golden Snitch.
+        We solemnly swear that it will be fun. Play it right and win exciting prizes. Mischief managed!`,
+        details: [`Date: 06/02/2020`, `Prizes worth: 3500/-`],
         accent: ["#622c01", "#feb36f", "#b66931"],
         detailsLink:
           "https://drive.google.com/file/d/1uWJAIpKimLHW0Y3OVkoWDxBwVETj5zts/view?usp=sharing",
@@ -235,9 +216,12 @@ const eventData = {
       },
       {
         heading: "PUZZLERIA",
-        desc: `Have you ever felt so drawn towards a puzzle that you just can't get it off your mind before solving it? Is that feeling which comes on solving a really tough puzzle, priceless to you? What's the first thought that comes to your mind when you see a Sudoku? Is your first thought when someone challenges you for a crossword puzzle 'BRING IT ON!'? Does the play with anagrams never fails to amuse you? 
-		If yes, then we have just the right thing for you. Literary Society presents a bucket full of Sudokus, anagrams, crosswords, rebuses and a lot more. Join us and cherish again the childhood puzzle days but this time...with a spice of competition. `,
-        details: [`Time: 3:00 PM`, `Date: 07/02/2020`, `Prizes worth: 4000/-`],
+        desc: `Have you ever felt so drawn towards a puzzle that you just can't get it off your mind?
+        Is the feeling of solving a really tough puzzle priceless to you? Is your first thought when someone challenges you
+        to a crossword puzzle 'BRING IT ON'? Does playing with anagrams never fail to amuse you? If so, we have
+        just the thing for you. Literary Society presents a bucket full of Sudokus, anagrams, crosswords, rebuses
+        and a lot more. `,
+        details: [`Date: 07/02/2020`, `Prizes worth: 4000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/1bYT41yX4aFO0OcyU1InXx5EAiyBxBiVw/view?usp=sharing",
@@ -250,11 +234,11 @@ const eventData = {
       },
       {
         heading: "QUESTIVAL",
-        desc: `After the success of the first edition, Literary Society is back with Questival 2.0, more gruelling, challenging and exciting than before. Be prepared with your clan to steal the spotlight, showcase your intelligence, and leave a mark! A perfect opportunity to fight it out with the MNIT's finest, make some memories along the way and work together as a team for glory. 
-		Full of several mini "quests", this festival will surely test your wits and grits, so bring your A GAME! 
-		The stakes have been upped but so has the reward. 
-		Are you up for it?`,
-        details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: 6000/-`],
+        desc: `After the success of the first edition, Questival is more gruelling and exciting than ever before.
+        Be prepared to steal the spotlight, showcase your intelligence, and leave a mark! A perfect opportunity
+        to fight it out with MNIT's finest, and make some memories along the way. Full of several mini "quests",
+        this festival will test your wits and grits, so bring your A GAME!`,
+        details: [`Date: 06/02/2020`, `Prizes worth: 6000/-`],
         accent: ["#bc538d", "#000000", "#9fddea"],
         detailsLink:
           "https://drive.google.com/file/d/1KBhIIRlFMI7Jhn4S3zJTkumoizp-KzNs/view?usp=sharing",
@@ -266,14 +250,14 @@ const eventData = {
         eventID: "2"
       },
       {
-        heading: "HINDI KAVYAPATH",
+        heading: "हिंदी  काव्यपाठ",
         desc: `प्रियसी की हो चाह
-		या युद्ध की हो राह
+		या युद्ध की हो राह,
 		मार्मिक मुद्दों पर महत्वपूर्ण बोली
-		या फिर झोली भर हँसी ठिठोली
+		या फिर झोली भर हँसी ठिठोली|
 		जीवन के प्रत्येक रंगों को शब्दों की सीमा में बांध कर ही एक आम मनुष्य कवि या शायर बन जाता है। यह सब महज शब्दों की सुंदरता ही तो है जो अपने हाव-भाव से इस कदर हमारे दिल को छू लेती है कि हम इन्हीं शब्दों को जीना शुरू कर देते हैं।
 		आईये जिंदगी के कुछ अनमोल पन्नो को पलटें और अपनी कविताओं को डायरी के पन्नों से आजाद कर आम जन तक पहुचायें। लिटरेरी सोसाइटी प्रस्तुत करती है *'काव्यपाठ'* एक नया मंच आपकी कविताओं के लिए।`,
-        details: [`Time: 11:00 AM`, `Date: 07/02/2020`, `Prizes worth: 4000/-`],
+        details: [`Date: 07/02/2020`, `Prizes worth: 4000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/14tpxxgoSa_x_N0oHPSLYLKYla6DlpDIX/view?usp=sharing",
@@ -288,7 +272,7 @@ const eventData = {
         heading: "EK BAAR KI BAAT HAI",
         desc: `Da Vinci did it with his brush, Shelly with his pen and Einstein with his imagination- anything that has gone down in the history has a tinge of ingenuity in it. Let the symphony of your thoughts flow through your quill onto a blank canvas. 
 		Will your creation make people burst into peals of laughter or scare them out of their wits with its eerie ambiance? Be eccentric, innovative and appeal the crowd with your words. `,
-        details: [`Time: 3:30 PM`, `Date: 06/02/2020`, `Prizes worth: 4000/-`],
+        details: [`Date: 06/02/2020`, `Prizes worth: 4000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/1I8TsBc1NBvkLwLd6w_Loame0Dhs9HqBA/view?usp=sharing",
@@ -303,7 +287,7 @@ const eventData = {
         heading: "JUST A MINUTE(JAM)",
         desc: `Speech is power, speech is to persuade, to convert, to compel. And if the power of speech lies within you, then we have just the right thing in the hat. Just-A-Minute (JAM) is the ultimate test of wit and thinking on your feet.
 		Can you make it through sixty seconds of uninterrupted vocalisation of your thoughts, without repetition, or deviation? Or will you give in to the pressure and have your competitors pounce on you in an instant?`,
-        details: [`Time: 9:00 AM`, `Date: 07/02/2020`, `Prizes worth: 4500/-`],
+        details: [`Date: 07/02/2020`, `Prizes worth: 4500/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/1HSq9VxrHcS17ncW95Q0OM25ff9gKgSLy/view?usp=sharing",
@@ -321,21 +305,18 @@ const eventData = {
       "https://i.ibb.co/fHrpjG9/Whats-App-Image-2020-01-08-at-14-19-55.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/B27TsSK/picsaga.jpg",
-      "https://i.ibb.co/h8cdKc8/snip-n-stich.jpg"
+      "https://i.ibb.co/h8cdKc8/snip-n-stich.jpg",
+      "https://i.ibb.co/B27TsSK/picsaga.jpg"
     ],
     content: [
       {
         heading: "Film Festival",
-        desc: `Roll, camera, action! 
-				Filmmaking is an important artform, which not only serves as a mode of recreation, but also is a powerful medium for educating the audience. Do you wish to tell stories full of emotions, action and drama? Do you too dream of sharing your masterpiece with the whole world? Capture the exciting stories and bring change in you as well as society. The wait for a world-class film festival is over; even international talents will display their work here. So, register yourself and bring out your best as a filmmaker.`,
-        details: [
-          `Venue: VLTC-407`,
-          `Time: 1300 HRS`,
-          `Date: 06/02/2020`,
-          `Prizes worth: 500,000/-`
-        ],
-        details: [`Time: 10:00 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
+        desc: `Roll, camera, action! Filmmaking is an artform which serves as a mode of recreation and as a powerful medium
+        for educating the audience. Do you wish to tell stories full of emotions, action and drama?
+        Capture the exciting stories and bring about change in yourself as well as in society. The wait
+        for a world-class film festival is over. Register to bring out your best as a filmmaker.`,
+        details: [`Date: 06/02/2020`, `Prizes worth: 500,000/-`],
+        details: [`Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -347,8 +328,11 @@ const eventData = {
       },
       {
         heading: "MOMENTS'20",
-        desc: `To Be Revealed`,
-        details: [`Time: 9:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        desc: `Love to capture the emotions in photographs? Photography is capturing the 'moments'. Photographs are
+        an instant out of time, altering life by holding it still. Moments'20 is a perfect platform for
+        exhibiting your photographs; an international platform where you'll compete across
+        multiple categories and have a chance of winning exciting prizes.`,
+        details: [`Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -360,8 +344,11 @@ const eventData = {
       },
       {
         heading: "PHOTOGRAPHY WORKSHOP",
-        desc: `Photography, the epitome of art,  is a life long journey that enchants millions upon millions of onlookers. The skill of capturing a luscious landscape or a chaotic city, can always be improved upon. Be a part of our photography workshop to know your camera intimately. Come and learn the terminology and how it impacts your photograph. Seize this opportunity to armour your skills to portray your stories without words.`,
-        details: [`Time: 10:00 AM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
+        desc: `Photography, the epitome of art, enchants millions of onlookers.
+        To develop the knack for capturing a luscious landscape or a chaotic city, 
+        learn about your camera, the terminology, and how it impacts your photograph.
+        Seize this opportunity to bolster the skill of portraying stories without words.`,
+        details: [`Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -372,22 +359,11 @@ const eventData = {
         eventID: "8"
       },
       {
-        heading: "PIC SAGA",
-        desc: `To Be Revealed`,
-        details: [`Time: TBA`, `Date: TBA`, `Prizes worth: TBA/-`],
-        accent: ["#00c176", "#fcfce8", "#f03c5f"],
-        detailsLink: "",
-        canRegister: true,
-        registerConstraints: {
-          minTeamSize: 1,
-          maxTeamSize: 5
-        },
-        eventID: "9"
-      },
-      {
-        heading: "SNAP N SNITCH",
-        desc: `To Be Revealed`,
-        details: [`Time: TBA`, `Date: TBA`, `Prizes worth: TBA/-`],
+        heading: "SNIP N STITCH",
+        desc: `Every photo portrays a story. The beauty of the components is in the way it is stitched.
+        We bring forth an opportunity for you to showcase your creativity. Create a Photoshop wonder from
+        the given stock photos in Blitzschlag 2020. Challenge your Photoshop skills and stand a chance to win!`,
+        details: [`Prizes worth: TBA/-`],
         accent: ["#0192cd", "#2b4508", "#7b7b77"],
         detailsLink: "",
         canRegister: true,
@@ -399,8 +375,11 @@ const eventData = {
       },
       {
         heading: "PIC SAGA",
-        desc: `To Be Revealed`,
-        details: [`Time: TBA`, `Date: TBA`, `Prizes worth: TBA/-`],
+        desc: `Do you love stories? Are you passionate about depicting your thoughts? Here is a chance for you to
+        weave stories out of photographs. Every photographer is a story teller; each photograph holds an emotion.
+        For Blitzschlag 2020, capture your oneiric stories in a photograph, and get a chance to win exhilarating
+        prizes while showcasing your talent.`,
+        details: [ `Date: TBA`, `Prizes worth: TBA/-`],
         accent: ["#ffc75a", "#565455", "#f03c5f"],
         detailsLink: "",
         canRegister: true,
@@ -428,7 +407,7 @@ const eventData = {
       {
         heading: "MOTIF-FILION",
         desc: `To Be Revealed`,
-        details: [`Time: 12:00 PM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
+        details: [ `Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#8b1d64", "#854593", "#2a3d78"],
         detailsLink:
           "https://drive.google.com/file/d/1UQ4QiS27ODjLROByd6yvC1DAGA8myccX/view?usp=sharing",
@@ -442,7 +421,7 @@ const eventData = {
       {
         heading: "TRASHION",
         desc: `Fashion has never been the same. It is always about the contemporary which never ceases to amaze us, does it? The Trashion Show exhibits clothing made entirely from recycled materials. It is a way to introduce people to the little things we can do for environment. Trashion Show is to see how a participant can design a dress out of complete trash.This  small step will indeed make a great difference.`,
-        details: [`Time: 2:00 PM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
+        details: [ `Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/1jg95Tu-0FOwetVWNI6pmuw5UUMNh6PCc/view?usp=sharing",
@@ -456,7 +435,7 @@ const eventData = {
       {
         heading: "TINT A TOP",
         desc: `We’ve always painted shirts- at times unknowingly while dropping , or it could be football impressions on  jersey while playing. So here in TINT A TOP, showcase your fashion mantra through T-shirt painting. Turn on your creative imaginations and show what your style secret is all about! `,
-        details: [`Time: 3:00 PM`, `Date: 06/02/2020`, `Prizes worth: 3,000/-`],
+        details: [`Date: 06/02/2020`, `Prizes worth: 3,000/-`],
         accent: ["#15b7b6", "#68234c", "#dc5894"],
         detailsLink:
           "https://drive.google.com/file/d/1as-VcKrdy-KmiB4imccM1rKkOPlobREE/view?usp=sharing",
@@ -470,7 +449,7 @@ const eventData = {
       {
         heading: "ART EXHIBITION",
         desc: `EXPLORA brings you a platform to showcase your artistic talent. Participants are required to submit there artwork in jpg format. If participants are found using someone else's artwork then they'll be disqualified ! So make sure you send us your own artwork. The selected entries will be a part of ART EXHIBITION.`,
-        details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        details: [ `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#0f4792", "#334349", "#45838c"],
         detailsLink:
           "https://drive.google.com/file/d/1K4mapW07WTdyZZmV3y_AjhL93yjHWQXr/view?usp=sharing",
@@ -486,7 +465,7 @@ const eventData = {
         desc: `Want to capture MNIT artistically? Well, here’s the opportunity to paint it down. 
         Live painting is a form of visual performance art, in which artists complete a visual art piece in a public performance Participants would be given 2x2 canvas to paint any part of MNIT they like and submit it in the given time. Prize would be given to the most realistic one. 
         `,
-        details: [`Time: 1:30 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
+        details: [ `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/1hTd_shomF3jMYszFoO3zyTwiTVTiobtt/view?usp=sharing",
@@ -502,7 +481,7 @@ const eventData = {
         desc: `How often have we tried painting differently? Art carries the capacity of such creativity which has no boundaries. So here comes Far Apart art competition which promises fun and thrill together.
         The participant will have to tie the brush and bamboo sticks given to obtain a required length. Then he/she has to sit on a chair and draw with the long brush he/she has made. The best drawing would be declared as winner.
         `,
-        details: [`Time: 9:30 AM`, `Date: 06/02/2020`, `Prizes worth: 3,000/-`],
+        details: [ `Date: 06/02/2020`, `Prizes worth: 3,000/-`],
         accent: ["#272b46", "#2d1c15", "#ea634f"],
         detailsLink:
           "https://drive.google.com/file/d/1HjOId-NH3faP42x3ybSV3mAbSzUOhbK-/view?usp=sharing",
@@ -520,7 +499,7 @@ const eventData = {
         Participants are required to bring their own acrylic colors or any other medium of paint that they want to use on canvas shoes. Designs will be judged based on creativity, originality and overall execution.
         `,
         details: [
-          `Time: 11:30 AM`,
+          
           `Date: 06/02/2020`,
           `Prizes worth: 3,000/-`
         ],
@@ -539,7 +518,7 @@ const eventData = {
         desc: `Do you take pride of your photographic memory? Or think of yourself as an apt communicator? Here comes a real test for you. In the teams of two, one person is shown a picture of a structural form for 10 seconds which will have to be compiled in the exact same form with lego blocks solely on the basis of their teammate’s memory.  
         Fun, laughter,thrill all come together on this platform. Join us with your partner in crime and claim the ultimate prize!
         `,
-        details: [`Time: 10:00 AM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
+        details: [ `Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/1nQvk0TlPOt57VYFY1v0o7FTLXlI0iyNj/view?usp=sharing",
@@ -556,7 +535,7 @@ const eventData = {
         Participants will be provided with colors and will have to paint their respective partner's face with creative and artistical manuals of their thoughts.
         So get ready to make your face a canvas!
         `,
-        details: [`Time: 11:00 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
+        details: [ `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#2b27a6", "#1c1e45", "#c73564"],
         detailsLink:
           "https://drive.google.com/file/d/196NnYHlRrzPsIf4mEG1uKsoY5eGwY8TQ/view?usp=sharing",
@@ -571,14 +550,14 @@ const eventData = {
   },
   edcell: {
     carImages: [
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
+      "https://i.ibb.co/qMsYxPB/Whats-App-Image-2020-01-20-at-01-23-39.jpg",
+      "https://i.ibb.co/c3kmBB9/Whats-App-Image-2020-01-20-at-01-23-10.jpg"
     ],
     content: [
       {
         heading: "ASPIRE BUSINESS QUIZ",
         desc: `Aspire Business quiz brings a different take on quizzing and polishes the corporate knowledge of the participants. Do you think you can survive the onslaught of rapid fire? Are you keen enough to unfold an answer from a set of hints? Aspire Business Quiz tests all of that and more. Get into the drive of competition, showcase your corporate and current awareness and get the rare pieces to your puzzle of knowledge solved.`,
-        details: [`Time: 11:00 AM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
+        details: [ `Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -591,7 +570,7 @@ const eventData = {
       {
         heading: "STARTUP NIVESH",
         desc: `Step into the hubbub of stock market, with the closest to reality simulation of Start-up Nivesh. Improve your analysis on the market situations and test your hunches with virtual trades. Mimicking the 'Dalal Street' of Bombay Stock Exchange, Start-up Nivesh brings the excitement and nail-biting experience of a chaotic-yet-professional investment hub and packs the bundle in a room for the participants to enjoy.`,
-        details: [`Time: 10:00 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
+        details: [ `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/1Gw-JUqj8W5U1XJ8MwDTd78en6PAdGd79/view?usp=sharing",
@@ -614,8 +593,8 @@ const eventData = {
       {
         heading: "TAMASHA",
         desc: `With the sleeves rolled up, energy high in the blood, voice being raised, bringing the audience at your spot and binding them with jaw dropping performances, Tamasha is  filled with intensity, humor, parodies, poetry and everything that can be created.
-		The street play, having all shades of reality while creatively spreading social awareness, bringing out new topics and quizzing peoples brains makes it one of the most powerful form of dramatics. So, come and showcase your mind as we lay in wait for the big TAMASHA to unfold!!`,
-        details: [`Time: 11:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+		The street play, having all shades of reality while creatively spreading social awareness, bringing out new topics and quizzing peoples brains makes it one of the most powerful form of dramatics. `,
+        details: [ `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/1654eLV600ORPVeVotFkiJcGmcAOtCWpk/view?usp=sharing",
@@ -631,7 +610,7 @@ const eventData = {
         desc: `“ Life is a theatre set in which there are but few practicable entrances.”
 		We all have been dramatic in our life, acting in each emotion-love, hate, anger or joy. Now it's time for you to put some life on stage - Life that is created by a writer, managed by a director and lived by an actor. It's not only about acting, script, dialogues and lights, rather it's about you living that character on stage, bringing life to audience. So, put on your costumes and let your character ravish the stage as soon as those three words are spoken:
 		 LIGHTS….CAMERA….ACTION !`,
-        details: [`Time: 11:00 AM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#de6145", "#6d361b", "#985834"],
         detailsLink:
           "https://drive.google.com/file/d/1YvunsF0PojmugGPu6grUKeKxpHLSUG5i/view?usp=sharing",
@@ -645,7 +624,7 @@ const eventData = {
       {
         heading: "MOVIE SCREENING",
         desc: `Movies spark ideas, discussions, interests and are more than just pure entertainment. Movie screenings  have always been an important part of a movie's production and release cycle. Stop pondering over the movie jargon and join us at the movie screening. It's time to dim the lights and unleash the suspense.`,
-        details: [`Time: 12:30 PM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
+        details: [ `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: false,
@@ -659,18 +638,21 @@ const eventData = {
   },
   informalevents: {
     carImages: [
+      "https://i.ibb.co/vzYymk0/the-quizoner-of-azkaban-min.jpg",
+      "https://i.ibb.co/zQRx3fp/box-office-min.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/4jY8q7G/ipl-auction-min.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
+      "https://i.ibb.co/ZGBG0MX/Whats-App-Image-2020-01-20-at-01-14-16.jpg"
     ],
     content: [
       {
-        heading: "THE QUIZNER OF AZKABAN",
-        desc: `In 1997 when J K Rowling introduced  Harry Potter with the famous 'The Philosopher's Stone', nobody could have thought of a huge success approaching and since then, the number of Harry Potter followers is only increasing. Are you the one who posses the excitement of reading and going deep into the life of Harry Potter, then Blitzschlag'20 throws you a challenge, 'The Quizoner of Azkaban'. If you are confident enough, accept the challenge and show up your zeal and deep rooted love for the Harry Potter book series.`,
-        details: [`Time: 11:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        heading: "THE QUIZONER OF AZKABAN",
+        desc: `When J K Rowling first introduced  Harry Potter, nobody could have imagined its success.
+        Since then, the number of Potterheads has only increased. If you have read deep 
+        into the life of Harry Potter, Blitzschlag 2020 throws you a challenge. If you are confident enough,
+        accept it and show them a real Potterhead's worth.`,
+        details: [ `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -683,7 +665,7 @@ const eventData = {
       {
         heading: "BOX OFFICE",
         desc: `It is seen so often that we get addicted to a rhythm intensely and the beats tickle us 24×7 . Some believe that binge watching Bollywood sagas is the most savoured job.It's time to prove that this addiction is worth recognizing."Box Office- with a twist" gives the perfect opportunity to showcase being the best in knowing gimmicks of the glamorous world.`,
-        details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        details: [ `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -697,7 +679,7 @@ const eventData = {
         heading: "ESCAPE ROOM",
         desc: `One room. One escape. And a road full of puzzles in between.
         Does that idea excite you? Well, then brace up to challenge  with mind-wracking puzzles and riddles which come with the thrill of walking out of the room with exciting prizes in 'Escape Room'.`,
-        details: [`Time: 1:00 PM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -709,8 +691,8 @@ const eventData = {
       },
       {
         heading: "IPL AUCTION",
-        desc: `IPL Auctions are done, but the discussions about the teams and tactics have not stopped yet. We all enjoyed the auction, sitting in front of screen with utmost interest. But how about taking part in one ?Yes, Blitzschlag 2020 brings you 'IPL Auctions', which provides the perfect platform to showcase your shrewd cricketing and logical skills.Get ready for the ultimate showdown and pen down the strongest team on paper!`,
-        details: [`Time: 03:30 PM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        desc: `IPL Auctions are done, but the discussions about the teams and tactics have not stopped yet. We all enjoyed the auction, sitting in front of screen with utmost interest. But how about taking part in one? Yes, Blitzschlag 2020 brings you 'IPL Auctions', which provides the perfect platform to showcase your shrewd cricketing and logical skills. Get ready for the ultimate showdown and pen down the strongest team on paper!`,
+        details: [`Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -723,7 +705,7 @@ const eventData = {
       {
         heading: "MURDER MYSTERY",
         desc: `Unleash your inner Sherlock by solving a murder mystery at MNIT! The case of murder has cast a spell of fear and paranoia in MNIT and now it's your job to unravel the dark, deep secrets behind the incident and bring justice to the victim. Team up with your fellow detectives and embark upon this thrilling journey of joining the pieces of the puzzle together. Register NOW!`,
-        details: [`Time: TBA`, `Date: TBA`, `Prizes worth: TBA/-`],
+        details: [`Date: TBA`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -734,9 +716,9 @@ const eventData = {
         eventID: "42"
       },
       {
-        heading: "Kaun Banega Gyanvan -NSS QUIZ",
-        desc: `Ever thought of making into KBC and displaying your wisdom in front of a huge crowd? Your knowledge and expertise will be put to test in an exciting competition of erudite scholars. So, get ready to grab the hot seat ,as BLITZSCHLAG, in association with NSS society, brings you KBG - Kaun Banega Gyanvan. Take home the crown of ultimate genius!`,
-        details: [`Time: 11:00 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
+        heading: "Kaun Banega Gyanvan",
+        desc: `Ever thought of making into KBC and displaying your wisdom in front of a huge crowd? Your knowledge and expertise will be put to test in an exciting competition of erudite scholars. So, get ready to grab the hot seat, as Blitzschlag 2020, in association with NSS MNIT, brings you 'Kaun Banega Gyanvan'. Take home the crown of ultimate genius!`,
+        details: [`Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/open?id=1OEd3tSh-_RzLygo4aXOaS63JKLQbp3T6",
@@ -759,7 +741,7 @@ const eventData = {
       {
         heading: "DEBATE COMPETITION ",
         desc: `TO BE REVEALED`,
-        details: [`Time: 03:00 PM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -772,7 +754,7 @@ const eventData = {
       {
         heading: "MHARE DESH QUIZ",
         desc: `TO BE REVEALED`,
-        details: [`Time: 1:00 PM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -785,7 +767,7 @@ const eventData = {
       {
         heading: "INVITED LECTURE",
         desc: `TO BE REVEALED`,
-        details: [`Time: TBA`, `Date: TBA`, `Prizes worth: TBA/-`],
+        details: [`Date: TBA`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: false,
@@ -801,9 +783,14 @@ const eventData = {
     carImages: ["https://i.ibb.co/3p6jj6n/commingsoon.jpg"],
     content: [
       {
-        heading: "COMMING SOON",
-        desc: `TBA`,
-        details: [`Time: TBA`, `Date: TBA`, `Prizes worth: TBA/-`],
+        heading: "CARNIVAL",
+        desc: `Merry faces filled with exuberance blending perfectly into the
+        crowd marks the scene at a carnival. The giant Ferris Wheel
+        giving an adrenaline rush, the Columbus swinging to and fro,
+        all these death-defying rides put your heart in your throat
+        and send energy sizzling through your nerves. Brace yourself
+        if you want to join us on this adventurous ride!`,
+        details: [],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
         canRegister: false,
@@ -817,8 +804,8 @@ const eventData = {
   },
   mavericks: {
     carImages: [
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/MnwJPYY/Whats-App-Image-2020-01-20-at-01-35-07-1.jpg",
+      "https://i.ibb.co/Jc84jwz/Whats-App-Image-2020-01-20-at-01-35-07.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
     ],
     content: [
@@ -828,7 +815,7 @@ const eventData = {
         बिना शब्दों के अर्थ खोलती तस्वीर।।
         और वैसे भी कहा गया है कि एक तस्वीर हज़ार शब्दों से बढ़कर है।
         तो Blitzschlag देता है आपको मौका तस्वीरों से बात करने का, उस तस्वीर से उन हज़ार शब्दों को`,
-        details: [`Time: 01:00PM`, `Date: 06/02/20`, `Prizes worth: TBA/-`],
+        details: [`Date: 06/02/20`, `Prizes worth: TBA/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
         canRegister: false,
@@ -848,7 +835,7 @@ const eventData = {
         कहानियां तो बहुत सुनी होंगी बचपन में, पढ़ी भी होंगी, और स्कूल में पूरी भी कि होंगी तो चलो अब कहानियाँ बनाते हैं।
         हम तुम्हें तस्वीर देंगे
         तुम हमें कहानियाँ देना!`,
-        details: [`Time: 11:30 AM`, `Date: 08/02/20`, `Prizes worth: TBA/-`],
+        details: [ `Date: 08/02/20`, `Prizes worth: TBA/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
         canRegister: false,
@@ -864,7 +851,7 @@ const eventData = {
         Does this interest you? Have you got what it takes to give your everything in the pursuit of truth? 
         Well, Acta Diurna is here for you to shine under the light of investigative journalism. The path is a swamp full of lies and it's your job to make your way to the ultimate truth. 
         Are you ready for the challenge? Well, then register now!`,
-        details: [`Time: 10:30 AM`, `Date: 07/02/20`, `Prizes worth: TBA/-`],
+        details: [`Date: 07/02/20`, `Prizes worth: TBA/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
         canRegister: false,

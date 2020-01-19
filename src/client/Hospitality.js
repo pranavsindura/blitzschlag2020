@@ -300,7 +300,6 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 																</Form.Group>
 															</td>
 														</tr>
-														<br />
 														{/* <tr>
 															<td colSpan="1"></td>
 															<td colSpan="1">
@@ -410,6 +409,8 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 											</Card.Footer>
 										</Card>
 									</Form>
+									<br></br>
+									<br></br>
 								</div>
 							</ReactFullpage.Wrapper>
 						);
