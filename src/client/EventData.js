@@ -48,23 +48,23 @@ const eventData = {
 							{
 								heading: '',
 								list: [
-									'•	Panache is open only for college students.',
-                  '•	Crossover teams are allowed between students of different colleges. The students should be studying in a college. All should have valid college ID cards.',
-                  '•	Time limit may vary between 8-12 minutes (curtain to curtain) .Points will be strictly deducted for exceeding the time limit.',
-                  '•	Participants must follow the “The Statement” set down by the organizers. Emphasis will be given to concepts, clothing, portrays and originality showcased as per round rules.',
-                  '•	Team Size: upto 12 members who would be walking the ramp. Backstage helpers should not exceed 2 in number. 2 team members must be present to provide cues for music and lights.',
-                  '•	Teams can ask for assistance from people outside the college such as choreographers, make-up artists, but these professionals will not be considered to be a part of the team.',
-                  '•	No electrical power connections will be provided. If your costume requires power it must be part of your costume design.',
-                  '•	No explosives, profanity, political or religious statements or signage are allowed during the contest.',
-                  '•	Obscenity of any kind would lead to disqualification of the team from the event. Hence, if the team feels that any stunt or costume design can be deemed as vulgar, it is strongly advised to consult the organizers before performing it on stage. The decision of the organizers will be final in case of any disputes arising due to this.Example: No backless dresses, the length of the dress should not be less than 3 inches above the knees, etc.',
-                  '•	No branding of clothes will be allowed.',
-                  '•	The decision of the judges will be final and binding at all stages.',
-                  '•	Teams are instructed to send the soundtracks/music to be used during their performance to the organizers through mail at least a week prior to the event.',
-                  '•	The teams are instructed to bring along their soundtracks/music as a backup at the time of the fashion show.',
-                  '•	The teams will be provided with a green room for their final touch-up and they will be solely responsible for their own make up, accessories etc.',
-                  '•	The Terms and Conditions of participation are subject to change at any time without specific notice.',
-                  '•	The amended Terms and Conditions of entry will be effective immediately upon being posted on the website. It is the sole responsibility of the team to regularly visit the site to keep a check on recent updates.',
-                  '•	The Panache organizers reserve the right to remove anyone from show based on taste, danger to the audience or other contestants, or for any other reason deemed sufficient.',
+									'Panache is open only for college students.',
+                  'Crossover teams are allowed between students of different colleges. The students should be studying in a college. All should have valid college ID cards.',
+                  'Time limit may vary between 8-12 minutes (curtain to curtain) .Points will be strictly deducted for exceeding the time limit.',
+                  'Participants must follow the “The Statement” set down by the organizers. Emphasis will be given to concepts, clothing, portrays and originality showcased as per round rules.',
+                  'Team Size: upto 12 members who would be walking the ramp. Backstage helpers should not exceed 2 in number. 2 team members must be present to provide cues for music and lights.',
+                  'Teams can ask for assistance from people outside the college such as choreographers, make-up artists, but these professionals will not be considered to be a part of the team.',
+                  'No electrical power connections will be provided. If your costume requires power it must be part of your costume design.',
+                  'No explosives, profanity, political or religious statements or signage are allowed during the contest.',
+                  'Obscenity of any kind would lead to disqualification of the team from the event. Hence, if the team feels that any stunt or costume design can be deemed as vulgar, it is strongly advised to consult the organizers before performing it on stage. The decision of the organizers will be final in case of any disputes arising due to this.Example: No backless dresses, the length of the dress should not be less than 3 inches above the knees, etc.',
+                  'No branding of clothes will be allowed.',
+                  'The decision of the judges will be final and binding at all stages.',
+                  'Teams are instructed to send the soundtracks/music to be used during their performance to the organizers through mail at least a week prior to the event.',
+                  'The teams are instructed to bring along their soundtracks/music as a backup at the time of the fashion show.',
+                  'The teams will be provided with a green room for their final touch-up and they will be solely responsible for their own make up, accessories etc.',
+                  'The Terms and Conditions of participation are subject to change at any time without specific notice.',
+                  'The Panache organizers reserve the right to remove anyone from show based on taste, danger to the audience or other contestants, or for any other reason deemed sufficient.',
+                  'The amended Terms and Conditions of entry will be effective immediately upon being posted on the website. It is the sole responsibility of the team to regularly visit the site to keep a check on recent updates.',
 
 								]
 							}
@@ -183,7 +183,27 @@ const eventData = {
 						heading: 'TBA',
 						desc: '',
 						rounds: []
-					}
+          },
+          {
+            heading: '',
+            desc:'',
+            rounds: '',
+          },
+          {
+            heading: '',
+            desc:'',
+            rounds: '',
+          },
+          {
+            heading: '',
+            desc:'',
+            rounds: '',
+          },
+          {
+            heading: '',
+            desc:'',
+            rounds: '',
+          }
 				],
 				registerConstraints: {
 					minTeamSize: 1,
@@ -204,7 +224,27 @@ const eventData = {
 						heading: 'TBA',
 						desc: '',
 						rounds: []
-					}
+          },
+          {
+            heading: '',
+            desc:'',
+            rounds: '',
+          },
+          {
+            heading: '',
+            desc:'',
+            rounds: '',
+          },
+          {
+            heading: '',
+            desc:'',
+            rounds: '',
+          },
+          {
+            heading: '',
+            desc:'',
+            rounds: '',
+          }
 				],
 				canRegister: true,
 				//required even if canRegister is false
@@ -222,69 +262,30 @@ const eventData = {
 				detailsLink: '',
 				detailsPage: [
 					{
-						heading: 'DESCRIPTION',
-						desc:
-							'Being one of the most popular events, Battle of bands is the most awaited celebration of culture, aiding young minds to delve into music and the tradition associated with it.',
-						rounds: []
-					},
-					{
-						heading: 'JUDGING CRITERIA',
-						desc: 'Technique, Tightness, Overall Sync, Creativity, Overall Impact (Stage presence etc)',
-						rounds: [
-							{
-								heading: 'ROUND ONE (ONLINE ELIMINATIONS)',
-								list: [
-									'Record a 3-minute jam video in a jam room/rehearsal space (raw tracks compulsory) and rename it as “<Your BLITZ Number> - BOB” and upload it on Google drive and provide open access to everyone with the link (MANDATORY). Note that this video should not be edited or processed in any form.',
-									'Bands can also attach an another (OPTIONAL) video of their live performance or a mixed and mastered track and a short 50-60 word introduction explaining their style and previous achievements.',
-									'Bands need to send scanned copies of college ID cards of all participants in the same email.',
-									'Bands are allowed to send covers as well as original compositions through these entries.'
-								]
-							},
-							{
-								heading: 'BONUS',
-								list: [
-									'In addition to sending the video on mail, participants can also upload the same entry from their own Instagram accounts. Top entries shall be displayed on the official Blitzschlag Competitions page on Facebook and Instagram.',
-									'Participants need to tag @Blitzmnit in the video.',
-									'The hashtags #Blitz2k20 and #BOB2k20 need to be used in the caption.'
-								]
-							},
-							{
-								heading: 'ROUND TWO (FINALS)',
-								list: [
-									'Bands will be allowed a total of 15 minutes on-stage (including performance, setup and soundcheck).',
-									'Participants are required to play at least ONE original composition.'
-								]
-							}
-						]
-					},
-					{
-						heading: 'GENERAL RULES',
-						desc: '',
-						rounds: [
-							{
-								heading: '',
-								list: [
-									'Team size: 3-8',
-									'Inter-college participation is allowed but an individual can be a part of only one band',
-									'At least 2 instrumentalists are required, including 1 percussion instrument (mandatory).',
-									'Purely classical numbers are not allowed, however a classical refrain is permitted.',
-									'Obscenity (at the discretion of the judges) of any kind is not allowed and will lead to immediate disqualification. The time limit should strictly be followed. Participants will be penalized by judges for not doing so.',
-									'The decision of the judges shall be final and binding.',
-									'The decision of the organizers regarding the final line-up would be final.'
-								]
-							}
-						]
-					},
-					{
-						heading: 'PRIZE MONEY: INR 50,000/-',
+						heading: 'TBA',
 						desc: '',
 						rounds: []
-					},
-					{
-						heading: 'Contact Details',
-						desc: 'Umang : 8219263140, Devanshu : 9314655304 ',
-						rounds: []
-					}
+          },
+          {
+            heading: '',
+            desc:'',
+            rounds: '',
+          },
+          {
+            heading: '',
+            desc:'',
+            rounds: '',
+          },
+          {
+            heading: '',
+            desc:'',
+            rounds: '',
+          },
+          {
+            heading: '',
+            desc:'',
+            rounds: '',
+          }
 				],
 				canRegister: true,
 				registerConstraints: {
