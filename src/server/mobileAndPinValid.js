@@ -25,7 +25,17 @@ async function validatePIN(pin) {
     return true;
 }
 
+async function nameValidation(name) {
+    for (i = 0; i < name.length; i++) {
+        if (!((name[i] >= 'a' && name[i] < 'z') || (name[i] >= 'A' && name[i] <= 'Z') || (name[i] == ' '))) {
+            return false;
+        }
+    }
+    return true;
+}
+
 module.exports = {
     phonenumber,
-    validatePIN
+    validatePIN,
+    nameValidation
 }
