@@ -5,7 +5,9 @@ const eventData = {
       "https://i.ibb.co/nCVv2ns/bob-for-site.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/cwdBG05/mr-miss-blitz.jpg"
+      "https://i.ibb.co/cwdBG05/mr-miss-blitz.jpg",
+      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
     ],
     content: [
       {
@@ -137,7 +139,7 @@ const eventData = {
         desc: `The most amazing thing about instrumental music is that everyone can have their own interpretations; no lyrics direct what you should feel. It allows emotions to shine in their own character, without presuming to display them as real or imaginary expressions. On that note, Blitzschlag 2020 presents 'Dhun', an instrumental music showdown, the ultimate test of your musical prowess. Register yourselves now to become a part of the euphonious extravaganza!`,
         details: [`Time: 2:00 PM`, `Date: 07/02/2020`, `Prizes worth: 14,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1dN88g-Hpr6Fs86PSoXLHf1TKXWhyvAOO/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -178,7 +180,7 @@ const eventData = {
         desc: `Nritya is a slow and expressive aspect of the dance that attempts to communicate feelings, storyline particularly with spiritual themes in Hindu dance traditions. Dance is a form of meditation and prayer that keeps our body and  mind peaceful. In Nrityanjali, get ready to showcase your skills and expertise in classical dancing at Blitzschlag 2020.`,
         details: [`Time: 1:00 PM`, `Date: 06/02/2020`, `Prizes worth: 10,000/-`],
         accent: ["#532f2f", "#010000", "#be5f43"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/open?id=1OEd3tSh-_RzLygo4aXOaS63JKLQbp3T6",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -724,7 +726,7 @@ const eventData = {
         desc: `Ever thought of making into KBC and displaying your wisdom in front of a huge crowd? Your knowledge and expertise will be put to test in an exciting competition of erudite scholars. So, get ready to grab the hot seat ,as BLITZSCHLAG, in association with NSS society, brings you KBG - Kaun Banega Gyanvan. Take home the crown of ultimate genius!`,
         details: [`Time: 11:00 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/open?id=1OEd3tSh-_RzLygo4aXOaS63JKLQbp3T6",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
