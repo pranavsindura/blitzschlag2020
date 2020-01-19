@@ -43,13 +43,13 @@ export default class Society extends Component {
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  For the breadth of knowledge literature gives, the moral
-                  values it carries, and the enjoyment it provides, it is an
-                  essential element for every budding student. To provide
-                  exposure to good literary works, the Literary society of MNIT
-                  provides an ideal platform to every aspiring writer of the
-                  institute to ameliorate their writing prowess and enhance
-                  their dexterity.
+                  Literature is an essential element for every budding student,
+                  what with the breadth of knowledge it gives, the moral values
+                  it carries, and the enjoyment it provides. To provide exposure
+                  to good literary works, the Literary society of MNIT provides
+                  an ideal platform to every aspiring writer of the institute to
+                  ameliorate their writing prowess and enhance their lingual
+                  dexterity.
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/literary">
@@ -119,12 +119,12 @@ export default class Society extends Component {
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  The Entrepreneurship Development cell or ED-cell , aims to
-                  re-kindle the thoughts and learnings of the corporate world
+                  The Entrepreneurship Development Cell or ED Cell aims to
+                  rekindle the thoughts and learnings of the corporate world
                   among students who have devoted their minds to technical
                   education. Its objectives include creating an atmosphere to
                   promote innovative thinking and getting the college aquainted
-                  with the situations faced by minds in the real business world.
+                  with the situations which are faced in the business world.
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/edcell">
@@ -156,13 +156,13 @@ export default class Society extends Component {
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  An unorthodox or independent minded person,this isn't just
-                  another line, this is the meaning of the word maverick, and
-                  that's what 'The Mavericks' is all about, a club that ardently
-                  supports unorthodox approach, that has the the capability to
+                  'An unorthodox or independent minded person', this isn't just
+                  another line, this is the meaning of the word 'maverick', and
+                  that's what 'The Mavericks' is all about: the club ardently
+                  supports an unorthodox approach; it has the the capability to
                   bring about a change and provides an ideal platform for the
-                  same, using mass and media for communication and further
-                  publicity.
+                  same, using mass media for communication and publicity of
+                  current issues.
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/mavericks">
@@ -194,10 +194,10 @@ export default class Society extends Component {
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  Drama Is Life is the official drama group of MNIT.Drama is
-                  an important tool for preparing students to live and work in a
-                  world that is increasingly team-oriented rather than
-                  hierarchical.It provides a platform to interested artists and
+                  Drama Is Life is the official dramatics group of MNIT.
+                  Drama is an important tool for preparing students to live and
+                  work in a world that is increasingly team-oriented rather than
+                  hierarchical. It provides a platform to interested artists and
                   helps them to work on their theatrical prowess. The students
                   get a chance to refine their acting skills to a professional
                   level and embrace leadership qualities.
@@ -233,10 +233,10 @@ export default class Society extends Component {
                 <div className="text-pc">
                   <br></br>
                   Art is not what you see, but what you make others see. Fine
-                  arts provides learners with a number of non-academic benefits
-                  such as improved emotional expression, social harmony and
-                  cultural exposure. The Fine Arts Society allows students to
-                  procure innovative skills through a plethora of events in
+                  arts provides enthusiasts with a number of non-academic
+                  benefits such as improved emotional expression, social harmony
+                  and cultural exposure. The Fine Arts Society allows students
+                  to procure innovative skills through a plethora of events in
                   creative arts and designing , to put them into use during the
                   organization of various college events.
                 </div>
@@ -272,11 +272,11 @@ export default class Society extends Component {
                 <div className="text-pc">
                   <br></br>
                   The Film and Photography Club has been nourishing keen
-                  photographers and film makers for years, cultivating technical
-                  aspects of photography and film making. Organizing state of
-                  the art workshops and competitions regularly are the prime
-                  reasons behind the development of passionate photographers and
-                  film makers.
+                  photographers and film makers for years, spreading the
+                  technical aspects of photography and film making. The
+                  organization of state of the art workshops and competitions
+                  regularly are prime reasons behind the development of
+                  passionate photographers and film makers at MNIT.
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/fnp">
@@ -310,12 +310,13 @@ export default class Society extends Component {
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  For all the mystery lovers, cricket geeks, Bollywood lovers or
-                  good old potter heads, we got you covered. Blitzschlag 2020
-                  presents to you the set of extremely engrossing informal
-                  events- Murder Mystery, Escape room, IPL Auction, Box Office
-                  and Quizoner of Azkaban. Put your brains to test and compete
-                  among the very best, with a blend of fun and enthusiasm.
+                  For all the mystery lovers, cricket geeks, Bollywood lovers
+                  and good old Potterheads out there, we've got you covered.
+                  Blitzschlag 2020 presents to you a set of extremely engrossing
+                  informal events: Murder Mystery, Escape room, IPL Auction, Box
+                  Office and Quizoner of Azkaban. Put your brains to the test
+                  and compete against the very best; cultivate your enthusiasm
+                  and have some fun!
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/informalevents">
@@ -348,13 +349,13 @@ export default class Society extends Component {
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  Do you know the recipe of a perfect BLOCKBUSTER? Have the
-                  stage set ablaze with the group dances of Ramba Samba, blend
-                  it with the tunes of Battle of Bands, squeeze in the colours
-                  of fashion and style with Panache, and finally sprinkle the
-                  spice of excitement with the most awaited Cultural night. Get
-                  ready to lose yourself in the flavours of Blitzschlag with
-                  diverse opportunities and whooping prizes all packed in a
+                  Do you know the recipe for a perfect BLOCKBUSTER? Set the
+                  stage ablaze with the group dances of Ramba Samba, blend it
+                  with the tunes of Battle of Bands, squeeze in the colours of
+                  fashion and style with Panache, and finally sprinkle the spice
+                  of excitement with the most awaited Cultural Nights. Get ready
+                  to lose yourself in the flavours of Blitzschlag with diverse
+                  opportunities and whooping prizes all packed into a
                   scintillating streak of events!
                 </div>
                 <div className="link-pc-to-cat">
@@ -388,12 +389,13 @@ export default class Society extends Component {
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  Vyaktitva Srijan Society MNIT is an esteemed society
-                  established mainly for the development of one's personality
-                  and helps an individual to grow socially and aesthetically.
+                  Vyaktitva Srijan Society of MNIT is an esteemed society
+                  established primarily for the development of one's
+                  personality, along the guidelines given by Swami Vivekananda.
+                  It helps an individual to grow socially and aesthetically.
                   Every year, this society actively participates in social
-                  service events such as teaching underprivileged
-                  children,donating clothes to the needy etc.
+                  service events such as teaching underprivileged children,
+                  donating clothes to the needy etc.
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/vss">
@@ -425,13 +427,12 @@ export default class Society extends Component {
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  Merry faces filled with exuberance perfectly blending in the
-                  hustle and bustle marks a scene at carnival. The giant Ferris
-                  wheel giving adrenaline gush, the Columbus swing swaying to
-                  and fro, droning sound of engines, all these death-defying
-                  rides give lump in your throat and marks ultimate energy
-                  running through your veins. Brace yourself to join us on this
-                  adventurous ride!
+                  Merry faces filled with exuberance blending perfectly into the
+                  crowd marks the scene at a carnival. The giant Ferris Wheel
+                  giving an adrenaline rush, the Columbus swinging to and fro,
+                  all these death-defying rides put your heart in your throat
+                  and send energy sizzling through your nerves. Brace yourself
+                  if you want to join us on this adventurous ride!
                 </div>
                 <div className="link-pc-to-cat">
                   <Link to="/events/carnival">
@@ -532,12 +533,13 @@ export default class Society extends Component {
               >
                 Literary
               </p>
-              For the breadth of knowledge literature gives, the moral values it
-              carries, and the enjoyment it provides, it is an essential element
-              for every budding student. To provide exposure to good literary
-              works, the Literary society of MNIT provides an ideal platform to
-              every aspiring writer of the institute to ameliorate their writing
-              prowess and enhance their dexterity.
+              Literature is an essential element for every budding student, what
+              with the breadth of knowledge it gives, the moral values it
+              carries, and the enjoyment it provides. To provide exposure to
+              good literary works, the Literary society of MNIT provides an
+              ideal platform to every aspiring writer of the institute to
+              ameliorate their writing prowess and enhance their lingual
+              dexterity.
             </div>
             <Link to="/events/literary">
               <Button
@@ -654,12 +656,12 @@ export default class Society extends Component {
               >
                 ED Cell
               </p>
-              The Entrepreneurship Development cell or ED-cell , aims to
-              re-kindle the thoughts and learnings of the corporate world among
-              students who have devoted their minds to technical education. Its
+              The Entrepreneurship Development Cell or ED Cell aims to rekindle
+              the thoughts and learnings of the corporate world among students
+              who have devoted their minds to technical education. Its
               objectives include creating an atmosphere to promote innovative
               thinking and getting the college aquainted with the situations
-              faced by minds in the real business world.
+              which are faced in the business world.
             </div>
             <Link to="/events/edcell">
               <Button
@@ -699,12 +701,13 @@ export default class Society extends Component {
               >
                 Maverics
               </p>
-              An unorthodox or independent minded person,this isn't just another
-              line, this is the meaning of the word maverick, and that's what
-              'The Mavericks' is all about, a club that ardently supports
-              unorthodox approach, that has the the capability to bring about a
-              change and provides an ideal platform for the same, using mass and
-              media for communication and further publicity.
+              'An unorthodox or independent minded person', this isn't just
+              another line, this is the meaning of the word 'maverick', and
+              that's what 'The Mavericks' is all about: the club ardently
+              supports an unorthodox approach; it has the the capability to
+              bring about a change and provides an ideal platform for the same,
+              using mass media for communication and publicity of current
+              issues.
             </div>
             <Link to="/events/mavericks">
               <Button
@@ -774,13 +777,13 @@ export default class Society extends Component {
               >
                 Dramatics
               </p>
-              Drama Is Life is the official drama group of MNIT.Drama is
+              Drama Is Life is the official dramatics group of MNIT. Drama is
               an important tool for preparing students to live and work in a
-              world that is increasingly team-oriented rather than
-              hierarchical.It provides a platform to interested artists and
-              helps them to work on their theatrical prowess. The students get a
-              chance to refine their acting skills to a professional level and
-              embrace leadership qualities.
+              world that is increasingly team-oriented rather than hierarchical.
+              It provides a platform to interested artists and helps them to
+              work on their theatrical prowess. The students get a chance to
+              refine their acting skills to a professional level and embrace
+              leadership qualities.
             </div>
             <Link to="/events/dramatics">
               <Button
@@ -821,8 +824,8 @@ export default class Society extends Component {
                 Fine Arts
               </p>
               Art is not what you see, but what you make others see. Fine arts
-              provides learners with a number of non-academic benefits such as
-              improved emotional expression, social harmony and cultural
+              provides enthusiasts with a number of non-academic benefits such
+              as improved emotional expression, social harmony and cultural
               exposure. The Fine Arts Society allows students to procure
               innovative skills through a plethora of events in creative arts
               and designing , to put them into use during the organization of
@@ -897,11 +900,11 @@ export default class Society extends Component {
                 Film & Photography
               </p>
               The Film and Photography Club has been nourishing keen
-              photographers and film makers for years, cultivating technical
-              aspects of photography and film making. Organizing state of the
-              art workshops and competitions regularly are the prime reasons
-              behind the development of passionate photographers and film
-              makers.
+              photographers and film makers for years, spreading the technical
+              aspects of photography and film making. The organization of state
+              of the art workshops and competitions regularly are prime reasons
+              behind the development of passionate photographers and film makers
+              at MNIT.
             </div>
             <Link to="/events/fnp">
               <Button
@@ -941,12 +944,13 @@ export default class Society extends Component {
               >
                 Informal Events
               </p>
-              For all the mystery lovers, cricket geeks, Bollywood lovers or
-              good old potter heads, we got you covered. Blitzschlag 2020
-              presents to you the set of extremely engrossing informal events-
-              Murder Mystery, Escape room, IPL Auction, Box Office and Quizoner
-              of Azkaban. Put your brains to test and compete among the very
-              best, with a blend of fun and enthusiasm.
+              For all the mystery lovers, cricket geeks, Bollywood lovers and
+              good old Potterheads out there, we've got you covered. Blitzschlag
+              2020 presents to you a set of extremely engrossing informal
+              events: Murder Mystery, Escape room, IPL Auction, Box Office and
+              Quizoner of Azkaban. Put your brains to the test and compete
+              against the very best; cultivate your enthusiasm and have some
+              fun!
             </div>
             <Link to="/events/informalevents">
               <Button
@@ -1016,13 +1020,12 @@ export default class Society extends Component {
               >
                 Flagship Events
               </p>
-              Do you know the recipe of a perfect BLOCKBUSTER? Have the stage
-              set ablaze with the group dances of Ramba Samba, blend it with the
-              tunes of Battle of Bands, squeeze in the colours of fashion and
-              style with Panache, and finally sprinkle the spice of excitement
-              with the most awaited Cultural night. Get ready to lose yourself
-              in the flavours of Blitzschlag with diverse opportunities and
-              whooping prizes all packed in a scintillating streak of events!
+              Do you know the recipe for a perfect BLOCKBUSTER? Set the stage
+              ablaze with Ramba Samba, blend in Battle of Bands, squeeze in some
+              Panache, and finally sprinkle the spice of excitement with the
+              most awaited Cultural Nights. Get ready to lose yourself in the
+              flavours of Blitzschlag with diverse opportunities and prizes all
+              packed into a scintillating streak of events!
             </div>
             <Link to="/events/flagship">
               <Button
@@ -1062,11 +1065,12 @@ export default class Society extends Component {
               >
                 Vyaktitva Srijan
               </p>
-              Vyaktitva Srijan Society MNIT is an esteemed society established
-              mainly for the development of one's personality and helps an
+              Vyaktitva Srijan Society of MNIT is an esteemed society
+              established primarily for the development of one's personality,
+              along the guidelines given by Swami Vivekananda. It helps an
               individual to grow socially and aesthetically. Every year, this
               society actively participates in social service events such as
-              teaching underprivileged children,donating clothes to the needy
+              teaching underprivileged children, donating clothes to the needy
               etc.
             </div>
             <Link to="/events/vss">
@@ -1137,12 +1141,12 @@ export default class Society extends Component {
               >
                 Carnival
               </p>
-              Merry faces filled with exuberance perfectly blending in the
-              hustle and bustle marks a scene at carnival. The giant Ferris
-              wheel giving adrenaline gush, the Columbus swing swaying to and
-              fro, droning sound of engines, all these death-defying rides give
-              lump in your throat and marks ultimate energy running through your
-              veins. Brace yourself to join us on this adventurous ride!
+              Merry faces filled with exuberance blending perfectly into the
+              crowd marks the scene at a carnival. The giant Ferris Wheel giving
+              an adrenaline rush, the Columbus swinging to and fro, all these
+              death-defying rides put your heart in your throat and send energy
+              sizzling through your nerves. Brace yourself if you want to join
+              us on this adventurous ride!
             </div>
             <Link to="/events/carnival">
               <Button
@@ -1167,9 +1171,9 @@ export default class Society extends Component {
   }
   render() {
     return (
-      <div>
+      <div style={{ background: "#e13663" }}>
         <Splash images={this.images} />
-        <a href="https://blitz20.herokuapp.com/">
+        <a href="https://http://www.blitzschlag.co.in">
           <img
             style={{
               height: "auto",

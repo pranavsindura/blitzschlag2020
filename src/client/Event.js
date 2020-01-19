@@ -309,7 +309,7 @@ class Event extends Component {
 						return (
 							<ReactFullpage.Wrapper>
 								<div
-									className="section content eventsection"
+									className="section content"
 									style={{
 										background: this.data.content[currSlide].accent[1],
 										transition: 'all .5s ease-in-out'
@@ -366,7 +366,7 @@ class Event extends Component {
 												</div>
 											</div>
 											<div className="button-holdermob">
-												<a href={this.data.content[currSlide].detailsLink} target="_blank">
+												{/* <a href={this.data.content[currSlide].detailsLink} target="_blank">
 													<div
 														className="button-moreinfomob"
 														style={{
@@ -376,7 +376,7 @@ class Event extends Component {
 													>
 														<p>Details</p>
 													</div>
-												</a>
+												</a> */}
 												{this.data.content[currSlide].canRegister ? (
 													<div
 														className="button-registermob"
@@ -450,7 +450,7 @@ class Event extends Component {
 														})}
 													</div>
 													<div className="button-holder">
-														<a
+														{/* <a
 															href={this.data.content[currSlide].detailsLink}
 															target="_blank"
 														>
@@ -464,7 +464,7 @@ class Event extends Component {
 															>
 																<p>Details</p>
 															</div>
-														</a>
+														</a> */}
 														{this.data.content[currSlide].canRegister ? (
 															<div
 																className="button-register"
@@ -643,7 +643,7 @@ class Event extends Component {
 								</div>
 								{/* </div> */}
 								<div
-									className="section eventsection"
+									className="section"
 									style={{
 										background: this.data.content[currSlide].accent[1],
 										transition: 'all .5s ease-in-out'

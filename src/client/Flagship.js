@@ -183,7 +183,9 @@ class Flagship extends Component {
 			registerDetails.teamMembers.push({ blitzID: '', blitzPIN: '' });
 		}
 		// this.setState({ registerDetails });
-		this.setState({ currSlide: (currSlide + 1) % this.data.carImages.length, registerDetails, submitMessage: '' });
+		this.setState({ currSlide: (currSlide + 1) % this.data.carImages.length, registerDetails, submitMessage: '' },()=>{
+			fullpage_api.reBuild();
+		});
 	};
 	prevSlide = () => {
 		const { currSlide } = this.state;
@@ -202,6 +204,8 @@ class Flagship extends Component {
 			currSlide: (currSlide - 1 + this.data.carImages.length) % this.data.carImages.length,
 			registerDetails,
 			submitMessage: ''
+		},()=>{
+			fullpage_api.reBuild();
 		});
 	};
 	showRegister = (fullpageApi) => {
@@ -293,7 +297,7 @@ class Flagship extends Component {
 		for(let i=0;i<list.length;i++)
 		{
 			arr.push(
-				<li style={{color: 'white'}}>{list[i]}</li>
+				<li style={{color: 'white', paddingRight: '10px'}}>{list[i]}</li>
 			);
 		}
 		return arr;
@@ -304,7 +308,7 @@ class Flagship extends Component {
 		{
 			let info = (
 				<div>
-					<h5 style={{color: 'white', textAlign: 'center'}}>{rounds[i].heading}</h5>
+					<h5 style={{color: 'white', textAlign: 'left', paddingLeft: '10px', textDecoration :'underline', paddingRight: '10px'}}>{rounds[i].heading}</h5>
 					<ul>
 						{this.makeList(rounds[i].list)}
 					</ul>
@@ -321,8 +325,8 @@ class Flagship extends Component {
 			let item = details[i];
 			res.push(
 				<div style={{width: '100%', color: 'white'}}>
-				<h3 style={{color: 'white'}}>{item.heading}</h3>
-				<p style={{color: 'white'}}>{item.desc}</p>
+				<h3 style={{color: 'white', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px'}}>{item.heading}</h3>
+				<p style={{color: 'white', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px'}}>{item.desc}</p>
 				<div>
 					{this.getRounds(item.rounds)}
 				</div>
@@ -368,7 +372,7 @@ class Flagship extends Component {
 						return (
 							<ReactFullpage.Wrapper>
 								<div
-									className="section content eventsection"
+									className="section content"
 									style={{
 										background: this.data.content[currSlide].accent[1],
 										transition: 'all .5s ease-in-out'
@@ -743,7 +747,7 @@ class Flagship extends Component {
 									{this.getDetails(this.data.content[currSlide].detailsPage)}
 								</div>
 								<div
-									className="section eventsection"
+									className="section"
 									style={{
 										background: this.data.content[currSlide].accent[1],
 										transition: 'all .5s ease-in-out'

@@ -48,7 +48,7 @@ export default class Home extends Component {
     "https://i.ibb.co/hxGjN3k/c2-min.png",
     "https://i.ibb.co/mhsbFjY/c4-min.png",
     "https://i.ibb.co/yXdm2K9/c5-min.png",
-    "https://i.ibb.co/x2b5Rsw/contactus-min.jpg",
+    "https://i.ibb.co/GchQzyh/contactus.jpg",
     "https://i.ibb.co/Xbpcc82/l1-min.png",
     "https://i.ibb.co/njRRXZz/l2-min.png",
     "https://i.ibb.co/jyqp99x/l3-min.png",
@@ -107,34 +107,32 @@ export default class Home extends Component {
       return (
         <div className="container about-us">
           <div className="row">
-            <div className="col-md-5 about-gra">
-            </div>
+            <div className="col-md-5 about-gra"></div>
             <div className="col-md-7 about-content">
               <div>
                 <h2 style={{ textAlign: "center", fontSize: "3em" }}>
                   About us
                 </h2>
                 Malaviya National Institute of Technology is a Gibraltar of
-                technological learning, imparting thousands of students, world
-                class education, nurturing their skills to produce future
-                leaders. Blitzschlag, MNIT's annual cultural mega-event, with a
-                decade long glorious history, is synonymous with a wholesome
-                cultural carnival throughout Rajasthan, due to its unparalleled
-                grandeur. Every year, Blitzschlag invites innumerable students
-                from all over India, presenting an unmissable opportunity to
-                savour all the cultural enjoyment these 3 days can accommodate.
-                With a plethora of events and cultural competitions, Blitzschlag
-                escalates the euphoria of the participants to its pinnacle.
-                Topping the benchmark set by the precedent year, Blitzschlag
-                keeps revamping itself each year, perpetually raising the
-                standards of the event. With a footfall of over 54000,
-                Blitzschlag gathers everyone, right from nationwide prominent
-                speakers, to amazing artists who elevate the cultural
-                enthusiasm. Hence Blitzschlag is known as a cultural bonanza,
-                spreading its wings across life, work, passion .Moreover,
-                Blitzschlag infuses social awareness among the young citizens of
-                the country, thus fulfilling its responsibility to foster
-                society's well-being.
+                technological learning, imparting word class education to
+                thousands of students every year, nurturing their skills to
+                produce future leaders, and creating an environment wherein the
+                joy for learning may thrive. Blitzschlag, MNIT's annual cultural
+                mega-event, with a glorious history spanning 15 years, is
+                synonymous with a wholesome cultural carnival throughout
+                Rajasthan, due to its unparalleled grandeur. Every year,
+                Blitzschlag invites innumerable students from all over India,
+                presenting an unmissable opportunity to savour all the cultural
+                enjoyment that 3 days can accommodate. With a plethora of
+                cultural events and competitions, Blitzschlag 2020 escalates the
+                euphoria of the participants to its pinnacle. Topping the
+                benchmark set by the precedent year, Blitzschlag revamps itself
+                each year, perpetually raising the standards of the event. With
+                a footfall of over 25000, Blitzschlag attracts talents including
+                prominent national speakers, awe-inspiring artists, and artistic
+                members of the youth, who elevate the cultural enthusiasm. Hence
+                Blitzschlag is known as a cultural bonanza, spreading its wings
+                across life, work, passion.
               </div>
             </div>
           </div>
@@ -147,22 +145,24 @@ export default class Home extends Component {
             <div className="col-12 about-content">
               <div>
                 <br></br>
+                <br></br>
+                <br></br>
                 <h2 style={{ textAlign: "center" }}>About us</h2>
-                  Malaviya National Institute of Technology is a Gibraltar of
-                  technological learning, imparting thousands of students, world
-                  class education, nurturing their skills to produce future
-                  leaders. Blitzschlag, MNIT's annual cultural mega-event, with
-                  a decade long glorious history, is synonymous with a wholesome
-                  cultural carnival throughout Rajasthan, due to its
-                  unparalleled grandeur. Every year, Blitzschlag invites
-                  innumerable students from all over India, presenting an
-                  unmissable opportunity to savour all the cultural enjoyment
-                  these 3 days can accommodate. With a plethora of events and
-                  cultural competitions, Blitzschlag escalates the euphoria of
-                  the participants to its pinnacle. Topping the benchmark set by
-                  the precedent year, Blitzschlag keeps revamping itself each
-                  year, perpetually raising the standards of the event.
-              
+                <br></br>
+                Malaviya National Institute of Technology is a Gibraltar of
+                technological learning, imparting word class education to
+                thousands of students every year. MNIT's annual cultural
+                festival has a glorious history spanning 15 years. Every year,
+                Blitzschlag invites innumerable students from all over India,
+                presenting an opportunity to savour all the cultural enjoyment
+                that 3 days can accommodate. With a plethora of cultural events
+                and competitions, Blitzschlag 2020 escalates the euphoria of the
+                participants to its pinnacle. Blitzschlag revamps itself each
+                year, perpetually raising the standards of the event. With a
+                footfall of over 25000, Blitzschlag attracts major talents which
+                elevate the cultural enthusiasm. Blitzschlag is known as a
+                cultural bonanza, spreading its wings across life, work,
+                passion.
               </div>
             </div>
           </div>
@@ -246,12 +246,12 @@ export default class Home extends Component {
             style={{
               width: "80vw",
               enableBackground: "new 0 0 666.7 248.32",
-              filter: "drop-shadow(5px 5px 5px #00000050)",
+              filter: "drop-shadow(5px 5px 5px #00000050)"
             }}
           />
         </div>
         <ReactFullpage
-          scrollingSpeed={1850}
+          scrollingSpeed={1600}
           controlArrows={true}
           verticalCentered={true}
           anchors={["home", "aboutus", "theme", "contactus"]}
@@ -331,6 +331,7 @@ export default class Home extends Component {
                   </div>
                   {this.renderAboutUs()}
                 </div>
+                {/* <div className="section content sundarchakra"></div> */}
                 <div
                   className="section content"
                   style={{
@@ -356,7 +357,7 @@ export default class Home extends Component {
                         />
                       </div>
                       <div className="theme-holder">
-                        <h2 className="theme-heading">Bollywood</h2>
+                        <h2 className="theme-heading">Theme: Bollywood</h2>
                         <p className="theme-content">
                           Although the term 'Bollywood' was popularized only in
                           the 1970s, Bollywood has been a major part of Indian
@@ -398,7 +399,7 @@ export default class Home extends Component {
                         />
                       </div>
                       <div className="theme-holder">
-                        <h2 className="theme-heading">BOLLYWOOD</h2>
+                        <h2 className="theme-heading">Theme: Bollywood</h2>
                         <p className="theme-content">
                           Although the term 'Bollywood' was popularized only in
                           the 1970s, Bollywood has been a major part of Indian
@@ -433,9 +434,10 @@ export default class Home extends Component {
                 <div
                   className="section content"
                   style={{
-                    backgroundImage:"url('https://i.ibb.co/x2b5Rsw/contactus-min.jpg')",
-                    backgroundPosition:'bottom',
-                    backgroundSize:'cover',
+                    backgroundImage:
+                      "url('https://i.ibb.co/GchQzyh/contactus.jpg')",
+                    backgroundPosition: "bottom",
+                    backgroundSize: "cover",
                     overflow: "hidden"
                   }}
                 >
@@ -542,7 +544,7 @@ export default class Home extends Component {
                         <i className="fab fa-twitter"></i>
                       </a>
                     </div>
-                    <div className="handle-holder">
+                    {/* <div className="handle-holder">
                       <a
                         target="_blank"
                         href={
@@ -552,7 +554,7 @@ export default class Home extends Component {
                       >
                         <i className="fab fa-linkedin-in"></i>
                       </a>
-                    </div>
+                    </div> */}
                     <div className="handle-holder">
                       <a
                         target="_blank"

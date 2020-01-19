@@ -110,18 +110,6 @@ class App extends Component {
 									</Link>
 								</li>
 							)}
-
-							<li className="lis menu-item">
-								<Link
-									className="lisitem"
-									to="/gettickets"
-									onClick={() => {
-										this.handleCheck();
-									}}
-								>
-									<i className="fas fa-ticket-alt"></i>&nbsp;&nbsp;GET TICKETS
-								</Link>
-							</li>
 							<li className="lis menu-item">
 								<Link
 									className="lisitem"

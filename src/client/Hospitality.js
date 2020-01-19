@@ -112,13 +112,13 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 													</thead>
 													<tbody className="hosp">
 														<br />
-														<tr>
+														{/* <tr>
 															<td colSpan="1"></td>
 															<td colSpan="1">
 																<strong>Tax Chargeable</strong>
 															</td>
 															<td colSpan="2" />
-														</tr>
+														</tr> */}
 
 														<tr>
 															<td>1</td>
@@ -300,14 +300,13 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 																</Form.Group>
 															</td>
 														</tr>
-														<br />
-														<tr>
+														{/* <tr>
 															<td colSpan="1"></td>
 															<td colSpan="1">
 																<strong>Exempted from Taxation</strong>
 															</td>
 															<td colSpan="2" />
-														</tr>
+														</tr> */}
 														<tr>
 															<td>11</td>
 
@@ -410,6 +409,8 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 											</Card.Footer>
 										</Card>
 									</Form>
+									<br></br>
+									<br></br>
 								</div>
 							</ReactFullpage.Wrapper>
 						);
