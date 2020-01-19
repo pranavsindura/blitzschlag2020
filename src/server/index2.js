@@ -10,7 +10,7 @@ const objectID = require('objectid');
 
 // const uri = String(process.env.MONGODB_URI);
 const uri = String(process.env.MONGODB_URI);
-let {userModel} = require('./model.js');
+let { userModel } = require('./model.js');
 let { idModel } = require('./idModel');
 let loginValid = require('./loginvalid');
 let eventRegister = require('./eventRegister');
@@ -79,29 +79,47 @@ app.post('/signup', (req, res) => {
                 message: "You are already Registered!"
             });
         } else {
-            mobAndPinValid.phonenumber(userInput.mob).then(function(result) {
-                if (result) {
-                    mobAndPinValid.validatePIN(userInput.blitzPIN).then(function(result) {
-                        if (result) {
-                            // console.log('true pin');
-                            signupvalid.retrieveBlitzID().then(function(result2) {
-                                if (result2) {
-                                    user.blitzID = result2.blitzCount + 1;
-                                    signupvalid.userSave(user).then((result3) => {
-                                        if (result3) {
-                                            result2.blitzCount += 1;
-                                            signupvalid.updateBlitzID(result2).then((result4) => {
-                                                if (result4) {
-                                                    mailer.main(result3).then(() => {
-                                                            res.send({
-                                                                status: true,
-                                                                data: result3
+            mobAndPinValid.nameValidation(userInput.firstName).then(function(trueFirstName) {
+                if (trueFirstName) {
+                    mobAndPinValid.nameValidation(userInput.lastName).then(function(trueLastName) {
+                        if (trueLastName) {
+                            mobAndPinValid.phonenumber(userInput.mob).then(function(result) {
+                                if (result) {
+                                    mobAndPinValid.validatePIN(userInput.blitzPIN).then(function(result) {
+                                        if (result) {
+                                            // console.log('true pin');
+                                            signupvalid.retrieveBlitzID().then(function(result2) {
+                                                if (result2) {
+                                                    user.blitzID = result2.blitzCount + 1;
+                                                    signupvalid.userSave(user).then((result3) => {
+                                                        if (result3) {
+                                                            result2.blitzCount += 1;
+                                                            signupvalid.updateBlitzID(result2).then((result4) => {
+                                                                if (result4) {
+                                                                    mailer.main(result3).then(() => {
+                                                                            res.send({
+                                                                                status: true,
+                                                                                data: result3
+                                                                            });
+                                                                        })
+                                                                        // res.send({
+                                                                        //     status: true,
+                                                                        //     data: result3
+                                                                        // });
+                                                                } else {
+                                                                    res.send({
+                                                                        status: false,
+                                                                        message: "Internal Error!"
+                                                                    });
+                                                                }
                                                             });
-                                                        })
-                                                        // res.send({
-                                                        //     status: true,
-                                                        //     data: result3
-                                                        // });
+                                                        } else {
+                                                            res.send({
+                                                                status: false,
+                                                                message: "Internal Error!"
+                                                            });
+                                                        }
+                                                    });
                                                 } else {
                                                     res.send({
                                                         status: false,
@@ -110,35 +128,36 @@ app.post('/signup', (req, res) => {
                                                 }
                                             });
                                         } else {
+                                            // console.log('false pin');
                                             res.send({
                                                 status: false,
-                                                message: "Internal Error!"
+                                                message: "Invalid Pin!"
                                             });
                                         }
                                     });
                                 } else {
+                                    // console.log('false mobile num');
                                     res.send({
                                         status: false,
-                                        message: "Internal Error!"
+                                        message: "Incorrect Mobile Number!"
                                     });
                                 }
                             });
                         } else {
-                            // console.log('false pin');
                             res.send({
                                 status: false,
-                                message: "Invalid Pin!"
+                                message: "Invalid Last Name!"
                             });
                         }
                     });
                 } else {
-                    // console.log('false mobile num');
                     res.send({
                         status: false,
-                        message: "Incorrect Mobile Number!"
+                        message: "Invalid Firstname!"
                     });
                 }
             });
+
         }
     });
 });
