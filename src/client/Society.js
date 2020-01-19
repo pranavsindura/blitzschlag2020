@@ -1169,7 +1169,7 @@ export default class Society extends Component {
     return (
       <div style={{background:'#e13663'}}>
         <Splash images={this.images} />
-        <a href="https://blitz20.herokuapp.com/">
+        <a href="https://http://www.blitzschlag.co.in">
           <img
             style={{
               height: "auto",
