@@ -78,7 +78,7 @@ const eventData = {
       },
       {
         heading: "MR. & MISS BLITZ",
-        desc: `To Be Revealed`,
+        desc: `Fantasies like Student of the Year is what is yearned by all the young exuberants.Moreover, being the face of college is what all the students crave for. Mr. and Miss Blitz provides an excellent opportunity to showcase that you are the creme de la creme of this institute with a perfect blend of attitude, fitness and overall personality.`,
         details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#f9b26c", "#446e78", "#fe593d"],
         detailsLink: "",
@@ -135,7 +135,7 @@ const eventData = {
       {
         heading: "Dhun",
         desc: `The most amazing thing about instrumental music is that everyone can have their own interpretations; no lyrics direct what you should feel. It allows emotions to shine in their own character, without presuming to display them as real or imaginary expressions. On that note, Blitzschlag 2020 presents 'Dhun', an instrumental music showdown, the ultimate test of your musical prowess. Register yourselves now to become a part of the euphonious extravaganza!`,
-        details: [`Time: 2:00 PM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Time: 2:00 PM`, `Date: 07/02/2020`, `Prizes worth: 14,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -163,7 +163,7 @@ const eventData = {
         heading: "BREAKFREE",
         desc: `Breakfree is a solo and duet dance competition, an opportunity to highlight your dancing prowess and to reveal a character's story which people only dared to imagine. Come BREAKFREE and showcase your talent as the audience watches in awe how you turn
         imagination into reality!`,
-        details: [`Time: 10 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Time: 10 AM`, `Date: 08/02/2020`, `Prizes worth: 14,000/-`],
         accent: ["#c2413e", "#503f3b", "#989490"],
         detailsLink: "https://drive.google.com/file/d/1BoGPi7wTPCViOA9TTeNs26chctSsF0kW/view?usp=drivesdk",
         canRegister: true,
@@ -176,7 +176,7 @@ const eventData = {
       {
         heading: "NRITYANJALI",
         desc: `Nritya is a slow and expressive aspect of the dance that attempts to communicate feelings, storyline particularly with spiritual themes in Hindu dance traditions. Dance is a form of meditation and prayer that keeps our body and  mind peaceful. In Nrityanjali, get ready to showcase your skills and expertise in classical dancing at Blitzschlag 2020.`,
-        details: [`Time: 1:00 PM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Time: 1:00 PM`, `Date: 06/02/2020`, `Prizes worth: 10,000/-`],
         accent: ["#532f2f", "#010000", "#be5f43"],
         detailsLink: "",
         canRegister: true,
@@ -190,7 +190,7 @@ const eventData = {
         heading: "HIT THE STREET",
         desc: `Martha Graham once said, "Dance is the hidden language of the soul.” 
         This February, Blitzschlag 2020 provides you an opportunity to reveal your hidden language with 'Hit the street', a hip-hop dance competition to showcase your talent and prowess.So, get ready to put your dancing shoes on in this intense battle of dancing stars.`,
-        details: [`Time: 2:00 PM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Time: 2:00 PM`, `Date: 08/02/2020`, `Prizes worth: 14,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "https://drive.google.com/file/d/1BsezMIC0MUslhtoF8kuSY1IDYXEDL4kH/view?usp=drivesdk",
         canRegister: true,
@@ -203,7 +203,7 @@ const eventData = {
       {
         heading: "VOICE CHOICE",
         desc: `“Singing is a way of escaping to another world”. This Blitzchlag 2020, get ready to belt out some melodies in 'Voice Choice'. So grab this opportunity to exude your love for music in this competition of singing sensations and win attractive rewards along with some priceless experiences.`,
-        details: [`Time: 9:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Time: 9:00 AM`, `Date: 06/02/2020`, `Prizes worth: 15,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "https://drive.google.com/file/d/1BpnQ07WP3MMzl2qxGGBUEm3eXFuqLWWD/view?usp=drivesdk",
         canRegister: true,
@@ -230,9 +230,9 @@ const eventData = {
         desc: `Well, we muggles decided to add some spice to the traditional game of Jenga. You ask why after all this time, we say... Always! Here’s the catch, the game will not only test your Jenga skills but also your Harry Potter fandom. One can pull out certain pieces that have some Harry Potter questions to earn bonus points.  
 		Are you the Chosen One? Here's your chance to catch the golden snitch. We solemnly swear that it will be fun.
 		Play the game right and win exciting prizes. Mischief managed!!`,
-        details: [`Time: 2:00 PM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Time: 2:00 PM`, `Date: 06/02/2020`, `Prizes worth: 3500/-`],
         accent: ["#622c01", "#feb36f", "#b66931"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1uWJAIpKimLHW0Y3OVkoWDxBwVETj5zts/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -244,9 +244,9 @@ const eventData = {
         heading: "PUZZLERIA",
         desc: `Have you ever felt so drawn towards a puzzle that you just can't get it off your mind before solving it? Is that feeling which comes on solving a really tough puzzle, priceless to you? What's the first thought that comes to your mind when you see a Sudoku? Is your first thought when someone challenges you for a crossword puzzle 'BRING IT ON!'? Does the play with anagrams never fails to amuse you? 
 		If yes, then we have just the right thing for you. Literary Society presents a bucket full of Sudokus, anagrams, crosswords, rebuses and a lot more. Join us and cherish again the childhood puzzle days but this time...with a spice of competition. `,
-        details: [`Time: 3:00 PM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Time: 3:00 PM`, `Date: 07/02/2020`, `Prizes worth: 4000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1bYT41yX4aFO0OcyU1InXx5EAiyBxBiVw/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -260,9 +260,9 @@ const eventData = {
 		Full of several mini "quests", this festival will surely test your wits and grits, so bring your A GAME! 
 		The stakes have been upped but so has the reward. 
 		Are you up for it?`,
-        details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: 6000/-`],
         accent: ["#bc538d", "#000000", "#9fddea"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1KBhIIRlFMI7Jhn4S3zJTkumoizp-KzNs/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -278,9 +278,9 @@ const eventData = {
 		या फिर झोली भर हँसी ठिठोली
 		जीवन के प्रत्येक रंगों को शब्दों की सीमा में बांध कर ही एक आम मनुष्य कवि या शायर बन जाता है। यह सब महज शब्दों की सुंदरता ही तो है जो अपने हाव-भाव से इस कदर हमारे दिल को छू लेती है कि हम इन्हीं शब्दों को जीना शुरू कर देते हैं।
 		आईये जिंदगी के कुछ अनमोल पन्नो को पलटें और अपनी कविताओं को डायरी के पन्नों से आजाद कर आम जन तक पहुचायें। लिटरेरी सोसाइटी प्रस्तुत करती है *'काव्यपाठ'* एक नया मंच आपकी कविताओं के लिए।`,
-        details: [`Time: 11:00 AM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Time: 11:00 AM`, `Date: 07/02/2020`, `Prizes worth: 4000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/14tpxxgoSa_x_N0oHPSLYLKYla6DlpDIX/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -292,9 +292,9 @@ const eventData = {
         heading: "EK BAAR KI BAAT HAI",
         desc: `Da Vinci did it with his brush, Shelly with his pen and Einstein with his imagination- anything that has gone down in the history has a tinge of ingenuity in it. Let the symphony of your thoughts flow through your quill onto a blank canvas. 
 		Will your creation make people burst into peals of laughter or scare them out of their wits with its eerie ambiance? Be eccentric, innovative and appeal the crowd with your words. `,
-        details: [`Time: 3:30 PM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Time: 3:30 PM`, `Date: 06/02/2020`, `Prizes worth: 4000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1I8TsBc1NBvkLwLd6w_Loame0Dhs9HqBA/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -306,9 +306,9 @@ const eventData = {
         heading: "JUST A MINUTE(JAM)",
         desc: `Speech is power, speech is to persuade, to convert, to compel. And if the power of speech lies within you, then we have just the right thing in the hat. Just-A-Minute (JAM) is the ultimate test of wit and thinking on your feet.
 		Can you make it through sixty seconds of uninterrupted vocalisation of your thoughts, without repetition, or deviation? Or will you give in to the pressure and have your competitors pounce on you in an instant?`,
-        details: [`Time: 9:00 AM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Time: 9:00 AM`, `Date: 07/02/2020`, `Prizes worth: 4500/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1HSq9VxrHcS17ncW95Q0OM25ff9gKgSLy/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -432,7 +432,7 @@ const eventData = {
         desc: `To Be Revealed`,
         details: [`Time: 12:00 PM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#8b1d64", "#854593", "#2a3d78"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1UQ4QiS27ODjLROByd6yvC1DAGA8myccX/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -445,7 +445,7 @@ const eventData = {
         desc: `Fashion has never been the same. It is always about the contemporary which never ceases to amaze us, does it? The Trashion Show exhibits clothing made entirely from recycled materials. It is a way to introduce people to the little things we can do for environment. Trashion Show is to see how a participant can design a dress out of complete trash.This  small step will indeed make a great difference.`,
         details: [`Time: 2:00 PM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1jg95Tu-0FOwetVWNI6pmuw5UUMNh6PCc/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -456,9 +456,9 @@ const eventData = {
       {
         heading: "TINT A TOP",
         desc: `We’ve always painted shirts- at times unknowingly while dropping , or it could be football impressions on  jersey while playing. So here in TINT A TOP, showcase your fashion mantra through T-shirt painting. Turn on your creative imaginations and show what your style secret is all about! `,
-        details: [`Time: 3:00 PM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Time: 3:00 PM`, `Date: 06/02/2020`, `Prizes worth: 3,000/-`],
         accent: ["#15b7b6", "#68234c", "#dc5894"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1as-VcKrdy-KmiB4imccM1rKkOPlobREE/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -471,7 +471,7 @@ const eventData = {
         desc: `EXPLORA brings you a platform to showcase your artistic talent. Participants are required to submit there artwork in jpg format. If participants are found using someone else's artwork then they'll be disqualified ! So make sure you send us your own artwork. The selected entries will be a part of ART EXHIBITION.`,
         details: [`Time: 10:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#0f4792", "#334349", "#45838c"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1K4mapW07WTdyZZmV3y_AjhL93yjHWQXr/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -486,7 +486,7 @@ const eventData = {
         `,
         details: [`Time: 1:30 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1hTd_shomF3jMYszFoO3zyTwiTVTiobtt/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -499,9 +499,9 @@ const eventData = {
         desc: `How often have we tried painting differently? Art carries the capacity of such creativity which has no boundaries. So here comes Far Apart art competition which promises fun and thrill together.
         The participant will have to tie the brush and bamboo sticks given to obtain a required length. Then he/she has to sit on a chair and draw with the long brush he/she has made. The best drawing would be declared as winner.
         `,
-        details: [`Time: 9:30 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Time: 9:30 AM`, `Date: 06/02/2020`, `Prizes worth: 3,000/-`],
         accent: ["#272b46", "#2d1c15", "#ea634f"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1HjOId-NH3faP42x3ybSV3mAbSzUOhbK-/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -515,9 +515,9 @@ const eventData = {
         All you have to do is to paint the shoes according to the given theme.
         Participants are required to bring their own acrylic colors or any other medium of paint that they want to use on canvas shoes. Designs will be judged based on creativity, originality and overall execution.
         `,
-        details: [`Time: 11:30 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Time: 11:30 AM`, `Date: 06/02/2020`, `Prizes worth: 3,000/-`],
         accent: ["#7e0249", "#601b11", "#293566"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/open?id=1v7rWgE-qiFBy-_vVaK5P2PjgeYvTfJ0n",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -532,7 +532,7 @@ const eventData = {
         `,
         details: [`Time: 10:00 AM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1nQvk0TlPOt57VYFY1v0o7FTLXlI0iyNj/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -548,7 +548,7 @@ const eventData = {
         `,
         details: [`Time: 11:00 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#2b27a6", "#1c1e45", "#c73564"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/196NnYHlRrzPsIf4mEG1uKsoY5eGwY8TQ/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -582,7 +582,7 @@ const eventData = {
         desc: `Step into the hubbub of stock market, with the closest to reality simulation of Start-up Nivesh. Improve your analysis on the market situations and test your hunches with virtual trades. Mimicking the 'Dalal Street' of Bombay Stock Exchange, Start-up Nivesh brings the excitement and nail-biting experience of a chaotic-yet-professional investment hub and packs the bundle in a room for the participants to enjoy.`,
         details: [`Time: 10:00 AM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1Gw-JUqj8W5U1XJ8MwDTd78en6PAdGd79/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -605,7 +605,7 @@ const eventData = {
 		The street play, having all shades of reality while creatively spreading social awareness, bringing out new topics and quizzing peoples brains makes it one of the most powerful form of dramatics. So, come and showcase your mind as we lay in wait for the big TAMASHA to unfold!!`,
         details: [`Time: 11:00 AM`, `Date: 06/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1654eLV600ORPVeVotFkiJcGmcAOtCWpk/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -620,7 +620,7 @@ const eventData = {
 		 LIGHTS….CAMERA….ACTION !`,
         details: [`Time: 11:00 AM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#de6145", "#6d361b", "#985834"],
-        detailsLink: "",
+        detailsLink: "https://drive.google.com/file/d/1YvunsF0PojmugGPu6grUKeKxpHLSUG5i/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
@@ -630,7 +630,7 @@ const eventData = {
       },
       {
         heading: "MOVIE SCREENING",
-        desc: `TO BE REVEALED`,
+        desc: `Movies spark ideas, discussions, interests and are more than just pure entertainment. Movie screenings  have always been an important part of a movie's production and release cycle. Stop pondering over the movie jargon and join us at the movie screening. It's time to dim the lights and unleash the suspense.`,
         details: [`Time: 12:30 PM`, `Date: 08/02/2020`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
