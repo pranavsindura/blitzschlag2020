@@ -184,6 +184,23 @@ class Event extends Component {
 		// this.setState({ registerDetails });
 		this.setState({ currSlide: (currSlide + 1) % this.data.carImages.length, registerDetails, submitMessage: '' });
 	};
+	prevSlide = () => {
+		const { currSlide } = this.state;
+		let registerDetails = {
+			teamSize: this.data.content[currSlide].registerConstraints.minTeamSize,
+			teamID: 0,
+			eventName: '',
+			teamName: '',
+			teamMembers: []
+		};
+		for (let i = 0; i < this.data.content[currSlide].registerConstraints.minTeamSize; i++) {
+			registerDetails.teamMembers.push({ blitzID: '', blitzPIN: '' });
+		}
+		// this.setState({ registerDetails });
+		this.setState({ currSlide: (currSlide - 1 + this.data.carImages.length) % this.data.carImages.length,
+			registerDetails,
+			submitMessage: "" });
+	};
 	showRegister = (fullpageApi) => {
 		fullpageApi.moveSectionDown();
 		// alert('Registrations are Currently Closed!');
@@ -386,6 +403,18 @@ class Event extends Component {
 												<p className="slidenummob">0{currSlide + 1}</p>
 											</div>
 											<div
+												className="control-prevmob"
+												style={{
+													backgroundColor: this.data.content[currSlide].accent[2],
+													transition: 'all .5s ease-in-out'
+												}}
+												onClick={() => {
+													this.prevSlide();
+												}}
+											>
+												<p className="prev-iconmob">&#8249;</p>
+											</div>
+											<div
 												className="control-nextmob"
 												style={{
 													backgroundColor: this.data.content[currSlide].accent[2],
@@ -465,6 +494,55 @@ class Event extends Component {
 													transition: 'all .5s ease-in-out'
 												}}
 											></div>
+											<div
+												onClick={() => {
+													this.prevSlide();
+												}}
+												className="small-img-holder"
+												style={{
+													width: '5%',
+													height: '15%',
+													backgroundImage: `url("${
+														this.data.carImages[
+															(currSlide - 1 + this.data.carImages.length) % this.data.carImages.length
+														]
+													}")`,
+													backgroundSize: 'cover',
+													position: 'absolute',
+													left: '56%',
+													bottom: '20%',
+													zIndex: '2',
+													transition: 'all .5s'
+												}}
+											>
+												<div
+													className="control-next"
+													style={{
+														transition: 'all .5s',
+														width: '20%',
+														height: '100%',
+														position: 'absolute',
+														left: '-20%',
+														backgroundColor: this.data.content[currSlide].accent[0],
+														color: 'white',
+														fontFamily: 'Quicksand',
+														fontSize: '40pt',
+														transition: 'all .5s ease-in-out'
+													}}
+												>
+													<p
+														style={{
+															position: 'absolute',
+															top: '50%',
+															left: '50%',
+															transform: 'translateX(-50%) translateY(-50%)',
+															cursor: 'pointer'
+														}}
+													>
+														&#8249;
+													</p>
+												</div>
+											</div>
 											<div
 												onClick={() => {
 													this.nextSlide();
