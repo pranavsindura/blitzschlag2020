@@ -381,7 +381,7 @@ const eventData = {
 				canRegister: true,
 				registerConstraints: {
 					minTeamSize: 1,
-					maxTeamSize: 5
+					maxTeamSize: 6
 				},
 				eventID: '28'
 			},
@@ -462,7 +462,7 @@ const eventData = {
 				//required even if canRegister is false
 				registerConstraints: {
 					minTeamSize: 1,
-					maxTeamSize: 5
+					maxTeamSize: 25
 				},
 				eventID: '48'
 			}
