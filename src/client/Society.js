@@ -14,7 +14,7 @@ export default class Society extends Component {
     "https://i.ibb.co/44ZRdnp/mds.png",
     "https://i.ibb.co/bbzDWtQ/vss.png",
     "https://i.ibb.co/S7F32xM/cacs.png",
-    "https://i.ibb.co/F3wPc2m/carnival.png",
+    "https://i.ibb.co/L5N8f3m/aa.png",
     "https://i.ibb.co/c8V03Cm/dil.png",
     "https://i.ibb.co/ZTKQ15T/edcell.png",
     "https://i.ibb.co/Z2hqV8p/fnarts.png",
@@ -359,7 +359,7 @@ export default class Society extends Component {
                   scintillating streak of events!
                 </div>
                 <div className="link-pc-to-cat">
-                  <Link to="/events/flagship">
+                  <Link to="/flagship">
                     <Button
                       style={{
                         backgroundColor: "#f1e5d6",
@@ -416,26 +416,25 @@ export default class Society extends Component {
           <div className="cat11">
             <div className="cat11-child">
               <div className="child-1-head">
-                C<br></br>A<br></br>R<br></br>N<br></br>I<br></br>V<br></br>A
-                <br></br>L<br></br>
+                N<br></br>A<br></br>T<br></br>I<br></br>O<br></br>N<br></br>A<br></br>L<br></br> <br></br>S<br></br>E<br></br>R<br></br>V<br></br>I<br></br>C<br></br>E<br></br> <br></br>S<br></br>C<br></br>H<br></br>E<br></br>M<br></br>E
               </div>
               <div className="main-cont-event">
                 <img
-                  src="https://i.ibb.co/F3wPc2m/carnival.png"
+                  src="https://i.ibb.co/L5N8f3m/aa.png"
                   style={{ width: "16vw", heigth: "auto" }}
                   alt="logo"
                 ></img>
                 <div className="text-pc">
                   <br></br>
-                  Merry faces filled with exuberance blending perfectly into the
-                  crowd marks the scene at a carnival. The giant Ferris Wheel
-                  giving an adrenaline rush, the Columbus swinging to and fro,
-                  all these death-defying rides put your heart in your throat
-                  and send energy sizzling through your nerves. Brace yourself
-                  if you want to join us on this adventurous ride!
+                  NSS volunteers generally work with villages, slums and
+                  voluntary agencies conducting activities regularly. As per the
+                  fundamental principles of National Service Scheme, a volunteer
+                  is expected to remain in constant touch with the community and
+                  issues related to them. Also programmes like Blood Donation
+                  Camps, Swachh Bharat Camps etc are organized by the society.
                 </div>
                 <div className="link-pc-to-cat">
-                  <Link to="/events/carnival">
+                  <Link to="/events/nss">
                     <Button
                       style={{
                         backgroundColor: "#f1e5d6",
@@ -1027,7 +1026,7 @@ export default class Society extends Component {
               flavours of Blitzschlag with diverse opportunities and prizes all
               packed into a scintillating streak of events!
             </div>
-            <Link to="/events/flagship">
+            <Link to="/flagship">
               <Button
                 style={{
                   backgroundColor: "#e13663",
@@ -1111,7 +1110,7 @@ export default class Society extends Component {
                 fullpageApi.reBuild();
               }}
               className="eve-img-mob"
-              src="https://i.ibb.co/F3wPc2m/carnival.png"
+              src="https://i.ibb.co/L5N8f3m/aa.png"
               style={{
                 position: "absolute",
                 heigth: "auto",
@@ -1139,16 +1138,16 @@ export default class Society extends Component {
                   fontWeight: "bold"
                 }}
               >
-                Carnival
+                National Service Scheme
               </p>
-              Merry faces filled with exuberance blending perfectly into the
-              crowd marks the scene at a carnival. The giant Ferris Wheel giving
-              an adrenaline rush, the Columbus swinging to and fro, all these
-              death-defying rides put your heart in your throat and send energy
-              sizzling through your nerves. Brace yourself if you want to join
-              us on this adventurous ride!
+              NSS volunteers generally work with villages, slums and voluntary
+              agencies conducting activities regularly. As per the fundamental
+              principles of National Service Scheme, a volunteer is expected to
+              remain in constant touch with the community and issues related to
+              them. Also programmes like Blood Donation Camps, Swachh Bharat
+              Camps etc are organized by the society.
             </div>
-            <Link to="/events/carnival">
+            <Link to="/events/nss">
               <Button
                 style={{
                   backgroundColor: "#e13663",
