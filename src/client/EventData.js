@@ -1099,23 +1099,9 @@ const eventData = {
   vss: {
     carImages: [
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
     ],
     content: [
-      {
-        heading: "DEBATE COMPETITION ",
-        desc: `TO BE REVEALED`,
-        details: [`Date: 06/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
-        canRegister: true,
-        registerConstraints: {
-          minTeamSize: 1,
-          maxTeamSize: 1
-        },
-        eventID: "15"
-      },
       {
         heading: "MHARE DESH QUIZ",
         desc: `TO BE REVEALED`,
@@ -1130,7 +1116,7 @@ const eventData = {
         eventID: "16"
       },
       {
-        heading: "INVITED LECTURE",
+        heading: "Invited lecture cum clashing views",
         desc: `TO BE REVEALED`,
         details: [`Date: TBA`, `Prizes worth: TBA/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
