@@ -299,182 +299,6 @@ const eventData = {
       }
     ]
   },
-  // mds: {
-  //   carImages: [
-  //     "https://i.ibb.co/18YMCYc/Whats-App-Image-2020-01-10-at-16-08-02.jpg",
-  //     "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-  //     "https://i.ibb.co/Cnh3pdF/break-free.jpg",
-  //     "https://i.ibb.co/yBqDsPW/Whats-App-Image-2020-01-18-at-17-19-27-min.jpg",
-  //     "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-  //     "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
-  //   ],
-  //   content: [
-  //     {
-  //       heading: "Dhun",
-  //       desc: `The most amazing thing about instrumental music is that everyone can have their own interpretations; no lyrics direct what you should feel. It allows emotions to shine in their own character, without presuming to display them as real or imaginary expressions. On that note, Blitzschlag 2020 presents 'Dhun', an instrumental music showdown, the ultimate test of your musical prowess. Register yourselves now to become a part of the euphonious extravaganza!`,
-  //       details: [`Date: 07/02/2020`, `Prizes worth: 14,000/-`],
-  //       accent: ["#e2853e", "#13194a", "#fda63c"],
-  //       detailsLink:
-  //         "https://drive.google.com/file/d/1dN88g-Hpr6Fs86PSoXLHf1TKXWhyvAOO/view?usp=sharing",
-  //       detailsPage: [
-  //         {
-  //           heading: "DESCRIPTION",
-  //           desc:
-  //             "Being one of the most popular events, Battle of bands is the most awaited celebration of culture, aiding young minds to delve into music and the tradition associated with it.",
-  //           rounds: []
-  //         },
-  //         {
-  //           heading: "JUDGING CRITERIA",
-  //           desc:
-  //             "Technique, Tightness, Overall Sync, Creativity, Overall Impact (Stage presence etc)",
-  //           rounds: [
-  //             {
-  //               heading: "ROUND ONE (ONLINE ELIMINATIONS)",
-  //               list: [
-  //                 "Record a 3-minute jam video in a jam room/rehearsal space (raw tracks compulsory) and rename it as “<Your BLITZ Number> - BOB” and upload it on Google drive and provide open access to everyone with the link (MANDATORY). Note that this video should not be edited or processed in any form.",
-  //                 "Bands can also attach an another (OPTIONAL) video of their live performance or a mixed and mastered track and a short 50-60 word introduction explaining their style and previous achievements.",
-  //                 "Bands need to send scanned copies of college ID cards of all participants in the same email.",
-  //                 "Bands are allowed to send covers as well as original compositions through these entries."
-  //               ]
-  //             },
-  //             {
-  //               heading: "BONUS",
-  //               list: [
-  //                 "In addition to sending the video on mail, participants can also upload the same entry from their own Instagram accounts. Top entries shall be displayed on the official Blitzschlag Competitions page on Facebook and Instagram.",
-  //                 "Participants need to tag @Blitzmnit in the video.",
-  //                 "The hashtags #Blitz2k20 and #BOB2k20 need to be used in the caption."
-  //               ]
-  //             },
-  //             {
-  //               heading: "ROUND TWO (FINALS)",
-  //               list: [
-  //                 "Bands will be allowed a total of 15 minutes on-stage (including performance, setup and soundcheck).",
-  //                 "Participants are required to play at least ONE original composition."
-  //               ]
-  //             }
-  //           ]
-  //         },
-  //         {
-  //           heading: "GENERAL RULES",
-  //           desc: "",
-  //           rounds: [
-  //             {
-  //               heading: "",
-  //               list: [
-  //                 "Team size: 3-8",
-  //                 "Inter-college participation is allowed but an individual can be a part of only one band",
-  //                 "At least 2 instrumentalists are required, including 1 percussion instrument (mandatory).",
-  //                 "Purely classical numbers are not allowed, however a classical refrain is permitted.",
-  //                 "Obscenity (at the discretion of the judges) of any kind is not allowed and will lead to immediate disqualification. The time limit should strictly be followed. Participants will be penalized by judges for not doing so.",
-  //                 "The decision of the judges shall be final and binding.",
-  //                 "The decision of the organizers regarding the final line-up would be final."
-  //               ]
-  //             }
-  //           ]
-  //         },
-  //         {
-  //           heading: "PRIZE MONEY: INR 50,000/-",
-  //           desc: "",
-  //           rounds: []
-  //         },
-  //         {
-  //           heading: "Contact Details",
-  //           desc: "Umang : 8219263140, Devanshu : 9314655304 ",
-  //           rounds: []
-  //         }
-  //       ],
-  //       canRegister: true,
-  //       registerConstraints: {
-  //         minTeamSize: 1,
-  //         maxTeamSize: 6
-  //       },
-  //       eventID: "28"
-  //     },
-  //     {
-  //       heading: "RAMBA SAMBA",
-  //       desc: `Get ready to witness the stage set ablaze as teams come head-to-head, toss around their toes and swing their arms in the leap of glory. That's the magic of Rambha Sambha!
-  //       Rambha Sambha is a beautiful blend of foot-tapping beats, a pumping rush of adrenaline and  the high of getting  your team to wave the trophy of champions at Blitzschlag 2020.`,
-  //       details: [`Date: 07/02/2020`, `Prizes worth: TBA/-`],
-  //       accent: ["#e2853e", "#13194a", "#fda63c"],
-  //       detailsLink:
-  //         "https://drive.google.com/file/d/1Bin8SBJXbt7ahqJpCoUuVL-3PSamDJFb/view?usp=drivesdk",
-  //       canRegister: true,
-  //       detailsPage: [
-  //         {
-  //           heading: "DESCRIPTION",
-  //           desc:
-  //             "Being one of the most popular events, Battle of bands is the most awaited celebration of culture, aiding young minds to delve into music and the tradition associated with it.",
-  //           rounds: []
-  //         },
-  //         {
-  //           heading: "JUDGING CRITERIA",
-  //           desc:
-  //             "Technique, Tightness, Overall Sync, Creativity, Overall Impact (Stage presence etc)",
-  //           rounds: [
-  //             {
-  //               heading: "ROUND ONE (ONLINE ELIMINATIONS)",
-  //               list: [
-  //                 "Record a 3-minute jam video in a jam room/rehearsal space (raw tracks compulsory) and rename it as “<Your BLITZ Number> - BOB” and upload it on Google drive and provide open access to everyone with the link (MANDATORY). Note that this video should not be edited or processed in any form.",
-  //                 "Bands can also attach an another (OPTIONAL) video of their live performance or a mixed and mastered track and a short 50-60 word introduction explaining their style and previous achievements.",
-  //                 "Bands need to send scanned copies of college ID cards of all participants in the same email.",
-  //                 "Bands are allowed to send covers as well as original compositions through these entries."
-  //               ]
-  //             },
-  //             {
-  //               heading: "BONUS",
-  //               list: [
-  //                 "In addition to sending the video on mail, participants can also upload the same entry from their own Instagram accounts. Top entries shall be displayed on the official Blitzschlag Competitions page on Facebook and Instagram.",
-  //                 "Participants need to tag @Blitzmnit in the video.",
-  //                 "The hashtags #Blitz2k20 and #BOB2k20 need to be used in the caption."
-  //               ]
-  //             },
-  //             {
-  //               heading: "ROUND TWO (FINALS)",
-  //               list: [
-  //                 "Bands will be allowed a total of 15 minutes on-stage (including performance, setup and soundcheck).",
-  //                 "Participants are required to play at least ONE original composition."
-  //               ]
-  //             }
-  //           ]
-  //         },
-  //         {
-  //           heading: "GENERAL RULES",
-  //           desc: "",
-  //           rounds: [
-  //             {
-  //               heading: "",
-  //               list: [
-  //                 "Team size: 3-8",
-  //                 "Inter-college participation is allowed but an individual can be a part of only one band",
-  //                 "At least 2 instrumentalists are required, including 1 percussion instrument (mandatory).",
-  //                 "Purely classical numbers are not allowed, however a classical refrain is permitted.",
-  //                 "Obscenity (at the discretion of the judges) of any kind is not allowed and will lead to immediate disqualification. The time limit should strictly be followed. Participants will be penalized by judges for not doing so.",
-  //                 "The decision of the judges shall be final and binding.",
-  //                 "The decision of the organizers regarding the final line-up would be final."
-  //               ]
-  //             }
-  //           ]
-  //         },
-  //         {
-  //           heading: "PRIZE MONEY: INR 50,000/-",
-  //           desc: "",
-  //           rounds: []
-  //         },
-  //         {
-  //           heading: "Contact Details",
-  //           desc: "Umang : 8219263140, Devanshu : 9314655304 ",
-  //           rounds: []
-  //         }
-  //       ],
-  //       //required even if canRegister is false
-  //       registerConstraints: {
-  //         minTeamSize: 1,
-  //         maxTeamSize: 30
-  //       },
-  //       eventID: "48"
-  //     }
-  //   ]
-  // },
   mds: {
     carImages: [
       "https://i.ibb.co/18YMCYc/Whats-App-Image-2020-01-10-at-16-08-02.jpg",
@@ -496,6 +320,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "28"
       },
       {
@@ -509,6 +360,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 30
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "27"
       },
       {
@@ -524,6 +402,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 2
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "29"
       },
       {
@@ -538,6 +443,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "30"
       },
       {
@@ -553,6 +485,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 12
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "31"
       },
       {
@@ -567,6 +526,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "32"
       }
     ]
@@ -596,6 +582,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 2
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "3"
       },
       {
@@ -614,6 +627,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 3
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "1"
       },
       {
@@ -631,6 +671,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 4
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "2"
       },
       {
@@ -650,6 +717,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "4"
       },
       {
@@ -665,6 +759,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "5"
       },
       {
@@ -680,6 +801,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "6"
       }
     ]
@@ -708,6 +856,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "9"
       },
       {
@@ -724,6 +899,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "7"
       },
       {
@@ -740,6 +942,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "8"
       },
       {
@@ -755,6 +984,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "10"
       },
       {
@@ -771,6 +1027,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "11"
       }
     ]
@@ -800,6 +1083,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "18"
       },
       {
@@ -814,6 +1124,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "19"
       },
       {
@@ -828,6 +1165,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "20"
       },
       {
@@ -842,6 +1206,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "21"
       },
       {
@@ -858,6 +1249,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "22"
       },
       {
@@ -874,6 +1292,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "23"
       },
       {
@@ -891,6 +1336,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "24"
       },
       {
@@ -907,6 +1379,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "25"
       },
       {
@@ -924,6 +1423,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "26"
       }
     ]
@@ -945,6 +1471,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "33"
       },
       {
@@ -959,6 +1512,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "34"
       }
     ]
@@ -983,6 +1563,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 30
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "14"
       },
       {
@@ -999,6 +1606,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 30
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "13"
       },
       {
@@ -1012,6 +1646,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "12"
       }
     ]
@@ -1039,6 +1700,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 2
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "38"
       },
       {
@@ -1052,6 +1740,33 @@ const eventData = {
           minTeamSize: 2,
           maxTeamSize: 3
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "39"
       },
       {
@@ -1066,6 +1781,33 @@ const eventData = {
           minTeamSize: 2,
           maxTeamSize: 4
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "40"
       },
       {
@@ -1079,6 +1821,33 @@ const eventData = {
           minTeamSize: 2,
           maxTeamSize: 4
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "41"
       },
       {
@@ -1092,6 +1861,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "42"
       }
     ]
@@ -1113,6 +1909,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 1
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "16"
       },
       {
@@ -1126,6 +1949,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 1
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "17"
       }
     ]
@@ -1145,6 +1995,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 1
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "43"
       }
     ]
@@ -1170,6 +2047,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "35"
       },
       {
@@ -1190,6 +2094,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "36"
       },
       {
@@ -1206,6 +2137,33 @@ const eventData = {
           minTeamSize: 1,
           maxTeamSize: 5
         },
+        detailsPage: [
+          {
+            heading: "TBA",
+            desc: "",
+            rounds: []
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
         eventID: "37"
       }
     ]
