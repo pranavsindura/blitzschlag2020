@@ -201,8 +201,11 @@ class Event extends Component {
 			registerDetails,
 			submitMessage: "" });
 	};
+	showDetails = () => {
+		fullpage_api.moveTo('details');
+	};
 	showRegister = (fullpageApi) => {
-		fullpageApi.moveSectionDown();
+		fullpageApi.moveTo('register');
 		// alert('Registrations are Currently Closed!');
 	};
 	createTeamMemberSelect = () => {
@@ -275,6 +278,50 @@ class Event extends Component {
 		}
 		return input;
 	};
+	makeList = (list)=>{
+		let arr = [];
+		for(let i=0;i<list.length;i++)
+		{
+			arr.push(
+				<li style={{color: 'white', paddingRight: '10px'}}>{list[i]}</li>
+			);
+		}
+		return arr;
+	}
+	getRounds = (rounds) => {
+		let arr = [];
+		for(let i=0;i<rounds.length;i++)
+		{
+			let info = (
+				<div>
+					<h5 style={{color: 'white', textAlign: 'left', paddingLeft: '10px', textDecoration :'underline', paddingRight: '10px'}}>{rounds[i].heading}</h5>
+					<ul>
+						{this.makeList(rounds[i].list)}
+					</ul>
+				</div>
+			);
+			arr.push(info);
+		}
+		return arr;
+	};
+	getDetails = (details) => {
+		let res = [];
+		for (let i = 0; i < details.length; i++) {
+			// let x = ;
+			let item = details[i];
+			res.push(
+				<div style={{width: '100%', color: 'white'}}>
+				<h3 style={{color: 'white', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px'}}>{item.heading}</h3>
+				<p style={{color: 'white', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px'}}>{item.desc}</p>
+				<div>
+					{this.getRounds(item.rounds)}
+				</div>
+				</div>
+			);
+		}
+		console.log(res);
+		return res;
+	};
 	render() {
 		const { currSlide, registerDetails, submitMessage } = this.state;
 		return (
@@ -296,10 +343,12 @@ class Event extends Component {
 				</a>
 				<ReactFullpage
 					scrollOverflow={true}
-					onLeave={({ origin, destination, direction }) => {
+					anchors={['main', 'details', 'register']}
+					onLeave={( origin, dest, direction ) => {
 						// fullpage_api.reBuild();
-						if (!this.data.content[currSlide].canRegister) return false;
+						// if (!this.data.content[currSlide].canRegister) return false;
 						// return false;
+						if (dest.index == '2' && !this.data.content[currSlide].canRegister) return false;
 					}}
 					scrollOverflowOptions={{
 						click: false,
@@ -366,17 +415,18 @@ class Event extends Component {
 												</div>
 											</div>
 											<div className="button-holdermob">
-												{/* <a href={this.data.content[currSlide].detailsLink} target="_blank">
+												{/* <a href={this.data.content[currSlide].detailsLink} target="_blank"> */}
 													<div
 														className="button-moreinfomob"
 														style={{
 															backgroundColor: this.data.content[currSlide].accent[2],
 															transition: 'all .5s ease-in-out'
 														}}
+														onClick={()=>{this.showDetails();}}
 													>
 														<p>Details</p>
 													</div>
-												</a> */}
+												{/* </a> */}
 												{this.data.content[currSlide].canRegister ? (
 													<div
 														className="button-registermob"
@@ -453,7 +503,7 @@ class Event extends Component {
 														{/* <a
 															href={this.data.content[currSlide].detailsLink}
 															target="_blank"
-														>
+														> */}
 															<div
 																className="button-moreinfo"
 																style={{
@@ -461,10 +511,13 @@ class Event extends Component {
 																		.accent[2],
 																	transition: 'all .5s ease-in-out'
 																}}
+																onClick={() => {
+																	this.showDetails();
+																}}
 															>
 																<p>Details</p>
 															</div>
-														</a> */}
+														{/* </a> */}
 														{this.data.content[currSlide].canRegister ? (
 															<div
 																className="button-register"
@@ -640,6 +693,16 @@ class Event extends Component {
 											</div>
 										</Row>
 									)}
+								</div>
+								<div
+									className="section eventsection"
+									style={{
+										background: this.data.content[currSlide].accent[1],
+										transition: 'all .5s ease-in-out'
+									}}
+								>
+									<h1 className="heading">Details</h1>
+									{this.getDetails(this.data.content[currSlide].detailsPage)}
 								</div>
 								{/* </div> */}
 								<div
