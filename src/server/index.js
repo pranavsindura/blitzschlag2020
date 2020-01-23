@@ -322,6 +322,42 @@ app.post('/user', (req, res) => {
     });
 });
 
+app.post('/addhospitality', (req, res) => {
+    userInput = req.body;
+    eventRegister.retrieveUsers(userInput.blitzID).then(function(user) {
+        let s = new Set();
+        for (p of userInput.packages) {
+            s.add(p);
+        }
+        if (user[0].hospitality !== undefined) {
+            for (h of user[0].hospitality) {
+                s.add(h);
+            }
+        }
+        let arr = Array.from(s);
+        userModel.findOneAndUpdate({ blitzID: userInput.blitzID }, { hospitality: arr }, (err) => {
+            if (err) {
+                res.send({
+                    status: false,
+                    message: "Internal error"
+                });
+            }
+        }).then(function(output) {
+            if (output) {
+                res.send({
+                    status: true,
+                    message: "Updated hoospitality"
+                });
+            } else {
+                res.send({
+                    status: false,
+                    message: "Internal Error"
+                });
+            }
+        });
+    });
+});
+
 
 app.use(express.static('dist'));
 app.get('/mod', (req, res) => {
