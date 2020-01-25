@@ -106,7 +106,7 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 															<th>#</th>
 
 															<th>Option</th>
-															<th>Amount</th>
+															<th>Amount (per person)</th>
 															<th>Select</th>
 														</tr>
 													</thead>

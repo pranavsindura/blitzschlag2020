@@ -226,8 +226,12 @@ const eventData = {
         detailsLink: "",
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "Description",
+            desc: `Do you have the motivation to transform your talent into a genius? Have you always desired for a
+            cheering crowd to showcase your talent. We offer you a chance to spread your wings and explore your
+            talent in front of an exciting audience.
+            Don't keep your talents within yourself as a closed perfume bottle keep its fragnance in. Open the cap and
+            let them free to disperse.`,
             rounds: []
           },
           {
@@ -255,7 +259,7 @@ const eventData = {
         //required even if canRegister is false
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 10
         },
         eventID: "47"
       },
@@ -295,7 +299,7 @@ const eventData = {
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 1
         },
         eventID: "48"
       }
