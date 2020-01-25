@@ -83,7 +83,7 @@ const eventData = {
         ],
         canRegister: true,
         registerConstraints: {
-          minTeamSize: 1,
+          minTeamSize: 10,
           maxTeamSize: 25
         },
         eventID: "45"
@@ -114,9 +114,9 @@ const eventData = {
               {
                 heading: "ROUND ONE (ONLINE ELIMINATIONS)",
                 list: [
-                  "Record a 3-minute jam video in a jam room/rehearsal space (raw tracks compulsory) and rename it as “<Your BLITZ Number> - BOB” and upload it on Google drive and provide open access to everyone with the link (MANDATORY). Note that this video should not be edited or processed in any form.",
+                  "Record a 3-minute jam video in a jam room/rehearsal space (raw tracks compulsory) and rename it as '<Your BLITZ Number> - BOB' and upload it on Google drive and provide open access to everyone with the link (MANDATORY). Send your Drive Link at < blitzschlag@mnit.ac.in >. Note that this video should not be edited or processed in any form.",
                   "Bands can also attach an another (OPTIONAL) video of their live performance or a mixed and mastered track and a short 50-60 word introduction explaining their style and previous achievements.",
-                  "Bands need to send scanned copies of college ID cards of all participants in the same email.",
+                  "Bands need to send scanned copies of college ID cards of all participants in the same email. ( blitzschlag@mnit.ac.in )",
                   "Bands are allowed to send covers as well as original compositions through these entries."
                 ]
               },
@@ -150,13 +150,15 @@ const eventData = {
                   "Purely classical numbers are not allowed, however a classical refrain is permitted.",
                   "Obscenity (at the discretion of the judges) of any kind is not allowed and will lead to immediate disqualification. The time limit should strictly be followed. Participants will be penalized by judges for not doing so.",
                   "The decision of the judges shall be final and binding.",
-                  "The decision of the organizers regarding the final line-up would be final."
+                  "The decision of the organizers regarding the final line-up would be final.",
+                  "Registration fee : INR 300/- per head.",
+                  "Participants have to pay registration fee after qualifying online round."
                 ]
               }
             ]
           },
           {
-            heading: "PRIZE MONEY: INR 50,000/-",
+            heading: "PRIZES WORTH: INR 1,00,000/- ",
             desc: "",
             rounds: []
           },
@@ -167,7 +169,7 @@ const eventData = {
           }
         ],
         registerConstraints: {
-          minTeamSize: 1,
+          minTeamSize: 3,
           maxTeamSize: 8
         },
         eventID: "44"
@@ -219,7 +221,7 @@ const eventData = {
         desc: `"Every artist was first an amateur", said R.W.Emerson; and if we're sure that you have a story to tell.
         Showcase your talents, show us how far you've come, and see if Blitzschlag 2020 is the stage that will
         grant you victory. Let yourself shine your brightest yet, let's see if 'Blitz Got Talent'!`,
-        details: [`Date: 07/02/2020`, `Prizes worth: 10,000`],
+        details: [`Date: 07/02/2020 & 08/02/2020`, `Prizes worth: 10,000`],
         accent: ["#73211c", "#2f2e2e", "#520c05"],
         detailsLink: "",
         detailsPage: [
@@ -1073,7 +1075,8 @@ const eventData = {
     content: [
       {
         heading: "MOTIF-FILION",
-        desc: `To Be Revealed`,
+        desc: `Ever wondered if casual doodling can be innovative and worth a cross fire?
+        'Motif-filon' is giving all the students an exclusive platform to innovate their scribble and design creative formations using coloured thread. So polish your doodling skills and brace yourself to allure everyone with catchy motifs.`,
         details: [`Date: 07/02/2020`, `Prizes worth: 2,000/-`],
         accent: ["#8b1d64", "#854593", "#2a3d78"],
         detailsLink:

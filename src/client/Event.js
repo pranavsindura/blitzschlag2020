@@ -283,7 +283,7 @@ class Event extends Component {
 		for(let i=0;i<list.length;i++)
 		{
 			arr.push(
-				<li style={{color: 'white', paddingRight: '10px'}}>{list[i]}</li>
+				<li key={list[i].length + Math.random()} style={{color: 'white', paddingRight: '10px'}}>{list[i]}</li>
 			);
 		}
 		return arr;
@@ -293,7 +293,7 @@ class Event extends Component {
 		for(let i=0;i<rounds.length;i++)
 		{
 			let info = (
-				<div>
+				<div key={rounds[i].length + Math.random()}>
 					<h5 style={{color: 'white', textAlign: 'left', paddingLeft: '10px', textDecoration :'underline', paddingRight: '10px'}}>{rounds[i].heading}</h5>
 					<ul>
 						{this.makeList(rounds[i].list)}
@@ -309,13 +309,14 @@ class Event extends Component {
 		for (let i = 0; i < details.length; i++) {
 			// let x = ;
 			let item = details[i];
+			// console.log(item)
 			res.push(
-				<div style={{width: '100%', color: 'white'}}>
-				<h3 style={{color: 'white', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px'}}>{item.heading}</h3>
-				<p style={{color: 'white', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px'}}>{item.desc}</p>
-				<div>
-					{this.getRounds(item.rounds)}
-				</div>
+				<div key={item.length+Math.trunc(Math.random()*1000)} style={{width: '100%', color: 'white', padding:'20px'}}>
+					<h3 style={{color: 'white', textAlign: 'left'}}>{item.heading}</h3>
+					<p style={{color: 'white', textAlign: 'left'}}>{item.desc}</p>
+					<div>
+						{this.getRounds(item.rounds)}
+					</div>
 				</div>
 			);
 		}
