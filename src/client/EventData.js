@@ -584,23 +584,34 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "Well, we muggles decided to add some spice to the traditional game of jenga. You ask why after all this time, we say... Always! Here’s the catch, the game will not only test your jenga skills but also your Harry Potter fandom. One can pull out certain pieces that have some Harry Potter questions to earn bonus points. Are you the Chosen One? Here's your chance to catch the golden snitch. We solemnly swear that it will be fun. Play the game right and win exciting prizes. Mischief managed!",
             rounds: []
           },
           {
-            heading: "",
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "TEAM SIZE : 1/2",
+                  "All teams will have to compete in groups. Each winner from a group gets to compete in the next round from the winners from other group circles.",
+                  "Certain blocks out of the whole structure will be marked which correspond to a harry potter themed question. Pulling out a marked wooden block earns you bonus points if you answer correctly.",
+                  "Pulling out an unmarked wooden block earns no point but the team can continue with the game.",
+                  "If pulling out a wooden bock leads to falling of the Jenga structure, you will be disqualified and the game for your circle will be evaluated then and there itself."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY: 3,500/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "Contact Details",
+            desc: "Ishika Bansal : 8769976223 Vasu Verma : 8742825994",
             rounds: ""
           },
           {
@@ -624,28 +635,40 @@ const eventData = {
           "https://drive.google.com/file/d/1bYT41yX4aFO0OcyU1InXx5EAiyBxBiVw/view?usp=sharing",
         canRegister: true,
         registerConstraints: {
-          minTeamSize: 1,
+          minTeamSize: 2,
           maxTeamSize: 3
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "Have you ever felt so drawn towards a puzzle that you just can't get it off your mind before solving it? Is that feeling which comes on solving a really tough puzzle, priceless to you? What's the first thought that comes to your mind when you see a sudoku? Is your first thought when someone challenges you for a crossword puzzle 'BRING IT ON!'? Does the play with anagrams never fails to amuse you? If yes, then we have just the right thing for you. Literary Society presents a bucket full of sudokus, anagrams, crosswords, rebuses and a lot more. Join us and cherish again the childhood puzzle days but this time...with a spice of competition.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "GENERAL RULES",
+            desc: "A set of puzzles will be provided, encompassing a variety of subdivisions like crosswords or homophones, rebuses, anagrams, Sudoku, fill the bubble etc.",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "TEAM SIZE : 2/3",
+                  "ROUNDS 1",
+                  "TIME LIMIT 1.5 hours",
+                  "The marking scheme and rules will be announced on the spot.",
+                  "The decision of the organizer shall be final and binding.",
+                  "The rules are subject to change at behest of the Organizer."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY : 4000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Ishika Bansal: 8769976223 Vasu Verma : 8742825994",
             rounds: ""
           },
           {
@@ -673,28 +696,80 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "After the wild success of the first edition, Literary Society is back with Questival 2.0 More gruelling, challenging and exciting than before. Be prepared with your clan to steal the spotlight, showcase your intelligence, and leave a mark ! A perfect opportunity to fight it out with the MNIT's finest, make some memories along the way and work together as a team for glory. Full of several mini quests, this festival will surely test your wits and grits, so bring your A GAME ! The stakes have been upped but so has the reward. Are you up for it ?",
             rounds: []
           },
           {
-            heading: "",
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Maximum of 3 members can participate in a team.",
+                  "Use of unfair means is prohibited and shall lead to disqualification.",
+                  "The decision of the judges will be final and binding."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "Rounds",
+            desc: "",
+            rounds:  [
+              {
+                heading: "ROUND ONE (QFiesta)",
+                list: [
+                  "The teams will be contesting in a quiz competition.",
+                  "Quiz will be conducted on various sections: Bollywood , Sports , Politics , People , Nostalgia",
+                  "The participants are expected to bring their own pens."
+                ]
+              },
+              {
+                heading: "ROUND TWO (Caption It)",
+                list: [
+                  "The teams will be provided with a set of pictures. Each team has to come up with innovative descriptive captions for them.",
+                  "The time limit must be followed.",
+                  "Each team has to stick to the word limit.",
+                  "Exceeding the word limit will lead to deduction of points.",
+                  "Participants are expected to bring their own pens."
+              ]
+              },
+              {
+                heading: "ROUND THREE (Treasure Hunt)",
+                list: [
+                  "The complete team should report 20 minutes before the commencement of the competition .",
+                  "The members of the team should find the clues together and the complete team has to reach to the location.",
+                  "You’ll be given maximum of 1.5 hours to finish all the clues. Time bonus will be given if you complete earlier. However, completing it earlier than the other team doesn’t assure you to win. Total points will be calculated.",
+                  "You cannot skip any clue.",
+                  "At every correct location, you’ll find our volunteers standing with your next clue but for the next clue, you’ll have to do a task which will be given on the spot.",
+                  "For any location, you’ll not enter the location. Eg : If the location is Library, you’ll find the volunteer at the entrance of Library, you need not enter the library and create any sort of disturbance there.",
+                  "Teams must be courteous and respectful to the other team members as well as the volunteers.",
+                  "The points distribution will be given on the day itself."
+                ]
+              },
+              {
+                heading: "ROUND 4 (Defend Thy Character)",
+                list: [
+                  "The team will draw one chit at a time to find out which character they shall be defending. A maximum of four chits can be picked and one character has to be finalized. Also, each team will be assigned an opponent team After 1 minute of character introduction by each team, a series of rebuttals are going to take place between two teams where a team has to successfully convince the judges why their character is better. The team which defends their character most convincingly, wins.",
+                  "You can draw up to 4 characters out of the character pool provided and will have to finalize one.",
+                  "Introduce your character in 1 minute followed by 2 minutes of cross questioning other teams.",
+                  "Order of performance will be decided on spot.",
+                  "Maintain decorum while defending your characters.",
+                  "Time limit is to be taken into account for judgement."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY : 6000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Ishika Bansal: 8769976223 Shubham Kuri: 9983960577",
             rounds: ""
           }
         ],
@@ -719,23 +794,40 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "प्रियसी की हो चाह या युद्ध की हो राह मार्मिक मुद्दों पर महत्वपूर्ि बोली या फिर झोली भर हँसी ठििोली जीवन के ित्येक रंगों को शब्दों की सीमा में बांध कर ही एक आम मनुष्य कप्रव या शायर बन जाता है। यह सब महज शब्दों की सुंदरता ही तो है जो अपने हाव-भाव से इस कदर हमारे ठदल को छू लेती है फक हम इनहीं शब्दों को जीना शुरू कर देते हैं। आईये जजंदगी के कुछ अनमोल पननो को पलटें और अपनी कप्रवताओं को डायरी के पननों से आजाद कर आम जन तक पहुचायें। र्लटरेरी सोसाइटी िस्तुत करती है *'काव्यपाि'* एक नया मंच आपकी कप्रवताओं के र्लए।",
             rounds: []
           },
           {
-            heading: "",
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "TEAM SIZE: Solo",
+                  "ROUNDS: 1",
+                  "TIME LIMIT: 2 hours",
+                  "Every Participant will get maximum 4 minutes to complete their performance.",
+                  "Crossing time limit will be highly penalized.",
+                  "Vulgarity is strictly prohibited.",
+                  "The language strictly has to be Hindi.",
+                  "The poem should be original, Plagiarism of any sort will lead to straight disqualification.",
+                  "The poem should be preceded by a 2-3 line write up regarding how it relates to the theme. The write up can be in Hindi or in English.",
+                  "Results of judges will be final.",
+
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY : 4,000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Shubham Kuri : 9983960577 Vasu Verma : 8742825994",
             rounds: ""
           },
           {
@@ -761,23 +853,39 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "INTRODUCTION",
+            desc: "Da Vinci did it with his brush, Shelly with his pen and Einstein with his imagination- anything that has gone down in the history books have a delicate touch of humane creativity in them. It's your turn now to unleash the music of your thought and put to paper your creativity on a blank canvas. Will your creation make people burst into peals of laughter or scare them out of their wits with its eerie ambiance? Be eccentric, innovative and appall the crowd with your words. Literary Society presents you Ek Baar Ki Baat Hai, a story writing competition on 6th February,2020.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "TEAM SIZE: Solo",
+                  "ROUNDS: 1",
+                  "TIME LIMIT: 2 hours",
+                  "Participants need to submit a written entry (prose or drama) based on the prompts provided.",
+                  "There is no upper limit of participants from a particular college. The judgement however shall be done individually.",
+                  "The judgement will be based on aptness of the story, vividness, language and creativity.",
+                  "The language can be both Hindi and English.",
+                  "The submission must be done within two hours of starting time and must not be more than 1500 words long.",
+                  "Entries should be original piece of work.",
+                  "The rules are subject to change at behest of the Organizer."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY : 4,000",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Shubham Kuri : 9983960577 Vasu Verma : 8742825994",
             rounds: ""
           },
           {
@@ -1565,28 +1673,54 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "With the sleeves rolled up, energy high in the blood, voice being raised, bringing the audience at your spot and binding them with the jaw dropping performance filled with intensity, humor, parodies, poetry and everything that can be created. The street having all shades of reality with creatively spreading social awareness is the most powerful form of drama and we are waiting for you to begin this battle of TAMASHA...",
             rounds: []
           },
           {
-            heading: "",
+            heading: "JUDGING CRITERIA",
+            desc: "TOPIC,CONTENT, ACTING , AUDIENCE INTERACTION,SOCIAL MESSAGE RECEIVED ,FORMATIONS",
+            rounds: [
+              {
+                heading: "PRELIMS(may or may not be conducted)",
+                list: [
+                  "Each team will have to go through a 8-10 Minutes preliminary round in which they will have to perform a main part of the Street Play which gives a brief idea about the play."
+                ]
+              },
+              {
+                heading: "MAINS(Finals)",
+                list: [
+                  "Minutes to perform the full length of the play performed in the Prelim, the time limit for the mains is 20-25 min"
+                ]
+              }
+            ]
+          },
+          {
+            heading: "General Rules",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Exceeding the time limit will result in negative marking.",
+                  "Language used can be Hindi or English or both.",
+                  "One team can have a maximum of 25 members.",
+                  "Vulgarity is strictly prohibited.",
+                  "Script should be original/ self-written and should not be copied. If found guilty, would result in disqualification of team.",
+                  "Any electronic device or recorded music is not allowed. Only live music is allowed.",
+                  "Try to keep the usage of props to the minimum."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY: ₹ 25,000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Akash: 9773463082 Mayur: 8938840405",
             rounds: ""
           }
         ],
@@ -1608,28 +1742,57 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "Life is a theatre set in which there are but few practicable entrances. We all have been dramatic in our life, acting in each emotion, love, hate, anger or joy. Now it's time for you put some life on stage - Life that is created by writer, managed by director, lived by actor. It's not only about acting, script, dialogues, and lights rather it's about you living that character on stage bringing life to audience.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "JUDGING CRITERIA",
+            desc: "Content,acting, characterization,Stage presentation,script writting",
+            rounds: [
+              {
+                heading: "PRELIMS(may or may not be conducted)",
+                list: [
+                  "Each team will have to go through a 10 - 12 Minutes preliminary round in which they have to perform a main part of the skit which gives a brief idea about the play."
+                ]
+              },
+              {
+                heading: "MAINS(Finals)",
+                list: [
+                  "Time Limit : 35 - 50 Minutes (including stage setting time) to perform the full length of the play performed in Prelims."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "General Rules",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Exceeding the time limit will result in negative marking.",
+                  "Play could be in Hindi, English or Bilingual.",
+                  "Use of flammable substances like candle, matches, cigarettes, alcohol during performance onstage is not allowed and will result in disqualification.",
+                  "The performance can be original or an adaptation. In case of adaptation, it should be clearly specified.",
+                  "No props will be provided by the organizing team. The teams will be solely responsible for their props.",
+                  "Any kind of vulgarity/obscenity will not be tolerated.",
+                  "One team can have a maximum of 14 members on stage at a time.",
+                  "In case of any dispute decision of the coordinators and judges shall be final and conclusive.",
+                  "Each team can have a maximum of 2 backstage helpers including sound and light technician.",
+                  "All teams have to mail the synopsis and props list by 30th January , 2020 to dramsocmnit@gmail.com"
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY: ₹ 25,000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Akash: 9773463082   Mayur: 8938840405",
             rounds: ""
           }
         ],
