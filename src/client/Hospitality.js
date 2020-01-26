@@ -4,14 +4,18 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Splash from './Splash';
 import { Redirect } from 'react-router-dom';
 import {connect} from 'react-redux';
+import axios from 'axios';
 import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hospitality extends Component {
 	state = {
 		options: [],
 		total: 0,
 		optionsSelectedSet: new Set(),
 		optionsSelected: '',
-		redirect: false
+		redirect: false,
+		redirectPay: false,
+		redirectAmount: 0,
 	};
+	proxy = 'http://localhost:8080';
 	amount = [0, 500, 500, 200, 200, 200, 500, 1200, 300, 300, 150, 400, 200, 200, 200];
 	images = ['https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg'];
 	componentWillMount() {
@@ -20,7 +24,7 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 		this.setState({ options });
 	}
 	componentDidUpdate() {
-		// console.log(this.state);
+		if (this.props.production) this.proxy = '';
 	}
 	handleChange = (e) => {
 		let id = e.target.id;
@@ -43,11 +47,38 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 			this.setState({ redirect: true });
 		} else {
 			let { total, optionsSelectedSet } = this.state;
-			let pIDs = [...optionsSelectedSet];
+			let packages = [...optionsSelectedSet];
 			let amount = total;
-			// blitzID
-			console.log(pIDs, amount);
-			alert('Payment Gateway is currently unavailable. Please use another mode of payment!');
+			axios.post(this.proxy+'/addhospitality',{
+				packages,
+				blitzID: this.props.user.blitzID,
+			})
+			.then((res)=>{
+				res = res.data;
+				console.log(res);
+				if(res.status)
+				{
+					//redirect to apt route.
+					
+					this.setState({ redirectPay: true, redirectAmount: amount });
+					// this.shouldRedirectPay(amount);
+					// console.log(amount);
+					// axios.post(this.proxy+'/topayment',{amount, blitzID: this.props.user.blitzID})
+					// .then((res)=>{
+					// 	res = res.data;
+					// 	console.log(res);
+					// })
+					// .catch((e)=>{alert('Some Error Occured!');})
+				}
+				else
+				{
+					alert('Some Error Occured!');
+				}
+			}).catch((e)=>{
+				alert('Some Error Occured!');
+				// console.log(e);
+			})
+			// alert('Payment Gateway is currently unavailable. Please use another mode of payment!');
 			let options = [null];
 			for (let i = 0; i < 14; i++) options.push(false);
 			this.setState({
@@ -55,11 +86,19 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 				total: 0,
 				optionsSelectedSet: new Set(),
 				optionsSelected: ''
-			});
+			}); 
 		}
 	};
 	shouldRedirect = () => {
 		if (this.state.redirect) return <Redirect to="/login" />;
+		else return null;
+	};
+	shouldRedirectPay = (amount) => {
+		const {redirectAmount} = this.state;
+		if (this.state.redirectPay) return <Redirect to={{
+            pathname: '/payment',
+            state: { amount: redirectAmount }
+        }} />;
 		else return null;
 	};
 	render() {
@@ -92,6 +131,7 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 							<ReactFullpage.Wrapper>
 								<div className="section" style={{ backgroundColor: 'powderblue' }}>
 									{this.shouldRedirect()}
+									{this.shouldRedirectPay()}
 									<h1 className="hosp-heading heading">Hospitality</h1>
 									<Form
 										onSubmit={() => {
@@ -424,6 +464,8 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 const mapStateToProps = (state)=>{
 	return{
 		loggedIn: state.loggedIn,
+		user: state.user,
+		production: state.production,
 	}
 }
 

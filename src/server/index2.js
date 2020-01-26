@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 const objectID = require('objectid');
 
 // const uri = String(process.env.MONGODB_URI);
-const uri = String(process.env.MONGODB_URI);
+const uri = "mongodb+srv://Dhairya-Shalu:light12345@first-demo-ocw10.mongodb.net/test?retryWrites=true&w=majority";
 let { userModel } = require('./model.js');
 let { idModel } = require('./idModel');
 let loginValid = require('./loginvalid');
@@ -39,11 +39,12 @@ mongoose.connect(uri, {
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', async function() {
-    // console.log('Connected to the database');
+    console.log('Connected to the database');
 });
 
 app.post('/login', (req, res) => {
     let userLoginData = req.body;
+    console.log('userLoginData', userLoginData)
     loginValid.userValid(userLoginData).then(function(result) {
         if (result) {
             if (result === 1) {
@@ -322,10 +323,45 @@ app.post('/user', (req, res) => {
     });
 });
 
+app.post('/addhospitality', (req, res) => {
+    userInput = req.body;
+    eventRegister.retrieveUsers(userInput.blitzID).then(function(user) {
+        let s = new Set();
+        for (p of userInput.packages) {
+            s.add(p);
+        }
+        console.log('user',user);
+        if (user[0].hospitality !== undefined) {
+            for (h of user[0].hospitality) {
+                s.add(h);
+            }
+        }
+        let arr = Array.from(s); 
+        userModel.findOneAndUpdate({ blitzID: userInput.blitzID }, { hospitality: arr }, (err) => {
+            if (err) {
+                res.send({
+                    status: false,
+                    message: "Internal error"
+                });
+            }
+        }).then(function(output) {
+            if (output) {
+                res.send({
+                    status: true,
+                    message: "Updated hospitality"
+                });
+            } else {
+                res.send({
+                    status: false,
+                    message: "Internal Error"
+                });
+            }
+        });
+    });
+}); 
 
 app.use(express.static('dist'));
 app.get('/mod', (req, res) => {
-    // console.log(__dirname);
 
     // res.sendFile(path.resolve('./moderator.html'))
     res.redirect('https://blitzmod.herokuapp.com/');

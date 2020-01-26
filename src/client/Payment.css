@@ -1,0 +1,44 @@
+.pay-left{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+.pay-right{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    left: 50%;
+}
+.pay-card{
+    width: 90% !important;
+	left: 5% !important;
+    /* background-color: white !important; */
+    color: white;
+}
+.pay-mode-img{
+    height: 600px;
+    width: auto;
+    /* left: 50%;
+    position: relative;
+    transform: translate(-50%); */
+}
+.pay-mode-img-container{
+    display: block;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+	.card {
+		width: 95% !important;
+        left: 2.5% !important;
+        color: white;
+    }
+    .pay-left{
+        width: 100%;
+        display: block;
+    }
+    .pay-right{
+        width: 100%;
+        display: block;
+    }
+}
