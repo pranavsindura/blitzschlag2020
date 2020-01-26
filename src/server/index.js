@@ -18,6 +18,7 @@ let signupvalid = require('./Signupvalidation');
 let mobAndPinValid = require('./mobileAndPinValid');
 let modelEvent = require('./modelEventSociety');
 let mailer = require('./mailer');
+let paymodel = require('./paymodel');
 
 const app = express();
 app.use(bodyparser.urlencoded({ extended: true }));
