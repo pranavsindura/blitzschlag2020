@@ -358,6 +358,22 @@ app.post('/addhospitality', (req, res) => {
     });
 });
 
+app.post('upipayments', (req, res) => {
+    let userInput = req.body;
+    let obj = new paymodel.upiPayModel(userInput);
+    obj.save().then((result) => {
+        res.send({
+            status: true,
+            message: ""
+        });
+    }).catch(err => {
+        res.send({
+            status: false,
+            message: "Pay details not recorded"
+        });
+    });
+});
+
 
 app.use(express.static('dist'));
 app.get('/mod', (req, res) => {
