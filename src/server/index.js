@@ -18,6 +18,7 @@ let signupvalid = require('./Signupvalidation');
 let mobAndPinValid = require('./mobileAndPinValid');
 let modelEvent = require('./modelEventSociety');
 let mailer = require('./mailer');
+let paymodel = require('./paymodel');
 
 const app = express();
 app.use(bodyparser.urlencoded({ extended: true }));
@@ -354,6 +355,22 @@ app.post('/addhospitality', (req, res) => {
                     message: "Internal Error"
                 });
             }
+        });
+    });
+});
+
+app.post('/upipayments', (req, res) => {
+    let userInput = req.body;
+    let obj = new paymodel.upiPayModel(userInput);
+    obj.save().then((result) => {
+        res.send({
+            status: true,
+            message: ""
+        });
+    }).catch(err => {
+        res.send({
+            status: false,
+            message: "Some Error Occured!"
         });
     });
 });

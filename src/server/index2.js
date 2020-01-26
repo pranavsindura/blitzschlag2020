@@ -8,8 +8,8 @@ const device = require('express-device');
 const mongoose = require('mongoose');
 const objectID = require('objectid');
 
+const uri = 'mongodb+srv://Dhairya-Shalu:light12345@first-demo-ocw10.mongodb.net/test?retryWrites=true&w=majority';
 // const uri = String(process.env.MONGODB_URI);
-const uri = String(process.env.MONGODB_URI);
 let { userModel } = require('./model.js');
 let { idModel } = require('./idModel');
 let loginValid = require('./loginvalid');
@@ -18,6 +18,7 @@ let signupvalid = require('./Signupvalidation');
 let mobAndPinValid = require('./mobileAndPinValid');
 let modelEvent = require('./modelEventSociety');
 let mailer = require('./mailer');
+let paymodel = require('./paymodel');
 
 const app = express();
 app.use(bodyparser.urlencoded({ extended: true }));
@@ -39,7 +40,7 @@ mongoose.connect(uri, {
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', async function() {
-    // console.log('Connected to the database');
+    console.log('Connected to the database');
 });
 
 app.post('/login', (req, res) => {
@@ -319,6 +320,58 @@ app.post('/user', (req, res) => {
                 message: "Unable to fetch user details"
             });
         }
+    });
+});
+
+app.post('/addhospitality', (req, res) => {
+    userInput = req.body;
+    eventRegister.retrieveUsers(userInput.blitzID).then(function(user) {
+        let s = new Set();
+        for (p of userInput.packages) {
+            s.add(p);
+        }
+        if (user[0].hospitality !== undefined) {
+            for (h of user[0].hospitality) {
+                s.add(h);
+            }
+        }
+        let arr = Array.from(s);
+        userModel.findOneAndUpdate({ blitzID: userInput.blitzID }, { hospitality: arr }, (err) => {
+            if (err) {
+                res.send({
+                    status: false,
+                    message: "Internal error"
+                });
+            }
+        }).then(function(output) {
+            if (output) {
+                res.send({
+                    status: true,
+                    message: "Updated hoospitality"
+                });
+            } else {
+                res.send({
+                    status: false,
+                    message: "Internal Error"
+                });
+            }
+        });
+    });
+});
+
+app.post('/upipayments', (req, res) => {
+    let userInput = req.body; 
+    let obj = new paymodel.upiPayModel(userInput);
+    obj.save().then((result) => {
+        res.send({
+            status: true,
+            message: ""
+        });
+    }).catch(err => {
+        res.send({
+            status: false,
+            message: "Some Error Occured!"
+        });
     });
 });
 

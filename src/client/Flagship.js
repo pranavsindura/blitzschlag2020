@@ -186,7 +186,7 @@ class Flagship extends Component {
 			this.setState({
 				//  registerDetails, 
 				currSlide: (currSlide + 1) % this.data.carImages.length, submitMessage: '' },()=>{
-					console.log('then from state',this.state.currSlide);
+					// console.log('then from state',this.state.currSlide);
 
 				fullpage_api.reBuild();
 			});
@@ -211,7 +211,7 @@ class Flagship extends Component {
 				currSlide: (currSlide - 1 + this.data.carImages.length) % this.data.carImages.length,
 				submitMessage: ''
 			},()=>{
-				console.log('then from state',this.state.currSlide);
+				// console.log('then from state',this.state.currSlide);
 				fullpage_api.reBuild();
 			});
 		});
@@ -222,7 +222,7 @@ class Flagship extends Component {
 	};
 	createTeamMemberSelect = () => {
 		const { currSlide } = this.state;
-		console.log('member select', currSlide);
+		// console.log('member select', currSlide);
 		let options = [];
 		for (
 			let i = this.data.content[currSlide].registerConstraints.minTeamSize;
@@ -246,7 +246,7 @@ class Flagship extends Component {
 	createTeamMemberInput = () => {
 		let input = [];
 		const { registerDetails } = this.state;
-		console.log('from team input',registerDetails.teamSize);
+		// console.log('from team input',registerDetails.teamSize);
 		for (let i = 0; i < registerDetails.teamSize; i++) {
 			input.push(
 				<Form.Row key={`formrow-${i}`}>
@@ -342,7 +342,7 @@ class Flagship extends Component {
 				</div>
 			);
 		}
-		console.log(res);
+		// console.log(res);
 		return res;
 	};
 	render() {

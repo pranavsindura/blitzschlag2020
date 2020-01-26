@@ -1,138 +1,149 @@
-import React, { Component } from "react";
-import "./Hospitality.css";
-import ReactFullpage from "@fullpage/react-fullpage";
-import Splash from "./Splash";
-import { Redirect } from "react-router-dom";
-import { connect } from "react-redux";
-import { Form, Col, Card, Table, Button, Row } from "react-bootstrap";
-class Hospitality extends Component {
-  state = {
-    options: [],
-    total: 0,
-    optionsSelectedSet: new Set(),
-    optionsSelected: "",
-    redirect: false
-  };
-  amount = [
-    0,
-    500,
-    500,
-    200,
-    200,
-    200,
-    500,
-    1200,
-    300,
-    300,
-    150,
-    400,
-    200,
-    200,
-    200
-  ];
-  images = [
-    "https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg"
-  ];
-  componentWillMount() {
-    let options = [null];
-    for (let i = 0; i < 14; i++) options.push(false);
-    this.setState({ options });
-  }
-  componentDidUpdate() {
-    // console.log(this.state);
-  }
-  handleChange = e => {
-    let id = e.target.id;
-    let val = Boolean(e.target.checked);
-    let sig = val ? 1 : -1;
-    let { options, total, optionsSelectedSet, optionsSelected } = this.state;
-    if (val) {
-      optionsSelectedSet.add(Number(id));
-    } else {
-      optionsSelectedSet.delete(Number(id));
-    }
-    optionsSelected = [...optionsSelectedSet].sort().join(" ");
-    total += sig * this.amount[Number(id)];
-    options[id] = val;
-    this.setState(
-      { options, total, optionsSelectedSet, optionsSelected },
-      () => {
-        fullpage_api.reBuild();
-      }
-    );
-  };
-  handleSubmit = e => {
-    e.preventDefault();
-    if (!this.props.loggedIn) {
-      this.setState({ redirect: true });
-    } else {
-      let { total, optionsSelectedSet } = this.state;
-      let pIDs = [...optionsSelectedSet];
-      let amount = total;
-      // blitzID
-      console.log(pIDs, amount);
-      alert(
-        "Payment Gateway is currently unavailable. Please use another mode of payment!"
-      );
-      let options = [null];
-      for (let i = 0; i < 14; i++) options.push(false);
-      this.setState({
-        options,
-        total: 0,
-        optionsSelectedSet: new Set(),
-        optionsSelected: ""
-      });
-    }
-  };
-  shouldRedirect = () => {
-    if (this.state.redirect) return <Redirect to="/login" />;
-    else return null;
-  };
-  render() {
-    const { options, total, optionsSelected } = this.state;
-    return (
-      <div>
-        <Splash images={this.images} />
-        <a href="http://www.blitzschlag.co.in/">
-          <img
-            style={{
-              height: "auto",
-              width: "70px",
-              position: "fixed",
-              left: "0%",
-              top: "0%",
-              zIndex: "1"
-            }}
-            src="https://i.ibb.co/42WZWbr/blitzlogo.png"
-          />
-        </a>
-        <ReactFullpage
-          verticalCentered={false}
-          scrollOverflow={true}
-          scrollOverflowOptions={{
-            click: false,
-            preventDefaultException: { tagName: /.*/ }
-          }}
-          render={({ state, fullpageApi }) => {
-            return (
-              <ReactFullpage.Wrapper>
-                <div
-                  className="section"
-                  style={{ backgroundColor: "powderblue" }}
-                >
-                  {this.shouldRedirect()}
-                  <h1 className="hosp-heading heading">Hospitality</h1>
-                  <Form
-                    onSubmit={() => {
-                      this.handleSubmit(event);
-                    }}
-                  >
-                    <Card className="hosp-card">
-                      <Card.Body>
-                        <Table striped bordered hover responsive size="sm">
-                          <thead className="hosp">
-                            <tr>
-                              <th>#</th>
+import React, { Component } from 'react';
+import './Hospitality.css';
+import ReactFullpage from '@fullpage/react-fullpage';
+import Splash from './Splash';
+import { Redirect } from 'react-router-dom';
+import {connect} from 'react-redux';
+import axios from 'axios';
+import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hospitality extends Component {
+	state = {
+		options: [],
+		total: 0,
+		optionsSelectedSet: new Set(),
+		optionsSelected: '',
+		redirect: false,
+		redirectPay: false,
+		redirectAmount: 0,
+	};
+	proxy = 'http://localhost:8080';
+	amount = [0, 500, 500, 200, 200, 200, 500, 1200, 300, 300, 150, 400, 200, 200, 200];
+	images = ['https://cdn.dodowallpaper.com/full/433/mandala-wallpaper-desktop-4.jpg'];
+	componentWillMount() {
+		let options = [null];
+		for (let i = 0; i < 14; i++) options.push(false);
+		this.setState({ options });
+	}
+	componentDidUpdate() {
+		if (this.props.production) this.proxy = '';
+	}
+	handleChange = (e) => {
+		let id = e.target.id;
+		let val = Boolean(e.target.checked);
+		let sig = val ? 1 : -1;
+		let { options, total, optionsSelectedSet, optionsSelected } = this.state;
+		if (val) {
+			optionsSelectedSet.add(Number(id));
+		} else {
+			optionsSelectedSet.delete(Number(id));
+		}
+		optionsSelected = [...optionsSelectedSet].sort().join(' ');
+		total += sig * this.amount[Number(id)];
+		options[id] = val;
+		this.setState({ options, total, optionsSelectedSet, optionsSelected },()=>{fullpage_api.reBuild();});
+	};
+	handleSubmit = (e) => {
+		e.preventDefault();
+		if (!this.props.loggedIn) {
+			this.setState({ redirect: true });
+		} else {
+			let { total, optionsSelectedSet } = this.state;
+			let packages = [...optionsSelectedSet];
+			let amount = total;
+			axios.post(this.proxy+'/addhospitality',{
+				packages,
+				blitzID: this.props.user.blitzID,
+			})
+			.then((res)=>{
+				res = res.data;
+				// console.log(res);
+				if(res.status)
+				{
+					//redirect to apt route.
+					
+					this.setState({ redirectPay: true, redirectAmount: amount });
+					// this.shouldRedirectPay(amount);
+					// console.log(amount);
+					// axios.post(this.proxy+'/topayment',{amount, blitzID: this.props.user.blitzID})
+					// .then((res)=>{
+					// 	res = res.data;
+					// 	console.log(res);
+					// })
+					// .catch((e)=>{alert('Some Error Occured!');})
+				}
+				else
+				{
+					alert('Some Error Occured!');
+				}
+			}).catch((e)=>{
+				alert('Some Error Occured!');
+				// console.log(e);
+			})
+			// alert('Payment Gateway is currently unavailable. Please use another mode of payment!');
+			let options = [null];
+			for (let i = 0; i < 14; i++) options.push(false);
+			this.setState({
+				options,
+				total: 0,
+				optionsSelectedSet: new Set(),
+				optionsSelected: ''
+			}); 
+		}
+	};
+	shouldRedirect = () => {
+		if (this.state.redirect) return <Redirect to="/login" />;
+		else return null;
+	};
+	shouldRedirectPay = (amount) => {
+		const {redirectAmount} = this.state;
+		if (this.state.redirectPay) return <Redirect to={{
+            pathname: '/payment',
+            state: { amount: redirectAmount }
+        }} />;
+		else return null;
+	};
+	render() {
+		const { options, total, optionsSelected } = this.state;
+		return (
+			<div>
+				<Splash images={this.images} />
+				<a href="http://www.blitzschlag.co.in/">
+					<img
+						style={{
+							height: 'auto',
+							width: '70px',
+							position: 'fixed',
+							left: '0%',
+							top: '0%',
+							zIndex: '1'
+						}}
+						src="https://i.ibb.co/42WZWbr/blitzlogo.png"
+					/>
+				</a>
+				<ReactFullpage
+					verticalCentered={false}
+					scrollOverflow={true}
+					scrollOverflowOptions={{
+						click: false,
+						preventDefaultException: { tagName: /.*/ }
+					}}
+					render={({ state, fullpageApi }) => {
+						return (
+							<ReactFullpage.Wrapper>
+								<div className="section" style={{ backgroundColor: 'powderblue' }}>
+									{this.shouldRedirect()}
+									{this.shouldRedirectPay()}
+									<h1 className="hosp-heading heading">Hospitality</h1>
+									<Form
+										onSubmit={() => {
+											this.handleSubmit(event);
+										}}
+									>
+										<Card className="hosp-card">
+											<Card.Body>
+												<Table striped bordered hover responsive size="sm">
+													<thead className="hosp">
+														<tr>
+															<th>#</th>
 
                               <th>Option</th>
                               <th>Amount (per person)</th>
@@ -483,11 +494,13 @@ class Hospitality extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    loggedIn: state.loggedIn
-  };
-};
+const mapStateToProps = (state)=>{
+	return{
+		loggedIn: state.loggedIn,
+		user: state.user,
+		production: state.production,
+	}
+}
 
 const mapDispatchToProps = dispatch => {
   return {};

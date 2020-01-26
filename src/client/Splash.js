@@ -10,7 +10,8 @@ let options = {
 	cache: 'default',
 	headers: myHeaders
 };
-const proxyurl = 'https://images.weserv.nl/?url=';
+// const proxyurl = 'https://images.weserv.nl/?url=';
+const proxyurl = '';
 export default class App extends Component {
 	state = { loaded: false, imageCount: 0, width: 0, dir: true };
 	loadImage = () => {
