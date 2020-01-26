@@ -96,11 +96,23 @@ class Myaccount extends Component {
 							<td>Accomodation needed:</td>
 							<td>{acc}</td>
 						</tr>
-						{this.renderTransaction(this.props.user)}
+						<tr>
+							<td>Hospitality Options:</td>
+							<td>{this.getOptionsString(this.props.user)}</td>
+						</tr>
+						{/* {this.renderTransaction(this.props.user)} */}
 					</tbody>
 				</Table>
 			</div>
 		);
+	}
+	getOptionsString(user)
+	{
+		let str = '';
+		user.hospitality.sort();
+		for(let i=0;i<user.hospitality.length;i++)
+			str += ' '+user.hospitality[i];
+		return str;
 	}
 	renderTransaction(user) {
 		if (user.isMNIT == false) {

@@ -370,7 +370,7 @@ class Event extends Component {
         </div>
       );
     }
-    console.log(res);
+    // console.log(res);
     return res;
   };
   render() {

@@ -20,11 +20,11 @@ class Payment extends Component {
 	}
 	componentDidMount() {
 		// console.log(this.props.location);
-		// if(this.props.location.state === undefined)
-		//     this.setState({redirect: true});
-		// else
-		// this.setState({amount: this.props.location.state.amount})
-		this.setState({ amount: 500 });
+		if(this.props.location.state === undefined)
+		    this.setState({redirect: true});
+		else
+		this.setState({amount: this.props.location.state.amount})
+		// this.setState({ amount: 500 });
 	}
 	handleChange = (e) => {
 		let id = e.target.id;
@@ -40,15 +40,38 @@ class Payment extends Component {
 		if (!this.props.loggedIn) {
 			this.setState({ redirect: true });
 		} else {
-			console.log(this.state);
+            // console.log(this.state);
+            const {amount, transactionID} = this.state;
+            let details = {
+                blitzID: this.props.user.blitzID,
+                firstName: this.props.user.firstName,
+                lastName: this.props.user.lastName,
+                mob: this.props.user.mob,
+                email: this.props.user.email,
+                amount,
+                transactionID
+            };
+            axios.post(this.proxy+'/upipayments',details).then(res=>{
+                res = res.data;
+                if(res.status)
+                {
+                    alert('Entry Recorded!');
+                    this.setState({redirect: true});
+                }
+                else{
+                    alert('Please Try Again!');
+                }
+            }).catch(e=>{
+                alert('Experiencing Network Issues!');
+            })
         }
         this.setState({ transactionID: '' });
 	};
 	shouldRedirect = () => {
-		// if (this.state.redirect) return <Redirect to="/login" />;
-		// if (this.state.redirect || this.props.location.state === undefined) return <Redirect to="/login" />;
-		// else return null;
-		return null;
+		if (this.state.redirect) return <Redirect to="/login" />;
+		if (this.state.redirect || this.props.location.state === undefined) return <Redirect to="/login" />;
+		else return null;
+		// return null;
 	};
 	render() {
 		const { amount, transactionID } = this.state;
@@ -132,7 +155,7 @@ class Payment extends Component {
 														</Form.Group>
 													</Card.Body>
 													<Card.Footer>
-														Note: GooglePay and PhonePe are the accepted payment methods.
+														Note: PayTM, Google Pay, and PhonePe are the accepted payment methods.
 													</Card.Footer>
 												</Card>
 											</Form>

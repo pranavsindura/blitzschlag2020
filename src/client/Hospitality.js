@@ -55,7 +55,7 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 			})
 			.then((res)=>{
 				res = res.data;
-				console.log(res);
+				// console.log(res);
 				if(res.status)
 				{
 					//redirect to apt route.

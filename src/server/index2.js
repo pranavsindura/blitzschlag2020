@@ -8,8 +8,8 @@ const device = require('express-device');
 const mongoose = require('mongoose');
 const objectID = require('objectid');
 
+const uri = 'mongodb+srv://Dhairya-Shalu:light12345@first-demo-ocw10.mongodb.net/test?retryWrites=true&w=majority';
 // const uri = String(process.env.MONGODB_URI);
-const uri = "mongodb+srv://Dhairya-Shalu:light12345@first-demo-ocw10.mongodb.net/test?retryWrites=true&w=majority";
 let { userModel } = require('./model.js');
 let { idModel } = require('./idModel');
 let loginValid = require('./loginvalid');
@@ -18,6 +18,7 @@ let signupvalid = require('./Signupvalidation');
 let mobAndPinValid = require('./mobileAndPinValid');
 let modelEvent = require('./modelEventSociety');
 let mailer = require('./mailer');
+let paymodel = require('./paymodel');
 
 const app = express();
 app.use(bodyparser.urlencoded({ extended: true }));
@@ -44,7 +45,6 @@ db.once('open', async function() {
 
 app.post('/login', (req, res) => {
     let userLoginData = req.body;
-    console.log('userLoginData', userLoginData)
     loginValid.userValid(userLoginData).then(function(result) {
         if (result) {
             if (result === 1) {
@@ -67,22 +67,6 @@ app.post('/login', (req, res) => {
                 message: 'User not Registered!',
             })
         }
-    });
-});
-
-app.post('upipayments', (req, res) => {
-    let userInput = req.body;
-    let obj = new paymodel.upiPayModel(userInput);
-    obj.save().then((result) => {
-        res.send({
-            status: true,
-            message: ""
-        });
-    }).catch(err => {
-        res.send({
-            status: false,
-            message: "Pay details not recorded"
-        });
     });
 });
 
@@ -346,13 +330,12 @@ app.post('/addhospitality', (req, res) => {
         for (p of userInput.packages) {
             s.add(p);
         }
-        console.log('user',user);
         if (user[0].hospitality !== undefined) {
             for (h of user[0].hospitality) {
                 s.add(h);
             }
         }
-        let arr = Array.from(s); 
+        let arr = Array.from(s);
         userModel.findOneAndUpdate({ blitzID: userInput.blitzID }, { hospitality: arr }, (err) => {
             if (err) {
                 res.send({
@@ -364,7 +347,7 @@ app.post('/addhospitality', (req, res) => {
             if (output) {
                 res.send({
                     status: true,
-                    message: "Updated hospitality"
+                    message: "Updated hoospitality"
                 });
             } else {
                 res.send({
@@ -374,10 +357,28 @@ app.post('/addhospitality', (req, res) => {
             }
         });
     });
-}); 
+});
+
+app.post('/upipayments', (req, res) => {
+    let userInput = req.body; 
+    let obj = new paymodel.upiPayModel(userInput);
+    obj.save().then((result) => {
+        res.send({
+            status: true,
+            message: ""
+        });
+    }).catch(err => {
+        res.send({
+            status: false,
+            message: "Some Error Occured!"
+        });
+    });
+});
+
 
 app.use(express.static('dist'));
 app.get('/mod', (req, res) => {
+    // console.log(__dirname);
 
     // res.sendFile(path.resolve('./moderator.html'))
     res.redirect('https://blitzmod.herokuapp.com/');

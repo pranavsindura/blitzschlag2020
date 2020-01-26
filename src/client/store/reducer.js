@@ -1,7 +1,7 @@
 let initialState = {
 	loggedIn: false,
 	user: null,
-	production:false, 
+	production:true, 
 };
 
 
