@@ -206,11 +206,16 @@ class Event extends Component {
       registerDetails.teamMembers.push({ blitzID: "", blitzPIN: "" });
     }
     // this.setState({ registerDetails });
-    this.setState({
-      currSlide: (currSlide + 1) % this.data.carImages.length,
-      registerDetails,
-      submitMessage: ""
-    });
+    this.setState(
+      {
+        currSlide: (currSlide + 1) % this.data.carImages.length,
+        registerDetails,
+        submitMessage: ""
+      },
+      () => {
+        fullpage_api.reBuild();
+      }
+    );
   };
   prevSlide = () => {
     const { currSlide } = this.state;
@@ -229,13 +234,18 @@ class Event extends Component {
       registerDetails.teamMembers.push({ blitzID: "", blitzPIN: "" });
     }
     // this.setState({ registerDetails });
-    this.setState({
-      currSlide:
-        (currSlide - 1 + this.data.carImages.length) %
-        this.data.carImages.length,
-      registerDetails,
-      submitMessage: ""
-    });
+    this.setState(
+      {
+        currSlide:
+          (currSlide - 1 + this.data.carImages.length) %
+          this.data.carImages.length,
+        registerDetails,
+        submitMessage: ""
+      },
+      () => {
+        fullpage_api.reBuild();
+      }
+    );
   };
   showDetails = () => {
     fullpage_api.moveTo("details");
@@ -321,7 +331,7 @@ class Event extends Component {
     for (let i = 0; i < list.length; i++) {
       arr.push(
         <li
-          key={list[i].length + Math.random()}
+          //   key={list[i].length + Math.random()}
           style={{ color: "white", paddingRight: "10px" }}
         >
           {list[i]}
@@ -334,7 +344,9 @@ class Event extends Component {
     let arr = [];
     for (let i = 0; i < rounds.length; i++) {
       let info = (
-        <div key={rounds[i].length + Math.random()}>
+        <div
+        // key={rounds[i].length + Math.random()}
+        >
           <h5
             style={{
               color: "white",
@@ -358,19 +370,27 @@ class Event extends Component {
     for (let i = 0; i < details.length; i++) {
       // let x = ;
       let item = details[i];
-      // console.log(item)
+    //   console.log("onload", item);
       res.push(
         <div
-          key={item.length + Math.trunc(Math.random() * 1000)}
+          //   key={
+          // 	  item.length
+          // 	   + Math.trunc(Math.random() * 1000)}
           style={{ width: "100%", color: "white", padding: "20px" }}
         >
           <h3 style={{ color: "white", textAlign: "left" }}>{item.heading}</h3>
           <p style={{ color: "white", textAlign: "left" }}>{item.desc}</p>
-          <div>{this.getRounds(item.rounds)}</div>
+          <div
+            onLoad={() => {
+              fullpage_api.reBuild();
+            }}
+          >
+            {this.getRounds(item.rounds)}{" "}
+          </div>
         </div>
       );
     }
-    console.log(res);
+    // console.log(res);
     return res;
   };
   render() {
@@ -850,9 +870,6 @@ class Event extends Component {
                             </Col>
                           </Row>
                           <Row>{submitMessage}</Row>
-                          {/* {() => {
-													fullpageApi.reBuild();
-												}} */}
                         </Form>
                       </Card.Body>
                     </Card>
