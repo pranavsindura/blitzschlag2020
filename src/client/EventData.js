@@ -185,28 +185,64 @@ const eventData = {
         canRegister: true,
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "Being one of the most popular events, Ramba Samba is the dance extravaganza. Flashy costumes, loud make-up and the outstanding choreography make a dance team the best.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "JUDGING CRITERIA & RULE BOOK",
+            desc: "Choreography, Energy, Expression , Overall impact , Synchronization, Entertainment Value, Beat techniques and timing .",
+            rounds: [
+              {
+                heading: "ROUND ONE (PRELIMS)",
+                list: [
+                  "Teams will have to perform on a track of 5-6 min, including stage setup and clearance."
+                ]
+              },
+              {
+                heading: "ROUND TWO (FINALS)",
+                list: [
+                  "The teams selected for finals will have to perform on a track with a time limit of 8-12 min (+2 min for stage setup and clearance).",
+                  "The prelims track should be a part of the final performance."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "ROUND TWO (FINALS)",
+                list: [
+                  "Minimum of 12 and a maximum of 30 members can participate from a team.",
+                  "Minimum of 7 members should be present on the stage.",
+                  "No classical dance performances are allowed.",
+                  "Time limit must be followed. Exceeding it will lead to negative marking.",
+                  "Usage of props is allowed but has to be informed prior to the performance. These have to be brought by the teams themselves but the organizers hold the discretion of allowing it on stage.",
+                  "No use of fire, water, glass or any other thing that might cause inconvenience to the other teams or cause damage to the stage during the performance.",
+                  "No extra mark for theme or use of properties.",
+                  "Fusion of songs is allowed.",
+                  "No solo performance is allowed.",
+                  "The dance group have to use one set of costume in the prelims, they are going to use in the final.",
+                  "Pre-recorded music should be brought in a pen drive in .mp3 format only.",
+                  "Marks will be deducted for copied choreography.",
+                  "Teams are STRICTLY prohibited from mentioning their college names during the performance by any medium. Any team doing so will be awarded a high penalty.",
+                  "Vulgarity and obscenity at any point are strictly not allowed. It can lead to immediate disqualification songs should be chosen accordingly.",
+                  "The participants are advised to bring two pen drives to avoid technical disturbance. Out of which, they are also requested to submit one with the coordinator of the event.",
+                  "The decision of the judges will be final and binding."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY: INR 90,000/-  PRIZES WORTH: INR 1,20,000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Akash : 9887481650 Ishit : 9149381450",
             rounds: ""
           }
         ],
@@ -328,28 +364,59 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "Unleash the instrumental passion that had always existed within you! Calling upon all the players of percussion and non-percussion instruments to participate and battle to the end in an epic musical face-off against one another for the victory! It’s time you let the Beethoven in you come out to make not only the judges, but the audience sonder as well!",
             rounds: []
           },
           {
-            heading: "",
+            heading: "RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "ROUND ONE (VIDEO ROUND)",
+                list: [
+                  "Team Composition: 1 member",
+                  "Registration: Mail your Name and College to musicanddancesociety@gmail.com",
+                  "With the subject as: <College> < Name><Event Name> Blitzschlag 20 Video Submission.",
+                  "Videos to be sent on the mentioned email-id in compressed form.",
+                  "No links (including YouTube) will be entertained!",
+                  "People not able to submit the video by the date can contact below mentioned.",
+                  "Final dates for video submission is 05-02-2020"
+                ]
+              }
+            ]
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "ROUND ONE (VIDEO ROUND)",
+                list: [
+                  "Venue: SAC",
+                  "Date: 7th Feb, 2020",
+                  "Timing: 2 pm – 4pm",
+                  "Categories: Percussion and Non-Percussion Instruments.",
+                  "Requisites: College ID, Own Instrument",
+                  "Participants are allowed to use only ONE instrument to play anything of their choice.",
+                  "Electric instruments are not allowed to except keyboard in piano tone.",
+                  "Total performance including setup time is 6 minutes.",
+                  "Negative marking will be done on each exceeding time.",
+                  "Participants have to bring their own instruments.",
+                  "Winner of each instrumental category will be announced.",
+                  "The decision of the judges will be final and binding."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY: WORTH 14,000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Abhirup : 9571384883 Saket : 7702992612",
             rounds: ""
           }
         ],
@@ -410,28 +477,70 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "The beauty of solo & Duet dance are the opportunity to highlight your greatest strengths as a dancer, to reveal a character's story which people only dared to imagine, to be the story teller where the audience watches your body tell a story. Blitzschlag invites you to come showcase your talent as the audience watches in awe how you turn imagination into reality.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "JUDGING CRITERIA",
+            desc: "Choreography, overall impact, stage presence, innovation in song incorporation,Energy, Expression and Synchronization",
+            rounds: [
+              {
+                heading: "ROUND ONE (VIDEO ROUND)",
+                list: [
+                  "Date: on or before 05-02-20",
+                  "Submit a 1-2 minute dance video according to which participants will be shortlisted",
+                  "No props for this round",
+                  "Participants will not be judged on the basis of costumes",
+                  "Record the video from a static camera, no special effects or editing allowed.",
+                  "Name the video as <college name><event name>",
+                  "Mail it to musicanddancesociety@gmail.com with the subject <college name><event name>",
+                  "Write your details (name, age, place, college name, contact number, accommodation(if required)) in the mail.",
+
+                ]
+              },
+              {
+                heading: "ROUND TWO (FINALS)",
+                list: [
+                  "Date: 08.02.2020",
+                  "Time: 10am",
+                  "Venue: SAC",
+                  "Participants will perform a track of 3-4 minutes (including setup and clearance)."
+                ]
+              }
+              
+            ]
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Time limit must be followed. Exceeding the time limit will lead to negative marking.",
+                  "No Classical Dance is allowed.",
+                  "Usage of props is allowed but has to be informed prior to the performance. These have to be brought by the individual themselves but the organizers hold the discretion of allowing it on stage.",
+                  "No use of fire, water or breaking of glass during the performance.",
+                  "No extra marks for theme or use of props.",
+                  "Fusion of songs is allowed.",
+                  "Criteria of judging will be Choreography, overall impact, stage presence, innovation in song incorporation, Energy, Expression and Synchronization.",
+                  "Pre-recorded music should be brought in a pen drive in .mp3 format only.",
+                  "Marks will be deducted for copied choreography.",
+                  "Obscenity of any kind is not allowed and will lead to immediate disqualification.",
+                  "The decision of the judges shall be final and binding."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZES WORTH: INR 14,000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Sanket : 8619319170 Soraya : 9642785257",
             rounds: ""
           }
         ],
@@ -451,28 +560,60 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
+            heading: "DESCRIPTION",
             desc: "",
-            rounds: []
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Team Size: Solo",
+                  "Date 06-02-2020",
+                  "Time 3 to 5"
+                ]
+              }
+            ]
           },
           {
-            heading: "",
+            heading: "Judging Criteria & Competition Rules",
+            desc: "Nritya (pure dance), Abhinaya (facial expressions, body language, footwork, hand and eye movements), Presentation (innovation), Choreography (technical perfection), Stage presence, Overall clarity and Impact on the Audience (costumes will not be judged in this round).",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "The participants have to prepare their own choreography and dance to only semiclassical and classical instrumental music or song.",
+                  "Participants have to send a video of 1-2 min on mail id : musicanddancesociety@gmail.com",
+                  "For final round Time limit : 4 - 7 minutes (including setup, clearance and narration time of 45 sec)",
+                  "Judges may ask questions regarding the performance, genre specifications and about the elements/theme that you are depicting."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Participants will have to opt any one of the major eight classical dance forms in India viz. Kathak, Bharatanatyam, Kathakali, Mohiniyattam, Manipuri, Sattriya, Kuchipudi, Odissi and Gaudiya Nritya.",
+                  "Pre-recorded music should be brought in a pen drive in .mp3 format only. Narration time should not exceed the limit (45 sec).",
+                  "Live music is STRICTLY not allowed.",
+                  "Costumes and accessories are to be arranged by the participants at their cost.",
+                  "Obscenity of any kind is not allowed and will lead to immediate disqualification.",
+                  "Any kind of fluid, flame, powders, glitters, heavy or sharp objects or any material which can possibly tamper/damage the stage is STRICTLY not allowed.",
+                  "The decision of the judges will be final and binding."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY: WORTH 12,000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Sowjanya 9381363323 Devang 7793022578",
             rounds: ""
           }
         ],
@@ -493,28 +634,44 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "Dance till the stars come down from the rafters. Dance, Dance and Dance till you drop! Feel the music with hip-hop at your heart, b-boying in your soul, crunching in your mind, tapping in your legs, and show your rivals that this is your stage!! And you are the ringmaster of this arena. Turn the urban street dancing into a global electrifying new story with mind blowing dance moves!! Set the streets ablaze with your passion and turn the opposition into mere specks of dust as you weave your way through the patterns of space and time to rise above everyone else and enthrall all who watch to clinch that which all want!",
             rounds: []
           },
           {
-            heading: "",
+            heading: "JUDGING CRITERIA",
+            desc: "Choreography, Energy, Synchronization, Stage utilization, Innovation, Overall impact. The Hip Hop group battle will be judged on the basis of the breaking skills and its presentation. It depends on crowd support and most of all overshadowing the opposite team. The number of participants allowed from each team in this round has to be equal or (+2) or (-2).",
+            rounds: ""
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "TIME LIMIT:-90 seconds for each team .(3 rounds)",
+                  "ILLUSTRATION: For example if 8 teams are participating. There will be a dance faceoff between the 2 teams in which the one team will be eliminated. Then there will be a semifinal between these 4 teams and then Finals . Each team will be given 90 seconds to perform and there will be 3 rounds of performance. And the Songs or Hip-Hop music and traps will be provided instantaneously.",
+                  "Teams will be eliminated or selected on the basis of Dance face-off. Teams battle each other one-on-one, adapting to hip-hop beats.",
+                  "Teams can perform a dance sequence without a theme. Participants must incorporate any style(s) from Hip-Hop, Popping, Tutting, Krumping, Breakdance, Stepping, Bboying, Contraptions and Western Freestyle in their dance performance. Deviation from hip-hop is discouraged.",
+                  "One person can stay as a member in only one team .Heavy penalty shall be imposed on both teams if this is violated.",
+                  "Crews are allowed; all members must be college students (necessarily from same college)",
+                  "Teams must follow the time limits. Teams shall be penalized by the organisers for not doing so.",
+                  "Any kind of fluid, flame or heavy object is not allowed on stage.",
+                  "Obscenity of any kind is not allowed and will lead to immediate disqualification.",
+                  "The decision of the judges shall be final and binding."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZES WORTH: INR 14,000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Jatin : 9001799380 Yashswini : 9602714440",
             rounds: ""
           }
         ],
@@ -534,23 +691,70 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
+            heading: "Rounds",
             desc: "",
-            rounds: []
+            rounds: [
+              {
+                heading: "Round 1(VIDEO SUBMISSION)",
+                list: [
+                  "Video submission’s last date will be – 05-02-2020",
+                  "Video’s duration must not exceed 120 seconds.",
+                  "No backing music is permitted .",
+                  "Video is supposed to be sent on the given email- musicanddancesociety@gmail.com. No other links will be entertained for the video entry purpose.",
+                  "Participants qualified in the video entry round will move forward for the preliminary round."
+                ]
+              },
+              {
+                heading: "Round 2 PRELIMS",
+                list: [
+                 "Date : 06-02-2020",
+                 "Timing: 9am to 12pm",
+                 "Time limit : 4 minutes",
+                 "Participant must perform on karaoke track or live backing music.",
+                 "Participants may play an instrument themselves or use one accompanist.",
+                 "Karaoke music must be brought by the participants in .mp3 format .",
+                 "Songs sung in the previous round must not be repeated in this round."
+                ]
+              },
+              {
+                heading: "Round 3 FINALS",
+                list: [
+                  "Date : 06-02-2020",
+                  "Timing : 2 to 5",
+                  "Time limit : 4 to 5 minutes .",
+                  "Exceeding the time limit will lead to negative points for the contestant.",
+                  "Repetition of songs performed in the prelims is allowed in the finals.",
+                  "No backing tracks or instrument will be provided , karaoke must be provided by the participant (in .mp3 format ) or else he/she may use an accompanist to play an instrument."
+                ]
+              }
+            ]
           },
           {
-            heading: "",
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                 "Songs can be in Hindi or in English.",
+                 "Rap portions are not permissible.",
+                 "Obscenity of any kind is not allowed and in any case it will lead to immediate disqualification.",
+                 "Decision of the judges would be final. No changes would be made once the results are declared.",
+                 "Time limit must be strictly followed.",
+                 "Participants are not allowed to refer the lyrics while performing.",
+                 "The decision of the judges will be final and binding."
+                ]
+                }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY: WORTH 18,000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Harshit : 6263802051 , Shreya : 9530633129 , Santosh : 9162458651",
             rounds: ""
           },
           {
@@ -917,28 +1121,60 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "Speech is power, speech is to persuade, to convert, to compel. And if the power of speech lies within you, then we have just the right thing in the hat. Just-A-Minute (JAM) is the ultimate test of wit and thinking on your feet. Can you make it through sixty seconds of uninterrupted vocalization of your thoughts, without repetition, or deviation? Or will you give in to the pressure and have your competitors pounce on you in an instant?",
             rounds: []
           },
           {
-            heading: "",
+            heading: "REMEMBER",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "The panellists are invited, in rotation, to speak for one minute on a given subject without 'hesitation, repetition or deviation'.",
+                  "“Hesitation” is watched very strictly : a momentary pause in speaking can give rise to a successful challenge, as can tripping over one’s words, even pausing during audience laughter or applause (known as 'riding a laugh') can be challenged.",
+                  "“Repetition” means repetition of any word ,phrase or idea again and again . Even letters may not be repeated; for example, the term 'BBC' must be avoided, as it can be successfully challenged for repetition of 'B'.",
+                  "To object, slam the table. The JAM master decides when you are allowed to put forth your objection.",
+                  "You get a penalty if the competition objects on any of the following counts:",
+                  "a.You object out of turn",
+                  "b. You stutter, stammer, and generally indulge in “time-wasting tactics”. These include efforts to buy time like interspersing your talk with “hmm”,”ohh” etc...",
+                  "c. Early start and late start",
+                  "d. Undue stress on words, undue emphasis in the sentences",
+                  "e. Repetition of a previously used idea",
+                  "The total time is sixty seconds, inclusive of all the time that all the speakers in a given round are allowed to speak.",
+                  "Points are given in the following manner:",
+                  "a. Positive points for every second that you speak",
+                  "b. Positive points for every correct objection",
+                  "c. Negative points for every incorrect objection",
+                  "d. Bonus points for being the last speaker",
+                  "The winner is the person with the maximum number of points at the end of the round."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "It’s a solo competition.",
+                  "Use of unfair means is prohibited and shall lead to disqualification.",
+                  "The decision of the JAM master will be final and binding."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY : 4500/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Shubham Kuri : 9983960577 Ishika Bansal : 8769976223",
             rounds: ""
           }
         ],
@@ -972,14 +1208,57 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "Description",
+            desc: "MNIT Film Festival is an international film making competition where candidates can send their film entries along with the respective genres. The films will be screened over the period of three days in the annual cultural fest of MNIT Jaipur Blitzschlag.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "GENERAL RULES",
             desc: "",
-            rounds: ""
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Maximum 5 members.",
+                  "3 Days. ( 6th Feb 2020 – 8th Feb 2020 )",
+                  "VENUE => Day 1: VLTC 009 , Day 2: VLTC 009 , Day 3:Neeti Sabhaghar",
+                  "Candidates must mention their CORRECT NAME and contact information.",
+                  "A candidate can only send her/his entry once.",
+                  "Every participant must mention his/her location City Country only ) .",
+                  "Candidates must send their entries in a google drive folder open to all in sharing settings.",
+                  "Film can either be shot with a mobile or a DSLR camera.",
+                  "Entries should be sent through a google-drive link to the given e-mail address.",
+                  "Entries received after the due date will not be entertained.",
+                  "Time Limit: 5 to 10 minutes (Including credits).",
+                  "This is a single round competition.",
+                  "Entries must be submitted before 25th January 2020, 2019.",
+                  "Please avoid photo animation and slideshows.",
+                  "The movie may be in Hindi or English or both but must have subtitles.",
+                  "Plagiarism is strictly prohibited.",
+                  "The content of the movie should be appropriate for public screening and thus have no vulgarity.",
+                  "Obscenity (at the discretion of the judges) of any kind is not allowed and will lead to immediate disqualification.",
+                  "Entries must be the original work of the entrant and must not infringe third-party's rights."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "Judging Criteria",
+            desc: "The decision of the judges and organizers shall be final and abiding. Rules for the event can be changed by the organizers at the time of the event.",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Composition",
+                  "Lighting",
+                  "Editing",
+                  "Uniqueness in the film",
+                  "Quality of the film",
+                  "Relevance to the Genre the film is submitted in",
+                  "Time limit of the film",
+                ]
+              }
+            ]
           },
           {
             heading: "",
@@ -987,13 +1266,8 @@ const eventData = {
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Rishika: +91 8708668684 Shivam: +91 8826794793",
             rounds: ""
           }
         ],
@@ -1100,14 +1374,35 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "This is an online event.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "RULEBOOK",
             desc: "",
-            rounds: ""
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Participants will be provided with 10 stock images, which they have to manipulate in any version of Adobe Photoshop (use of all 10 photos is compulsory)",
+                  "All participants should register by 04-02-2020 11:59 pm.",
+                  "Registration is mandatory on the site of blitzschlag (blitzschlag.co.in)",
+                  "A WhatsApp group of the participants will be created a day prior to the event",
+                  "The stock images will be provided through a google drive link on the WhatsApp group and also through email",
+                  "The participants have to submit both PSD as well as JPEG of the final image. The PSD must contain all the images in different layers",
+                  "The final PSD and JPEG must be uploaded on a link given by the Organisers",
+                  "Judgement will be based on the creativity as well as originality.",
+                  "Participants would be given 24-hrs time to create the image. Image received after the deadline would be disqualified",
+                  "Any vulgar, offensive, explicit content would be disqualified",
+                  "The decision of the judges would be final and binding",
+                  "The organisers reserve the right to modify the rules at any point of time",
+                  "By submitting the entry, participant acknowledge that they have read and understood the rules and are willing to abide by them",
+                  "Violation of rules or use of any copyright content or any sexual, violent content would be disqualified."                  
+
+                ]
+              }
+            ]
           },
           {
             heading: "",
@@ -1115,8 +1410,8 @@ const eventData = {
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Hrithik – 8958951000 , Vatsal – 9898040433",
             rounds: ""
           },
           {
@@ -1143,14 +1438,33 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "This is an online event in which participants have to submit a sequence of photographs conveying a story.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "RULEBOOK",
             desc: "",
-            rounds: ""
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Participants will have to post a sequence of photos(minimum-8 to maximum-10) on Instagram and also have to tag @fandpclub and our sponsor. Use hashtag #fandpclub #fandp_club #picsaga",
+                  "The participants also have to post the story conveyed through the photographs in the caption of the post.",
+                  "Registration is mandatory on the site of blitzschlag (blitzschlag.co.in)",
+                  "Entry should include all the images in sequence of the story (only .jpeg).",
+                  "The story conveyed (per frame) through the pictures in doc form. (not more than 150 words)",
+                  "Judgement will be based on the likes and comments received on participant's post on our Instagram page. (@fandpclub) and Jury . (30%- Instagram points 70%- jury points) (1like=2points) (1comment=5points).",
+                  "Top 3 will be selected through this basis.",
+                  "Images received after the deadline would be disqualified.",
+                  "Any vulgar, offensive, explicit content would be disqualified.",
+                  "The decision of the judges would be final and binding.",
+                  "The organisers reserve the right to modify the rules at any point of time",
+                  "By submitting the entry, participant acknowledge that they have read and understood the rules and are willing to abide by them",
+                  "Violation of rules or use of any copyright content or any sexual, violent content would be disqualified."
+                ]
+              }
+            ]
           },
           {
             heading: "",
@@ -1158,8 +1472,8 @@ const eventData = {
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Abhinav 6388404245 , Anuj 6399360470",
             rounds: ""
           },
           {
@@ -1200,28 +1514,40 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "How many times do we find ourselves doodling in our notebooks while sitting in lectures? Here comes an innovative way to stunt on a doodle with thread on paper. Patterns, curves, spirals use everything to form a composition that stands out, just like your thoughts do during classes.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "JUDGING CRITERIA",
+            desc: "Participants would be given multi colored threads, paper and fevicol. They have to make creative compositions, artistic images etc. without lifting or cutting the thread. Different colored threads could be overlapped on one if desired. Make it interesting, make it catchy, and make it speak to you. So, polish your doodling skills and get ready to win!  Prize would be given to the most realistic one.",
+            rounds: ""
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Team Size: 1 Member",
+                  "Each member would be given 5 multicoloured threads, fevicol and A3 size sheets and he/she has to form a creative abstract using the threads on paper.",
+                  "Participants cannot cut the threads. However, the threads could be overlapped if desired.",
+                  "VENUE: VLTC",
+                  "DAY: 7 Feb'20",
+                  "TIME: 12PM-1 PM"
+                ]
+              }
+            ]
+          },
+          {
+            heading: "Prize worth INR 2000",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "REESHA:6395629638 KAUSHIK:9824008618",
             rounds: ""
           }
         ],
@@ -1241,28 +1567,40 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "Fashion has never been the same. It is always about contemporary. And contemporary never ceases to amaze us, does it? The Trashion Show exhibits clothing made entirely from recycled materials. It is a way to introduce people to the little things that we each can do to make a difference in the environment. Afterall, it’s the difference that prevails and makes a difference. The idea for a Trashion Show is to see how a participant can design a dress out of complete trash material provided to them.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "JUDGING CRITERIA",
+            desc: "Participants will be getting judged on their creative dresses made out of waste.",
+            rounds: ""
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Team size: 2-4 person.",
+                  "Partcipant are expected to design a costume out of given waste material or something waste which they have collected.",
+                  "Theme will be given on spot.",
+                  "VENUE:VLTC",
+                  "DATE:7th feb",
+                  "TIME:2pm-5pm"
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY: INR 4500/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "RISHIKA: 8890148159 Devanshu : 7891625105",
             rounds: ""
           }
         ],
@@ -1282,28 +1620,54 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "We’ve always painted shirts while accidently dropping food on it while eating, or it could be a football impressions on your jersey or perhaps be as simple as brushing pasta wall just painted. So here in TINT A TOP we give you the perfect opportunity to showcase your fashion mantra in the T-Shirt Painting competition. Turn on your colorful creative pulses and show what your style mantra is all about! The event will showcase the Creative and Innovative painting skills on T-Shirts based on any particular theme.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "JUDGING CRITERIA",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Creativity",
+                  "Flow of Design",
+                  "Visual Impact",
+                  "Color Scheme",
+                  "Quality of Application",
+                  "Effective conveying of theme message"
+                ]
+              }
+            ]
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Team size: 2 members",
+                  "Theme will be given on the spot.",
+                  "The participants will be provided with white t-shirts And acrylic paints with with set of two brushes.",
+                  "Each team will showcase creative and innovative painting skills on t-shirt provided.",
+                  "Time Limit: 2 hours",
+                  "VENUE-VLTC",
+                  "DAY-6th Feb'2020",
+                  "TIME-3:00 pm-5:00pm"
+                ]
+              }
+            ]
+          },
+          {
+            heading: "Prize worth INR 3000",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "DEVASHISH:9359660933 REESHA:6395629638",
             rounds: ""
           }
         ],
@@ -1323,23 +1687,23 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "EXPLORA Brings you a platform to showcase your artistic talent. Participants are required to submit their artwork in jpeg format by 31 jan. If participants are found using someone else's artwork then they'll be disqualified ! so make sure you send us your own artwork.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "JUDGING CRITERIA",
+            desc: "The selected entries will be a part of ART EXHIBITION. Final jury will decide the winners of exhibition.",
+            rounds: ""
+          },
+          {
+            heading: "PRIZE MONEY: INR 4500/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "MOHIT: 7014069858 SEPTA : 7999689535",
             rounds: ""
           },
           {
@@ -1366,28 +1730,40 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "Live painting is a form of visual performance art, in which artists complete a visual art piece in a public performance. We give you a chance to shine on your own by this event. Want to capture MNIT artistically ? Well! Here’s the opportunity to paint it down. Participants would be given 2 x 2 canvas to paint any part of MNIT they like and submit it in the given time.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "JUDGING CRITERIA",
+            desc: "Paintings will be judged based on creativity, originality and overall execution.",
+            rounds: ""
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Team size:1 person",
+                  "Partcipant are allowed to sketch of view inside campus only.",
+                  "No other sheets accepted other than the provided formatted sheet on the day of competition.",
+                  "VENUE:VLTC",
+                  "DATE:8th feb",
+                  "TIME:1.30pm-4pm"
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY: INR 4500/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "RASHI: 6265107748 ABHISHEK : 8435088310",
             rounds: ""
           }
         ],
@@ -1409,28 +1785,52 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "How often have we tried painting differently. Art carries the capacity of such creativity which has no bound. Impressions with vegetables is an art, textures one on another forms an art, in fact, writing with a pen’s chiselled tip becomes an art, so here comes another such art, an event which promises fun and thrill together. Each participant will be given a brush and a set of bamboo sticks. The participant have to tie the brush and bamboo sticks to obtain a require length . Then he/she has to sit on a chair, and the drawing sheet will be at a distance from him/her on ground. Now the participant have to draw with the long brush he/she has made.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "JUDGING CRITERIA",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Creativity",
+                  "Flow of Design",
+                  "Visual Impact",
+                  "Color Scheme",
+                  "Quality of Application",
+                  "Effective conveying of theme message"
+                ]
+              }
+            ]
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Participation : SOLO",
+                  "Participant have to make the brush upto a desired size by joining it with given sticks.",
+                  "Participant have to paint with the long brush on the sheet given from a certain distance.",
+                  "VENUE - VLTC",
+                  "DAY - 6th Feb, 2020",
+                  "TIME - 9.30 -11.00 AM"
+                ]
+              }
+            ]
+          },
+          {
+            heading: "Prize worth INR 3000",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "SUPRIYA:9799104660 MUKESH:7340619810",
             rounds: ""
           }
         ],
@@ -1453,28 +1853,40 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "Master the art of Sneaker Doodling of you favourite TV show, favourite movie, cartoon and many more. Step by step guidance will be provided along with all the materials. Pick your brush and be a part of the custom shoe culture. All you have to do is to paint the shoes on the given theme.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "JUDGING CRITERIA",
+            desc: "Designs will be judged based on creativity, originality and overall execution.",
+            rounds: ""
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Team size: 2 person.",
+                  "Partcipant are expected to color the provided white Canvas shoes with the given Colors.",
+                  "Theme will be given on spot.",
+                  "VENUE:VLTC",
+                  "DATE:6th feb",
+                  "TIME: 11:30 to 1:30"
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY: INR 3000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "ABHISHEK: 8435088310 AASHI : 9717480061",
             rounds: ""
           }
         ],
@@ -1496,28 +1908,42 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "Do you pride yourself in photographic memory? Or think of yourself as an apt communicator? Here comes a real test for you. In the teams of two, One person is shown a picture of a structural form for 10 seconds whist the other team member is blind folded, who will have to compile the exact same form with leggo blocks solely on the basis of their teammates instructions and memory. Fun, laughter, mockery all comes together on this platform. Join us with your partner in chime and claim the prize!",
             rounds: []
           },
           {
-            heading: "",
+            heading: "JUDGING CRITERIA",
+            desc: "Designs will be judged based on creativity, originality and overall execution.",
+            rounds: ""
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Team size: 2 members.",
+                  "One member will be shown a picture of an architectural form for 15secs.",
+                  "Second member will be blindfolded.",
+                  "First member will have to guide the second member to built the exact same form with lego blocks provided by the organizer.",
+                  "VENUE-VLTC",
+                  "DAY- 7th Feb, 2020",
+                  "TIME- 10:00-11:30am",
+                  "Prizes worth Rs.2000/-"
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY: INR 2000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "ANVESHA: 8128005138 MOHIT : 7014069858",
             rounds: ""
           }
         ],
@@ -1540,28 +1966,40 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "Face Art in one of the earliest form of artistic expression known to humankind. It has been an integral practice for many cultures worldwide. Face painting is so deeply entwined with tradition that it has been used in dances as well as in plays and mimes. Participants will be provided with colors and will have to paint their respective partner's face with creative and artistical manuals of their thoughts. So get ready to make your faces canvas!!!!",
             rounds: []
           },
           {
-            heading: "",
+            heading: "JUDGING CRITERIA",
+            desc: "Designs will be judged based on creativity, originality and overall execution.",
+            rounds: ""
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Team size: 2 members.",
+                  "One member will be provided with brush and colors.",
+                  "The member has to paint his/her partner's face on the theme given on the spot.",
+                  "VENUE-VLTC",
+                  "DAY- 7th Feb, 2020",
+                  "TIME - 10:00-12:00"
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY: INR 2000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "DHWANI: 9772202734 BHAVIN : 8890430006",
             rounds: ""
           }
         ],
@@ -1629,28 +2067,45 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "This game simulates the experience of a real world stock market trading platform in a dedicated niche of enthusiastic students, who would apply their skills and knowledge of real world business practices and investment strategies, to buy and sell virtual stocks and shares, which are seen as an integral part of a company’s revenue and business model. It recreates the “Dalal street” experience of the Bombay Stock Exchange, famous for its round the clock busy schedules and chaotic-yet-professional investment hub for investors, world over. The students compete as a team of two individuals and are given a stack limit of virtual revenue, to invest in the listed companies of the Stock Exchange. A team can decide to buy and sell shares of a company for a designated price model, which varies according to the company’s performance in market, followed by its progression in the business media. Flash news shall display real time progress of a company in the market, the analysis of which would yield a team a result that can be used to decide an investment on a listed company. The process is deemed to continue, till a slotted time limit, as happens in the commercial world, and the winner of the game shall be declared based on prescribed criteria, which would primarily include the team to earn maximum revenue despite the unfolding of the market over the time.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "JUDGING CRITERIA",
+            desc: "Investment skills and knowledge of the Stock Market.",
+            rounds: ""
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "PRELIMS(may or may not be conducted)",
+                list: [
+                  "Teams are allowed to use calculator.",
+                  "It is not necessary to spend money in each round.",
+                  "Teams have to spend a minimum of forty percent of the virtual money.",
+                  "DURATION: 4 hours",
+                  "Each team will be given a specific amount of virtual money.",
+                  "A list of specific number of startups (say 6) will be displayed in the beginning along with the details of the startups. Initially all the startups will be registered companies but will not be offering IPO (Initial Public Offering) i.e. they have not gone public. This means that until the startup goes public, teams can only fund it and cannot sell the equity in the market.",
+                  "After this, the valuation of each startup will be displayed along with certain news. This news will affect the valuation of the startup in the future. Now the teams have to act as angel investors and fund the startup for which they would be given equity. Teams can fund multiple startups. Each funding slot will be of a specific duration.",
+                  "After the time for funding expires, valuation of startups will be updated. News affecting the future valuation of startups will also be displayed. Again funding slot will be opened. This is how the game will progress.",
+                  "Once the news comes that a certain startup has gone public, a certain number of shares will be created and the teams which have invested in that startup can start to sell the equity which they have acquired. Also teams which have not invested in the startup can buy the shares of the startup.",
+                  "A bank will also be present from which teams can take loan at a given interest rate. This rate may vary depending upon the news flash.",
+                  "The objective of the game is to amass maximum wealth by funding and trading."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY: INR 10,000",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Srawani Kowtha: 8239132408 Navneet Shah :8149409397",
             rounds: ""
           }
         ],
@@ -1872,12 +2327,45 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
+            heading: "GENERAL RULES",
             desc: "",
-            rounds: []
+            rounds: [
+              {
+                heading: "1st Round",
+                list: [
+                  "Individual entries are invited or in teams of 2 ",
+                  "Question papers will be given to teams, each containing 20 questions related to the Harry Potter book series. ",
+                  "The questions maybe both multiple choice and one word answer type questions.",
+                  "Top 20 teams from 1st round will advance to the second round.",
+                  "Time assigned : 30 minutes. "
+                ]
+              },
+              {
+                heading: "2nd Round",
+                list: [
+                  "Blank sheets will be given to the teams in this round, and slides will be projected. ",
+                  "Each slide will have a job that can be done through a spell in the Harry Potter series.",
+                  "The teams will have to write down the spell to perform that particular task. ",
+                  "There will be 10 slides.",
+                  "Top 10 teams in round 2 will advance to round 3",
+                  "Time assigned : 30 mins"
+                ]
+              },
+              {
+                heading: "3rd Round",
+                list: [
+                  "Blank sheets will be given to the teams, and slides will be projected.",
+                  "Each slide will contain a dialogue from the original books of Harry Potter.",
+                  "The teams will have to write down the speaker of the dialogue in the particular slide.",
+                  "There will be 10 slides.",
+                  "Time assigned : 30 mins."
+                ]
+              },
+
+            ]
           },
           {
-            heading: "",
+            heading: "Venue : VLTC Lecture room ",
             desc: "",
             rounds: ""
           },
@@ -1887,8 +2375,8 @@ const eventData = {
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Somya - +917355020880 , Shreya Tripathi - +917424911611 , Kartikey Tiwari - +918799659128",
             rounds: ""
           },
           {
@@ -1912,14 +2400,42 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "All members of a team are locked inside a room. The idea is to solve puzzles hidden in the room to finally find the key to escape within the given time (10 mins).",
             rounds: []
           },
           {
-            heading: "",
+            heading: "Rules",
             desc: "",
-            rounds: ""
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Maximum number of members in one team is three and minimum is two.",
+                  "The time limit is 10 minutes.",
+                  "Bags, keys, cell phones, papers and pens are not allowed in the escape room. All necessary clues and puzzles are present inside the room.",
+                  "No puzzles require anything to be thrown or damaged. Causing damage to anything inside the room is not allowed.",
+                  "Penalty for damaged property: Fine of ₹500 and following each volunteer on Instagram.",
+                  "Climbing any surface is not allowed.",
+                  "Removing anything from the room is not allowed.",
+
+
+                ]
+              }
+            ]
+          },
+          {
+            heading: "General Rules",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Time slot => Each team gets a maximum of 10 minutes to find the key. Total time slot for the event: 1 p.m. - 5 p.m. ",
+                  "Venue => VLTC Tutorial Room "
+                ]
+              }
+            ]
           },
           {
             heading: "",
@@ -1927,13 +2443,8 @@ const eventData = {
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Kartikey Tiwari - 8799659128 , Somya - 7424911611 , Shreya - 7355020880",
             rounds: ""
           }
         ],
@@ -1953,14 +2464,38 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "Bollywood bonanza with a twist. It is divided into two rounds",
             rounds: []
           },
           {
-            heading: "",
+            heading: "RULES",
             desc: "",
-            rounds: ""
+            rounds: [
+              {
+                heading: "Round-1",
+                list: [
+                  "A Bollywood songs based quiz.",
+                  "There will be 1-2 members in each team.",
+                  "This is a pen-paper quiz.",
+                  "Participants will be given a time of 60 minutes to solve the question paper.",
+                  "Time slot: 1-2 pm",
+                  "Venue: VLTC lecture room"
+
+                ]
+              },
+              {
+                heading: "Round-2",
+                list: [
+                  "A Bollywood movie based round divided into 2 sections.",
+                  "The qualified teams of first round will participate in this round.",
+                  "This is a Bollywood movies based pen-paper/visual round.",
+                  "Time slot: 1-2 pm",
+                  "Venue: VLTC lecture room"
+
+                ]
+              }
+            ]
           },
           {
             heading: "",
@@ -1968,8 +2503,8 @@ const eventData = {
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Yatharth Trivedi : +91 96620 60952 , Kartikey Tiwari : +91 87996 59128 , Shreya Tripathi : +91 73550 20880",
             rounds: ""
           },
           {
@@ -1993,14 +2528,38 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "This event extensively tests your cricketing knowledge with two rounds, testing both your fanatic and logical skills with an auction putting your skills and cricket reasoning to the ultimate test.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "RULES",
             desc: "",
-            rounds: ""
+            rounds: [
+              {
+                heading: "Round-1---- (30minutes)",
+                list: [
+                  "A simple cricket quiz",
+                  "Max 4 students in one team",
+                  "Cricketing questions with unambiguous answers",
+                  "Just to select 8 teams for next round"
+
+                ]
+              },
+              {
+                heading: "Round 2---- (1 hour)",
+                list: [
+                  "It is just like the real IPL auctions",
+                  "The 8 teams who have cleared the first round will have to engage in bidding to make their own cricket team",
+                  "A threshold is set on the maximum number of players that can be bought by one team",
+                  "The teams made have to follow some parameters (Conditions are put on no. of batsman, bowler and wicket keeper)",
+                  "Each player auctioned is given a rating out of ten",
+                  "The team which makes their team according to parameters and has the highest summation of ratings of players in their team, wins.",
+                  "VENUE- VLTC lecture room"
+
+                ]
+              }
+            ]
           },
           {
             heading: "",
@@ -2008,8 +2567,8 @@ const eventData = {
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Shreya Tripathi - +917355020880 , Somya - +917424911611 , Yatharth Trivedi - +919662060952 ",
             rounds: ""
           },
           {
@@ -2033,14 +2592,27 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "A murder took place in MNIT . The police have some suspects. The task is to find the murderer using the hints being provided.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "Rules",
             desc: "",
-            rounds: ""
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Time Slot:  9:00 a.m. onwards ",
+                  "All participants must be present at VLTC at the scheduled time.",
+                  "Maximum number of members in a team is five and minimum one.",
+                  "Hints would be provided on the mobile phone so at least one participant must carry a phone .",
+                  "Next hint would appear once you solve the previous one.",
+                  "The team/individual who solves the mystery in the minimum time wins."
+
+                ]
+              }
+            ]
           },
           {
             heading: "",
@@ -2048,8 +2620,8 @@ const eventData = {
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "●	Shreya Tripathi : 7355020880 , Kartikey Tiwari : 8799659128 , Gunjan Shekhawat: 6376796752 ",
             rounds: ""
           },
           {
@@ -2081,28 +2653,60 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "Mhare desh, as the name suggests is a quiz which tests participants’ knowledge about our country, India. The purpose of this quiz is to enlighten students with India’s past, present and future. It gives us all an opportunity to understand our country better.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "General Rules",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Maximum of 2 members can participate in a team. Choose your teammate wisely.",
+                  "Decision of the quizmaster will be final and binding. Unnecessary arguments can lead to negative marking.",
+                  "Use new and innovative ways to cheat, as getting caught in such acts will immediately cause disqualification."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "ROUNDS",
+            desc: "",
+            rounds: [
+              {
+                heading: "Round One (Elimination)",
+                list: [
+                  "This is a simple Quiz round containing 50 questions in total.",
+                  "The Quiz will contain questions from the following topics:-  ",
+                  "Current Affairs.",
+                  "India’s Independence Movement.",
+                  "Indian Heritage, Culture and traditions.",
+                  "India’s Achievements after Independence.",
+                  "India’s Fun Facts. ",
+                  "Each correct answer will be rewarded with +4 marks and wrong answers with -1 marks. No marks deducted for leaving the question. (Hint:- JEE MAINS)",
+                  "Try getting a maximum score, it will help you in the second round.",
+                  "Participants are instructed to bring their own pens. No pencil, or colour, or any other thing will be allowed."
+                ]
+              },
+              {
+                heading: "Round Two (Proficiency)",
+                list: [
+                  "Ten topics will be given to the selected teams. Each team will have to choose any one of them, starting with the team with highest score in the 1st round. Unfortunately the team with lowest score will be left with no choice.",
+                  "Five questions from each team. +10 for every correct answer and -5 for the wrong ones. Feel free to keep quiet, it will at least save you from negative marks ."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY: INR 5,000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Bhaskar Jha: 7007921577 Hemant Bajaj: 761501789 ",
             rounds: ""
           }
         ],
@@ -2121,28 +2725,49 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "As the name suggests, first a lecture would be delivered by a renowned environmentalist, N.C Jain Sir. He is an IFS, currently working in the Rajasthan Forestry and Wildlife Training Institute (RFWTI). After his lecture, a debate competition would be conducted on the topics related to environment, climate change and wildlife protection.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "General Rules for Clashing Views",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "A team must consist of 2 members .",
+                  "Decision of the judge will be final and binding. Unnecessary arguments can lead to disqualification",
+                ]
+              }
+            ]
+          },
+          {
+            heading: "Rules of Clashing Views",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Teams would be called one by one on the stage to present their views on the given topics.",
+                  "One participant will speak on the topic and the other will have to answer the questions raised by the audience and the panelists.",
+                  "Topics will be distributed there and then only based on the contents provided in the description.",
+                  "Participants are instructed to bring their own pens. No pencil, or colour, or any other thing will be allowed.",
+                  "It will decided there only whether the team will speak in the favour or against the topic .",
+                  "Exciting Prizes and Goodies would be provided to the audience on answering the questions asked by the organizers ."
+                  
+                ]
+              }
+            ]
+          },
+          {
+            heading: "Prizes Worth :- 4000\-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "Contact Destails",
+            desc: "Bhaskar Jha :- 7007921577 , Anurag Jain :- 7665507350",
             rounds: ""
           }
         ],
@@ -2219,14 +2844,29 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "The event consists of pictionary session, in which many images will be displayed and the participants have to find the relationship between all the images. Then they have to write a piece(article or poetry) as per their understanding of the connection.",
             rounds: []
           },
           {
-            heading: "",
-            desc: "",
+            heading: "JUDGING CRITERIA",
+            desc: "Marks will be awarded on the basis of their writing skills, grammar, and vocabulary.",
             rounds: ""
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Team size: 2 members",
+                  "Inter-college participation is allowed",
+                  "Time limit : 1hour",
+                  "The participants shall not be allowed to use mobile or other electronic instrument."
+                ]
+              }
+            ]
           },
           {
             heading: "",
@@ -2234,13 +2874,8 @@ const eventData = {
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Nikhil : 8896107887 Yatharth: 9662060952",
             rounds: ""
           }
         ],
@@ -2266,14 +2901,31 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "A poem containing blank spaces will be given to the participants, and there will be some clues for blank spaces. Participants have to sort out those clues and put them in blanks.",
             rounds: []
           },
           {
-            heading: "",
-            desc: "",
+            heading: "JUDGING CRITERIA",
+            desc: "Marks will be awarded according to their word selection, grammatical accuracy and poetic skills.",
             rounds: ""
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Team size: 2 members",
+                  "Inter-college participation is allowed",
+                  "Time limit : 30 min & 5 min to recite.",
+                  "Language : Hindi",
+                  "Each team has to present their poem before the judge. It will have the maximum bearing on the marks.",
+                  "The participants shall not be allowed to use mobile or other electronic instrument."
+                ]
+              }
+            ]
           },
           {
             heading: "",
@@ -2281,13 +2933,8 @@ const eventData = {
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Md. Amir : 8302742162 Manuraj : 9149070672",
             rounds: ""
           }
         ],
@@ -2309,14 +2956,25 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "Investigative journalism is a form of journalism in which reporters deeply investigate a single topic of interest and present the story to the public with utmost accuracy. There will be an accused who may or may not have committed a crime but it is embroiled in controversy. So now the reporters get a chance to dig deep into the story and interview the accused.",
             rounds: []
           },
           {
-            heading: "",
+            heading: "GENERAL RULES",
             desc: "",
-            rounds: ""
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "They have to form their conclusions based on the way the accused had answered their questions.",
+                  "Each person has to present their report and the one closest to the original story proceeds further.",
+                  "Team size: 3 members",
+                  "Inter-college participation is allowed",
+                  "Language : English"
+                ]
+              }
+            ]
           },
           {
             heading: "",
@@ -2324,8 +2982,8 @@ const eventData = {
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Rahul : 9416944577 Akash : 8875047326",
             rounds: ""
           },
           {
