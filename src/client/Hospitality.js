@@ -145,14 +145,14 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 														<tr>
 															<th>#</th>
 
-															<th>Option</th>
-															<th>Amount</th>
-															<th>Select</th>
-														</tr>
-													</thead>
-													<tbody className="hosp">
-														<br />
-														{/* <tr>
+                              <th>Option</th>
+                              <th>Amount (per person)</th>
+                              <th>Select</th>
+                            </tr>
+                          </thead>
+                          <tbody className="hosp">
+                            <br />
+                            {/* <tr>
 															<td colSpan="1"></td>
 															<td colSpan="1">
 																<strong>Tax Chargeable</strong>
@@ -160,305 +160,338 @@ import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hosp
 															<td colSpan="2" />
 														</tr> */}
 
-														<tr>
-															<td>1</td>
+                            <tr>
+                              <td>1</td>
 
-															<td>Pronite Day 1 and 2</td>
-															<td>₹ 500/-</td>
-															<td>
-																<Form.Group>
-																	<Form.Check
-																		id="1"
-																		type="checkbox"
-																		checked={options[1]}
-																		onChange={() => {
-																			this.handleChange(event);
-																		}}
-																	/>
-																</Form.Group>
-															</td>
-														</tr>
-														<tr>
-															<td>2</td>
+                              <td>Pronite Day 1 and 2</td>
+                              <td>₹ 500/-</td>
+                              <td>
+                                <Form.Group>
+                                  <Form.Check
+                                    id="1"
+                                    type="checkbox"
+                                    checked={options[1]}
+                                    onChange={() => {
+                                      this.handleChange(event);
+                                    }}
+                                  />
+                                </Form.Group>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
 
-															<td>Pronite Day 3</td>
-															<td>₹ 500/-</td>
-															<td>
-																<Form.Group>
-																	<Form.Check
-																		id="2"
-																		type="checkbox"
-																		checked={options[2]}
-																		onChange={() => {
-																			this.handleChange(event);
-																		}}
-																	/>
-																</Form.Group>
-															</td>
-														</tr>
-														<tr>
-															<td>3</td>
+                              <td>Pronite Day 3</td>
+                              <td>₹ 500/-</td>
+                              <td>
+                                <Form.Group>
+                                  <Form.Check
+                                    id="2"
+                                    type="checkbox"
+                                    checked={options[2]}
+                                    onChange={() => {
+                                      this.handleChange(event);
+                                    }}
+                                  />
+                                </Form.Group>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
 
-															<td>Event registration for Day 1</td>
-															<td>₹ 200/-</td>
-															<td>
-																<Form.Group>
-																	<Form.Check
-																		id="3"
-																		type="checkbox"
-																		checked={options[3]}
-																		onChange={() => {
-																			this.handleChange(event);
-																		}}
-																	/>
-																</Form.Group>
-															</td>
-														</tr>
-														<tr>
-															<td>4</td>
+                              <td>Event registration for Day 1</td>
+                              <td>₹ 200/-</td>
+                              <td>
+                                <Form.Group>
+                                  <Form.Check
+                                    id="3"
+                                    type="checkbox"
+                                    checked={options[3]}
+                                    onChange={() => {
+                                      this.handleChange(event);
+                                    }}
+                                  />
+                                </Form.Group>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
 
-															<td>Event registration for Day 2</td>
-															<td>₹ 200/-</td>
-															<td>
-																<Form.Group>
-																	<Form.Check
-																		id="4"
-																		type="checkbox"
-																		checked={options[4]}
-																		onChange={() => {
-																			this.handleChange(event);
-																		}}
-																	/>
-																</Form.Group>
-															</td>
-														</tr>
-														<tr>
-															<td>5</td>
+                              <td>Event registration for Day 2</td>
+                              <td>₹ 200/-</td>
+                              <td>
+                                <Form.Group>
+                                  <Form.Check
+                                    id="4"
+                                    type="checkbox"
+                                    checked={options[4]}
+                                    onChange={() => {
+                                      this.handleChange(event);
+                                    }}
+                                  />
+                                </Form.Group>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
 
-															<td>Event registration for Day 3</td>
-															<td>₹ 200/-</td>
-															<td>
-																<Form.Group>
-																	<Form.Check
-																		id="5"
-																		type="checkbox"
-																		checked={options[5]}
-																		onChange={() => {
-																			this.handleChange(event);
-																		}}
-																	/>
-																</Form.Group>
-															</td>
-														</tr>
-														<tr>
-															<td>6</td>
+                              <td>Event registration for Day 3</td>
+                              <td>₹ 200/-</td>
+                              <td>
+                                <Form.Group>
+                                  <Form.Check
+                                    id="5"
+                                    type="checkbox"
+                                    checked={options[5]}
+                                    onChange={() => {
+                                      this.handleChange(event);
+                                    }}
+                                  />
+                                </Form.Group>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
 
-															<td>Event registration for 3 Days</td>
-															<td>₹ 500/-</td>
-															<td>
-																<Form.Group>
-																	<Form.Check
-																		id="6"
-																		type="checkbox"
-																		checked={options[6]}
-																		onChange={() => {
-																			this.handleChange(event);
-																		}}
-																	/>
-																</Form.Group>
-															</td>
-														</tr>
-														<tr>
-															<td>7</td>
+                              <td>Event registration for 3 Days</td>
+                              <td>₹ 500/-</td>
+                              <td>
+                                <Form.Group>
+                                  <Form.Check
+                                    id="6"
+                                    type="checkbox"
+                                    checked={options[6]}
+                                    onChange={() => {
+                                      this.handleChange(event);
+                                    }}
+                                  />
+                                </Form.Group>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>7</td>
 
-															<td>Event registration + Pronites (All 3 Days)</td>
-															<td>₹ 1200/-</td>
-															<td>
-																<Form.Group>
-																	<Form.Check
-																		id="7"
-																		type="checkbox"
-																		checked={options[7]}
-																		onChange={() => {
-																			this.handleChange(event);
-																		}}
-																	/>
-																</Form.Group>
-															</td>
-														</tr>
-														<tr>
-															<td>8</td>
+                              <td>
+                                Event registration + Pronites (All 3 Days)
+                              </td>
+                              <td>₹ 1200/-</td>
+                              <td>
+                                <Form.Group>
+                                  <Form.Check
+                                    id="7"
+                                    type="checkbox"
+                                    checked={options[7]}
+                                    onChange={() => {
+                                      this.handleChange(event);
+                                    }}
+                                  />
+                                </Form.Group>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
 
-															<td>Event registration for Rambasamba</td>
-															<td>₹ 300/-</td>
-															<td>
-																<Form.Group>
-																	<Form.Check
-																		id="8"
-																		type="checkbox"
-																		checked={options[8]}
-																		onChange={() => {
-																			this.handleChange(event);
-																		}}
-																	/>
-																</Form.Group>
-															</td>
-														</tr>
-														<tr>
-															<td>9</td>
+                              <td>Event registration for Rambasamba</td>
+                              <td>₹ 300/-</td>
+                              <td>
+                                <Form.Group>
+                                  <Form.Check
+                                    id="8"
+                                    type="checkbox"
+                                    checked={options[8]}
+                                    onChange={() => {
+                                      this.handleChange(event);
+                                    }}
+                                  />
+                                </Form.Group>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
 
-															<td>Event registration for Battle of Bands</td>
-															<td>₹ 300/-</td>
-															<td>
-																<Form.Group>
-																	<Form.Check
-																		id="9"
-																		type="checkbox"
-																		checked={options[9]}
-																		onChange={() => {
-																			this.handleChange(event);
-																		}}
-																	/>
-																</Form.Group>
-															</td>
-														</tr>
-														<tr>
-															<td>10</td>
+                              <td>Event registration for Battle of Bands</td>
+                              <td>₹ 300/-</td>
+                              <td>
+                                <Form.Group>
+                                  <Form.Check
+                                    id="9"
+                                    type="checkbox"
+                                    checked={options[9]}
+                                    onChange={() => {
+                                      this.handleChange(event);
+                                    }}
+                                  />
+                                </Form.Group>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>10</td>
 
-															<td>Event registration for Panache</td>
-															<td>₹ 150/-</td>
-															<td>
-																<Form.Group>
-																	<Form.Check
-																		id="10"
-																		type="checkbox"
-																		checked={options[10]}
-																		onChange={() => {
-																			this.handleChange(event);
-																		}}
-																	/>
-																</Form.Group>
-															</td>
-														</tr>
-														{/* <tr>
+                              <td>Event registration for Panache</td>
+                              <td>₹ 150/-</td>
+                              <td>
+                                <Form.Group>
+                                  <Form.Check
+                                    id="10"
+                                    type="checkbox"
+                                    checked={options[10]}
+                                    onChange={() => {
+                                      this.handleChange(event);
+                                    }}
+                                  />
+                                </Form.Group>
+                              </td>
+                            </tr>
+                            {/* <tr>
 															<td colSpan="1"></td>
 															<td colSpan="1">
 																<strong>Exempted from Taxation</strong>
 															</td>
 															<td colSpan="2" />
 														</tr> */}
-														<tr>
-															<td>11</td>
+                            <tr>
+                              <td>11</td>
 
-															<td>Accomodation for 3 Days</td>
-															<td>₹ 400/-</td>
-															<td>
-																<Form.Group>
-																	<Form.Check
-																		id="11"
-																		type="checkbox"
-																		checked={options[11]}
-																		onChange={() => {
-																			this.handleChange(event);
-																		}}
-																	/>
-																</Form.Group>
-															</td>
-														</tr>
-														<tr>
-															<td>12</td>
+                              <td>Accomodation for 3 Days</td>
+                              <td>₹ 400/-</td>
+                              <td>
+                                <Form.Group>
+                                  <Form.Check
+                                    id="11"
+                                    type="checkbox"
+                                    checked={options[11]}
+                                    onChange={() => {
+                                      this.handleChange(event);
+                                    }}
+                                  />
+                                </Form.Group>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>12</td>
 
-															<td>Accomodation for Day 1</td>
-															<td>₹ 200/-</td>
-															<td>
-																<Form.Group>
-																	<Form.Check
-																		id="12"
-																		type="checkbox"
-																		checked={options[12]}
-																		onChange={() => {
-																			this.handleChange(event);
-																		}}
-																	/>
-																</Form.Group>
-															</td>
-														</tr>
-														<tr>
-															<td>13</td>
+                              <td>Accomodation for Day 1</td>
+                              <td>₹ 200/-</td>
+                              <td>
+                                <Form.Group>
+                                  <Form.Check
+                                    id="12"
+                                    type="checkbox"
+                                    checked={options[12]}
+                                    onChange={() => {
+                                      this.handleChange(event);
+                                    }}
+                                  />
+                                </Form.Group>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>13</td>
 
-															<td>Accomodation for Day 2</td>
-															<td>₹ 200/-</td>
-															<td>
-																<Form.Group>
-																	<Form.Check
-																		id="13"
-																		type="checkbox"
-																		checked={options[13]}
-																		onChange={() => {
-																			this.handleChange(event);
-																		}}
-																	/>
-																</Form.Group>
-															</td>
-														</tr>
-														<tr>
-															<td>14</td>
+                              <td>Accomodation for Day 2</td>
+                              <td>₹ 200/-</td>
+                              <td>
+                                <Form.Group>
+                                  <Form.Check
+                                    id="13"
+                                    type="checkbox"
+                                    checked={options[13]}
+                                    onChange={() => {
+                                      this.handleChange(event);
+                                    }}
+                                  />
+                                </Form.Group>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>14</td>
 
-															<td>Accomodation for Day 3</td>
-															<td>₹ 200/-</td>
-															<td>
-																<Form.Group>
-																	<Form.Check
-																		id="14"
-																		type="checkbox"
-																		checked={options[14]}
-																		onChange={() => {
-																			this.handleChange(event);
-																		}}
-																	/>
-																</Form.Group>
-															</td>
-														</tr>
-													</tbody>
-													<tfoot className="hosp">
-														<tr>
-															<td colSpan="4">
-																<strong>
-																	Note: Participants from MNIT, IIIT Kota, NIT UK are
-																	exempted from the registration fee.
-																</strong>
-															</td>
-														</tr>
-													</tfoot>
-												</Table>
-											</Card.Body>
-											<Card.Footer>
-												<Row>
-													<Col md={10} sm={9}>
-														<Row>Total: ₹ {total}/-</Row>
-														<Row>Options Selected: {optionsSelected}</Row>
-													</Col>
-													<Col md={2} sm={3}>
-														<Row>
-															{/* <Col md={4} sm="auto"> */}
-															<Button type="submit">Pay Now</Button>
-															{/* </Col> */}
-														</Row>
-													</Col>
-												</Row>
-											</Card.Footer>
-										</Card>
-									</Form>
-									<br></br>
-									<br></br>
-								</div>
-							</ReactFullpage.Wrapper>
-						);
-					}}
-				/>
-			</div>
-		);
-	}
+                              <td>Accomodation for Day 3</td>
+                              <td>₹ 200/-</td>
+                              <td>
+                                <Form.Group>
+                                  <Form.Check
+                                    id="14"
+                                    type="checkbox"
+                                    checked={options[14]}
+                                    onChange={() => {
+                                      this.handleChange(event);
+                                    }}
+                                  />
+                                </Form.Group>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <tfoot className="hosp">
+                            <tr>
+                              <td colSpan="4">
+                                <strong>
+                                  Note: Participants from MNIT, IIIT Kota, NIT
+                                  UK are exempted from the registration fee.
+                                </strong>
+                              </td>
+                            </tr>
+                          </tfoot>
+                        </Table>
+                      </Card.Body>
+                      <Card.Footer>
+                        <Row>
+                          <Col md={10} sm={9}>
+                            <Row>Total: ₹ {total}/-</Row>
+                            <Row>Options Selected: {optionsSelected}</Row>
+                          </Col>
+                          <Col md={2} sm={3}>
+                            <Row>
+                              {/* <Col md={4} sm="auto"> */}
+                              <Button type="submit">Pay Now</Button>
+                              {/* </Col> */}
+                            </Row>
+                          </Col>
+                        </Row>
+                      </Card.Footer>
+                      <hr></hr>
+                      <div>
+                        <h5>NOTE:</h5>
+                        <ul>
+                          <li>
+                            {" "}
+                            PARTICIPANTS FROM ALL COLLEGES OTHER THAN MNIT, IIIT
+                            KOTA AND NIT UK, NEED TO FIRST PAY THE ENTRY FEES.
+                          </li>
+                          <li>
+                            The event registration fee includes registration fee
+                            for all the events in the fest.
+                          </li>
+                          <li>
+                            For the specific events which require additional
+                            amount, it will be collected at the time of event.
+                          </li>
+                          <li>
+                            For team events, each participant has to register
+                            and pay the charges individually.
+                          </li>
+                          <li>
+                            Accommodation will be provided for three days- 6th,
+                            7th and 8th February.
+                          </li>
+                          <li>Accommodation does not include food.</li>
+						  <li>You can also pay at Registration Desk.</li>
+						  Contact:<br></br>Anuj Srivastava - 7525926870<br></br>Ritu Choudhary - 9602412495
+						  
+                        </ul>
+                      </div>
+                    </Card>
+                  </Form>
+                  <br></br>
+                  <br></br>
+                </div>
+              </ReactFullpage.Wrapper>
+            );
+          }}
+        />
+      </div>
+    );
+  }
 }
 
 const mapStateToProps = (state)=>{
@@ -469,8 +502,8 @@ const mapStateToProps = (state)=>{
 	}
 }
 
-const mapDispatchToProps = (dispatch) => {
-	return {};
-}
+const mapDispatchToProps = dispatch => {
+  return {};
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Hospitality);

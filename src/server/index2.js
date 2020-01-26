@@ -70,6 +70,22 @@ app.post('/login', (req, res) => {
     });
 });
 
+app.post('upipayments', (req, res) => {
+    let userInput = req.body;
+    let obj = new paymodel.upiPayModel(userInput);
+    obj.save().then((result) => {
+        res.send({
+            status: true,
+            message: ""
+        });
+    }).catch(err => {
+        res.send({
+            status: false,
+            message: "Pay details not recorded"
+        });
+    });
+});
+
 app.post('/signup', (req, res) => {
     let userInput = req.body;
     let user = new userModel(userInput);
