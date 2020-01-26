@@ -70,7 +70,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZES WORTH 1,00,000/-",
+            heading: "PRIZES WORTH ₹ 1,00,000/-",
             desc: "",
             rounds: []
           },
@@ -156,7 +156,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: INR 50,000/-",
+            heading: "PRIZE MONEY: ₹ 50,000/-",
             desc: "",
             rounds: []
           },
@@ -234,7 +234,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: INR 90,000/-  PRIZES WORTH: INR 1,20,000/-",
+            heading: "PRIZE MONEY: ₹ 90,000/-  PRIZES WORTH: ₹ 1,20,000/-",
             desc: "",
             rounds: ""
           },
@@ -404,7 +404,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: WORTH 14,000/-",
+            heading: "PRIZE MONEY: WORTH ₹ 14,000/-",
             desc: "",
             rounds: ""
           },
@@ -460,7 +460,7 @@ const eventData = {
         heading: "BREAKFREE",
         desc: `Breakfree is a solo and duet dance competition, an opportunity to highlight your dancing prowess and to reveal a character's story which people only dared to imagine. Come BREAKFREE and showcase your talent as the audience watches in awe how you turn
         imagination into reality!`,
-        details: [`Date: 08/02/2020`, `Prizes worth: 14,000/-`],
+        details: [`Date: 08/02/2020`, `Prizes worth: ₹ 14,000/-`],
         accent: ["#c2413e", "#503f3b", "#989490"],
         detailsLink:
           "https://drive.google.com/file/d/1BoGPi7wTPCViOA9TTeNs26chctSsF0kW/view?usp=drivesdk",
@@ -528,7 +528,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZES WORTH: INR 14,000/-",
+            heading: "PRIZES WORTH: ₹ 14,000/-",
             desc: "",
             rounds: ""
           },
@@ -601,7 +601,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: WORTH 12,000/-",
+            heading: "PRIZE MONEY: WORTH ₹ 12,000/-",
             desc: "",
             rounds: ""
           },
@@ -659,7 +659,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZES WORTH: INR 14,000/-",
+            heading: "PRIZES WORTH: ₹ 14,000/-",
             desc: "",
             rounds: ""
           },
@@ -742,7 +742,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: WORTH 18,000/-",
+            heading: "PRIZE MONEY: WORTH ₹ 18,000/-",
             desc: "",
             rounds: ""
           },
@@ -809,7 +809,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: 3,500/-",
+            heading: "PRIZE MONEY: ₹ 3,500/-",
             desc: "",
             rounds: ""
           },
@@ -866,7 +866,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY : 4000/-",
+            heading: "PRIZE MONEY : ₹ 4000/-",
             desc: "",
             rounds: ""
           },
@@ -967,7 +967,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY : 6000/-",
+            heading: "PRIZE MONEY : ₹ 6000/-",
             desc: "",
             rounds: ""
           },
@@ -1025,7 +1025,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY : 4,000/-",
+            heading: "PRIZE MONEY : ₹ 4,000/-",
             desc: "",
             rounds: ""
           },
@@ -1083,7 +1083,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY : 4,000",
+            heading: "PRIZE MONEY : ₹ 4,000",
             desc: "",
             rounds: ""
           },
@@ -1162,7 +1162,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY : 4500/-",
+            heading: "PRIZE MONEY : ₹ 4500/-",
             desc: "",
             rounds: ""
           },
@@ -1534,7 +1534,7 @@ const eventData = {
             ]
           },
           {
-            heading: "Prize worth INR 2000",
+            heading: "Prize worth ₹ 2000",
             desc: "",
             rounds: ""
           },
@@ -1587,7 +1587,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: INR 4500/-",
+            heading: "PRIZE MONEY: ₹ 4500/-",
             desc: "",
             rounds: ""
           },
@@ -1654,7 +1654,7 @@ const eventData = {
             ]
           },
           {
-            heading: "Prize worth INR 3000",
+            heading: "Prize worth ₹ 3000",
             desc: "",
             rounds: ""
           },
@@ -1690,7 +1690,7 @@ const eventData = {
             rounds: ""
           },
           {
-            heading: "PRIZE MONEY: INR 4500/-",
+            heading: "PRIZE MONEY: ₹ 4500/-",
             desc: "",
             rounds: ""
           },
@@ -1750,7 +1750,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: INR 4500/-",
+            heading: "PRIZE MONEY: ₹ 4500/-",
             desc: "",
             rounds: ""
           },
@@ -1817,7 +1817,7 @@ const eventData = {
             ]
           },
           {
-            heading: "Prize worth INR 3000",
+            heading: "Prize worth ₹ 3000",
             desc: "",
             rounds: ""
           },
@@ -1873,7 +1873,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: INR 3000/-",
+            heading: "PRIZE MONEY: ₹ 3000/-",
             desc: "",
             rounds: ""
           },
@@ -1930,7 +1930,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: INR 2000/-",
+            heading: "PRIZE MONEY: ₹ 2000/-",
             desc: "",
             rounds: ""
           },
@@ -1986,7 +1986,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: INR 2000/-",
+            heading: "PRIZE MONEY: ₹ 2000/-",
             desc: "",
             rounds: ""
           },
@@ -2092,7 +2092,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: INR 10,000",
+            heading: "PRIZE MONEY: ₹ 10,000",
             desc: "",
             rounds: ""
           },
@@ -2693,7 +2693,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: INR 5,000/-",
+            heading: "PRIZE MONEY: ₹ 5,000/-",
             desc: "",
             rounds: ""
           },
@@ -2754,7 +2754,7 @@ const eventData = {
             ]
           },
           {
-            heading: "Prizes Worth :- 4000\-",
+            heading: "Prizes Worth :- ₹ 4000\-",
             desc: "",
             rounds: ""
           },
@@ -2774,7 +2774,7 @@ const eventData = {
       {
         heading: "Kaun Banega Gyanvan",
         desc: `Ever thought of making into KBC and displaying your wisdom in front of a huge crowd? Your knowledge and expertise will be put to test in an exciting competition of erudite scholars. So, get ready to grab the hot seat, as Blitzschlag 2020, in association with NSS MNIT, brings you 'Kaun Banega Gyanvan'. Take home the crown of ultimate genius!`,
-        details: [`Date: 08/02/2020`, `Prizes worth: 5,000/-`],
+        details: [`Date: 08/02/2020`, `Prizes worth: ₹ 5,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/open?id=1OEd3tSh-_RzLygo4aXOaS63JKLQbp3T6",
