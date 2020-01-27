@@ -767,7 +767,7 @@ const eventData = {
       "https://i.ibb.co/5jN7Hd7/Whats-App-Image-2020-01-20-at-16-35-47.jpg",
       "https://i.ibb.co/fSn0wSs/questival-min.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/FWNCBmb/ek-baar-ki-baat-he-min.jpg",
       "https://i.ibb.co/WVdhw14/Whats-App-Image-2020-01-20-at-16-35-47-1.jpg"
     ],
     content: [
@@ -1179,7 +1179,7 @@ const eventData = {
   fnp: {
     carImages: [
       "https://i.ibb.co/fHrpjG9/Whats-App-Image-2020-01-08-at-14-19-55.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/8Bvn1y0/moments20-min.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/h8cdKc8/snip-n-stich.jpg",
       "https://i.ibb.co/B27TsSK/picsaga.jpg"
@@ -1483,13 +1483,13 @@ const eventData = {
   finearts: {
     carImages: [
       "https://i.ibb.co/SQQPXQ3/motif-filion-min.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/cJrp50s/trasion-min.jpg",
       "https://i.ibb.co/PCw2m8R/tint-a-top-min.jpg",
       "https://i.ibb.co/X89hBwG/explora-min.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/wrT63ms/visuality-min.jpg",
       "https://i.ibb.co/nP6Z9x9/farapart-min.jpg",
       "https://i.ibb.co/6nKVXKP/custom-kicks-min.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/b56zhrJ/lego-trance-min.jpg",
       "https://i.ibb.co/N6kfhps/rang-de-mukhda-min.jpg"
     ],
     content: [
@@ -2816,7 +2816,7 @@ const eventData = {
   },
   mavericks: {
     carImages: [
-      "https://i.ibb.co/MnwJPYY/Whats-App-Image-2020-01-20-at-01-35-07-1.jpg",
+      "https://i.ibb.co/2NX54Kh/bolti-tasveer-min.jpg",
       "https://i.ibb.co/Jc84jwz/Whats-App-Image-2020-01-20-at-01-35-07.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
     ],
