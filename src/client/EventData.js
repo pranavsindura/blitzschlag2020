@@ -83,7 +83,7 @@ const eventData = {
         ],
         canRegister: true,
         registerConstraints: {
-          minTeamSize: 1,
+          minTeamSize: 10,
           maxTeamSize: 25
         },
         eventID: "45"
@@ -114,9 +114,9 @@ const eventData = {
               {
                 heading: "ROUND ONE (ONLINE ELIMINATIONS)",
                 list: [
-                  "Record a 3-minute jam video in a jam room/rehearsal space (raw tracks compulsory) and rename it as “<Your BLITZ Number> - BOB” and upload it on Google drive and provide open access to everyone with the link (MANDATORY). Note that this video should not be edited or processed in any form.",
+                  "Record a 3-minute jam video in a jam room/rehearsal space (raw tracks compulsory) and rename it as '<Your BLITZ Number> - BOB' and upload it on Google drive and provide open access to everyone with the link (MANDATORY). Send your Drive Link at < blitzschlag@mnit.ac.in >. Note that this video should not be edited or processed in any form.",
                   "Bands can also attach an another (OPTIONAL) video of their live performance or a mixed and mastered track and a short 50-60 word introduction explaining their style and previous achievements.",
-                  "Bands need to send scanned copies of college ID cards of all participants in the same email.",
+                  "Bands need to send scanned copies of college ID cards of all participants in the same email. ( blitzschlag@mnit.ac.in )",
                   "Bands are allowed to send covers as well as original compositions through these entries."
                 ]
               },
@@ -150,13 +150,16 @@ const eventData = {
                   "Purely classical numbers are not allowed, however a classical refrain is permitted.",
                   "Obscenity (at the discretion of the judges) of any kind is not allowed and will lead to immediate disqualification. The time limit should strictly be followed. Participants will be penalized by judges for not doing so.",
                   "The decision of the judges shall be final and binding.",
-                  "The decision of the organizers regarding the final line-up would be final."
+                  "The decision of the organizers regarding the final line-up would be final.",
+                  "Registration fee : INR 300/- per head.",
+                  "Participants have to pay registration fee after qualifying online round."
                 ]
               }
             ]
           },
           {
-            heading: "PRIZE MONEY: ₹ 50,000/-",
+
+            heading: "PRIZE WORTH: ₹ 1,00,000/-",
             desc: "",
             rounds: []
           },
@@ -167,7 +170,7 @@ const eventData = {
           }
         ],
         registerConstraints: {
-          minTeamSize: 1,
+          minTeamSize: 3,
           maxTeamSize: 8
         },
         eventID: "44"
@@ -228,7 +231,9 @@ const eventData = {
                   "Teams are STRICTLY prohibited from mentioning their college names during the performance by any medium. Any team doing so will be awarded a high penalty.",
                   "Vulgarity and obscenity at any point are strictly not allowed. It can lead to immediate disqualification songs should be chosen accordingly.",
                   "The participants are advised to bring two pen drives to avoid technical disturbance. Out of which, they are also requested to submit one with the coordinator of the event.",
-                  "The decision of the judges will be final and binding."
+                  "The decision of the judges will be final and binding.",
+                  "Registration fee : INR 300/- per head.",
+                  "Participants have to pay registration fee after qualifying online round."
                 ]
               }
             ]
@@ -255,13 +260,17 @@ const eventData = {
         desc: `"Every artist was first an amateur", said R.W.Emerson; and if we're sure that you have a story to tell.
         Showcase your talents, show us how far you've come, and see if Blitzschlag 2020 is the stage that will
         grant you victory. Let yourself shine your brightest yet, let's see if 'Blitz Got Talent'!`,
-        details: [`Date: 07/02/2020`, `Prizes worth: 10,000`],
+        details: [`Date: 07/02/2020 & 08/02/2020`, `Prizes worth: 10,000`],
         accent: ["#73211c", "#2f2e2e", "#520c05"],
         detailsLink: "",
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "Description",
+            desc: `Do you have the motivation to transform your talent into a genius? Have you always desired for a
+            cheering crowd to showcase your talent. We offer you a chance to spread your wings and explore your
+            talent in front of an exciting audience.
+            Don't keep your talents within yourself as a closed perfume bottle keep its fragnance in. Open the cap and
+            let them free to disperse.`,
             rounds: []
           },
           {
@@ -289,7 +298,7 @@ const eventData = {
         //required even if canRegister is false
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 10
         },
         eventID: "47"
       },
@@ -329,7 +338,7 @@ const eventData = {
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 1
         },
         eventID: "48"
       }
@@ -348,7 +357,7 @@ const eventData = {
       {
         heading: "Dhun",
         desc: `The most amazing thing about instrumental music is that everyone can have their own interpretations; no lyrics direct what you should feel. It allows emotions to shine in their own character, without presuming to display them as real or imaginary expressions. On that note, Blitzschlag 2020 presents 'Dhun', an instrumental music showdown, the ultimate test of your musical prowess. Register yourselves now to become a part of the euphonious extravaganza!`,
-        details: [`Time: 2:00 PM`, `Date: 07/02/2020`, `Prizes worth: 14,000/-`],
+        details: [`Date: 07/02/2020`, `Prizes worth: 14,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -418,42 +427,82 @@ const eventData = {
       },
       {
         heading: "RAMBA SAMBA",
-        desc: `To Be Revealed`,
-        details: [`Time: 9:00 AM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
+        desc: `Get ready to witness the stage set ablaze as teams come head-to-head, toss around their toes and swing their arms in the leap of glory. That's the magic of Rambha Sambha!
+        Rambha Sambha is a beautiful blend of foot-tapping beats, a pumping rush of adrenaline and  the high of getting  your team to wave the trophy of champions at Blitzschlag 2020.`,
+        details: [`Date: 07/02/2020`, `Prizes worth: ₹ 1,20,000/-`],
+        accent: ["#251e3e", "#9e1e25", "#d22940"],
+        detailsLink:
+          "https://drive.google.com/file/d/1Bin8SBJXbt7ahqJpCoUuVL-3PSamDJFb/view?usp=drivesdk",
         canRegister: true,
+        detailsPage: [
+          {
+            heading: "DESCRIPTION",
+            desc: "Being one of the most popular events, Ramba Samba is the dance extravaganza. Flashy costumes, loud make-up and the outstanding choreography make a dance team the best.",
+            rounds: []
+          },
+          {
+            heading: "JUDGING CRITERIA & RULE BOOK",
+            desc: "Choreography, Energy, Expression , Overall impact , Synchronization, Entertainment Value, Beat techniques and timing .",
+            rounds: [
+              {
+                heading: "ROUND ONE (PRELIMS)",
+                list: [
+                  "Teams will have to perform on a track of 5-6 min, including stage setup and clearance."
+                ]
+              },
+              {
+                heading: "ROUND TWO (FINALS)",
+                list: [
+                  "The teams selected for finals will have to perform on a track with a time limit of 8-12 min (+2 min for stage setup and clearance).",
+                  "The prelims track should be a part of the final performance."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "ROUND TWO (FINALS)",
+                list: [
+                  "Minimum of 12 and a maximum of 30 members can participate from a team.",
+                  "Minimum of 7 members should be present on the stage.",
+                  "No classical dance performances are allowed.",
+                  "Time limit must be followed. Exceeding it will lead to negative marking.",
+                  "Usage of props is allowed but has to be informed prior to the performance. These have to be brought by the teams themselves but the organizers hold the discretion of allowing it on stage.",
+                  "No use of fire, water, glass or any other thing that might cause inconvenience to the other teams or cause damage to the stage during the performance.",
+                  "No extra mark for theme or use of properties.",
+                  "Fusion of songs is allowed.",
+                  "No solo performance is allowed.",
+                  "The dance group have to use one set of costume in the prelims, they are going to use in the final.",
+                  "Pre-recorded music should be brought in a pen drive in .mp3 format only.",
+                  "Marks will be deducted for copied choreography.",
+                  "Teams are STRICTLY prohibited from mentioning their college names during the performance by any medium. Any team doing so will be awarded a high penalty.",
+                  "Vulgarity and obscenity at any point are strictly not allowed. It can lead to immediate disqualification songs should be chosen accordingly.",
+                  "The participants are advised to bring two pen drives to avoid technical disturbance. Out of which, they are also requested to submit one with the coordinator of the event.",
+                  "The decision of the judges will be final and binding.",
+                  "Registration fee : INR 300/- per head.",
+                  "Participants have to pay registration fee after qualifying online round."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY: INR 90,000/-  PRIZES WORTH: INR 1,20,000/-",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "CONTACT DETAILS",
+            desc: "Akash : 9887481650 Ishit : 9149381450",
+            rounds: ""
+          }
+        ],
         registerConstraints: {
           minTeamSize: 1,
           maxTeamSize: 30
         },
-        detailsPage: [
-          {
-            heading: "TBA",
-            desc: "",
-            rounds: []
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          }
-        ],
         eventID: "27"
       },
       {
@@ -1495,7 +1544,8 @@ const eventData = {
     content: [
       {
         heading: "MOTIF-FILION",
-        desc: `To Be Revealed`,
+        desc: `Ever wondered if casual doodling can be innovative and worth a cross fire?
+        'Motif-filon' is giving all the students an exclusive platform to innovate their scribble and design creative formations using coloured thread. So polish your doodling skills and brace yourself to allure everyone with catchy motifs.`,
         details: [`Date: 07/02/2020`, `Prizes worth: 2,000/-`],
         accent: ["#8b1d64", "#854593", "#2a3d78"],
         detailsLink:
@@ -2830,7 +2880,7 @@ const eventData = {
         details: [`Date: 06/02/20`, `Prizes worth: TBA/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
-        canRegister: false,
+        canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
           maxTeamSize: 5
@@ -2887,7 +2937,7 @@ const eventData = {
         details: [`Date: 08/02/20`, `Prizes worth: TBA/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
-        canRegister: false,
+        canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
           maxTeamSize: 5
@@ -2942,7 +2992,7 @@ const eventData = {
         details: [`Date: 07/02/20`, `Prizes worth: TBA/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
-        canRegister: false,
+        canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
           maxTeamSize: 5

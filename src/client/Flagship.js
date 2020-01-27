@@ -173,39 +173,47 @@ class Flagship extends Component {
 	nextSlide = () => {
 		const { currSlide } = this.state;
 		let registerDetails = {
-			teamSize: this.data.content[currSlide].registerConstraints.minTeamSize,
+			teamSize: this.data.content[(currSlide + 1) % this.data.carImages.length].registerConstraints.minTeamSize,
 			teamID: 0,
 			eventName: '',
 			teamName: '',
 			teamMembers: []
 		};
-		for (let i = 0; i < this.data.content[currSlide].registerConstraints.minTeamSize; i++) {
+		for (let i = 0; i < this.data.content[(currSlide + 1) % this.data.carImages.length].registerConstraints.minTeamSize; i++) {
 			registerDetails.teamMembers.push({ blitzID: '', blitzPIN: '' });
 		}
-		// this.setState({ registerDetails });
-		this.setState({ currSlide: (currSlide + 1) % this.data.carImages.length, registerDetails, submitMessage: '' },()=>{
-			fullpage_api.reBuild();
+		this.setState({ registerDetails },()=>{
+			this.setState({
+				//  registerDetails, 
+				currSlide: (currSlide + 1) % this.data.carImages.length, submitMessage: '' },()=>{
+					// console.log('then from state',this.state.currSlide);
+
+				fullpage_api.reBuild();
+			});
 		});
+		
 	};
 	prevSlide = () => {
 		const { currSlide } = this.state;
 		let registerDetails = {
-			teamSize: this.data.content[currSlide].registerConstraints.minTeamSize,
+			teamSize: this.data.content[(currSlide - 1 + this.data.carImages.length) % this.data.carImages.length].registerConstraints.minTeamSize,
 			teamID: 0,
 			eventName: '',
 			teamName: '',
 			teamMembers: []
 		};
-		for (let i = 0; i < this.data.content[currSlide].registerConstraints.minTeamSize; i++) {
+		for (let i = 0; i < this.data.content[(currSlide - 1 + this.data.carImages.length) % this.data.carImages.length].registerConstraints.minTeamSize; i++) {
 			registerDetails.teamMembers.push({ blitzID: '', blitzPIN: '' });
 		}
-		// this.setState({ registerDetails });
-		this.setState({
-			currSlide: (currSlide - 1 + this.data.carImages.length) % this.data.carImages.length,
-			registerDetails,
-			submitMessage: ''
-		},()=>{
-			fullpage_api.reBuild();
+		this.setState({ registerDetails },()=>{
+			this.setState({
+				// registerDetails,
+				currSlide: (currSlide - 1 + this.data.carImages.length) % this.data.carImages.length,
+				submitMessage: ''
+			},()=>{
+				// console.log('then from state',this.state.currSlide);
+				fullpage_api.reBuild();
+			});
 		});
 	};
 	showRegister = (fullpageApi) => {
@@ -214,6 +222,7 @@ class Flagship extends Component {
 	};
 	createTeamMemberSelect = () => {
 		const { currSlide } = this.state;
+		// console.log('member select', currSlide);
 		let options = [];
 		for (
 			let i = this.data.content[currSlide].registerConstraints.minTeamSize;
@@ -237,7 +246,7 @@ class Flagship extends Component {
 	createTeamMemberInput = () => {
 		let input = [];
 		const { registerDetails } = this.state;
-		// console.log(registerDetails);
+		// console.log('from team input',registerDetails.teamSize);
 		for (let i = 0; i < registerDetails.teamSize; i++) {
 			input.push(
 				<Form.Row key={`formrow-${i}`}>
@@ -297,7 +306,7 @@ class Flagship extends Component {
 		for(let i=0;i<list.length;i++)
 		{
 			arr.push(
-				<li style={{color: 'white', paddingRight: '10px'}}>{list[i]}</li>
+				<li key={list[i].length + Math.random()} style={{color: 'white', paddingRight: '10px'}}>{list[i]}</li>
 			);
 		}
 		return arr;
@@ -324,16 +333,16 @@ class Flagship extends Component {
 			// let x = ;
 			let item = details[i];
 			res.push(
-				<div style={{width: '100%', color: 'white'}}>
-				<h3 style={{color: 'white', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px'}}>{item.heading}</h3>
-				<p style={{color: 'white', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px'}}>{item.desc}</p>
+				<div style={{width: '100%', color: 'white', paddingLeft: '10%', paddingRight: '10%'}}>
+				<h3 style={{color: 'white', textAlign: 'left'}}>{item.heading}</h3>
+				<p style={{color: 'white', textAlign: 'left'}}>{item.desc}</p>
 				<div>
 					{this.getRounds(item.rounds)}
 				</div>
 				</div>
 			);
 		}
-		console.log(res);
+		// console.log(res);
 		return res;
 	};
 	render() {
