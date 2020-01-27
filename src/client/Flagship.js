@@ -333,9 +333,9 @@ class Flagship extends Component {
 			// let x = ;
 			let item = details[i];
 			res.push(
-				<div style={{width: '100%', color: 'white'}}>
-				<h3 style={{color: 'white', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px'}}>{item.heading}</h3>
-				<p style={{color: 'white', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px'}}>{item.desc}</p>
+				<div style={{width: '100%', color: 'white', paddingLeft: '10%', paddingRight: '10%'}}>
+				<h3 style={{color: 'white', textAlign: 'left'}}>{item.heading}</h3>
+				<p style={{color: 'white', textAlign: 'left'}}>{item.desc}</p>
 				<div>
 					{this.getRounds(item.rounds)}
 				</div>

@@ -376,7 +376,7 @@ class Event extends Component {
           //   key={
           // 	  item.length
           // 	   + Math.trunc(Math.random() * 1000)}
-          style={{ width: "100%", color: "white", padding: "20px" }}
+          style={{ width: "100%", color: "white", paddingLeft: "10%", paddingRight: "10%" }}
         >
           <h3 style={{ color: "white", textAlign: "left" }}>{item.heading}</h3>
           <p style={{ color: "white", textAlign: "left" }}>{item.desc}</p>

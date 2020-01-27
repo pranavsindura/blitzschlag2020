@@ -230,7 +230,9 @@ const eventData = {
                   "Teams are STRICTLY prohibited from mentioning their college names during the performance by any medium. Any team doing so will be awarded a high penalty.",
                   "Vulgarity and obscenity at any point are strictly not allowed. It can lead to immediate disqualification songs should be chosen accordingly.",
                   "The participants are advised to bring two pen drives to avoid technical disturbance. Out of which, they are also requested to submit one with the coordinator of the event.",
-                  "The decision of the judges will be final and binding."
+                  "The decision of the judges will be final and binding.",
+                  "Registration fee : INR 300/- per head.",
+                  "Participants have to pay registration fee after qualifying online round."
                 ]
               }
             ]
@@ -354,7 +356,7 @@ const eventData = {
       {
         heading: "Dhun",
         desc: `The most amazing thing about instrumental music is that everyone can have their own interpretations; no lyrics direct what you should feel. It allows emotions to shine in their own character, without presuming to display them as real or imaginary expressions. On that note, Blitzschlag 2020 presents 'Dhun', an instrumental music showdown, the ultimate test of your musical prowess. Register yourselves now to become a part of the euphonious extravaganza!`,
-        details: [`Time: 2:00 PM`, `Date: 07/02/2020`, `Prizes worth: 14,000/-`],
+        details: [`Date: 07/02/2020`, `Prizes worth: 14,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -424,42 +426,82 @@ const eventData = {
       },
       {
         heading: "RAMBA SAMBA",
-        desc: `To Be Revealed`,
-        details: [`Time: 9:00 AM`, `Date: 07/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
+        desc: `Get ready to witness the stage set ablaze as teams come head-to-head, toss around their toes and swing their arms in the leap of glory. That's the magic of Rambha Sambha!
+        Rambha Sambha is a beautiful blend of foot-tapping beats, a pumping rush of adrenaline and  the high of getting  your team to wave the trophy of champions at Blitzschlag 2020.`,
+        details: [`Date: 07/02/2020`, `Prizes worth: ₹ 1,20,000/-`],
+        accent: ["#251e3e", "#9e1e25", "#d22940"],
+        detailsLink:
+          "https://drive.google.com/file/d/1Bin8SBJXbt7ahqJpCoUuVL-3PSamDJFb/view?usp=drivesdk",
         canRegister: true,
+        detailsPage: [
+          {
+            heading: "DESCRIPTION",
+            desc: "Being one of the most popular events, Ramba Samba is the dance extravaganza. Flashy costumes, loud make-up and the outstanding choreography make a dance team the best.",
+            rounds: []
+          },
+          {
+            heading: "JUDGING CRITERIA & RULE BOOK",
+            desc: "Choreography, Energy, Expression , Overall impact , Synchronization, Entertainment Value, Beat techniques and timing .",
+            rounds: [
+              {
+                heading: "ROUND ONE (PRELIMS)",
+                list: [
+                  "Teams will have to perform on a track of 5-6 min, including stage setup and clearance."
+                ]
+              },
+              {
+                heading: "ROUND TWO (FINALS)",
+                list: [
+                  "The teams selected for finals will have to perform on a track with a time limit of 8-12 min (+2 min for stage setup and clearance).",
+                  "The prelims track should be a part of the final performance."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "ROUND TWO (FINALS)",
+                list: [
+                  "Minimum of 12 and a maximum of 30 members can participate from a team.",
+                  "Minimum of 7 members should be present on the stage.",
+                  "No classical dance performances are allowed.",
+                  "Time limit must be followed. Exceeding it will lead to negative marking.",
+                  "Usage of props is allowed but has to be informed prior to the performance. These have to be brought by the teams themselves but the organizers hold the discretion of allowing it on stage.",
+                  "No use of fire, water, glass or any other thing that might cause inconvenience to the other teams or cause damage to the stage during the performance.",
+                  "No extra mark for theme or use of properties.",
+                  "Fusion of songs is allowed.",
+                  "No solo performance is allowed.",
+                  "The dance group have to use one set of costume in the prelims, they are going to use in the final.",
+                  "Pre-recorded music should be brought in a pen drive in .mp3 format only.",
+                  "Marks will be deducted for copied choreography.",
+                  "Teams are STRICTLY prohibited from mentioning their college names during the performance by any medium. Any team doing so will be awarded a high penalty.",
+                  "Vulgarity and obscenity at any point are strictly not allowed. It can lead to immediate disqualification songs should be chosen accordingly.",
+                  "The participants are advised to bring two pen drives to avoid technical disturbance. Out of which, they are also requested to submit one with the coordinator of the event.",
+                  "The decision of the judges will be final and binding.",
+                  "Registration fee : INR 300/- per head.",
+                  "Participants have to pay registration fee after qualifying online round."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE MONEY: INR 90,000/-  PRIZES WORTH: INR 1,20,000/-",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "CONTACT DETAILS",
+            desc: "Akash : 9887481650 Ishit : 9149381450",
+            rounds: ""
+          }
+        ],
         registerConstraints: {
           minTeamSize: 1,
           maxTeamSize: 30
         },
-        detailsPage: [
-          {
-            heading: "TBA",
-            desc: "",
-            rounds: []
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          }
-        ],
         eventID: "27"
       },
       {
@@ -2837,7 +2879,7 @@ const eventData = {
         details: [`Date: 06/02/20`, `Prizes worth: TBA/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
-        canRegister: false,
+        canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
           maxTeamSize: 5
@@ -2894,7 +2936,7 @@ const eventData = {
         details: [`Date: 08/02/20`, `Prizes worth: TBA/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
-        canRegister: false,
+        canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
           maxTeamSize: 5
@@ -2949,7 +2991,7 @@ const eventData = {
         details: [`Date: 07/02/20`, `Prizes worth: TBA/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
-        canRegister: false,
+        canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
           maxTeamSize: 5
