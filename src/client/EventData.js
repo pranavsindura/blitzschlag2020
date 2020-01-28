@@ -2902,7 +2902,7 @@ const eventData = {
     carImages: [
       "https://i.ibb.co/2NX54Kh/bolti-tasveer-min.jpg",
       "https://i.ibb.co/Jc84jwz/Whats-App-Image-2020-01-20-at-01-35-07.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
+      "https://i.ibb.co/nCr8MPQ/Whats-App-Image-2020-01-28-at-12-54-54.jpg"
     ],
     content: [
       {
