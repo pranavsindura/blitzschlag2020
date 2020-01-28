@@ -336,27 +336,81 @@ const eventData = {
       {
         heading: "MR. & MISS BLITZ",
         desc: `Fantasies like Student of the Year is what is yearned by all the young exuberants.Moreover, being the face of college is what all the students crave for. Mr. and Miss Blitz provides an excellent opportunity to showcase that you are the creme de la creme of this institute with a perfect blend of attitude, fitness and overall personality.`,
-        details: [`Date: 06/02/2020`, `Prizes worth: 5,000/-`],
+        details: [`Date: 06/02/2020`, `Prizes worth: ₹5,000/-`],
         accent: ["#f9b26c", "#446e78", "#fe593d"],
         detailsLink: "",
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DISCRIPTION",
+            desc: "Are you the perfect blend of beauty, attitude and wit? Here’s your chance to break out of conformity and get a shot at the limelight. Mr and Ms Blitz is an illustrious event probing the charismatic as well as the intellectual side of the participants. Beauty attracts the eyes but personality captures the heart. The charm of personality is the very essence of grace and elegance. Embrace your uniqueness in this stellar event of individuality and temperament. Let go of your diffidence and seize the moment!",
             rounds: []
           },
           {
             heading: "",
             desc: "",
-            rounds: ""
+            rounds: [
+              {
+                heading: "ONLINE QUESTIONNAIRE",
+                list: [
+                  "Online questionnaire is reviewed and students will be shortlisted on the basis of their answers. Your wit, personality and charm puts you ahead of the crowd. So don’t forget to bring your A-game. The online questionnaire is free."
+                ]
+              },
+              {
+                heading: "ROUND ONE : RAMP WALK AND USP",
+                list: [
+                  "The candidates have to walk down the ramp and flaunt their unique style.The participants will also be given 1 min each to speak to the audience to tell them his/her USP (unique selling point) and gather their support. Don’t forget to put your best foot forward!"
+                ]
+              },
+              {
+                heading: "ROUND TWO : TALENT ROUND",
+                list: [
+                  "Talent show by each participant – dancing, singing, stand-up act, instrument or any other creative activity (2 mins maximum).",
+                  "EXCEEDING the time limit will lead to penalties.",
+                  "To make things a little interesting a table full of random props will be available and anyone who can incorporate them in their act get bonus points.",
+                  "On the basis of their talent, spontaneity and confidence they will be awarded points.",
+                  "The shortlisted participants: 8 entries(4 boys and 4 girls), will proceed to the finals."
+                ]
+              },
+              {
+                heading: "THE FINAL CHAPTER : PERSONAL INTERVIEW",
+                list: [
+                  "You will experience a fun and tricky questionnaire with a tinge of personal opinions on certain specific, political views and general issues. Participants may be asked questions and their personal opinions on a variety of topics. All shortlisted participants will be judged on their ability to project their personality and project his/her views.",
+                  "During on-the-spot registration participants will be given a quirky and fun dare that will test their spontaneity and their ability to entertain. One boy and one girl will be selected as wildcards, who will further go directly to round two of the competition."
+                ]
+              },
+              {
+                heading: "Who can Participate in these competitions? Is there any registration fee involved?",
+                list: [
+                  "Any college student can participate in these competitions. These is no registration fee for participation."
+                ]
+              },
+              {
+                heading: "Are on the spot registrations allowed during the fest?",
+                list: [
+                  "On the spot registration may or may not be allowed depending on the number of already registered participants. We suggest that you register online as soon as possible to prevent unforeseeable circumstances."
+                ]
+              }
+            ]
           },
           {
-            heading: "",
+            heading: "POINTS TO BE NOTED",
             desc: "",
-            rounds: ""
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "In all the preliminary and final rounds, the decision of the organizers and judges shall be final and binding. No protest against any judgement shall be entertained under any circumstances.",
+                  "Participants must be 18 years of age or above. He/She must be a student from a college and registered with BLITZSCHLAG’20.",
+                  "All participants have to fill individual application forms. A person can apply only once.",
+                  "Participants can register at the BLITZSCHLAG’20 registration desk at the prescribed time and participate for wild-card entry.",
+                  "Participants will be duly informed about their selection and are expected to reach the venue on time.",
+                  "Make sure you fill the questionnaire with the best of your abilities and be as descriptive as possible."
+                ]
+              }
+            ]
           },
           {
-            heading: "",
+            heading: "PRIZE WORTH: ₹5,000/-",
             desc: "",
             rounds: ""
           },
@@ -1271,8 +1325,8 @@ const eventData = {
         for educating the audience. Do you wish to tell stories full of emotions, action and drama?
         Capture the exciting stories and bring about change in yourself as well as in society. The wait
         for a world-class film festival is over. Register to bring out your best as a filmmaker.`,
-        details: [`Date: 06/02/2020`, `Prizes worth: 500,000/-`],
-        details: [`Date: 08/02/2020`, `Prizes worth: 20,000/-`],
+        // details: [`Date: 06/02/2020`, `Prizes worth: 500,000/-`],
+        details: [`Date: 08/02/2020`, `Prizes worth: ₹20,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -1335,7 +1389,7 @@ const eventData = {
             ]
           },
           {
-            heading: "",
+            heading: "PRIZE WORTH: ₹ 20,000",
             desc: "",
             rounds: ""
           },
@@ -1353,7 +1407,7 @@ const eventData = {
         an instant out of time, altering life by holding it still. Moments'20 is a perfect platform for
         exhibiting your photographs; an international platform where you'll compete across
         multiple categories and have a chance of winning exciting prizes.`,
-        details: [`Date: 06/02/2020`, `Prizes worth: 5,000/-`],
+        details: [`Date: 06/02/2020`, `Prizes worth: 35,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -1363,19 +1417,96 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
+            heading: "RULE BOOK",
             desc: "",
-            rounds: []
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "The contest MOMENTS’20 is open to all college students in India and outside of India.",
+                  "There are no restrictions on entrants in terms of gender, age, nationality, country or region.",
+                  "Entries are required to be submitted online via mail moments@mnit.ac.in (Dec. 25, 2019 -Jan. 25,2020).",
+                  "Please upload your photographs on google drive or any other similar cloud storage and mail us the link to above mentioned E-mail Id with following format:",
+                  "Full_Name: , College_Name: , College_Id: , Gender (M/F): , Postal_Address: , Mobile_No: (Alternate_Mobile_No: ) , Total No. of Photographs: (Specify the no. of photographs by categories also)  , Link: , Caption: , **All information is required to be written in English only. , **Submission with incomplete format will not be accepted.",
+                  "The entrant’s name on the entry form should be the same as that on his/her valid identification/passport. Any other preferred name such as “professional name” or “pen name” will not be allowed.",
+                  "The photos must be taken by the entrant himself/herself, otherwise the entrant will be deprived of the right to win the award in the contest.",
+                  "Photos entered jointly by two or more than two entrants will not be accepted.",
+                  "There is no limit on shooting time. Entries can be taken on one occasion or over a period of time.",
+                  "The category of the submitted photos must be specified by the entrants. The organizers and judges are not responsible for re-categorizing any entry. (Photographs must be named as Entrant’s Name_Category of Photo_No. of Photo)",
+                  "All photographs must be in .jpeg/.jpg/.png and each photo should not be more than 4 MB in size.",
+                  "Each entry must consist of a minimum of 4 and a maximum of 10 photos. Each entrant is allowed to submit no more than one entry.",
+                  "Each category can have maximum of 2 photos only.",
+                  "No entry fee is required for this contest.",
+                  "Only the necessary retouching which will not change the original appearance of the photo is allowed. All photos are prohibited from synthesis, addition, deletion or major changes in color.",
+                  "Photos with frames, special backgrounds or other decorative effects will not be accepted. To keep the authenticity of the record, composite, splicing and trick photos will not be judged.",
+                  "The entrant must submit the original photograph in case of digital editing.",
+                  "Any watermark or photographer’s name on photo will not be accepted.",
+                  "Categories for submission are as followings:",
+                  "General : Journalism, Still Life, Street",
+                  "Architectural: Architecture, Buildings, Heritage",
+                  "Nature : Wildlife, Birds, Floral, Insect, Landscapes- Land, Sea, Sky",
+                  "Abstract",
+                  "Chaos",
+                  "Culture",
+                  "Issues",
+                  "Patterns",
+                  "Portrait",
+                  "Travel",
+                  "With the guarantee of use of the name of entrants, the organizers reserve the right to repeatedly use entries in related non-commercial activities for free, including publications, exhibitions, Internet displays, electronic media, etc. The Organizers also reserve the right to do any necessary editing of the entries.",
+                  "Photos must be received by midnight, Jan. 25, 2020 (IST -India Standard Time UTC/GMT +5:30 hours) via the mail as mentioned above.",
+                  "There will be two rounds of jury for finalizing the contest winners.",
+                  "All entrants will be deemed to have accepted the Guidelines of MOMENTS’20.",
+                  "The Film & Photography Club, MNIT Jaipur reserves the right of final interpretation of the Guidelines of MOMENTS’20.",
+                  "The decision of the judges will be final and binding.",
+                  "The winners of each category and overall winner will be decided on the basis of voting done during the exhibition days and the marks given by the jury.",
+                  "The voting will have weightage of 30 % of the total votes casted in each category and 70% weightage will be given to the marks given by jury.",
+                  "For the overall winner in each category"
+                ]
+              }
+            ]
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
+            heading: "Judging Criteria",
+            desc: "Each of the entries will be judges separately on the following basis:",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Creativity and Innovation",
+                  "Technical Skills",
+                  "Composition and Frame",
+                  "Light",
+                  "Theme",
+                  "Message depicted"
+                ]
+              }
+            ]
           },
           {
-            heading: "",
+            heading: "PRIZE WORTH",
             desc: "",
-            rounds: ""
+            rounds: [
+              {
+                heading: "1st Winner: Goodies worth Rs.1,500 + Certificate",
+                list: [
+                ]
+              },
+              {
+                heading: "1st Runner up: Goodies worth Rs.1,000 + Certificate",
+                list: [
+                ]
+              },
+              {
+                heading: "2nd Runner up:Goodies worth Rs. 500 + Certificate",
+                list: [
+                ]
+              },
+              {
+                heading: "All participants will get a participation certificate in form of soft copy.",
+                list: [
+                ]
+              }
+            ]
           },
           {
             heading: "",
@@ -1438,7 +1569,7 @@ const eventData = {
         desc: `Every photo portrays a story. The beauty of the components is in the way it is stitched.
         We bring forth an opportunity for you to showcase your creativity. Create a Photoshop wonder from
         the given stock photos in Blitzschlag 2020. Challenge your Photoshop skills and stand a chance to win!`,
-        details: [`Prizes worth: TBA/-`],
+        details: [`Prizes worth: ₹5,000/-`],
         accent: ["#0192cd", "#2b4508", "#7b7b77"],
         detailsLink: "",
         canRegister: true,
@@ -1479,7 +1610,7 @@ const eventData = {
             ]
           },
           {
-            heading: "",
+            heading: "PRIZE WORTH : ₹5,000",
             desc: "",
             rounds: ""
           },
@@ -1502,7 +1633,7 @@ const eventData = {
         weave stories out of photographs. Every photographer is a story teller; each photograph holds an emotion.
         For Blitzschlag 2020, capture your oneiric stories in a photograph, and get a chance to win exhilarating
         prizes while showcasing your talent.`,
-        details: [`Date: TBA`, `Prizes worth: TBA/-`],
+        details: [`Date: TBA`, `Prizes worth: ₹5,000`],
         accent: ["#ffc75a", "#565455", "#f03c5f"],
         detailsLink: "",
         canRegister: true,
@@ -1541,7 +1672,7 @@ const eventData = {
             ]
           },
           {
-            heading: "",
+            heading: "PRIZE WORTH : ₹5,000",
             desc: "",
             rounds: ""
           },
@@ -2916,28 +3047,64 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "A quiz competition, where young minds will be tested for their social awareness, general knowledge, etc",
             rounds: []
           },
           {
             heading: "",
             desc: "",
-            rounds: ""
+            rounds: [
+              {
+                heading: "JUDGING CRITERIA",
+                list: [
+                  "Mind Intellectual, Awareness, Overall score."
+                ]
+              },
+              {
+                heading: "ROUND ONE",
+                list: [
+                  "It will be a screening round.",
+                  "It will be of around 30 minutes.",
+                  "There will be around 50-60 questions and each question will be allotted a display time of 30 seconds.",
+                  "No negative marking."
+                ]
+              },
+              {
+                heading: "ROUND TWO (FINALS)",
+                list: [
+                  "It will be a buzzer round.",
+                  "Negative marking will also be there. For each wrong answer, ¼ marks will be deducted."
+                ]
+              },
+            ]
           },
           {
-            heading: "",
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Team size: 2 members",
+                  "Only team entries are allowed",
+                  "Inter-college participation is allowed",
+                  "The participants shall not be allowed to use mobile or other electronic instrument.",
+                  "A cut-off score will be decided after completion of round one and teams achieving the same will be progressed to next round.",
+                  "Top three teams will be awarded",
+                  "The decision of the judges will be final and will not be subjected to any change."
+                ]
+              },
+            ]
+          },
+          {
+            heading: "PRIZE WORTH: ₹ 5,000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Samyak: 8683848356 , Kunal: 7737661992",
             rounds: ""
           }
         ],
