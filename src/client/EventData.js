@@ -239,7 +239,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: ₹ 90,000/-  PRIZES WORTH: ₹ 1,20,000/-",
+            heading: "PRIZES WORTH ₹ 1,20,000/-",
             desc: "",
             rounds: ""
           },
@@ -264,33 +264,64 @@ const eventData = {
         accent: ["#73211c", "#2f2e2e", "#520c05"],
         detailsLink: "",
         detailsPage: [
+          
           {
-            heading: "Description",
-            desc: `Do you have the motivation to transform your talent into a genius? Have you always desired for a
-            cheering crowd to showcase your talent. We offer you a chance to spread your wings and explore your
-            talent in front of an exciting audience.
-            Don't keep your talents within yourself as a closed perfume bottle keep its fragnance in. Open the cap and
-            let them free to disperse.`,
+            heading: "DESCRIPTION",
+            desc: "Do you have the motivation to transform your talent into a genius? Have you always desired for a cheering crowd to showcase your talent. We offer you a chance to spread your wings and explore your talent in front of an exciting audience. Don't keep your talents within yourself as a closed perfume bottle keep its fragnance in. Open the cap and let them free to disperse.",
+            rounds: ""
+          },
+          {
+            heading: "Rounds",
+            desc: "",
+            rounds: [
+              {
+                heading: "ROUND 1: (ONLINE ELIMINATION ROUND)",
+                list: [
+                  "Record a 30sec-1min video and rename it as “<Your BLITZ ID> - BGT” and upload it on Google drive and provide open access to everyone with the link (MANDATORY) and share this link to “blitzgottalent01@gmail.com” with your details mentioned in the mail (Name and contact no.)",
+                  "Note:-",
+                  "1.The last date of sharing the video is 5th Feb 2020.",
+                  "2.Video should not be edited or processed in any form.",
+                  "Participants can also attach an another (OPTIONAL) video of a short 50-60 word introduction explaining their style and previous achievements."
+                ]
+              },
+              {
+                heading: "ROUND 2: (SHOWDOWN)",
+                list: [
+                  "Participants are allowed to perform for 2-5minutes on stage."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "GENERAL RULES & JUDGING CRITERIA",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Crowd Engagement, Stage Presence and Overall Performance.",
+                  "Any of the performing arts are allowed in the competition. Talents may include (but not limited to) singing, dancing, instrumental, music, skits, magic, comedy, martial arts, juggling etc.",
+                  "Recommended length is 2 minutes; acts must be no more than 5 minutes.",
+                  "Any backing track, if required, should be brought by the participant in their own pen drives and should be provided to the event coordinators before the start of the event.",
+                  "Participants must bring their own instruments or any other prop as required by them during the act.",
+                  "Registered Contestants are expected to abide the rules & regulations, follow the decorum.",
+                  "They are advised to report to the venue atleast 30 mins before the event.",
+                  "Decision of the jury is final and binding. Unnecessary arguments can lead to disqualification.",
+                  "Date: 7th and 8th Feb",
+                  "Venue: VLTC"
+                
+                ]
+              }
+            ]
+          },
+          {
+            heading: "Prizes Worth  ₹10,000/-",
+            desc: "",
             rounds: []
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "Contact Details",
+            desc: "Tarun Kumar :- 9887759717 , Manvi Gupta :- 9024831055",
             rounds: ""
           }
         ],
@@ -413,7 +444,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: WORTH ₹ 14,000/-",
+            heading: "PRIZE WORTH  ₹ 14,000/-",
             desc: "",
             rounds: ""
           },
@@ -489,7 +520,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: INR 90,000/-  PRIZES WORTH: INR 1,20,000/-",
+            heading: "PRIZES WORTH  ₹ 1,20,000/-",
             desc: "",
             rounds: ""
           },
@@ -577,7 +608,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZES WORTH: ₹ 14,000/-",
+            heading: "PRIZES WORTH  ₹ 14,000/-",
             desc: "",
             rounds: ""
           },
@@ -650,7 +681,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: WORTH ₹ 12,000/-",
+            heading: "PRIZE  WORTH  ₹ 12,000/-",
             desc: "",
             rounds: ""
           },
@@ -708,7 +739,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZES WORTH: ₹ 14,000/-",
+            heading: "PRIZES WORTH  ₹ 14,000/-",
             desc: "",
             rounds: ""
           },
@@ -791,7 +822,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: WORTH ₹ 18,000/-",
+            heading: "PRIZE  WORTH  ₹ 18,000/-",
             desc: "",
             rounds: ""
           },
@@ -858,7 +889,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: ₹ 3,500/-",
+            heading: "PRIZE WORTH  ₹ 3,500/-",
             desc: "",
             rounds: ""
           },
@@ -915,7 +946,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY : ₹ 4000/-",
+            heading: "PRIZE WORTH   ₹ 4000/-",
             desc: "",
             rounds: ""
           },
@@ -1016,7 +1047,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY : ₹ 6000/-",
+            heading: "PRIZE WORTH   ₹ 6000/-",
             desc: "",
             rounds: ""
           },
@@ -1074,7 +1105,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY : ₹ 4,000/-",
+            heading: "PRIZE WORTH : ₹ 4,000/-",
             desc: "",
             rounds: ""
           },
@@ -1132,7 +1163,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY : ₹ 4,000",
+            heading: "PRIZE WORTH : ₹ 4,000",
             desc: "",
             rounds: ""
           },
@@ -1211,7 +1242,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY : ₹ 4500/-",
+            heading: "PRIZE WORTH : ₹ 4500/-",
             desc: "",
             rounds: ""
           },
@@ -1584,7 +1615,7 @@ const eventData = {
             ]
           },
           {
-            heading: "Prize worth ₹ 2000",
+            heading: "PRIZE WORTH ₹ 2000",
             desc: "",
             rounds: ""
           },
@@ -1637,7 +1668,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: ₹ 4500/-",
+            heading: "PRIZE WORTH: ₹ 4500/-",
             desc: "",
             rounds: ""
           },
@@ -1704,7 +1735,7 @@ const eventData = {
             ]
           },
           {
-            heading: "Prize worth ₹ 3000",
+            heading: "PRIZE WORTH ₹ 3000",
             desc: "",
             rounds: ""
           },
@@ -1740,7 +1771,7 @@ const eventData = {
             rounds: ""
           },
           {
-            heading: "PRIZE MONEY: ₹ 4500/-",
+            heading: "PRIZE WORTH: ₹ 4500/-",
             desc: "",
             rounds: ""
           },
@@ -1800,7 +1831,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: ₹ 4500/-",
+            heading: "PRIZE WORTH: ₹ 4500/-",
             desc: "",
             rounds: ""
           },
@@ -1867,7 +1898,7 @@ const eventData = {
             ]
           },
           {
-            heading: "Prize worth ₹ 3000",
+            heading: "PRIZE WORTH ₹ 3000",
             desc: "",
             rounds: ""
           },
@@ -1923,7 +1954,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: ₹ 3000/-",
+            heading: "PRIZE WORTH: ₹ 3000/-",
             desc: "",
             rounds: ""
           },
@@ -1980,7 +2011,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: ₹ 2000/-",
+            heading: "PRIZE WORTH: ₹ 2000/-",
             desc: "",
             rounds: ""
           },
@@ -2036,7 +2067,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: ₹ 2000/-",
+            heading: "PRIZE WORTH: ₹ 2000/-",
             desc: "",
             rounds: ""
           },
@@ -2069,28 +2100,78 @@ const eventData = {
         },
         detailsPage: [
           {
-            heading: "TBA",
-            desc: "",
+            heading: "DESCRIPTION",
+            desc: "Aspire Business Quiz exercise an activity of Quizzing, which would be themed on the Business, Entrepreneurial, Corporate and Current World Affairs. Various methods of quizzing, like rapid fire technique, paragraph answering; unfolding an answer from a set of hints and more, shall be tested.",
             rounds: []
           },
+          
           {
-            heading: "",
+            heading: "Rounds",
+            desc: "",
+            rounds: [
+              {
+                heading: "ASPIRE LIVE QUIZ",
+                list: [
+                  "This round would be conducted online prior to the event date whose date shall be declared tentatively.",
+                  "The quiz would be open for all the students ON/OFF campus and would be an exact replica of the main day quiz, in a shorter online format.",
+                  "The winner of the quiz would be given a wild card entry to the semi final of the main day quiz."
+                ]
+              },
+              {
+                heading: "ROUND ONE (KNOCK OUT)",
+                list: [
+                  "This would be a pen paper round where all the participants would be given around 20 questions to be answered within a limited period of time.",
+                  "The top qualifiers would be selected further."
+                ]
+              },
+              {
+                heading: "ROUND TWO (ELIMINATOR)",
+                list: [
+                  "Each team would be asked questions which they have to answer within the stipulated given time and would be given points accordingly.",
+                  "Around four teams would be selected for the final round"
+                ]
+              },
+              {
+                heading: "ROUND THREE(Tie Breaker)",
+                list: [
+                  "The winners of the Aspire Live Quiz and the selected semifinalists will play in this round.",
+                  "This would be a buzzer round in which all the finalist teams would be given common questions and the team to answer the question first would be given points.",
+                  "The team to answer the most numbers of questions instantly would be given the points.",
+                  "The team with highest points in this round would be declared as the winner."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "GENERAL RULES & JUDGING CRITERIA",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "A good knowledge about the business world and Current Affairs.",
+                  "Only team entries of 2 persons are eligible.",
+                  "Both members of the team must belong from the same institute.",
+                  "The decision of the quiz-master will be final and will not be subjected to any change.",
+                  "There will be 3 rounds evaluating the teams’ knowledge via visual, audio and time based challenges.",
+                  "A penultimate elimination round would take place out of which the top 6 teams would be selected for the final quiz.",
+                  "The participants will not be allowed to use mobile or other electronic instruments.",
+                  "Audience shall not give any hints or clues to the competitors.",
+                  "Replacement of any participant of a team is not allowed after registration.",
+                  "Group of two people only",
+                  "One winner of Aspire Live Quiz"
+                ]
+              }
+            ]
+          },
+          {
+            heading: "PRIZE WORTH: ₹ 8,000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "CONTACT DETAILS",
+            desc: "Srawani Kowtha: 8239132408 , Navneet : 8149409397",
             rounds: ""
           }
         ],
@@ -2142,7 +2223,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: ₹ 10,000",
+            heading: "PRIZE WORTH: ₹ 10,000",
             desc: "",
             rounds: ""
           },
@@ -2219,7 +2300,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: ₹ 25,000/-",
+            heading: "PRIZE WORTH: ₹ 25,000/-",
             desc: "",
             rounds: ""
           },
@@ -2291,7 +2372,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: ₹ 25,000/-",
+            heading: "PRIZE WORTH: ₹ 25,000/-",
             desc: "",
             rounds: ""
           },
@@ -2743,7 +2824,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE MONEY: ₹ 5,000/-",
+            heading: "PRIZE WORTH: ₹ 5,000/-",
             desc: "",
             rounds: ""
           },
@@ -2804,7 +2885,7 @@ const eventData = {
             ]
           },
           {
-            heading: "Prizes Worth :- ₹ 4000\-",
+            heading: "Prizes Worth  ₹ 4000\-",
             desc: "",
             rounds: ""
           },
