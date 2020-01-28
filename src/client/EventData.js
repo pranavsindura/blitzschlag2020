@@ -2441,71 +2441,7 @@ const eventData = {
           minTeamSize: 2,
           maxTeamSize: 3
         },
-        detailsPage: [
-          {
-            heading: "DESCRIPTION",
-            desc: "All members of a team are locked inside a room. The idea is to solve puzzles hidden in the room to finally find the key to escape within the given time (10 mins).",
-            rounds: []
-          },
-          {
-            heading: "Rules",
-            desc: "",
-            rounds: [
-              {
-                heading: "",
-                list: [
-                  "Maximum number of members in one team is three and minimum is two.",
-                  "The time limit is 10 minutes.",
-                  "Bags, keys, cell phones, papers and pens are not allowed in the escape room. All necessary clues and puzzles are present inside the room.",
-                  "No puzzles require anything to be thrown or damaged. Causing damage to anything inside the room is not allowed.",
-                  "Penalty for damaged property: Fine of ₹500 and following each volunteer on Instagram.",
-                  "Climbing any surface is not allowed.",
-                  "Removing anything from the room is not allowed.",
-
-
-                ]
-              }
-            ]
-          },
-          {
-            heading: "General Rules",
-            desc: "",
-            rounds: [
-              {
-                heading: "",
-                list: [
-                  "Time slot => Each team gets a maximum of 10 minutes to find the key. Total time slot for the event: 1 p.m. - 5 p.m. ",
-                  "Venue => VLTC Tutorial Room "
-                ]
-              }
-            ]
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "CONTACT DETAILS",
-            desc: "Kartikey Tiwari - 8799659128 , Somya - 7424911611 , Shreya - 7355020880",
-            rounds: ""
-          }
-        ],
-        eventID: "39"
-      },
-      {
-        heading: "ESCAPE ROOM",
-        desc: `One room. One escape. And a road full of puzzles in between.
-        Does that idea excite you? Well, then brace up to challenge  with mind-wracking puzzles and riddles which come with the thrill of walking out of the room with exciting prizes in 'Escape Room'.`,
-        details: [`Date: 06/02/2020`, `Prizes worth: 3,000/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
-        detailsLink: "",
-        canRegister: true,
-        registerConstraints: {
-          minTeamSize: 2,
-          maxTeamSize: 4
-        },
-        detailsPage: [
+        detailsPage:  [
           {
             heading: "DESCRIPTION",
             desc: "Bollywood bonanza with a twist. It is divided into two rounds",
@@ -2553,6 +2489,70 @@ const eventData = {
           {
             heading: "",
             desc: "",
+            rounds: ""
+          }
+        ],
+        eventID: "39"
+      },
+      {
+        heading: "ESCAPE ROOM",
+        desc: `One room. One escape. And a road full of puzzles in between.
+        Does that idea excite you? Well, then brace up to challenge  with mind-wracking puzzles and riddles which come with the thrill of walking out of the room with exciting prizes in 'Escape Room'.`,
+        details: [`Date: 06/02/2020`, `Prizes worth: 3,000/-`],
+        accent: ["#e2853e", "#13194a", "#fda63c"],
+        detailsLink: "",
+        canRegister: true,
+        registerConstraints: {
+          minTeamSize: 2,
+          maxTeamSize: 4
+        },
+        detailsPage: [
+          {
+            heading: "DESCRIPTION",
+            desc: "All members of a team are locked inside a room. The idea is to solve puzzles hidden in the room to finally find the key to escape within the given time (10 mins).",
+            rounds: []
+          },
+          {
+            heading: "Rules",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Maximum number of members in one team is three and minimum is two.",
+                  "The time limit is 10 minutes.",
+                  "Bags, keys, cell phones, papers and pens are not allowed in the escape room. All necessary clues and puzzles are present inside the room.",
+                  "No puzzles require anything to be thrown or damaged. Causing damage to anything inside the room is not allowed.",
+                  "Penalty for damaged property: Fine of ₹500 and following each volunteer on Instagram.",
+                  "Climbing any surface is not allowed.",
+                  "Removing anything from the room is not allowed.",
+
+
+                ]
+              }
+            ]
+          },
+          {
+            heading: "General Rules",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Time slot => Each team gets a maximum of 10 minutes to find the key. Total time slot for the event: 1 p.m. - 5 p.m. ",
+                  "Venue => VLTC Tutorial Room "
+                ]
+              }
+            ]
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "CONTACT DETAILS",
+            desc: "Kartikey Tiwari - 8799659128 , Somya - 7424911611 , Shreya - 7355020880",
             rounds: ""
           }
         ],
