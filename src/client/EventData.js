@@ -384,8 +384,8 @@ const eventData = {
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/Cnh3pdF/break-free.jpg",
       "https://i.ibb.co/yBqDsPW/Whats-App-Image-2020-01-18-at-17-19-27-min.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
+      "https://i.ibb.co/hD99vKJ/Whats-App-Image-2020-01-28-at-12-40-48.jpg",
+      "https://i.ibb.co/cXYwnL3/voice.jpg"
     ],
     content: [
       {
