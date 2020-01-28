@@ -33,11 +33,21 @@ let paySchema = new mongoose.Schema({
     amount: Number
 });
 
+let moderatorSchema = new mongoose.Schema({
+    blitzID: String,
+    blitzPIN: String,
+    eventID: Array,
+    eventName: Array
+});
+
+let moderatorModel = new mongoose.model('Moderator', moderatorSchema);
+
 let payCategoryModel = new mongoose.model('Payment Categories', paySchema);
 
 let userModel = new mongoose.model('Participants', userSchema);
 
 module.exports = {
     userModel,
-    payCategoryModel
+    payCategoryModel,
+    moderatorModel
 };

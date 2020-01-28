@@ -19,6 +19,7 @@ let mobAndPinValid = require('./mobileAndPinValid');
 let modelEvent = require('./modelEventSociety');
 let mailer = require('./mailer');
 let paymodel = require('./paymodel');
+let moderator = require('./moderator');
 
 const app = express();
 app.use(bodyparser.urlencoded({ extended: true }));
@@ -359,7 +360,7 @@ app.post('/addhospitality', (req, res) => {
     });
 });
 
-app.post('upipayments', (req, res) => {
+app.post('/upipayments', (req, res) => {
     let userInput = req.body;
     let obj = new paymodel.upiPayModel(userInput);
     obj.save().then((result) => {
@@ -372,6 +373,40 @@ app.post('upipayments', (req, res) => {
             status: false,
             message: "Pay details not recorded"
         });
+    });
+});
+
+app.post('/moderatorLogin', (req, res) => {
+    let userInput = req.body;
+    moderator.validateMod(userInput.id, userInput.blitzPIN).then(function(result) {
+        if (result === false) {
+            res.send({
+                status: false,
+                message: "Interanl Error"
+            });
+        } else {
+            res.send({
+                status: true,
+                message: result
+            });
+        }
+    });
+});
+
+app.post('/eventdata', (req, res) => {
+    let userInput = req.body;
+    moderator.findUsersOfEvent(userInput.eventID).then(function(result) {
+        if (result === false) {
+            res.send({
+                status: false,
+                message: "Internal error"
+            });
+        } else {
+            res.send({
+                status: true,
+                message: result
+            });
+        }
     });
 });
 
