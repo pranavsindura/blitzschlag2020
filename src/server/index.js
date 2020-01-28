@@ -385,8 +385,7 @@ app.get('/mod', (req, res) => {
 
 })
 app.get('/testpay',(req,res)=>{
-    res.redirect('https://eazypay.icicibank.com/EazyPG?merchantid=246360&mandatory fields=FWM8wUN84gsenTC1KjXNajPf4AuXJqPUHRNTFjASAok=&optional fields=tEgWjBvK50HDcLcER+BaCLmouoTk7/W9GCkMXuJZMlK1NY+AoTWP5dtOyXEYezCfV0gq3FOtXjAar7DG3N8rlQ==&returnurl=3rfLIoDD/ILYOcxPN7qVqEDJ0yjNSsTPVER8gwSW95udVTgF6ev1UgpSuSpll/8f&Reference No=jLT6MuyB0NS5KmUuODCADQ==&submerchantid=x+Kz5Uyb10+tEHyYDWw4YQ==&transaction amount=G3jpVMsNHGkY31MZFUxHog==&paymode=eKNNUvG/YIIZrMntBtHdEw==');
-    
+    res.redirect('https://eazypay.icicibank.com/EazyPG?merchantid=246360&mandatory fields=trUZ9S2JD/kRjRCP7O6m76bXhCcsnIUE05E1cW4P1pk=&optional fields=Sjkmg+Nk9RXa3e17COcu2Al3lKbYXjCbfa/47C9YC3tAwSHWdUmGy4I8L6ZPFnVby7ZlCwAzhVOm1KxqrBk0KQ==&returnurl=GBaIdMjhgQf5JfzbZUakVN1g8rOsscfCs/4QH3b87v85u128kRLvc/GwCTQNNIer&Reference No=GU8nd2Ze5BQgcBtplgHJhg==&submerchantid=UUkPFSpHJ9piwEmF8gkfuw==&transaction amount=nOdx3raU8wN/zsIF/ghTmA==&paymode=mpvpQVdStei5KiJKPyZKJA==  ')    
 })
 app.get('*', (req, res) => {
     // console.log(__dirname);
