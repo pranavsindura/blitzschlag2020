@@ -12,11 +12,12 @@
     z-index: 1;
     /* animation: hue 5s linear infinite; */
 }
-.jumbotron > h1{
+
+.jumbotron>h1 {
     font-size: 3em;
     color: white;
-	font-variant-caps: small-caps;
-	font-family: 'Raleway', sans-serif;
+    font-variant-caps: small-caps;
+    font-family: 'Raleway', sans-serif;
 }
 
 @keyframes hue {
@@ -51,7 +52,7 @@
     left: 30px;
     float: right;
 }
- 
+
 .pro {
     background-color: black;
     padding-left: 10vw;

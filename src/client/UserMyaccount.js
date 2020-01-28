@@ -66,7 +66,7 @@ class Myaccount extends Component {
 						</tr>
 						<tr>
 							<td>Email ID:</td>
-							<td>{this.props.user.email}</td>
+							<td style={{fontSize:'0.8em'}}>{this.props.user.email}</td>
 						</tr>
 						<tr>
 							<td>Phone Number:</td>
