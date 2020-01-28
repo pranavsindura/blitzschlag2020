@@ -384,9 +384,9 @@ app.get('/mod', (req, res) => {
     res.redirect('https://blitzmod.herokuapp.com/');
 
 })
-// app.get('/testpay',(req,res)=>{
-//     res.redirect('https://eazypay.icicibank.com/EazyPG?merchantid=246360&mandatory fields=/DznNaYPav81AQ0tYaoeCT9aHmivKIUUlOtPV8359lVvftoSdfZfjTHkzZ9yG6hLjThX6D8ZNK2d8bnJ5iDB7IHc3ZJGrO/XqeylIZ6jUY0=&optional fields=iDSbPmx4d5Fvr3auutFN1A==&returnurl=3rfLIoDD/ILYOcxPN7qVqEDJ0yjNSsTPVER8gwSW95udVTgF6ev1UgpSuSpll/8f&Reference No=ql+T95LkNChWzSE9wjvg1A==&submerchantid=A7xSEONo81i2CYiknB1LFg==&transaction amount=G3jpVMsNHGkY31MZFUxHog==&paymode=2zw/oO7SmPe68tHBfErheQ==');
-// })
+app.get('/testpay',(req,res)=>{
+    res.redirect('https://eazypay.icicibank.com/EazyPG?merchantid=246360&mandatory fields=trUZ9S2JD/kRjRCP7O6m76bXhCcsnIUE05E1cW4P1pk=&optional fields=Sjkmg+Nk9RXa3e17COcu2Al3lKbYXjCbfa/47C9YC3tAwSHWdUmGy4I8L6ZPFnVby7ZlCwAzhVOm1KxqrBk0KQ==&returnurl=GBaIdMjhgQf5JfzbZUakVN1g8rOsscfCs/4QH3b87v85u128kRLvc/GwCTQNNIer&Reference No=GU8nd2Ze5BQgcBtplgHJhg==&submerchantid=UUkPFSpHJ9piwEmF8gkfuw==&transaction amount=nOdx3raU8wN/zsIF/ghTmA==&paymode=mpvpQVdStei5KiJKPyZKJA==  ')    
+})
 app.get('*', (req, res) => {
     // console.log(__dirname);
     // res.sendFile(path.resolve('./dist/index.html')) 
