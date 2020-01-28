@@ -4,7 +4,7 @@ const eventData = {
       "https://i.ibb.co/dBfpNTd/panache-for-site.jpg",
       "https://i.ibb.co/nCVv2ns/bob-for-site.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/5F8B2d6/Whats-App-Image-2020-01-27-at-21-25-32.jpg",
       "https://i.ibb.co/cwdBG05/mr-miss-blitz.jpg"
     ],
     content: [
@@ -274,28 +274,62 @@ const eventData = {
             rounds: []
           },
           {
-            heading: "",
+            heading: "JUDGING CRITERIA:",
+            desc: "Crowd Engagement, Stage Presence and Overall Performance.",
+            rounds: [
+              {
+                heading: "ROUND 1: (ONLINE ELIMINATION ROUND)",
+                list: [
+                  `Record a 30sec-1min video and rename it as “<Your BLITZ ID> - BGT” and upload it on Google drive and
+                  provide open access to everyone with the link (MANDATORY) and share this link to
+                  “blitzgottalent01@gmail.com” with your details mentioned in the mail (Name and contact no.)`,
+                  `The last date of sharing the video is 5th Feb 2020.`,
+                  `Video should not be edited or processed in any form.`,
+                  `Participants can also attach an another (OPTIONAL) video of a short 50-60 word introduction explaining their
+                  style and previous achievements.`
+                ]
+              },
+              {
+                heading: "ROUND 2: (SHOWDOWN)",
+                list: [
+                  `Participants are allowed to perform for 2-5minutes on stage.`
+                ]
+              }
+            ]
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  `Any of the performing arts are allowed in the competition. Talents may include (but not limited to) singing,
+                  dancing, instrumental, music, skits, magic, comedy, martial arts, juggling etc.`,
+                  `Recommended length is 2 minutes; acts must be no more than 5 minutes.`,
+                  `Any backing track, if required, should be brought by the participant in their own pen drives and should be
+                  provided to the event coordinators before the start of the event.`,
+                  `Participants must bring their own instruments or any other prop as required by them during the act.`,
+                  `Registered Contestants are expected to abide the rules & regulations, follow the decorum.`,
+                  `They are advised to report to the venue atleast 30 mins before the event.`,
+                  `Decision of the jury is final and binding. Unnecessary arguments can lead to disqualification.`,
+                  `Participants have to pay registration fee after qualifying online round.`
+                ]
+              }
+            ]
+          },
+          {
+            heading: "Prizes Worth ₹10,000/-",
             desc: "",
             rounds: ""
           },
           {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "",
-            desc: "",
+            heading: "Contact Details",
+            desc: "Tarun Kumar :- 9887759717, Manvi Gupta :- 9024831055",
             rounds: ""
           }
         ],
         canRegister: true,
-        //required even if canRegister is false
         registerConstraints: {
           minTeamSize: 1,
           maxTeamSize: 10
@@ -815,7 +849,7 @@ const eventData = {
       "https://i.ibb.co/Y7vJ3xQ/Jenga-Se-Jawaab-3-page-001.jpg",
       "https://i.ibb.co/5jN7Hd7/Whats-App-Image-2020-01-20-at-16-35-47.jpg",
       "https://i.ibb.co/fSn0wSs/questival-min.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/4NzT8gd/Whats-App-Image-2020-01-27-at-18-03-06.jpg",
       "https://i.ibb.co/FWNCBmb/ek-baar-ki-baat-he-min.jpg",
       "https://i.ibb.co/WVdhw14/Whats-App-Image-2020-01-20-at-16-35-47-1.jpg"
     ],
@@ -1322,7 +1356,7 @@ const eventData = {
         an instant out of time, altering life by holding it still. Moments'20 is a perfect platform for
         exhibiting your photographs; an international platform where you'll compete across
         multiple categories and have a chance of winning exciting prizes.`,
-        details: [`Date: 06/02/2020`, `Prizes worth: 5,000/-`],
+        details: [`Date: 06/02/2020`, `Prizes worth: 32,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -1365,7 +1399,7 @@ const eventData = {
         To develop the knack for capturing a luscious landscape or a chaotic city, 
         learn about your camera, the terminology, and how it impacts your photograph.
         Seize this opportunity to bolster the skill of portraying stories without words.`,
-        details: [`Date: 07/02/2020`, `Prizes worth: TBA/-`],
+        details: [`Date: 07/02/2020`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -1407,7 +1441,7 @@ const eventData = {
         desc: `Every photo portrays a story. The beauty of the components is in the way it is stitched.
         We bring forth an opportunity for you to showcase your creativity. Create a Photoshop wonder from
         the given stock photos in Blitzschlag 2020. Challenge your Photoshop skills and stand a chance to win!`,
-        details: [`Prizes worth: TBA/-`],
+        details: [`Prizes worth: 6,000/-`],
         accent: ["#0192cd", "#2b4508", "#7b7b77"],
         detailsLink: "",
         canRegister: true,
@@ -1471,7 +1505,7 @@ const eventData = {
         weave stories out of photographs. Every photographer is a story teller; each photograph holds an emotion.
         For Blitzschlag 2020, capture your oneiric stories in a photograph, and get a chance to win exhilarating
         prizes while showcasing your talent.`,
-        details: [`Date: TBA`, `Prizes worth: TBA/-`],
+        details: [`Date: TBA`, `Prizes worth: 6,000/-`],
         accent: ["#ffc75a", "#565455", "#f03c5f"],
         detailsLink: "",
         canRegister: true,
@@ -2679,13 +2713,13 @@ const eventData = {
   },
   vss: {
     carImages: [
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/QQXXmQQ/Whats-App-Image-2020-01-26-at-23-40-09.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
     ],
     content: [
       {
         heading: "MHARE DESH QUIZ",
-        desc: `TO BE REVEALED`,
+        desc: `Mhare desh, as the name suggests is a quiz which tests participants’ knowledge about our country, India. The purpose of this quiz is to enlighten students with India’s past, present and future. It gives us all an opportunity to understand our country better.`,
         details: [`Date: 07/02/2020`, `Prizes worth: 5,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
@@ -2757,7 +2791,7 @@ const eventData = {
       },
       {
         heading: "Invited lecture cum clashing views",
-        desc: `TO BE REVEALED`,
+        desc: `As the name suggests, first a lecture would be delivered by a renowned environmentalist, N.C Jain Sir. He is an IFS, currently working in the Rajasthan Forestry and Wildlife Training Institute (RFWTI). After his lecture, a debate competition would be conducted on the topics related to environment, climate change and wildlife protection.`,
         details: [`Date: TBA`, `Prizes worth: 4,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
