@@ -128,6 +128,19 @@ class App extends Component {
 								</Link>
 							</li>
 							<li className="lis menu-item">
+								<a
+									className="lisitem"
+									href="https://trendydice.com/pages/seller-profile/blitzschlag20"
+									target="blank"
+									// onClick={() => {
+									// 	this.handleClick('home');
+									// 	// this.handleCheck();
+									// }}
+								>
+									<i className="fas fa-glass-cheers"></i>&nbsp;&nbsp;MERCHANDISE
+								</a>
+							</li>
+							<li className="lis menu-item">
 								<Link
 									className="lisitem"
 									to="/sponsors"
