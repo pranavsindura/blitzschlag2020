@@ -341,7 +341,7 @@ const eventData = {
         detailsLink: "",
         detailsPage: [
           {
-            heading: "DISCRIPTION",
+            heading: "DESCRIPTION",
             desc: "Are you the perfect blend of beauty, attitude and wit? Here’s your chance to break out of conformity and get a shot at the limelight. Mr and Ms Blitz is an illustrious event probing the charismatic as well as the intellectual side of the participants. Beauty attracts the eyes but personality captures the heart. The charm of personality is the very essence of grace and elegance. Embrace your uniqueness in this stellar event of individuality and temperament. Let go of your diffidence and seize the moment!",
             rounds: []
           },
@@ -350,7 +350,7 @@ const eventData = {
             desc: "",
             rounds: [
               {
-                heading: "ONLINE QUESTIONNAIRE",
+                heading: "QUALIFYING ROUND : ONLINE QUESTIONNAIRE",
                 list: [
                   "Online questionnaire is reviewed and students will be shortlisted on the basis of their answers. Your wit, personality and charm puts you ahead of the crowd. So don’t forget to bring your A-game. The online questionnaire is free."
                 ]
@@ -375,6 +375,12 @@ const eventData = {
                 heading: "THE FINAL CHAPTER : PERSONAL INTERVIEW",
                 list: [
                   "You will experience a fun and tricky questionnaire with a tinge of personal opinions on certain specific, political views and general issues. Participants may be asked questions and their personal opinions on a variety of topics. All shortlisted participants will be judged on their ability to project their personality and project his/her views.",
+                  "During on-the-spot registration participants will be given a quirky and fun dare that will test their spontaneity and their ability to entertain. One boy and one girl will be selected as wildcards, who will further go directly to round two of the competition."
+                ]
+              },
+              {
+                heading: "HOW TO PARTICIPATE FOR WILD-CARD ENTRY?",
+                list: [
                   "During on-the-spot registration participants will be given a quirky and fun dare that will test their spontaneity and their ability to entertain. One boy and one girl will be selected as wildcards, who will further go directly to round two of the competition."
                 ]
               },
@@ -1441,17 +1447,6 @@ const eventData = {
                   "Photos with frames, special backgrounds or other decorative effects will not be accepted. To keep the authenticity of the record, composite, splicing and trick photos will not be judged.",
                   "The entrant must submit the original photograph in case of digital editing.",
                   "Any watermark or photographer’s name on photo will not be accepted.",
-                  "Categories for submission are as followings:",
-                  "General : Journalism, Still Life, Street",
-                  "Architectural: Architecture, Buildings, Heritage",
-                  "Nature : Wildlife, Birds, Floral, Insect, Landscapes- Land, Sea, Sky",
-                  "Abstract",
-                  "Chaos",
-                  "Culture",
-                  "Issues",
-                  "Patterns",
-                  "Portrait",
-                  "Travel",
                   "With the guarantee of use of the name of entrants, the organizers reserve the right to repeatedly use entries in related non-commercial activities for free, including publications, exhibitions, Internet displays, electronic media, etc. The Organizers also reserve the right to do any necessary editing of the entries.",
                   "Photos must be received by midnight, Jan. 25, 2020 (IST -India Standard Time UTC/GMT +5:30 hours) via the mail as mentioned above.",
                   "There will be two rounds of jury for finalizing the contest winners.",
@@ -1461,6 +1456,27 @@ const eventData = {
                   "The winners of each category and overall winner will be decided on the basis of voting done during the exhibition days and the marks given by the jury.",
                   "The voting will have weightage of 30 % of the total votes casted in each category and 70% weightage will be given to the marks given by jury.",
                   "For the overall winner in each category"
+                ]
+              }
+            ]
+          },
+          {
+            heading: "Categories for submission are as followings:",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "General : Journalism, Still Life, Street",
+                  "Architectural: Architecture, Buildings, Heritage",
+                  "Nature : Wildlife, Birds, Floral, Insect, Landscapes- Land, Sea, Sky",
+                  "Abstract",
+                  "Chaos",
+                  "Culture",
+                  "Issues",
+                  "Patterns",
+                  "Portrait",
+                  "Travel"
                 ]
               }
             ]
@@ -1507,11 +1523,6 @@ const eventData = {
                 ]
               }
             ]
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
           },
           {
             heading: "",
