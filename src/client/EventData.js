@@ -1710,7 +1710,7 @@ const eventData = {
       "https://i.ibb.co/X89hBwG/explora-min.jpg",
       "https://i.ibb.co/wrT63ms/visuality-min.jpg",
       "https://i.ibb.co/nP6Z9x9/farapart-min.jpg",
-      "https://i.ibb.co/6nKVXKP/custom-kicks-min.jpg",
+      "https://i.ibb.co/zXvD0km/com.jpg",
       "https://i.ibb.co/b56zhrJ/lego-trance-min.jpg",
       "https://i.ibb.co/N6kfhps/rang-de-mukhda-min.jpg"
     ],
@@ -2053,11 +2053,9 @@ const eventData = {
         eventID: "23"
       },
       {
-        heading: "CUSTOM KICKS",
-        desc: `Pick your brush and be a part of the custom shoe culture.
-        All you have to do is to paint the shoes according to the given theme.
-        Participants are required to bring their own acrylic colors or any other medium of paint that they want to use on canvas shoes. Designs will be judged based on creativity, originality and overall execution.
-        `,
+        heading: "DOT COM",
+        desc: `A dot has no point but dots mean a lots. Imagination and dots can together create a wide varieties of designs and patterns. 
+        Test your patience and creativity in this fun filled event.`,
         details: [`Date: 06/02/2020`, `Prizes worth: 3,000/-`],
         accent: ["#7e0249", "#601b11", "#293566"],
         detailsLink:
@@ -2065,18 +2063,28 @@ const eventData = {
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 2
         },
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Master the art of Sneaker Doodling of you favourite TV show, favourite movie, cartoon and many more. Step by step guidance will be provided along with all the materials. Pick your brush and be a part of the custom shoe culture. All you have to do is to paint the shoes on the given theme.",
+            desc: "A dot has no point but dots mean a lots. Imagination and dots can together create a wide varieties of designs and patterns. Test your patience and creativity in this fun filled event.",
             rounds: []
           },
           {
             heading: "JUDGING CRITERIA",
-            desc: "Designs will be judged based on creativity, originality and overall execution.",
-            rounds: ""
+            desc: "Judging will be based on:",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Creativity",
+                  "Aesthetics",
+                  "Compositions",
+                  "Attention to detail"
+                ]
+              }
+            ]
           },
           {
             heading: "GENERAL RULES",
@@ -2085,9 +2093,10 @@ const eventData = {
               {
                 heading: "",
                 list: [
-                  "Team size: 2 person.",
-                  "Partcipant are expected to color the provided white Canvas shoes with the given Colors.",
-                  "Theme will be given on spot.",
+                  "Team size:2 members.",
+                  "The participants will be provided with MDF(30×30cm) and acrylic paints along with two paint brushes",
+                  "Each team will showcase creative and innovative painting skills on MDF provided.",
+                  "Time Limit : 2 hours",
                   "VENUE:VLTC",
                   "DATE:6th feb",
                   "TIME: 11:30 to 1:30"
@@ -2102,7 +2111,7 @@ const eventData = {
           },
           {
             heading: "CONTACT DETAILS",
-            desc: "ABHISHEK: 8435088310 AASHI : 9717480061",
+            desc: "RISHIKA : 8708668684 , AISWARYA : 9891301098",
             rounds: ""
           }
         ],
@@ -2984,7 +2993,7 @@ const eventData = {
         details: [`Date: TBA`, `Prizes worth: 4,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
-        canRegister: false,
+        canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
           maxTeamSize: 1
