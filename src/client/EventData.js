@@ -814,7 +814,7 @@ const eventData = {
       {
         heading: "VOICE CHOICE",
         desc: `“Singing is a way of escaping to another world”. This Blitzchlag 2020, get ready to belt out some melodies in 'Voice Choice'. So grab this opportunity to exude your love for music in this competition of singing sensations and win attractive rewards along with some priceless experiences.`,
-        details: [`Date: 06/02/2020`, `Prizes worth: 15,000/-`],
+        details: [`Date: 06/02/2020`, `Prizes worth: 18,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/1BpnQ07WP3MMzl2qxGGBUEm3eXFuqLWWD/view?usp=drivesdk",
@@ -3136,13 +3136,13 @@ const eventData = {
         बिना शब्दों के अर्थ खोलती तस्वीर।।
         और वैसे भी कहा गया है कि एक तस्वीर हज़ार शब्दों से बढ़कर है।
         तो Blitzschlag देता है आपको मौका तस्वीरों से बात करने का, उस तस्वीर से उन हज़ार शब्दों को`,
-        details: [`Date: 06/02/20`, `Prizes worth: TBA/-`],
+        details: [`Date: 06/02/20`, `Prizes worth: ₹ 3,000/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 2
         },
         detailsPage: [
           {
@@ -3193,13 +3193,13 @@ const eventData = {
         कहानियां तो बहुत सुनी होंगी बचपन में, पढ़ी भी होंगी, और स्कूल में पूरी भी कि होंगी तो चलो अब कहानियाँ बनाते हैं।
         हम तुम्हें तस्वीर देंगे
         तुम हमें कहानियाँ देना!`,
-        details: [`Date: 08/02/20`, `Prizes worth: TBA/-`],
+        details: [`Date: 08/02/20`, `Prizes worth: ₹ 2,000/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 2
         },
         detailsPage: [
           {
@@ -3248,13 +3248,13 @@ const eventData = {
         Does this interest you? Have you got what it takes to give your everything in the pursuit of truth? 
         Well, Acta Diurna is here for you to shine under the light of investigative journalism. The path is a swamp full of lies and it's your job to make your way to the ultimate truth. 
         Are you ready for the challenge? Well, then register now!`,
-        details: [`Date: 07/02/20`, `Prizes worth: TBA/-`],
+        details: [`Date: 07/02/20`, `Prizes worth: ₹ 5,000/-`],
         accent: ["#ff003c", "#4b403b", "#ff8f00"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 3
         },
         detailsPage: [
           {
