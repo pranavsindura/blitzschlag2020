@@ -88,7 +88,7 @@ class Payment extends Component {
 							top: '0%',
 							zIndex: '1'
 						}}
-						src="https://i.ibb.co/42WZWbr/blitzlogo.png"
+						src="https://i.ibb.co/bsSdRJ3/fin.jpg"
 					/>
 				</a>
 				<ReactFullpage
