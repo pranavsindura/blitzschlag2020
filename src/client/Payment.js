@@ -82,7 +82,7 @@ class Payment extends Component {
 					<img
 						style={{
 							height: 'auto',
-							width: '70px',
+							width: '75px',
 							position: 'fixed',
 							left: '0%',
 							top: '0%',
