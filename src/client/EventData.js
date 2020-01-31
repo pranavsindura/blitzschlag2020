@@ -3,7 +3,7 @@ const eventData = {
     carImages: [
       "https://i.ibb.co/dBfpNTd/panache-for-site.jpg",
       "https://i.ibb.co/nCVv2ns/bob-for-site.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/FzvJ2m3/Whats-App-Image-2020-01-30-at-11-11-08-PM-1.jpg",
       "https://i.ibb.co/5F8B2d6/Whats-App-Image-2020-01-27-at-21-25-32.jpg",
       "https://i.ibb.co/cwdBG05/mr-miss-blitz.jpg"
     ],
@@ -2234,8 +2234,9 @@ const eventData = {
   },
   edcell: {
     carImages: [
+      
+      "https://i.ibb.co/qMsYxPB/Whats-App-Image-2020-01-20-at-01-23-39.jpg",
       "https://i.ibb.co/bJsyRCj/startupnivesh.jpg",
-      "https://i.ibb.co/c3kmBB9/Whats-App-Image-2020-01-20-at-01-23-10.jpg"
     ],
     content: [
       {
@@ -2390,7 +2391,7 @@ const eventData = {
   },
   dramatics: {
     carImages: [
-      "https://i.ibb.co/1ZR2CxK/Whats-App-Image-2020-01-20-at-11-58-23.jpg",
+      "https://i.ibb.co/DWC9SD6/Whats-App-Image-2020-01-30-at-10-44-28-PM-1.jpg",
       "https://i.ibb.co/2v6J2b1/rangbhomi-min-1.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
     ],
