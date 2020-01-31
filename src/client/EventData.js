@@ -917,7 +917,7 @@ const eventData = {
         The game will test your Jenga skills and your knowledge of the Harry Potter universe. Pull out a certain piece,
         answer a question, and earn bonus points! Are you the Chosen One? Here's your chance to catch the golden Snitch.
         We solemnly swear that it will be fun. Play it right and win exciting prizes. Mischief managed!`,
-        details: [`Date: 06/02/2020`, `Prizes worth: 3,500/-`],
+        details: [`Date: 06/02/2020`, `Prizes worth: ₹ 7,100/-`],
         accent: ["#622c01", "#feb36f", "#b66931"],
         detailsLink:
           "https://drive.google.com/file/d/1uWJAIpKimLHW0Y3OVkoWDxBwVETj5zts/view?usp=sharing",
@@ -949,7 +949,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE WORTH  ₹ 3,500/-",
+            heading: "PRIZE WORTH  ₹ 7,100/-",
             desc: "",
             rounds: ""
           },
@@ -973,7 +973,7 @@ const eventData = {
         to a crossword puzzle 'BRING IT ON'? Does playing with anagrams never fail to amuse you? If so, we have
         just the thing for you. Literary Society presents a bucket full of Sudokus, anagrams, crosswords, rebuses
         and a lot more. `,
-        details: [`Date: 07/02/2020`, `Prizes worth: 4,000/-`],
+        details: [`Date: 07/02/2020`, `Prizes worth: ₹ 6,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/1bYT41yX4aFO0OcyU1InXx5EAiyBxBiVw/view?usp=sharing",
@@ -1006,7 +1006,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE WORTH   ₹ 4000/-",
+            heading: "PRIZE WORTH  ₹ 6,000/-",
             desc: "",
             rounds: ""
           },
@@ -1029,7 +1029,7 @@ const eventData = {
         Be prepared to steal the spotlight, showcase your intelligence, and leave a mark! A perfect opportunity
         to fight it out with MNIT's finest, and make some memories along the way. Full of several mini "quests",
         this festival will test your wits and grits, so bring your A GAME!`,
-        details: [`Date: 06/02/2020`, `Prizes worth: 6,000/-`],
+        details: [`Date: 06/02/2020`, `Prizes worth: ₹ 8,000/-`],
         accent: ["#bc538d", "#000000", "#9fddea"],
         detailsLink:
           "https://drive.google.com/file/d/1KBhIIRlFMI7Jhn4S3zJTkumoizp-KzNs/view?usp=sharing",
@@ -1107,7 +1107,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE WORTH   ₹ 6000/-",
+            heading: "PRIZE WORTH  ₹ 8,000/-",
             desc: "",
             rounds: ""
           },
@@ -1127,7 +1127,7 @@ const eventData = {
 		या फिर झोली भर हँसी ठिठोली|
 		जीवन के प्रत्येक रंगों को शब्दों की सीमा में बांध कर ही एक आम मनुष्य कवि या शायर बन जाता है। यह सब महज शब्दों की सुंदरता ही तो है जो अपने हाव-भाव से इस कदर हमारे दिल को छू लेती है कि हम इन्हीं शब्दों को जीना शुरू कर देते हैं।
 		आईये जिंदगी के कुछ अनमोल पन्नो को पलटें और अपनी कविताओं को डायरी के पन्नों से आजाद कर आम जन तक पहुचायें। लिटरेरी सोसाइटी प्रस्तुत करती है *'काव्यपाठ'* एक नया मंच आपकी कविताओं के लिए।`,
-        details: [`Date: 07/02/2020`, `Prizes worth: 4,000/-`],
+        details: [`Date: 07/02/2020`, `Prizes worth: ₹ 6,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/14tpxxgoSa_x_N0oHPSLYLKYla6DlpDIX/view?usp=sharing",
@@ -1165,7 +1165,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE WORTH : ₹ 4,000/-",
+            heading: "PRIZE WORTH  ₹ 6,000/-",
             desc: "",
             rounds: ""
           },
@@ -1186,7 +1186,7 @@ const eventData = {
         heading: "EK BAAR KI BAAT HAI",
         desc: `Da Vinci did it with his brush, Shelly with his pen and Einstein with his imagination- anything that has gone down in the history has a tinge of ingenuity in it. Let the symphony of your thoughts flow through your quill onto a blank canvas. 
 		Will your creation make people burst into peals of laughter or scare them out of their wits with its eerie ambiance? Be eccentric, innovative and appeal the crowd with your words. `,
-        details: [`Date: 06/02/2020`, `Prizes worth: 4,000/-`],
+        details: [`Date: 06/02/2020`, `Prizes worth: ₹ 6,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/1I8TsBc1NBvkLwLd6w_Loame0Dhs9HqBA/view?usp=sharing",
@@ -1223,7 +1223,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE WORTH : ₹ 4,000",
+            heading: "PRIZE WORTH ₹ 6,000",
             desc: "",
             rounds: ""
           },
@@ -1244,7 +1244,7 @@ const eventData = {
         heading: "JUST A MINUTE(JAM)",
         desc: `Speech is power, speech is to persuade, to convert, to compel. And if the power of speech lies within you, then we have just the right thing in the hat. Just-A-Minute (JAM) is the ultimate test of wit and thinking on your feet.
 		Can you make it through sixty seconds of uninterrupted vocalisation of your thoughts, without repetition, or deviation? Or will you give in to the pressure and have your competitors pounce on you in an instant?`,
-        details: [`Date: 07/02/2020`, `Prizes worth: 4,500/-`],
+        details: [`Date: 07/02/2020`, `Prizes worth: ₹ 6,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/1HSq9VxrHcS17ncW95Q0OM25ff9gKgSLy/view?usp=sharing",
@@ -1302,7 +1302,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE WORTH : ₹ 4500/-",
+            heading: "PRIZE WORTH : ₹ 6,000/-",
             desc: "",
             rounds: ""
           },
