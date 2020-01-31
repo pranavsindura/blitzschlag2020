@@ -82,13 +82,13 @@ class Payment extends Component {
 					<img
 						style={{
 							height: 'auto',
-							width: '75px',
+							width: '70px',
 							position: 'fixed',
 							left: '0%',
 							top: '0%',
 							zIndex: '1'
 						}}
-						src="https://i.ibb.co/bsSdRJ3/fin.jpg"
+						src="https://i.ibb.co/42WZWbr/blitzlogo.png"
 					/>
 				</a>
 				<ReactFullpage
@@ -109,7 +109,7 @@ class Payment extends Component {
 										<Col md={6}>
 											<div className="pay-mode-img-container">
 												<img
-													src={'https://i.ibb.co/FwCh5v1/paymentmode.jpg'}
+													src={'https://i.ibb.co/bsSdRJ3/fin.jpg'}
 													className="pay-mode-img"
 													onLoad={() => {
 														fullpage_api.reBuild();
