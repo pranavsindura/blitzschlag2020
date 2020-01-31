@@ -2924,7 +2924,7 @@ const eventData = {
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 1
+          maxTeamSize: 2
         },
         detailsPage: [
           {
@@ -2988,15 +2988,15 @@ const eventData = {
         eventID: "16"
       },
       {
-        heading: "Invited lecture cum clashing views",
+        heading: "Clashing Views",
         desc: `As the name suggests, first a lecture would be delivered by a renowned environmentalist, N.C Jain Sir. He is an IFS, currently working in the Rajasthan Forestry and Wildlife Training Institute (RFWTI). After his lecture, a debate competition would be conducted on the topics related to environment, climate change and wildlife protection.`,
-        details: [`Date: TBA`, `Prizes worth: 4,000/-`],
+        details: [`Date: 06/02/2020`, `Prizes worth: 4,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
-          minTeamSize: 1,
-          maxTeamSize: 1
+          minTeamSize: 2,
+          maxTeamSize: 2
         },
         detailsPage: [
           {
