@@ -15,7 +15,7 @@
 .sche-card {
     width: 80% !important;
     left: 10% !important;
-    background-color: transparent !important;
+    /* background-color: transparent !important; */
     color: white;
 }
 
