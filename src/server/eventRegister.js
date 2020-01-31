@@ -57,12 +57,13 @@ async function validate(obj) {
     let ids = obj.blitzID;
     let pins = obj.blitzPIN;
     let dup = new Set(ids);
-    if(ids.length != dup.size)
+    if (ids.length != dup.size)
         return undefined;
+    ids.sort();
     let f = retrieveUsers(ids).then(function(users) {
-        console.log('users',users);
-        console.log('ids',ids);
-        if(users.length != ids.length)
+        console.log('users', users);
+        console.log('ids', ids);
+        if (users.length != ids.length)
             return undefined;
         let flag = true;
         let i = 0;
