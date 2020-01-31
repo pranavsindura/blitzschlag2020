@@ -3,7 +3,7 @@ const eventData = {
     carImages: [
       "https://i.ibb.co/dBfpNTd/panache-for-site.jpg",
       "https://i.ibb.co/nCVv2ns/bob-for-site.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/FzvJ2m3/Whats-App-Image-2020-01-30-at-11-11-08-PM-1.jpg",
       "https://i.ibb.co/5F8B2d6/Whats-App-Image-2020-01-27-at-21-25-32.jpg",
       "https://i.ibb.co/cwdBG05/mr-miss-blitz.jpg"
     ],
@@ -438,7 +438,7 @@ const eventData = {
   mds: {
     carImages: [
       "https://i.ibb.co/18YMCYc/Whats-App-Image-2020-01-10-at-16-08-02.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/FzvJ2m3/Whats-App-Image-2020-01-30-at-11-11-08-PM-1.jpg",
       "https://i.ibb.co/Cnh3pdF/break-free.jpg",
       "https://i.ibb.co/yBqDsPW/Whats-App-Image-2020-01-18-at-17-19-27-min.jpg",
       "https://i.ibb.co/hD99vKJ/Whats-App-Image-2020-01-28-at-12-40-48.jpg",
@@ -2234,14 +2234,15 @@ const eventData = {
   },
   edcell: {
     carImages: [
+      
       "https://i.ibb.co/qMsYxPB/Whats-App-Image-2020-01-20-at-01-23-39.jpg",
-      "https://i.ibb.co/c3kmBB9/Whats-App-Image-2020-01-20-at-01-23-10.jpg"
+      "https://i.ibb.co/bJsyRCj/startupnivesh.jpg",
     ],
     content: [
       {
         heading: "ASPIRE BUSINESS QUIZ",
         desc: `Aspire Business quiz brings a different take on quizzing and polishes the corporate knowledge of the participants. Do you think you can survive the onslaught of rapid fire? Are you keen enough to unfold an answer from a set of hints? Aspire Business Quiz tests all of that and more. Get into the drive of competition, showcase your corporate and current awareness and get the rare pieces to your puzzle of knowledge solved.`,
-        details: [`Date: 07/02/2020`, `Prizes worth: 8,000/-`],
+        details: [`Date: 08/02/2020`, `Prizes worth: 8,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
@@ -2331,7 +2332,7 @@ const eventData = {
       {
         heading: "STARTUP NIVESH",
         desc: `Step into the hubbub of stock market, with the closest to reality simulation of Start-up Nivesh. Improve your analysis on the market situations and test your hunches with virtual trades. Mimicking the 'Dalal Street' of Bombay Stock Exchange, Start-up Nivesh brings the excitement and nail-biting experience of a chaotic-yet-professional investment hub and packs the bundle in a room for the participants to enjoy.`,
-        details: [`Date: 08/02/2020`, `Prizes worth: 10,000/-`],
+        details: [`Date: 07/02/2020`, `Prizes worth: 10,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink:
           "https://drive.google.com/file/d/1Gw-JUqj8W5U1XJ8MwDTd78en6PAdGd79/view?usp=sharing",
@@ -2390,7 +2391,7 @@ const eventData = {
   },
   dramatics: {
     carImages: [
-      "https://i.ibb.co/1ZR2CxK/Whats-App-Image-2020-01-20-at-11-58-23.jpg",
+      "https://i.ibb.co/DWC9SD6/Whats-App-Image-2020-01-30-at-10-44-28-PM-1.jpg",
       "https://i.ibb.co/2v6J2b1/rangbhomi-min-1.jpg",
       "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
     ],
@@ -2924,7 +2925,7 @@ const eventData = {
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 1
+          maxTeamSize: 2
         },
         detailsPage: [
           {
@@ -2981,22 +2982,22 @@ const eventData = {
           },
           {
             heading: "CONTACT DETAILS",
-            desc: "Bhaskar Jha: 7007921577 Hemant Bajaj: 761501789 ",
+            desc: "Bhaskar Jha: 7007921577 Hemant Bajaj: 7615017897",
             rounds: ""
           }
         ],
         eventID: "16"
       },
       {
-        heading: "Invited lecture cum clashing views",
+        heading: "Clashing Views",
         desc: `As the name suggests, first a lecture would be delivered by a renowned environmentalist, N.C Jain Sir. He is an IFS, currently working in the Rajasthan Forestry and Wildlife Training Institute (RFWTI). After his lecture, a debate competition would be conducted on the topics related to environment, climate change and wildlife protection.`,
-        details: [`Date: TBA`, `Prizes worth: 4,000/-`],
+        details: [`Date: 06/02/2020`, `Prizes worth: 4,000/-`],
         accent: ["#e2853e", "#13194a", "#fda63c"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
-          minTeamSize: 1,
-          maxTeamSize: 1
+          minTeamSize: 2,
+          maxTeamSize: 2
         },
         detailsPage: [
           {
@@ -3063,7 +3064,7 @@ const eventData = {
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 1
+          maxTeamSize: 2
         },
         detailsPage: [
           {
@@ -3135,7 +3136,7 @@ const eventData = {
   mavericks: {
     carImages: [
       "https://i.ibb.co/2NX54Kh/bolti-tasveer-min.jpg",
-      "https://i.ibb.co/Jc84jwz/Whats-App-Image-2020-01-20-at-01-35-07.jpg",
+      "https://i.ibb.co/9cwKkRv/adure-jazbaaat-min.jpg",
       "https://i.ibb.co/nCr8MPQ/Whats-App-Image-2020-01-28-at-12-54-54.jpg"
     ],
     content: [

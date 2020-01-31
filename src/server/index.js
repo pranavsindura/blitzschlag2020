@@ -19,6 +19,7 @@ let mobAndPinValid = require('./mobileAndPinValid');
 let modelEvent = require('./modelEventSociety');
 let mailer = require('./mailer');
 let paymodel = require('./paymodel');
+let moderator = require('./moderator');
 
 const app = express();
 app.use(bodyparser.urlencoded({ extended: true }));
@@ -375,6 +376,40 @@ app.post('/upipayments', (req, res) => {
     });
 });
 
+app.post('/moderatorLogin', (req, res) => {
+    let userInput = req.body;
+    moderator.validateMod(userInput.id, userInput.blitzPIN).then(function(result) {
+        if (result === false) {
+            res.send({
+                status: false,
+                message: "Interanl Error"
+            });
+        } else {
+            res.send({
+                status: true,
+                message: result
+            });
+        }
+    });
+});
+
+app.post('/eventdata', (req, res) => {
+    let userInput = req.body;
+    moderator.findUsersOfEvent(userInput.eventID).then(function(result) {
+        if (result === false) {
+            res.send({
+                status: false,
+                message: "Internal error"
+            });
+        } else {
+            res.send({
+                status: true,
+                message: result
+            });
+        }
+    });
+});
+
 
 app.use(express.static('dist'));
 app.get('/mod', (req, res) => {
@@ -384,9 +419,10 @@ app.get('/mod', (req, res) => {
     res.redirect('https://blitzmod.herokuapp.com/');
 
 })
-app.get('/testpay',(req,res)=>{
-    res.redirect('https://eazypay.icicibank.com/EazyPG?merchantid=246360&mandatory fields=wWjvX/gh5KWpZdjyy+Z17D9aHmivKIUUlOtPV8359lVvftoSdfZfjTHkzZ9yG6hLjThX6D8ZNK2d8bnJ5iDB7IHc3ZJGrO/XqeylIZ6jUY0=&optional fields=&returnurl=3rfLIoDD/ILYOcxPN7qVqEDJ0yjNSsTPVER8gwSW95udVTgF6ev1UgpSuSpll/8f&Reference No=NIlbONBoaPukzFWW0fB32A==&submerchantid=A7xSEONo81i2CYiknB1LFg==&transaction amount=G3jpVMsNHGkY31MZFUxHog==&paymode=2zw/oO7SmPe68tHBfErheQ==');
-})
+// app.get('/testpay',(req,res)=>{
+    
+//     res.redirect('https://eazypay.icicibank.com/EazyPG?merchantid=246360&mandatory fields=wWjvX/gh5KWpZdjyy+Z17D9aHmivKIUUlOtPV8359lVvftoSdfZfjTHkzZ9yG6hLjThX6D8ZNK2d8bnJ5iDB7IHc3ZJGrO/XqeylIZ6jUY0=&optional fields=&returnurl=3rfLIoDD/ILYOcxPN7qVqEDJ0yjNSsTPVER8gwSW95udVTgF6ev1UgpSuSpll/8f&Reference No=NIlbONBoaPukzFWW0fB32A==&submerchantid=A7xSEONo81i2CYiknB1LFg==&transaction amount=G3jpVMsNHGkY31MZFUxHog==&paymode=2zw/oO7SmPe68tHBfErheQ==');
+// })
 app.get('*', (req, res) => {
     // console.log(__dirname);
     // res.sendFile(path.resolve('./dist/index.html')) 
