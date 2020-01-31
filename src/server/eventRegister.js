@@ -59,24 +59,31 @@ async function validate(obj) {
     let dup = new Set(ids);
     if (ids.length != dup.size)
         return undefined;
-    ids.sort();
-    let f = retrieveUsers(ids).then(function(users) {
-        console.log('users', users);
-        console.log('ids', ids);
-        if (users.length != ids.length)
+    // ids.sort();
+    // let f = retrieveUsers(ids).then(function(users) {
+    //     console.log('users', users);
+    //     console.log('ids', ids);
+    //     if (users.length != ids.length)
+    //         return undefined;
+    //     let flag = true;
+    //     let i = 0;
+    //     for (user of users) {
+    //         if (user.blitzPIN !== pins[i]) {
+    //             flag = undefined;
+    //             break;
+    //         }
+    //         i++;
+    //     }
+    //     return flag;
+    // });
+    // return f;
+    for (let i = 0; i < ids.length; i++) {
+        let user = await retrieveUsers(ids[i]);
+        if (user[0].blitzPIN !== pins[i]) {
             return undefined;
-        let flag = true;
-        let i = 0;
-        for (user of users) {
-            if (user.blitzPIN !== pins[i]) {
-                flag = undefined;
-                break;
-            }
-            i++;
         }
-        return flag;
-    });
-    return f;
+    }
+    return true;
 }
 
 async function retrieveCategoryDetails(eid) {
