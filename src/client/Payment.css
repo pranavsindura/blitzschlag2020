@@ -1,33 +1,35 @@
-.pay-card{
+.pay-card {
     width: 90% !important;
-	left: 5% !important;
+    left: 5% !important;
     /* background-color: white !important; */
     color: white;
 }
-.pay-mode-img{
-    height: 600px;
+
+.pay-mode-img {
+    height: 300px;
     width: auto;
     /* left: 50%;
     position: relative;
     transform: translate(-50%); */
 }
-.pay-mode-img-container{
+
+.pay-mode-img-container {
     display: block;
     text-align: center;
 }
 
 @media screen and (max-width: 900px) {
-	.card {
-		width: 95% !important;
+    .card {
+        width: 95% !important;
         left: 2.5% !important;
         color: white;
     }
-    .pay-mode-img-container{
+    .pay-mode-img-container {
         display: block;
         text-align: center;
         padding: 5%;
     }
-    .pay-mode-img{
+    .pay-mode-img {
         height: 400px;
         width: auto;
         /* left: 50%;
