@@ -60,7 +60,8 @@ async function validate(obj) {
     if(ids.length != dup.size)
         return undefined;
     let f = retrieveUsers(ids).then(function(users) {
-        // console.log('users',users);
+        console.log('users',users);
+        console.log('ids',ids);
         if(users.length != ids.length)
             return undefined;
         let flag = true;
