@@ -2391,9 +2391,10 @@ const eventData = {
   },
   dramatics: {
     carImages: [
-      "https://i.ibb.co/DWC9SD6/Whats-App-Image-2020-01-30-at-10-44-28-PM-1.jpg",
+      "https://i.ibb.co/1ZR2CxK/Whats-App-Image-2020-01-20-at-11-58-23.jpg",
+      
       "https://i.ibb.co/2v6J2b1/rangbhomi-min-1.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
+      "https://i.ibb.co/DWC9SD6/Whats-App-Image-2020-01-30-at-10-44-28-PM-1.jpg"
     ],
     content: [
       {
