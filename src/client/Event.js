@@ -209,11 +209,12 @@ class Event extends Component {
 		};
 		for (
 			let i = 0;
-			i < this.data.content[(currSlide - 1 + this.data.carImages.length) % this.data.carImages.length];
+			i < this.data.content[(currSlide - 1 + this.data.carImages.length) % this.data.carImages.length].registerConstraints.minTeamSize;
 			i++
 		) {
 			registerDetails.teamMembers.push({ blitzID: '', blitzPIN: '' });
-		}
+    }
+    // console.log(registerDetails);
 		// this.setState({ registerDetails });
 		this.setState(
 			{
