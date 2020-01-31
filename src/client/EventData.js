@@ -2981,7 +2981,7 @@ const eventData = {
           },
           {
             heading: "CONTACT DETAILS",
-            desc: "Bhaskar Jha: 7007921577 Hemant Bajaj: 761501789 ",
+            desc: "Bhaskar Jha: 7007921577 Hemant Bajaj: 7615017897",
             rounds: ""
           }
         ],
