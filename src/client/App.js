@@ -124,7 +124,7 @@ class App extends Component {
 										this.handleCheck();
 									}}
 								>
-									<i className="fas fa-hotel"></i>&nbsp;&nbsp;SCHEDULE
+									<i class="far fa-clipboard"></i>&nbsp;&nbsp;SCHEDULE
 								</Link>
 							</li>
 							<li className="lis menu-item">
@@ -148,7 +148,7 @@ class App extends Component {
 									// 	// this.handleCheck();
 									// }}
 								>
-									<i className="fas fa-glass-cheers"></i>&nbsp;&nbsp;MERCHANDISE
+									<i class="fas fa-tshirt"></i>&nbsp;&nbsp;MERCHANDISE
 								</a>
 							</li>
 							<li className="lis menu-item">
