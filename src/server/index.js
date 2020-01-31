@@ -371,7 +371,7 @@ app.post('/upipayments', (req, res) => {
     }).catch(err => {
         res.send({
             status: false,
-            message: "Pay details not recorded"
+            message: "Some Error Occured!"
         });
     });
 });
@@ -419,6 +419,10 @@ app.get('/mod', (req, res) => {
     res.redirect('https://blitzmod.herokuapp.com/');
 
 })
+// app.get('/testpay',(req,res)=>{
+    
+//     res.redirect('https://eazypay.icicibank.com/EazyPG?merchantid=246360&mandatory fields=wWjvX/gh5KWpZdjyy+Z17D9aHmivKIUUlOtPV8359lVvftoSdfZfjTHkzZ9yG6hLjThX6D8ZNK2d8bnJ5iDB7IHc3ZJGrO/XqeylIZ6jUY0=&optional fields=&returnurl=3rfLIoDD/ILYOcxPN7qVqEDJ0yjNSsTPVER8gwSW95udVTgF6ev1UgpSuSpll/8f&Reference No=NIlbONBoaPukzFWW0fB32A==&submerchantid=A7xSEONo81i2CYiknB1LFg==&transaction amount=G3jpVMsNHGkY31MZFUxHog==&paymode=2zw/oO7SmPe68tHBfErheQ==');
+// })
 app.get('*', (req, res) => {
     // console.log(__dirname);
     // res.sendFile(path.resolve('./dist/index.html')) 

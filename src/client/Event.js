@@ -172,20 +172,66 @@ class Event extends Component {
 	nextSlide = () => {
 		const { currSlide } = this.state;
 		let registerDetails = {
-			teamSize: this.data.content[currSlide].registerConstraints.minTeamSize,
+			teamSize: this.data.content[(currSlide + 1) % this.data.carImages.length].registerConstraints.minTeamSize,
 			teamID: 0,
 			eventName: '',
 			teamName: '',
 			teamMembers: []
 		};
-		for (let i = 0; i < this.data.content[currSlide].registerConstraints.minTeamSize; i++) {
+		for (
+			let i = 0;
+			i < this.data.content[(currSlide + 1) % this.data.carImages.length].registerConstraints.minTeamSize;
+			i++
+		) {
 			registerDetails.teamMembers.push({ blitzID: '', blitzPIN: '' });
 		}
 		// this.setState({ registerDetails });
-		this.setState({ currSlide: (currSlide + 1) % this.data.carImages.length, registerDetails, submitMessage: '' });
+		this.setState(
+			{
+				currSlide: (currSlide + 1) % this.data.carImages.length,
+				registerDetails,
+				submitMessage: ''
+			},
+			() => {
+				fullpage_api.reBuild();
+			}
+		);
+	};
+	prevSlide = () => {
+		const { currSlide } = this.state;
+		let registerDetails = {
+			teamSize: this.data.content[(currSlide - 1 + this.data.carImages.length) % this.data.carImages.length]
+				.registerConstraints.minTeamSize,
+			teamID: 0,
+			eventName: '',
+			teamName: '',
+			teamMembers: []
+		};
+		for (
+			let i = 0;
+			i < this.data.content[(currSlide - 1 + this.data.carImages.length) % this.data.carImages.length].registerConstraints.minTeamSize;
+			i++
+		) {
+			registerDetails.teamMembers.push({ blitzID: '', blitzPIN: '' });
+    }
+    // console.log(registerDetails);
+		// this.setState({ registerDetails });
+		this.setState(
+			{
+				currSlide: (currSlide - 1 + this.data.carImages.length) % this.data.carImages.length,
+				registerDetails,
+				submitMessage: ''
+			},
+			() => {
+				fullpage_api.reBuild();
+			}
+		);
+	};
+	showDetails = () => {
+		fullpage_api.moveTo('details');
 	};
 	showRegister = (fullpageApi) => {
-		fullpageApi.moveSectionDown();
+		fullpageApi.moveTo('register');
 		// alert('Registrations are Currently Closed!');
 	};
 	createTeamMemberSelect = () => {
@@ -258,6 +304,73 @@ class Event extends Component {
 		}
 		return input;
 	};
+	makeList = (list) => {
+		let arr = [];
+		for (let i = 0; i < list.length; i++) {
+			arr.push(
+				<li
+					//   key={list[i].length + Math.random()}
+					style={{ color: 'white', paddingRight: '10px' }}
+				>
+					{list[i]}
+				</li>
+			);
+		}
+		return arr;
+	};
+	getRounds = (rounds) => {
+		let arr = [];
+		for (let i = 0; i < rounds.length; i++) {
+			let info = (
+				<div
+				// key={rounds[i].length + Math.random()}
+				>
+					<h5
+						style={{
+							color: 'white',
+							textAlign: 'left',
+							paddingLeft: '10px',
+							textDecoration: 'underline',
+							paddingRight: '10px'
+						}}
+					>
+						{rounds[i].heading}
+					</h5>
+					<ul>{this.makeList(rounds[i].list)}</ul>
+				</div>
+			);
+			arr.push(info);
+		}
+		return arr;
+	};
+	getDetails = (details) => {
+		let res = [];
+		for (let i = 0; i < details.length; i++) {
+			// let x = ;
+			let item = details[i];
+			//   console.log("onload", item);
+			res.push(
+				<div
+					//   key={
+					// 	  item.length
+					// 	   + Math.trunc(Math.random() * 1000)}
+					style={{ width: '100%', color: 'white', paddingLeft: '10%', paddingRight: '10%' }}
+				>
+					<h3 style={{ color: 'white', textAlign: 'left' }}>{item.heading}</h3>
+					<p style={{ color: 'white', textAlign: 'left' }}>{item.desc}</p>
+					<div
+						onLoad={() => {
+							fullpage_api.reBuild();
+						}}
+					>
+						{this.getRounds(item.rounds)}{' '}
+					</div>
+				</div>
+			);
+		}
+		// console.log(res);
+		return res;
+	};
 	render() {
 		const { currSlide, registerDetails, submitMessage } = this.state;
 		return (
@@ -279,10 +392,12 @@ class Event extends Component {
 				</a>
 				<ReactFullpage
 					scrollOverflow={true}
-					onLeave={({ origin, destination, direction }) => {
+					anchors={['main', 'details', 'register']}
+					onLeave={(origin, dest, direction) => {
 						// fullpage_api.reBuild();
-						if (!this.data.content[currSlide].canRegister) return false;
+						// if (!this.data.content[currSlide].canRegister) return false;
 						// return false;
+						if (dest.index == '2' && !this.data.content[currSlide].canRegister) return false;
 					}}
 					scrollOverflowOptions={{
 						click: false,
@@ -300,7 +415,13 @@ class Event extends Component {
 								>
 									{/* <div className="formwrapper"> */}
 									{window.innerWidth <= 770 ? (
-										<div style={{ width: '100%', height: '100%', display: 'block' }}>
+										<div
+											style={{
+												width: '100%',
+												height: '100%',
+												display: 'block'
+											}}
+										>
 											<div className="carmob-holder-2">
 												<img
 													className="imgmob-2"
@@ -349,17 +470,20 @@ class Event extends Component {
 												</div>
 											</div>
 											<div className="button-holdermob">
-												<a href={this.data.content[currSlide].detailsLink} target="_blank">
-													<div
-														className="button-moreinfomob"
-														style={{
-															backgroundColor: this.data.content[currSlide].accent[2],
-															transition: 'all .5s ease-in-out'
-														}}
-													>
-														<p>Details</p>
-													</div>
-												</a>
+												{/* <a href={this.data.content[currSlide].detailsLink} target="_blank"> */}
+												<div
+													className="button-moreinfomob"
+													style={{
+														backgroundColor: this.data.content[currSlide].accent[2],
+														transition: 'all .5s ease-in-out'
+													}}
+													onClick={() => {
+														this.showDetails();
+													}}
+												>
+													<p>Details</p>
+												</div>
+												{/* </a> */}
 												{this.data.content[currSlide].canRegister ? (
 													<div
 														className="button-registermob"
@@ -384,6 +508,18 @@ class Event extends Component {
 												}}
 											>
 												<p className="slidenummob">0{currSlide + 1}</p>
+											</div>
+											<div
+												className="control-prevmob"
+												style={{
+													backgroundColor: this.data.content[currSlide].accent[2],
+													transition: 'all .5s ease-in-out'
+												}}
+												onClick={() => {
+													this.prevSlide();
+												}}
+											>
+												<p className="prev-iconmob">&#8249;</p>
 											</div>
 											<div
 												className="control-nextmob"
@@ -421,21 +557,23 @@ class Event extends Component {
 														})}
 													</div>
 													<div className="button-holder">
-														<a
+														{/* <a
 															href={this.data.content[currSlide].detailsLink}
 															target="_blank"
+														> */}
+														<div
+															className="button-moreinfo"
+															style={{
+																backgroundColor: this.data.content[currSlide].accent[2],
+																transition: 'all .5s ease-in-out'
+															}}
+															onClick={() => {
+																this.showDetails();
+															}}
 														>
-															<div
-																className="button-moreinfo"
-																style={{
-																	backgroundColor: this.data.content[currSlide]
-																		.accent[2],
-																	transition: 'all .5s ease-in-out'
-																}}
-															>
-																<p>Details</p>
-															</div>
-														</a>
+															<p>Details</p>
+														</div>
+														{/* </a> */}
 														{this.data.content[currSlide].canRegister ? (
 															<div
 																className="button-register"
@@ -465,6 +603,56 @@ class Event extends Component {
 													transition: 'all .5s ease-in-out'
 												}}
 											></div>
+											<div
+												onClick={() => {
+													this.prevSlide();
+												}}
+												className="small-img-holder"
+												style={{
+													width: '5%',
+													height: '15%',
+													backgroundImage: `url("${
+														this.data.carImages[
+															(currSlide - 1 + this.data.carImages.length) %
+																this.data.carImages.length
+														]
+													}")`,
+													backgroundSize: 'cover',
+													position: 'absolute',
+													left: '56%',
+													bottom: '20%',
+													zIndex: '2',
+													transition: 'all .5s'
+												}}
+											>
+												<div
+													className="control-next"
+													style={{
+														transition: 'all .5s',
+														width: '20%',
+														height: '100%',
+														position: 'absolute',
+														left: '-20%',
+														backgroundColor: this.data.content[currSlide].accent[0],
+														color: 'white',
+														fontFamily: 'Quicksand',
+														fontSize: '40pt',
+														transition: 'all .5s ease-in-out'
+													}}
+												>
+													<p
+														style={{
+															position: 'absolute',
+															top: '50%',
+															left: '50%',
+															transform: 'translateX(-50%) translateY(-50%)',
+															cursor: 'pointer'
+														}}
+													>
+														&#8249;
+													</p>
+												</div>
+											</div>
 											<div
 												onClick={() => {
 													this.nextSlide();
@@ -563,6 +751,16 @@ class Event extends Component {
 										</Row>
 									)}
 								</div>
+								<div
+									className="section eventsection"
+									style={{
+										background: this.data.content[currSlide].accent[1],
+										transition: 'all .5s ease-in-out'
+									}}
+								>
+									<h1 className="heading">Details</h1>
+									{this.getDetails(this.data.content[currSlide].detailsPage)}
+								</div>
 								{/* </div> */}
 								<div
 									className="section"
@@ -630,9 +828,6 @@ class Event extends Component {
 														</Col>
 													</Row>
 													<Row>{submitMessage}</Row>
-													{/* {() => {
-													fullpageApi.reBuild();
-												}} */}
 												</Form>
 											</Card.Body>
 										</Card>

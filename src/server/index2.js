@@ -8,8 +8,8 @@ const device = require('express-device');
 const mongoose = require('mongoose');
 const objectID = require('objectid');
 
+const uri = 'mongodb+srv://Dhairya-Shalu:light12345@first-demo-ocw10.mongodb.net/test?retryWrites=true&w=majority';
 // const uri = String(process.env.MONGODB_URI);
-const uri = String(process.env.MONGODB_URI);
 let { userModel } = require('./model.js');
 let { idModel } = require('./idModel');
 let loginValid = require('./loginvalid');
@@ -18,6 +18,7 @@ let signupvalid = require('./Signupvalidation');
 let mobAndPinValid = require('./mobileAndPinValid');
 let modelEvent = require('./modelEventSociety');
 let mailer = require('./mailer');
+let paymodel = require('./paymodel');
 
 const app = express();
 app.use(bodyparser.urlencoded({ extended: true }));
@@ -39,7 +40,7 @@ mongoose.connect(uri, {
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', async function() {
-    // console.log('Connected to the database');
+    console.log('Connected to the database');
 });
 
 app.post('/login', (req, res) => {
@@ -66,22 +67,6 @@ app.post('/login', (req, res) => {
                 message: 'User not Registered!',
             })
         }
-    });
-});
-
-app.post('upipayments', (req, res) => {
-    let userInput = req.body;
-    let obj = new paymodel.upiPayModel(userInput);
-    obj.save().then((result) => {
-        res.send({
-            status: true,
-            message: ""
-        });
-    }).catch(err => {
-        res.send({
-            status: false,
-            message: "Pay details not recorded"
-        });
     });
 });
 
@@ -338,6 +323,58 @@ app.post('/user', (req, res) => {
     });
 });
 
+app.post('/addhospitality', (req, res) => {
+    userInput = req.body;
+    eventRegister.retrieveUsers(userInput.blitzID).then(function(user) {
+        let s = new Set();
+        for (p of userInput.packages) {
+            s.add(p);
+        }
+        if (user[0].hospitality !== undefined) {
+            for (h of user[0].hospitality) {
+                s.add(h);
+            }
+        }
+        let arr = Array.from(s);
+        userModel.findOneAndUpdate({ blitzID: userInput.blitzID }, { hospitality: arr }, (err) => {
+            if (err) {
+                res.send({
+                    status: false,
+                    message: "Internal error"
+                });
+            }
+        }).then(function(output) {
+            if (output) {
+                res.send({
+                    status: true,
+                    message: "Updated hoospitality"
+                });
+            } else {
+                res.send({
+                    status: false,
+                    message: "Internal Error"
+                });
+            }
+        });
+    });
+});
+
+app.post('/upipayments', (req, res) => {
+    let userInput = req.body; 
+    let obj = new paymodel.upiPayModel(userInput);
+    obj.save().then((result) => {
+        res.send({
+            status: true,
+            message: ""
+        });
+    }).catch(err => {
+        res.send({
+            status: false,
+            message: "Some Error Occured!"
+        });
+    });
+});
+
 
 app.use(express.static('dist'));
 app.get('/mod', (req, res) => {
@@ -347,6 +384,9 @@ app.get('/mod', (req, res) => {
     res.redirect('https://blitzmod.herokuapp.com/');
 
 })
+// app.get('/testpay',(req,res)=>{
+//     res.redirect('https://eazypay.icicibank.com/EazyPG?merchantid=246360&mandatory fields=/DznNaYPav81AQ0tYaoeCT9aHmivKIUUlOtPV8359lVvftoSdfZfjTHkzZ9yG6hLjThX6D8ZNK2d8bnJ5iDB7IHc3ZJGrO/XqeylIZ6jUY0=&optional fields=iDSbPmx4d5Fvr3auutFN1A==&returnurl=3rfLIoDD/ILYOcxPN7qVqEDJ0yjNSsTPVER8gwSW95udVTgF6ev1UgpSuSpll/8f&Reference No=ql+T95LkNChWzSE9wjvg1A==&submerchantid=A7xSEONo81i2CYiknB1LFg==&transaction amount=G3jpVMsNHGkY31MZFUxHog==&paymode=2zw/oO7SmPe68tHBfErheQ==');
+// })
 app.get('*', (req, res) => {
     // console.log(__dirname);
     // res.sendFile(path.resolve('./dist/index.html')) 

@@ -113,6 +113,7 @@ p {
     font-variant-caps: small-caps;
     text-align: justify;
     font-family: 'Raleway', sans-serif;
+    filter: drop-shadow(10px 10px 10px #000000a0);
 }
 
 .contactus-holder {
@@ -147,7 +148,11 @@ p {
 
 .contactus-text {
     width: 100%;
-    height: 15%;
+    height: 14%;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
 }
 
 .contactus-text>h3 {
@@ -183,7 +188,7 @@ p {
     text-align: center;
     color: white;
     display: inline-block;
-    width: 10%;
+    width: 12%;
     top: 0%;
 }
 
@@ -875,12 +880,14 @@ p {
     }
     .theme-icon {
         text-align: center;
-        width: 25%;
+        width: 30%;
         background-color: white;
-        height: 60%;
+        height: 20%;
         display: inline-block;
         line-height: 50px;
         font-size: 10px;
+        margin-right: 3px;
+        margin-left: 3px;
     }
     .contactus-text-holder {
         position: absolute;
@@ -983,7 +990,7 @@ p {
         text-align: center;
         color: white;
         display: inline-block;
-        width: 15%;
+        width: 18%;
         top: 0%;
     }
     .handle-link,
@@ -1154,6 +1161,7 @@ p {
         left: 0%;
         top: 0%;
         overflow: hidden;
+        ;
     }
     .l7 {
         position: absolute;
@@ -1163,5 +1171,9 @@ p {
         bottom: -30%;
         animation: rot360 15s linear infinite;
         overflow: hidden;
+    }
+    .theme-icon-holder {
+        width: 100%;
+        margin-top: 0%;
     }
 }

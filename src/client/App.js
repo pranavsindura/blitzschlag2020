@@ -8,7 +8,8 @@ import Team from './Team.js';
 import Flagship from './Flagship';
 import Sponsors from './Sponsors.js';
 import Hospitality from './Hospitality.js';
-import GetTickets from './GetTickets.js';
+import Schedule from './Schedule.js';
+import Payment from './Payment';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
@@ -41,7 +42,12 @@ class App extends Component {
 		const { moveto, checked } = this.state;
 		return (
 			<Router history={history}>
-				<div className="hamburger-extended" onClick={()=>{this.handleCheck()}}></div>
+				<div
+					className="hamburger-extended"
+					onClick={() => {
+						this.handleCheck();
+					}}
+				></div>
 				<div className="myBox">
 					<Menu
 						right
@@ -110,16 +116,15 @@ class App extends Component {
 									</Link>
 								</li>
 							)}
-
 							<li className="lis menu-item">
 								<Link
 									className="lisitem"
-									to="/gettickets"
+									to="/schedule"
 									onClick={() => {
 										this.handleCheck();
 									}}
 								>
-									<i className="fas fa-ticket-alt"></i>&nbsp;&nbsp;GET TICKETS
+									<i class="far fa-clipboard"></i>&nbsp;&nbsp;SCHEDULE
 								</Link>
 							</li>
 							<li className="lis menu-item">
@@ -132,6 +137,19 @@ class App extends Component {
 								>
 									<i className="fas fa-hotel"></i>&nbsp;&nbsp;HOSPITALITY
 								</Link>
+							</li>
+							<li className="lis menu-item">
+								<a
+									className="lisitem"
+									href="https://trendydice.com/pages/seller-profile/blitzschlag20"
+									target="blank"
+									// onClick={() => {
+									// 	this.handleClick('home');
+									// 	// this.handleCheck();
+									// }}
+								>
+									<i class="fas fa-tshirt"></i>&nbsp;&nbsp;MERCHANDISE
+								</a>
 							</li>
 							<li className="lis menu-item">
 								<Link
@@ -178,7 +196,6 @@ class App extends Component {
 										onClick={() => {
 											this.handleLogout();
 										}}
-										
 									>
 										<i className="fas fa-long-arrow-alt-left"></i>&nbsp;&nbsp;LOGOUT
 									</Link>
@@ -188,12 +205,15 @@ class App extends Component {
 					</Menu>
 					<Switch>
 						<Route
+							path="/payment"
+							component={Payment}
+						>
+						</Route>
+						<Route
 							path="/events/:eventType"
 							render={(props) => (
 								<FadeIn>
-									
 									<Event {...props} />
-									
 								</FadeIn>
 							)}
 						></Route>
@@ -232,9 +252,9 @@ class App extends Component {
 								<Hospitality />
 							</FadeIn>
 						</Route>
-						<Route path="/gettickets">
+						<Route path="/Schedule">
 							<FadeIn>
-								<GetTickets />
+								<Schedule />
 							</FadeIn>
 						</Route>
 						<Route path="/">
