@@ -192,7 +192,7 @@ class Event extends Component {
   nextSlide = () => {
     const { currSlide } = this.state;
     let registerDetails = {
-      teamSize: this.data.content[currSlide].registerConstraints.minTeamSize,
+      teamSize: this.data.content[(currSlide + 1) % this.data.carImages.length].registerConstraints.minTeamSize,
       teamID: 0,
       eventName: "",
       teamName: "",
@@ -200,7 +200,7 @@ class Event extends Component {
     };
     for (
       let i = 0;
-      i < this.data.content[currSlide].registerConstraints.minTeamSize;
+      i < this.data.content[(currSlide + 1) % this.data.carImages.length].registerConstraints.minTeamSize;
       i++
     ) {
       registerDetails.teamMembers.push({ blitzID: "", blitzPIN: "" });
@@ -220,7 +220,7 @@ class Event extends Component {
   prevSlide = () => {
     const { currSlide } = this.state;
     let registerDetails = {
-      teamSize: this.data.content[currSlide].registerConstraints.minTeamSize,
+      teamSize: this.data.content[(currSlide - 1 + this.data.carImages.length)%this.data.carImages.length].registerConstraints.minTeamSize,
       teamID: 0,
       eventName: "",
       teamName: "",
@@ -228,7 +228,7 @@ class Event extends Component {
     };
     for (
       let i = 0;
-      i < this.data.content[currSlide].registerConstraints.minTeamSize;
+      i < (currSlide - 1 + this.data.carImages.length)%this.data.carImages.length;
       i++
     ) {
       registerDetails.teamMembers.push({ blitzID: "", blitzPIN: "" });
