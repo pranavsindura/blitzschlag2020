@@ -8,7 +8,7 @@ import Team from './Team.js';
 import Flagship from './Flagship';
 import Sponsors from './Sponsors.js';
 import Hospitality from './Hospitality.js';
-import GetTickets from './GetTickets.js';
+import Schedule from './Schedule.js';
 import Payment from './Payment';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
@@ -116,6 +116,17 @@ class App extends Component {
 									</Link>
 								</li>
 							)}
+							<li className="lis menu-item">
+								<Link
+									className="lisitem"
+									to="/schedule"
+									onClick={() => {
+										this.handleCheck();
+									}}
+								>
+									<i className="fas fa-hotel"></i>&nbsp;&nbsp;SCHEDULE
+								</Link>
+							</li>
 							<li className="lis menu-item">
 								<Link
 									className="lisitem"
@@ -241,9 +252,9 @@ class App extends Component {
 								<Hospitality />
 							</FadeIn>
 						</Route>
-						<Route path="/gettickets">
+						<Route path="/Schedule">
 							<FadeIn>
-								<GetTickets />
+								<Schedule />
 							</FadeIn>
 						</Route>
 						<Route path="/">

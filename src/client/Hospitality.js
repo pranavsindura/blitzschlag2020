@@ -5,7 +5,8 @@ import Splash from './Splash';
 import { Redirect } from 'react-router-dom';
 import {connect} from 'react-redux';
 import axios from 'axios';
-import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';class Hospitality extends Component {
+import { Form, Col, Card, Table, Button, Row } from 'react-bootstrap';
+class Hospitality extends Component {
 	state = {
 		options: [],
 		total: 0,
