@@ -27,7 +27,7 @@ async function validatePIN(pin) {
 
 async function nameValidation(name) {
     for (i = 0; i < name.length; i++) {
-        if (!((name[i] >= 'a' && name[i] < 'z') || (name[i] >= 'A' && name[i] <= 'Z') || (name[i] == ' '))) {
+        if (!((name[i] >= 'a' && name[i] <= 'z') || (name[i] >= 'A' && name[i] <= 'Z') || (name[i] == ' '))) {
             return false;
         }
     }
