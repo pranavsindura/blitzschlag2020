@@ -180,7 +180,7 @@ const eventData = {
         desc: `Get ready to witness the stage set ablaze as teams come head-to-head, toss around their toes and swing their arms in the leap of glory. That's the magic of Rambha Sambha!
         Rambha Sambha is a beautiful blend of foot-tapping beats, a pumping rush of adrenaline and  the high of getting  your team to wave the trophy of champions at Blitzschlag 2020.`,
         details: [`Date: 07/02/2020`, `Prizes worth: ₹ 1,20,000/-`],
-        accent: ["#251e3e", "#9e1e25", "#d22940"],
+        accent: ["#532428", "#083a05", "#6d5525"],
         detailsLink:
           "https://drive.google.com/file/d/1Bin8SBJXbt7ahqJpCoUuVL-3PSamDJFb/view?usp=drivesdk",
         canRegister: true,
@@ -261,7 +261,7 @@ const eventData = {
         Showcase your talents, show us how far you've come, and see if Blitzschlag 2020 is the stage that will
         grant you victory. Let yourself shine your brightest yet, let's see if 'Blitz Got Talent'!`,
         details: [`Date: 07/02/2020 & 08/02/2020`, `Prizes worth: 10,000`],
-        accent: ["#73211c", "#2f2e2e", "#520c05"],
+        accent: ["#652377", "#160539", "#034a72"],
         detailsLink: "",
         detailsPage: [
           
@@ -758,7 +758,7 @@ const eventData = {
         desc: `Martha Graham once said, "Dance is the hidden language of the soul.” 
         This February, Blitzschlag 2020 provides you an opportunity to reveal your hidden language with 'Hit the street', a hip-hop dance competition to showcase your talent and prowess.So, get ready to put your dancing shoes on in this intense battle of dancing stars.`,
         details: [`Date: 08/02/2020`, `Prizes worth: 14,000/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#194c35", "#233331", "#82996b"],
         detailsLink:
           "https://drive.google.com/file/d/1BsezMIC0MUslhtoF8kuSY1IDYXEDL4kH/view?usp=drivesdk",
         canRegister: true,
@@ -815,7 +815,7 @@ const eventData = {
         heading: "VOICE CHOICE",
         desc: `“Singing is a way of escaping to another world”. This Blitzchlag 2020, get ready to belt out some melodies in 'Voice Choice'. So grab this opportunity to exude your love for music in this competition of singing sensations and win attractive rewards along with some priceless experiences.`,
         details: [`Date: 06/02/2020`, `Prizes worth: 18,000/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#ec6f6a", "#3f352a", "#3c6868"],
         detailsLink:
           "https://drive.google.com/file/d/1BpnQ07WP3MMzl2qxGGBUEm3eXFuqLWWD/view?usp=drivesdk",
         canRegister: true,
@@ -1414,7 +1414,7 @@ const eventData = {
         exhibiting your photographs; an international platform where you'll compete across
         multiple categories and have a chance of winning exciting prizes.`,
         details: [`Date: 06/02/2020`, `Prizes worth: 35,000/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#b07147", "#4d8875", "#cabf37"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -1539,7 +1539,7 @@ const eventData = {
         learn about your camera, the terminology, and how it impacts your photograph.
         Seize this opportunity to bolster the skill of portraying stories without words.`,
         details: [`Date: 07/02/2020`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#c17c25", "#4e3800", "#f9b169"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -1936,7 +1936,7 @@ const eventData = {
         Live painting is a form of visual performance art, in which artists complete a visual art piece in a public performance Participants would be given 2x2 canvas to paint any part of MNIT they like and submit it in the given time. Prize would be given to the most realistic one. 
         `,
         details: [`Date: 08/02/2020`, `Prizes worth: 4,500/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#8991ba", "#b23260", "4fb6c1"],
         detailsLink:
           "https://drive.google.com/file/d/1hTd_shomF3jMYszFoO3zyTwiTVTiobtt/view?usp=sharing",
         canRegister: true,
@@ -2057,7 +2057,7 @@ const eventData = {
         desc: `A dot has no point but dots mean a lots. Imagination and dots can together create a wide varieties of designs and patterns. 
         Test your patience and creativity in this fun filled event.`,
         details: [`Date: 06/02/2020`, `Prizes worth: 3,000/-`],
-        accent: ["#7e0249", "#601b11", "#293566"],
+        accent: ["#066189", "#045448", "#f2b338"],
         detailsLink:
           "https://drive.google.com/open?id=1v7rWgE-qiFBy-_vVaK5P2PjgeYvTfJ0n",
         canRegister: true,
@@ -2243,7 +2243,7 @@ const eventData = {
         heading: "ASPIRE BUSINESS QUIZ",
         desc: `Aspire Business quiz brings a different take on quizzing and polishes the corporate knowledge of the participants. Do you think you can survive the onslaught of rapid fire? Are you keen enough to unfold an answer from a set of hints? Aspire Business Quiz tests all of that and more. Get into the drive of competition, showcase your corporate and current awareness and get the rare pieces to your puzzle of knowledge solved.`,
         details: [`Date: 08/02/2020`, `Prizes worth: 8,000/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#68afe1", "#094d71", "#d6dd25"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -2333,7 +2333,7 @@ const eventData = {
         heading: "STARTUP NIVESH",
         desc: `Step into the hubbub of stock market, with the closest to reality simulation of Start-up Nivesh. Improve your analysis on the market situations and test your hunches with virtual trades. Mimicking the 'Dalal Street' of Bombay Stock Exchange, Start-up Nivesh brings the excitement and nail-biting experience of a chaotic-yet-professional investment hub and packs the bundle in a room for the participants to enjoy.`,
         details: [`Date: 07/02/2020`, `Prizes worth: 10,000/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#e2853e", "#13194a", "#aa2138"],
         detailsLink:
           "https://drive.google.com/file/d/1Gw-JUqj8W5U1XJ8MwDTd78en6PAdGd79/view?usp=sharing",
         canRegister: true,
@@ -2402,7 +2402,7 @@ const eventData = {
         desc: `With the sleeves rolled up, energy high in the blood, voice being raised, bringing the audience at your spot and binding them with jaw dropping performances, Tamasha is  filled with intensity, humor, parodies, poetry and everything that can be created.
 		The street play, having all shades of reality while creatively spreading social awareness, bringing out new topics and quizzing peoples brains makes it one of the most powerful form of dramatics. `,
         details: [`Date: 06/02/2020`, `Prizes worth: 25,000/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#fb5865", "#232b3c", "#567282"],
         detailsLink:
           "https://drive.google.com/file/d/1654eLV600ORPVeVotFkiJcGmcAOtCWpk/view?usp=sharing",
         canRegister: true,
@@ -2541,7 +2541,7 @@ const eventData = {
         heading: "MOVIE SCREENING",
         desc: `Movies spark ideas, discussions, interests and are more than just pure entertainment. Movie screenings  have always been an important part of a movie's production and release cycle. Stop pondering over the movie jargon and join us at the movie screening. It's time to dim the lights and unleash the suspense.`,
         details: [`Date: 08/02/2020`, `Prizes worth: TBA/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#ffbc4c", "#30312d", "#deaeb0"],
         detailsLink: "",
         canRegister: false,
         registerConstraints: {
@@ -3059,7 +3059,7 @@ const eventData = {
         heading: "Kaun Banega Gyanvan",
         desc: `Ever thought of making into KBC and displaying your wisdom in front of a huge crowd? Your knowledge and expertise will be put to test in an exciting competition of erudite scholars. So, get ready to grab the hot seat, as Blitzschlag 2020, in association with NSS MNIT, brings you 'Kaun Banega Gyanvan'. Take home the crown of ultimate genius!`,
         details: [`Date: 08/02/2020`, `Prizes worth: ₹ 5,000/-`],
-        accent: ["#e2853e", "#13194a", "#fda63c"],
+        accent: ["#155885", "#0b345c", "#b28e28"],
         detailsLink:
           "https://drive.google.com/open?id=1OEd3tSh-_RzLygo4aXOaS63JKLQbp3T6",
         canRegister: true,
@@ -3205,7 +3205,7 @@ const eventData = {
         हम तुम्हें तस्वीर देंगे
         तुम हमें कहानियाँ देना!`,
         details: [`Date: 08/02/20`, `Prizes worth: ₹ 2,000/-`],
-        accent: ["#ff003c", "#4b403b", "#ff8f00"],
+        accent: ["#d0cbb5", "#060724", "#ea9a6e"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
@@ -3260,7 +3260,7 @@ const eventData = {
         Well, Acta Diurna is here for you to shine under the light of investigative journalism. The path is a swamp full of lies and it's your job to make your way to the ultimate truth. 
         Are you ready for the challenge? Well, then register now!`,
         details: [`Date: 07/02/20`, `Prizes worth: ₹ 5,000/-`],
-        accent: ["#ff003c", "#4b403b", "#ff8f00"],
+        accent: ["#f9d3b9", "#352720", "#000000"],
         detailsLink: "",
         canRegister: true,
         registerConstraints: {
