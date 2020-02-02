@@ -906,7 +906,7 @@ const eventData = {
       "https://i.ibb.co/Y7vJ3xQ/Jenga-Se-Jawaab-3-page-001.jpg",
       "https://i.ibb.co/5jN7Hd7/Whats-App-Image-2020-01-20-at-16-35-47.jpg",
       "https://i.ibb.co/fSn0wSs/questival-min.jpg",
-      "https://i.ibb.co/4NzT8gd/Whats-App-Image-2020-01-27-at-18-03-06.jpg",
+      "https://i.ibb.co/gTxy82V/Whats-App-Image-2020-02-01-at-9-05-33-AM.jpg",
       "https://i.ibb.co/FWNCBmb/ek-baar-ki-baat-he-min.jpg",
       "https://i.ibb.co/WVdhw14/Whats-App-Image-2020-01-20-at-16-35-47-1.jpg"
     ],
