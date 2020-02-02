@@ -1320,7 +1320,7 @@ const eventData = {
     carImages: [
       "https://i.ibb.co/fHrpjG9/Whats-App-Image-2020-01-08-at-14-19-55.jpg",
       "https://i.ibb.co/8Bvn1y0/moments20-min.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/kHqMHGm/Whats-App-Image-2020-02-02-at-6-47-52-PM-min.jpg",
       "https://i.ibb.co/h8cdKc8/snip-n-stich.jpg",
       "https://i.ibb.co/B27TsSK/picsaga.jpg"
     ],
