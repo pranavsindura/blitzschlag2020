@@ -3,7 +3,7 @@ const eventData = {
     carImages: [
       "https://i.ibb.co/dBfpNTd/panache-for-site.jpg",
       "https://i.ibb.co/nCVv2ns/bob-for-site.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/LY98Jjk/ramba-made-min-1580662809-171-79-190-43.jpg",
       "https://i.ibb.co/5F8B2d6/Whats-App-Image-2020-01-27-at-21-25-32.jpg",
       "https://i.ibb.co/cwdBG05/mr-miss-blitz.jpg"
     ],
@@ -438,7 +438,7 @@ const eventData = {
   mds: {
     carImages: [
       "https://i.ibb.co/18YMCYc/Whats-App-Image-2020-01-10-at-16-08-02.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/LY98Jjk/ramba-made-min-1580662809-171-79-190-43.jpg",
       "https://i.ibb.co/Cnh3pdF/break-free.jpg",
       "https://i.ibb.co/yBqDsPW/Whats-App-Image-2020-01-18-at-17-19-27-min.jpg",
       "https://i.ibb.co/hD99vKJ/Whats-App-Image-2020-01-28-at-12-40-48.jpg",
@@ -521,7 +521,7 @@ const eventData = {
         desc: `Get ready to witness the stage set ablaze as teams come head-to-head, toss around their toes and swing their arms in the leap of glory. That's the magic of Rambha Sambha!
         Rambha Sambha is a beautiful blend of foot-tapping beats, a pumping rush of adrenaline and  the high of getting  your team to wave the trophy of champions at Blitzschlag 2020.`,
         details: [`Date: 07/02/2020`, `Prizes worth: ₹ 1,20,000/-`],
-        accent: ["#251e3e", "#9e1e25", "#d22940"],
+        accent: ["#532428", "#083a05", "#6d5525"],
         detailsLink:
           "https://drive.google.com/file/d/1Bin8SBJXbt7ahqJpCoUuVL-3PSamDJFb/view?usp=drivesdk",
         canRegister: true,
