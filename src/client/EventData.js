@@ -2235,7 +2235,7 @@ const eventData = {
   edcell: {
     carImages: [
       
-      "https://i.ibb.co/qMsYxPB/Whats-App-Image-2020-01-20-at-01-23-39.jpg",
+      "https://i.ibb.co/jT06SmB/Add-a-heading-min.jpg",
       "https://i.ibb.co/bJsyRCj/startupnivesh.jpg",
     ],
     content: [
