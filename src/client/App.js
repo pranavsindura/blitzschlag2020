@@ -119,7 +119,7 @@ class App extends Component {
                     this.handleCheck();
                   }}
                 >
-                  <i className="far fa-calendar-alt"></i>
+                  <i className="fas fa-phone-alt"></i>
                   &nbsp;&nbsp;ANNOUNCEMENTS & RESULTS
                 </Link>
               </li>
@@ -206,7 +206,7 @@ class App extends Component {
                   <i className="fas fa-money-bill-wave"></i>&nbsp;&nbsp;SPONSORS
                 </Link>
               </li>
-              <li className="lis menu-item">
+              {/* <li className="lis menu-item">
                 <Link
                   className="lisitem"
                   to="/#contactus"
@@ -217,7 +217,7 @@ class App extends Component {
                 >
                   <i className="fas fa-phone-alt"></i>&nbsp;&nbsp;CONTACT US
                 </Link>
-              </li>
+              </li> */}
               {this.props.loggedIn ? (
                 <li className="lis menu-item">
                   <Link
