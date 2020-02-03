@@ -7,7 +7,8 @@ let upiPaySchema = new mongoose.Schema({
     mob: String,
     email: String,
     amount: Number,
-    transactionID: String
+    transactionID: String,
+    approval: boolean
 });
 
 let upiPayModel = new mongoose.model('UPI Payments', upiPaySchema);
