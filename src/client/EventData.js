@@ -3352,63 +3352,63 @@ const eventData = {
   },
   pronites: {
     carImages: [
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      // "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
       "https://i.ibb.co/vwBhHgR/shah-rule.jpg",
       "https://i.ibb.co/zrXqTXk/ankit.jpg"
     ],
     content: [
-      {
-        heading: "PRONITE 1",
-        desc: `TBA`,
-        details: [`Date: 06/02/20`, 'Venue: SAC'],
-        accent: ["#000460", "#000000", "#000000"],
-        detailsLink: "",
-        canRegister: true,
-        registerConstraints: {
-          minTeamSize: 1,
-          maxTeamSize: 2
-        },
-        detailsPage: [
-          {
-            heading: "DESCRIPTION",
-            desc:
-              "The event consists of pictionary session, in which many images will be displayed and the participants have to find the relationship between all the images. Then they have to write a piece(article or poetry) as per their understanding of the connection.",
-            rounds: []
-          },
-          {
-            heading: "JUDGING CRITERIA",
-            desc:
-              "Marks will be awarded on the basis of their writing skills, grammar, and vocabulary.",
-            rounds: ""
-          },
-          {
-            heading: "GENERAL RULES",
-            desc: "",
-            rounds: [
-              {
-                heading: "",
-                list: [
-                  "Team size: 2 members",
-                  "Inter-college participation is allowed",
-                  "Time limit : 1hour",
-                  "The participants shall not be allowed to use mobile or other electronic instrument."
-                ]
-              }
-            ]
-          },
-          {
-            heading: "",
-            desc: "",
-            rounds: ""
-          },
-          {
-            heading: "CONTACT DETAILS",
-            desc: "Nikhil : 8896107887 Yatharth: 9662060952",
-            rounds: ""
-          }
-        ],
-        eventID: "35"
-      },
+    //   {
+    //     heading: "PRONITE 1",
+    //     desc: `TBA`,
+    //     details: [`Date: 06/02/20`, 'Venue: SAC'],
+    //     accent: ["#000460", "#000000", "#000000"],
+    //     detailsLink: "",
+    //     canRegister: true,
+    //     registerConstraints: {
+    //       minTeamSize: 1,
+    //       maxTeamSize: 2
+    //     },
+    //     detailsPage: [
+    //       {
+    //         heading: "DESCRIPTION",
+    //         desc:
+    //           "The event consists of pictionary session, in which many images will be displayed and the participants have to find the relationship between all the images. Then they have to write a piece(article or poetry) as per their understanding of the connection.",
+    //         rounds: []
+    //       },
+    //       {
+    //         heading: "JUDGING CRITERIA",
+    //         desc:
+    //           "Marks will be awarded on the basis of their writing skills, grammar, and vocabulary.",
+    //         rounds: ""
+    //       },
+    //       {
+    //         heading: "GENERAL RULES",
+    //         desc: "",
+    //         rounds: [
+    //           {
+    //             heading: "",
+    //             list: [
+    //               "Team size: 2 members",
+    //               "Inter-college participation is allowed",
+    //               "Time limit : 1hour",
+    //               "The participants shall not be allowed to use mobile or other electronic instrument."
+    //             ]
+    //           }
+    //         ]
+    //       },
+    //       {
+    //         heading: "",
+    //         desc: "",
+    //         rounds: ""
+    //       },
+    //       {
+    //         heading: "CONTACT DETAILS",
+    //         desc: "Nikhil : 8896107887 Yatharth: 9662060952",
+    //         rounds: ""
+    //       }
+    //     ],
+    //     eventID: "35"
+    //   },
       {
         heading: "PRONITE 2",
         desc: `Gully Gang sensation Shah Rule is coming to hook you up to the best hip-hop jam at MNIT! For Pronite 2, Blitzschlag 2020 gives you an artist who sets the stage on fire with his paroles ! Be there on the 7th of February, and catch him live!`,
