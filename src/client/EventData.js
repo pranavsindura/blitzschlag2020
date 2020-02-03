@@ -158,7 +158,6 @@ const eventData = {
             ]
           },
           {
-
             heading: "PRIZE WORTH: ₹ 1,00,000/-",
             desc: "",
             rounds: []
@@ -187,12 +186,14 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Being one of the most popular events, Ramba Samba is the dance extravaganza. Flashy costumes, loud make-up and the outstanding choreography make a dance team the best.",
+            desc:
+              "Being one of the most popular events, Ramba Samba is the dance extravaganza. Flashy costumes, loud make-up and the outstanding choreography make a dance team the best.",
             rounds: []
           },
           {
             heading: "JUDGING CRITERIA & RULE BOOK",
-            desc: "Choreography, Energy, Expression , Overall impact , Synchronization, Entertainment Value, Beat techniques and timing .",
+            desc:
+              "Choreography, Energy, Expression , Overall impact , Synchronization, Entertainment Value, Beat techniques and timing .",
             rounds: [
               {
                 heading: "ROUND ONE (PRELIMS)",
@@ -264,10 +265,10 @@ const eventData = {
         accent: ["#652377", "#160539", "#034a72"],
         detailsLink: "",
         detailsPage: [
-          
           {
             heading: "DESCRIPTION",
-            desc: "Do you have the motivation to transform your talent into a genius? Have you always desired for a cheering crowd to showcase your talent. We offer you a chance to spread your wings and explore your talent in front of an exciting audience. Don't keep your talents within yourself as a closed perfume bottle keep its fragnance in. Open the cap and let them free to disperse.",
+            desc:
+              "Do you have the motivation to transform your talent into a genius? Have you always desired for a cheering crowd to showcase your talent. We offer you a chance to spread your wings and explore your talent in front of an exciting audience. Don't keep your talents within yourself as a closed perfume bottle keep its fragnance in. Open the cap and let them free to disperse.",
             rounds: ""
           },
           {
@@ -342,7 +343,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Are you the perfect blend of beauty, attitude and wit? Here’s your chance to break out of conformity and get a shot at the limelight. Mr and Ms Blitz is an illustrious event probing the charismatic as well as the intellectual side of the participants. Beauty attracts the eyes but personality captures the heart. The charm of personality is the very essence of grace and elegance. Embrace your uniqueness in this stellar event of individuality and temperament. Let go of your diffidence and seize the moment!",
+            desc:
+              "Are you the perfect blend of beauty, attitude and wit? Here’s your chance to break out of conformity and get a shot at the limelight. Mr and Ms Blitz is an illustrious event probing the charismatic as well as the intellectual side of the participants. Beauty attracts the eyes but personality captures the heart. The charm of personality is the very essence of grace and elegance. Embrace your uniqueness in this stellar event of individuality and temperament. Let go of your diffidence and seize the moment!",
             rounds: []
           },
           {
@@ -385,13 +387,15 @@ const eventData = {
                 ]
               },
               {
-                heading: "Who can Participate in these competitions? Is there any registration fee involved?",
+                heading:
+                  "Who can Participate in these competitions? Is there any registration fee involved?",
                 list: [
                   "Any college student can participate in these competitions. These is no registration fee for participation."
                 ]
               },
               {
-                heading: "Are on the spot registrations allowed during the fest?",
+                heading:
+                  "Are on the spot registrations allowed during the fest?",
                 list: [
                   "On the spot registration may or may not be allowed depending on the number of already registered participants. We suggest that you register online as soon as possible to prevent unforeseeable circumstances."
                 ]
@@ -459,7 +463,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Unleash the instrumental passion that had always existed within you! Calling upon all the players of percussion and non-percussion instruments to participate and battle to the end in an epic musical face-off against one another for the victory! It’s time you let the Beethoven in you come out to make not only the judges, but the audience sonder as well!",
+            desc:
+              "Unleash the instrumental passion that had always existed within you! Calling upon all the players of percussion and non-percussion instruments to participate and battle to the end in an epic musical face-off against one another for the victory! It’s time you let the Beethoven in you come out to make not only the judges, but the audience sonder as well!",
             rounds: []
           },
           {
@@ -528,12 +533,14 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Being one of the most popular events, Ramba Samba is the dance extravaganza. Flashy costumes, loud make-up and the outstanding choreography make a dance team the best.",
+            desc:
+              "Being one of the most popular events, Ramba Samba is the dance extravaganza. Flashy costumes, loud make-up and the outstanding choreography make a dance team the best.",
             rounds: []
           },
           {
             heading: "JUDGING CRITERIA & RULE BOOK",
-            desc: "Choreography, Energy, Expression , Overall impact , Synchronization, Entertainment Value, Beat techniques and timing .",
+            desc:
+              "Choreography, Energy, Expression , Overall impact , Synchronization, Entertainment Value, Beat techniques and timing .",
             rounds: [
               {
                 heading: "ROUND ONE (PRELIMS)",
@@ -612,12 +619,14 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "The beauty of solo & Duet dance are the opportunity to highlight your greatest strengths as a dancer, to reveal a character's story which people only dared to imagine, to be the story teller where the audience watches your body tell a story. Blitzschlag invites you to come showcase your talent as the audience watches in awe how you turn imagination into reality.",
+            desc:
+              "The beauty of solo & Duet dance are the opportunity to highlight your greatest strengths as a dancer, to reveal a character's story which people only dared to imagine, to be the story teller where the audience watches your body tell a story. Blitzschlag invites you to come showcase your talent as the audience watches in awe how you turn imagination into reality.",
             rounds: []
           },
           {
             heading: "JUDGING CRITERIA",
-            desc: "Choreography, overall impact, stage presence, innovation in song incorporation,Energy, Expression and Synchronization",
+            desc:
+              "Choreography, overall impact, stage presence, innovation in song incorporation,Energy, Expression and Synchronization",
             rounds: [
               {
                 heading: "ROUND ONE (VIDEO ROUND)",
@@ -629,8 +638,7 @@ const eventData = {
                   "Record the video from a static camera, no special effects or editing allowed.",
                   "Name the video as <college name><event name>",
                   "Mail it to musicanddancesociety@gmail.com with the subject <college name><event name>",
-                  "Write your details (name, age, place, college name, contact number, accommodation(if required)) in the mail.",
-
+                  "Write your details (name, age, place, college name, contact number, accommodation(if required)) in the mail."
                 ]
               },
               {
@@ -642,7 +650,6 @@ const eventData = {
                   "Participants will perform a track of 3-4 minutes (including setup and clearance)."
                 ]
               }
-              
             ]
           },
           {
@@ -699,17 +706,14 @@ const eventData = {
             rounds: [
               {
                 heading: "",
-                list: [
-                  "Team Size: Solo",
-                  "Date 06-02-2020",
-                  "Time 3 to 5"
-                ]
+                list: ["Team Size: Solo", "Date 06-02-2020", "Time 3 to 5"]
               }
             ]
           },
           {
             heading: "Judging Criteria & Competition Rules",
-            desc: "Nritya (pure dance), Abhinaya (facial expressions, body language, footwork, hand and eye movements), Presentation (innovation), Choreography (technical perfection), Stage presence, Overall clarity and Impact on the Audience (costumes will not be judged in this round).",
+            desc:
+              "Nritya (pure dance), Abhinaya (facial expressions, body language, footwork, hand and eye movements), Presentation (innovation), Choreography (technical perfection), Stage presence, Overall clarity and Impact on the Audience (costumes will not be judged in this round).",
             rounds: [
               {
                 heading: "",
@@ -769,12 +773,14 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Dance till the stars come down from the rafters. Dance, Dance and Dance till you drop! Feel the music with hip-hop at your heart, b-boying in your soul, crunching in your mind, tapping in your legs, and show your rivals that this is your stage!! And you are the ringmaster of this arena. Turn the urban street dancing into a global electrifying new story with mind blowing dance moves!! Set the streets ablaze with your passion and turn the opposition into mere specks of dust as you weave your way through the patterns of space and time to rise above everyone else and enthrall all who watch to clinch that which all want!",
+            desc:
+              "Dance till the stars come down from the rafters. Dance, Dance and Dance till you drop! Feel the music with hip-hop at your heart, b-boying in your soul, crunching in your mind, tapping in your legs, and show your rivals that this is your stage!! And you are the ringmaster of this arena. Turn the urban street dancing into a global electrifying new story with mind blowing dance moves!! Set the streets ablaze with your passion and turn the opposition into mere specks of dust as you weave your way through the patterns of space and time to rise above everyone else and enthrall all who watch to clinch that which all want!",
             rounds: []
           },
           {
             heading: "JUDGING CRITERIA",
-            desc: "Choreography, Energy, Synchronization, Stage utilization, Innovation, Overall impact. The Hip Hop group battle will be judged on the basis of the breaking skills and its presentation. It depends on crowd support and most of all overshadowing the opposite team. The number of participants allowed from each team in this round has to be equal or (+2) or (-2).",
+            desc:
+              "Choreography, Energy, Synchronization, Stage utilization, Innovation, Overall impact. The Hip Hop group battle will be judged on the basis of the breaking skills and its presentation. It depends on crowd support and most of all overshadowing the opposite team. The number of participants allowed from each team in this round has to be equal or (+2) or (-2).",
             rounds: ""
           },
           {
@@ -841,13 +847,13 @@ const eventData = {
               {
                 heading: "Round 2 PRELIMS",
                 list: [
-                 "Date : 06-02-2020",
-                 "Timing: 9am to 12pm",
-                 "Time limit : 4 minutes",
-                 "Participant must perform on karaoke track or live backing music.",
-                 "Participants may play an instrument themselves or use one accompanist.",
-                 "Karaoke music must be brought by the participants in .mp3 format .",
-                 "Songs sung in the previous round must not be repeated in this round."
+                  "Date : 06-02-2020",
+                  "Timing: 9am to 12pm",
+                  "Time limit : 4 minutes",
+                  "Participant must perform on karaoke track or live backing music.",
+                  "Participants may play an instrument themselves or use one accompanist.",
+                  "Karaoke music must be brought by the participants in .mp3 format .",
+                  "Songs sung in the previous round must not be repeated in this round."
                 ]
               },
               {
@@ -870,15 +876,15 @@ const eventData = {
               {
                 heading: "",
                 list: [
-                 "Songs can be in Hindi or in English.",
-                 "Rap portions are not permissible.",
-                 "Obscenity of any kind is not allowed and in any case it will lead to immediate disqualification.",
-                 "Decision of the judges would be final. No changes would be made once the results are declared.",
-                 "Time limit must be strictly followed.",
-                 "Participants are not allowed to refer the lyrics while performing.",
-                 "The decision of the judges will be final and binding."
+                  "Songs can be in Hindi or in English.",
+                  "Rap portions are not permissible.",
+                  "Obscenity of any kind is not allowed and in any case it will lead to immediate disqualification.",
+                  "Decision of the judges would be final. No changes would be made once the results are declared.",
+                  "Time limit must be strictly followed.",
+                  "Participants are not allowed to refer the lyrics while performing.",
+                  "The decision of the judges will be final and binding."
                 ]
-                }
+              }
             ]
           },
           {
@@ -888,7 +894,8 @@ const eventData = {
           },
           {
             heading: "CONTACT DETAILS",
-            desc: "Harshit : 6263802051 , Shreya : 9530633129 , Santosh : 9162458651",
+            desc:
+              "Harshit : 6263802051 , Shreya : 9530633129 , Santosh : 9162458651",
             rounds: ""
           },
           {
@@ -929,7 +936,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Well, we muggles decided to add some spice to the traditional game of jenga. You ask why after all this time, we say... Always! Here’s the catch, the game will not only test your jenga skills but also your Harry Potter fandom. One can pull out certain pieces that have some Harry Potter questions to earn bonus points. Are you the Chosen One? Here's your chance to catch the golden snitch. We solemnly swear that it will be fun. Play the game right and win exciting prizes. Mischief managed!",
+            desc:
+              "Well, we muggles decided to add some spice to the traditional game of jenga. You ask why after all this time, we say... Always! Here’s the catch, the game will not only test your jenga skills but also your Harry Potter fandom. One can pull out certain pieces that have some Harry Potter questions to earn bonus points. Are you the Chosen One? Here's your chance to catch the golden snitch. We solemnly swear that it will be fun. Play the game right and win exciting prizes. Mischief managed!",
             rounds: []
           },
           {
@@ -985,12 +993,14 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Have you ever felt so drawn towards a puzzle that you just can't get it off your mind before solving it? Is that feeling which comes on solving a really tough puzzle, priceless to you? What's the first thought that comes to your mind when you see a sudoku? Is your first thought when someone challenges you for a crossword puzzle 'BRING IT ON!'? Does the play with anagrams never fails to amuse you? If yes, then we have just the right thing for you. Literary Society presents a bucket full of sudokus, anagrams, crosswords, rebuses and a lot more. Join us and cherish again the childhood puzzle days but this time...with a spice of competition.",
+            desc:
+              "Have you ever felt so drawn towards a puzzle that you just can't get it off your mind before solving it? Is that feeling which comes on solving a really tough puzzle, priceless to you? What's the first thought that comes to your mind when you see a sudoku? Is your first thought when someone challenges you for a crossword puzzle 'BRING IT ON!'? Does the play with anagrams never fails to amuse you? If yes, then we have just the right thing for you. Literary Society presents a bucket full of sudokus, anagrams, crosswords, rebuses and a lot more. Join us and cherish again the childhood puzzle days but this time...with a spice of competition.",
             rounds: []
           },
           {
             heading: "GENERAL RULES",
-            desc: "A set of puzzles will be provided, encompassing a variety of subdivisions like crosswords or homophones, rebuses, anagrams, Sudoku, fill the bubble etc.",
+            desc:
+              "A set of puzzles will be provided, encompassing a variety of subdivisions like crosswords or homophones, rebuses, anagrams, Sudoku, fill the bubble etc.",
             rounds: [
               {
                 heading: "",
@@ -1041,7 +1051,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "After the wild success of the first edition, Literary Society is back with Questival 2.0 More gruelling, challenging and exciting than before. Be prepared with your clan to steal the spotlight, showcase your intelligence, and leave a mark ! A perfect opportunity to fight it out with the MNIT's finest, make some memories along the way and work together as a team for glory. Full of several mini quests, this festival will surely test your wits and grits, so bring your A GAME ! The stakes have been upped but so has the reward. Are you up for it ?",
+            desc:
+              "After the wild success of the first edition, Literary Society is back with Questival 2.0 More gruelling, challenging and exciting than before. Be prepared with your clan to steal the spotlight, showcase your intelligence, and leave a mark ! A perfect opportunity to fight it out with the MNIT's finest, make some memories along the way and work together as a team for glory. Full of several mini quests, this festival will surely test your wits and grits, so bring your A GAME ! The stakes have been upped but so has the reward. Are you up for it ?",
             rounds: []
           },
           {
@@ -1061,7 +1072,7 @@ const eventData = {
           {
             heading: "Rounds",
             desc: "",
-            rounds:  [
+            rounds: [
               {
                 heading: "ROUND ONE (QFiesta)",
                 list: [
@@ -1078,7 +1089,7 @@ const eventData = {
                   "Each team has to stick to the word limit.",
                   "Exceeding the word limit will lead to deduction of points.",
                   "Participants are expected to bring their own pens."
-              ]
+                ]
               },
               {
                 heading: "ROUND THREE (Treasure Hunt)",
@@ -1139,7 +1150,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "प्रियसी की हो चाह या युद्ध की हो राह मार्मिक मुद्दों पर महत्वपूर्ि बोली या फिर झोली भर हँसी ठििोली जीवन के ित्येक रंगों को शब्दों की सीमा में बांध कर ही एक आम मनुष्य कप्रव या शायर बन जाता है। यह सब महज शब्दों की सुंदरता ही तो है जो अपने हाव-भाव से इस कदर हमारे ठदल को छू लेती है फक हम इनहीं शब्दों को जीना शुरू कर देते हैं। आईये जजंदगी के कुछ अनमोल पननो को पलटें और अपनी कप्रवताओं को डायरी के पननों से आजाद कर आम जन तक पहुचायें। र्लटरेरी सोसाइटी िस्तुत करती है *'काव्यपाि'* एक नया मंच आपकी कप्रवताओं के र्लए।",
+            desc:
+              "प्रियसी की हो चाह या युद्ध की हो राह मार्मिक मुद्दों पर महत्वपूर्ि बोली या फिर झोली भर हँसी ठििोली जीवन के ित्येक रंगों को शब्दों की सीमा में बांध कर ही एक आम मनुष्य कप्रव या शायर बन जाता है। यह सब महज शब्दों की सुंदरता ही तो है जो अपने हाव-भाव से इस कदर हमारे ठदल को छू लेती है फक हम इनहीं शब्दों को जीना शुरू कर देते हैं। आईये जजंदगी के कुछ अनमोल पननो को पलटें और अपनी कप्रवताओं को डायरी के पननों से आजाद कर आम जन तक पहुचायें। र्लटरेरी सोसाइटी िस्तुत करती है *'काव्यपाि'* एक नया मंच आपकी कप्रवताओं के र्लए।",
             rounds: []
           },
           {
@@ -1158,8 +1170,7 @@ const eventData = {
                   "The language strictly has to be Hindi.",
                   "The poem should be original, Plagiarism of any sort will lead to straight disqualification.",
                   "The poem should be preceded by a 2-3 line write up regarding how it relates to the theme. The write up can be in Hindi or in English.",
-                  "Results of judges will be final.",
-
+                  "Results of judges will be final."
                 ]
               }
             ]
@@ -1198,7 +1209,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "INTRODUCTION",
-            desc: "Da Vinci did it with his brush, Shelly with his pen and Einstein with his imagination- anything that has gone down in the history books have a delicate touch of humane creativity in them. It's your turn now to unleash the music of your thought and put to paper your creativity on a blank canvas. Will your creation make people burst into peals of laughter or scare them out of their wits with its eerie ambiance? Be eccentric, innovative and appall the crowd with your words. Literary Society presents you Ek Baar Ki Baat Hai, a story writing competition on 6th February,2020.",
+            desc:
+              "Da Vinci did it with his brush, Shelly with his pen and Einstein with his imagination- anything that has gone down in the history books have a delicate touch of humane creativity in them. It's your turn now to unleash the music of your thought and put to paper your creativity on a blank canvas. Will your creation make people burst into peals of laughter or scare them out of their wits with its eerie ambiance? Be eccentric, innovative and appall the crowd with your words. Literary Society presents you Ek Baar Ki Baat Hai, a story writing competition on 6th February,2020.",
             rounds: []
           },
           {
@@ -1256,7 +1268,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Speech is power, speech is to persuade, to convert, to compel. And if the power of speech lies within you, then we have just the right thing in the hat. Just-A-Minute (JAM) is the ultimate test of wit and thinking on your feet. Can you make it through sixty seconds of uninterrupted vocalization of your thoughts, without repetition, or deviation? Or will you give in to the pressure and have your competitors pounce on you in an instant?",
+            desc:
+              "Speech is power, speech is to persuade, to convert, to compel. And if the power of speech lies within you, then we have just the right thing in the hat. Just-A-Minute (JAM) is the ultimate test of wit and thinking on your feet. Can you make it through sixty seconds of uninterrupted vocalization of your thoughts, without repetition, or deviation? Or will you give in to the pressure and have your competitors pounce on you in an instant?",
             rounds: []
           },
           {
@@ -1343,7 +1356,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "Description",
-            desc: "MNIT Film Festival is an international film making competition where candidates can send their film entries along with the respective genres. The films will be screened over the period of three days in the annual cultural fest of MNIT Jaipur Blitzschlag.",
+            desc:
+              "MNIT Film Festival is an international film making competition where candidates can send their film entries along with the respective genres. The films will be screened over the period of three days in the annual cultural fest of MNIT Jaipur Blitzschlag.",
             rounds: []
           },
           {
@@ -1378,7 +1392,8 @@ const eventData = {
           },
           {
             heading: "Judging Criteria",
-            desc: "The decision of the judges and organizers shall be final and abiding. Rules for the event can be changed by the organizers at the time of the event.",
+            desc:
+              "The decision of the judges and organizers shall be final and abiding. Rules for the event can be changed by the organizers at the time of the event.",
             rounds: [
               {
                 heading: "",
@@ -1389,7 +1404,7 @@ const eventData = {
                   "Uniqueness in the film",
                   "Quality of the film",
                   "Relevance to the Genre the film is submitted in",
-                  "Time limit of the film",
+                  "Time limit of the film"
                 ]
               }
             ]
@@ -1483,7 +1498,8 @@ const eventData = {
           },
           {
             heading: "Judging Criteria",
-            desc: "Each of the entries will be judges separately on the following basis:",
+            desc:
+              "Each of the entries will be judges separately on the following basis:",
             rounds: [
               {
                 heading: "",
@@ -1504,23 +1520,20 @@ const eventData = {
             rounds: [
               {
                 heading: "1st Winner: Goodies worth Rs.1,500 + Certificate",
-                list: [
-                ]
+                list: []
               },
               {
                 heading: "1st Runner up: Goodies worth Rs.1,000 + Certificate",
-                list: [
-                ]
+                list: []
               },
               {
                 heading: "2nd Runner up:Goodies worth Rs. 500 + Certificate",
-                list: [
-                ]
+                list: []
               },
               {
-                heading: "All participants will get a participation certificate in form of soft copy.",
-                list: [
-                ]
+                heading:
+                  "All participants will get a participation certificate in form of soft copy.",
+                list: []
               }
             ]
           },
@@ -1614,8 +1627,7 @@ const eventData = {
                   "The decision of the judges would be final and binding",
                   "The organisers reserve the right to modify the rules at any point of time",
                   "By submitting the entry, participant acknowledge that they have read and understood the rules and are willing to abide by them",
-                  "Violation of rules or use of any copyright content or any sexual, violent content would be disqualified."                  
-
+                  "Violation of rules or use of any copyright content or any sexual, violent content would be disqualified."
                 ]
               }
             ]
@@ -1655,7 +1667,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "This is an online event in which participants have to submit a sequence of photographs conveying a story.",
+            desc:
+              "This is an online event in which participants have to submit a sequence of photographs conveying a story.",
             rounds: []
           },
           {
@@ -1731,12 +1744,14 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "How many times do we find ourselves doodling in our notebooks while sitting in lectures? Here comes an innovative way to stunt on a doodle with thread on paper. Patterns, curves, spirals use everything to form a composition that stands out, just like your thoughts do during classes.",
+            desc:
+              "How many times do we find ourselves doodling in our notebooks while sitting in lectures? Here comes an innovative way to stunt on a doodle with thread on paper. Patterns, curves, spirals use everything to form a composition that stands out, just like your thoughts do during classes.",
             rounds: []
           },
           {
             heading: "JUDGING CRITERIA",
-            desc: "Participants would be given multi colored threads, paper and fevicol. They have to make creative compositions, artistic images etc. without lifting or cutting the thread. Different colored threads could be overlapped on one if desired. Make it interesting, make it catchy, and make it speak to you. So, polish your doodling skills and get ready to win!  Prize would be given to the most realistic one.",
+            desc:
+              "Participants would be given multi colored threads, paper and fevicol. They have to make creative compositions, artistic images etc. without lifting or cutting the thread. Different colored threads could be overlapped on one if desired. Make it interesting, make it catchy, and make it speak to you. So, polish your doodling skills and get ready to win!  Prize would be given to the most realistic one.",
             rounds: ""
           },
           {
@@ -1784,12 +1799,14 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Fashion has never been the same. It is always about contemporary. And contemporary never ceases to amaze us, does it? The Trashion Show exhibits clothing made entirely from recycled materials. It is a way to introduce people to the little things that we each can do to make a difference in the environment. Afterall, it’s the difference that prevails and makes a difference. The idea for a Trashion Show is to see how a participant can design a dress out of complete trash material provided to them.",
+            desc:
+              "Fashion has never been the same. It is always about contemporary. And contemporary never ceases to amaze us, does it? The Trashion Show exhibits clothing made entirely from recycled materials. It is a way to introduce people to the little things that we each can do to make a difference in the environment. Afterall, it’s the difference that prevails and makes a difference. The idea for a Trashion Show is to see how a participant can design a dress out of complete trash material provided to them.",
             rounds: []
           },
           {
             heading: "JUDGING CRITERIA",
-            desc: "Participants will be getting judged on their creative dresses made out of waste.",
+            desc:
+              "Participants will be getting judged on their creative dresses made out of waste.",
             rounds: ""
           },
           {
@@ -1837,7 +1854,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "We’ve always painted shirts while accidently dropping food on it while eating, or it could be a football impressions on your jersey or perhaps be as simple as brushing pasta wall just painted. So here in TINT A TOP we give you the perfect opportunity to showcase your fashion mantra in the T-Shirt Painting competition. Turn on your colorful creative pulses and show what your style mantra is all about! The event will showcase the Creative and Innovative painting skills on T-Shirts based on any particular theme.",
+            desc:
+              "We’ve always painted shirts while accidently dropping food on it while eating, or it could be a football impressions on your jersey or perhaps be as simple as brushing pasta wall just painted. So here in TINT A TOP we give you the perfect opportunity to showcase your fashion mantra in the T-Shirt Painting competition. Turn on your colorful creative pulses and show what your style mantra is all about! The event will showcase the Creative and Innovative painting skills on T-Shirts based on any particular theme.",
             rounds: []
           },
           {
@@ -1904,12 +1922,14 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "EXPLORA Brings you a platform to showcase your artistic talent. Participants are required to submit their artwork in jpeg format by 31 jan. If participants are found using someone else's artwork then they'll be disqualified ! so make sure you send us your own artwork.",
+            desc:
+              "EXPLORA Brings you a platform to showcase your artistic talent. Participants are required to submit their artwork in jpeg format by 31 jan. If participants are found using someone else's artwork then they'll be disqualified ! so make sure you send us your own artwork.",
             rounds: []
           },
           {
             heading: "JUDGING CRITERIA",
-            desc: "The selected entries will be a part of ART EXHIBITION. Final jury will decide the winners of exhibition.",
+            desc:
+              "The selected entries will be a part of ART EXHIBITION. Final jury will decide the winners of exhibition.",
             rounds: ""
           },
           {
@@ -1947,12 +1967,14 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Live painting is a form of visual performance art, in which artists complete a visual art piece in a public performance. We give you a chance to shine on your own by this event. Want to capture MNIT artistically ? Well! Here’s the opportunity to paint it down. Participants would be given 2 x 2 canvas to paint any part of MNIT they like and submit it in the given time.",
+            desc:
+              "Live painting is a form of visual performance art, in which artists complete a visual art piece in a public performance. We give you a chance to shine on your own by this event. Want to capture MNIT artistically ? Well! Here’s the opportunity to paint it down. Participants would be given 2 x 2 canvas to paint any part of MNIT they like and submit it in the given time.",
             rounds: []
           },
           {
             heading: "JUDGING CRITERIA",
-            desc: "Paintings will be judged based on creativity, originality and overall execution.",
+            desc:
+              "Paintings will be judged based on creativity, originality and overall execution.",
             rounds: ""
           },
           {
@@ -2002,7 +2024,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "How often have we tried painting differently. Art carries the capacity of such creativity which has no bound. Impressions with vegetables is an art, textures one on another forms an art, in fact, writing with a pen’s chiselled tip becomes an art, so here comes another such art, an event which promises fun and thrill together. Each participant will be given a brush and a set of bamboo sticks. The participant have to tie the brush and bamboo sticks to obtain a require length . Then he/she has to sit on a chair, and the drawing sheet will be at a distance from him/her on ground. Now the participant have to draw with the long brush he/she has made.",
+            desc:
+              "How often have we tried painting differently. Art carries the capacity of such creativity which has no bound. Impressions with vegetables is an art, textures one on another forms an art, in fact, writing with a pen’s chiselled tip becomes an art, so here comes another such art, an event which promises fun and thrill together. Each participant will be given a brush and a set of bamboo sticks. The participant have to tie the brush and bamboo sticks to obtain a require length . Then he/she has to sit on a chair, and the drawing sheet will be at a distance from him/her on ground. Now the participant have to draw with the long brush he/she has made.",
             rounds: []
           },
           {
@@ -2068,7 +2091,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "A dot has no point but dots mean a lots. Imagination and dots can together create a wide varieties of designs and patterns. Test your patience and creativity in this fun filled event.",
+            desc:
+              "A dot has no point but dots mean a lots. Imagination and dots can together create a wide varieties of designs and patterns. Test your patience and creativity in this fun filled event.",
             rounds: []
           },
           {
@@ -2134,12 +2158,14 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Do you pride yourself in photographic memory? Or think of yourself as an apt communicator? Here comes a real test for you. In the teams of two, One person is shown a picture of a structural form for 10 seconds whist the other team member is blind folded, who will have to compile the exact same form with leggo blocks solely on the basis of their teammates instructions and memory. Fun, laughter, mockery all comes together on this platform. Join us with your partner in chime and claim the prize!",
+            desc:
+              "Do you pride yourself in photographic memory? Or think of yourself as an apt communicator? Here comes a real test for you. In the teams of two, One person is shown a picture of a structural form for 10 seconds whist the other team member is blind folded, who will have to compile the exact same form with leggo blocks solely on the basis of their teammates instructions and memory. Fun, laughter, mockery all comes together on this platform. Join us with your partner in chime and claim the prize!",
             rounds: []
           },
           {
             heading: "JUDGING CRITERIA",
-            desc: "Designs will be judged based on creativity, originality and overall execution.",
+            desc:
+              "Designs will be judged based on creativity, originality and overall execution.",
             rounds: ""
           },
           {
@@ -2192,12 +2218,14 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Face Art in one of the earliest form of artistic expression known to humankind. It has been an integral practice for many cultures worldwide. Face painting is so deeply entwined with tradition that it has been used in dances as well as in plays and mimes. Participants will be provided with colors and will have to paint their respective partner's face with creative and artistical manuals of their thoughts. So get ready to make your faces canvas!!!!",
+            desc:
+              "Face Art in one of the earliest form of artistic expression known to humankind. It has been an integral practice for many cultures worldwide. Face painting is so deeply entwined with tradition that it has been used in dances as well as in plays and mimes. Participants will be provided with colors and will have to paint their respective partner's face with creative and artistical manuals of their thoughts. So get ready to make your faces canvas!!!!",
             rounds: []
           },
           {
             heading: "JUDGING CRITERIA",
-            desc: "Designs will be judged based on creativity, originality and overall execution.",
+            desc:
+              "Designs will be judged based on creativity, originality and overall execution.",
             rounds: ""
           },
           {
@@ -2234,9 +2262,8 @@ const eventData = {
   },
   edcell: {
     carImages: [
-      
       "https://i.ibb.co/jT06SmB/Add-a-heading-min.jpg",
-      "https://i.ibb.co/bJsyRCj/startupnivesh.jpg",
+      "https://i.ibb.co/bJsyRCj/startupnivesh.jpg"
     ],
     content: [
       {
@@ -2253,10 +2280,11 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Aspire Business Quiz exercise an activity of Quizzing, which would be themed on the Business, Entrepreneurial, Corporate and Current World Affairs. Various methods of quizzing, like rapid fire technique, paragraph answering; unfolding an answer from a set of hints and more, shall be tested.",
+            desc:
+              "Aspire Business Quiz exercise an activity of Quizzing, which would be themed on the Business, Entrepreneurial, Corporate and Current World Affairs. Various methods of quizzing, like rapid fire technique, paragraph answering; unfolding an answer from a set of hints and more, shall be tested.",
             rounds: []
           },
-          
+
           {
             heading: "Rounds",
             desc: "",
@@ -2344,7 +2372,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "This game simulates the experience of a real world stock market trading platform in a dedicated niche of enthusiastic students, who would apply their skills and knowledge of real world business practices and investment strategies, to buy and sell virtual stocks and shares, which are seen as an integral part of a company’s revenue and business model. It recreates the “Dalal street” experience of the Bombay Stock Exchange, famous for its round the clock busy schedules and chaotic-yet-professional investment hub for investors, world over. The students compete as a team of two individuals and are given a stack limit of virtual revenue, to invest in the listed companies of the Stock Exchange. A team can decide to buy and sell shares of a company for a designated price model, which varies according to the company’s performance in market, followed by its progression in the business media. Flash news shall display real time progress of a company in the market, the analysis of which would yield a team a result that can be used to decide an investment on a listed company. The process is deemed to continue, till a slotted time limit, as happens in the commercial world, and the winner of the game shall be declared based on prescribed criteria, which would primarily include the team to earn maximum revenue despite the unfolding of the market over the time.",
+            desc:
+              "This game simulates the experience of a real world stock market trading platform in a dedicated niche of enthusiastic students, who would apply their skills and knowledge of real world business practices and investment strategies, to buy and sell virtual stocks and shares, which are seen as an integral part of a company’s revenue and business model. It recreates the “Dalal street” experience of the Bombay Stock Exchange, famous for its round the clock busy schedules and chaotic-yet-professional investment hub for investors, world over. The students compete as a team of two individuals and are given a stack limit of virtual revenue, to invest in the listed companies of the Stock Exchange. A team can decide to buy and sell shares of a company for a designated price model, which varies according to the company’s performance in market, followed by its progression in the business media. Flash news shall display real time progress of a company in the market, the analysis of which would yield a team a result that can be used to decide an investment on a listed company. The process is deemed to continue, till a slotted time limit, as happens in the commercial world, and the winner of the game shall be declared based on prescribed criteria, which would primarily include the team to earn maximum revenue despite the unfolding of the market over the time.",
             rounds: []
           },
           {
@@ -2392,7 +2421,7 @@ const eventData = {
   dramatics: {
     carImages: [
       "https://i.ibb.co/1ZR2CxK/Whats-App-Image-2020-01-20-at-11-58-23.jpg",
-      
+
       "https://i.ibb.co/2v6J2b1/rangbhomi-min-1.jpg",
       "https://i.ibb.co/DWC9SD6/Whats-App-Image-2020-01-30-at-10-44-28-PM-1.jpg"
     ],
@@ -2413,12 +2442,14 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "With the sleeves rolled up, energy high in the blood, voice being raised, bringing the audience at your spot and binding them with the jaw dropping performance filled with intensity, humor, parodies, poetry and everything that can be created. The street having all shades of reality with creatively spreading social awareness is the most powerful form of drama and we are waiting for you to begin this battle of TAMASHA...",
+            desc:
+              "With the sleeves rolled up, energy high in the blood, voice being raised, bringing the audience at your spot and binding them with the jaw dropping performance filled with intensity, humor, parodies, poetry and everything that can be created. The street having all shades of reality with creatively spreading social awareness is the most powerful form of drama and we are waiting for you to begin this battle of TAMASHA...",
             rounds: []
           },
           {
             heading: "JUDGING CRITERIA",
-            desc: "TOPIC,CONTENT, ACTING , AUDIENCE INTERACTION,SOCIAL MESSAGE RECEIVED ,FORMATIONS",
+            desc:
+              "TOPIC,CONTENT, ACTING , AUDIENCE INTERACTION,SOCIAL MESSAGE RECEIVED ,FORMATIONS",
             rounds: [
               {
                 heading: "PRELIMS(may or may not be conducted)",
@@ -2482,12 +2513,14 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Life is a theatre set in which there are but few practicable entrances. We all have been dramatic in our life, acting in each emotion, love, hate, anger or joy. Now it's time for you put some life on stage - Life that is created by writer, managed by director, lived by actor. It's not only about acting, script, dialogues, and lights rather it's about you living that character on stage bringing life to audience.",
+            desc:
+              "Life is a theatre set in which there are but few practicable entrances. We all have been dramatic in our life, acting in each emotion, love, hate, anger or joy. Now it's time for you put some life on stage - Life that is created by writer, managed by director, lived by actor. It's not only about acting, script, dialogues, and lights rather it's about you living that character on stage bringing life to audience.",
             rounds: []
           },
           {
             heading: "JUDGING CRITERIA",
-            desc: "Content,acting, characterization,Stage presentation,script writting",
+            desc:
+              "Content,acting, characterization,Stage presentation,script writting",
             rounds: [
               {
                 heading: "PRELIMS(may or may not be conducted)",
@@ -2637,8 +2670,7 @@ const eventData = {
                   "There will be 10 slides.",
                   "Time assigned : 30 mins."
                 ]
-              },
-
+              }
             ]
           },
           {
@@ -2653,7 +2685,8 @@ const eventData = {
           },
           {
             heading: "CONTACT DETAILS",
-            desc: "Somya - +917355020880 , Shreya Tripathi - +917424911611 , Kartikey Tiwari - +918799659128",
+            desc:
+              "Somya - +917355020880 , Shreya Tripathi - +917424911611 , Kartikey Tiwari - +918799659128",
             rounds: ""
           },
           {
@@ -2675,10 +2708,11 @@ const eventData = {
           minTeamSize: 2,
           maxTeamSize: 2
         },
-        detailsPage:  [
+        detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Bollywood bonanza with a twist. It is divided into two rounds",
+            desc:
+              "Bollywood bonanza with a twist. It is divided into two rounds",
             rounds: []
           },
           {
@@ -2694,7 +2728,6 @@ const eventData = {
                   "Participants will be given a time of 60 minutes to solve the question paper.",
                   "Time slot: 1-2 pm",
                   "Venue: VLTC lecture room"
-
                 ]
               },
               {
@@ -2705,7 +2738,6 @@ const eventData = {
                   "This is a Bollywood movies based pen-paper/visual round.",
                   "Time slot: 1-2 pm",
                   "Venue: VLTC lecture room"
-
                 ]
               }
             ]
@@ -2717,7 +2749,8 @@ const eventData = {
           },
           {
             heading: "CONTACT DETAILS",
-            desc: "Yatharth Trivedi : +91 96620 60952 , Kartikey Tiwari : +91 87996 59128 , Shreya Tripathi : +91 73550 20880",
+            desc:
+              "Yatharth Trivedi : +91 96620 60952 , Kartikey Tiwari : +91 87996 59128 , Shreya Tripathi : +91 73550 20880",
             rounds: ""
           },
           {
@@ -2743,7 +2776,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "All members of a team are locked inside a room. The idea is to solve puzzles hidden in the room to finally find the key to escape within the given time (10 mins).",
+            desc:
+              "All members of a team are locked inside a room. The idea is to solve puzzles hidden in the room to finally find the key to escape within the given time (10 mins).",
             rounds: []
           },
           {
@@ -2759,9 +2793,7 @@ const eventData = {
                   "No puzzles require anything to be thrown or damaged. Causing damage to anything inside the room is not allowed.",
                   "Penalty for damaged property: Fine of ₹500 and following each volunteer on Instagram.",
                   "Climbing any surface is not allowed.",
-                  "Removing anything from the room is not allowed.",
-
-
+                  "Removing anything from the room is not allowed."
                 ]
               }
             ]
@@ -2786,7 +2818,8 @@ const eventData = {
           },
           {
             heading: "CONTACT DETAILS",
-            desc: "Kartikey Tiwari - 8799659128 , Somya - 7424911611 , Shreya - 7355020880",
+            desc:
+              "Kartikey Tiwari - 8799659128 , Somya - 7424911611 , Shreya - 7355020880",
             rounds: ""
           }
         ],
@@ -2806,7 +2839,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "This event extensively tests your cricketing knowledge with two rounds, testing both your fanatic and logical skills with an auction putting your skills and cricket reasoning to the ultimate test.",
+            desc:
+              "This event extensively tests your cricketing knowledge with two rounds, testing both your fanatic and logical skills with an auction putting your skills and cricket reasoning to the ultimate test.",
             rounds: []
           },
           {
@@ -2820,7 +2854,6 @@ const eventData = {
                   "Max 4 students in one team",
                   "Cricketing questions with unambiguous answers",
                   "Just to select 8 teams for next round"
-
                 ]
               },
               {
@@ -2833,7 +2866,6 @@ const eventData = {
                   "Each player auctioned is given a rating out of ten",
                   "The team which makes their team according to parameters and has the highest summation of ratings of players in their team, wins.",
                   "VENUE- VLTC lecture room"
-
                 ]
               }
             ]
@@ -2845,7 +2877,8 @@ const eventData = {
           },
           {
             heading: "CONTACT DETAILS",
-            desc: "Shreya Tripathi - +917355020880 , Somya - +917424911611 , Yatharth Trivedi - +919662060952 ",
+            desc:
+              "Shreya Tripathi - +917355020880 , Somya - +917424911611 , Yatharth Trivedi - +919662060952 ",
             rounds: ""
           },
           {
@@ -2870,7 +2903,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "A murder took place in MNIT . The police have some suspects. The task is to find the murderer using the hints being provided.",
+            desc:
+              "A murder took place in MNIT . The police have some suspects. The task is to find the murderer using the hints being provided.",
             rounds: []
           },
           {
@@ -2886,7 +2920,6 @@ const eventData = {
                   "Hints would be provided on the mobile phone so at least one participant must carry a phone .",
                   "Next hint would appear once you solve the previous one.",
                   "The team/individual who solves the mystery in the minimum time wins."
-
                 ]
               }
             ]
@@ -2898,7 +2931,8 @@ const eventData = {
           },
           {
             heading: "CONTACT DETAILS",
-            desc: "●	Shreya Tripathi : 7355020880 , Kartikey Tiwari : 8799659128 , Gunjan Shekhawat: 6376796752 ",
+            desc:
+              "●	Shreya Tripathi : 7355020880 , Kartikey Tiwari : 8799659128 , Gunjan Shekhawat: 6376796752 ",
             rounds: ""
           },
           {
@@ -2931,7 +2965,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Mhare desh, as the name suggests is a quiz which tests participants’ knowledge about our country, India. The purpose of this quiz is to enlighten students with India’s past, present and future. It gives us all an opportunity to understand our country better.",
+            desc:
+              "Mhare desh, as the name suggests is a quiz which tests participants’ knowledge about our country, India. The purpose of this quiz is to enlighten students with India’s past, present and future. It gives us all an opportunity to understand our country better.",
             rounds: []
           },
           {
@@ -3003,7 +3038,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "As the name suggests, first a lecture would be delivered by a renowned environmentalist, N.C Jain Sir. He is an IFS, currently working in the Rajasthan Forestry and Wildlife Training Institute (RFWTI). After his lecture, a debate competition would be conducted on the topics related to environment, climate change and wildlife protection.",
+            desc:
+              "As the name suggests, first a lecture would be delivered by a renowned environmentalist, N.C Jain Sir. He is an IFS, currently working in the Rajasthan Forestry and Wildlife Training Institute (RFWTI). After his lecture, a debate competition would be conducted on the topics related to environment, climate change and wildlife protection.",
             rounds: []
           },
           {
@@ -3014,7 +3050,7 @@ const eventData = {
                 heading: "",
                 list: [
                   "A team must consist of 2 members .",
-                  "Decision of the judge will be final and binding. Unnecessary arguments can lead to disqualification",
+                  "Decision of the judge will be final and binding. Unnecessary arguments can lead to disqualification"
                 ]
               }
             ]
@@ -3032,13 +3068,12 @@ const eventData = {
                   "Participants are instructed to bring their own pens. No pencil, or colour, or any other thing will be allowed.",
                   "It will decided there only whether the team will speak in the favour or against the topic .",
                   "Exciting Prizes and Goodies would be provided to the audience on answering the questions asked by the organizers ."
-                  
                 ]
               }
             ]
           },
           {
-            heading: "Prizes Worth  ₹ 4000\-",
+            heading: "Prizes Worth  ₹ 4000-",
             desc: "",
             rounds: ""
           },
@@ -3053,7 +3088,9 @@ const eventData = {
     ]
   },
   nss: {
-    carImages: ["https://i.ibb.co/ZGBG0MX/Whats-App-Image-2020-01-20-at-01-14-16.jpg"],
+    carImages: [
+      "https://i.ibb.co/ZGBG0MX/Whats-App-Image-2020-01-20-at-01-14-16.jpg"
+    ],
     content: [
       {
         heading: "Kaun Banega Gyanvan",
@@ -3070,7 +3107,8 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "A quiz competition, where young minds will be tested for their social awareness, general knowledge, etc",
+            desc:
+              "A quiz competition, where young minds will be tested for their social awareness, general knowledge, etc",
             rounds: []
           },
           {
@@ -3079,9 +3117,7 @@ const eventData = {
             rounds: [
               {
                 heading: "JUDGING CRITERIA",
-                list: [
-                  "Mind Intellectual, Awareness, Overall score."
-                ]
+                list: ["Mind Intellectual, Awareness, Overall score."]
               },
               {
                 heading: "ROUND ONE",
@@ -3098,7 +3134,7 @@ const eventData = {
                   "It will be a buzzer round.",
                   "Negative marking will also be there. For each wrong answer, ¼ marks will be deducted."
                 ]
-              },
+              }
             ]
           },
           {
@@ -3116,7 +3152,7 @@ const eventData = {
                   "Top three teams will be awarded",
                   "The decision of the judges will be final and will not be subjected to any change."
                 ]
-              },
+              }
             ]
           },
           {
@@ -3158,12 +3194,14 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "The event consists of pictionary session, in which many images will be displayed and the participants have to find the relationship between all the images. Then they have to write a piece(article or poetry) as per their understanding of the connection.",
+            desc:
+              "The event consists of pictionary session, in which many images will be displayed and the participants have to find the relationship between all the images. Then they have to write a piece(article or poetry) as per their understanding of the connection.",
             rounds: []
           },
           {
             heading: "JUDGING CRITERIA",
-            desc: "Marks will be awarded on the basis of their writing skills, grammar, and vocabulary.",
+            desc:
+              "Marks will be awarded on the basis of their writing skills, grammar, and vocabulary.",
             rounds: ""
           },
           {
@@ -3215,12 +3253,14 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "A poem containing blank spaces will be given to the participants, and there will be some clues for blank spaces. Participants have to sort out those clues and put them in blanks.",
+            desc:
+              "A poem containing blank spaces will be given to the participants, and there will be some clues for blank spaces. Participants have to sort out those clues and put them in blanks.",
             rounds: []
           },
           {
             heading: "JUDGING CRITERIA",
-            desc: "Marks will be awarded according to their word selection, grammatical accuracy and poetic skills.",
+            desc:
+              "Marks will be awarded according to their word selection, grammatical accuracy and poetic skills.",
             rounds: ""
           },
           {
@@ -3270,7 +3310,175 @@ const eventData = {
         detailsPage: [
           {
             heading: "DESCRIPTION",
-            desc: "Investigative journalism is a form of journalism in which reporters deeply investigate a single topic of interest and present the story to the public with utmost accuracy. There will be an accused who may or may not have committed a crime but it is embroiled in controversy. So now the reporters get a chance to dig deep into the story and interview the accused.",
+            desc:
+              "Investigative journalism is a form of journalism in which reporters deeply investigate a single topic of interest and present the story to the public with utmost accuracy. There will be an accused who may or may not have committed a crime but it is embroiled in controversy. So now the reporters get a chance to dig deep into the story and interview the accused.",
+            rounds: []
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "They have to form their conclusions based on the way the accused had answered their questions.",
+                  "Each person has to present their report and the one closest to the original story proceeds further.",
+                  "Team size: 3 members",
+                  "Inter-college participation is allowed",
+                  "Language : English"
+                ]
+              }
+            ]
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "CONTACT DETAILS",
+            desc: "Rahul : 9416944577 Akash : 8875047326",
+            rounds: ""
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          }
+        ],
+        eventID: "37"
+      }
+    ]
+  },
+  pronites: {
+    carImages: [
+      "https://i.ibb.co/3p6jj6n/commingsoon.jpg",
+      "https://i.ibb.co/vwBhHgR/shah-rule.jpg",
+      "https://i.ibb.co/zrXqTXk/ankit.jpg"
+    ],
+    content: [
+      {
+        heading: "PRONITE 1",
+        desc: `TBA`,
+        details: [`Date: 06/02/20`, 'Venue: SAC'],
+        accent: ["#000460", "#000000", "#000000"],
+        detailsLink: "",
+        canRegister: true,
+        registerConstraints: {
+          minTeamSize: 1,
+          maxTeamSize: 2
+        },
+        detailsPage: [
+          {
+            heading: "DESCRIPTION",
+            desc:
+              "The event consists of pictionary session, in which many images will be displayed and the participants have to find the relationship between all the images. Then they have to write a piece(article or poetry) as per their understanding of the connection.",
+            rounds: []
+          },
+          {
+            heading: "JUDGING CRITERIA",
+            desc:
+              "Marks will be awarded on the basis of their writing skills, grammar, and vocabulary.",
+            rounds: ""
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Team size: 2 members",
+                  "Inter-college participation is allowed",
+                  "Time limit : 1hour",
+                  "The participants shall not be allowed to use mobile or other electronic instrument."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "CONTACT DETAILS",
+            desc: "Nikhil : 8896107887 Yatharth: 9662060952",
+            rounds: ""
+          }
+        ],
+        eventID: "35"
+      },
+      {
+        heading: "PRONITE 2",
+        desc: `Gully Gang sensation Shah Rule is coming to hook you up to the best hip-hop jam at MNIT! For Pronite 2, Blitzschlag 2020 gives you an artist who sets the stage on fire with his paroles ! Be there on the 7th of February, and catch him live!`,
+        details: [`Date: 07/02/20`, `Venue: SAC`],
+        accent: ["#f0842c", "#545c6f", "#ae2110"],
+        detailsLink: "",
+        canRegister: true,
+        registerConstraints: {
+          minTeamSize: 1,
+          maxTeamSize: 2
+        },
+        detailsPage: [
+          {
+            heading: "DESCRIPTION",
+            desc:
+              "A poem containing blank spaces will be given to the participants, and there will be some clues for blank spaces. Participants have to sort out those clues and put them in blanks.",
+            rounds: []
+          },
+          {
+            heading: "JUDGING CRITERIA",
+            desc:
+              "Marks will be awarded according to their word selection, grammatical accuracy and poetic skills.",
+            rounds: ""
+          },
+          {
+            heading: "GENERAL RULES",
+            desc: "",
+            rounds: [
+              {
+                heading: "",
+                list: [
+                  "Team size: 2 members",
+                  "Inter-college participation is allowed",
+                  "Time limit : 30 min & 5 min to recite.",
+                  "Language : Hindi",
+                  "Each team has to present their poem before the judge. It will have the maximum bearing on the marks.",
+                  "The participants shall not be allowed to use mobile or other electronic instrument."
+                ]
+              }
+            ]
+          },
+          {
+            heading: "",
+            desc: "",
+            rounds: ""
+          },
+          {
+            heading: "CONTACT DETAILS",
+            desc: "Md. Amir : 8302742162 Manuraj : 9149070672",
+            rounds: ""
+          }
+        ],
+        eventID: "36"
+      },
+      {
+        heading: "PRONITE 3",
+        desc: `Sun'ne aa rha hai na tu? Ankit Tiwari, the ace of melodies, is coming to MNIT Jaipur! Team Blitzschlag is proud to present the artist for Pronite 3. Be prepared for his mellifluous vocals and euphonic tones to swing your heartbeat on the 8th of February!`,
+        details: [`Date: 08/02/20`,`Venue: SAC`],
+        accent: ["#cc5048", "#733948", "#342e76"],
+        detailsLink: "",
+        canRegister: true,
+        registerConstraints: {
+          minTeamSize: 1,
+          maxTeamSize: 3
+        },
+        detailsPage: [
+          {
+            heading: "DESCRIPTION",
+            desc:
+              "Investigative journalism is a form of journalism in which reporters deeply investigate a single topic of interest and present the story to the public with utmost accuracy. There will be an accused who may or may not have committed a crime but it is embroiled in controversy. So now the reporters get a chance to dig deep into the story and interview the accused.",
             rounds: []
           },
           {

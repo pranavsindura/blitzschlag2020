@@ -9,6 +9,7 @@ import Flagship from './Flagship';
 import Sponsors from './Sponsors.js';
 import Hospitality from './Hospitality.js';
 import Schedule from './Schedule.js';
+import Pronites from './Pronite.js';
 import Payment from './Payment';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
@@ -72,6 +73,17 @@ class App extends Component {
 							<li className="lis  menu-item">
 								<Link
 									className="lisitem"
+									to="/pronites"
+									onClick={() => {
+										this.handleCheck();
+									}}
+								>
+									<i className="fas fa-glass-cheers"></i>&nbsp;&nbsp;PRONITES
+								</Link>
+							</li>
+							<li className="lis  menu-item">
+								<Link
+									className="lisitem"
 									to="/flagship"
 									onClick={() => {
 										this.handleCheck();
@@ -124,7 +136,7 @@ class App extends Component {
 										this.handleCheck();
 									}}
 								>
-									<i class="far fa-clipboard"></i>&nbsp;&nbsp;SCHEDULE
+									<i className="far fa-clipboard"></i>&nbsp;&nbsp;SCHEDULE
 								</Link>
 							</li>
 							<li className="lis menu-item">
@@ -148,7 +160,7 @@ class App extends Component {
 									// 	// this.handleCheck();
 									// }}
 								>
-									<i class="fas fa-tshirt"></i>&nbsp;&nbsp;MERCHANDISE
+									<i className="fas fa-tshirt"></i>&nbsp;&nbsp;MERCHANDISE
 								</a>
 							</li>
 							<li className="lis menu-item">
@@ -225,6 +237,11 @@ class App extends Component {
 						<Route path="/flagship">
 							<FadeIn>
 								<Flagship />
+							</FadeIn>
+						</Route>
+						<Route path="/pronites">
+							<FadeIn>
+								<Pronites />
 							</FadeIn>
 						</Route>
 						<Route path="/myaccount">
