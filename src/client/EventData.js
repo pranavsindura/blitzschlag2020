@@ -2248,7 +2248,7 @@ const eventData = {
         canRegister: false,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 2
         },
         detailsPage: [
           {
@@ -2339,7 +2339,7 @@ const eventData = {
         canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
-          maxTeamSize: 5
+          maxTeamSize: 2
         },
         detailsPage: [
           {
@@ -2673,7 +2673,7 @@ const eventData = {
         canRegister: true,
         registerConstraints: {
           minTeamSize: 2,
-          maxTeamSize: 3
+          maxTeamSize: 2
         },
         detailsPage:  [
           {
@@ -2738,7 +2738,7 @@ const eventData = {
         canRegister: true,
         registerConstraints: {
           minTeamSize: 2,
-          maxTeamSize: 4
+          maxTeamSize: 3
         },
         detailsPage: [
           {
