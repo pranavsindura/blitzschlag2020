@@ -28,7 +28,7 @@ export default class Announcements extends Component {
           render={({ state, fullpageApi }) => {
             return (
               <ReactFullpage.Wrapper>
-                <div className="section" style={{ background: "#821740" }}>
+                <div className="section" style={{ background: "#de5d54" }}>
                   <h1 className="ann-heading">ANNOUNCEMENTS & RESULTS</h1>
                   <br></br>
                   <br></br>

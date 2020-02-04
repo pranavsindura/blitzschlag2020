@@ -13,10 +13,23 @@
 }
 
 .sche-card {
-    width: 80% !important;
-    left: 10% !important;
+    width: 100% !important;
+    left: 0% !important;
     /* background-color: transparent !important; */
     color: white;
+}
+
+.mai-sche {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: teal;
 }
 
 .sche>tr>th,
@@ -24,4 +37,11 @@
 .sche>tr {
     color: white;
     text-align: center;
+}
+
+@media screen and (max-width: 770px) {
+    .mai-sche {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
 }
