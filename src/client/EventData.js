@@ -2351,7 +2351,7 @@ const eventData = {
           },
           {
             heading: "CONTACT DETAILS",
-            desc: "Srawani Kowtha: 8239132408 , Navneet : 8149409397",
+            desc: "Sanatan Shrivastava: 6261972313 , Bhuvan : 9056994175",
             rounds: ""
           }
         ],
@@ -2948,7 +2948,7 @@ const eventData = {
   vss: {
     carImages: [
       "https://i.ibb.co/QQXXmQQ/Whats-App-Image-2020-01-26-at-23-40-09.jpg",
-      "https://i.ibb.co/3p6jj6n/commingsoon.jpg"
+      "https://i.ibb.co/HpDmPyH/CLASHING-min1.jpg"
     ],
     content: [
       {
