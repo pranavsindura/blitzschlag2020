@@ -35,19 +35,19 @@ export default class Announcements extends Component {
                   <Card className="ann-card">
                     <Card.Body style={{padding:'0px'}}>
                         <p style={{padding:'0px',margin:'0px'}}>The Online payments will stop at 12:00AM 5 March, 2020. You can still pay at the registeration desk at the main gate. Debit Cards, Cash etc. are the accepted mode of payments.</p>
-                        <p style={{padding:'0px',fontSize:'0.8em',textAlign:'right', paddingRight:'2px'}}>09:00PM 30 Feb, 2020</p>
+                        <p style={{padding:'0px',fontSize:'0.8em',textAlign:'right', paddingRight:'2px'}}>09:00PM 30 Jan, 2020</p>
                     </Card.Body>
                   </Card>
                   <Card className="ann-card">
                     <Card.Body style={{padding:'0px'}}>
                         <p style={{padding:'0px',margin:'0px'}}>Payments are Live - You can now pay under the hospitality section.</p>
-                        <p style={{padding:'0px',fontSize:'0.8em',textAlign:'right', paddingRight:'2px'}}>08:00PM 25 Feb, 2020</p>
+                        <p style={{padding:'0px',fontSize:'0.8em',textAlign:'right', paddingRight:'2px'}}>08:00PM 25 Jan, 2020</p>
                     </Card.Body>
                   </Card>
                   <Card className="ann-card">
                     <Card.Body style={{padding:'0px'}}>
                         <p style={{padding:'0px',margin:'0px'}}>WE ARE LIVE - Connections move the world around us today. If you're ready to enter the world that Blitzschlag 2020 brings you, connect with us at blitzschlag.co.in - we're live!</p>
-                        <p style={{padding:'0px',fontSize:'0.8em',textAlign:'right', paddingRight:'2px'}}>12:00PM 20 Feb, 2020</p>
+                        <p style={{padding:'0px',fontSize:'0.8em',textAlign:'right', paddingRight:'2px'}}>12:00PM 20 Jan, 2020</p>
                     </Card.Body>
                   </Card>
                   <br></br>
