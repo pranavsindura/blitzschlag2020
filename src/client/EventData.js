@@ -1656,7 +1656,7 @@ const eventData = {
         weave stories out of photographs. Every photographer is a story teller; each photograph holds an emotion.
         For Blitzschlag 2020, capture your oneiric stories in a photograph, and get a chance to win exhilarating
         prizes while showcasing your talent.`,
-        details: [`Date: TBA`, `Prizes worth: ₹5,000`],
+        details: [`Date: TBA`, `Prizes worth: ₹6,000`],
         accent: ["#ffc75a", "#565455", "#f03c5f"],
         detailsLink: "",
         canRegister: true,
@@ -1678,16 +1678,23 @@ const eventData = {
               {
                 heading: "",
                 list: [
-                  "Participants will have to post a sequence of photos(minimum-8 to maximum-10) on Instagram and also have to tag @fandpclub and our sponsor. Use hashtag #fandpclub #fandp_club #picsaga",
-                  "The participants also have to post the story conveyed through the photographs in the caption of the post.",
-                  "Registration is mandatory on the site of blitzschlag (blitzschlag.co.in)",
-                  "Entry should include all the images in sequence of the story (only .jpeg).",
-                  "The story conveyed (per frame) through the pictures in doc form. (not more than 150 words)",
-                  "Judgement will be based on the likes and comments received on participant's post on our Instagram page. (@fandpclub) and Jury . (30%- Instagram points 70%- jury points) (1like=2points) (1comment=5points).",
-                  "Top 3 will be selected through this basis.",
-                  "Images received after the deadline would be disqualified.",
-                  "Any vulgar, offensive, explicit content would be disqualified.",
-                  "The decision of the judges would be final and binding.",
+                  "Participants will have to mail a sequence of photos(minimum-6 to maximum-10) including name, contact details, blitz_id and college id at filmandphotoclub@mnit.ac.in",
+                  "Mail Format :-",
+                  "Title : Picsaga_Entry ",
+                  "Name : ",
+                  "College_Id :",
+                  "Blitz_ID :",
+                  "Contact Number :",
+                  "No. of Photos :",
+                  "(Insert the photos having sequence number as their name and story in doc format) Registration is mandatory on the website of blitzschlag (blitzschlag.org)",
+                  "The last date of submission is 7th February, 2020.",
+                  "Entry should include: ",
+                  "1.	All the images in sequence of the story (only .jpeg).",
+                  "2.	The story conveyed (preferably per frame) through the pictures in doc form. (not more than 150 words)",
+                  "Judgement will be based on the likes and comments received on participant's post on our Instagram page which we post after getting your valid email. (@fandp_club) and Jury . (30%- Instagram points 70%- jury points)",
+                  "(1 like = 2 points)   (1 comment = 5 points).",
+                  "Top 3 will be selected through this basis after that",
+                  "Images received after the deadline would be disqualified. Any vulgar, offensive, explicit content would be disqualified. The decision of the judges would be final and binding.",
                   "The organisers reserve the right to modify the rules at any point of time",
                   "By submitting the entry, participant acknowledge that they have read and understood the rules and are willing to abide by them",
                   "Violation of rules or use of any copyright content or any sexual, violent content would be disqualified."
@@ -1696,7 +1703,7 @@ const eventData = {
             ]
           },
           {
-            heading: "PRIZE WORTH : ₹5,000",
+            heading: "PRIZE WORTH : ₹6,000",
             desc: "",
             rounds: ""
           },
