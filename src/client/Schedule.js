@@ -191,6 +191,7 @@ export default class Schedule extends Component {
                             </Table>
                           </Card.Body>
                         </Card>
+<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                       </Tab>
                       <Tab eventKey="day2" title="DAY 2">
                         <Card className="sche-card">
