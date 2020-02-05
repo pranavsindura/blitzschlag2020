@@ -50,7 +50,7 @@ export default class Schedule extends Component {
                   <br></br>
                   <div className="mai-sche">
                     <Tabs defaultActiveKey="day1" id="uncontrolled-tab-example">
-                      <Tab eventKey="day1" title="DAY 1" >
+                      <Tab eventKey="day1" title="DAY 1">
                         <Card className="sche-card">
                           <Card.Body>
                             <Table bordered hover responsive size="sm">
@@ -191,7 +191,17 @@ export default class Schedule extends Component {
                             </Table>
                           </Card.Body>
                         </Card>
-<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
                       </Tab>
                       <Tab eventKey="day2" title="DAY 2">
                         <Card className="sche-card">

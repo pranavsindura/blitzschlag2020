@@ -34,6 +34,12 @@ export default class Announcements extends Component {
                   <br></br>
                   <Card className="ann-card">
                     <Card.Body style={{padding:'0px'}}>
+                        <p style={{padding:'0px',margin:'0px'}}>Online Payments are now closed. Please pay at the registeration desk at Main Gate. Accepted modes are Cash or via POS Machine</p>
+                        <p style={{padding:'0px',fontSize:'0.8em',textAlign:'right', paddingRight:'2px'}}>12:00PM 5 Feb, 2020</p>
+                    </Card.Body>
+                  </Card>
+                  <Card className="ann-card">
+                    <Card.Body style={{padding:'0px'}}>
                         <p style={{padding:'0px',margin:'0px'}}>The Online payments will stop at 12:00PM 5 February, 2020. You can still pay at the registeration desk at the main gate. Debit Cards, Cash etc. are the accepted mode of payments.</p>
                         <p style={{padding:'0px',fontSize:'0.8em',textAlign:'right', paddingRight:'2px'}}>09:00PM 30 Jan, 2020</p>
                     </Card.Body>
