@@ -10,6 +10,10 @@ export default class Sponsors extends Component {
 		sponsors: SPONSOR
 	};
 	images = [
+		"https://i.ibb.co/1MgnCYY/choco.jpg",
+		"https://i.ibb.co/mz369qT/logo.jpg",
+		"https://i.ibb.co/xDdSFQL/IMG-1421.png",
+		"https://i.ibb.co/pfd3MdQ/Gabbar.png",
 		"https://i.ibb.co/SXkDCH2/pizzahut.png",
 		"https://i.ibb.co/T85Tpvy/reliancef.png",
 		"https://i.ibb.co/d5JqTPN/sprite.jpg",
@@ -1115,6 +1119,49 @@ c-49 26 -151 32 -227 13 -84 -22 -146 -53 -220 -109 l-63 -47 -63 47 c-138
 						return (
 							<ReactFullpage.Wrapper>
 								<div className="section" style={{ background: '#abbbb8' }}>
+								<br></br>
+									<br></br>
+									<h2 style={{ color: 'white', textAlign: 'center' }} className="spon-main-head">
+										Sponsors
+									</h2>
+									<br></br>
+									<br></br>
+									<div className="container">
+										<div className="row">
+											<div className="col-md-6 midout">
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/1MgnCYY/choco.jpg')}
+												<h5 className="circle-heading" >Food Partner</h5>
+												<br></br>
+												<br></br>
+											</div>
+											<div className="col-md-6 midret">
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/xDdSFQL/IMG-1421.png')}
+												<h5 className="circle-heading" >Food Partner</h5>
+												<br></br>
+												<br></br>
+											</div>
+										</div>
+										<div className="row">
+											<div className="col-md-4 mid">
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/3csy8d6/namo.png')}
+												<h5 className="circle-heading" >Food Partner</h5>
+												<br></br>
+												<br></br>
+											</div>
+											<div className="col-md-4 mid">
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/pfd3MdQ/Gabbar.png')}
+												<h5 className="circle-heading" >Food Partner</h5>
+												<br></br>
+												<br></br>
+											</div>
+											<div className="col-md-4 mid">
+											{this.renderSponsor(fullpageApi, 'https://i.ibb.co/mz369qT/logo.jpg')}
+												<h5 className="circle-heading" >Rides Partner</h5>
+												<br></br>
+												<br></br>
+											</div>
+										</div>
+									</div>
 									<br></br>
 									<br></br>
 									<h2 style={{ color: 'white', textAlign: 'center' }} className="spon-main-head">

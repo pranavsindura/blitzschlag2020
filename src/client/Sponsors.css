@@ -56,6 +56,12 @@
     border-radius: 135px;
 }
 
+.circle-heading {
+    width: 260px;
+    text-align: center;
+    color: white;
+}
+
 .circlein {
     /* background: black; */
     width: 215px;
