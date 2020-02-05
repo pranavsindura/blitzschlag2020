@@ -50,36 +50,36 @@ class Hospitality extends Component {
 			let { total, optionsSelectedSet } = this.state;
 			let packages = [...optionsSelectedSet];
 			let amount = total;
-			axios.post(this.proxy+'/addhospitality',{
-				packages,
-				blitzID: this.props.user.blitzID,
-			})
-			.then((res)=>{
-				res = res.data;
-				// console.log(res);
-				if(res.status)
-				{
-					//redirect to apt route.
+			// axios.post(this.proxy+'/addhospitality',{
+			// 	packages,
+			// 	blitzID: this.props.user.blitzID,
+			// })
+			// .then((res)=>{
+			// 	res = res.data;
+			// 	// console.log(res);
+			// 	if(res.status)
+			// 	{
+			// 		//redirect to apt route.
 					
-					this.setState({ redirectPay: true, redirectAmount: amount });
-					// this.shouldRedirectPay(amount);
-					// console.log(amount);
-					// axios.post(this.proxy+'/topayment',{amount, blitzID: this.props.user.blitzID})
-					// .then((res)=>{
-					// 	res = res.data;
-					// 	console.log(res);
-					// })
-					// .catch((e)=>{alert('Some Error Occured!');})
-				}
-				else
-				{
-					alert('Some Error Occured!');
-				}
-			}).catch((e)=>{
-				alert('Some Error Occured!');
-				// console.log(e);
-			})
-			// alert('Payment Gateway is currently unavailable. Please use another mode of payment!');
+			// 		this.setState({ redirectPay: true, redirectAmount: amount });
+			// 		// this.shouldRedirectPay(amount);
+			// 		// console.log(amount);
+			// 		// axios.post(this.proxy+'/topayment',{amount, blitzID: this.props.user.blitzID})
+			// 		// .then((res)=>{
+			// 		// 	res = res.data;
+			// 		// 	console.log(res);
+			// 		// })
+			// 		// .catch((e)=>{alert('Some Error Occured!');})
+			// 	}
+			// 	else
+			// 	{
+			// 		alert('Some Error Occured!');
+			// 	}
+			// }).catch((e)=>{
+			// 	alert('Some Error Occured!');
+			// 	// console.log(e);
+			// })
+			alert('Online Payments are now closed. Please pay at the registeration desk at Main Gate. Accepted modes are Cash or via POS Machine');
 			let options = [null];
 			for (let i = 0; i < 14; i++) options.push(false);
 			this.setState({
