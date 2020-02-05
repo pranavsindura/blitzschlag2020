@@ -159,7 +159,7 @@ class Login extends React.Component {
 						fullpage_api.reBuild();
 					}
 				);
-				// console.log(err);
+				console.log(err);
 			});
 	};
 	handleLoginChange = (e) => {
@@ -213,7 +213,7 @@ class Login extends React.Component {
 						fullpage_api.reBuild();
 					}
 				);
-				// console.log(err);
+				console.log(err);
 			});
 	};
 	render() {
