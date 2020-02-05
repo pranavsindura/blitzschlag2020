@@ -99,15 +99,16 @@ app.post('/signup', (req, res) => {
                                                             signupvalid.updateBlitzID(result2).then((result4) => {
                                                                 if (result4) {
                                                                     mailer.main(result3).then(() => {
-                                                                            res.send({
-                                                                                status: true,
-                                                                                data: result3
-                                                                            });
+                                                                            // res.send({
+                                                                            //     status: true,
+                                                                            //     data: result3
+                                                                            // });
                                                                         })
-                                                                        // res.send({
-                                                                        //     status: true,
-                                                                        //     data: result3
-                                                                        // });
+                                                                        .catch(e=>{console.log(e); console.log('MAIL NOT SENT TO: ', result3.blitzID)})
+                                                                        res.send({
+                                                                            status: true,
+                                                                            data: result3
+                                                                        });
                                                                 } else {
                                                                     res.send({
                                                                         status: false,
