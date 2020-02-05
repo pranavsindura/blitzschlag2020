@@ -3069,12 +3069,13 @@ const eventData = {
               {
                 heading: "",
                 list: [
-                  "Teams would be called one by one on the stage to present their views on the given topics.",
-                  "One participant will speak on the topic and the other will have to answer the questions raised by the audience and the panelists.",
-                  "Topics will be distributed there and then only based on the contents provided in the description.",
-                  "Participants are instructed to bring their own pens. No pencil, or colour, or any other thing will be allowed.",
-                  "It will decided there only whether the team will speak in the favour or against the topic .",
-                  "Exciting Prizes and Goodies would be provided to the audience on answering the questions asked by the organizers ."
+                  "Two teams would be called on the stage at a time. One team will keep their points in favour of the motion and the other, against the motion.",
+                  "One member of the team will speak on the topic and the other member will have to answer the questions raised by the opposing team, and the judges.",
+                  "Minimum 3 minutes and maximum 5 minutes will be given to the team to present their views on the given topic.",
+                  "The opposing team can ask maximum of 2 questions. Judges can ask any number of questions so that they can judge the knowledge of the team in regards to the given topic.",
+                  "Topics, as well as, whether the team has to speak for the motion or against the motion, will be distributed to all the teams well before the event. ",
+                  "Participants are instructed to bring their own pen and paper to write down the important points but simply reading from the paper will not be allowed.",
+                  "Exciting Prizes and Goodies would be provided to the audience on answering the questions asked by the organizers."
                 ]
               }
             ]
