@@ -2279,7 +2279,7 @@ const eventData = {
         details: [`Date: 08/02/2020`, `Prizes worth: 8,000/-`],
         accent: ["#68afe1", "#094d71", "#d6dd25"],
         detailsLink: "",
-        canRegister: false,
+        canRegister: true,
         registerConstraints: {
           minTeamSize: 1,
           maxTeamSize: 2
