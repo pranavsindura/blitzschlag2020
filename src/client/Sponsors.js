@@ -1155,6 +1155,20 @@ c-49 26 -151 32 -227 13 -84 -22 -146 -53 -220 -109 l-63 -47 -63 47 c-138
 												<br></br>
 											</div>
 											<div className="col-md-4 mid">
+											{this.renderSponsor(fullpageApi, 'https://i.ibb.co/h9vJnB2/territory.jpg')}
+												<h5 className="circle-heading" >Food Partner</h5>
+												<br></br>
+												<br></br>
+											</div>
+										</div>
+										<div className="row">
+											<div className="col-md-6 midout">
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/s1q10HP/neo.jpg')}
+												<h5 className="circle-heading" >Fitness Partner</h5>
+												<br></br>
+												<br></br>
+											</div>
+											<div className="col-md-4 mid">
 											{this.renderSponsor(fullpageApi, 'https://i.ibb.co/mz369qT/logo.jpg')}
 												<h5 className="circle-heading" >Rides Partner</h5>
 												<br></br>
