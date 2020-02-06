@@ -476,6 +476,7 @@ class Hospitality extends Component {
                             7th and 8th February.
                           </li>
                           <li>Accommodation does not include food.</li>
+                          <li><b>Accommodation is on SHARING basis.</b></li>
 						  <li>You can also pay at Registration Desk.</li>
 						  Contact:<br></br>Anuj Srivastava - 7525926870<br></br>Ritu Choudhary - 9602412495
 						  
