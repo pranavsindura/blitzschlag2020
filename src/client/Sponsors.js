@@ -1127,6 +1127,26 @@ c-49 26 -151 32 -227 13 -84 -22 -146 -53 -220 -109 l-63 -47 -63 47 c-138
 									<br></br>
 									<br></br>
 									<div className="container">
+									<div className="row">
+											<div className="col-md-4 mid">
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/D1fQpwd/ongc.png')}
+												<h5 className="circle-heading" >Title Sponsor</h5>
+												<br></br>
+												<br></br>
+											</div>
+											<div className="col-md-4 mid">
+												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/R9hHtH8/lakme.jpg')}
+												<h5 className="circle-heading" >Beauty Partner</h5>
+												<br></br>
+												<br></br>
+											</div>
+											<div className="col-md-4 mid">
+											{this.renderSponsor(fullpageApi, 'https://i.ibb.co/QMMTzqz/voylla-squarelogo-1542374932397.png')}
+												<h5 className="circle-heading" >Jewellery Partner</h5>
+												<br></br>
+												<br></br>
+											</div>
+										</div>
 										<div className="row">
 											<div className="col-md-6 midout">
 												{this.renderSponsor(fullpageApi, 'https://i.ibb.co/1MgnCYY/choco.jpg')}
