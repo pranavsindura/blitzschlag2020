@@ -44,6 +44,14 @@ db.once('open', async function() {
     console.log('Connected to the database');
 });
 
+app.post('*', (req, res) => {
+    alert(`We'll be back soon!`);
+    res.send({
+        status: false,
+        message: 'Unavailable',
+    })
+});
+
 app.post('/login', (req, res) => {
     let userLoginData = req.body;
     loginValid.userValid(userLoginData).then(function(result) {
