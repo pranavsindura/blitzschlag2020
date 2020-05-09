@@ -8,8 +8,6 @@ const device = require('express-device');
 const mongoose = require('mongoose');
 const objectID = require('objectid');
 
-const uri = 'mongodb+srv://Dhairya-Shalu:light12345@first-demo-ocw10.mongodb.net/test?retryWrites=true&w=majority';
-// const uri = String(process.env.MONGODB_URI);
 let { userModel } = require('./model.js');
 let { idModel } = require('./idModel');
 let loginValid = require('./loginvalid');
